@@ -1,228 +1,234 @@
 export default function DiscoveryTripsPage() {
   return (
-    <main className="min-h-screen bg-[#f6f1ea] text-stone-900 overflow-hidden">
-
+    <main className="min-h-screen bg-[#f6f1ea] text-stone-900">
       {/* HERO */}
-      <section className="relative flex min-h-[75vh] items-center overflow-hidden px-8 py-32">
-
+      <section className="relative flex h-[65vh] items-center justify-center overflow-hidden">
         <img
-          src="/images/discovery2.png"
-          alt="Discovery trips Costa Blanca"
+          src="/images/website.png"
+          alt="3-day Buyer Experience Tour"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/45"></div>
 
-        <div className="relative z-10 mx-auto max-w-6xl text-white">
-
+        <div className="relative z-10 px-8 text-center text-white">
           <p className="text-sm uppercase tracking-[0.35em] text-white/80">
-            Discovery Trips
+            Nordic Move Spain
           </p>
 
-          <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-tight md:text-7xl">
-            Explore Costa Blanca North before making a life-changing decision.
+          <h1 className="mt-6 font-serif text-6xl leading-tight md:text-7xl">
+            3-Day Buyer Experience Tour
           </h1>
 
-          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-            Experience the atmosphere, neighbourhoods, lifestyle and practical realities of living in Spain through our carefully organised small-group discovery trips.
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/90">
+            A private, tailor-made introduction to Costa Blanca North designed
+            around your lifestyle, interests and long-term plans.
           </p>
-
         </div>
-
       </section>
 
-      {/* INTRO */}
-      <section className="px-8 py-24">
+      {/* BUYER EXPERIENCE DETAILS */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            The Nordic Move Spain Buyer Experience
+          </p>
 
-        <div className="mx-auto max-w-5xl">
-
-          <h2 className="font-serif text-5xl leading-tight">
-            A calmer and more personal way to discover Spain.
+          <h2 className="mt-6 font-serif text-6xl leading-tight text-[#1e2a3a]">
+            A private three-day journey designed entirely around you.
           </h2>
 
+          <p className="mt-10 text-xl leading-relaxed text-stone-600">
+            The Buyer Experience is far more than a property viewing trip. It is
+            a carefully curated introduction to Costa Blanca North, designed
+            around your lifestyle, interests, long-term goals and the insights
+            gathered during your Area Match Assessment and personal intake.
+          </p>
+
+          <p className="mt-6 text-xl leading-relaxed text-stone-600">
+            Before your arrival, we create a personalised itinerary tailored
+            specifically to your profile. Every destination, meeting, experience
+            and area visit is selected to help you gain a deeper understanding
+            of what life in Spain could truly look like for you.
+          </p>
+        </div>
+      </section>
+
+      {/* ARRIVAL */}
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-6xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+          <h3 className="font-serif text-4xl text-[#1e2a3a]">
+            From the moment you arrive
+          </h3>
+
           <p className="mt-8 text-lg leading-relaxed text-stone-600">
-            Relocating to Spain is more than simply buying a property. It is an important lifestyle decision that deserves proper orientation, local insight and trusted guidance before making long-term commitments.
+            Upon arrival at Alicante Airport, you will be welcomed by your
+            private driver and transferred comfortably to one of our carefully
+            selected boutique hotels or luxury resorts.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Nordic Move Spain organises carefully curated 3-day discovery trips designed for international buyers who want to explore Costa Blanca North in a more relaxed, structured and informative way.
+            The experience begins with a relaxed welcome lunch where we discuss
+            your objectives, answer any questions and provide an overview of the
+            days ahead.
           </p>
 
+          <p className="mt-6 text-lg leading-relaxed text-stone-600">
+            From that moment onward, every detail has been arranged for you. Our
+            goal is to remove uncertainty and allow you to focus entirely on
+            exploring whether Costa Blanca North is truly the right fit for your
+            future.
+          </p>
         </div>
-
       </section>
 
-      {/* WHAT IS INCLUDED */}
+      {/* EXPLORE */}
       <section className="px-8 pb-24">
+        <div className="mx-auto max-w-6xl">
+          <h3 className="font-serif text-5xl text-[#1e2a3a]">
+            Explore the regions that match your lifestyle
+          </h3>
 
-        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-
-          <img
-            src="https://multimedia.comunitatvalenciana.com/682E658C47A64EC3B22D304139F66CBD/img/D799BA15C2B64079BB4ADACA590DBF80/Dionis_Boutique.jpg?responsive"
-            alt="Mediterranean lifestyle Spain"
-            className="h-[620px] w-full rounded-[36px] object-cover shadow-2xl"
-          />
-
-          <div>
-
-            <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-              What is included
-            </p>
-
-            <h2 className="mt-5 font-serif text-5xl leading-tight">
-              We take care of the practical details so you can focus on the experience.
-            </h2>
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-
-              <p>
-                Our discovery trips are organised in small groups with like-minded international buyers who are also considering a new chapter in Spain.
-              </p>
-
-              <p>
-                From the moment you arrive, we help make the experience as comfortable and stress-free as possible. We organise airport pick-up, transportation and guidance throughout the trip.
-              </p>
-
-              <p>
-                During the 3-day experience, we introduce you to different towns, neighbourhoods and residential areas across Costa Blanca North so you can better understand the atmosphere, facilities and lifestyle of each location.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* EXPERIENCES */}
-      <section className="px-8 pb-24">
-
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Local experiences
+          <p className="mt-8 text-lg leading-relaxed text-stone-600">
+            Rather than visiting random locations, we focus exclusively on areas
+            that align with your personal profile and ambitions.
           </p>
 
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            Discover more than just property.
-          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-stone-600">
+            Depending on your preferences, we may explore elegant coastal towns,
+            golf communities, vibrant international neighbourhoods,
+            family-friendly areas, marinas, wellness destinations, business hubs
+            or peaceful Mediterranean villages.
+          </p>
 
-          <div className="mt-12 grid gap-10 md:grid-cols-2">
-
-            <ul className="space-y-5 text-lg leading-relaxed text-stone-600">
-
-              <li>
-                • Explore different coastal towns, residential areas and local neighbourhoods.
-              </li>
-
-              <li>
-                • Visit local hotspots, restaurants, cafés and cultural locations.
-              </li>
-
-              <li>
-                • Experience the atmosphere and rhythm of daily life in Spain.
-              </li>
-
-              <li>
-                • Learn more about healthcare, facilities, accessibility and infrastructure.
-              </li>
-
-            </ul>
-
-            <ul className="space-y-5 text-lg leading-relaxed text-stone-600">
-
-              <li>
-                • Meet trusted local lawyers, notaries and specialists.
-              </li>
-
-              <li>
-                • Receive practical information regarding legal and financial aspects of buying property in Spain.
-              </li>
-
-              <li>
-                • Gain insight into taxes, mortgages, ownership costs and relocation considerations.
-              </li>
-
-              <li>
-                • Ask questions in a relaxed and personal environment before making important decisions.
-              </li>
-
-            </ul>
-
-          </div>
-
+          <p className="mt-6 text-lg leading-relaxed text-stone-600">
+            Throughout the experience, we help you understand not only where
+            properties are located, but how daily life actually feels in each
+            environment.
+          </p>
         </div>
-
       </section>
 
-      {/* WHY */}
+      {/* PROFESSIONALS */}
       <section className="px-8 pb-24">
+        <div className="mx-auto max-w-6xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+          <h3 className="font-serif text-5xl">
+            Meet the professionals you can trust
+          </h3>
 
-        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
+          <p className="mt-8 text-lg leading-relaxed text-white/80">
+            Purchasing property abroad involves much more than finding the right
+            home. During your Buyer Experience, we introduce you to carefully
+            selected independent professionals who can support your journey.
+          </p>
 
-          <div>
-
-            <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-              Why discovery trips matter
-            </p>
-
-            <h2 className="mt-5 font-serif text-5xl leading-tight">
-              A property may feel right online, but the environment must feel right in real life.
-            </h2>
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-
-              <p>
-                Many international buyers initially focus only on the property itself, while lifestyle, surroundings and practical daily living are equally important.
-              </p>
-
-              <p>
-                Our discovery trips help clients better understand the differences between locations, communities and lifestyles before committing to a purchase.
-              </p>
-
-              <p>
-                This creates more clarity, more confidence and often prevents expensive mistakes later in the buying process.
-              </p>
-
-            </div>
-
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
+            {[
+              "Independent property lawyers",
+              "Spanish notaries",
+              "Mortgage specialists",
+              "Tax advisors",
+              "Relocation professionals",
+              "Local property experts",
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white/10 p-5 text-white/90"
+              >
+                {item}
+              </div>
+            ))}
           </div>
 
-          <img
-            src="https://orangevillas.com/media/images/properties/thumbnails/105635_xl.jpg"
-            alt="Luxury lifestyle Costa Blanca"
-            className="h-[620px] w-full rounded-[36px] object-cover shadow-2xl"
-          />
-
+          <p className="mt-10 text-lg leading-relaxed text-white/80">
+            These meetings provide clarity around legal procedures, taxes,
+            mortgages, purchase costs, ownership structures, annual expenses and
+            the practical realities of buying property in Spain.
+          </p>
         </div>
-
       </section>
 
-      {/* FINAL */}
+      {/* LIFESTYLE */}
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-6xl">
+          <h3 className="font-serif text-5xl text-[#1e2a3a]">
+            Experience the lifestyle before making a decision
+          </h3>
+
+          <p className="mt-8 text-lg leading-relaxed text-stone-600">
+            Understanding a region goes beyond property viewings. We believe
+            buyers should experience the lifestyle, atmosphere and opportunities
+            available before making a long-term commitment.
+          </p>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-3">
+            {[
+              "Fine dining experiences",
+              "Wine tastings",
+              "Golf clubs",
+              "Beach clubs",
+              "Marinas and yacht harbours",
+              "Wellness & spa facilities",
+              "Hiking and nature experiences",
+              "Cultural highlights",
+              "Business networking opportunities",
+            ].map((item) => (
+              <div key={item} className="rounded-2xl bg-white p-6 shadow-sm">
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COMMUNITY */}
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-6xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <h3 className="font-serif text-5xl text-[#1e2a3a]">
+            Meet like-minded future residents
+          </h3>
+
+          <p className="mt-8 text-lg leading-relaxed text-stone-700">
+            One of the most valuable aspects of the Buyer Experience is the
+            opportunity to meet people who are on a similar journey.
+          </p>
+
+          <p className="mt-6 text-lg leading-relaxed text-stone-700">
+            Through carefully curated introductions, lunches and community
+            gatherings, clients often begin building friendships, professional
+            connections and a trusted network long before they officially
+            relocate.
+          </p>
+
+          <p className="mt-6 text-lg leading-relaxed text-stone-700">
+            Many participants tell us this becomes one of the most memorable and
+            valuable parts of the entire experience.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="px-8 pb-32">
-
-        <div className="mx-auto max-w-5xl rounded-[36px] bg-[#efe7dc] p-14 text-center">
-
-          <h2 className="font-serif text-5xl leading-tight">
-            Discover Spain with more clarity, confidence and peace of mind.
+        <div className="mx-auto max-w-6xl text-center">
+          <h2 className="font-serif text-6xl leading-tight text-[#1e2a3a]">
+            Make your decision with confidence.
           </h2>
 
-          <p className="mt-8 text-xl leading-relaxed text-stone-700">
-            Our discovery trips are designed to give international buyers a more realistic, personal and informed understanding of life on Costa Blanca North before making important relocation decisions.
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-stone-600">
+            By the end of your Buyer Experience, you will have gained far more
+            than property information. You will understand the regions, the
+            lifestyle, the financial implications, the professionals and the
+            people who could become part of your future life in Spain.
           </p>
 
           <a
             href="/contact"
-            className="mt-10 inline-block rounded-full bg-stone-900 px-8 py-4 text-white"
+            className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-10 py-5 text-white transition hover:bg-[#15202d]"
           >
-            Request discovery trip information
+            Request Your Buyer Experience
           </a>
-
         </div>
-
       </section>
-
     </main>
   );
 }
