@@ -10,7 +10,7 @@ export default function Home() {
             <a href="/" className="border-b border-[#c8a063] pb-1">Home</a>
             <a href="/regions" className="hover:text-white/70 transition">Regions</a>
             <a href="/services" className="hover:text-white/70 transition">Services</a>
-            <a href="/guides/buying-process" className="hover:text-white/70 transition">Buying Process</a>
+            <a href="/guides/buying-property-spain" className="hover:text-white/70 transition">Guides</a>
             <a href="/about-us" className="hover:text-white/70 transition">About</a>
             <a href="/contact" className="hover:text-white/70 transition">Contact</a>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Beyond property, we help clients build meaningful connections by introducing them to trusted local professionals and a carefully curated community of like-minded international buyers and future residents.
+                Many buyers focus only on the property itself. We focus on the complete picture — location, legal certainty, ownership costs, financing options, community regulations and long-term lifestyle considerations.
               </p>
             </div>
           </div>
@@ -249,46 +249,108 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BUYER EXCURSION FEATURE */}
+      {/* GUIDES & INSIGHTS */}
       <section className="px-8 pb-32">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#e9dfd2] shadow-sm">
-          <div className="grid items-center gap-0 lg:grid-cols-2">
-            <div className="p-14 lg:p-20">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Buyer Excursion
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-14 max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Guides & Insights
+            </p>
+
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Practical insights before buying property in Spain.
+            </h2>
+
+            <p className="mt-6 text-lg leading-relaxed text-stone-600">
+              Clear guidance for international buyers who want to understand the legal,
+              financial, tax and practical realities before making a property decision.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <a
+              href="/guides/buying-property-spain"
+              className="rounded-[32px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                Buying in Spain
               </p>
 
-              <h2 className="mt-6 font-serif text-6xl leading-[1] text-[#1e2a3a]">
-                More than a viewing trip.
-              </h2>
+              <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                Buying Property in Spain
+              </h3>
 
-              <p className="mt-8 text-xl leading-relaxed text-stone-700">
-                Our Buyer Excursion is designed for international buyers who want legal clarity, lifestyle insight and trusted introductions before making an important property decision abroad.
+              <p className="mt-5 leading-relaxed text-stone-600">
+                A complete guide to legal checks, taxes, mortgages and purchase costs.
               </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Over several carefully curated days, you explore the regions, communities and lifestyle environments that best match your interests, long-term goals and stage of life.
+              <span className="mt-8 inline-block text-sm uppercase tracking-[0.25em]">
+                Read guide →
+              </span>
+            </a>
+
+            <a
+              href="/guides/common-mistakes-buying-property-spain"
+              className="rounded-[32px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                Buyer Mistakes
               </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Along the way, you can meet independent lawyers, tax advisors and trusted professionals who explain the legal, financial and practical realities of purchasing property in Spain.
+              <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                Common Mistakes Buyers Make
+              </h3>
+
+              <p className="mt-5 leading-relaxed text-stone-600">
+                The most common mistakes international buyers make before and during purchase.
               </p>
 
-              <a
-                href="/services/discovery-trips"
-                className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-white transition hover:bg-[#15202d]"
-              >
-                Explore the Buyer Excursion
-              </a>
-            </div>
+              <span className="mt-8 inline-block text-sm uppercase tracking-[0.25em]">
+                Read guide →
+              </span>
+            </a>
 
-            <div className="relative h-full min-h-[560px]">
-              <img
-                src="/images/purchase-card.png"
-                alt="Buyer Excursion Costa Blanca"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
+            <a
+              href="/guides/homeowners-association-spain"
+              className="rounded-[32px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                Community Rules
+              </p>
+
+              <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                Homeowners Associations in Spain
+              </h3>
+
+              <p className="mt-5 leading-relaxed text-stone-600">
+                Understand community fees, rental restrictions, meeting minutes and owner obligations.
+              </p>
+
+              <span className="mt-8 inline-block text-sm uppercase tracking-[0.25em]">
+                Read guide →
+              </span>
+            </a>
+
+            <a
+              href="/guides/dutch-tax-second-home-spain"
+              className="rounded-[32px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                Dutch Tax Rules
+              </p>
+
+              <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                Dutch Tax Rules for a Second Home
+              </h3>
+
+              <p className="mt-5 leading-relaxed text-stone-600">
+                What Dutch residents should know about Box 3, Spanish taxes and foreign property.
+              </p>
+
+              <span className="mt-8 inline-block text-sm uppercase tracking-[0.25em]">
+                Read guide →
+              </span>
+            </a>
           </div>
         </div>
       </section>
