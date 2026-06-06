@@ -15,12 +15,32 @@ export default function Home() {
             <a href="/contact" className="hover:text-white/70 transition">Contact</a>
           </div>
 
-          <a
-            href="/contact"
-            className="rounded-full bg-[#c8a063] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-          >
-            Schedule an introduction
-          </a>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <a
+                href="/nl"
+                aria-label="Nederlandse versie"
+                className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
+              >
+                NL
+              </a>
+
+              <a
+                href="/de"
+                aria-label="Deutsche Version"
+                className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
+              >
+                DE
+              </a>
+            </div>
+
+            <a
+              href="/contact"
+              className="rounded-full bg-[#c8a063] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+            >
+              Schedule an introduction
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -115,7 +135,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-3">
             <a
-              href="/services/area-match"
+              href="/relocation-assessment"
               className="group overflow-hidden rounded-[36px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <img
@@ -229,11 +249,11 @@ export default function Home() {
 
           <div className="mt-14 grid gap-8 md:grid-cols-5">
             {[
-              ["01", "Area Match", "We identify which Costa Blanca regions may fit your lifestyle and priorities."],
-              ["02", "Introduction Call", "We discuss your plans in English, Dutch, German, Spanish or Swedish."],
-              ["03", "Buyer Excursion", "You experience the regions, professionals and lifestyle in person."],
-              ["04", "Acquisition", "We guide the purchase with independent legal and financial professionals."],
-              ["05", "Soft Landing", "You settle in with support and can become part of Nordic Circle Community."],
+              ["01", "Area Match Assessment", "Complete our lifestyle-based assessment so we understand your goals, preferences, budget and relocation priorities."],
+              ["02", "Intelligence Report", "Receive personalised area insights showing which locations best fit your lifestyle and which areas may be less suitable."],
+              ["03", "Discovery Tour", "Experience selected areas in person, meet trusted professionals and validate your location choice before committing."],
+              ["04", "Property Search", "Once the right area is clear, we help focus the property search around homes that actually match your profile."],
+              ["05", "Soft Landing", "After purchase, we support your practical move and introduce you to Nordic Circle Community."],
             ].map(([number, title, text]) => (
               <div key={number} className="border-l border-[#c8a063]/30 pl-5">
                 <p className="text-sm tracking-[0.25em] text-[#c8a063]">{number}</p>
@@ -375,7 +395,7 @@ export default function Home() {
           </p>
 
           <a
-            href="/services/after-care"
+            href="/guides/nordic-cycle-community"
             className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
           >
             Find out more about Nordic Circle Community
