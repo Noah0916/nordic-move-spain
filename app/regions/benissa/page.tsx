@@ -1,211 +1,204 @@
 export const metadata = {
-  title: "Living in Jávea | Buy Property in Jávea Costa Blanca North",
+  title: "Living in Benissa | Buy Property in Benissa Costa Blanca North",
   description:
-    "Discover whether Jávea is the right area to buy property on Costa Blanca North. A guide for Dutch, German, Swiss and international buyers comparing lifestyle, villas, old town, port, Arenal, restaurants, coves, retirees and long-term suitability.",
+    "Discover whether Benissa is the right area to buy property on Costa Blanca North. A guide for Dutch, German, Swiss and international buyers comparing lifestyle, villas, countryside, coastal coves, restaurants, activities, retirees and long-term suitability.",
 };
 
-export default function JaveaPage() {
+export default function BenissaPage() {
   const lifestylePoints = [
-    "One of the most complete lifestyle towns on Costa Blanca North",
-    "Strong appeal for retirees, second-home buyers and year-round residents",
-    "Three distinct lifestyle zones: old town, port and Arenal",
-    "Excellent mix of restaurants, beaches, coves, walks and services",
-    "More active and social than Moraira or Benissa",
-    "Best suited to buyers who want variety, convenience and international life",
+    "Authentic Spanish town with historic charm and local rhythm",
+    "Strong choice for buyers who want space, privacy and nature",
+    "Coastal coves, cliffs and ecological walking routes",
+    "Good base between Moraira, Calpe, Jávea and the inland valleys",
+    "Attractive for villa buyers who prefer a quieter residential setting",
+    "Best suited to buyers who value understated quality over resort energy",
   ];
 
   const buyerProfiles = [
     {
-      title: "Retirees who want activity and services",
+      title: "Privacy seekers",
       text:
-        "Jávea can suit retirees who want more than a quiet villa area. It offers restaurants, shops, healthcare access, walking areas, social life and a stronger year-round rhythm than smaller towns.",
+        "Benissa can suit buyers who want detached homes, space around them, open views and a quieter residential environment without being disconnected from the coast.",
     },
     {
-      title: "Second-home buyers",
+      title: "Retirees who value calm",
       text:
-        "The area works well for buyers who want a flexible base with beaches, coves, restaurants, water sports, family visits and enough variety to enjoy different seasons.",
+        "For retirees, Benissa can offer a slower lifestyle, authentic surroundings and access to nearby coastal towns, while avoiding the density of larger resorts.",
     },
     {
-      title: "Villa and apartment buyers",
+      title: "Villa and countryside buyers",
       text:
-        "Jávea offers a broad property mix, from apartments near Arenal or the port to villas in residential zones such as Tosalet, Balcón al Mar, Cap Martí and Montgó.",
+        "The area is attractive for buyers looking for villas, rustic properties, hillside homes and residential zones with more land or privacy than many coastal towns offer.",
     },
     {
-      title: "International buyers seeking community",
+      title: "Discerning international buyers",
       text:
-        "Dutch, German, Swiss, Belgian, British, Scandinavian and other international buyers often choose Jávea because it feels established, social and practical for long-term living.",
+        "Dutch, German, Swiss, Belgian, British and Scandinavian buyers may choose Benissa when they want Costa Blanca North access with more authenticity and space.",
     },
   ];
 
   const zones = [
     {
-      title: "Jávea Old Town",
+      title: "Benissa Pueblo",
       text:
-        "The historic centre offers traditional streets, local services, restaurants, markets and a more Spanish year-round rhythm. It suits buyers who value authenticity and daily convenience.",
+        "The historic inland town offers local life, traditional streets, services and a more authentic Spanish rhythm. It suits buyers who want community, heritage and year-round daily life.",
     },
     {
-      title: "Jávea Port",
+      title: "Benissa Costa",
       text:
-        "The port area combines sea views, restaurants, shops, fishing harbour atmosphere and a more elegant coastal rhythm. It can suit buyers who want walkability, maritime life, apartments and a relaxed year-round atmosphere. It suits buyers who want coastal convenience without being directly on the Arenal beach.",
+        "The coastal side of Benissa is where many international buyers look for villas, sea views, coves and access towards Moraira and Calpe.",
     },
     {
-      title: "Arenal",
+      title: "La Fustera",
       text:
-        "Arenal is the most obvious beach and restaurant zone in Jávea. It can suit buyers who want walkability, apartments, beach life, restaurants and more energy.",
+        "One of the best-known coastal areas, close to the beach, restaurants and the ecological walk. It can suit buyers who want coastal access without a large resort feeling.",
     },
     {
-      title: "Montgó",
+      title: "Les Bassetes",
       text:
-        "The Montgó area is popular with buyers who want space, villas, mountain views and a more residential setting. Buyers should check orientation, road access and winter sunlight.",
+        "A small marina and coastal area between Benissa and Calpe, attractive for sea views, water sports, dining and a more polished coastal lifestyle.",
     },
     {
-      title: "Tosalet and Cap Martí",
+      title: "Cala Baladrar and Cala Advocat",
       text:
-        "Established residential villa areas that can suit buyers looking for privacy, gardens and good access to Arenal, the port and surrounding services.",
+        "Quiet coastal zones with coves, beach bars and residential properties nearby. These areas can suit buyers who want a relaxed sea-side routine.",
     },
     {
-      title: "Balcón al Mar and Portitxol",
+      title: "Montemar and Buenavista",
       text:
-        "Coastal residential areas with sea views, cliffs, coves and a more dramatic landscape. Buyers should consider driving distances, access roads and maintenance carefully.",
+        "Residential villa areas often considered by international buyers looking for space, privacy and access towards both Moraira and Calpe.",
     },
   ];
 
   const propertyTypes = [
     {
-      title: "Apartments near Arenal or the port",
-      text:
-        "Useful for buyers who want walkability, lower maintenance, beach access and a more practical lock-up-and-leave lifestyle.",
-    },
-    {
       title: "Detached villas",
       text:
-        "Common in residential areas such as Tosalet, Cap Martí, Montgó and Balcón al Mar. Villas can offer privacy and outdoor living, but require maintenance and local support.",
+        "The most common choice for international buyers in Benissa Costa. Villas can offer privacy, pools, gardens and views, but also require maintenance and local support.",
     },
     {
       title: "Sea-view homes",
       text:
-        "Highly desirable in areas closer to the cliffs, coves and elevated residential zones. Buyers should check access, orientation, stairs, wind and renovation quality.",
+        "Highly attractive, especially around coastal and hillside areas. Buyers should check orientation, access roads, stairs, wind exposure and winter sunlight.",
     },
     {
-      title: "Townhouses and old-town homes",
+      title: "Country houses and fincas",
       text:
-        "A different lifestyle option for buyers who value historic streets, local life, walkability and a more Spanish daily rhythm.",
+        "Useful for buyers who want land, privacy and a more rural Mediterranean atmosphere. Legal checks, utilities, access and maintenance are especially important.",
+    },
+    {
+      title: "Townhouses and village homes",
+      text:
+        "A different lifestyle option for buyers who prefer authenticity, walkability and local Spanish life over a villa-focused coastal setting.",
     },
   ];
 
   const restaurants = [
     {
-      title: "La Siesta Jávea",
-      label: "Beachfront dining",
+      title: "Coral Beach Les Bassetes",
+      label: "Marina dining",
       text:
-        "A relaxed beachfront option near the Montañar side, popular for cocktails, lunches, sea views and a beach-club atmosphere. It can suit buyers who like a casual coastal lifestyle.",
+        "Located at the Les Bassetes marina, Coral Beach Les Bassetes is a strong example of Benissa’s more polished coastal dining, with seafood, rice dishes and a Mediterranean marina setting.",
       bestFor:
-        "Best for beach atmosphere, cocktails, lunches and relaxed sea-facing dining.",
+        "Best for marina atmosphere, seafood, rice dishes and a refined coastal lunch or dinner.",
     },
     {
-      title: "La Perla de Jávea",
-      label: "Arenal beach dining",
+      title: "Oceana Club",
+      label: "Sea-view dining",
       text:
-        "A family restaurant directly on Arenal beach, known for Mediterranean dishes, rice, fish and grilled meats. It is a useful example of Jávea’s easy beachside dining lifestyle.",
+        "Oceana Club is known for a panoramic Mediterranean setting close to the water. It can appeal to buyers who value relaxed coastal dining, cocktails and views.",
       bestFor:
-        "Best for Arenal beach views, rice dishes, seafood and classic Mediterranean dining.",
+        "Best for sea views, relaxed dining, cocktails and a more social coastal atmosphere.",
     },
     {
-      title: "Cala Clémence",
-      label: "Seafront cove restaurant",
+      title: "Casa Bernardi",
+      label: "Fine dining",
       text:
-        "A Mediterranean restaurant in a seafront setting surrounded by the sea and nature. It reflects the more scenic, cove-focused side of Jávea’s lifestyle.",
+        "Casa Bernardi brings a more refined gastronomic option to Benissa, surrounded by Mediterranean landscape. It shows that Benissa is not only rural and quiet, but also part of the wider Marina Alta food scene.",
       bestFor:
-        "Best for cove atmosphere, Mediterranean food and a more scenic coastal setting.",
+        "Best for special occasions, fine dining and buyers who appreciate high-quality gastronomy.",
     },
     {
-      title: "Posidonia Jávea",
-      label: "Arenal lifestyle dining",
+      title: "Xiringuito Olalà",
+      label: "Beach-bar atmosphere",
       text:
-        "A polished restaurant option near Arenal, useful for buyers who want a more contemporary dining scene with beach life nearby.",
+        "A more casual beach-bar style option near the coast, useful for buyers who enjoy relaxed lunches, drinks and a simple sea-side rhythm during warmer months.",
       bestFor:
-        "Best for modern dining, Arenal atmosphere and an easy evening out.",
+        "Best for casual coastal days, drinks, tapas and summer atmosphere.",
     },
   ];
 
   const activities = [
     {
-      title: "Arenal beach and promenade",
+      title: "Benissa Ecological Walk",
       text:
-        "Arenal is Jávea’s most accessible beach lifestyle area, with restaurants, cafés, family activity and a more social rhythm.",
+        "The ecological walk follows sections of Benissa’s coastline, connecting coves, cliffs and viewpoints. It is one of the strongest lifestyle features for buyers who enjoy walking by the sea.",
     },
     {
-      title: "Jávea Port",
+      title: "La Fustera Beach",
       text:
-        "The port offers restaurants, shops, sea views, fishing harbour atmosphere and a more year-round coastal feeling than some holiday-focused zones.",
+        "La Fustera is one of the most accessible beaches in Benissa, with turquoise water, a relaxed atmosphere and access to the coastal path.",
     },
     {
-      title: "Granadella and Portitxol coves",
+      title: "Cala Baladrar",
       text:
-        "Granadella and Portitxol are among Jávea’s best-known coves, attractive for swimming, views, kayaking, snorkelling and dramatic coastal scenery.",
+        "A quiet cove with crystal-clear water and a more natural feeling. It suits buyers who prefer small coves over long urban beaches.",
     },
     {
-      title: "Montgó natural area",
+      title: "Les Bassetes marina",
       text:
-        "The Montgó landscape gives Jávea a strong natural identity, with mountain views, walking routes and residential areas that feel different from the beach zones.",
+        "Les Bassetes is useful for buyers who enjoy water sports, marina life, sea views and coastal dining without the intensity of a larger port town.",
     },
     {
-      title: "Old town markets and local life",
+      title: "Historic old town",
       text:
-        "The old town gives Jávea more depth than a simple beach destination, with local services, traditional streets, markets and a more Spanish daily rhythm.",
+        "Benissa’s old town has one of the better-preserved historic centres in the area, with traditional streets, heritage buildings and a more local Spanish atmosphere.",
     },
     {
-      title: "Restaurants and international social life",
+      title: "Sierra de Bèrnia",
       text:
-        "Dining, cafés, beach clubs and international groups are part of why many buyers find Jávea easier to settle into than quieter villa areas.",
+        "The Bèrnia mountain area adds a dramatic inland landscape, walking routes and open views. It is part of what makes Benissa feel more varied than a simple beach destination.",
     },
   ];
-
-  const confidenceChecks = [
+    const confidenceChecks = [
     {
-      title: "Different zones, different lifestyles",
+      title: "Coast or countryside",
       text:
-        "Arenal, the port, the old town, Montgó and Balcón al Mar all feel different. Buyers should choose the zone before falling in love with a property.",
-    },
-    {
-      title: "Summer activity",
-      text:
-        "Jávea can be much busier in summer, especially around Arenal and popular coves. Some buyers enjoy this energy; others may prefer quieter areas.",
+        "Benissa changes strongly depending on location. A coastal villa, a countryside finca and a village home offer very different daily lives.",
     },
     {
       title: "Car dependency",
       text:
-        "Some parts of Jávea are walkable, but many villa zones require a car. This matters for retirees, part-time residents and buyers thinking long term.",
+        "Most Benissa buyers need a car. This is especially important for retirees or part-time residents who want easy access to shops, restaurants and healthcare.",
     },
     {
-      title: "Villa maintenance",
+      title: "Access roads",
       text:
-        "Pools, gardens, terraces, security, humidity and exterior maintenance all need planning, especially if the property is used part-time.",
+        "Some villas and rural homes have narrow roads, slopes or longer access routes. These should be checked carefully before buying.",
     },
     {
-      title: "Access and terrain",
+      title: "Maintenance",
       text:
-        "Some attractive areas involve hills, stairs, narrow roads or longer drives. Buyers should test daily routes, not only the view.",
+        "Larger villas, pools, gardens, terraces and rural properties need regular maintenance. Part-time owners should plan reliable local support.",
     },
     {
-      title: "Rental and community rules",
+      title: "Legal checks",
       text:
-        "Apartments and communities may have rules on rentals, maintenance, fees and shared facilities. These should be reviewed before purchase.",
+        "For villas, fincas and renovated homes, buyers should verify building legality, extensions, licences, utilities and registered property details.",
+    },
+    {
+      title: "Lifestyle fit",
+      text:
+        "Benissa is quieter than Jávea, Calpe or Dénia. For some buyers this is ideal. Others may prefer more restaurants, shops and activity within walking distance.",
     },
   ];
 
   const relatedGuides = [
     {
-      href: "/guides/moraira-vs-javea",
-      title: "Moraira vs Jávea",
-      text:
-        "Compare Jávea’s active, varied lifestyle with Moraira’s calmer and more polished villa-focused setting.",
-    },
-    {
       href: "/guides/best-areas-costa-blanca-north-retirees",
       title: "Best Areas on Costa Blanca North for Retirees",
       text:
-        "Compare Jávea with Moraira, Dénia, Altea, Benissa and Calpe from a retiree perspective.",
+        "Compare Benissa with Moraira, Jávea, Dénia, Altea and Calpe from a retiree perspective.",
     },
     {
       href: "/guides/where-to-buy-property-costa-blanca-north",
@@ -213,36 +206,54 @@ export default function JaveaPage() {
       text:
         "Compare the main Costa Blanca North towns before choosing where to buy.",
     },
+    {
+      href: "/regions/moraira",
+      title: "Moraira Area Guide",
+      text:
+        "Compare Benissa’s space and authenticity with Moraira’s polished coastal villa lifestyle.",
+    },
   ];
 
   const officialSources = [
     {
-      label: "Xàbia Tourism",
-      href: "https://en.xabia.org/",
+      label: "Benissa Tourism",
+      href: "https://www.benissa.es/en/",
     },
     {
-      label: "Xàbia beaches and coves",
-      href: "https://en.xabia.org/ver/1004/Beaches-and-coves.html",
+      label: "Benissa Ecological Walk",
+      href: "https://www.benissa.es/en/benissanatursport/paseo-ecologico/",
     },
     {
-      label: "Arenal Beach — Xàbia Tourism",
-      href: "https://en.xabia.org/ver/1437/El-Arenal.html",
+      label: "Benissa coves and beaches",
+      href: "https://www.benissa.es/en/calas-y-playas/",
     },
     {
-      label: "Cove access information — Xàbia Tourism",
-      href: "https://en.xabia.org/ver/7375/PLATGES-SEGURES.html",
+      label: "La Fustera Beach",
+      href: "https://www.benissa.es/en/playas/playa-la-fustera/",
     },
     {
-      label: "La Siesta Jávea",
-      href: "https://siestajavea.com/",
+      label: "Cala Baladrar",
+      href: "https://www.benissa.es/en/playas/cala-baladrar/",
     },
     {
-      label: "La Perla de Jávea",
-      href: "https://www.laperladejavea.com/en/",
+      label: "Benissa historic centre",
+      href: "https://www.benissa.es/en/que-hacer/escapate-al-medievo/",
     },
     {
-      label: "Cala Clémence",
-      href: "https://calaclemence.com/?page_id=625",
+      label: "Benissa on Spain.info",
+      href: "https://www.spain.info/en/destination/benissa/",
+    },
+    {
+      label: "Coral Beach Les Bassetes",
+      href: "https://www.restbassetes.com/",
+    },
+    {
+      label: "Oceana Club",
+      href: "https://www.oceanacostablanca.com/",
+    },
+    {
+      label: "Casa Bernardi",
+      href: "https://casabernardi.es/en/",
     },
   ];
 
@@ -307,8 +318,8 @@ export default function JaveaPage() {
       {/* HERO */}
       <section className="relative flex min-h-[85vh] items-center overflow-hidden pt-32">
         <img
-          src="/images/javea.jpg"
-          alt="Jávea Costa Blanca North property area guide"
+          src="/images/benissa.jpg"
+          alt="Benissa Costa Blanca North property area guide"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -321,13 +332,12 @@ export default function JaveaPage() {
             </p>
 
             <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] md:text-7xl">
-              Living in Jávea.
+              Living in Benissa.
             </h1>
 
             <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)]">
-              A complete Costa Blanca North lifestyle town with beaches, coves,
-              restaurants, villa areas, a historic old town and an established
-              international community.
+              Authentic Spanish charm, countryside living, hidden coastal coves
+              and spacious villa areas between Moraira and Calpe.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -339,7 +349,7 @@ export default function JaveaPage() {
               </a>
 
               <a
-                href="/guides/moraira-vs-javea"
+                href="/regions/moraira"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
                 Compare with Moraira
@@ -354,34 +364,36 @@ export default function JaveaPage() {
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Is Jávea right for you?
+              Is Benissa right for you?
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea is for buyers who want variety, convenience and a stronger
-              international lifestyle.
+              Benissa is for buyers who want space, privacy and a more local
+              Spanish rhythm.
             </h2>
           </div>
 
           <div className="text-lg leading-relaxed text-stone-600">
             <p>
-              Jávea, also known as Xàbia, is one of the most complete lifestyle
-              towns on Costa Blanca North. It offers a rare combination of
-              beaches, coves, restaurants, villa areas, a historic old town, a
-              working port and a strong international community.
+              Benissa is one of the most interesting areas on Costa Blanca North
+              for buyers who do not want to choose between countryside and
+              coast. The municipality stretches from a historic inland town
+              towards a beautiful coastline with coves, cliffs and Mediterranean
+              walking routes.
             </p>
 
             <p className="mt-6">
-              Compared with Moraira, Jávea usually feels larger, more active and
-              more varied. Compared with Benissa, it offers more restaurants,
-              beach life and social activity. For many international buyers,
-              this makes Jávea easier to settle into year-round.
+              Compared with more famous coastal towns, Benissa feels quieter,
+              more residential and more authentic. It is less about beach
+              boulevards and nightlife, and more about villas, privacy, nature,
+              old-town charm and practical access to nearby Moraira, Calpe and
+              Jávea.
             </p>
 
             <p className="mt-6">
-              The key is choosing the right zone. Living near Arenal, the port,
-              the old town, Montgó or Balcón al Mar can create very different
-              daily lives.
+              For the right buyer, Benissa can offer excellent long-term value:
+              more space, a calmer atmosphere and a lifestyle that feels
+              connected to real local life instead of only tourism.
             </p>
           </div>
         </div>
@@ -395,14 +407,14 @@ export default function JaveaPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Jávea is best for buyers who want beach life, restaurants, services,
-            international community and lifestyle variety.
+            Benissa is best for buyers who want authenticity, privacy, coastal
+            coves and countryside character.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-            Jávea is not the quietest option on Costa Blanca North, especially
-            in summer. But for buyers who want more activity, better year-round
-            life, a wider property choice and stronger social possibilities,
+            Benissa is usually not the most obvious choice for first-time
+            buyers, because it is more spread out than Moraira, Calpe or Dénia.
+            But for buyers who want space, calm, nature and understated quality,
             that is exactly its strength.
           </p>
 
@@ -425,15 +437,15 @@ export default function JaveaPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea has one of the strongest restaurant scenes on Costa Blanca
-              North.
+              Benissa’s food scene is quieter than Moraira’s, but it has real
+              quality.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              For many buyers, Jávea’s lifestyle appeal is strongly connected to
-              food, terraces, beach restaurants, cafés and social life. The
-              choice is broader than in smaller towns, with options around
-              Arenal, the port, Montañar and the coves.
+              Benissa is not a large restaurant town in the same way as Dénia or
+              Jávea. Its appeal is more discreet: marina dining at Les Bassetes,
+              beach-bar lunches near the coves, countryside restaurants and
+              special-occasion gastronomy.
             </p>
 
             <p className="mt-5 text-sm leading-relaxed text-stone-500">
@@ -471,8 +483,7 @@ export default function JaveaPage() {
           </div>
         </div>
       </section>
-
-      {/* ACTIVITIES */}
+            {/* ACTIVITIES */}
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -480,15 +491,15 @@ export default function JaveaPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Jávea suits buyers who want beaches, coves, restaurants, walking
-            routes and a more active daily rhythm.
+            Benissa suits buyers who enjoy nature, coves, heritage and a slower
+            Mediterranean rhythm.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Jávea is more varied than many smaller towns. You can live close to
-            beach activity, near the port, in the old town, below Montgó or in a
-            quieter villa zone. This variety is attractive, but it also means
-            that choosing the right area is very important.
+            Benissa is not built around one promenade or one beach. Its lifestyle
+            is spread across the old town, countryside, villa areas, coastal
+            coves and nearby towns. That makes it more varied, but also more car
+            dependent.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -519,7 +530,7 @@ export default function JaveaPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Who Jávea suits best.
+              Who Benissa suits best.
             </h2>
           </div>
 
@@ -550,13 +561,13 @@ export default function JaveaPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            The right part of Jávea matters as much as the property itself.
+            Choosing the right part of Benissa is essential.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Jávea is not one single lifestyle. A home near Arenal, a villa in
-            Montgó, an apartment near the port or a sea-view property around
-            Balcón al Mar can all feel completely different in daily life.
+            Benissa is not one single lifestyle. A home in Benissa Pueblo, a
+            villa near La Fustera, a property around Les Bassetes or a rural
+            finca inland can all create a completely different daily experience.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -584,15 +595,14 @@ export default function JaveaPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea offers one of the broadest property choices on Costa Blanca
-              North.
+              Benissa is strongest for villas, fincas, privacy and mixed
+              coast-countryside living.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-600">
-              Buyers can choose between apartments near beach life, villas in
-              established residential areas, old-town homes and sea-view
-              properties near the coves. The right property type depends heavily
-              on how you want to live day to day.
+              Buyers choosing Benissa often want more space and a calmer rhythm.
+              The key is to understand whether coastal Benissa, inland Benissa
+              or village life fits your daily needs.
             </p>
           </div>
 
@@ -623,28 +633,30 @@ export default function JaveaPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
-            Jávea can be excellent for retirees who want services, restaurants,
-            social life and variety.
+            Benissa can suit retirees who want calm, space and authenticity —
+            but the exact location matters.
           </h2>
 
           <div className="mt-10 max-w-5xl text-lg leading-relaxed text-white/80">
             <p>
-              For retirees, Jávea has clear strengths: more year-round life,
-              restaurants, shops, healthcare access, walking routes, beach areas
-              and an established international community.
+              For retirees, Benissa can be attractive because it offers a calmer
+              lifestyle, more privacy and access to both coast and countryside.
+              It can feel less busy and less tourist-driven than larger towns.
             </p>
 
             <p className="mt-6">
-              The practical question is choosing the right zone. Some parts of
-              Jávea are walkable and convenient, while many villa areas require
-              a car. Hills, stairs, parking, summer crowds and distance to
-              services should all be considered carefully.
+              The practical question is daily convenience. Some homes require a
+              car for almost everything. Some rural or hillside properties may be
+              beautiful but less practical in later years. Buyers should think
+              carefully about driving, healthcare access, stairs, garden
+              maintenance and proximity to services.
             </p>
 
             <p className="mt-6">
-              For retirees who want more energy than Moraira or Benissa, Jávea
-              can be one of the strongest options on Costa Blanca North. For
-              buyers who want maximum quiet, a smaller area may be more suitable.
+              For the right buyer, Benissa can offer a very satisfying long-term
+              base. But it is not a one-size-fits-all retiree area. Coastal
+              access, road quality and daily routine should be checked before
+              choosing a property.
             </p>
           </div>
 
@@ -675,11 +687,11 @@ export default function JaveaPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              What to understand before buying in Jávea.
+              What to understand before buying in Benissa.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              These checks are not reasons to avoid Jávea. They are part of a
+              These checks are not reasons to avoid Benissa. They are part of a
               well-prepared buying decision.
             </p>
           </div>
@@ -715,17 +727,17 @@ export default function JaveaPage() {
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Moraira?
+              Benissa or Moraira?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Moraira is calmer and more polished. Jávea is larger, more active
-              and offers more lifestyle variety.
+              Moraira usually feels more polished and coastal, while Benissa can
+              offer more space, countryside character and privacy.
             </p>
           </a>
 
           <a
-            href="/regions/denia"
+            href="/regions/calpe"
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
@@ -733,30 +745,30 @@ export default function JaveaPage() {
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Dénia?
+              Benissa or Calpe?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Dénia may feel more urban and practical. Jávea often feels more
-              scenic, coastal and lifestyle-led.
+              Calpe offers more beach activity, apartments and services. Benissa
+              feels quieter, more residential and more spread out.
             </p>
           </a>
 
           <a
-            href="/regions/benissa"
+            href="/regions/javea"
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare privacy
+              Compare lifestyle
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Benissa?
+              Benissa or Jávea?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Benissa is quieter and more understated. Jávea offers more
-              activity, restaurants and international social life.
+              Jávea is larger and more social. Benissa is calmer and better for
+              buyers who prefer privacy, nature and understatement.
             </p>
           </a>
         </div>
@@ -770,7 +782,7 @@ export default function JaveaPage() {
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Continue your Jávea research.
+            Continue your Benissa research.
           </h2>
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -797,16 +809,16 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Not sure if Jávea fits you?
+            Not sure if Benissa fits you?
           </p>
 
           <h2 className="mt-6 max-w-5xl font-serif text-6xl leading-tight">
-            Compare Jávea with your lifestyle before choosing a property.
+            Compare Benissa with your lifestyle before choosing a property.
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Our Area Match Assessment helps you understand whether Jávea,
-            Moraira, Dénia, Altea, Benissa or Calpe best fits your priorities,
+            Our Area Match Assessment helps you understand whether Benissa,
+            Moraira, Jávea, Dénia, Altea or Calpe best fits your priorities,
             budget, lifestyle and long-term plans.
           </p>
 

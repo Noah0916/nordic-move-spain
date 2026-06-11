@@ -1,235 +1,235 @@
 export const metadata = {
-  title: "Living in Jávea | Buy Property in Jávea Costa Blanca North",
+  title: "Leben in Jávea | Immobilie kaufen in Jávea Costa Blanca Nord",
   description:
-    "Discover whether Jávea is the right area to buy property on Costa Blanca North. A guide for Dutch, German, Swiss and international buyers comparing lifestyle, villas, old town, port, Arenal, restaurants, coves, retirees and long-term suitability.",
+    "Entdecken Sie, ob Jávea die richtige Gegend ist, um eine Immobilie an der nördlichen Costa Blanca zu kaufen. Ein Leitfaden für niederländische, deutsche, schweizerische und internationale Käufer, die Lebensstil, Villen, Altstadt, Hafen, Arenal, Restaurants, Buchten, Ruhestand und langfristige Eignung vergleichen.",
 };
 
 export default function JaveaPage() {
   const lifestylePoints = [
-    "One of the most complete lifestyle towns on Costa Blanca North",
-    "Strong appeal for retirees, second-home buyers and year-round residents",
-    "Three distinct lifestyle zones: old town, port and Arenal",
-    "Excellent mix of restaurants, beaches, coves, walks and services",
-    "More active and social than Moraira or Benissa",
-    "Best suited to buyers who want variety, convenience and international life",
+    "Eine der vollständigsten Lifestyle-Städte an der nördlichen Costa Blanca",
+    "Sehr attraktiv für Ruheständler, Zweitwohnsitzkäufer und ganzjährige Bewohner",
+    "Drei unterschiedliche Lebensbereiche: Altstadt, Hafen und Arenal",
+    "Ausgezeichnete Mischung aus Restaurants, Stränden, Buchten, Spazierwegen und Dienstleistungen",
+    "Aktiver und sozialer als Moraira oder Benissa",
+    "Am besten geeignet für Käufer, die Vielfalt, Komfort und internationales Leben suchen",
   ];
 
   const buyerProfiles = [
     {
-      title: "Retirees who want activity and services",
+      title: "Ruheständler, die Aktivität und Dienstleistungen wünschen",
       text:
-        "Jávea can suit retirees who want more than a quiet villa area. It offers restaurants, shops, healthcare access, walking areas, social life and a stronger year-round rhythm than smaller towns.",
+        "Jávea kann gut zu Ruheständlern passen, die mehr als eine ruhige Villengegend suchen. Die Stadt bietet Restaurants, Geschäfte, Zugang zur Gesundheitsversorgung, Spazierbereiche, soziales Leben und einen stärkeren ganzjährigen Rhythmus als kleinere Orte.",
     },
     {
-      title: "Second-home buyers",
+      title: "Zweitwohnsitzkäufer",
       text:
-        "The area works well for buyers who want a flexible base with beaches, coves, restaurants, water sports, family visits and enough variety to enjoy different seasons.",
+        "Die Gegend eignet sich gut für Käufer, die eine flexible Basis mit Stränden, Buchten, Restaurants, Wassersport, Familienbesuchen und genügend Abwechslung für verschiedene Jahreszeiten suchen.",
     },
     {
-      title: "Villa and apartment buyers",
+      title: "Käufer von Villen und Apartments",
       text:
-        "Jávea offers a broad property mix, from apartments near Arenal or the port to villas in residential zones such as Tosalet, Balcón al Mar, Cap Martí and Montgó.",
+        "Jávea bietet eine breite Immobilienauswahl, von Apartments in der Nähe von Arenal oder dem Hafen bis hin zu Villen in Wohngebieten wie Tosalet, Balcón al Mar, Cap Martí und Montgó.",
     },
     {
-      title: "International buyers seeking community",
+      title: "Internationale Käufer, die Gemeinschaft suchen",
       text:
-        "Dutch, German, Swiss, Belgian, British, Scandinavian and other international buyers often choose Jávea because it feels established, social and practical for long-term living.",
+        "Niederländische, deutsche, schweizerische, belgische, britische, skandinavische und andere internationale Käufer wählen Jávea häufig, weil es etabliert, sozial und praktisch für ein langfristiges Leben wirkt.",
     },
   ];
 
   const zones = [
     {
-      title: "Jávea Old Town",
+      title: "Altstadt von Jávea",
       text:
-        "The historic centre offers traditional streets, local services, restaurants, markets and a more Spanish year-round rhythm. It suits buyers who value authenticity and daily convenience.",
+        "Das historische Zentrum bietet traditionelle Straßen, lokale Dienstleistungen, Restaurants, Märkte und einen spanischeren ganzjährigen Rhythmus. Es passt zu Käufern, die Authentizität und tägliche Bequemlichkeit schätzen.",
     },
     {
-      title: "Jávea Port",
+      title: "Hafen von Jávea",
       text:
-        "The port area combines sea views, restaurants, shops, fishing harbour atmosphere and a more elegant coastal rhythm. It can suit buyers who want walkability, maritime life, apartments and a relaxed year-round atmosphere. It suits buyers who want coastal convenience without being directly on the Arenal beach.",
+        "Das Hafengebiet verbindet Meerblick, Restaurants, Geschäfte, Fischereihafen-Atmosphäre und einen eleganteren Küstenrhythmus. Es kann zu Käufern passen, die fußläufige Erreichbarkeit, maritimes Leben, Apartments und eine entspannte ganzjährige Atmosphäre wünschen. Es eignet sich für Käufer, die Küstenkomfort möchten, ohne direkt am Arenal-Strand zu wohnen.",
     },
     {
       title: "Arenal",
       text:
-        "Arenal is the most obvious beach and restaurant zone in Jávea. It can suit buyers who want walkability, apartments, beach life, restaurants and more energy.",
+        "Arenal ist die offensichtlichste Strand- und Restaurantzone in Jávea. Sie kann zu Käufern passen, die fußläufige Erreichbarkeit, Apartments, Strandleben, Restaurants und mehr Energie wünschen.",
     },
     {
       title: "Montgó",
       text:
-        "The Montgó area is popular with buyers who want space, villas, mountain views and a more residential setting. Buyers should check orientation, road access and winter sunlight.",
+        "Das Montgó-Gebiet ist beliebt bei Käufern, die Platz, Villen, Bergblick und eine stärker wohnliche Umgebung suchen. Käufer sollten Ausrichtung, Straßenanbindung und Wintersonne prüfen.",
     },
     {
-      title: "Tosalet and Cap Martí",
+      title: "Tosalet und Cap Martí",
       text:
-        "Established residential villa areas that can suit buyers looking for privacy, gardens and good access to Arenal, the port and surrounding services.",
+        "Etablierte Villenwohngebiete, die zu Käufern passen können, die Privatsphäre, Gärten und guten Zugang zu Arenal, dem Hafen und umliegenden Dienstleistungen suchen.",
     },
     {
-      title: "Balcón al Mar and Portitxol",
+      title: "Balcón al Mar und Portitxol",
       text:
-        "Coastal residential areas with sea views, cliffs, coves and a more dramatic landscape. Buyers should consider driving distances, access roads and maintenance carefully.",
+        "Küstennahe Wohngebiete mit Meerblick, Klippen, Buchten und einer dramatischeren Landschaft. Käufer sollten Fahrzeiten, Zufahrtsstraßen und Instandhaltung sorgfältig berücksichtigen.",
     },
   ];
 
   const propertyTypes = [
     {
-      title: "Apartments near Arenal or the port",
+      title: "Apartments in der Nähe von Arenal oder dem Hafen",
       text:
-        "Useful for buyers who want walkability, lower maintenance, beach access and a more practical lock-up-and-leave lifestyle.",
+        "Geeignet für Käufer, die fußläufige Erreichbarkeit, geringeren Pflegeaufwand, Strandzugang und einen praktischeren Lock-up-and-leave-Lebensstil wünschen.",
     },
     {
-      title: "Detached villas",
+      title: "Freistehende Villen",
       text:
-        "Common in residential areas such as Tosalet, Cap Martí, Montgó and Balcón al Mar. Villas can offer privacy and outdoor living, but require maintenance and local support.",
+        "Häufig in Wohngebieten wie Tosalet, Cap Martí, Montgó und Balcón al Mar. Villen können Privatsphäre und Leben im Freien bieten, erfordern jedoch Instandhaltung und lokale Unterstützung.",
     },
     {
-      title: "Sea-view homes",
+      title: "Häuser mit Meerblick",
       text:
-        "Highly desirable in areas closer to the cliffs, coves and elevated residential zones. Buyers should check access, orientation, stairs, wind and renovation quality.",
+        "Sehr begehrt in Gebieten näher an Klippen, Buchten und erhöhten Wohnlagen. Käufer sollten Zugang, Ausrichtung, Treppen, Wind und Renovierungsqualität prüfen.",
     },
     {
-      title: "Townhouses and old-town homes",
+      title: "Stadthäuser und Häuser in der Altstadt",
       text:
-        "A different lifestyle option for buyers who value historic streets, local life, walkability and a more Spanish daily rhythm.",
+        "Eine andere Lebensstiloption für Käufer, die historische Straßen, lokales Leben, fußläufige Erreichbarkeit und einen spanischeren Alltagsrhythmus schätzen.",
     },
   ];
 
   const restaurants = [
     {
       title: "La Siesta Jávea",
-      label: "Beachfront dining",
+      label: "Essen direkt am Strand",
       text:
-        "A relaxed beachfront option near the Montañar side, popular for cocktails, lunches, sea views and a beach-club atmosphere. It can suit buyers who like a casual coastal lifestyle.",
+        "Eine entspannte Option direkt am Strand nahe der Montañar-Seite, beliebt für Cocktails, Mittagessen, Meerblick und Beach-Club-Atmosphäre. Sie kann gut zu Käufern passen, die einen lockeren Küstenlebensstil mögen.",
       bestFor:
-        "Best for beach atmosphere, cocktails, lunches and relaxed sea-facing dining.",
+        "Am besten für Strandatmosphäre, Cocktails, Mittagessen und entspanntes Essen mit Meerblick.",
     },
     {
       title: "La Perla de Jávea",
-      label: "Arenal beach dining",
+      label: "Essen am Arenal-Strand",
       text:
-        "A family restaurant directly on Arenal beach, known for Mediterranean dishes, rice, fish and grilled meats. It is a useful example of Jávea’s easy beachside dining lifestyle.",
+        "Ein Familienrestaurant direkt am Arenal-Strand, bekannt für mediterrane Gerichte, Reisgerichte, Fisch und gegrilltes Fleisch. Es ist ein gutes Beispiel für Jáveas unkomplizierten Strandrestaurant-Lebensstil.",
       bestFor:
-        "Best for Arenal beach views, rice dishes, seafood and classic Mediterranean dining.",
+        "Am besten für Blick auf den Arenal-Strand, Reisgerichte, Meeresfrüchte und klassische mediterrane Küche.",
     },
     {
       title: "Cala Clémence",
-      label: "Seafront cove restaurant",
+      label: "Restaurant an einer Meeresbucht",
       text:
-        "A Mediterranean restaurant in a seafront setting surrounded by the sea and nature. It reflects the more scenic, cove-focused side of Jávea’s lifestyle.",
+        "Ein mediterranes Restaurant in einer Lage direkt am Meer, umgeben von Meer und Natur. Es spiegelt die landschaftlich reizvollere, buchtenorientierte Seite des Lebensstils in Jávea wider.",
       bestFor:
-        "Best for cove atmosphere, Mediterranean food and a more scenic coastal setting.",
+        "Am besten für Buchtenatmosphäre, mediterranes Essen und eine besonders schöne Küstenlage.",
     },
     {
       title: "Posidonia Jávea",
-      label: "Arenal lifestyle dining",
+      label: "Lifestyle-Dining in Arenal",
       text:
-        "A polished restaurant option near Arenal, useful for buyers who want a more contemporary dining scene with beach life nearby.",
+        "Eine stilvolle Restaurantoption nahe Arenal, passend für Käufer, die eine zeitgemäßere Restaurantszene mit Strandleben in der Nähe wünschen.",
       bestFor:
-        "Best for modern dining, Arenal atmosphere and an easy evening out.",
+        "Am besten für modernes Essen, Arenal-Atmosphäre und einen unkomplizierten Abend außer Haus.",
     },
   ];
 
   const activities = [
     {
-      title: "Arenal beach and promenade",
+      title: "Arenal-Strand und Promenade",
       text:
-        "Arenal is Jávea’s most accessible beach lifestyle area, with restaurants, cafés, family activity and a more social rhythm.",
+        "Arenal ist Jáveas am leichtesten zugänglicher Bereich für Strandleben, mit Restaurants, Cafés, Familienaktivitäten und einem sozialeren Rhythmus.",
     },
     {
-      title: "Jávea Port",
+      title: "Hafen von Jávea",
       text:
-        "The port offers restaurants, shops, sea views, fishing harbour atmosphere and a more year-round coastal feeling than some holiday-focused zones.",
+        "Der Hafen bietet Restaurants, Geschäfte, Meerblick, Fischereihafen-Atmosphäre und ein stärker ganzjähriges Küstengefühl als manche stärker urlaubsorientierten Zonen.",
     },
     {
-      title: "Granadella and Portitxol coves",
+      title: "Buchten Granadella und Portitxol",
       text:
-        "Granadella and Portitxol are among Jávea’s best-known coves, attractive for swimming, views, kayaking, snorkelling and dramatic coastal scenery.",
+        "Granadella und Portitxol gehören zu den bekanntesten Buchten von Jávea und sind attraktiv zum Schwimmen, für Ausblicke, Kajakfahren, Schnorcheln und dramatische Küstenlandschaften.",
     },
     {
-      title: "Montgó natural area",
+      title: "Naturgebiet Montgó",
       text:
-        "The Montgó landscape gives Jávea a strong natural identity, with mountain views, walking routes and residential areas that feel different from the beach zones.",
+        "Die Montgó-Landschaft verleiht Jávea eine starke natürliche Identität, mit Bergblick, Wanderwegen und Wohngebieten, die sich anders anfühlen als die Strandzonen.",
     },
     {
-      title: "Old town markets and local life",
+      title: "Altstadtmärkte und lokales Leben",
       text:
-        "The old town gives Jávea more depth than a simple beach destination, with local services, traditional streets, markets and a more Spanish daily rhythm.",
+        "Die Altstadt gibt Jávea mehr Tiefe als ein reines Strandziel, mit lokalen Dienstleistungen, traditionellen Straßen, Märkten und einem spanischeren Alltagsrhythmus.",
     },
     {
-      title: "Restaurants and international social life",
+      title: "Restaurants und internationales soziales Leben",
       text:
-        "Dining, cafés, beach clubs and international groups are part of why many buyers find Jávea easier to settle into than quieter villa areas.",
+        "Restaurants, Cafés, Beach Clubs und internationale Gruppen sind ein Teil davon, warum viele Käufer es einfacher finden, sich in Jávea einzuleben als in ruhigeren Villengebieten.",
     },
   ];
 
   const confidenceChecks = [
     {
-      title: "Different zones, different lifestyles",
+      title: "Unterschiedliche Zonen, unterschiedliche Lebensstile",
       text:
-        "Arenal, the port, the old town, Montgó and Balcón al Mar all feel different. Buyers should choose the zone before falling in love with a property.",
+        "Arenal, der Hafen, die Altstadt, Montgó und Balcón al Mar fühlen sich alle unterschiedlich an. Käufer sollten zuerst die Zone wählen, bevor sie sich in eine Immobilie verlieben.",
     },
     {
-      title: "Summer activity",
+      title: "Sommeraktivität",
       text:
-        "Jávea can be much busier in summer, especially around Arenal and popular coves. Some buyers enjoy this energy; others may prefer quieter areas.",
+        "Jávea kann im Sommer deutlich voller werden, besonders rund um Arenal und beliebte Buchten. Manche Käufer genießen diese Energie; andere bevorzugen ruhigere Gegenden.",
     },
     {
-      title: "Car dependency",
+      title: "Abhängigkeit vom Auto",
       text:
-        "Some parts of Jávea are walkable, but many villa zones require a car. This matters for retirees, part-time residents and buyers thinking long term.",
+        "Einige Teile von Jávea sind gut zu Fuß erreichbar, viele Villenzonen erfordern jedoch ein Auto. Das ist wichtig für Ruheständler, Teilzeitbewohner und Käufer, die langfristig denken.",
     },
     {
-      title: "Villa maintenance",
+      title: "Instandhaltung von Villen",
       text:
-        "Pools, gardens, terraces, security, humidity and exterior maintenance all need planning, especially if the property is used part-time.",
+        "Pools, Gärten, Terrassen, Sicherheit, Feuchtigkeit und Außenpflege müssen alle geplant werden, besonders wenn die Immobilie nur zeitweise genutzt wird.",
     },
     {
-      title: "Access and terrain",
+      title: "Zugang und Gelände",
       text:
-        "Some attractive areas involve hills, stairs, narrow roads or longer drives. Buyers should test daily routes, not only the view.",
+        "Einige attraktive Gebiete haben Hügel, Treppen, schmale Straßen oder längere Fahrwege. Käufer sollten tägliche Wege testen, nicht nur die Aussicht.",
     },
     {
-      title: "Rental and community rules",
+      title: "Vermietungs- und Gemeinschaftsregeln",
       text:
-        "Apartments and communities may have rules on rentals, maintenance, fees and shared facilities. These should be reviewed before purchase.",
+        "Apartments und Eigentümergemeinschaften können Regeln zu Vermietung, Instandhaltung, Gebühren und gemeinschaftlichen Einrichtungen haben. Diese sollten vor dem Kauf geprüft werden.",
     },
   ];
 
   const relatedGuides = [
     {
       href: "/guides/moraira-vs-javea",
-      title: "Moraira vs Jávea",
+      title: "Moraira vs. Jávea",
       text:
-        "Compare Jávea’s active, varied lifestyle with Moraira’s calmer and more polished villa-focused setting.",
+        "Vergleichen Sie Jáveas aktiven, vielfältigen Lebensstil mit Morairas ruhigerem und eleganterem, stärker villenorientiertem Umfeld.",
     },
     {
       href: "/guides/best-areas-costa-blanca-north-retirees",
-      title: "Best Areas on Costa Blanca North for Retirees",
+      title: "Beste Gegenden an der nördlichen Costa Blanca für Ruheständler",
       text:
-        "Compare Jávea with Moraira, Dénia, Altea, Benissa and Calpe from a retiree perspective.",
+        "Vergleichen Sie Jávea mit Moraira, Dénia, Altea, Benissa und Calpe aus der Perspektive von Ruheständlern.",
     },
     {
       href: "/guides/where-to-buy-property-costa-blanca-north",
-      title: "Where to Buy Property on Costa Blanca North",
+      title: "Wo man an der nördlichen Costa Blanca eine Immobilie kaufen sollte",
       text:
-        "Compare the main Costa Blanca North towns before choosing where to buy.",
+        "Vergleichen Sie die wichtigsten Orte der nördlichen Costa Blanca, bevor Sie entscheiden, wo Sie kaufen.",
     },
   ];
 
   const officialSources = [
     {
-      label: "Xàbia Tourism",
+      label: "Xàbia Tourismus",
       href: "https://en.xabia.org/",
     },
     {
-      label: "Xàbia beaches and coves",
+      label: "Strände und Buchten in Xàbia",
       href: "https://en.xabia.org/ver/1004/Beaches-and-coves.html",
     },
     {
-      label: "Arenal Beach — Xàbia Tourism",
+      label: "Strand Arenal — Xàbia Tourismus",
       href: "https://en.xabia.org/ver/1437/El-Arenal.html",
     },
     {
-      label: "Cove access information — Xàbia Tourism",
+      label: "Informationen zum Zugang zu Buchten — Xàbia Tourismus",
       href: "https://en.xabia.org/ver/7375/PLATGES-SEGURES.html",
     },
     {
@@ -263,42 +263,42 @@ export default function JaveaPage() {
               href="/"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Home
+              Startseite
             </a>
 
             <a
               href="/regions"
               className="border-b border-[#c8a063] pb-1 text-white drop-shadow"
             >
-              Regions
+              Regionen
             </a>
 
             <a
               href="/services"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Services
+              Leistungen
             </a>
 
             <a
               href="/guides"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Guides
+              Ratgeber
             </a>
 
             <a
               href="/about-us"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              About
+              Über uns
             </a>
 
             <a
               href="/contact"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Contact
+              Kontakt
             </a>
           </div>
         </div>
@@ -308,7 +308,7 @@ export default function JaveaPage() {
       <section className="relative flex min-h-[85vh] items-center overflow-hidden pt-32">
         <img
           src="/images/javea.jpg"
-          alt="Jávea Costa Blanca North property area guide"
+          alt="Jávea Costa Blanca Nord Immobilien-Gebietsführer"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -317,17 +317,17 @@ export default function JaveaPage() {
         <div className="relative z-10 mx-auto w-full max-w-7xl px-8">
           <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Costa Blanca North Area Guide
+              Costa Blanca Nord Gebietsführer
             </p>
 
             <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] md:text-7xl">
-              Living in Jávea.
+              Leben in Jávea.
             </h1>
 
             <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)]">
-              A complete Costa Blanca North lifestyle town with beaches, coves,
-              restaurants, villa areas, a historic old town and an established
-              international community.
+              Eine vollständige Lifestyle-Stadt an der nördlichen Costa Blanca
+              mit Stränden, Buchten, Restaurants, Villengebieten, historischer
+              Altstadt und einer etablierten internationalen Gemeinschaft.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -335,14 +335,14 @@ export default function JaveaPage() {
                 href="/services/area-match"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Request your Area Match
+                Ihren Area Match anfragen
               </a>
 
               <a
                 href="/guides/moraira-vs-javea"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Compare with Moraira
+                Mit Moraira vergleichen
               </a>
             </div>
           </div>
@@ -354,34 +354,36 @@ export default function JaveaPage() {
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Is Jávea right for you?
+              Ist Jávea das Richtige für Sie?
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea is for buyers who want variety, convenience and a stronger
-              international lifestyle.
+              Jávea ist für Käufer geeignet, die Vielfalt, Komfort und einen
+              stärkeren internationalen Lebensstil suchen.
             </h2>
           </div>
 
           <div className="text-lg leading-relaxed text-stone-600">
             <p>
-              Jávea, also known as Xàbia, is one of the most complete lifestyle
-              towns on Costa Blanca North. It offers a rare combination of
-              beaches, coves, restaurants, villa areas, a historic old town, a
-              working port and a strong international community.
+              Jávea, auch bekannt als Xàbia, ist eine der vollständigsten
+              Lifestyle-Städte an der nördlichen Costa Blanca. Sie bietet eine
+              seltene Kombination aus Stränden, Buchten, Restaurants,
+              Villengebieten, historischer Altstadt, aktivem Hafen und einer
+              starken internationalen Gemeinschaft.
             </p>
 
             <p className="mt-6">
-              Compared with Moraira, Jávea usually feels larger, more active and
-              more varied. Compared with Benissa, it offers more restaurants,
-              beach life and social activity. For many international buyers,
-              this makes Jávea easier to settle into year-round.
+              Im Vergleich zu Moraira wirkt Jávea in der Regel größer, aktiver
+              und vielseitiger. Im Vergleich zu Benissa bietet es mehr
+              Restaurants, Strandleben und soziale Aktivität. Für viele
+              internationale Käufer macht das Jávea einfacher, um sich
+              ganzjährig einzuleben.
             </p>
 
             <p className="mt-6">
-              The key is choosing the right zone. Living near Arenal, the port,
-              the old town, Montgó or Balcón al Mar can create very different
-              daily lives.
+              Der Schlüssel liegt darin, die richtige Zone zu wählen. Das Leben
+              nahe Arenal, dem Hafen, der Altstadt, Montgó oder Balcón al Mar
+              kann sehr unterschiedliche Alltage schaffen.
             </p>
           </div>
         </div>
@@ -391,19 +393,20 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Quick answer
+            Kurze Antwort
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Jávea is best for buyers who want beach life, restaurants, services,
-            international community and lifestyle variety.
+            Jávea eignet sich am besten für Käufer, die Strandleben,
+            Restaurants, Dienstleistungen, eine internationale Gemeinschaft und
+            Lebensstilvielfalt suchen.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-            Jávea is not the quietest option on Costa Blanca North, especially
-            in summer. But for buyers who want more activity, better year-round
-            life, a wider property choice and stronger social possibilities,
-            that is exactly its strength.
+            Jávea ist nicht die ruhigste Option an der nördlichen Costa Blanca,
+            besonders im Sommer. Aber für Käufer, die mehr Aktivität, ein
+            besseres ganzjähriges Leben, eine größere Immobilienauswahl und
+            stärkere soziale Möglichkeiten wünschen, ist genau das seine Stärke.
           </p>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -421,25 +424,25 @@ export default function JaveaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Restaurants and sea-view dining
+              Restaurants und Essen mit Meerblick
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea has one of the strongest restaurant scenes on Costa Blanca
-              North.
+              Jávea hat eine der stärksten Restaurantszenen an der nördlichen
+              Costa Blanca.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              For many buyers, Jávea’s lifestyle appeal is strongly connected to
-              food, terraces, beach restaurants, cafés and social life. The
-              choice is broader than in smaller towns, with options around
-              Arenal, the port, Montañar and the coves.
+              Für viele Käufer ist die Lifestyle-Attraktivität von Jávea stark
+              mit Essen, Terrassen, Strandrestaurants, Cafés und sozialem Leben
+              verbunden. Die Auswahl ist breiter als in kleineren Orten, mit
+              Optionen rund um Arenal, den Hafen, Montañar und die Buchten.
             </p>
 
             <p className="mt-5 text-sm leading-relaxed text-stone-500">
-              Restaurant names, opening times and ownership can change. Always
-              check current opening hours, reservations and seasonal schedules
-              before planning a visit.
+              Restaurantnamen, Öffnungszeiten und Eigentümer können sich ändern.
+              Prüfen Sie immer aktuelle Öffnungszeiten, Reservierungen und
+              saisonale Zeitpläne, bevor Sie einen Besuch planen.
             </p>
           </div>
 
@@ -476,19 +479,20 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Activities and daily life
+            Aktivitäten und Alltag
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Jávea suits buyers who want beaches, coves, restaurants, walking
-            routes and a more active daily rhythm.
+            Jávea passt zu Käufern, die Strände, Buchten, Restaurants,
+            Spazierwege und einen aktiveren Alltagsrhythmus wünschen.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Jávea is more varied than many smaller towns. You can live close to
-            beach activity, near the port, in the old town, below Montgó or in a
-            quieter villa zone. This variety is attractive, but it also means
-            that choosing the right area is very important.
+            Jávea ist vielseitiger als viele kleinere Orte. Sie können nahe am
+            Strandleben, beim Hafen, in der Altstadt, unterhalb des Montgó oder
+            in einer ruhigeren Villenzone wohnen. Diese Vielfalt ist attraktiv,
+            bedeutet aber auch, dass die Wahl der richtigen Gegend sehr wichtig
+            ist.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -515,11 +519,11 @@ export default function JaveaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Buyer profile
+              Käuferprofil
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Who Jávea suits best.
+              Für wen Jávea am besten geeignet ist.
             </h2>
           </div>
 
@@ -546,17 +550,19 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Neighbourhoods and zones
+            Stadtteile und Zonen
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            The right part of Jávea matters as much as the property itself.
+            Der richtige Teil von Jávea ist genauso wichtig wie die Immobilie
+            selbst.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Jávea is not one single lifestyle. A home near Arenal, a villa in
-            Montgó, an apartment near the port or a sea-view property around
-            Balcón al Mar can all feel completely different in daily life.
+            Jávea ist nicht ein einziger Lebensstil. Ein Haus nahe Arenal, eine
+            Villa in Montgó, ein Apartment beim Hafen oder eine Immobilie mit
+            Meerblick rund um Balcón al Mar können sich im Alltag völlig
+            unterschiedlich anfühlen.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -580,19 +586,19 @@ export default function JaveaPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Property types
+              Immobilientypen
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Jávea offers one of the broadest property choices on Costa Blanca
-              North.
+              Jávea bietet eine der breitesten Immobilienauswahlen an der
+              nördlichen Costa Blanca.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-600">
-              Buyers can choose between apartments near beach life, villas in
-              established residential areas, old-town homes and sea-view
-              properties near the coves. The right property type depends heavily
-              on how you want to live day to day.
+              Käufer können zwischen Apartments nahe am Strandleben, Villen in
+              etablierten Wohngebieten, Häusern in der Altstadt und Immobilien
+              mit Meerblick nahe den Buchten wählen. Der richtige Immobilientyp
+              hängt stark davon ab, wie Sie im Alltag leben möchten.
             </p>
           </div>
 
@@ -619,32 +625,35 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Retiree suitability
+            Eignung für Ruheständler
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
-            Jávea can be excellent for retirees who want services, restaurants,
-            social life and variety.
+            Jávea kann ausgezeichnet für Ruheständler sein, die
+            Dienstleistungen, Restaurants, soziales Leben und Vielfalt wünschen.
           </h2>
 
           <div className="mt-10 max-w-5xl text-lg leading-relaxed text-white/80">
             <p>
-              For retirees, Jávea has clear strengths: more year-round life,
-              restaurants, shops, healthcare access, walking routes, beach areas
-              and an established international community.
+              Für Ruheständler hat Jávea klare Stärken: mehr ganzjähriges
+              Leben, Restaurants, Geschäfte, Zugang zur Gesundheitsversorgung,
+              Spazierwege, Strandbereiche und eine etablierte internationale
+              Gemeinschaft.
             </p>
 
             <p className="mt-6">
-              The practical question is choosing the right zone. Some parts of
-              Jávea are walkable and convenient, while many villa areas require
-              a car. Hills, stairs, parking, summer crowds and distance to
-              services should all be considered carefully.
+              Die praktische Frage ist, die richtige Zone zu wählen. Einige
+              Teile von Jávea sind gut zu Fuß erreichbar und bequem, während
+              viele Villengebiete ein Auto erfordern. Hügel, Treppen, Parken,
+              Sommerandrang und die Entfernung zu Dienstleistungen sollten alle
+              sorgfältig berücksichtigt werden.
             </p>
 
             <p className="mt-6">
-              For retirees who want more energy than Moraira or Benissa, Jávea
-              can be one of the strongest options on Costa Blanca North. For
-              buyers who want maximum quiet, a smaller area may be more suitable.
+              Für Ruheständler, die mehr Energie als in Moraira oder Benissa
+              wünschen, kann Jávea eine der stärksten Optionen an der
+              nördlichen Costa Blanca sein. Für Käufer, die maximale Ruhe
+              suchen, kann eine kleinere Gegend besser geeignet sein.
             </p>
           </div>
 
@@ -653,14 +662,14 @@ export default function JaveaPage() {
               href="/guides/best-areas-costa-blanca-north-retirees"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Read retiree area guide
+              Ratgeber für Ruheständler lesen
             </a>
 
             <a
               href="/services/area-match"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Request your Area Match
+              Ihren Area Match anfragen
             </a>
           </div>
         </div>
@@ -671,16 +680,16 @@ export default function JaveaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Confidence checks
+              Sicherheitschecks
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              What to understand before buying in Jávea.
+              Was Sie vor dem Kauf in Jávea verstehen sollten.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              These checks are not reasons to avoid Jávea. They are part of a
-              well-prepared buying decision.
+              Diese Prüfungen sind keine Gründe, Jávea zu meiden. Sie sind Teil
+              einer gut vorbereiteten Kaufentscheidung.
             </p>
           </div>
 
@@ -711,16 +720,16 @@ export default function JaveaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare nearby
+              Nahegelegene Orte vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Moraira?
+              Jávea oder Moraira?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Moraira is calmer and more polished. Jávea is larger, more active
-              and offers more lifestyle variety.
+              Moraira ist ruhiger und eleganter. Jávea ist größer, aktiver und
+              bietet mehr Lebensstilvielfalt.
             </p>
           </a>
 
@@ -729,16 +738,16 @@ export default function JaveaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare convenience
+              Komfort vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Dénia?
+              Jávea oder Dénia?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Dénia may feel more urban and practical. Jávea often feels more
-              scenic, coastal and lifestyle-led.
+              Dénia kann urbaner und praktischer wirken. Jávea fühlt sich oft
+              landschaftlicher, küstennaher und stärker lifestyle-orientiert an.
             </p>
           </a>
 
@@ -747,16 +756,16 @@ export default function JaveaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare privacy
+              Privatsphäre vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Jávea or Benissa?
+              Jávea oder Benissa?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Benissa is quieter and more understated. Jávea offers more
-              activity, restaurants and international social life.
+              Benissa ist ruhiger und zurückhaltender. Jávea bietet mehr
+              Aktivität, Restaurants und internationales soziales Leben.
             </p>
           </a>
         </div>
@@ -766,11 +775,11 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Related guides
+            Verwandte Ratgeber
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Continue your Jávea research.
+            Setzen Sie Ihre Jávea-Recherche fort.
           </h2>
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -797,17 +806,19 @@ export default function JaveaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Not sure if Jávea fits you?
+            Nicht sicher, ob Jávea zu Ihnen passt?
           </p>
 
           <h2 className="mt-6 max-w-5xl font-serif text-6xl leading-tight">
-            Compare Jávea with your lifestyle before choosing a property.
+            Vergleichen Sie Jávea mit Ihrem Lebensstil, bevor Sie eine
+            Immobilie wählen.
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Our Area Match Assessment helps you understand whether Jávea,
-            Moraira, Dénia, Altea, Benissa or Calpe best fits your priorities,
-            budget, lifestyle and long-term plans.
+            Unser Area Match Assessment hilft Ihnen zu verstehen, ob Jávea,
+            Moraira, Dénia, Altea, Benissa oder Calpe am besten zu Ihren
+            Prioritäten, Ihrem Budget, Ihrem Lebensstil und Ihren langfristigen
+            Plänen passt.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -815,14 +826,14 @@ export default function JaveaPage() {
               href="/services/area-match"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request your Area Match
+              Ihren Area Match anfragen
             </a>
 
             <a
               href="/contact"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Schedule an introduction
+              Einführungsgespräch planen
             </a>
           </div>
         </div>
@@ -832,13 +843,14 @@ export default function JaveaPage() {
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[32px] bg-white p-8 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Official sources
+            Offizielle Quellen
           </p>
 
           <p className="mt-5 max-w-4xl leading-relaxed text-stone-600">
-            This area guide uses official tourism and restaurant sources where
-            possible. Buyers should always verify property, legal, restaurant
-            and practical details before making decisions.
+            Dieser Gebietsführer nutzt, wo möglich, offizielle Tourismus- und
+            Restaurantquellen. Käufer sollten Immobilien-, Rechts-,
+            Restaurant- und praktische Details immer prüfen, bevor sie
+            Entscheidungen treffen.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">

@@ -1,30 +1,30 @@
 export const metadata = {
-  title: "Living in Moraira | Buy Property in Moraira Costa Blanca North",
+  title: "Leben in Moraira | Immobilie kaufen in Moraira Costa Blanca Nord",
   description:
-    "Discover whether Moraira is the right area to buy property on Costa Blanca North. A guide for Dutch, German, Swiss and international buyers comparing lifestyle, villas, retirees, services, beaches, restaurants, activities, car dependency and long-term suitability.",
+    "Entdecken Sie, ob Moraira die richtige Gegend ist, um eine Immobilie an der nördlichen Costa Blanca zu kaufen. Ein Leitfaden für niederländische, deutsche, schweizerische und internationale Käufer, die Lebensstil, Villen, Ruhestand, Dienstleistungen, Strände, Restaurants, Aktivitäten, Autoabhängigkeit und langfristige Eignung vergleichen.",
 };
 
 export default function MorairaPage() {
   const buyerProfiles = [
     {
-      title: "Retirees seeking calm and quality",
+      title: "Ruheständler, die Ruhe und Qualität suchen",
       text:
-        "Moraira is often attractive to retirees who want a quieter coastal setting, good restaurants, sea views, privacy and a refined international community without the density of larger towns.",
+        "Moraira ist oft attraktiv für Ruheständler, die eine ruhigere Küstenlage, gute Restaurants, Meerblick, Privatsphäre und eine elegante internationale Gemeinschaft ohne die Dichte größerer Orte wünschen.",
     },
     {
-      title: "Second-home buyers",
+      title: "Zweitwohnsitzkäufer",
       text:
-        "The area works well for buyers who want a polished Mediterranean base for long stays, family visits and a slower lifestyle focused on terraces, beaches, restaurants and outdoor living.",
+        "Die Gegend eignet sich gut für Käufer, die eine gepflegte mediterrane Basis für längere Aufenthalte, Familienbesuche und einen langsameren Lebensstil mit Terrassen, Stränden, Restaurants und Leben im Freien suchen.",
     },
     {
-      title: "Villa buyers",
+      title: "Villenkäufer",
       text:
-        "Moraira is especially strong for detached villas, hillside homes, sea-view properties and residential areas where privacy and space matter more than urban convenience.",
+        "Moraira ist besonders stark bei freistehenden Villen, Häusern am Hang, Immobilien mit Meerblick und Wohngebieten, in denen Privatsphäre und Platz wichtiger sind als urbane Bequemlichkeit.",
     },
     {
-      title: "Discerning international buyers",
+      title: "Anspruchsvolle internationale Käufer",
       text:
-        "Dutch, German, Swiss, Belgian, British and Scandinavian buyers often choose Moraira because it feels calm, established and more residential than many larger coastal destinations.",
+        "Niederländische, deutsche, schweizerische, belgische, britische und skandinavische Käufer wählen Moraira häufig, weil es ruhig, etabliert und stärker wohnlich wirkt als viele größere Küstenziele.",
     },
   ];
 
@@ -32,186 +32,186 @@ export default function MorairaPage() {
     {
       title: "El Portet",
       text:
-        "One of Moraira’s most desirable areas, known for its sheltered bay, calm atmosphere and prestigious villa setting. It can suit buyers who value beauty, exclusivity and proximity to the sea.",
+        "Eine der begehrtesten Gegenden Morairas, bekannt für ihre geschützte Bucht, ruhige Atmosphäre und prestigeträchtige Villenlage. Sie kann zu Käufern passen, die Schönheit, Exklusivität und Nähe zum Meer schätzen.",
     },
     {
       title: "Pla del Mar",
       text:
-        "A sought-after residential area close to the town centre. It may suit buyers who want a villa lifestyle but prefer easier access to restaurants, shops and the marina.",
+        "Ein gefragtes Wohngebiet nahe dem Stadtzentrum. Es kann zu Käufern passen, die einen Villenlebensstil wünschen, aber leichteren Zugang zu Restaurants, Geschäften und der Marina bevorzugen.",
     },
     {
       title: "Benimeit",
       text:
-        "A hillside area often associated with views, larger villas and residential calm. Buyers should check access roads, orientation, maintenance needs and driving distances carefully.",
+        "Eine Hanglage, die oft mit Ausblicken, größeren Villen und ruhigem Wohnen verbunden wird. Käufer sollten Zufahrtsstraßen, Ausrichtung, Instandhaltungsbedarf und Fahrzeiten sorgfältig prüfen.",
     },
     {
       title: "San Jaime",
       text:
-        "An established residential zone between Moraira and Benissa/Calpe, often attractive to buyers who want villas, golf nearby and good access to surrounding areas.",
+        "Ein etabliertes Wohngebiet zwischen Moraira und Benissa/Calpe, oft attraktiv für Käufer, die Villen, Golf in der Nähe und guten Zugang zu umliegenden Gegenden wünschen.",
     },
     {
-      title: "Moravit and Cap Blanc",
+      title: "Moravit und Cap Blanc",
       text:
-        "Coastal residential areas with access towards coves, restaurants and the road towards Calpe. These areas can offer a good balance between coastal life and villa living.",
+        "Küstennahe Wohngebiete mit Zugang zu Buchten, Restaurants und der Straße Richtung Calpe. Diese Gegenden können eine gute Balance zwischen Küstenleben und Villenwohnen bieten.",
     },
     {
-      title: "Town centre and marina area",
+      title: "Stadtzentrum und Marina-Bereich",
       text:
-        "Better for buyers who want restaurants, shops, harbour life and easier walkability. Property options may be more limited, but practical convenience is stronger.",
+        "Besser für Käufer, die Restaurants, Geschäfte, Hafenleben und bessere fußläufige Erreichbarkeit wünschen. Das Immobilienangebot kann begrenzter sein, aber die praktische Bequemlichkeit ist stärker.",
     },
   ];
 
   const propertyTypes = [
     {
-      title: "Detached villas",
+      title: "Freistehende Villen",
       text:
-        "The most typical choice for international buyers in Moraira. Villas can offer privacy, gardens, pools and sea views, but they also bring maintenance, security and management responsibilities.",
+        "Die typischste Wahl für internationale Käufer in Moraira. Villen können Privatsphäre, Gärten, Pools und Meerblick bieten, bringen aber auch Verantwortung für Instandhaltung, Sicherheit und Verwaltung mit sich.",
     },
     {
-      title: "Sea-view hillside homes",
+      title: "Häuser am Hang mit Meerblick",
       text:
-        "Highly attractive, but buyers should check road access, stairs, orientation, wind exposure, renovation quality and whether the home remains practical in later years.",
+        "Sehr attraktiv, aber Käufer sollten Zufahrtsstraßen, Treppen, Ausrichtung, Windbelastung, Renovierungsqualität und die langfristige Alltagstauglichkeit des Hauses prüfen.",
     },
     {
-      title: "Townhouses and smaller homes",
+      title: "Reihenhäuser und kleinere Häuser",
       text:
-        "A useful option for buyers who want less maintenance than a large villa while still enjoying a residential lifestyle near Moraira.",
+        "Eine sinnvolle Option für Käufer, die weniger Instandhaltung als bei einer großen Villa möchten und dennoch einen wohnlichen Lebensstil nahe Moraira genießen wollen.",
     },
     {
-      title: "Apartments near town",
+      title: "Apartments nahe dem Zentrum",
       text:
-        "Less dominant than in Calpe or Dénia, but practical for buyers who want walkability, lower maintenance and easier lock-up-and-leave ownership.",
+        "Weniger dominant als in Calpe oder Dénia, aber praktisch für Käufer, die fußläufige Erreichbarkeit, geringeren Pflegeaufwand und einfacheres Lock-up-and-leave-Eigentum wünschen.",
     },
   ];
 
   const confidenceChecks = [
     {
-      title: "Car dependency",
+      title: "Abhängigkeit vom Auto",
       text:
-        "Many of Moraira’s most attractive villa areas require a car. This is normal, but older buyers should think carefully about daily driving, parking, access roads and long-term mobility.",
+        "Viele der attraktivsten Villengebiete Morairas erfordern ein Auto. Das ist normal, aber ältere Käufer sollten sorgfältig über tägliches Fahren, Parken, Zufahrtsstraßen und langfristige Mobilität nachdenken.",
     },
     {
-      title: "Year-round rhythm",
+      title: "Ganzjähriger Rhythmus",
       text:
-        "Moraira is calmer than larger towns. For some buyers this is the main attraction. Others may prefer the stronger year-round activity of Dénia or Jávea.",
+        "Moraira ist ruhiger als größere Orte. Für manche Käufer ist das der Hauptreiz. Andere bevorzugen möglicherweise die stärkere ganzjährige Aktivität von Dénia oder Jávea.",
     },
     {
-      title: "Villa maintenance",
+      title: "Instandhaltung von Villen",
       text:
-        "Pools, gardens, terraces, security systems, exterior painting and humidity control all need attention. Buyers who live abroad part-time should plan reliable local support.",
+        "Pools, Gärten, Terrassen, Sicherheitssysteme, Außenanstrich und Feuchtigkeitskontrolle brauchen Aufmerksamkeit. Käufer, die zeitweise im Ausland leben, sollten zuverlässige lokale Unterstützung einplanen.",
     },
     {
-      title: "Orientation and sunlight",
+      title: "Ausrichtung und Sonnenlicht",
       text:
-        "Hillside villas can vary strongly by orientation. Winter sun, shade, wind and access can affect comfort more than buyers realise during a short viewing.",
+        "Villen am Hang können sich je nach Ausrichtung stark unterscheiden. Wintersonne, Schatten, Wind und Zugang können den Komfort stärker beeinflussen, als Käufer bei einer kurzen Besichtigung merken.",
     },
     {
-      title: "Renovation quality",
+      title: "Renovierungsqualität",
       text:
-        "Some homes have been extended or renovated over time. Before buying, independent checks should confirm building legality, licences, utilities and registered property details.",
+        "Einige Häuser wurden im Laufe der Zeit erweitert oder renoviert. Vor dem Kauf sollten unabhängige Prüfungen die Rechtmäßigkeit des Gebäudes, Genehmigungen, Versorgungsanschlüsse und eingetragene Immobiliendetails bestätigen.",
     },
     {
-      title: "Community and rental rules",
+      title: "Gemeinschafts- und Vermietungsregeln",
       text:
-        "If the property is in an urbanisation or community, buyers should understand fees, rules, rental limits, maintenance obligations and meeting minutes before committing.",
+        "Wenn sich die Immobilie in einer Urbanisation oder Eigentümergemeinschaft befindet, sollten Käufer Gebühren, Regeln, Vermietungsbeschränkungen, Instandhaltungspflichten und Protokolle der Versammlungen verstehen, bevor sie sich festlegen.",
     },
   ];
 
   const lifestylePoints = [
-    "Calm coastal lifestyle with an established international community",
-    "Strong appeal for retirees, second-home owners and villa buyers",
-    "Restaurants, coves, marina life and refined Mediterranean atmosphere",
-    "Less urban and less dense than larger coastal towns",
-    "Good base for exploring Benissa, Jávea, Calpe and the wider Marina Alta",
-    "Best suited to buyers who value privacy, quality and calm over city energy",
+    "Ruhiger Küstenlebensstil mit etablierter internationaler Gemeinschaft",
+    "Sehr attraktiv für Ruheständler, Zweitwohnsitzbesitzer und Villenkäufer",
+    "Restaurants, Buchten, Marina-Leben und elegante mediterrane Atmosphäre",
+    "Weniger urban und weniger dicht bebaut als größere Küstenorte",
+    "Gute Basis, um Benissa, Jávea, Calpe und die weitere Marina Alta zu erkunden",
+    "Am besten geeignet für Käufer, die Privatsphäre, Qualität und Ruhe wichtiger finden als Stadtenergie",
   ];
 
   const restaurants = [
     {
       title: "Restaurante Club Náutico Moraira",
-      label: "Marina dining",
+      label: "Marina-Dining",
       text:
-        "A polished option by the marina for Mediterranean cuisine, rice dishes and a more classic sea-facing dining experience. It can suit buyers who enjoy harbour life, long lunches and a refined coastal setting.",
+        "Eine elegante Option an der Marina für mediterrane Küche, Reisgerichte und ein klassisches Essen mit Blick aufs Meer. Sie kann gut zu Käufern passen, die Hafenleben, lange Mittagessen und eine gepflegte Küstenlage genießen.",
       bestFor:
-        "Best for marina views, Mediterranean food and a more elegant lunch or dinner setting.",
+        "Am besten für Marina-Blick, mediterranes Essen und ein eleganteres Mittag- oder Abendessen.",
     },
     {
       title: "Algas L’Andragó",
-      label: "Sea-front tapas and cocktails",
+      label: "Tapas und Cocktails direkt am Meer",
       text:
-        "A relaxed beach bar and restaurant at Cala L’Andragó, known for tapas, cocktails, palm trees and a sea-front setting. It is more casual than formal, and can be especially attractive for drinks, lunch or sunset atmosphere.",
+        "Eine entspannte Strandbar und ein Restaurant an der Cala L’Andragó, bekannt für Tapas, Cocktails, Palmen und eine Lage direkt am Meer. Es ist eher locker als formell und besonders attraktiv für Drinks, Mittagessen oder Sonnenuntergangsatmosphäre.",
       bestFor:
-        "Best for casual sea views, tapas, cocktails and a relaxed coastal feeling.",
+        "Am besten für lockeren Meerblick, Tapas, Cocktails und ein entspanntes Küstengefühl.",
     },
     {
       title: "Eleven Moraira",
-      label: "Sea and castle views",
+      label: "Meer- und Burgblick",
       text:
-        "A stylish option for buyers who enjoy alfresco dining, sea views and views towards Moraira Castle. It can be a good example of the more polished food and lifestyle scene that attracts many international buyers to Moraira.",
+        "Eine stilvolle Option für Käufer, die Essen im Freien, Meerblick und Ausblicke auf die Burg von Moraira genießen. Es ist ein gutes Beispiel für die gepflegte Gastronomie- und Lifestyle-Szene, die viele internationale Käufer nach Moraira zieht.",
       bestFor:
-        "Best for dinner, views and a more elevated Moraira evening.",
+        "Am besten für Abendessen, Ausblicke und einen gehobeneren Abend in Moraira.",
     },
     {
       title: "Al Mar Moraira",
-      label: "Modern Mediterranean dining",
+      label: "Moderne mediterrane Küche",
       text:
-        "A modern Mediterranean dining option with seafood, rice dishes, fish, meats and house specialities. It is useful for buyers who want to understand Moraira’s more contemporary restaurant scene.",
+        "Eine moderne mediterrane Restaurantoption mit Meeresfrüchten, Reisgerichten, Fisch, Fleisch und Hausspezialitäten. Sie ist hilfreich für Käufer, die Morairas zeitgemäßere Restaurantszene verstehen möchten.",
       bestFor:
-        "Best for buyers who want modern Mediterranean food and a polished dining experience.",
+        "Am besten für Käufer, die moderne mediterrane Küche und ein gepflegtes Restaurant-Erlebnis suchen.",
     },
   ];
 
   const activities = [
     {
-      title: "El Portet beach and bay",
+      title: "Strand und Bucht El Portet",
       text:
-        "El Portet is one of Moraira’s most attractive lifestyle areas, with a sheltered bay, calm water and a refined coastal atmosphere. For buyers, it shows the premium side of Moraira living.",
+        "El Portet ist eine der attraktivsten Lifestyle-Gegenden Morairas, mit geschützter Bucht, ruhigem Wasser und eleganter Küstenatmosphäre. Für Käufer zeigt sie die Premium-Seite des Lebens in Moraira.",
     },
     {
-      title: "Cap d’Or walk and viewpoint",
+      title: "Cap d’Or Spazierweg und Aussichtspunkt",
       text:
-        "The Cap d’Or area offers one of the classic walks near Moraira, with views over the coastline and El Portet. It is a good example of how nature, sea views and daily outdoor life are part of Moraira’s appeal.",
+        "Das Gebiet Cap d’Or bietet einen der klassischen Spazierwege nahe Moraira, mit Blicken über die Küste und El Portet. Es ist ein gutes Beispiel dafür, wie Natur, Meerblick und tägliches Leben im Freien Teil der Attraktivität Morairas sind.",
     },
     {
-      title: "Cala L’Andragó and Cap Blanc",
+      title: "Cala L’Andragó und Cap Blanc",
       text:
-        "This coastal side of Moraira is attractive for relaxed walks, sea-front drinks and sunset moments. It can suit buyers who want a quieter coastal routine rather than a busy resort feeling.",
+        "Diese Küstenseite Morairas ist attraktiv für entspannte Spaziergänge, Drinks direkt am Meer und Sonnenuntergangsmomente. Sie kann zu Käufern passen, die eine ruhigere Küstenroutine statt eines lebhaften Resort-Gefühls suchen.",
     },
     {
-      title: "Marina, castle and town centre",
+      title: "Marina, Burg und Stadtzentrum",
       text:
-        "Moraira’s marina, small castle, restaurants and town centre create a compact but elegant daily rhythm. It is not a large town, but that is exactly why many buyers like it.",
+        "Morairas Marina, kleine Burg, Restaurants und Stadtzentrum schaffen einen kompakten, aber eleganten Alltagsrhythmus. Es ist keine große Stadt, aber genau das mögen viele Käufer daran.",
     },
     {
-      title: "Restaurants and long Mediterranean lunches",
+      title: "Restaurants und lange mediterrane Mittagessen",
       text:
-        "Dining is a real part of Moraira’s lifestyle. Buyers who enjoy good restaurants, sea-view terraces, marina lunches and calm evening meals often find Moraira more appealing than busier coastal towns.",
+        "Essen ist ein echter Teil des Lebensstils in Moraira. Käufer, die gute Restaurants, Terrassen mit Meerblick, Mittagessen an der Marina und ruhige Abendessen genießen, finden Moraira oft attraktiver als lebhaftere Küstenorte.",
     },
     {
-      title: "Exploring nearby areas",
+      title: "Umliegende Gegenden erkunden",
       text:
-        "Moraira is also a good base for exploring Benissa, Jávea, Calpe, Dénia and inland villages. This matters for buyers who want calm at home but variety within driving distance.",
+        "Moraira ist auch eine gute Basis, um Benissa, Jávea, Calpe, Dénia und Dörfer im Landesinneren zu erkunden. Das ist wichtig für Käufer, die zu Hause Ruhe wünschen, aber Abwechslung in Fahrdistanz möchten.",
     },
   ];
 
   const relatedGuides = [
     {
       href: "/guides/best-areas-costa-blanca-north-retirees",
-      title: "Best Areas on Costa Blanca North for Retirees",
+      title: "Beste Gegenden an der nördlichen Costa Blanca für Ruheständler",
       text:
-        "Compare Moraira with Dénia, Jávea, Altea, Benissa and Calpe from a retiree perspective.",
+        "Vergleichen Sie Moraira mit Dénia, Jávea, Altea, Benissa und Calpe aus der Perspektive von Ruheständlern.",
     },
     {
       href: "/guides/moraira-vs-javea",
-      title: "Moraira vs Jávea",
+      title: "Moraira vs. Jávea",
       text:
-        "Understand the difference between Moraira’s calm villa lifestyle and Jávea’s more active international rhythm.",
+        "Verstehen Sie den Unterschied zwischen Morairas ruhigem Villenlebensstil und Jáveas aktiverem internationalem Rhythmus.",
     },
     {
       href: "/guides/where-to-buy-property-costa-blanca-north",
-      title: "Where to Buy Property on Costa Blanca North",
+      title: "Wo man an der nördlichen Costa Blanca eine Immobilie kaufen sollte",
       text:
-        "Compare the main Costa Blanca North towns before choosing where to buy.",
+        "Vergleichen Sie die wichtigsten Orte der nördlichen Costa Blanca, bevor Sie entscheiden, wo Sie kaufen.",
     },
   ];
 
@@ -225,15 +225,15 @@ export default function MorairaPage() {
       href: "https://www.spain.info/en/destination/moraira/",
     },
     {
-      label: "Teulada-Moraira official tourism",
+      label: "Offizieller Tourismus Teulada-Moraira",
       href: "https://www.turismoteuladamoraira.com/ttm/web_php/index.php?lang=4",
     },
     {
-      label: "Teulada-Moraira gastronomy",
+      label: "Gastronomie Teulada-Moraira",
       href: "https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=subapartados_coconut&id_boto=570&lang=4",
     },
     {
-      label: "Cap d’Or Watchtower route",
+      label: "Route zum Wachturm Cap d’Or",
       href: "https://www.turismoteuladamoraira.com/ttm/web_php/index.php?contenido=subapartados_coconut&id_boto=648&lang=4",
     },
     {
@@ -267,42 +267,42 @@ export default function MorairaPage() {
               href="/"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Home
+              Startseite
             </a>
 
             <a
               href="/regions"
               className="border-b border-[#c8a063] pb-1 text-white drop-shadow"
             >
-              Regions
+              Regionen
             </a>
 
             <a
               href="/services"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Services
+              Leistungen
             </a>
 
             <a
               href="/guides"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Guides
+              Ratgeber
             </a>
 
             <a
               href="/about-us"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              About
+              Über uns
             </a>
 
             <a
               href="/contact"
               className="text-white drop-shadow transition hover:text-white/70"
             >
-              Contact
+              Kontakt
             </a>
           </div>
         </div>
@@ -312,7 +312,7 @@ export default function MorairaPage() {
       <section className="relative flex min-h-[85vh] items-center overflow-hidden pt-32">
         <img
           src="/images/moraira.jpg"
-          alt="Moraira Costa Blanca North property area guide"
+          alt="Moraira Costa Blanca Nord Immobilien-Gebietsführer"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -321,17 +321,17 @@ export default function MorairaPage() {
         <div className="relative z-10 mx-auto w-full max-w-7xl px-8">
           <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Costa Blanca North Area Guide
+              Costa Blanca Nord Gebietsführer
             </p>
 
             <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] md:text-7xl">
-              Living in Moraira.
+              Leben in Moraira.
             </h1>
 
             <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)]">
-              A refined coastal area for international buyers seeking calm,
-              privacy, villas, sea views and a more elegant Mediterranean
-              lifestyle on Costa Blanca North.
+              Eine elegante Küstengegend für internationale Käufer, die Ruhe,
+              Privatsphäre, Villen, Meerblick und einen gehobeneren
+              mediterranen Lebensstil an der nördlichen Costa Blanca suchen.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -339,14 +339,14 @@ export default function MorairaPage() {
                 href="/services/area-match"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Request your Area Match
+                Ihren Area Match anfragen
               </a>
 
               <a
                 href="/guides/moraira-vs-javea"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Compare Moraira and Jávea
+                Moraira und Jávea vergleichen
               </a>
             </div>
           </div>
@@ -358,36 +358,37 @@ export default function MorairaPage() {
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Is Moraira right for you?
+              Ist Moraira das Richtige für Sie?
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Moraira is often chosen by buyers who want quality, calm and a
-              more private coastal lifestyle.
+              Moraira wird oft von Käufern gewählt, die Qualität, Ruhe und einen
+              privateren Küstenlebensstil suchen.
             </h2>
           </div>
 
           <div className="text-lg leading-relaxed text-stone-600">
             <p>
-              Moraira is one of the most desirable areas on Costa Blanca North
-              for international buyers who want a quieter, more elegant
-              Mediterranean lifestyle. Unlike larger coastal towns, Moraira
-              feels smaller, calmer and more residential.
+              Moraira ist eine der begehrtesten Gegenden an der nördlichen Costa
+              Blanca für internationale Käufer, die einen ruhigeren, eleganteren
+              mediterranen Lebensstil wünschen. Im Gegensatz zu größeren
+              Küstenorten wirkt Moraira kleiner, ruhiger und stärker wohnlich.
             </p>
 
             <p className="mt-6">
-              The area is especially popular with Dutch, German, Swiss, Belgian,
-              Scandinavian and British buyers looking for villas, sea views,
-              privacy and a relaxed lifestyle with restaurants, coves and an
-              established international community.
+              Die Gegend ist besonders beliebt bei niederländischen, deutschen,
+              schweizerischen, belgischen, skandinavischen und britischen
+              Käufern, die Villen, Meerblick, Privatsphäre und einen entspannten
+              Lebensstil mit Restaurants, Buchten und einer etablierten
+              internationalen Gemeinschaft suchen.
             </p>
 
             <p className="mt-6">
-              Official tourism sources describe Teulada-Moraira as having
-              approximately 8 kilometres of coastline with beaches and coves.
-              For buyers, that coastline is part of Moraira’s appeal — but the
-              real decision is whether its calm villa-focused lifestyle fits
-              your long-term plans.
+              Offizielle Tourismusquellen beschreiben Teulada-Moraira mit
+              ungefähr 8 Kilometern Küste mit Stränden und Buchten. Für Käufer
+              ist diese Küste Teil der Attraktivität Morairas — aber die
+              eigentliche Entscheidung ist, ob der ruhige, villenorientierte
+              Lebensstil zu Ihren langfristigen Plänen passt.
             </p>
           </div>
         </div>
@@ -397,19 +398,20 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Quick answer
+            Kurze Antwort
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Moraira is best for buyers who want a peaceful, villa-focused and
-            refined coastal lifestyle.
+            Moraira eignet sich am besten für Käufer, die einen ruhigen,
+            villenorientierten und eleganten Küstenlebensstil suchen.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-            It is usually not the most urban or most convenient option on Costa
-            Blanca North. Its strength is different: privacy, calm, residential
-            quality, elegant coastal living and a strong fit for retirees and
-            second-home owners who value a slower rhythm.
+            Es ist normalerweise nicht die urbanste oder praktischste Option an
+            der nördlichen Costa Blanca. Seine Stärke ist eine andere:
+            Privatsphäre, Ruhe, Wohnqualität, elegantes Küstenleben und eine
+            starke Eignung für Ruheständler und Zweitwohnsitzbesitzer, die einen
+            langsameren Rhythmus schätzen.
           </p>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -427,24 +429,25 @@ export default function MorairaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Restaurants and sea-view dining
+              Restaurants und Essen mit Meerblick
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Moraira’s restaurant scene is part of its lifestyle appeal.
+              Morairas Restaurantszene ist Teil seiner Lifestyle-Attraktivität.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              For many buyers, Moraira is not only about villas and beaches. It
-              is also about long lunches by the marina, relaxed drinks by the
-              sea, sunset terraces and the feeling of having quality restaurants
-              close to home.
+              Für viele Käufer geht es in Moraira nicht nur um Villen und
+              Strände. Es geht auch um lange Mittagessen an der Marina,
+              entspannte Drinks am Meer, Terrassen bei Sonnenuntergang und das
+              Gefühl, gute Restaurants in der Nähe des eigenen Zuhauses zu
+              haben.
             </p>
 
             <p className="mt-5 text-sm leading-relaxed text-stone-500">
-              Restaurant names and opening times can change. Always check
-              current opening hours, reservation rules and seasonal schedules
-              before planning a visit.
+              Restaurantnamen und Öffnungszeiten können sich ändern. Prüfen Sie
+              immer aktuelle Öffnungszeiten, Reservierungsregeln und saisonale
+              Zeitpläne, bevor Sie einen Besuch planen.
             </p>
           </div>
 
@@ -481,18 +484,18 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Activities and daily life
+            Aktivitäten und Alltag
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Moraira suits buyers who enjoy calm outdoor living, coastal walks
-            and quality time by the sea.
+            Moraira passt zu Käufern, die ruhiges Leben im Freien,
+            Küstenspaziergänge und Qualitätszeit am Meer genießen.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Moraira is not a large city and does not try to be one. Its appeal
-            is quieter: beaches, coves, walking routes, restaurants, marina
-            life, terraces and access to the wider Marina Alta region.
+            Moraira ist keine große Stadt und versucht auch nicht, eine zu sein.
+            Sein Reiz ist ruhiger: Strände, Buchten, Spazierwege, Restaurants,
+            Marina-Leben, Terrassen und Zugang zur weiteren Marina Alta.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -519,11 +522,11 @@ export default function MorairaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Buyer profile
+              Käuferprofil
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Who Moraira suits best.
+              Für wen Moraira am besten geeignet ist.
             </h2>
           </div>
 
@@ -550,17 +553,19 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Neighbourhoods and zones
+            Stadtteile und Zonen
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            The right part of Moraira matters as much as the property itself.
+            Der richtige Teil von Moraira ist genauso wichtig wie die Immobilie
+            selbst.
           </h2>
 
           <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Moraira is not one single lifestyle. A villa in El Portet, a home
-            near Pla del Mar, a hillside property in Benimeit or a townhouse
-            near the centre can all feel very different in daily life.
+            Moraira ist nicht ein einziger Lebensstil. Eine Villa in El Portet,
+            ein Haus nahe Pla del Mar, eine Immobilie am Hang in Benimeit oder
+            ein Stadthaus nahe dem Zentrum können sich im Alltag sehr
+            unterschiedlich anfühlen.
           </p>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -584,17 +589,18 @@ export default function MorairaPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Property types
+              Immobilientypen
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Moraira is strongest for villas, privacy and residential quality.
+              Moraira ist besonders stark bei Villen, Privatsphäre und
+              Wohnqualität.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-600">
-              Buyers choosing Moraira often want more than a property. They want
-              a calm Mediterranean base, outdoor living, privacy and long-term
-              comfort.
+              Käufer, die Moraira wählen, suchen oft mehr als nur eine
+              Immobilie. Sie wünschen sich eine ruhige mediterrane Basis, Leben
+              im Freien, Privatsphäre und langfristigen Komfort.
             </p>
           </div>
 
@@ -621,33 +627,35 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Retiree suitability
+            Eignung für Ruheständler
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
-            Moraira can be an excellent retirement area for buyers who value
-            calm, privacy and quality of life.
+            Moraira kann ein ausgezeichnetes Ruhestandsgebiet für Käufer sein,
+            die Ruhe, Privatsphäre und Lebensqualität schätzen.
           </h2>
 
           <div className="mt-10 max-w-5xl text-lg leading-relaxed text-white/80">
             <p>
-              For retirees, Moraira’s appeal is clear: a calm coastal setting, a
-              refined international community, good restaurants, beaches, coves
-              and a slower rhythm than larger towns.
+              Für Ruheständler ist Morairas Reiz klar: eine ruhige Küstenlage,
+              eine elegante internationale Gemeinschaft, gute Restaurants,
+              Strände, Buchten und ein langsamerer Rhythmus als in größeren
+              Orten.
             </p>
 
             <p className="mt-6">
-              The key question is practicality. Many villas require a car, some
-              homes sit on hillsides and larger properties need regular
-              maintenance. For some buyers this is perfectly acceptable. For
-              others, Dénia, Jávea or Calpe may offer more day-to-day
-              convenience.
+              Die entscheidende Frage ist die Praktikabilität. Viele Villen
+              erfordern ein Auto, manche Häuser liegen am Hang und größere
+              Immobilien benötigen regelmäßige Instandhaltung. Für manche Käufer
+              ist das völlig akzeptabel. Für andere bieten Dénia, Jávea oder
+              Calpe möglicherweise mehr Alltagstauglichkeit.
             </p>
 
             <p className="mt-6">
-              This is why we recommend comparing lifestyle and practical needs
-              before choosing a property. The right Moraira home can be a
-              wonderful long-term base, but the exact location matters.
+              Deshalb empfehlen wir, Lebensstil und praktische Bedürfnisse zu
+              vergleichen, bevor Sie eine Immobilie wählen. Das richtige Haus in
+              Moraira kann eine wunderbare langfristige Basis sein, aber die
+              genaue Lage ist entscheidend.
             </p>
           </div>
 
@@ -656,14 +664,14 @@ export default function MorairaPage() {
               href="/guides/best-areas-costa-blanca-north-retirees"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Read retiree area guide
+              Ratgeber für Ruheständler lesen
             </a>
 
             <a
               href="/services/area-match"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Request your Area Match
+              Ihren Area Match anfragen
             </a>
           </div>
         </div>
@@ -674,16 +682,16 @@ export default function MorairaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Confidence checks
+              Sicherheitschecks
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              What to understand before buying in Moraira.
+              Was Sie vor dem Kauf in Moraira verstehen sollten.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              These checks are not reasons to avoid Moraira. They are part of a
-              well-prepared buying decision.
+              Diese Prüfungen sind keine Gründe, Moraira zu meiden. Sie sind
+              Teil einer gut vorbereiteten Kaufentscheidung.
             </p>
           </div>
 
@@ -714,16 +722,17 @@ export default function MorairaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare nearby
+              Nahegelegene Orte vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Moraira or Jávea?
+              Moraira oder Jávea?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Jávea usually offers more activity, a larger year-round
-              international community and more lifestyle variety.
+              Jávea bietet normalerweise mehr Aktivität, eine größere
+              ganzjährige internationale Gemeinschaft und mehr
+              Lebensstilvielfalt.
             </p>
           </a>
 
@@ -732,16 +741,17 @@ export default function MorairaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare convenience
+              Komfort vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Moraira or Dénia?
+              Moraira oder Dénia?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Dénia may be stronger for daily services, town life, healthcare
-              access and year-round convenience.
+              Dénia kann stärker bei täglichen Dienstleistungen, Stadtleben,
+              Zugang zur Gesundheitsversorgung und ganzjähriger Bequemlichkeit
+              sein.
             </p>
           </a>
 
@@ -750,16 +760,17 @@ export default function MorairaPage() {
             className="rounded-[32px] bg-white p-9 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
           >
             <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Compare privacy
+              Privatsphäre vergleichen
             </p>
 
             <h3 className="mt-5 font-serif text-3xl text-[#1e2a3a]">
-              Moraira or Benissa?
+              Moraira oder Benissa?
             </h3>
 
             <p className="mt-5 leading-relaxed text-stone-600">
-              Benissa can offer more land, countryside character and privacy,
-              while Moraira often feels more polished and coastal.
+              Benissa kann mehr Grundstück, ländlichen Charakter und
+              Privatsphäre bieten, während Moraira oft eleganter und
+              küstennäher wirkt.
             </p>
           </a>
         </div>
@@ -769,11 +780,11 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Related guides
+            Verwandte Ratgeber
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Continue your Moraira research.
+            Setzen Sie Ihre Moraira-Recherche fort.
           </h2>
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -800,17 +811,19 @@ export default function MorairaPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Not sure if Moraira fits you?
+            Nicht sicher, ob Moraira zu Ihnen passt?
           </p>
 
           <h2 className="mt-6 max-w-5xl font-serif text-6xl leading-tight">
-            Compare Moraira with your lifestyle before choosing a property.
+            Vergleichen Sie Moraira mit Ihrem Lebensstil, bevor Sie eine
+            Immobilie wählen.
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Our Area Match Assessment helps you understand whether Moraira,
-            Jávea, Dénia, Altea, Benissa or Calpe best fits your priorities,
-            budget, lifestyle and long-term plans.
+            Unser Area Match Assessment hilft Ihnen zu verstehen, ob Moraira,
+            Jávea, Dénia, Altea, Benissa oder Calpe am besten zu Ihren
+            Prioritäten, Ihrem Budget, Ihrem Lebensstil und Ihren langfristigen
+            Plänen passt.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -818,14 +831,14 @@ export default function MorairaPage() {
               href="/services/area-match"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request your Area Match
+              Ihren Area Match anfragen
             </a>
 
             <a
               href="/contact"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Schedule an introduction
+              Einführungsgespräch planen
             </a>
           </div>
         </div>
@@ -835,13 +848,14 @@ export default function MorairaPage() {
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[32px] bg-white p-8 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Official sources
+            Offizielle Quellen
           </p>
 
           <p className="mt-5 max-w-4xl leading-relaxed text-stone-600">
-            This area guide uses official tourism and restaurant sources where
-            possible. Buyers should always verify property, legal, restaurant
-            and practical details before making decisions.
+            Dieser Gebietsführer nutzt, wo möglich, offizielle Tourismus- und
+            Restaurantquellen. Käufer sollten Immobilien-, Rechts-,
+            Restaurant- und praktische Details immer prüfen, bevor sie
+            Entscheidungen treffen.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
