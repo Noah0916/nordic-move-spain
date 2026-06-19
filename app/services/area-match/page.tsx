@@ -70,11 +70,11 @@ export default function AreaMatchPage() {
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
             The report can be requested independently and also serves as the
             foundation for the next stages of our guidance journey, including
-            your personal intake and 3-Day Buyer Experience Tour.
+            your personal intake and Buyer Discovery Trip.
           </p>
 
           <a
-            href="/contact"
+            href="/relocation-assessment"
             className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#15202d]"
           >
             Request Your Area Match Report

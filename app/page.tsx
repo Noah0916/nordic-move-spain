@@ -1,88 +1,100 @@
 export const metadata = {
-  title: "Nordic Move Spain | Buy Property on Costa Blanca North",
+  title: "Buying Property on the Costa Blanca North | Nordic Move Spain",
   description:
-    "Nordic Move Spain helps Dutch, German, Swiss and international buyers choose the right area, buy safely and settle confidently on Costa Blanca North.",
+    "Personal guidance for international buyers who want to choose the right area, buy property safely and understand the legal, technical and practical risks before purchase.",
+  openGraph: {
+    title: "Buying Property on the Costa Blanca North | Nordic Move Spain",
+    description:
+      "Choose the right area, experience daily life before buying and purchase with more confidence through our Purchase Safety Report.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buying Property on the Costa Blanca North | Nordic Move Spain",
+    description:
+      "A more personal and secure way to choose the right area, assess a property and feel at home in Spain.",
+  },
 };
 
-export default function Home() {
+export default function EnglishHomePage() {
   const guideCards = [
     {
       href: "/guides/best-areas-costa-blanca-north-retirees",
-      label: "Retiree Area Guide",
-      title: "Best Areas on Costa Blanca North for Retirees",
+      label: "Retirement Area Guide",
+      title: "Best places on the Costa Blanca North for retirement",
       text:
-        "A practical guide for Dutch, German, Swiss and other international buyers comparing the best Costa Blanca North areas for retirement.",
-      cta: "Read retiree guide →",
+        "A practical guide for Dutch, German, Swiss and other international buyers comparing the best places on the Costa Blanca North for retirement.",
+      cta: "Read the retirement guide →",
       featured: true,
     },
     {
       href: "/guides/buying-property-spain",
       label: "Buying in Spain",
-      title: "Buying Property in Spain",
+      title: "Buying a property in Spain",
       text:
         "A complete guide to legal checks, mortgages, purchase costs and the buying process for international buyers.",
-      cta: "Read guide →",
+      cta: "Read the guide →",
       featured: false,
     },
     {
       href: "/guides/where-to-buy-property-costa-blanca-north",
       label: "Area Guide",
-      title: "Where to Buy Property on Costa Blanca North",
+      title: "Where should you buy property on the Costa Blanca North?",
       text:
-        "Compare Moraira, Jávea, Altea, Benissa, Calpe and Dénia by lifestyle, property type, services and buyer profile.",
-      cta: "Read area guide →",
+        "Compare Moraira, Jávea, Altea, Benissa, Calpe and Dénia on lifestyle, property type, amenities and buyer profile.",
+      cta: "Read the area guide →",
       featured: false,
     },
     {
       href: "/guides/moraira-vs-javea",
       label: "Area Comparison",
-      title: "Moraira vs Jávea: Which Area Is Better?",
+      title: "Moraira or Jávea: which area suits you better?",
       text:
-        "A practical comparison for buyers choosing between two of the most desirable areas on Costa Blanca North.",
-      cta: "Read comparison →",
+        "A practical comparison for buyers choosing between two of the most sought-after locations on the Costa Blanca North.",
+      cta: "Read the comparison →",
       featured: false,
     },
     {
       href: "/guides/honest-guide-buying-property-costa-blanca-north",
       label: "Honest Buyer Guide",
-      title: "Costs, Rentals and Real-Life Checks Before Buying",
+      title: "Costs, rental rules and practical checks before purchase",
       text:
-        "An honest guide about hidden costs, tourist rentals, electricity pylons, noise, community rules and things buyers often discover too late.",
-      cta: "Read honest guide →",
+        "An honest guide to hidden costs, tourist rentals, electricity pylons, noise, community rules and issues buyers often discover too late.",
+      cta: "Read the honest guide →",
       featured: false,
     },
     {
       href: "/guides/common-mistakes-buying-property-spain",
-      label: "Buyer Mistakes",
-      title: "Common Mistakes Buyers Make",
+      label: "Common Mistakes",
+      title: "Common mistakes when buying property",
       text:
-        "The most common mistakes international buyers make before and during the purchase process in Spain.",
-      cta: "Read guide →",
+        "The most common mistakes international buyers make before and during the property purchase process in Spain.",
+      cta: "Read the guide →",
       featured: false,
     },
     {
       href: "/guides/homeowners-association-spain",
       label: "Community Rules",
-      title: "Homeowners Associations in Spain",
+      title: "Homeowners’ associations in Spain",
       text:
-        "Understand community fees, rental restrictions, meeting minutes and owner obligations before buying.",
-      cta: "Read guide →",
+        "Understand community fees, rental restrictions, meeting minutes and owner obligations before purchasing.",
+      cta: "Read the guide →",
       featured: false,
     },
     {
       href: "/guides/dutch-tax-second-home-spain",
       label: "Dutch Tax Rules",
-      title: "Dutch Tax Rules for a Second Home",
+      title: "Dutch tax rules for a second home in Spain",
       text:
-        "What Dutch residents should know about Box 3, Spanish taxes and foreign property ownership.",
-      cta: "Read guide →",
+        "What Dutch tax residents should know about Box 3, Spanish taxes and owning foreign property.",
+      cta: "Read the guide →",
       featured: false,
     },
   ];
 
   return (
     <main className="bg-[#f6f1ea] text-stone-900 overflow-hidden">
-      {/* NAVBAR */}
+      {/* NAVIGATION */}
       <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/15 px-8 py-4 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <div className="w-[180px]"></div>
@@ -116,8 +128,16 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               <a
+                href="/"
+                aria-label="English version"
+                className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
+              >
+                EN
+              </a>
+
+              <a
                 href="/nl"
-                aria-label="Nederlandse versie"
+                aria-label="Dutch version"
                 className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
               >
                 NL
@@ -125,7 +145,7 @@ export default function Home() {
 
               <a
                 href="/de"
-                aria-label="Deutsche Version"
+                aria-label="German version"
                 className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
               >
                 DE
@@ -146,7 +166,7 @@ export default function Home() {
       <section className="relative flex h-screen items-center overflow-hidden">
         <img
           src="/images/laatste-homepage.png"
-          alt="Nordic Move Spain property guidance on Costa Blanca North"
+          alt="Guidance from Nordic Move Spain when buying property on the Costa Blanca North"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -163,18 +183,20 @@ export default function Home() {
               <br />
               to buy property
               <br />
-              in Spain.
+              on the Costa Blanca North.
             </h1>
 
             <p className="mt-8 max-w-xl text-xl leading-relaxed text-white">
-              More than property. Clarity, confidence and a community where you
-              truly belong.
+              Not just finding a property, but buying safely and thoughtfully:
+              with the right area, independent checks and a community where you
+              can feel at home.
             </p>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90">
-              We help international buyers understand where to live, what to
-              avoid, how to buy safely and how to build a meaningful life on
-              Costa Blanca North.
+              We help international buyers understand the Costa Blanca North,
+              experience daily life before purchasing and only consider a
+              property seriously once the key legal, technical and practical
+              risks are clear.
             </p>
 
             <p className="mt-8 text-xs uppercase tracking-[0.25em] text-[#c8a063]">
@@ -183,76 +205,98 @@ export default function Home() {
 
             <div className="mt-7 flex flex-wrap gap-4">
               <a
-                href="/services/area-match"
+                href="/relocation-assessment"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Request your Area Match
+                Request your free Area Match Report
               </a>
 
               <a
                 href="/services/discovery-trips"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Explore the Buyer Discovery Trip
+                Discover the Buyer Discovery Trip
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* INTRODUCTION */}
       <section className="px-8 py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Clarity before commitment
+                The right property starts with certainty
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Confidence, clarity and connection before you buy.
+                Choose the right area, meet the right people and buy with more confidence.
               </h2>
             </div>
 
             <div>
               <p className="text-lg leading-relaxed text-stone-600">
-                Purchasing property in Spain is one of life&apos;s most
-                significant decisions. We help international buyers navigate
-                the lifestyle, legal, mortgage, banking, insurance and
-                practical considerations that many only discover after
-                relocating.
+                Buying a property on the Costa Blanca North is about more than
+                falling in love with sea views, sunshine and space. The real
+                question is whether everything behind the scenes is correct.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Through our Area Match Assessment, Lifestyle Intelligence
-                Report and Buyer Discovery Trip, clients gain a deeper
-                understanding of the regions, communities and daily realities
-                of life on Costa Blanca North before making long-term
-                commitments.
+                We guide international buyers who want not only a beautiful
+                property, but also clarity about the location, legal situation,
+                technical condition, costs, documents and daily life in Spain.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Many buyers focus only on the property itself. We focus on the
-                complete picture — location, lifestyle fit, legal certainty,
-                ownership costs, financing options, local services, community
-                rules and long-term quality of life.
+                With our Area Match Report, you discover which towns and
+                neighbourhoods fit your lifestyle. During the Buyer Discovery
+                Trip, you experience the region in practice and meet trusted
+                local professionals. And when you are seriously considering a
+                property, our Purchase Safety Report helps identify the most
+                important risks before you buy.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Many buyers only discover problems after signing: an extension
+                that is not properly registered, a plot boundary that does not
+                match, damp issues, a septic tank that does not work, unexpected
+                community rules or missing documents.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                We bring the right people to the table — a technical specialist,
+                a gestor and an independent lawyer — so you do not buy on
+                feeling alone, but with control, insight and clear next steps.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Our role is to make the process clear, discreet and secure.
+                Important documents are not scattered through WhatsApp messages
+                or unsafe email chains, but collected where possible in a secure
+                environment.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                We help you buy not faster, but better.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* THREE PILLARS */}
+      {/* FOUR PILLARS */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-4">
             <a
               href="/services/area-match"
               className="group overflow-hidden rounded-[36px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <img
                 src="/images/area-match.png"
-                alt="Costa Blanca North Area Match Assessment"
+                alt="Area Match Assessment for the Costa Blanca North"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -272,14 +316,13 @@ export default function Home() {
                 </p>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-500">
-                  Your personalised insights can include healthcare access,
-                  schools, safety, international communities, golf,
-                  restaurants, accessibility, local services and property
-                  market dynamics.
+                  Your personalised report can include insights into healthcare,
+                  schools, safety, international communities, golf, restaurants,
+                  accessibility, local services and property market dynamics.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Request your match →
+                  Request your free report →
                 </div>
               </div>
             </a>
@@ -290,7 +333,7 @@ export default function Home() {
             >
               <img
                 src="/images/discover-card.png"
-                alt="Buyer Discovery Trip on Costa Blanca North"
+                alt="International buyers during a Buyer Discovery Trip on the Costa Blanca North"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -304,9 +347,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  A carefully curated three-day property and lifestyle
-                  experience on Costa Blanca North, designed around your
-                  lifestyle, goals and stage of life.
+                  A carefully curated three-day property and lifestyle programme
+                  on the Costa Blanca North, designed around your lifestyle,
+                  goals and stage of life.
                 </p>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-500">
@@ -317,12 +360,64 @@ export default function Home() {
 
                 <p className="mt-5 text-base leading-relaxed text-stone-500">
                   Depending on your preference, the trip can be private or
-                  arranged in a carefully matched small group with like-minded
-                  buyers.
+                  arranged in a carefully matched small group. Personal
+                  introductions to like-minded buyers and international residents
+                  can help you meet familiar faces and build possible friendships
+                  before you move.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
                   Discover the Buyer Discovery Trip →
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="/services/purchase-safety-report"
+              className="group overflow-hidden rounded-[36px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <img
+                src="/images/legal.png"
+                alt="Purchase Safety Report for international buyers in Spain"
+                className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+
+              <div className="p-10">
+                <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
+                  Buy with confidence
+                </p>
+
+                <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
+                  Purchase Safety Report
+                </h3>
+
+                <p className="mt-6 text-base leading-relaxed text-stone-600">
+                  An independent safety report for buyers who are seriously
+                  considering a property on the Costa Blanca North and want
+                  clarity before purchase.
+                </p>
+
+                <p className="mt-5 text-base leading-relaxed text-stone-500">
+                  Together with a technical specialist, gestor and independent
+                  lawyer, we coordinate checks on visible defects, extensions,
+                  plot boundaries, registrations, permits, septic tank, ownership
+                  information, community rules and potential purchase risks.
+                </p>
+
+                <p className="mt-5 text-base leading-relaxed text-stone-500">
+                  The findings are brought together in a clear report: proceed,
+                  buy only under conditions, renegotiate or walk away from the
+                  property.
+                </p>
+
+                <p className="mt-5 text-base leading-relaxed text-stone-500">
+                  Important documents are collected safely where possible, so
+                  sensitive information does not need to be shared through loose
+                  emails or WhatsApp screenshots.
+                </p>
+
+                <div className="mt-10 text-sm uppercase tracking-[0.25em]">
+                  Discover the Purchase Safety Report →
                 </div>
               </div>
             </a>
@@ -333,7 +428,7 @@ export default function Home() {
             >
               <img
                 src="/images/soft-landing-card.png"
-                alt="Soft Landing Program after buying property in Spain"
+                alt="Soft Landing Program after buying a property in Spain"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -348,8 +443,8 @@ export default function Home() {
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
                   Practical support after purchase — from registrations and
-                  healthcare orientation to local introductions and settling
-                  into daily life in Spain.
+                  healthcare orientation to local introductions and settling into
+                  daily life in Spain.
                 </p>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-500">
@@ -359,10 +454,103 @@ export default function Home() {
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Explore soft landing →
+                  Explore Soft Landing →
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* NORDIC CIRCLE COMMUNITY */}
+      <section className="px-8 pb-32">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#1e2a3a] text-white">
+          <div className="grid items-stretch lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="relative min-h-[520px]">
+              <img
+                src="/images/discovery2.png"
+                alt="Personal introductions within the international community on the Costa Blanca North"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-[#1e2a3a]/20"></div>
+            </div>
+
+            <div className="p-12 md:p-16 lg:p-20">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                A community before you move
+              </p>
+
+              <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
+                Meet people before Spain becomes your home.
+              </h2>
+
+              <p className="mt-8 text-xl leading-relaxed text-white/85">
+                A beautiful property does not automatically create a fulfilling
+                life. Nordic Circle Community helps selected clients build
+                friendships, trusted local contacts and a genuine sense of
+                belonging on the Costa Blanca North.
+              </p>
+
+              <p className="mt-6 text-base leading-relaxed text-white/70">
+                We take time to understand your interests and preferred way of
+                life, whether that includes golf, wellness, gastronomy, outdoor
+                living, business networking or a quieter Mediterranean rhythm.
+                During the Buyer Discovery Trip and after purchase, carefully
+                chosen introductions, small dinners and activities help you meet
+                like-minded buyers and established international residents. This
+                means your social life can begin before your move is complete.
+              </p>
+
+              <div className="mt-10 grid gap-5 sm:grid-cols-3">
+                {[
+                  [
+                    "Personally selected introductions",
+                    "Meet international residents, future neighbours and people with shared interests, before or after your move.",
+                  ],
+                  [
+                    "Small-scale gatherings",
+                    "Build genuine connections through small dinners and carefully chosen activities, rather than anonymous events.",
+                  ],
+                  [
+                    "Become familiar with the area",
+                    "Get to know trusted local contacts and familiar faces, so daily life in Spain feels settled sooner.",
+                  ],
+                ].map(([title, text]) => (
+                  <div
+                    key={title}
+                    className="rounded-[24px] border border-white/15 bg-white/5 p-6 backdrop-blur"
+                  >
+                    <h3 className="font-serif text-2xl text-white">{title}</h3>
+                    <p className="mt-4 text-sm leading-relaxed text-white/65">
+                      {text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-8 text-sm leading-relaxed text-white/60">
+                Nordic Circle Community is available for selected clients of our
+                Buyer Discovery Trip and Soft Landing Program. Introductions are
+                personal and based on mutual relevance, privacy and shared
+                interests.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="/services/nordic-circle-community"
+                  className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                >
+                  Discover Nordic Circle
+                </a>
+
+                <a
+                  href="/contact"
+                  className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-[#1e2a3a]"
+                >
+                  Schedule a personal introduction
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -378,32 +566,37 @@ export default function Home() {
             A clear journey from first orientation to feeling at home in Spain.
           </h2>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-5">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {[
               [
                 "01",
                 "Area Match Assessment",
-                "Complete our lifestyle-based assessment so we understand your goals, preferences, budget and relocation priorities.",
+                "Complete our lifestyle-based questionnaire so we understand your goals, preferences, budget and relocation priorities.",
               ],
               [
                 "02",
                 "Lifestyle Intelligence Report",
-                "Receive personalised area insights showing which locations best fit your lifestyle and which areas may be less suitable.",
+                "Receive personalised insights showing which places best match your lifestyle and which may be less suitable.",
               ],
               [
                 "03",
                 "Buyer Discovery Trip",
-                "Experience selected areas in person, meet trusted professionals and validate your location choice before committing.",
+                "Experience selected areas in person, meet trusted professionals and connect with buyers and residents before making a decision.",
               ],
               [
                 "04",
-                "Property Search & Purchase Coordination",
-                "Once the right area is clear, we help focus the property search around homes that match your profile and coordinate the buying journey with trusted independent professionals.",
+                "Property search",
+                "Once the right area is clear, we focus the search on properties that match your profile, priorities and long-term plans.",
               ],
               [
                 "05",
-                "Soft Landing",
-                "After purchase, we support your practical move and introduce you to Nordic Circle Community.",
+                "Purchase Safety Report",
+                "When you are seriously considering a property, we coordinate independent technical, administrative and legal checks so key risks are clear before purchase.",
+              ],
+              [
+                "06",
+                "Soft Landing & Nordic Circle",
+                "After purchase, we support your practical move and help first introductions grow into a trusted local and international network.",
               ],
             ].map(([number, title, text]) => (
               <div key={number} className="border-l border-[#c8a063]/30 pl-5">
@@ -445,23 +638,21 @@ export default function Home() {
             </h2>
 
             <p className="mt-8 text-xl leading-relaxed text-stone-600">
-              Nordic Move Spain was founded to offer international buyers a
-              more personal, transparent and carefully considered way to buy
-              property on Costa Blanca North.
+              Nordic Move Spain was created to offer international buyers a more
+              personal, transparent and considered way to buy property on the
+              Costa Blanca North.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              As founders, we combine international experience, local
-              knowledge, research and trusted professional relationships. We
-              understand that purchasing a home abroad is not only about the
-              property itself, but also about lifestyle, security, connection
-              and feeling at home.
+              As founders, we combine international experience, local knowledge,
+              research and trusted professional relationships. We understand
+              that buying a property abroad is not only about real estate, but
+              also about lifestyle, certainty, connection and feeling at home.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
               Our role is to help buyers make clearer decisions, avoid
-              unnecessary risks and build a future in Spain with greater
-              confidence.
+              unnecessary risks and build a future in Spain with more confidence.
             </p>
 
             <a
@@ -474,7 +665,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PLACES */}
+      {/* REGIONS */}
       <section className="px-8 pb-32">
         <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[40px]">
           <img
@@ -493,7 +684,7 @@ export default function Home() {
                 </p>
 
                 <h2 className="mt-6 max-w-4xl font-serif text-5xl leading-[1] text-white md:text-7xl">
-                  Explore the places that could become your new home.
+                  Discover the places that could become your new home.
                 </h2>
               </div>
 
@@ -515,8 +706,8 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-600 md:text-lg">
-                  Elegant coastal living with a peaceful international
-                  atmosphere and beautiful Mediterranean beaches.
+                  Stylish coastal living with a calm international atmosphere
+                  and beautiful Mediterranean beaches.
                 </p>
               </a>
 
@@ -529,8 +720,8 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-600 md:text-lg">
-                  Artistic charm, authentic Spanish character and a
-                  sophisticated relaxed lifestyle near the sea.
+                  Artistic charm, authentic Spanish character and a refined,
+                  relaxed lifestyle close to the sea.
                 </p>
               </a>
 
@@ -543,7 +734,7 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-5 text-base leading-relaxed text-stone-600 md:text-lg">
-                  Vibrant international energy with luxury villas, nature,
+                  A lively international atmosphere with luxury villas, nature,
                   restaurants and family-friendly beaches.
                 </p>
               </a>
@@ -552,7 +743,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GUIDES & INSIGHTS */}
+      {/* GUIDES AND INSIGHTS */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-4xl">
@@ -561,12 +752,12 @@ export default function Home() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Honest guidance before buying property on Costa Blanca North.
+              Honest guidance before you buy property on the Costa Blanca North.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
               Practical guides for Dutch, German, Swiss and other international
-              buyers who want to understand the areas, real-life risks, costs,
+              buyers who want to understand the areas, daily risks, costs,
               rental rules and buying process before making a property decision
               in Spain.
             </p>
@@ -637,30 +828,31 @@ export default function Home() {
           <div className="grid items-center gap-0 lg:grid-cols-2">
             <div className="p-14 lg:p-20">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                For property owners
+                For homeowners
               </p>
 
               <h2 className="mt-6 font-serif text-6xl leading-[1] text-[#1e2a3a]">
-                Sell your Costa Blanca North property to the right international
-                buyer.
+                Sell your property on the Costa Blanca North to the right
+                international buyer.
               </h2>
 
               <p className="mt-8 text-xl leading-relaxed text-stone-700">
-                Most agencies list a property. We help position it for the
-                international buyers most likely to understand its lifestyle,
-                location and long-term value.
+                Most estate agents place a property online. We help position
+                your home for international buyers who truly understand the
+                lifestyle, location and long-term value.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
                 Through our buyer network, Area Match Assessments and Buyer
                 Discovery Trips, we understand what Dutch, Belgian, German,
                 Swiss, British, Scandinavian and other international buyers are
-                looking for before they commit to a home in Spain.
+                looking for before they purchase property in Spain.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                We help selected homes stand out with the right buyer profile,
-                lifestyle story and international positioning.
+                We help selected properties stand out with the right buyer
+                profile, a compelling lifestyle story and international
+                positioning.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -675,7 +867,7 @@ export default function Home() {
                   href="/services/sell-your-property"
                   className="rounded-full border border-[#1e2a3a] px-8 py-4 text-[#1e2a3a]"
                 >
-                  Learn more
+                  Read more
                 </a>
               </div>
             </div>
@@ -683,7 +875,7 @@ export default function Home() {
             <div className="relative h-full min-h-[500px]">
               <img
                 src="/images/seller-section.png"
-                alt="Selling property on Costa Blanca North"
+                alt="Selling a property on the Costa Blanca North"
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
@@ -691,7 +883,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* FINAL CALL */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -699,21 +891,21 @@ export default function Home() {
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-            Before you choose a property, choose the right area.
+            Understand the area and the risks before you choose a property.
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Our Area Match Assessment helps you understand which Costa Blanca
-            North towns and neighbourhoods fit your lifestyle, budget,
-            priorities and long-term plans.
+            Our Area Match Assessment, Buyer Discovery Trip and Purchase Safety
+            Report help you understand where to buy, what to check and how to
+            make a more confident property decision on the Costa Blanca North.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/services/area-match"
+              href="/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request your Area Match
+              Request your free Area Match Report
             </a>
 
             <a
@@ -721,6 +913,13 @@ export default function Home() {
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
               Schedule an introduction
+            </a>
+
+            <a
+              href="/"
+              className="rounded-full border border-white/50 px-8 py-4 text-sm text-white/90 transition hover:bg-white/10"
+            >
+              Back to website
             </a>
           </div>
         </div>
