@@ -20,11 +20,11 @@ type Question = {
 const questions: Question[] = [
   {
     id: "household_profile",
-    section: "Ihre PlÃ¤ne",
+    section: "Ihre Pläne",
     title: "Welche Beschreibung passt am besten zu Ihrem Haushalt?",
     type: "single",
     options: [
-      "Alleinstehende KÃ¤uferin oder alleinstehender KÃ¤ufer",
+      "Alleinstehende Käuferin oder alleinstehender Käufer",
       "Paar",
       "Familie mit kleinen Kindern",
       "Familie mit schulpflichtigen Kindern",
@@ -34,22 +34,79 @@ const questions: Question[] = [
   },
   {
     id: "purchase_goal",
-    section: "Ihre PlÃ¤ne",
-    title: "Was ist Ihr Hauptgrund fÃ¼r einen Immobilienkauf in Spanien?",
+    section: "Ihre Pläne",
+    title: "Was ist Ihr Hauptgrund für einen Immobilienkauf in Spanien?",
     type: "single",
     options: [
       "Dauerhafter Umzug",
       "Zweitwohnsitz",
-      "Teilweise in Spanien leben und spÃ¤ter mÃ¶glicherweise umziehen",
+      "Teilweise in Spanien leben und später möglicherweise umziehen",
       "Investition",
-      "Eine Kombination aus LebensqualitÃ¤t und Investition",
+      "Eine Kombination aus Lebensqualität und Investition",
       "Ich orientiere mich noch",
     ],
   },
   {
+    id: "decision_style",
+    section: "Ihre Pläne",
+    title: "Wie möchten Sie Ihre Entscheidung treffen?",
+    type: "single",
+    options: [
+      "Ich möchte zuerst die richtige Region verstehen",
+      "Ich möchte Regionen und Immobilien parallel vergleichen",
+      "Ich habe bereits eine bevorzugte Region und möchte passende Immobilien sehen",
+      "Ich brauche vor allem Klarheit über Risiken und praktische Unterschiede",
+      "Ich bin noch sehr früh in der Orientierung",
+    ],
+  },
+  {
+    id: "time_in_spain",
+    section: "Ihre Pläne",
+    title: "Wie viel Zeit möchten Sie voraussichtlich pro Jahr in Spanien verbringen?",
+    type: "single",
+    options: [
+      "Weniger als 1 Monat pro Jahr",
+      "1 bis 3 Monate pro Jahr",
+      "3 bis 6 Monate pro Jahr",
+      "Mehr als 6 Monate pro Jahr",
+      "Ganzjährig oder nahezu ganzjährig",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
+    id: "season_of_use",
+    section: "Ihre Pläne",
+    title: "Wann werden Sie die Immobilie voraussichtlich am meisten nutzen?",
+    type: "multiple",
+    maxSelections: 3,
+    helper: "Wählen Sie höchstens 3 Optionen.",
+    options: [
+      "Vor allem im Sommer",
+      "Vor allem im Winter",
+      "Frühling und Herbst",
+      "Schulferien",
+      "Mehrere längere Aufenthalte pro Jahr",
+      "Ganzjährig",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
+    id: "area_familiarity",
+    section: "Ihre Pläne",
+    title: "Wie gut kennen Sie die Costa Blanca Nord bereits?",
+    type: "single",
+    options: [
+      "Ich kenne die Region noch gar nicht",
+      "Ich war einmal im Urlaub dort",
+      "Ich kenne einige Orte durch mehrere Besuche",
+      "Ich habe bereits bestimmte Orte im Blick",
+      "Ich kenne die Region gut und möchte gezielt vergleichen",
+    ],
+  },
+  {
     id: "timeline",
-    section: "Ihre PlÃ¤ne",
-    title: "Wann mÃ¶chten Sie idealerweise kaufen?",
+    section: "Ihre Pläne",
+    title: "Wann möchten Sie idealerweise kaufen?",
     type: "single",
     options: [
       "Innerhalb von 6 Monaten",
@@ -61,8 +118,8 @@ const questions: Question[] = [
   },
   {
     id: "financing",
-    section: "Ihre PlÃ¤ne",
-    title: "Wie mÃ¶chten Sie den Immobilienkauf voraussichtlich finanzieren?",
+    section: "Ihre Pläne",
+    title: "Wie möchten Sie den Immobilienkauf voraussichtlich finanzieren?",
     type: "single",
     options: [
       "Kauf aus Eigenmitteln",
@@ -74,22 +131,22 @@ const questions: Question[] = [
   },
   {
     id: "budget",
-    section: "Ihre PlÃ¤ne",
-    title: "Wie hoch ist Ihr ungefÃ¤hres Immobilienbudget?",
+    section: "Ihre Pläne",
+    title: "Wie hoch ist Ihr ungefähres Immobilienbudget?",
     type: "single",
     options: [
-      "Unter 300.000 â‚¬",
-      "300.000 â‚¬ - 500.000 â‚¬",
-      "500.000 â‚¬ - 750.000 â‚¬",
-      "750.000 â‚¬ - 1.000.000 â‚¬",
-      "1.000.000 â‚¬ - 2.000.000 â‚¬",
-      "2.000.000 â‚¬ - 5.000.000 â‚¬",
-      "Ãœber 5.000.000 â‚¬",
+      "Unter 300.000 €",
+      "300.000 € - 500.000 €",
+      "500.000 € - 750.000 €",
+      "750.000 € - 1.000.000 €",
+      "1.000.000 € - 2.000.000 €",
+      "2.000.000 € - 5.000.000 €",
+      "Über 5.000.000 €",
     ],
   },
   {
     id: "budget_scope",
-    section: "Ihre PlÃ¤ne",
+    section: "Ihre Pläne",
     title: "Welche Kosten sind in diesem Budget enthalten?",
     type: "single",
     options: [
@@ -101,44 +158,132 @@ const questions: Question[] = [
     ],
   },
   {
+    id: "monthly_running_costs",
+    section: "Ihre Pläne",
+    title: "Welche monatlichen laufenden Kosten fühlen sich für Sie komfortabel an?",
+    type: "single",
+    options: [
+      "So niedrig wie möglich",
+      "Bis etwa 300 € pro Monat",
+      "300 € bis 600 € pro Monat",
+      "600 € bis 1.000 € pro Monat",
+      "Über 1.000 € pro Monat ist akzeptabel, wenn die Immobilie passt",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
     id: "property_type",
     section: "Ihre Immobilie",
-    title: "Welche Immobilientypen kommen fÃ¼r Sie ernsthaft infrage?",
+    title: "Welche Immobilientypen kommen für Sie ernsthaft infrage?",
     type: "multiple",
     maxSelections: 3,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 3 Optionen.",
+    helper: "Wählen Sie höchstens 3 Optionen.",
     options: [
       "Freistehende Villa",
       "Luxusvilla",
       "Apartment",
       "Penthouse",
-      "Reihenhaus oder DoppelhaushÃ¤lfte",
+      "Reihenhaus oder Doppelhaushälfte",
       "Finca oder Landhaus",
       "Neubauprojekt",
       "Immobilie in einer Golfanlage",
     ],
   },
   {
-    id: "condition",
+    id: "property_style",
     section: "Ihre Immobilie",
-    title: "Welcher Zustand der Immobilie kommt fÃ¼r Sie infrage?",
+    title: "Welche Art von Wohnstil spricht Sie am meisten an?",
     type: "multiple",
     maxSelections: 3,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 3 Optionen.",
+    helper: "Wählen Sie höchstens 3 Optionen.",
+    options: [
+      "Modern und minimalistisch",
+      "Mediterran und traditionell",
+      "Renoviert mit Charakter",
+      "Luxuriös und hochwertig",
+      "Hell, ruhig und pflegeleicht",
+      "Rustikal oder Finca-Stil",
+      "Neubau mit klaren Linien",
+      "Ich bin offen für verschiedene Stile",
+    ],
+  },
+  {
+    id: "condition",
+    section: "Ihre Immobilie",
+    title: "Welcher Zustand der Immobilie kommt für Sie infrage?",
+    type: "multiple",
+    maxSelections: 3,
+    helper: "Wählen Sie höchstens 3 Optionen.",
     options: [
       "Neubau",
-      "KÃ¼rzlich renoviert",
+      "Kürzlich renoviert",
       "Sofort bezugsfertig",
       "Leichte Renovierung ist akzeptabel",
       "Umfangreiche Renovierung ist akzeptabel",
     ],
   },
   {
+    id: "renovation_management",
+    section: "Ihre Immobilie",
+    title: "Wie möchten Sie mit Renovierungen oder Verbesserungen umgehen?",
+    type: "single",
+    options: [
+      "Ich möchte keine Renovierung oder Arbeiten organisieren",
+      "Kleine Verbesserungen sind in Ordnung",
+      "Ich bin offen für Renovierung, wenn lokale Begleitung möglich ist",
+      "Ich habe Erfahrung mit Renovierungen und kann Entscheidungen gut treffen",
+      "Ich möchte ausdrücklich ein Projekt mit Renovierungspotenzial",
+    ],
+  },
+  {
+    id: "build_quality_comfort",
+    section: "Ihre Immobilie",
+    title: "Welche technischen Punkte sollen bei der Immobilienprüfung besonders beachtet werden?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Wählen Sie höchstens 5 Punkte, die für Sie besonders wichtig sind.",
+    options: [
+      "Isolierung und Fensterqualität",
+      "Heiz- und Kühlsysteme",
+      "Elektrische Installation und Sanitäranlagen",
+      "Energieeffizienz",
+      "Dach, Terrassen und Wasserableitung",
+      "Allgemeine Bauqualität",
+      "Pool, Bewässerung oder technische Anlagen",
+      "Ich brauche dazu Beratung",
+    ],
+  },
+  {
     id: "bedrooms",
     section: "Ihre Immobilie",
-    title: "Wie viele Schlafzimmer benÃ¶tigen Sie mindestens?",
+    title: "Wie viele Schlafzimmer benötigen Sie mindestens?",
     type: "single",
     options: ["1", "2", "3", "4", "5", "6+"],
+  },
+  {
+    id: "guest_usage",
+    section: "Ihre Immobilie",
+    title: "Wie oft erwarten Sie Besuch von Familie oder Freunden?",
+    type: "single",
+    options: [
+      "Selten",
+      "Einige Male pro Jahr",
+      "Regelmäßig in Ferienzeiten",
+      "Häufige längere Besuche",
+      "Die Immobilie soll auch für Familie oder mehrere Generationen gut funktionieren",
+    ],
+  },
+  {
+    id: "guest_privacy",
+    section: "Ihre Immobilie",
+    title: "Wie wichtig ist Privatsphäre für Gäste oder Familie im Haus?",
+    type: "single",
+    options: [
+      "Sehr wichtig — Gäste sollten möglichst unabhängig wohnen können",
+      "Ein separates Gästezimmer oder Gästebad reicht aus",
+      "Gemeinsames Wohnen ist völlig in Ordnung",
+      "Gäste spielen kaum eine Rolle",
+    ],
   },
   {
     id: "home_features",
@@ -146,37 +291,87 @@ const questions: Question[] = [
     title: "Welche Merkmale der Immobilie sind Ihnen am wichtigsten?",
     type: "multiple",
     maxSelections: 8,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 8 Optionen.",
+    helper: "Wählen Sie höchstens 8 Optionen.",
     options: [
       "Privater Swimmingpool",
       "Gemeinschaftspool",
-      "GroÃŸer Garten",
-      "Pflegeleichter AuÃŸenbereich",
+      "Großer Garten",
+      "Pflegeleichter Außenbereich",
       "Meerblick",
       "Panoramischer Meerblick",
-      "Separater GÃ¤stebereich",
-      "AuÃŸenkÃ¼che oder Bereich fÃ¼r GÃ¤ste",
+      "Separater Gästebereich",
+      "Außenküche oder Bereich für Gäste",
       "Ebenerdiges oder barrierearmes Wohnen",
       "Aufzug",
       "Geschlossene Wohnanlage",
       "Private Garage oder sicherer Parkplatz",
-      "LademÃ¶glichkeit fÃ¼r ein Elektroauto",
+      "Lademöglichkeit für ein Elektroauto",
       "Arbeitszimmer oder Homeoffice",
-      "Viel Wintersonne oder SÃ¼dausrichtung",
+      "Viel Wintersonne oder Südausrichtung",
       "Schutz vor starkem Wind",
+    ],
+  },
+  {
+    id: "climate_comfort",
+    section: "Ihre Immobilie",
+    title: "Welche Klimakomfort-Faktoren sind im Alltag am wichtigsten?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Wählen Sie höchstens 5 Optionen.",
+    options: [
+      "Schatten auf Terrassen und im Garten",
+      "Warme Wintersonne",
+      "Schutz vor starkem Wind",
+      "Gute natürliche Belüftung",
+      "Angenehme Innentemperatur im Sommer",
+      "Angenehme Innentemperatur im Winter",
+      "Kühle Sitzbereiche im Außenbereich",
+      "Eine Immobilie, die sich das ganze Jahr über komfortabel anfühlt",
+    ],
+  },
+  {
+    id: "outdoor_living",
+    section: "Ihre Immobilie",
+    title: "Wie möchten Sie den Außenbereich nutzen?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Wählen Sie höchstens 5 Optionen.",
+    options: [
+      "Ruhig frühstücken oder Kaffee trinken",
+      "Sonnenbaden",
+      "Schatten und kühle Sitzbereiche",
+      "Essen mit Familie oder Gästen",
+      "Grillen oder Außenküche",
+      "Gartenarbeit",
+      "Poolbereich mit Privatsphäre",
+      "Sicherer Bereich für Kinder oder Haustiere",
     ],
   },
   {
     id: "maintenance",
     section: "Ihre Immobilie",
-    title: "Wie viel Instandhaltung mÃ¶chten Sie Ã¼bernehmen?",
+    title: "Wie viel Instandhaltung möchten Sie übernehmen?",
     type: "single",
     options: [
-      "Sehr wenig â€” ich bevorzuge eine pflegeleichte Immobilie",
+      "Sehr wenig — ich bevorzuge eine pflegeleichte Immobilie",
       "Ein moderater Pflegeaufwand ist akzeptabel",
       "Garten- und Poolpflege sind akzeptabel",
-      "Ich kann eine groÃŸe Immobilie mit GrundstÃ¼ck verwalten",
-      "Ich wÃ¼rde eine professionelle Immobilienverwaltung beauftragen",
+      "Ich kann eine große Immobilie mit Grundstück verwalten",
+      "Ich würde eine professionelle Immobilienverwaltung beauftragen",
+    ],
+  },
+  {
+    id: "property_management",
+    section: "Ihre Immobilie",
+    title: "Wie soll die Immobilie betreut werden, wenn Sie nicht in Spanien sind?",
+    type: "single",
+    options: [
+      "Ich möchte möglichst wenig Betreuung benötigen",
+      "Ich möchte Schlüsselservice und regelmäßige Kontrollen",
+      "Ich brauche Garten- und Poolpflege",
+      "Ich möchte vollständige Immobilienverwaltung",
+      "Familie, Freunde oder Bekannte werden sich darum kümmern",
+      "Ich bin noch nicht sicher",
     ],
   },
   {
@@ -185,49 +380,138 @@ const questions: Question[] = [
     title: "Welche Lagen sprechen Sie am meisten an?",
     type: "multiple",
     maxSelections: 4,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 4 Optionen.",
+    helper: "Wählen Sie höchstens 4 Optionen.",
     options: [
       "Direkt am Meer",
-      "Strand in fuÃŸlÃ¤ufiger Entfernung",
+      "Strand in fußläufiger Entfernung",
       "Wohngebiet mit Meerblick",
       "Stadt- oder Dorfzentrum",
       "Historisches Zentrum",
       "Ruhige Wohnanlage",
       "Golfumgebung",
       "Yachthafen oder Hafengebiet",
-      "LÃ¤ndliche Umgebung",
+      "Ländliche Umgebung",
       "Berg- oder Naturgebiet",
       "Exklusive Wohnlage",
     ],
   },
   {
-    id: "daily_mobility",
+    id: "area_feeling",
     section: "Lage und Erreichbarkeit",
-    title: "Wie mÃ¶chten Sie tÃ¤gliche Einrichtungen erreichen?",
+    title: "Welche Atmosphäre soll Ihr Wohnort haben?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Wählen Sie höchstens 4 Optionen.",
+    options: [
+      "Authentisch spanisch",
+      "International und gut organisiert",
+      "Ruhig und hochwertig",
+      "Lebendig mit Restaurants und Cafés",
+      "Küstennah und entspannt",
+      "Exklusiv und privat",
+      "Familienfreundlich",
+      "Natürlich und ländlich",
+      "Modern und komfortabel",
+    ],
+  },
+  {
+    id: "view_vs_convenience",
+    section: "Lage und Erreichbarkeit",
+    title: "Was ist Ihnen wichtiger: Aussicht oder tägliche Bequemlichkeit?",
     type: "single",
     options: [
-      "Ãœberwiegend zu FuÃŸ",
+      "Aussicht ist wichtiger, auch wenn die Lage steiler oder autoabhängiger ist",
+      "Ein gutes Gleichgewicht aus Aussicht und Alltagstauglichkeit",
+      "Fußläufigkeit und einfache Erreichbarkeit sind wichtiger als Aussicht",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
+    id: "areas_considered",
+    section: "Lage und Erreichbarkeit",
+    title: "Welche Orte oder Regionen ziehen Sie bereits in Betracht?",
+    type: "multiple",
+    maxSelections: 6,
+    helper: "Wählen Sie alle Orte aus, die Sie bereits interessieren.",
+    options: [
+      "Dénia",
+      "Jávea",
+      "Moraira",
+      "Benissa",
+      "Calpe",
+      "Altea",
+      "Benitachell / Cumbre del Sol",
+      "Orba / Jalón / Inland",
+      "Ich bin offen für Empfehlungen",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
+    id: "areas_to_avoid",
+    section: "Lage und Erreichbarkeit",
+    title: "Gibt es Orte oder Umgebungen, die Sie eher vermeiden möchten?",
+    type: "text",
+    optional: true,
+    helper:
+      "Optional. Nennen Sie Orte, Umgebungen oder Eindrücke, die nicht zu Ihnen passen.",
+  },
+  {
+    id: "daily_mobility",
+    section: "Lage und Erreichbarkeit",
+    title: "Wie möchten Sie tägliche Einrichtungen erreichen?",
+    type: "single",
+    options: [
+      "Überwiegend zu Fuß",
       "Mit dem Fahrrad oder E-Bike",
       "Eine kurze Autofahrt ist akzeptabel",
-      "TÃ¤gliches Autofahren ist kein Problem",
+      "Tägliches Autofahren ist kein Problem",
       "Das ist nicht wichtig",
+    ],
+  },
+  {
+    id: "amenity_distance",
+    section: "Lage und Erreichbarkeit",
+    title: "Welche Entfernung zu täglichen Einrichtungen fühlt sich für Sie angenehm an?",
+    type: "single",
+    options: [
+      "Supermarkt, Café und Apotheke möglichst innerhalb von 5 bis 10 Minuten zu Fuß",
+      "Wichtige Einrichtungen innerhalb von 15 bis 20 Minuten zu Fuß",
+      "Eine kurze Autofahrt bis 10 Minuten ist in Ordnung",
+      "Bis zu 20 Minuten Autofahrt sind akzeptabel",
+      "Entfernung ist weniger wichtig als Ruhe, Aussicht oder Grundstück",
+    ],
+  },
+  {
+    id: "car_parking_needs",
+    section: "Lage und Erreichbarkeit",
+    title: "Welche Anforderungen haben Sie an Auto und Parken?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Wählen Sie höchstens 4 Optionen.",
+    options: [
+      "Ein privater Parkplatz reicht aus",
+      "Zwei oder mehr Parkplätze sind wichtig",
+      "Garage ist wichtig",
+      "Einfaches Parken für Gäste ist wichtig",
+      "Ich möchte möglichst wenig Auto fahren",
+      "Ich plane ein Elektroauto",
+      "Parken ist kein entscheidender Faktor",
     ],
   },
   {
     id: "access_terrain",
     section: "Lage und Erreichbarkeit",
-    title: "Welche Zufahrts- und GelÃ¤ndebedingungen sind fÃ¼r Sie akzeptabel?",
+    title: "Welche Zufahrts- und Geländebedingungen sind für Sie akzeptabel?",
     type: "multiple",
     maxSelections: 4,
-    helper: "WÃ¤hlen Sie alle Bedingungen aus, die fÃ¼r Sie akzeptabel sind.",
+    helper: "Wählen Sie alle Bedingungen aus, die für Sie akzeptabel sind.",
     options: [
-      "Nur flache und leicht zugÃ¤ngliche Lagen",
+      "Nur flache und leicht zugängliche Lagen",
       "Leichte Hanglagen sind akzeptabel",
-      "Steile StraÃŸen sind akzeptabel",
-      "Schmale WohnstraÃŸen sind akzeptabel",
-      "LÃ¤ndliche oder teilweise unbefestigte Zufahrt ist akzeptabel",
-      "Treppen innerhalb oder auÃŸerhalb der Immobilie sind akzeptabel",
-      "Barrierearme Erreichbarkeit ist zwingend erforderlich",
+      "Steile Straßen sind akzeptabel",
+      "Schmale Wohnstraßen sind akzeptabel",
+      "Ländliche oder teilweise unbefestigte Zufahrt ist akzeptabel",
+      "Treppen innerhalb oder außerhalb der Immobilie sind akzeptabel",
     ],
   },
   {
@@ -240,18 +524,56 @@ const questions: Question[] = [
       "Bis zu 45 Minuten",
       "Bis zu 60 Minuten",
       "Bis zu 90 Minuten",
-      "Keine PrÃ¤ferenz",
+      "Keine Präferenz",
     ],
+  },
+  {
+    id: "boat_needs",
+    section: "Lage und Erreichbarkeit",
+    title: "Spielt ein Boot oder ein Liegeplatz eine Rolle bei Ihrer Standortwahl?",
+    type: "single",
+    options: [
+      "Nein, das ist nicht relevant",
+      "Ich habe bereits ein Boot und benötige einen Liegeplatz",
+      "Ich plane, in Spanien ein Boot zu kaufen",
+      "Ich möchte in der Nähe eines Yachthafens wohnen, auch ohne eigenes Boot",
+      "Ich interessiere mich für Segeln oder Wassersport, aber ein Liegeplatz ist nicht erforderlich",
+      "Ich bin noch nicht sicher",
+    ],
+  },
+  {
+    id: "boat_details",
+    section: "Lage und Erreichbarkeit",
+    title: "Welche Anforderungen sind für Ihr Boot oder Ihren Liegeplatz wichtig?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Wählen Sie höchstens 5 Optionen.",
+    options: [
+      "Liegeplatz für ein kleines Motorboot",
+      "Liegeplatz für ein größeres Motorboot",
+      "Liegeplatz für ein Segelboot",
+      "Nähe zu einem Yachthafen innerhalb von 10 Minuten",
+      "Nähe zu einem Yachthafen innerhalb von 20 Minuten",
+      "Gute Zufahrt und Parkmöglichkeiten am Hafen",
+      "Wartung, Winterlager oder Bootsservice in der Nähe",
+      "Restaurant- und Clubleben rund um den Hafen",
+      "Ich brauche dazu Beratung",
+    ],
+    showIf: (answers) =>
+      answers.boat_needs &&
+      answers.boat_needs !== "Nein, das ist nicht relevant" &&
+      answers.boat_needs !==
+        "Ich interessiere mich für Segeln oder Wassersport, aber ein Liegeplatz ist nicht erforderlich",
   },
   {
     id: "school_needs",
     section: "Lage und Erreichbarkeit",
-    title: "Welche Schulangebote sind fÃ¼r Ihre Familie relevant?",
+    title: "Welche Schulangebote sind für Ihre Familie relevant?",
     type: "multiple",
     maxSelections: 3,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 3 Optionen.",
+    helper: "Wählen Sie höchstens 3 Optionen.",
     options: [
-      "Ã–ffentliche spanische Schule",
+      "Öffentliche spanische Schule",
       "Private spanische Schule",
       "Zweisprachige Schule",
       "Internationale Schule",
@@ -266,12 +588,12 @@ const questions: Question[] = [
     id: "healthcare_access",
     section: "Lage und Erreichbarkeit",
     title:
-      "Welche Erreichbarkeit medizinischer Versorgung gibt Ihnen ein gutes GefÃ¼hl?",
+      "Welche Erreichbarkeit medizinischer Versorgung gibt Ihnen ein gutes Gefühl?",
     type: "single",
     options: [
-      "Krankenhaus und englischsprachige medizinische Versorgung innerhalb von etwa 15 Minuten",
-      "Krankenhaus und englischsprachige medizinische Versorgung innerhalb von etwa 30 Minuten",
-      "Eine lokale Arztpraxis und Apotheke in der NÃ¤he sind ausreichend",
+      "Krankenhaus und deutsch- oder englischsprachige medizinische Versorgung innerhalb von etwa 15 Minuten",
+      "Krankenhaus und deutsch- oder englischsprachige medizinische Versorgung innerhalb von etwa 30 Minuten",
+      "Eine lokale Arztpraxis und Apotheke in der Nähe sind ausreichend",
       "Der Zugang zu privater Gesundheitsversorgung ist wichtiger als die Entfernung",
       "Die medizinische Versorgung ist kein entscheidender Standortfaktor",
     ],
@@ -282,7 +604,7 @@ const questions: Question[] = [
     title: "Wie wichtig ist eine langfristig barrierearme Immobilie?",
     type: "single",
     options: [
-      "Unverzichtbar â€” wenige Stufen und ein einfacher Zugang sind erforderlich",
+      "Unverzichtbar — wenige Stufen und ein einfacher Zugang sind erforderlich",
       "Sehr wichtig im Hinblick auf die Zukunft",
       "Bevorzugt, aber nicht zwingend erforderlich",
       "Nicht wichtig",
@@ -292,10 +614,10 @@ const questions: Question[] = [
     id: "internet",
     section: "Lage und Erreichbarkeit",
     title:
-      "Wie wichtig ist eine zuverlÃ¤ssige und schnelle Internetverbindung?",
+      "Wie wichtig ist eine zuverlässige und schnelle Internetverbindung?",
     type: "single",
     options: [
-      "Unverzichtbar fÃ¼r Homeoffice oder Unternehmen",
+      "Unverzichtbar für Homeoffice oder Unternehmen",
       "Sehr wichtig",
       "Praktisch, aber nicht zwingend erforderlich",
       "Nicht wichtig",
@@ -305,41 +627,74 @@ const questions: Question[] = [
     id: "community_mix",
     section: "Gemeinschaft und Alltag",
     title:
-      "In welcher Zusammensetzung der Nachbarschaft wÃ¼rden Sie sich am wohlsten fÃ¼hlen?",
+      "In welcher Zusammensetzung der Nachbarschaft würden Sie sich am wohlsten fühlen?",
     type: "single",
     options: [
-      "Ãœberwiegend spanische Einheimische",
+      "Überwiegend spanische Dauerbewohner",
       "Eine ausgewogene Mischung aus spanischen und internationalen Bewohnern",
-      "Ãœberwiegend internationale Bewohner",
-      "Eine starke Gemeinschaft mit meiner Sprache oder NationalitÃ¤t",
-      "Ich habe keine PrÃ¤ferenz",
+      "Überwiegend internationale Bewohner",
+      "Überwiegend Zweitwohnsitz-Eigentümer",
+      "Eine ganzjährig bewohnte Wohngegend",
+      "Ich habe keine Präferenz",
+    ],
+  },
+  {
+    id: "language_comfort",
+    section: "Gemeinschaft und Alltag",
+    title: "Wie wichtig ist Ihnen eine deutsch- oder englischsprachige Umgebung?",
+    type: "single",
+    options: [
+      "Sehr wichtig — ich möchte viele deutschsprachige Kontakte oder Dienstleistungen",
+      "Englischsprachige Dienstleistungen reichen aus",
+      "Eine internationale Mischung ist ideal",
+      "Ich möchte bewusst mehr spanisches Alltagsleben",
+      "Sprache ist kein entscheidender Faktor",
     ],
   },
   {
     id: "neighbour_contact",
     section: "Gemeinschaft und Alltag",
-    title: "Wie viel Kontakt mÃ¶chten Sie idealerweise mit Ihren Nachbarn haben?",
+    title: "Wie viel Kontakt möchten Sie idealerweise mit Ihren Nachbarn haben?",
     type: "single",
     options: [
       "Eine aktive und gesellige Nachbarschaft",
-      "RegelmÃ¤ÃŸiger freundlicher Kontakt bei ausreichender PrivatsphÃ¤re",
+      "Regelmäßiger freundlicher Kontakt bei ausreichender Privatsphäre",
       "Nur gelegentlicher Kontakt",
-      "Maximale PrivatsphÃ¤re und sehr wenig Kontakt zu Nachbarn",
-      "Ich habe keine PrÃ¤ferenz",
+      "Maximale Privatsphäre und sehr wenig Kontakt zu Nachbarn",
+      "Ich habe keine Präferenz",
     ],
+  },
+  {
+    id: "security_feeling",
+    section: "Gemeinschaft und Alltag",
+    title: "Was gibt Ihnen in Spanien ein gutes Sicherheitsgefühl?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Wählen Sie höchstens 4 Optionen.",
+    options: [
+      "Nachbarn in der Nähe",
+      "Ganzjährig bewohnte Umgebung",
+      "Geschlossene Wohnanlage",
+      "Alarmanlage oder Sicherheitsservice",
+      "Private Einfahrt oder abgeschlossener Parkplatz",
+      "Gute Straßenbeleuchtung",
+      "Ruhige Lage ohne viel Durchgangsverkehr",
+      "Sicherheit ist für mich kein wichtiger Faktor",
+    ],
+    exclusiveOptions: ["Sicherheit ist für mich kein wichtiger Faktor"],
   },
   {
     id: "privacy_level",
     section: "Gemeinschaft und Alltag",
     title:
-      "Wie viel Abstand und PrivatsphÃ¤re wÃ¼nschen Sie gegenÃ¼ber NachbargrundstÃ¼cken?",
+      "Wie viel Abstand und Privatsphäre wünschen Sie gegenüber Nachbargrundstücken?",
     type: "single",
     options: [
-      "Maximale PrivatsphÃ¤re ohne direkte Nachbarn",
+      "Maximale Privatsphäre ohne direkte Nachbarn",
       "Freistehende Immobilie mit angenehmem Abstand zu Nachbarn",
-      "Eine Wohnanlage mit Nachbarn in der NÃ¤he ist in Ordnung",
-      "Ein Apartment oder eine stÃ¤dtische Umgebung ist in Ordnung",
-      "Ich habe keine PrÃ¤ferenz",
+      "Eine Wohnanlage mit Nachbarn in der Nähe ist in Ordnung",
+      "Ein Apartment oder eine städtische Umgebung ist in Ordnung",
+      "Ich habe keine Präferenz",
     ],
   },
   {
@@ -348,26 +703,26 @@ const questions: Question[] = [
     title: "Wie stehen Sie zu saisonalem Tourismus und sommerlicher Betriebsamkeit?",
     type: "single",
     options: [
-      "Ich mÃ¶chte ganzjÃ¤hrig in einer ruhigen Wohngegend leben",
-      "Etwas saisonale AktivitÃ¤t ist akzeptabel",
-      "Ich mag eine lebendige AtmosphÃ¤re im Sommer",
+      "Ich möchte ganzjährig in einer ruhigen Wohngegend leben",
+      "Etwas saisonale Aktivität ist akzeptabel",
+      "Ich mag eine lebendige Atmosphäre im Sommer",
       "Ich bevorzuge eine aktive touristische Umgebung",
-      "Ich habe keine PrÃ¤ferenz",
+      "Ich habe keine Präferenz",
     ],
   },
   {
     id: "year_round_environment",
     section: "Gemeinschaft und Alltag",
-    title: "Welche Angebote sollen auch im Winter verfÃ¼gbar sein?",
+    title: "Welche Angebote sollen auch im Winter verfügbar sein?",
     type: "multiple",
     maxSelections: 5,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 5 Optionen.",
+    helper: "Wählen Sie höchstens 5 Optionen.",
     options: [
-      "Restaurants und CafÃ©s",
-      "GeschÃ¤fte und SupermÃ¤rkte",
+      "Restaurants und Cafés",
+      "Geschäfte und Supermärkte",
       "Medizinische Versorgung",
       "Sport- und Fitnesseinrichtungen",
-      "Soziale AktivitÃ¤ten",
+      "Soziale Aktivitäten",
       "Internationales Gemeinschaftsleben",
       "Kulturelle Veranstaltungen",
       "Ein lebendiges Stadtzentrum",
@@ -379,31 +734,49 @@ const questions: Question[] = [
     id: "lifestyle",
     section: "Gemeinschaft und Alltag",
     title:
-      "Welche AktivitÃ¤ten und Lebensstilelemente sind Ihnen am wichtigsten?",
+      "Welche Aktivitäten und Lebensstilelemente sind Ihnen am wichtigsten?",
     type: "multiple",
     maxSelections: 6,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 6 Optionen.",
+    helper: "Wählen Sie höchstens 6 Optionen.",
     options: [
       "Strand und Schwimmen",
       "Spazieren und Wandern",
       "Radfahren",
       "Golf",
       "Tennis oder Padel",
-      "Segeln oder Wassersport",
-      "Leben rund um den Yachthafen",
+      "Segeln, Bootfahren oder Wassersport",
       "Fitness, Yoga oder Wellness",
-      "Lokale spanische Gastronomie und MÃ¤rkte",
+      "Lokale spanische Gastronomie und Märkte",
       "Gehobene Gastronomie und Wein",
       "Kunst und Kultur",
-      "GeschÃ¤ftliche oder berufliche Kontakte",
-      "AktivitÃ¤ten fÃ¼r Familien",
+      "Geschäftliche oder berufliche Kontakte",
+      "Aktivitäten für Familien",
       "Ruhiges Leben zu Hause",
+    ],
+  },
+  {
+    id: "daily_routine",
+    section: "Gemeinschaft und Alltag",
+    title: "Wie sieht Ihr idealer Alltag in Spanien aus?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Wählen Sie höchstens 5 Optionen.",
+    options: [
+      "Morgens zu Fuß Kaffee trinken gehen",
+      "Täglich am Meer oder Strand spazieren",
+      "Viel Zeit zu Hause und auf der Terrasse verbringen",
+      "Regelmäßig Restaurants und Cafés besuchen",
+      "Sport, Fitness oder Padel in der Nähe nutzen",
+      "Märkte und lokale Geschäfte besuchen",
+      "Ruhig arbeiten oder Homeoffice machen",
+      "Familie und Freunde empfangen",
+      "Möglichst wenig organisieren und einfach ankommen",
     ],
   },
   {
     id: "pets",
     section: "Gemeinschaft und Alltag",
-    title: "Werden Haustiere zu Ihrem Leben in Spanien gehÃ¶ren?",
+    title: "Werden Haustiere zu Ihrem Leben in Spanien gehören?",
     type: "single",
     options: [
       "Keine Haustiere",
@@ -415,15 +788,15 @@ const questions: Question[] = [
   {
     id: "pet_needs",
     section: "Gemeinschaft und Alltag",
-    title: "Welche Bedingungen sind fÃ¼r Ihre Haustiere wichtig?",
+    title: "Welche Bedingungen sind für Ihre Haustiere wichtig?",
     type: "multiple",
     maxSelections: 4,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 4 Optionen.",
+    helper: "Wählen Sie höchstens 4 Optionen.",
     options: [
-      "Sicher eingezÃ¤unter privater Garten",
-      "Spazierwege in der NÃ¤he",
+      "Sicher eingezäunter privater Garten",
+      "Spazierwege in der Nähe",
       "Zugang zu einem hundefreundlichen Strand",
-      "Tierarzt in der NÃ¤he",
+      "Tierarzt in der Nähe",
       "Ruhige Umgebung",
       "Haustierfreundliche Gemeinschaftsregeln",
     ],
@@ -432,95 +805,107 @@ const questions: Question[] = [
   },
   {
     id: "noise_tolerance",
-    section: "MÃ¶gliche Bedenken",
+    section: "Mögliche Bedenken",
     title: "Wie ruhig muss Ihre ideale Umgebung sein?",
     type: "single",
     options: [
-      "Extrem ruhig â€” minimale HintergrundgerÃ¤usche sind unverzichtbar",
-      "Sehr ruhig, mit nur gelegentlicher lokaler AktivitÃ¤t",
-      "Etwas alltÃ¤glicher UmgebungslÃ¤rm ist akzeptabel",
+      "Extrem ruhig — minimale Hintergrundgeräusche sind unverzichtbar",
+      "Sehr ruhig, mit nur gelegentlicher lokaler Aktivität",
+      "Etwas alltäglicher Umgebungslärm ist akzeptabel",
       "Eine lebendige Umgebung ist akzeptabel",
-      "LÃ¤rm ist fÃ¼r mich kein wichtiger Faktor",
+      "Lärm ist für mich kein wichtiger Faktor",
     ],
   },
   {
     id: "unacceptable_noise",
-    section: "MÃ¶gliche Bedenken",
-    title: "Welche LÃ¤rmquellen wÃ¼rden Ihre Entscheidung stark beeinflussen?",
+    section: "Mögliche Bedenken",
+    title: "Welche Lärmquellen würden Ihre Entscheidung stark beeinflussen?",
     type: "multiple",
     maxSelections: 5,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 5 Optionen.",
+    helper: "Wählen Sie höchstens 5 Optionen.",
     options: [
-      "VerkehrslÃ¤rm von viel befahrenen StraÃŸen oder Autobahnen",
-      "LÃ¤rm von Bars, Restaurants oder Nachtleben",
-      "Ferienvermietung und hÃ¤ufig wechselnde GÃ¤ste",
+      "Verkehrslärm von viel befahrenen Straßen oder Autobahnen",
+      "Lärm von Bars, Restaurants oder Nachtleben",
+      "Ferienvermietung und häufig wechselnde Gäste",
       "Starker Tourismus im Sommer",
-      "BaulÃ¤rm",
-      "FluglÃ¤rm",
-      "Hunde oder regelmÃ¤ÃŸiger NachbarschaftslÃ¤rm",
-      "Schulen, Sportanlagen oder SpielplÃ¤tze",
+      "Baulärm",
+      "Fluglärm",
+      "Hunde oder regelmäßiger Nachbarschaftslärm",
+      "Schulen, Sportanlagen oder Spielplätze",
       "Kirchenglocken, Feste oder lokale Veranstaltungen",
-      "Keine dieser LÃ¤rmquellen wÃ¤re ein groÃŸes Problem",
+      "Keine dieser Lärmquellen wäre ein großes Problem",
     ],
     exclusiveOptions: [
-      "Keine dieser LÃ¤rmquellen wÃ¤re ein groÃŸes Problem",
+      "Keine dieser Lärmquellen wäre ein großes Problem",
     ],
   },
   {
     id: "infrastructure_dealbreakers",
-    section: "MÃ¶gliche Bedenken",
+    section: "Mögliche Bedenken",
     title:
-      "Welche sichtbaren Infrastrukturelemente wÃ¼rden Ihre Entscheidung negativ beeinflussen?",
+      "Welche sichtbaren Infrastrukturelemente würden Ihre Entscheidung negativ beeinflussen?",
     type: "multiple",
     maxSelections: 5,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 5 Optionen.",
+    helper: "Wählen Sie höchstens 5 Optionen.",
     options: [
       "Hochspannungsmasten",
       "Oberirdische Stromleitungen oder Strommasten direkt an der Immobilie",
       "Mobilfunk- oder Kommunikationsmasten",
-      "Sichtbare stark befahrene StraÃŸen",
-      "GroÃŸe ApartmentgebÃ¤ude in der NÃ¤he",
-      "Industrie- oder GewerbegebÃ¤ude",
-      "Aktive Baustellen oder unbebaute GrundstÃ¼cke",
+      "Sichtbare stark befahrene Straßen",
+      "Große Apartmentgebäude in der Nähe",
+      "Industrie- oder Gewerbegebäude",
+      "Aktive Baustellen oder unbebaute Grundstücke",
       "Direkte Einsicht durch benachbarte Immobilien",
-      "Keine dieser Gegebenheiten wÃ¤re ein groÃŸes Problem",
+      "Keine dieser Gegebenheiten wäre ein großes Problem",
     ],
     exclusiveOptions: [
-      "Keine dieser Gegebenheiten wÃ¤re ein groÃŸes Problem",
+      "Keine dieser Gegebenheiten wäre ein großes Problem",
     ],
   },
   {
     id: "environmental_concerns",
-    section: "MÃ¶gliche Bedenken",
+    section: "Mögliche Bedenken",
     title:
-      "Welche Umwelt- oder GrundstÃ¼cksrisiken wÃ¼rden Sie besonders beunruhigen?",
+      "Welche Umwelt- oder Grundstücksrisiken würden Sie besonders beunruhigen?",
     type: "multiple",
     maxSelections: 5,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 5 Optionen.",
+    helper: "Wählen Sie höchstens 5 Optionen.",
     options: [
-      "ÃœberschwemmungsgefÃ¤hrdete Gebiete",
-      "ErhÃ¶htes Waldbrandrisiko",
-      "Steile GrundstÃ¼cke oder groÃŸe StÃ¼tzmauern",
+      "Überschwemmungsgefährdete Gebiete",
+      "Erhöhtes Waldbrandrisiko",
+      "Steile Grundstücke oder große Stützmauern",
       "Starke Windexposition",
-      "Hohe Luftfeuchtigkeit oder Feuchtigkeitsprobleme",
-      "KÃ¼stenerosion oder extreme Meeresexposition",
-      "LÃ¤ndliche Versorgungssysteme wie KlÃ¤rgruben oder Wassertanks",
-      "Keine dieser Gegebenheiten wÃ¤re ein groÃŸes Problem",
+      "Hohe Luftfeuchtigkeit in Küsten- oder Tallagen",
+      "Küstenerosion oder extreme Meeresexposition",
+      "Ländliche Versorgungssysteme wie Klärgruben oder Wassertanks",
+      "Keine dieser Gegebenheiten wäre ein großes Problem",
     ],
     exclusiveOptions: [
-      "Keine dieser Gegebenheiten wÃ¤re ein groÃŸes Problem",
+      "Keine dieser Gegebenheiten wäre ein großes Problem",
+    ],
+  },
+  {
+    id: "legal_technical_risk_tolerance",
+    section: "Mögliche Bedenken",
+    title: "Wie viel rechtliche oder technische Komplexität wäre für Sie akzeptabel?",
+    type: "single",
+    options: [
+      "So wenig wie möglich — ich möchte eine rechtlich und technisch klare Immobilie",
+      "Kleine Punkte sind akzeptabel, wenn sie vor dem Kauf gelöst werden können",
+      "Ich bin offen für komplexere Immobilien, wenn der Preis und die Lage stimmen",
+      "Ich bin noch nicht sicher und brauche dazu Beratung",
     ],
   },
   {
     id: "rental_intent",
-    section: "Vermietung und abschlieÃŸende PrioritÃ¤ten",
-    title: "MÃ¶chten Sie die Immobilie vermieten?",
+    section: "Vermietung und abschließende Prioritäten",
+    title: "Möchten Sie die Immobilie vermieten?",
     type: "single",
     options: [
       "Nein",
       "Gelegentlich an Familie oder Freunde",
       "Gelegentliche Ferienvermietung",
-      "RegelmÃ¤ÃŸige Ferienvermietung",
+      "Regelmäßige Ferienvermietung",
       "Langzeitvermietung",
       "Mieteinnahmen sind ein wichtiger Teil meines Plans",
       "Ich bin noch nicht sicher",
@@ -528,17 +913,17 @@ const questions: Question[] = [
   },
   {
     id: "rental_priorities",
-    section: "Vermietung und abschlieÃŸende PrioritÃ¤ten",
+    section: "Vermietung und abschließende Prioritäten",
     title: "Welche Vermietungsfaktoren sind Ihnen am wichtigsten?",
     type: "multiple",
     maxSelections: 4,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 4 Optionen.",
+    helper: "Wählen Sie höchstens 4 Optionen.",
     options: [
       "Eine Lage mit hoher Mietnachfrage",
-      "MÃ¶glichkeit einer touristischen Vermietungslizenz",
+      "Möglichkeit einer touristischen Vermietungslizenz",
       "Gemeinschaftsregeln, die Vermietung erlauben",
       "Professionelle Vermietungsverwaltung",
-      "Gute Erreichbarkeit von Flughafen und Strand fÃ¼r GÃ¤ste",
+      "Gute Erreichbarkeit von Flughafen und Strand für Gäste",
       "Ein Gleichgewicht zwischen Mieteinnahmen und eigener Nutzung",
     ],
     showIf: (answers) =>
@@ -547,47 +932,59 @@ const questions: Question[] = [
       answers.rental_intent !== "Gelegentlich an Familie oder Freunde",
   },
   {
+    id: "resale_importance",
+    section: "Vermietung und abschließende Prioritäten",
+    title: "Wie wichtig ist Ihnen die spätere Wiederverkäuflichkeit der Immobilie?",
+    type: "single",
+    options: [
+      "Sehr wichtig — die Immobilie soll langfristig gut verkäuflich bleiben",
+      "Wichtig, aber Lebensqualität ist wichtiger",
+      "Nicht entscheidend, wenn die Immobilie perfekt zu uns passt",
+      "Ich habe darüber noch nicht nachgedacht",
+    ],
+  },
+  {
     id: "top_priorities",
-    section: "Vermietung und abschlieÃŸende PrioritÃ¤ten",
-    title: "Welche Faktoren haben fÃ¼r Sie die hÃ¶chste PrioritÃ¤t?",
+    section: "Vermietung und abschließende Prioritäten",
+    title: "Welche Faktoren haben für Sie die höchste Priorität?",
     type: "multiple",
     maxSelections: 6,
-    helper: "WÃ¤hlen Sie Ihre 6 wichtigsten PrioritÃ¤ten.",
+    helper: "Wählen Sie Ihre 6 wichtigsten Prioritäten.",
     options: [
       "Ruhige Umgebung",
-      "PrivatsphÃ¤re",
+      "Privatsphäre",
       "Sicherheit",
-      "FuÃŸlÃ¤ufige Erreichbarkeit",
-      "StrandnÃ¤he",
+      "Fußläufige Erreichbarkeit",
+      "Strandnähe",
       "Meerblick",
       "Internationale Gemeinschaft",
-      "Authentische spanische AtmosphÃ¤re",
+      "Authentische spanische Atmosphäre",
       "Soziales Leben in der Nachbarschaft",
       "Medizinische Versorgung",
-      "FlughafennÃ¤he",
-      "GanzjÃ¤hrig verfÃ¼gbare Dienstleistungen",
+      "Flughafennähe",
+      "Ganzjährig verfügbare Dienstleistungen",
       "Schnelles Internet",
       "Barrierearme Erreichbarkeit",
       "Geringer Pflegeaufwand",
-      "GroÃŸer Garten",
+      "Großer Garten",
       "Golf",
-      "NÃ¤he zum Yachthafen",
-      "Geeignet fÃ¼r Familien und Schulen",
-      "Langfristige Wertsteigerung",
+      "Nähe zu einem Yachthafen oder Liegeplatz",
+      "Geeignet für Familien und Schulen",
+      "Starke langfristige Wiederverkäuflichkeit",
       "Vermietungspotenzial",
     ],
   },
   {
     id: "absolute_dealbreakers",
-    section: "Vermietung und abschlieÃŸende PrioritÃ¤ten",
+    section: "Vermietung und abschließende Prioritäten",
     title:
-      "Welche Faktoren wÃ¼rden eine Region oder Immobilie fÃ¼r Sie sofort ausschlieÃŸen?",
+      "Welche Faktoren würden eine Region oder Immobilie für Sie sofort ausschließen?",
     type: "multiple",
     maxSelections: 6,
-    helper: "WÃ¤hlen Sie hÃ¶chstens 6 absolute Ausschlusskriterien.",
+    helper: "Wählen Sie höchstens 6 absolute Ausschlusskriterien.",
     options: [
-      "Verkehrs- oder AutobahnlÃ¤rm",
-      "LÃ¤rm von Nachtleben oder Restaurants",
+      "Verkehrs- oder Autobahnlärm",
+      "Lärm von Nachtleben oder Restaurants",
       "Hochspannungsmasten oder oberirdische Stromleitungen",
       "Direkte Einsicht durch Nachbarn",
       "Sehr nahe benachbarte Immobilien",
@@ -597,25 +994,47 @@ const questions: Question[] = [
       "Abgelegene Lage",
       "Hohe Gemeinschaftskosten",
       "Umfangreiche Renovierungsarbeiten",
-      "Keine zuverlÃ¤ssige schnelle Internetverbindung",
-      "Wenig geÃ¶ffnete Einrichtungen im Winter",
-      "GroÃŸe Entfernung zur medizinischen Versorgung",
-      "Ãœberschwemmungs- oder Waldbrandrisiko",
+      "Keine zuverlässige schnelle Internetverbindung",
+      "Wenig geöffnete Einrichtungen im Winter",
+      "Große Entfernung zur medizinischen Versorgung",
+      "Überschwemmungs- oder Waldbrandrisiko",
+      "Keine passende Hafen- oder Liegeplatzlösung in der Nähe",
       "Keiner dieser Punkte ist ein absolutes Ausschlusskriterium",
     ],
     exclusiveOptions: [
       "Keiner dieser Punkte ist ein absolutes Ausschlusskriterium",
     ],
   },
+
+  {
+    id: "biggest_uncertainty",
+    section: "Vermietung und abschließende Prioritäten",
+    title: "Was ist Ihre größte Unsicherheit beim Kauf in Spanien?",
+    type: "multiple",
+    maxSelections: 3,
+    helper: "Wählen Sie höchstens 3 Optionen.",
+    options: [
+      "Die richtige Region wählen",
+      "Den fairen Marktwert einschätzen",
+      "Rechtliche Risiken verstehen",
+      "Versteckte Kosten vermeiden",
+      "Renovierung oder Zustand einschätzen",
+      "Steuern und laufende Kosten verstehen",
+      "Vermietungsregeln verstehen",
+      "Aus der Ferne alles organisieren",
+      "Ich bin mir noch nicht sicher",
+    ],
+  },
+
   {
     id: "additional_notes",
-    section: "Vermietung und abschlieÃŸende PrioritÃ¤ten",
+    section: "Vermietung und abschließende Prioritäten",
     title:
-      "Gibt es noch etwas, das dafÃ¼r sorgen wÃ¼rde, dass sich eine Region oder Immobilie fÃ¼r Sie besonders richtig â€” oder vollkommen ungeeignet â€” anfÃ¼hlt?",
+      "Gibt es noch etwas, das dafür sorgen würde, dass sich eine Region oder Immobilie für Sie besonders richtig — oder vollkommen ungeeignet — anfühlt?",
     type: "text",
     optional: true,
     helper:
-      "Optional. ErgÃ¤nzen Sie hier weitere WÃ¼nsche, Bedenken oder Ausschlusskriterien.",
+      "Optional. Ergänzen Sie hier weitere Wünsche, Bedenken oder Ausschlusskriterien.",
   },
 ];
 
@@ -695,7 +1114,7 @@ export default function RelocationAssessment() {
       answersWithoutExclusiveOptions.length >= current.maxSelections
     ) {
       alert(
-        `Bitte wÃ¤hlen Sie hÃ¶chstens ${current.maxSelections} Optionen aus.`
+        `Bitte wählen Sie höchstens ${current.maxSelections} Optionen aus.`
       );
       return;
     }
@@ -736,7 +1155,7 @@ export default function RelocationAssessment() {
 
     if (!questionHasAnswer(current)) {
       alert(
-        "Bitte wÃ¤hlen Sie eine Antwort aus oder geben Sie eine Antwort ein, bevor Sie fortfahren."
+        "Bitte wählen Sie eine Antwort aus oder geben Sie eine Antwort ein, bevor Sie fortfahren."
       );
       return;
     }
@@ -767,13 +1186,13 @@ export default function RelocationAssessment() {
     const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
     if (!emailIsValid) {
-      alert("Bitte geben Sie eine gÃ¼ltige E-Mail-Adresse ein.");
+      alert("Bitte geben Sie eine gültige E-Mail-Adresse ein.");
       return;
     }
 
     if (!consent) {
       alert(
-        "Bitte bestÃ¤tigen Sie, dass wir Ihre Antworten fÃ¼r Ihren persÃ¶nlichen Bericht verwenden und Sie bezÃ¼glich Ihrer Anfrage kontaktieren dÃ¼rfen."
+        "Bitte bestätigen Sie, dass wir Ihre Antworten für Ihren persönlichen Bericht verwenden und Sie bezüglich Ihrer Anfrage kontaktieren dürfen."
       );
       return;
     }
@@ -792,7 +1211,7 @@ export default function RelocationAssessment() {
       ...filteredAnswers,
       assessment_meta: {
         language: "de",
-        version: "2.0",
+        version: "3.0",
       },
     };
 
@@ -848,19 +1267,19 @@ export default function RelocationAssessment() {
         <div style={styles.card}>
           <p style={styles.sectionLabel}>Anfrage erhalten</p>
 
-          <h1 style={styles.title}>Vielen Dank fÃ¼r Ihre Anfrage</h1>
+          <h1 style={styles.title}>Vielen Dank für Ihre Anfrage</h1>
 
           <p style={styles.text}>
             Vielen Dank, {contact.name}. Wir haben Ihre Costa Blanca Area Match
             Analyse erhalten und verwenden Ihre Antworten, um Ihren
-            persÃ¶nlichen Bericht zu erstellen.
+            persönlichen Bericht zu erstellen.
           </p>
 
           <p style={styles.highlight}>{contact.email}</p>
 
           {contact.phone.trim() && (
             <p style={styles.text}>
-              Falls wir einzelne Antworten mit Ihnen klÃ¤ren mÃ¶chten, kÃ¶nnen wir
+              Falls wir einzelne Antworten mit Ihnen klären möchten, können wir
               Sie unter {contact.phone} kontaktieren.
             </p>
           )}
@@ -873,15 +1292,15 @@ export default function RelocationAssessment() {
     return (
       <main style={styles.page}>
         <div style={styles.card}>
-          <p style={styles.sectionLabel}>Ihr persÃ¶nlicher Bericht</p>
+          <p style={styles.sectionLabel}>Ihr persönlicher Bericht</p>
 
           <h1 style={styles.title}>
-            Erhalten Sie Ihren persÃ¶nlichen Area Match Report
+            Erhalten Sie Ihren persönlichen Area Match Report
           </h1>
 
           <p style={styles.text}>
             Geben Sie unten Ihre Kontaktdaten ein. Wir verwenden Ihre Antworten,
-            um Ihren persÃ¶nlichen Costa Blanca Area Match Report zu erstellen
+            um Ihren persönlichen Costa Blanca Area Match Report zu erstellen
             und an Ihre E-Mail-Adresse zu senden.
           </p>
 
@@ -947,8 +1366,8 @@ export default function RelocationAssessment() {
 
               <span style={styles.privacyText}>
                 Ich stimme zu, dass Nordic Move Spain meine Antworten verwenden
-                darf, um meinen persÃ¶nlichen Area Match Report zu erstellen und
-                mich bezÃ¼glich dieser Anfrage zu kontaktieren.
+                darf, um meinen persönlichen Area Match Report zu erstellen und
+                mich bezüglich dieser Anfrage zu kontaktieren.
               </span>
             </label>
 
@@ -958,7 +1377,7 @@ export default function RelocationAssessment() {
                 onClick={() => setFinished(false)}
                 style={styles.navButton}
               >
-                ZurÃ¼ck zu den Fragen
+                Zurück zu den Fragen
               </button>
 
               <button
@@ -972,7 +1391,7 @@ export default function RelocationAssessment() {
               >
                 {isSubmitting
                   ? "Wird gesendet..."
-                  : "PersÃ¶nlichen Bericht anfordern"}
+                  : "Persönlichen Bericht anfordern"}
               </button>
             </div>
           </div>
@@ -1048,7 +1467,7 @@ export default function RelocationAssessment() {
                     ...(selected ? styles.selected : {}),
                   }}
                 >
-                  {selected ? "âœ“ " : ""}
+                  {selected ? "✓ " : ""}
                   {option}
                 </button>
               );
@@ -1060,7 +1479,7 @@ export default function RelocationAssessment() {
           <textarea
             value={answers[current.id] || ""}
             onChange={(event) => setTextValue(event.target.value)}
-            placeholder="ErgÃ¤nzen Sie hier weitere WÃ¼nsche, Bedenken oder Ausschlusskriterien."
+            placeholder="Ergänzen Sie hier weitere Wünsche, Bedenken oder Ausschlusskriterien."
             rows={7}
             style={styles.textarea}
           />
@@ -1076,7 +1495,7 @@ export default function RelocationAssessment() {
               ...(step === 0 ? styles.buttonDisabled : {}),
             }}
           >
-            ZurÃ¼ck
+            Zurück
           </button>
 
           <button

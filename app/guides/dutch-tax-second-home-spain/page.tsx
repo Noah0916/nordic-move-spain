@@ -1,666 +1,669 @@
-export default function SecondHomeSpainTaxGuidePage() {
-  return (
-    <main className="min-h-screen bg-[#f6f1ea] text-stone-900 overflow-hidden">
+export const metadata = {
+  title: "UK Tax Rules for a Second Home in Spain | Nordic Move Spain",
+  description:
+    "A practical guide for UK tax residents buying a second home in Spain. Understand Spanish property taxes, Modelo 210, rental income, capital gains, double taxation relief and key planning questions before buying on the Costa Blanca.",
+  openGraph: {
+    title: "UK Tax Rules for a Second Home in Spain | Nordic Move Spain",
+    description:
+      "Understand the tax issues British and UK-based buyers should consider before buying a second home, holiday home or investment property in Spain.",
+    type: "article",
+  },
+};
 
+export default function UkTaxSecondHomeSpainPage() {
+  const keyPoints = [
+    {
+      title: "Spain can tax the property",
+      text:
+        "Because the property is located in Spain, Spanish taxes can apply to purchase costs, annual ownership, rental income, imputed income and capital gains when selling.",
+    },
+    {
+      title: "The UK may still be relevant",
+      text:
+        "If you are UK tax resident, the UK may also tax foreign income and gains. Spanish rental income or a future sale may need to be reported to HMRC.",
+    },
+    {
+      title: "Modelo 210 matters",
+      text:
+        "Non-resident property owners in Spain often need to file Modelo 210, even when the property is only used privately and not rented out.",
+    },
+    {
+      title: "Double taxation relief is not automatic paperwork",
+      text:
+        "The UK-Spain double taxation agreement can help reduce double taxation, but correct reporting, records and professional advice are still essential.",
+    },
+  ];
+
+  const spanishTaxes = [
+    {
+      title: "Purchase taxes and buying costs",
+      text:
+        "When you buy a Spanish property, you normally pay taxes and costs connected to the purchase. These can include transfer tax for resale properties, VAT and stamp duty for certain new-build properties, notary fees, land registry fees, legal fees and sometimes mortgage-related costs.",
+    },
+    {
+      title: "IBI: local property tax",
+      text:
+        "IBI is the local annual property tax paid to the town hall. It is based on the cadastral value of the property, not necessarily the market value. Buyers should check the current IBI before buying, especially when comparing villas, apartments or larger plots.",
+    },
+    {
+      title: "Community fees",
+      text:
+        "Community fees are not a tax, but they are an important ongoing cost. If you buy in an apartment building, residential complex or urbanisation with shared facilities, you may pay community fees for pools, gardens, lifts, lighting, maintenance, security, insurance and administration.",
+    },
+    {
+      title: "Modelo 210 for non-resident owners",
+      text:
+        "If you are not tax resident in Spain but own property there, you may have to file Modelo 210. It can apply to imputed income from private use, rental income and capital gains connected to the sale of Spanish property.",
+    },
+  ];
+
+  const scenarios = [
+    {
+      title: "If you use the property only for yourself",
+      text:
+        "If you are a UK tax resident and use your Spanish property only for private holidays, Spain may still tax you on imputed income through the non-resident income tax system. This is not rent you actually receive. It is a deemed income calculation based on the property and is normally declared through Modelo 210.",
+    },
+    {
+      title: "If you rent out the property",
+      text:
+        "Spain can tax rental income because the property is located in Spain. If you are UK tax resident, the rental income may also need to be reported to HMRC as overseas property income. Spanish tax paid may be relevant for double taxation relief, depending on the circumstances.",
+    },
+    {
+      title: "If you sell the Spanish property",
+      text:
+        "Spain may tax the capital gain because the property is located in Spain. If the seller is non-resident in Spain, the buyer generally withholds 3% of the sale price and pays it to the Spanish tax authorities. UK residents may also need to consider UK Capital Gains Tax.",
+    },
+    {
+      title: "If you later become Spanish tax resident",
+      text:
+        "Some buyers start with a second home and later spend much more time in Spain. If you become Spanish tax resident, Spain may tax your worldwide income and assets under Spanish rules. This should be planned before your time in Spain increases significantly.",
+    },
+  ];
+
+  const records = [
+    "Purchase deed and completion statement",
+    "Invoices for buying costs",
+    "Notary and land registry costs",
+    "Legal fees",
+    "Renovation and improvement invoices",
+    "Mortgage documents",
+    "Rental records",
+    "Spanish tax filings",
+    "Proof of Spanish tax paid",
+    "Community fee records",
+    "IBI receipts",
+    "Sale documents and estate agent invoices",
+  ];
+
+  const mistakes = [
+    {
+      title: "Thinking Spanish tax is only due when the property is rented",
+      text:
+        "Many non-resident owners are surprised that private-use property can still create Spanish non-resident tax obligations through imputed income.",
+    },
+    {
+      title: "Forgetting Modelo 210",
+      text:
+        "Modelo 210 is one of the most commonly missed obligations by foreign owners in Spain. Buyers should ask before completion who will handle the annual Spanish filings.",
+    },
+    {
+      title: "Assuming UK tax does not apply because the property is abroad",
+      text:
+        "UK tax residents generally need to consider worldwide income and gains. Spanish rental income or a Spanish property sale may still be relevant in the UK.",
+    },
+    {
+      title: "Not checking tourist rental rules before buying",
+      text:
+        "A property that looks perfect for rental income may not be suitable legally, practically or under community rules. Check licences, local regulations, community statutes and building suitability before you buy.",
+    },
+    {
+      title: "Ignoring capital gains tax until sale",
+      text:
+        "Capital gains tax is easier to plan when records are kept from day one. Keep all purchase, cost and improvement documents from the start.",
+    },
+    {
+      title: "Not taking advice on ownership structure",
+      text:
+        "Buying in one name, joint names, through a company or with family money can have different tax and inheritance consequences. This should be considered before signing.",
+    },
+  ];
+
+  const questions = [
+    "Will the property be for private use only, rental income or both?",
+    "Will I need to file Modelo 210 in Spain each year?",
+    "Who will prepare my Spanish non-resident tax returns?",
+    "Do I need to report rental income in the UK?",
+    "How will Spanish tax paid be credited or relieved in the UK?",
+    "What happens if I sell the property later?",
+    "What records should I keep from day one?",
+    "What are the local IBI and community fees?",
+    "Are tourist rentals permitted in the municipality and community?",
+    "Does the property have legal or technical issues that could affect value?",
+    "Should I make a Spanish will?",
+    "Could my tax residency change if I spend more time in Spain?",
+  ];
+
+  const inheritanceQuestions = [
+    "Who owns the property?",
+    "Is it owned by one person, a couple or family members?",
+    "What happens if one owner dies?",
+    "Is there a Spanish will?",
+    "How does the UK estate position interact with Spanish succession rules?",
+    "Could Spanish inheritance tax apply?",
+    "How will the property be passed to children or other heirs?",
+  ];
+
+  const usefulSources = [
+    {
+      label: "HMRC: Tax on foreign income",
+      href: "https://www.gov.uk/tax-foreign-income",
+    },
+    {
+      label: "HMRC: Selling overseas property",
+      href: "https://www.gov.uk/tax-sell-property/selling-overseas-property",
+    },
+    {
+      label: "HMRC: Capital Gains Tax",
+      href: "https://www.gov.uk/capital-gains-tax/what-you-pay-it-on",
+    },
+    {
+      label: "HMRC: Spain tax treaties",
+      href: "https://www.gov.uk/government/publications/spain-tax-treaties",
+    },
+    {
+      label: "UK-Spain Double Taxation Convention",
+      href: "https://assets.publishing.service.gov.uk/media/5a7f1a77e5274a2e87db3d01/spain-dtc_-_in_force.pdf",
+    },
+    {
+      label: "HMRC: Relief for Foreign Tax Paid",
+      href: "https://www.gov.uk/government/publications/calculating-foreign-tax-credit-relief-on-income-hs263-self-assessment-helpsheet/relief-for-foreign-tax-paid-2024-hs263",
+    },
+    {
+      label: "HMRC Property Income Manual: overseas property income",
+      href: "https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4702",
+    },
+    {
+      label: "Spanish Tax Agency: Modelo 210 deadlines",
+      href: "https://sede.agenciatributaria.gob.es/Sede/en_gb/no-residentes/irnr-sin-establecimiento-permanente/declaracion-irnr-sin-establecimiento-permanente/modelo-plazo-declaracion.html",
+    },
+    {
+      label: "Spanish Tax Agency: Modelo 210 instructions",
+      href: "https://sede.agenciatributaria.gob.es/Sede/en_gb/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html",
+    },
+    {
+      label: "Spanish Tax Agency: 3% withholding for non-resident sellers",
+      href: "https://sede.agenciatributaria.gob.es/Sede/en_gb/no-residentes/irnr-sin-establecimiento-permanente/retenciones-irnr-sin-establecimiento-permanente/retencion-adquirente-inmueble.html",
+    },
+  ];
+
+  return (
+    <main className="bg-[#f6f1ea] text-stone-900 overflow-hidden">
       {/* HERO */}
-      <section className="relative flex min-h-[75vh] items-center overflow-hidden px-8 py-32">
+      <section className="relative min-h-[90vh] overflow-hidden">
         <img
-          src="/images/legal.png"
-          alt="Spanish Property Taxes for Dutch Buyers"
+          src="/images/discover-card.png"
+          alt="UK tax rules for buying a second home in Spain"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-black/10"></div>
 
-        <div className="relative z-10 mx-auto max-w-6xl text-white">
-          <p className="text-sm uppercase tracking-[0.35em] text-white/80">
-            Costa Blanca North
-          </p>
-
-          <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-tight md:text-7xl">
-            Spanish Property Taxes for Dutch Buyers.
-          </h1>
-
-          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-            A complete guide to purchase costs, annual taxes, wealth tax,
-            Dutch Box 3 considerations and long-term ownership costs in Spain.
-          </p>
-        </div>
-      </section>
-
-      {/* INTRO */}
-      <section className="px-8 py-24">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="font-serif text-5xl leading-tight">
-            Buying a home in Spain is only part of the financial picture.
-          </h2>
-
-          <p className="mt-8 text-lg leading-relaxed text-stone-600">
-            Many Dutch buyers focus on finding the right property, negotiating
-            the purchase price and arranging the legal process. However, owning
-            property in Spain may also create tax obligations, annual ownership
-            costs and reporting requirements that should be understood before
-            purchasing.
-          </p>
-
-          <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            For Dutch buyers in particular, it is important to understand how
-            Spanish property taxes interact with Dutch tax rules, Box 3 reporting,
-            inheritance planning and long-term financial decisions.
-          </p>
-
-          <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Tax rules change regularly and every personal situation is different.
-            This guide provides a practical overview, but independent legal and
-            tax advice should always be obtained before purchasing.
-          </p>
-        </div>
-      </section>
-
-      {/* PURCHASE COSTS */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Purchase Costs
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            What taxes apply when buying property in Spain?
-          </h2>
-
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-            <p>
-              The advertised purchase price is only one part of the total
-              investment. Buyers should also budget for taxes, legal fees,
-              notary fees, land registry fees, administration, translations and
-              possible mortgage-related costs.
+        <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl items-center px-8 pt-24">
+          <div className="max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              UK buyers · Spanish property tax
             </p>
 
-            <p>
-              The exact costs depend on whether the property is a resale home or
-              a new-build property. They also depend on the autonomous region,
-              the purchase price and the buyer’s personal circumstances.
+            <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white md:text-7xl">
+              UK tax rules for a second home in Spain.
+            </h1>
+
+            <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
+              A practical guide for British and UK-based buyers who want to
+              understand Spanish property taxes, Modelo 210, rental income,
+              capital gains and double taxation relief before buying on the
+              Costa Blanca.
             </p>
 
-            <p>
-              On Costa Blanca North, many buyers calculate roughly 10% to 15%
-              additional acquisition costs on top of the purchase price.
-            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="/relocation-assessment"
+                className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+              >
+                Request your Area Match Report
+              </a>
+
+              <a
+                href="/contact"
+                className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
+              >
+                Schedule a consultation
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* RESALE VS NEW BUILD */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Resale Property
-            </p>
+      {/* INTRODUCTION */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Before you buy
+              </p>
 
-            <h3 className="mt-5 font-serif text-3xl leading-tight">
-              Existing homes are usually subject to Transfer Tax.
-            </h3>
-
-            <p className="mt-6 leading-relaxed text-stone-600">
-              When buying a resale property in Spain, buyers usually pay
-              Transfer Tax, known as ITP. In the Valencia region this has
-              traditionally been around 10% for many transactions, although
-              rates and reductions may vary depending on the law in force at
-              the time of purchase.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              In addition, buyers should budget for an independent lawyer,
-              notary fees, land registry fees, translations and administrative
-              costs.
-            </p>
-          </div>
-
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              New Build Property
-            </p>
-
-            <h3 className="mt-5 font-serif text-3xl leading-tight">
-              New developments are taxed differently.
-            </h3>
-
-            <p className="mt-6 leading-relaxed text-stone-600">
-              New-build properties purchased directly from a developer are
-              usually subject to VAT, known as IVA, instead of Transfer Tax.
-              In Spain, residential new-build VAT is commonly 10%.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Buyers also normally pay Stamp Duty, known as AJD, plus notary,
-              registry, legal and administrative costs. The final amount should
-              always be verified before signing.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* PRACTICAL EXAMPLE */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-[#efe7dc] p-12">
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Practical Example
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            What does a €700,000 property really cost?
-          </h2>
-
-          <div className="mt-10 space-y-5 text-lg leading-relaxed text-stone-700">
-            <p>
-              Many buyers calculate their budget based only on the asking price.
-              This can lead to a serious underestimation of the total investment.
-            </p>
-
-            <div className="mt-10 rounded-[28px] bg-white p-10 shadow-sm">
-              <p>Purchase price: <strong>€700,000</strong></p>
-              <p className="mt-4">Transfer Tax / Purchase Tax: <strong>approximately €63,000 – €70,000</strong></p>
-              <p className="mt-4">Independent lawyer: <strong>approximately €7,000</strong></p>
-              <p className="mt-4">Notary and Land Registry: <strong>€2,500 – €4,000</strong></p>
-              <p className="mt-4">Translations and administration: <strong>€1,500 – €3,000</strong></p>
-              <p className="mt-4">NIE applications and documentation: <strong>€300 – €800</strong></p>
-              <p className="mt-4">Banking and miscellaneous costs: <strong>€500 – €1,500</strong></p>
-
-              <div className="mt-8 border-t border-stone-300 pt-6">
-                <p className="text-2xl font-semibold">
-                  Estimated total investment: approximately €782,000 – €787,000
-                </p>
-              </div>
+              <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+                A Spanish second home is a lifestyle decision, but also a tax
+                and planning decision.
+              </h2>
             </div>
 
-            <p>
-              This estimate excludes furniture, renovations, mortgage setup
-              fees, property improvements and future maintenance.
-            </p>
+            <div className="text-lg leading-relaxed text-stone-600">
+              <p>
+                Many British buyers focus first on the property: the sea view,
+                the pool, the terrace, the town and the lifestyle. Those things
+                matter. But if you are a UK tax resident buying property in
+                Spain, the tax position should be understood before you buy, not
+                after completion.
+              </p>
+
+              <p className="mt-6">
+                Owning a Spanish property can create tax obligations in Spain
+                and, depending on your residency and use of the property,
+                reporting obligations in the UK as well. The right structure,
+                paperwork and expectations can save stress later.
+              </p>
+
+              <p className="mt-6">
+                This guide is general information only and does not replace
+                personal tax advice from a qualified UK and Spanish tax adviser.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ANNUAL COSTS INTRO */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Annual Ownership Costs
+      {/* CLARIFICATION */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Important clarification
           </p>
 
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            The costs do not stop after completion.
+          <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+            In tax terms, the key question is usually whether you are UK tax
+            resident.
           </h2>
 
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
+          <div className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
             <p>
-              A second home in Spain comes with ongoing annual costs. These
-              expenses apply whether the property is used full-time, occasionally
-              or only as a holiday home.
+              People often search for “English tax rules for buying in Spain” or
+              “English tax second home Spain”. In tax terms, the more accurate
+              phrase is usually UK tax resident. UK tax rules may apply if you
+              are resident in the United Kingdom, whether you live in England,
+              Scotland, Wales or Northern Ireland.
             </p>
 
-            <p>
-              Buyers should include annual ownership costs in their financial
-              planning before making an offer. Large villas, older properties,
-              homes with pools and properties in luxury communities can be
-              significantly more expensive to maintain.
+            <p className="mt-6">
+              This guide therefore refers to UK tax residents and British
+              buyers, not only English buyers.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ANNUAL COST CARDS */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-            <h3 className="font-serif text-3xl">
-              IBI Property Tax
-            </h3>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              IBI is Spain’s municipal property tax. The amount depends on the
-              municipality, cadastral value, property size and location.
+      {/* BASIC PRINCIPLE */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              The basic principle
             </p>
 
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Apartments may pay a few hundred euros per year, while larger
-              villas can pay significantly more.
-            </p>
-          </div>
-
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-            <h3 className="font-serif text-3xl">
-              Waste Collection
-            </h3>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Many municipalities charge a separate waste collection tax, often
-              known as basura.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              The amount varies by municipality and property type, but it should
-              be included in annual budgeting.
-            </p>
-          </div>
-
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-            <h3 className="font-serif text-3xl">
-              Insurance & Utilities
-            </h3>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Owners should budget for building insurance, contents insurance,
-              electricity, water, internet, security systems and general service
-              contracts.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Costs vary strongly depending on property size and usage.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* COMMUNITY AND MAINTENANCE */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-          <img
-            src="/images/aftercare.png"
-            alt="Annual ownership costs in Spain"
-            className="h-[560px] w-full rounded-[32px] object-cover shadow-xl"
-          />
-
-          <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-              Community & Maintenance
-            </p>
-
-            <h2 className="mt-5 font-serif text-5xl leading-tight">
-              Villas and urbanisations can require serious annual budgets.
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Two tax systems may be relevant: Spain and the UK.
             </h2>
 
-            <p className="mt-8 text-lg leading-relaxed text-stone-600">
-              If the property belongs to a community of owners, monthly
-              community fees may apply. These fees can cover swimming pools,
-              gardens, security, lifts, private roads, maintenance and shared
-              infrastructure.
-            </p>
-
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Basic apartment buildings may have relatively low fees, while
-              luxury urbanisations with pools, security, gyms, gardens or spa
-              facilities can be much more expensive.
-            </p>
-
-            <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              For villas, owners should also budget for pool maintenance,
-              garden maintenance, air conditioning servicing, painting, repairs
-              and general improvements.
+              Spain may be relevant because the property is located in Spain.
+              The UK may be relevant because UK tax residents generally need to
+              consider worldwide income and gains. The UK-Spain double taxation
+              agreement does not usually make tax disappear. It helps determine
+              taxing rights and how double taxation may be relieved.
             </p>
           </div>
-        </div>
-      </section>   
-            {/* DUTCH TAX OBLIGATIONS */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-[#efe7dc] p-12">
 
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Dutch Tax Obligations
+          <div className="grid gap-8 md:grid-cols-2">
+            {keyPoints.map((point) => (
+              <div key={point.title} className="rounded-[32px] bg-white p-9 shadow-sm">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  {point.title}
+                </h3>
+
+                <p className="mt-5 leading-relaxed text-stone-600">
+                  {point.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SPANISH TAXES */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Spanish taxes
           </p>
 
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            Do Dutch residents need to report Spanish property?
+          <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+            Spanish taxes connected to owning property.
           </h2>
 
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-700">
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
+            {spanishTaxes.map((item) => (
+              <div key={item.title} className="rounded-[32px] bg-white/75 p-8">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  {item.title}
+                </h3>
 
-            <p>
-              In many situations, yes. Dutch tax residents remain taxable on
-              their worldwide assets and may need to report foreign property in
-              their Dutch tax return.
-            </p>
-
-            <p>
-              Spain and the Netherlands have a tax treaty designed to avoid
-              double taxation. However, avoiding double taxation does not mean
-              avoiding reporting obligations.
-            </p>
-
-            <p>
-              The interaction between Spanish property ownership and Dutch tax
-              reporting depends on personal circumstances, ownership structure,
-              residency status and current Dutch legislation.
-            </p>
-
-            <p>
-              Because Dutch Box 3 legislation has changed significantly in
-              recent years and continues to evolve, professional tax advice is
-              strongly recommended.
-            </p>
-
+                <p className="mt-5 leading-relaxed text-stone-700">
+                  {item.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* BOX 3 */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Dutch Box 3
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            How does Spanish property affect Box 3?
-          </h2>
-
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-
-            <p>
-              One of the most common questions Dutch buyers ask is whether
-              Spanish property must be included in Box 3.
+      {/* SCENARIOS */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Private use, rental and sale
             </p>
 
-            <p>
-              The answer depends on current Dutch legislation, tax treaty
-              provisions and individual circumstances. These rules have changed
-              multiple times in recent years and remain an important topic for
-              many investors and second-home owners.
-            </p>
-
-            <p>
-              Buyers should never rely on outdated information found on forums
-              or social media. Professional advice based on current Dutch law
-              is essential.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-      {/* WEALTH TAX */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
-
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-
-            <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Wealth Tax
-            </p>
-
-            <h3 className="mt-5 font-serif text-3xl leading-tight">
-              Spain still has wealth-related taxation.
-            </h3>
-
-            <p className="mt-6 leading-relaxed text-stone-600">
-              Many foreign buyers are surprised to discover that Spain applies
-              wealth taxation in certain situations.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Whether tax is actually payable depends on residency status,
-              asset values, ownership structure, allowances and regional rules.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Not every property owner pays Wealth Tax, but higher-net-worth
-              buyers should investigate the implications before purchasing.
-            </p>
-
-          </div>
-
-          <div className="rounded-[32px] bg-white p-10 shadow-sm">
-
-            <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
-              Solidarity Tax
-            </p>
-
-            <h3 className="mt-5 font-serif text-3xl leading-tight">
-              Additional taxation for larger fortunes.
-            </h3>
-
-            <p className="mt-6 leading-relaxed text-stone-600">
-              Spain introduced the Temporary Solidarity Tax on Large Fortunes,
-              aimed primarily at very wealthy taxpayers.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              While many second-home owners will never be affected, buyers of
-              luxury real estate should understand how this may interact with
-              existing wealth taxation rules.
-            </p>
-
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Professional tax planning before acquisition can often provide
-              greater clarity and reduce future surprises.
-            </p>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* INHERITANCE TAX */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-[#efe7dc] p-12">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Inheritance Planning
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            What happens if your family inherits Spanish property?
-          </h2>
-
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-700">
-
-            <p>
-              Many buyers spend months researching the purchase process but
-              never consider what happens decades later when the property is
-              inherited.
-            </p>
-
-            <p>
-              Spanish inheritance tax rules can differ significantly depending
-              on residency, family relationships, regional regulations and the
-              structure through which the property is owned.
-            </p>
-
-            <p>
-              Early succession planning may help simplify future administration
-              and reduce uncertainty for heirs.
-            </p>
-
-            <p>
-              For families intending to keep Spanish property for generations,
-              inheritance planning should be part of the acquisition strategy
-              from the beginning.
-            </p>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* RENTAL INCOME */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-
-          <img
-            src="/images/practical-guidance.png"
-            alt="Rental income Spain"
-            className="h-[560px] w-full rounded-[32px] object-cover shadow-xl"
-          />
-
-          <div>
-
-            <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-              Rental Income
-            </p>
-
-            <h2 className="mt-5 font-serif text-5xl leading-tight">
-              Planning to rent out your property?
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Your tax position depends on how you use the property.
             </h2>
-
-            <p className="mt-8 text-lg leading-relaxed text-stone-600">
-              Many buyers intend to offset ownership costs through rentals.
-              However, rental income is generally taxable and different rules
-              may apply depending on residency status and rental structure.
-            </p>
-
-            <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Holiday rentals may also require specific licences and compliance
-              with local regulations.
-            </p>
-
-            <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Before purchasing with rental income in mind, buyers should
-              verify both tax obligations and local licensing requirements.
-            </p>
-
           </div>
 
+          <div className="grid gap-8">
+            {scenarios.map((item) => (
+              <div key={item.title} className="rounded-[32px] bg-white p-9 shadow-sm">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-5 max-w-5xl leading-relaxed text-stone-600">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* SELLING PROPERTY */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Future Sale
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            Buying is only one side of the story.
-          </h2>
-
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-
-            <p>
-              Many buyers focus exclusively on acquisition costs and never
-              consider the financial implications of selling later.
+      {/* DOUBLE TAXATION */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Double taxation relief
             </p>
 
-            <p>
-              Future sales may involve capital gains taxation, municipal taxes
-              and additional reporting requirements.
-            </p>
-
-            <p>
-              Understanding future exit costs before purchasing often leads to
-              better long-term investment decisions.
-            </p>
-
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Relief depends on correct reporting and good records.
+            </h2>
           </div>
 
+          <div className="text-lg leading-relaxed text-stone-600">
+            <p>
+              The UK and Spain have a double taxation convention. The purpose is
+              to reduce the risk of being taxed twice on the same income or
+              gain.
+            </p>
+
+            <p className="mt-6">
+              However, double taxation relief is not automatic in every
+              practical sense. You need to report correctly, keep records and
+              claim relief in the right way. In some cases, the amount of
+              foreign tax paid may not match the exact amount of UK tax credit
+              available.
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {records.map((record) => (
+                <div key={record} className="rounded-2xl bg-white p-5 shadow-sm">
+                  <p className="leading-relaxed text-stone-700">{record}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* MORTGAGES */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-[#efe7dc] p-12">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Mortgages & Interest Rates
+      {/* INHERITANCE */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Inheritance and estate planning
           </p>
 
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            Euribor, interest rates and financing conditions.
+          <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
+            A Spanish property can also create inheritance and estate planning
+            questions.
           </h2>
 
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-700">
+          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-white/75">
+            British owners should not assume that a UK will is enough or that
+            Spanish inheritance tax works like UK inheritance tax. Buyers should
+            take advice before purchase, especially if buying as a couple, with
+            children from previous relationships or with family contributions.
+          </p>
 
-            <p>
-              Spanish mortgage rates are heavily influenced by Euribor,
-              European Central Bank policy, inflation and wider economic
-              conditions across Europe.
-            </p>
-
-            <p>
-              Financing conditions vary significantly between banks and depend
-              on income, nationality, residency status, age and loan-to-value
-              ratios.
-            </p>
-
-            <p>
-              Buyers should avoid making assumptions about future interest rate
-              movements and instead assess affordability under different
-              scenarios.
-            </p>
-
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {inheritanceQuestions.map((question) => (
+              <div key={question} className="rounded-2xl bg-white/10 p-5 backdrop-blur">
+                <p className="leading-relaxed text-white/80">{question}</p>
+              </div>
+            ))}
           </div>
-
         </div>
       </section>
 
-      {/* YOUNG BUYERS */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-6xl rounded-[36px] bg-white p-12 shadow-sm">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-stone-500">
-            Young Buyer Programmes
-          </p>
-
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            New support measures for younger buyers.
-          </h2>
-
-          <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-
-            <p>
-              Several Spanish regions and government programmes have introduced
-              support measures aimed at helping younger buyers enter the housing
-              market.
+      {/* COMMON MISTAKES */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-4xl">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Common mistakes
             </p>
 
-            <p>
-              Depending on age, income, residency status and region, incentives
-              may include guarantees, financing support or tax reductions.
-            </p>
-
-            <p>
-              Eligibility requirements change regularly and should always be
-              verified before relying on any programme.
-            </p>
-
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Common tax mistakes British buyers make in Spain.
+            </h2>
           </div>
 
+          <div className="grid gap-8 md:grid-cols-2">
+            {mistakes.map((mistake) => (
+              <div key={mistake.title} className="rounded-[32px] bg-white p-9 shadow-sm">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  {mistake.title}
+                </h3>
+
+                <p className="mt-5 leading-relaxed text-stone-600">
+                  {mistake.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="px-8 pb-32">
-
-        <div className="mx-auto max-w-5xl rounded-[36px] bg-stone-900 p-14 text-center text-white">
-
-          <p className="text-sm uppercase tracking-[0.35em] text-white/60">
-            Nordic Move Spain
+      {/* QUESTIONS */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Before you buy
           </p>
 
-          <h2 className="mt-5 font-serif text-5xl leading-tight">
-            Thinking about buying property in Spain?
+          <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+            Key questions to ask before buying a second home in Spain.
           </h2>
 
-          <p className="mt-8 text-xl leading-relaxed text-white/80">
-            We help international buyers understand the legal, financial and
-            practical realities of owning property on Costa Blanca North before
-            making long-term commitments.
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {questions.map((question) => (
+              <div key={question} className="rounded-2xl bg-[#f6f1ea] p-5">
+                <p className="leading-relaxed text-stone-700">{question}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY NORDIC MOVE */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Why this matters
+            </p>
+
+            <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Good buying guidance is about more than the view and the asking
+              price.
+            </h2>
+          </div>
+
+          <div className="text-lg leading-relaxed text-stone-600">
+            <p>
+              At Nordic Move Spain, we believe buyers should understand more
+              than the terrace, the pool and the photos. A good purchase
+              decision also includes legal, technical, financial and practical
+              clarity.
+            </p>
+
+            <p className="mt-6">
+              That is why our process starts with Area Match and continues with
+              careful checks before purchase. Through the Purchase Safety Report,
+              independent specialists can review important legal and technical
+              risks. Tax advice should always be handled by qualified tax
+              professionals, but we help buyers ask the right questions early and
+              keep the process structured.
+            </p>
+
+            <p className="mt-6">
+              For British buyers, this is especially important because Spain and
+              the UK can both be relevant. A second home in Spain can be a
+              wonderful lifestyle decision, but it should be bought with clear
+              expectations about tax, ownership, rental use, reporting and
+              long-term planning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SUMMARY CTA */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Summary
+          </p>
+
+          <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
+            Understand the tax framework before you buy.
+          </h2>
+
+          <p className="mt-8 max-w-5xl text-xl leading-relaxed text-white/85">
+            Buying a second home in Spain as a UK tax resident can create tax
+            obligations in both Spain and the UK. Spain may tax you because the
+            property is located in Spain. The UK may also be relevant because UK
+            tax residents generally need to consider foreign income and gains.
+          </p>
+
+          <p className="mt-6 max-w-5xl text-lg leading-relaxed text-white/75">
+            The best approach is simple: use qualified advisers in both
+            countries, keep good records, understand Modelo 210 and do not treat
+            a Spanish property as only a lifestyle purchase. It is also a legal,
+            financial and long-term planning decision.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="/relocation-assessment"
+              className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+            >
+              Request your Area Match Report
+            </a>
+
+            <a
+              href="/contact"
+              className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
+            >
+              Schedule a consultation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* WEBSITE CARD SUGGESTION */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Suggested guide card
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+            UK tax rules for a second home in Spain
+          </h2>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-700">
+            What UK tax residents should understand about Spanish property
+            taxes, Modelo 210, rental income, capital gains, double taxation
+            relief and owning a second home abroad.
           </p>
 
           <a
-            href="/contact"
-            className="mt-10 inline-block rounded-full bg-white px-8 py-4 text-stone-900"
+            href="/guides/uk-tax-second-home-spain"
+            className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#1e2a3a]"
           >
-            Schedule a Personal Consultation
+            Read the guide →
           </a>
-
         </div>
-
       </section>
 
+      {/* SOURCES */}
+      <section className="px-8 pb-32">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-10 shadow-sm">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Useful official sources
+          </p>
+
+          <p className="mt-5 max-w-4xl leading-relaxed text-stone-600">
+            Tax rules can change and personal circumstances matter. Use these
+            official sources as a starting point and always confirm your position
+            with qualified UK and Spanish tax advisers before buying, renting or
+            selling.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {usefulSources.map((source) => (
+              <a
+                key={source.href}
+                href={source.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl bg-[#f6f1ea] p-5 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#efe6d9]"
+              >
+                {source.label} →
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
-}                                           
+}

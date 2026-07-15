@@ -1,565 +1,689 @@
-﻿export const metadata = {
-  title: "Area Match Report & Sicher Kaufen Costa Blanca Nord | Nordic Move Spain",
+﻿import type { Metadata } from "next";
+
+const pagePath = "/de/services/area-match";
+
+export const metadata: Metadata = {
+  title:
+    "Area Match, Discovery Trip & sicherer Immobilienkauf | Nordic Move Spain",
   description:
-    "Entdecken Sie, welcher Ort und welche Wohnumgebung am besten zu Ihnen passen, und wie Sie danach mit mehr Sicherheit kaufen: mit dem Purchase Safety Report, unabhängigen Prüfungen und einer geschützten Kaufumgebung.",
+    "Starten Sie mit einem kostenlosen Area Match Portfolio, entdecken Sie passende Regionen auf einer Buyer Discovery Trip und kaufen Sie mit einem unabhängigen Purchase Safety Report, sicherem Kundenportal und Interior Design.",
+  keywords: [
+    "Area Match Costa Blanca",
+    "Immobilie an der Costa Blanca kaufen",
+    "Buyer Discovery Trip Spanien",
+    "Immobilienkauf Spanien Beratung",
+    "Purchase Safety Report Spanien",
+    "sicher Immobilien in Spanien kaufen",
+    "Costa Blanca Regionen vergleichen",
+    "Villa Costa Blanca kaufen",
+    "Interior Design Costa Blanca",
+    "Nordic Move Spain",
+  ],
+  alternates: {
+    canonical: pagePath,
+    languages: {
+      "de-DE": pagePath,
+      "nl-NL": "/nl/services/area-match",
+      "en-GB": "/en/services/area-match",
+      "sv-SE": "/sv/services/area-match",
+    },
+  },
+  openGraph: {
+    title:
+      "Area Match, Discovery Trip & sicherer Immobilienkauf | Nordic Move Spain",
+    description:
+      "Finden Sie zuerst die passende Region, erleben Sie die Costa Blanca vor Ort und kaufen Sie mit unabhängigen Kontrollen, einem sicheren Kundenportal und klarer Begleitung.",
+    type: "website",
+    locale: "de_DE",
+    url: pagePath,
+    images: [
+      {
+        url: "/images/move-in-ready-costal.png",
+        alt: "Nordic Move Spain Leistungen für einen sicheren Immobilienkauf an der Costa Blanca",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Area Match, Discovery Trip & sicherer Immobilienkauf | Nordic Move Spain",
+    description:
+      "Kostenloses Area Match Portfolio, Buyer Discovery Trip, unabhängiger Purchase Safety Report, sicheres Kundenportal und Interior Design.",
+    images: ["/images/move-in-ready-costal.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const services = [
+  {
+    number: "01",
+    eyebrow: "Kostenlose Orientierung",
+    title: "Area Match Portfolio",
+    text:
+      "Sie erhalten kostenlos ein ausführliches und persönliches Portfolio. Es zeigt, welche Regionen, Orte und Immobilientypen am besten zu Ihrem Leben, Ihrem Budget und Ihren Zukunftsplänen passen.",
+    bullets: [
+      "Persönlicher Lifestyle- und Regionenvergleich",
+      "Informationen über passende Orte und Wohngebiete",
+      "Einblick in Infrastruktur, Gesundheitsversorgung und Erreichbarkeit",
+      "Mehr Klarheit darüber, welche Immobilie wirklich zu Ihnen passt",
+      "Eine gezielte Grundlage für Ihre weitere Suche",
+    ],
+    href: "/de/relocation-assessment",
+    cta: "Kostenloses Area Match Portfolio anfordern",
+  },
+  {
+    number: "02",
+    eyebrow: "Die Region persönlich erleben",
+    title: "Buyer Discovery Trip",
+    text:
+      "Während einer sorgfältig zusammengestellten Discovery Trip entdecken Sie die Regionen, Immobilien und den lokalen Lebensstil, die zu Ihrem Area Match Portfolio passen. So sehen Sie nicht nur, was zum Verkauf steht, sondern erleben, wo Sie sich wirklich zu Hause fühlen könnten.",
+    bullets: [
+      "Persönliche Route durch passende Regionen",
+      "Ausgewählte Besichtigungen auf Grundlage Ihres Profils",
+      "Lokale Lifestyle-Erlebnisse und relevante Begegnungen",
+      "Praktische Informationen zum Leben und Kaufen in Spanien",
+      "Begleitung von der Ankunft bis zu den nächsten Schritten",
+    ],
+    href: "/de/services/discovery-trips",
+    cta: "Buyer Discovery Trip entdecken",
+    note:
+      "Beim tatsächlichen Kauf einer Villa über Nordic Move Spain wird abhängig vom Kaufpreis die Hälfte oder der gesamte Reisepreis erstattet. Die genaue Erstattung und die geltenden Bedingungen werden vorab schriftlich bestätigt.",
+  },
+  {
+    number: "03",
+    eyebrow: "Unabhängige Kaufprüfung",
+    title: "Purchase Safety Report",
+    text:
+      "Sobald eine Immobilie ernsthaft infrage kommt, prüfen unabhängige Fachleute die wichtigsten rechtlichen, technischen und praktischen Risiken. Sie erhalten vor Ihrer endgültigen Entscheidung eine klare Zusammenfassung.",
+    bullets: [
+      "Rechtliche Hinweise und Eigentumsinformationen",
+      "Technische Prüfung sichtbarer Mängel und Wartungspunkte",
+      "Einblick in Genehmigungen, Anbauten und mögliche Belastungen",
+      "Klare Ergebnisse, offene Punkte und empfohlene nächste Schritte",
+      "Dokumente, Berichte, Fotos und Fragen in einem sicheren Kundenportal",
+    ],
+    href: "/de/services/purchase-safety-report",
+    cta: "Purchase Safety Report ansehen",
+    note:
+      "Beim tatsächlichen Kauf einer Villa über Nordic Move Spain ist der unabhängige Sicherheitsbericht in der Kaufbegleitung enthalten. Der genaue Umfang der Prüfung hängt von der Immobilie, den verfügbaren Unterlagen und der Verfügbarkeit der geeigneten Fachleute ab.",
+  },
+  {
+    number: "04",
+    eyebrow: "Move-in ready",
+    title: "Interior Design",
+    text:
+      "Nach dem Kauf helfen wir Ihnen, aus der Immobilie ein vollständiges und persönliches Zuhause zu machen. Wir entwickeln die gestalterische Richtung, wählen passende Materialien und Möbel aus und koordinieren die Umsetzung mit zuverlässigen lokalen Partnern.",
+    bullets: [
+      "Persönliche Interior Direction",
+      "Auswahl von Möbeln, Materialien und Farben",
+      "Styling, Beleuchtung und praktische Einrichtung",
+      "Koordination mit lokalen Lieferanten und Partnern",
+      "Eine ruhige und vollständig vorbereitete Ankunft",
+    ],
+    href: "/de/services/move-in-ready",
+    cta: "Interior Design entdecken",
+  },
+];
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+
+function absoluteUrl(path: string) {
+  return siteUrl ? `${siteUrl}${path}` : path;
+}
+
+const breadcrumbStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Startseite",
+      item: absoluteUrl("/de"),
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Leistungen",
+      item: absoluteUrl("/de/services"),
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Area Match & Buyer Journey",
+      item: absoluteUrl(pagePath),
+    },
+  ],
+};
+
+const servicesStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Nordic Move Spain Buyer Journey",
+  itemListElement: services.map((service, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Service",
+      name: service.title,
+      description: service.text,
+      url: absoluteUrl(service.href),
+      areaServed: {
+        "@type": "Place",
+        name: "Costa Blanca, Spanien",
+      },
+      provider: {
+        "@type": "Organization",
+        name: "Nordic Move Spain",
+      },
+    },
+  })),
 };
 
 export default function AreaMatchPage() {
-  const reportItems = [
-    "Persönlicher Match mit Orten und Wohnlagen",
-    "Lebensstil und tägliche Wohnumgebung",
-    "Ruhe, Privatsphäre, Sommerandrang und Lärmrisiken",
-    "Sicherheit, lokale Aufmerksamkeitspunkte und sichtbare Umgebungsrisiken",
-    "Ärzte, Krankenhäuser und Zugang zur Gesundheitsversorgung",
-    "Wellness, Golf, Sport und Freizeitmöglichkeiten",
-    "Restaurants, Beachclubs und lokale Kultur",
-    "Internationale Schulen und Eignung für Familien",
-    "Internationale Gemeinschaften und soziales Netzwerk",
-    "Erreichbarkeit, Infrastruktur und Investitionspotenzial",
-    "Risiken wie stark befahrene Straßen, Strommasten, steile Zufahrt oder abgelegene Lage",
-    "Erste Aufmerksamkeitspunkte für Vermietung, Gemeinschaftsregeln und ganzjährige Nutzung",
-  ];
-
-  const safetyChecks = [
-    {
-      label: "01",
-      title: "Die richtige Umgebung wählen",
-      text:
-        "Bevor Sie Immobilien besichtigen, prüfen wir, welche Orte, Wohnlagen und Lebensumgebungen wirklich zu Ihrem Alltag passen. So vermeiden Sie, sich in eine Immobilie zu verlieben, deren Umgebung langfristig nicht zu Ihnen passt.",
-    },
-    {
-      label: "02",
-      title: "Risiken früher erkennen",
-      text:
-        "Wir achten nicht nur auf Atmosphäre und Schönheit, sondern auch auf praktische Punkte wie Erreichbarkeit, Lärm, saisonalen Andrang, Hanglage, Infrastruktur, Gesundheitsversorgung, Gemeinschaftsregeln und mögliche Einschränkungen.",
-    },
-    {
-      label: "03",
-      title: "Sicher weiter mit dem Purchase Safety Report",
-      text:
-        "Wenn Sie eine Immobilie ernsthaft in Betracht ziehen, beginnt die vertiefte Kaufprüfung. Mit unabhängigen Fachleuten werden rechtliche, technische und administrative Aufmerksamkeitspunkte vor dem Kauf sichtbar gemacht.",
-    },
-  ];
-
-  const professionalChecks = [
-    {
-      title: "Unabhängiger Anwalt",
-      text:
-        "Der Anwalt prüft unter anderem Eigentum, Nota Simple, mögliche Belastungen, offene Schulden, Kaufverträge, Genehmigungen und rechtliche Risiken, die vor der Unterzeichnung klar sein sollten.",
-    },
-    {
-      title: "Notar und Gestor",
-      text:
-        "Der Notar begleitet die formelle Eigentumsübertragung und die Unterzeichnung der Eigentumsurkunde. Ein Gestor kann bei administrativen Prüfungen, Registrierungen, Steuern, Katasterdaten und praktischer Nachverfolgung helfen.",
-    },
-    {
-      title: "Technischer Bauspezialist",
-      text:
-        "Der technische Spezialist prüft sichtbare bauliche Risiken wie Feuchtigkeit, Risse, Dach, Installationen, Elektrik, Pool, Klärgrube, Instandhaltungsrisiken und mögliche Renovierungskosten.",
-    },
-  ];
-
-  const secureItems = [
-    "Kontrollierter Zugang pro Kunde und Berater",
-    "Two-step authentication für zusätzliche Sicherheit",
-    "Weniger lose E-Mails, Screenshots und WhatsApp-Dokumente",
-    "Ein zentraler Ort für Reports, Dokumente und nächste Schritte",
-    "Klare Versionen, Fristen und Verantwortlichkeiten",
-    "Mehr Übersicht während eines Kaufprozesses mit vielen beteiligten Parteien",
-  ];
-
-  const journeySteps = [
-    {
-      number: "01",
-      title: "Füllen Sie den kostenlosen Fragebogen aus",
-      text:
-        "Durch sorgfältig zusammengestellte Fragen erhalten wir Einblick in Ihre persönliche Situation, Wohnwünsche, Ihren Lebensstil, Ihr Budget, Ihre Interessen, Sorgen und langfristigen Pläne.",
-    },
-    {
-      number: "02",
-      title: "Erhalten Sie Ihren persönlichen Area Match Report",
-      text:
-        "Wir kombinieren Ihre Antworten mit lokaler Kenntnis und KI-gestützter Analyse. Sie erhalten eine persönliche Übersicht über Orte, Wohnlagen und Gemeinschaften, die voraussichtlich am besten zu Ihnen passen.",
-    },
-    {
-      number: "03",
-      title: "Planen Sie ein kostenloses persönliches Erstgespräch",
-      text:
-        "Im Erstgespräch besprechen wir die Ergebnisse, Ihre Zweifel, Wünsche und Risiken ausführlicher. So verstehen wir nicht nur, wo Sie wohnen möchten, sondern auch, was Sie unbedingt vermeiden möchten.",
-    },
-    {
-      number: "04",
-      title: "Erleben Sie die Regionen während des Buyer Discovery Trips",
-      text:
-        "Sie besuchen ausgewählte Orte und Wohnlagen, treffen relevante lokale Fachleute und erleben, wie sich der Alltag wirklich anfühlt, bevor Sie sich auf eine Immobilie festlegen.",
-    },
-    {
-      number: "05",
-      title: "Lassen Sie eine Immobilie mit dem Purchase Safety Report prüfen",
-      text:
-        "Wenn Sie eine Immobilie ernsthaft in Betracht ziehen, koordinieren wir unabhängige rechtliche, technische und administrative Prüfungen. Die Ergebnisse werden klar zusammengeführt, bevor Sie entscheiden.",
-    },
-    {
-      number: "06",
-      title: "Entscheiden Sie mit Übersicht und sicheren Dokumenten",
-      text:
-        "Wichtige Dokumente, Reports und nächste Schritte werden, wo möglich, in einer geschützten digitalen Umgebung mit kontrolliertem Zugang und two-step authentication gesammelt.",
-    },
-  ];
-
   return (
-    <main className="min-h-screen bg-[#f6f1ea] text-stone-900">
-      {/* EINFÜHRUNG */}
-      <section className="px-8 py-28">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Area Match &amp; Sicher Kaufen
-          </p>
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbStructuredData),
+        }}
+      />
 
-          <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
-            Wählen Sie zuerst die richtige Umgebung. Kaufen Sie danach mit mehr Sicherheit.
-          </h1>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(servicesStructuredData),
+        }}
+      />
 
-          <p className="mt-10 max-w-5xl text-xl leading-relaxed text-stone-600">
-            Eine Immobilie an der Costa Blanca Nord zu kaufen beginnt nicht mit
-            der ersten Besichtigung. Es beginnt mit der Frage, ob die Umgebung,
-            der Alltag und die praktische Realität wirklich zu Ihnen passen. Eine
-            wunderschöne Immobilie kann dennoch die falsche Wahl sein, wenn die
-            Lage zu belebt, zu abgelegen, im Winter zu ruhig ist oder versteckte
-            Risiken enthält, die Sie erst nach dem Kauf entdecken.
-          </p>
-
-          <p className="mt-6 max-w-5xl text-xl leading-relaxed text-stone-600">
-            Deshalb kombinieren wir unseren kostenlosen Area Match &amp; Lifestyle
-            Intelligence Report mit einem klaren Sicherheitsansatz. Zuerst
-            erfassen wir, welche Orte und Wohnlagen zu Ihrem Lebensstil passen.
-            Danach begleiten wir Sie in einen sorgfältigen Kaufprozess, in dem
-            rechtliche, technische und praktische Risiken vor dem Kauf sichtbar
-            gemacht werden.
-          </p>
-
-          <p className="mt-6 max-w-5xl text-xl leading-relaxed text-stone-600">
-            Unser Ansatz ist für internationale Käufer gedacht, die nicht nur
-            eine schöne Immobilie suchen, sondern vor allem einen sicheren,
-            verständlichen und gut geprüften Kauf tätigen möchten.
-          </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="/relocation-assessment"
-              className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-            >
-              Kostenlosen Area Match Report anfragen
-            </a>
-
-            <a
-              href="/de/services/purchase-safety-report"
-              className="rounded-full border border-[#1e2a3a] px-8 py-4 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
-            >
-              Purchase Safety Report ansehen
-            </a>
-          </div>
+      <main className="min-h-screen overflow-hidden bg-[#f6f1ea] text-stone-900">
+        {/* BREADCRUMBS */}
+        <div className="px-6 pt-8 md:px-8">
+          <nav
+            aria-label="Brotkrümelnavigation"
+            className="mx-auto max-w-7xl"
+          >
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-stone-500">
+              <li>
+                <a href="/de" className="transition hover:text-[#173252]">
+                  Startseite
+                </a>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <a
+                  href="/de/services"
+                  className="transition hover:text-[#173252]"
+                >
+                  Leistungen
+                </a>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="text-[#173252]">
+                Area Match &amp; Buyer Journey
+              </li>
+            </ol>
+          </nav>
         </div>
-      </section>
 
-      {/* SICHERHEIT ALS BASIS */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl rounded-[40px] bg-white p-10 shadow-sm md:p-12 lg:p-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Unser Sicherheitsansatz
-          </p>
-
-          <h2 className="mt-6 max-w-5xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-            Nicht nur suchen, was schön aussieht, sondern prüfen, was wirklich wichtig ist.
-          </h2>
-
-          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-            Viele Käufer beginnen mit Fotos, Aussicht und Preis. Wir drehen
-            diesen Prozess um. Zuerst betrachten wir Lebensstil, Erreichbarkeit,
-            Risiken, Umgebung und praktische Eignung. Erst danach wird die
-            Immobiliensuche gezielt und sinnvoll.
-          </p>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {safetyChecks.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-[28px] bg-[#f6f1ea] p-7"
-              >
-                <p className="text-sm tracking-[0.25em] text-[#c8a063]">
-                  {item.label}
-                </p>
-
-                <h3 className="mt-4 font-serif text-3xl leading-tight text-[#1e2a3a]">
-                  {item.title}
-                </h3>
-
-                <p className="mt-5 leading-relaxed text-stone-600">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* INHALT DES REPORTS */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl rounded-[40px] bg-white p-10 shadow-sm md:p-12 lg:p-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Was Ihr persönlicher Report enthalten kann
-          </p>
-
-          <h2 className="mt-6 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-            Von Lebensstil und Gesundheitsversorgung bis zu Lärm, Erreichbarkeit und Risiken.
-          </h2>
-
-          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-            Statt monatelang selbst einzelne Informationen zu sammeln, erhalten
-            Sie eine klare und strukturierte Übersicht der Gebiete, die am besten
-            zu Ihrem Profil passen. Dabei schauen wir weiter als nur auf
-            Immobilienpreise, Strandnähe oder bekannte Ortsnamen.
-          </p>
-
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {reportItems.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl bg-[#f6f1ea] p-5 leading-relaxed text-stone-700"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-10 max-w-5xl text-lg leading-relaxed text-stone-600">
-            Der Report kombiniert einen persönlichen Lifestyle-Match mit
-            praktischer lokaler Information. So erhalten Sie nicht nur Einblick,
-            wo Sie eine Immobilie kaufen könnten, sondern vor allem, in welcher
-            Umgebung Sie sich langfristig wahrscheinlich sicher, wohl und zuhause
-            fühlen werden.
-          </p>
-        </div>
-      </section>
-
-      {/* PURCHASE SAFETY REPORT */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[40px] bg-[#1e2a3a] text-white">
-          <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative min-h-[480px]">
-              <img
-                src="/images/legal.png"
-                alt="Purchase Safety Report für den sicheren Kauf einer Immobilie an der Costa Blanca Nord"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="absolute inset-0 bg-black/25"></div>
-            </div>
-
-            <div className="p-10 md:p-14 lg:p-16">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Purchase Safety Report
-              </p>
-
-              <h2 className="mt-6 font-serif text-4xl leading-tight md:text-5xl">
-                Wenn eine Immobilie ernst wird, beginnt die eigentliche Prüfung.
-              </h2>
-
-              <p className="mt-8 text-lg leading-relaxed text-white/85">
-                Der Area Match Report hilft Ihnen zuerst, die richtige Umgebung
-                zu wählen. Sobald Sie danach eine Immobilie ernsthaft in Betracht
-                ziehen, hilft der Purchase Safety Report dabei, die wichtigsten
-                rechtlichen, technischen und praktischen Risiken vor dem Kauf
-                klar zu erkennen.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-white/75">
-                Dazu können Eigentumsinformationen, Nota Simple, Genehmigungen,
-                Anbauten, Grundstücksgrenzen, sichtbare Mängel, Feuchtigkeit,
-                Pool, Klärgrube, Gemeinschaftsregeln, jährliche Kosten und
-                mögliche Einschränkungen bei Nutzung oder Vermietung gehören.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-white/75">
-                Das Ziel ist einfach: Bevor Sie unterschreiben, möchten Sie
-                wissen, ob Sie mit Vertrauen weitermachen, neu verhandeln,
-                zusätzliche Bedingungen aufnehmen oder Abstand nehmen sollten.
-              </p>
-
-              <a
-                href="/de/services/purchase-safety-report"
-                className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-              >
-                Purchase Safety Report entdecken
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FACHLEUTE */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-5xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Unabhängige Spezialisten
-            </p>
-
-            <h2 className="mt-6 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-              Wir koordinieren die richtigen Fachleute. Sie beurteilen ihr eigenes Fachgebiet.
-            </h2>
-
-            <p className="mt-8 text-xl leading-relaxed text-stone-600">
-              Nordic Move Spain ersetzt keinen Anwalt, Notar, Gestor,
-              Steuerberater oder technischen Bauspezialisten. Wir bringen die
-              richtigen Fachleute zusammen, strukturieren den Prozess und helfen
-              Ihnen, die Ergebnisse klar zu verstehen.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {professionalChecks.map((check) => (
-              <div
-                key={check.title}
-                className="rounded-[32px] bg-white p-8 shadow-sm md:p-9"
-              >
-                <h3 className="font-serif text-3xl leading-tight text-[#1e2a3a]">
-                  {check.title}
-                </h3>
-
-                <p className="mt-5 leading-relaxed text-stone-600">
-                  {check.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GESCHÜTZTE UMGEBUNG */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl rounded-[40px] bg-[#e9dfd2] p-10 shadow-sm md:p-14 lg:p-16">
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        {/* HERO */}
+        <section className="px-6 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
+          <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Geschützte Kaufumgebung
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Nordic Move Buyer Journey
               </p>
 
-              <h2 className="mt-6 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-                Keine losen Dokumente über WhatsApp oder unsichere E-Mail.
+              <h1 className="mt-6 font-serif text-5xl leading-[1.03] text-[#173252] md:text-7xl">
+                Zuerst herausfinden, wo Sie leben möchten. Dann die richtige
+                Immobilie finden.
+              </h1>
+
+              <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
+                Unsere Begleitung besteht aus vier klaren Leistungen. Sie
+                beginnen mit einem kostenlosen persönlichen Area Match
+                Portfolio, entdecken die Region auf einer Buyer Discovery Trip,
+                kaufen mit mehr Sicherheit durch einen unabhängigen
+                Sicherheitsbericht und gestalten Ihr Zuhause anschließend mit
+                Interior Design.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="/de/relocation-assessment"
+                  className="rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+                >
+                  Kostenloses Portfolio erhalten
+                </a>
+
+                <a
+                  href="/de/contact"
+                  className="rounded-full border border-[#173252] px-8 py-4 text-sm font-medium text-[#173252] transition hover:bg-[#173252] hover:text-white"
+                >
+                  Persönliches Gespräch vereinbaren
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)] sm:translate-y-10">
+                <img
+                  src="/images/brochure-de.png"
+                  alt="Nordic Move Spain Broschüre zur Buyer Discovery Trip und zum Interior Design"
+                  className="h-full w-full rounded-[26px] object-cover"
+                />
+              </div>
+
+              <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)]">
+                <img
+                  src="/images/move-in-ready-costal.png"
+                  alt="Nordic Move Spain Broschüre zum sicheren Immobilienkauf und Purchase Safety Report"
+                  className="h-full w-full rounded-[26px] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SERVICE OVERVIEW */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 max-w-4xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Vier Leistungen, ein klarer Weg
+              </p>
+
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Von der ersten Orientierung bis zu einem Zuhause, das bereit
+                zum Einziehen ist.
               </h2>
             </div>
 
-            <div>
-              <p className="text-lg leading-relaxed text-stone-700">
-                Bei einem Immobilienkauf in Spanien werden häufig sensible
-                Dokumente geteilt: Reisepässe, Kaufverträge, Bankdaten,
-                Steuerunterlagen, Eigentumsinformationen, technische Reports und
-                rechtliche Dokumente. Wir finden, dass solche Informationen
-                sorgfältig und übersichtlich behandelt werden müssen.
-              </p>
+            <div className="grid gap-7 md:grid-cols-2">
+              {services.map((service) => (
+                <article
+                  key={service.number}
+                  className="flex h-full flex-col rounded-[36px] bg-white p-8 shadow-sm md:p-10"
+                >
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
+                        {service.eyebrow}
+                      </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                Deshalb arbeiten wir, wo möglich, mit einer geschützten digitalen
-                Umgebung, in der wichtige Dokumente, Reports, Verantwortlichkeiten
-                und nächste Schritte zentral gesammelt werden.
-              </p>
+                      <h3 className="mt-4 font-serif text-3xl leading-tight text-[#173252] md:text-4xl">
+                        {service.title}
+                      </h3>
+                    </div>
 
-              <div className="mt-8 grid gap-4">
-                {secureItems.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl bg-white/70 p-5 leading-relaxed text-stone-700"
-                  >
-                    {item}
+                    <span className="font-serif text-5xl text-[#d7bd94]">
+                      {service.number}
+                    </span>
                   </div>
-                ))}
+
+                  <p className="mt-6 text-base leading-relaxed text-stone-600">
+                    {service.text}
+                  </p>
+
+                  <ul className="mt-7 space-y-3 text-sm leading-relaxed text-stone-700">
+                    {service.bullets.map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {service.note ? (
+                    <p className="mt-7 text-xs leading-relaxed text-stone-500">
+                      * {service.note}
+                    </p>
+                  ) : null}
+
+                  <a
+                    href={service.href}
+                    className="mt-8 inline-flex w-fit items-center border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
+                  >
+                    {service.cta} →
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* AREA MATCH */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-white shadow-sm">
+            <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+              <div className="bg-[#173252] p-10 text-white md:p-14 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
+                  Leistung 01 · Area Match
+                </p>
+
+                <h2 className="mt-6 font-serif text-4xl leading-tight md:text-6xl">
+                  Ein kostenloses Portfolio, das Ihrer Suche eine klare Richtung
+                  gibt.
+                </h2>
+
+                <p className="mt-8 text-lg leading-relaxed text-white/80">
+                  Das Area Match Portfolio ist kein kurzes Ergebnis und keine
+                  allgemeine Empfehlung. Sie erhalten ein ausführliches,
+                  persönliches Dokument, mit dem Sie besser verstehen, welche
+                  Umgebung, welcher Ort und welcher Immobilientyp zu Ihrem
+                  gewünschten Leben in Spanien passen.
+                </p>
+
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  Das Portfolio zeigt nicht nur, wo Sie suchen könnten. Es schafft
+                  auch Klarheit darüber, wonach Sie eigentlich suchen. Dadurch
+                  vermeiden Sie eine endlose Suche in Angeboten, die am Ende
+                  nicht zu Ihrem Alltag passen.
+                </p>
+
+                <a
+                  href="/de/relocation-assessment"
+                  className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                >
+                  Kostenloses Area Match Portfolio anfordern
+                </a>
+              </div>
+
+              <div className="p-10 md:p-14 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Was Sie erhalten
+                </p>
+
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {[
+                    "Ein persönliches Profil Ihrer Wohn- und Lifestyle-Wünsche",
+                    "Eine Auswahl passender Regionen und Orte",
+                    "Informationen zu Atmosphäre, Erreichbarkeit und Alltag",
+                    "Einblick in Gesundheitsversorgung, Infrastruktur und internationale Communities",
+                    "Orientierung bei passenden Immobilientypen und Wohnlagen",
+                    "Eine gezielte Grundlage für Besichtigungen und nächste Schritte",
+                  ].map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-[24px] bg-[#f6f1ea] p-5 text-sm leading-relaxed text-stone-700"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+
+                <p className="mt-8 text-sm leading-relaxed text-stone-500">
+                  Das Area Match Portfolio ist kostenlos und unverbindlich. Der
+                  Inhalt wird auf Ihre persönliche Situation, Ihre Pläne und
+                  Ihre Wünsche abgestimmt.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ABLAUF */}
-      <section id="ablauf" className="scroll-mt-24 px-8 pb-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-5xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Vom kostenlosen Report zum kontrollierten Kauf
-            </p>
-
-            <h2 className="mt-6 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-              Ein klarer Weg von Orientierung zu Sicherheit.
-            </h2>
-
-            <p className="mt-8 text-xl leading-relaxed text-stone-600">
-              Der Area Match Report ist der Ausgangspunkt. Danach bauen wir
-              Schritt für Schritt weiter: persönliches Erstgespräch, Buyer
-              Discovery Trip, gezielte Immobiliensuche, Purchase Safety Report
-              und eine geschützte Dokumentenumgebung. So wird der Kauf nicht
-              schneller oder impulsiver, sondern ruhiger, besser geprüft und
-              besser unterlegt.
-            </p>
-          </div>
-
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {journeySteps.map((step) => (
-              <div
-                key={step.number}
-                className="rounded-[32px] bg-white p-8 shadow-sm md:p-9"
-              >
-                <p className="text-sm tracking-[0.25em] text-[#c8a063]">
-                  {step.number}
-                </p>
-
-                <h3 className="mt-4 font-serif text-3xl leading-tight text-[#1e2a3a]">
-                  {step.title}
-                </h3>
-
-                <p className="mt-5 leading-relaxed text-stone-600">
-                  {step.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PERSÖNLICHER MATCH WÄHREND DES TRIPS */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-[40px] bg-[#1e2a3a] text-white">
-          <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="relative min-h-[420px]">
+        {/* DISCOVERY TRIP */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="overflow-hidden rounded-[40px] bg-white p-3 shadow-sm">
               <img
-                src="/images/discover-card.png"
-                alt="Persönlicher Buyer Discovery Trip an der Costa Blanca Nord"
-                className="absolute inset-0 h-full w-full object-cover"
+                src="/images/brochure-de.png"
+                alt="Nordic Move Spain Broschüre zur Buyer Discovery Trip und Nordic Circle"
+                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
               />
-
-              <div className="absolute inset-0 bg-black/20"></div>
             </div>
 
-            <div className="p-10 md:p-14 lg:p-16">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Persönlicher Buyer Discovery Trip
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Leistung 02 · Buyer Discovery Trip
               </p>
 
-              <h2 className="mt-6 font-serif text-4xl leading-tight md:text-5xl">
-                Nicht nur Orte besuchen, sondern Risiken verstehen und die richtigen Menschen kennenlernen.
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Erleben Sie, wie sich das Leben in der passenden Region wirklich
+                anfühlt.
               </h2>
 
-              <p className="mt-8 text-lg leading-relaxed text-white/85">
-                Während des Trips erleben Sie, wie sich der Alltag in den
-                ausgewählten Orten wirklich anfühlt. Sie besuchen Wohnlagen,
-                Einrichtungen und Orte, die zu Ihrem persönlichen Profil passen,
-                statt einer allgemeinen Standardroute zu folgen.
+              <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                Ihr Area Match Portfolio bildet die Grundlage für eine
+                persönliche Discovery Trip. Wir stellen eine Route durch die
+                Regionen, Immobilien und Einrichtungen zusammen, die zu Ihrem
+                Profil passen.
               </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-white/75">
-                Auf Grundlage Ihres Reports und des Erstgesprächs können wir
-                relevante Einführungen vorbereiten. Dazu können vertrauenswürdige
-                lokale Fachleute, internationale Bewohner, Unternehmer, zukünftige
-                Käufer oder Menschen mit gemeinsamen Interessen gehören.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-white/75">
-                So erhalten Sie nicht nur ein besseres Bild vom Immobilienmarkt,
-                sondern auch von den sozialen, praktischen und sicherheitsrelevanten
-                Aspekten rund um Ihre mögliche zukünftige Wohnumgebung.
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Sie erhalten genügend Zeit, Unterschiede wahrzunehmen, gezielte
+                Fragen zu stellen und herauszufinden, welche Umgebung auch
+                außerhalb eines Urlaubs zu Ihnen passt. Die Reise verbindet
+                ausgewählte Besichtigungen mit lokalem Wissen und passenden
+                Lifestyle-Erlebnissen.
               </p>
 
               <a
                 href="/de/services/discovery-trips"
-                className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
               >
-                Buyer Discovery Trip entdecken
+                Buyer Discovery Trip ansehen
+              </a>
+
+              <p className="mt-6 text-xs leading-relaxed text-stone-500">
+                * Beim tatsächlichen Kauf einer Villa über Nordic Move Spain
+                wird abhängig vom Kaufpreis die Hälfte oder der gesamte
+                Reisepreis erstattet. Die genaue Erstattung und die geltenden
+                Bedingungen werden vorab schriftlich bestätigt.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* PURCHASE SAFETY */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="order-2 lg:order-1">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Leistung 03 · Purchase Safety
+              </p>
+
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Unabhängige Prüfung, bevor Sie endgültig kaufen.
+              </h2>
+
+              <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                Eine schöne Präsentation erzählt nicht die ganze Geschichte.
+                Deshalb lassen wir bei einem ernsthaften Kauf die wichtigsten
+                rechtlichen, technischen und praktischen Punkte durch
+                unabhängige Fachleute prüfen.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Die Ergebnisse werden in einem übersichtlichen
+                Sicherheitsbericht zusammengeführt. So können Sie besser
+                einschätzen, ob Sie fortfahren, zusätzliche Bedingungen stellen,
+                neu verhandeln oder von der Immobilie Abstand nehmen sollten.
+              </p>
+
+              <a
+                href="/de/services/purchase-safety-report"
+                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+              >
+                Purchase Safety ansehen
+              </a>
+
+              <p className="mt-6 text-xs leading-relaxed text-stone-500">
+                * Beim tatsächlichen Kauf einer Villa über Nordic Move Spain ist
+                der unabhängige Sicherheitsbericht in der Kaufbegleitung
+                enthalten. Der genaue Umfang der Prüfung hängt von der
+                Immobilie, den verfügbaren Unterlagen und der Verfügbarkeit der
+                geeigneten Fachleute ab.
+              </p>
+            </div>
+
+            <div className="order-1 overflow-hidden rounded-[40px] bg-white p-3 shadow-sm lg:order-2">
+              <img
+                src="/images/move-in-ready-costal.png"
+                alt="Nordic Move Spain Broschüre zum Purchase Safety Report"
+                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* SECURE CLIENT PORTAL */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl rounded-[42px] bg-white p-10 shadow-sm md:p-14 lg:p-16">
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Sicheres Kundenportal
+                </p>
+
+                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                  Alle wichtigen Dokumente an einem geschützten Ort.
+                </h2>
+
+                <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                  Bei einem Immobilienkauf entstehen zahlreiche Unterlagen,
+                  Berichte, Fotos, Fragen und offene Punkte. Statt diese über
+                  verschiedene E-Mails oder Nachrichten zu verteilen, werden
+                  relevante Informationen übersichtlich in einem sicheren
+                  Kundenportal gesammelt.
+                </p>
+
+                <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                  Dadurch behalten Sie den Überblick über den aktuellen Stand,
+                  wichtige Dokumente und die nächsten Schritte Ihres
+                  Kaufprozesses.
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  [
+                    "Kaufunterlagen",
+                    "Wichtige Dokumente und verfügbare Eigentumsinformationen übersichtlich gebündelt.",
+                  ],
+                  [
+                    "Berichte und Fotos",
+                    "Technische und rechtliche Berichte sowie relevante Bilder zentral verfügbar.",
+                  ],
+                  [
+                    "Fragen und offene Punkte",
+                    "Noch zu klärende Themen und empfohlene nächste Schritte bleiben nachvollziehbar.",
+                  ],
+                  [
+                    "Geschützter Zugriff",
+                    "Dokumente werden in einer kontrollierten Kundenumgebung statt lose über verschiedene Kanäle geteilt.",
+                  ],
+                ].map(([title, text]) => (
+                  <article
+                    key={title}
+                    className="rounded-[26px] bg-[#f6f1ea] p-6"
+                  >
+                    <h3 className="font-serif text-2xl text-[#173252]">
+                      {title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                      {text}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* INTERIOR DESIGN */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2]">
+            <div className="grid items-stretch lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="p-10 md:p-14 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Leistung 04 · Interior Design
+                </p>
+
+                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                  In einem Zuhause ankommen, das sich bereits vertraut anfühlt.
+                </h2>
+
+                <p className="mt-8 text-lg leading-relaxed text-stone-700">
+                  Nach dem Kauf entwickeln wir gemeinsam mit Ihnen eine klare
+                  Interior Direction, die zur Immobilie, zur Umgebung und zu
+                  Ihrer gewünschten Lebensweise passt.
+                </p>
+
+                <p className="mt-6 text-lg leading-relaxed text-stone-700">
+                  Wir begleiten die Auswahl von Möbeln, Materialien,
+                  Beleuchtung und Styling und stimmen die praktische Umsetzung
+                  mit zuverlässigen lokalen Partnern ab. So müssen Sie nicht
+                  monatelang alles aus der Ferne koordinieren und kommen in
+                  einem vollständig vorbereiteten Zuhause an.
+                </p>
+
+                <a
+                  href="/de/services/move-in-ready"
+                  className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+                >
+                  Interior Design entdecken
+                </a>
+
+                <p className="mt-6 text-xs leading-relaxed text-stone-500">
+                  Entwurf, Budget, Zeitplanung und Ausführung werden auf die
+                  Immobilie, Ihre Wünsche und die Verfügbarkeit ausgewählter
+                  lokaler Partner abgestimmt.
+                </p>
+              </div>
+
+              <div className="min-h-[520px]">
+                <img
+                  src="/images/interior-design.png"
+                  alt="Warmes mediterranes Interior Design für eine Villa an der Costa Blanca"
+                  className="h-full min-h-[520px] w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FINAL CTA */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl rounded-[42px] bg-[#173252] px-8 py-16 text-center text-white md:px-14 md:py-20">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
+              Beginnen Sie mit Klarheit
+            </p>
+
+            <h2 className="mx-auto mt-6 max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
+              Finden Sie zuerst heraus, was wirklich zu Ihnen passt.
+            </h2>
+
+            <p className="mx-auto mt-7 max-w-3xl text-lg leading-relaxed text-white/75">
+              Fordern Sie Ihr kostenloses Area Match Portfolio an und erhalten
+              Sie eine klare, persönliche Grundlage für Ihre Immobiliensuche an
+              der Costa Blanca.
+            </p>
+
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
+              <a
+                href="/de/relocation-assessment"
+                className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+              >
+                Kostenloses Portfolio erhalten
+              </a>
+
+              <a
+                href="/de/contact"
+                className="rounded-full border border-white/70 px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#173252]"
+              >
+                Erstgespräch vereinbaren
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* WARUM DAS WICHTIG IST */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Mehr als eine Immobilie suchen
-            </p>
-
-            <h2 className="mt-6 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-              Die richtige Umgebung und ein geprüfter Kauf entscheiden, ob Spanien sich wirklich wie Zuhause anfühlt.
-            </h2>
-          </div>
-
-          <div className="text-lg leading-relaxed text-stone-600">
-            <p>
-              Eine Immobilie kann auf Fotos perfekt aussehen, während die Lage
-              oder die rechtliche und technische Realität am Ende nicht zu Ihren
-              Erwartungen passt. Vielleicht sind Einrichtungen zu weit entfernt,
-              die Umgebung ist im Winter zu ruhig, es gibt unerwartete
-              Gemeinschaftsregeln oder ein Teil der Immobilie ist nicht korrekt
-              registriert.
-            </p>
-
-            <p className="mt-6">
-              Deshalb schauen wir nicht nur auf die Immobilie selbst. Wir
-              beurteilen auch die Umgebung, Erreichbarkeit, Lebensstil, lokale
-              Infrastruktur, soziale Möglichkeiten und praktische Eignung für die
-              kommenden Jahre. Und sobald eine konkrete Immobilie ernst wird,
-              gehen wir weiter zu unabhängigen Prüfungen.
-            </p>
-
-            <p className="mt-6">
-              Unsere Begleitung hilft Ihnen, zuerst Klarheit über den richtigen
-              Ort und Lebensstil zu gewinnen und den Kauf danach mit mehr Ruhe,
-              Übersicht und Sicherheit anzugehen.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ABSCHLUSS CTA */}
-      <section className="px-8 pb-28">
-        <div className="mx-auto max-w-6xl rounded-[40px] bg-white p-10 text-center shadow-sm md:p-14 lg:p-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Kostenlos und unverbindlich starten
-          </p>
-
-          <h2 className="mx-auto mt-6 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-            Entdecken Sie, welcher Ort, welche Wohnlage und welcher Kaufweg am besten zu Ihrer Zukunft in Spanien passen.
-          </h2>
-
-          <p className="mx-auto mt-8 max-w-4xl text-lg leading-relaxed text-stone-600">
-            Füllen Sie den Fragebogen aus und erhalten Sie Ihren persönlichen
-            Area Match &amp; Lifestyle Intelligence Report. Danach können Sie ein
-            kostenloses Erstgespräch nutzen, in dem wir die Ergebnisse besprechen
-            und gemeinsam prüfen, welcher nächste Schritt zu Ihnen passt.
-          </p>
-
-          <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-stone-500">
-            Wenn Sie später eine Immobilie ernsthaft in Betracht ziehen, kann der
-            Purchase Safety Report helfen, rechtliche, technische und praktische
-            Risiken vor dem Kauf besser zu verstehen.
-          </p>
-
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="/relocation-assessment"
-              className="inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#15202d]"
-            >
-              Kostenlosen Area Match Report anfragen
-            </a>
-
-            <a
-              href="/de/services/purchase-safety-report"
-              className="inline-block rounded-full border border-[#1e2a3a] px-8 py-4 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
-            >
-              Mehr über sicheres Kaufen erfahren
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Purchase Safety Report | Veilig een woning kopen aan de Costa Blanca Noord",
   description:
-    "Een onafhankelijk aankoopveiligheidsrapport voor kopers die een woning aan de Costa Blanca Noord juridisch, technisch en praktisch willen laten controleren vóór aankoop.",
+    "Een gestructureerd aankooprisico-overzicht voor kopers die een woning aan de Costa Blanca Noord vóór aankoop juridisch, technisch en praktisch willen laten beoordelen door onafhankelijke professionals.",
   openGraph: {
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
@@ -12,7 +12,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Een helder aankooprapport met onafhankelijke juridische, technische en praktische controles vóór u koopt in Spanje.",
+      "Een gestructureerd aankooprisico-overzicht met bevindingen van onafhankelijke professionals vóór u koopt in Spanje.",
   },
 };
 
@@ -85,9 +85,10 @@ export default function PurchaseSafetyReportPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl leading-relaxed text-white">
-              Een onafhankelijk aankoopveiligheidsrapport voor kopers die een
+              Een gestructureerd aankooprisico-overzicht voor kopers die een
               woning aan de Costa Blanca Noord niet alleen op gevoel willen kopen,
-              maar met duidelijke juridische, technische en praktische inzichten.
+              maar met bevindingen van onafhankelijke professionals en duidelijke
+              juridische, technische en praktische aandachtspunten.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -245,6 +246,47 @@ export default function PurchaseSafetyReportPage() {
         </div>
       </section>
 
+      {/* WANNEER VERSTANDIG */}
+      <section className="px-8 pb-32">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Wanneer is dit verstandig?
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+            Vraag het Purchase Safety Report aan voordat u zich vastlegt.
+          </h2>
+
+          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
+            Het Purchase Safety Report is vooral waardevol wanneer u een woning
+            serieus overweegt, maar vóór ondertekening duidelijkheid wilt over
+            juridische, technische en praktische aandachtspunten.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              "Als u een woning serieus overweegt",
+              "Als er uitbouwen, terrassen of bijgebouwen zijn",
+              "Als de geregistreerde oppervlakte niet duidelijk is",
+              "Als er vocht, scheuren, oudere installaties of renovatiepunten zijn",
+              "Als er een septic tank, zwembad of groot perceel is",
+              "Als de woning onderdeel is van een community",
+              "Als u de woning wilt verhuren",
+              "Als u vóór ondertekening meer zekerheid wilt over openstaande punten",
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-[24px] border border-[#c8a063]/25 bg-white/70 p-6"
+              >
+                <p className="text-base leading-relaxed text-stone-700">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WAT WORDT GECONTROLEERD */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
@@ -332,25 +374,26 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Geen losse documenten via WhatsApp of onveilige e-mail.
+              Geen losse documenten via WhatsApp of onbeveiligde e-mail.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-700">
-              Bij een aankoop in Spanje worden vaak gevoelige documenten gedeeld:
-              paspoorten, eigendomsinformatie, contracten, bankgegevens,
-              belastingdocumenten, technische rapporten en juridische stukken.
-              Wij vinden dat zulke informatie zorgvuldig moet worden behandeld.
+              Bij een aankoop in Spanje worden vaak belangrijke documenten en
+              rapporten gedeeld: eigendomsinformatie, Nota Simple,
+              kadastrale gegevens, koopdocumenten, technische rapporten,
+              juridische aandachtspunten, community-documenten,
+              kostenoverzichten en praktische vervolgstappen.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-700">
-              Daarom werken wij waar mogelijk met een beveiligde digitale
-              omgeving waarin documenten, rapporten, verantwoordelijkheden en
+              Daarom werken wij met een beveiligde digitale omgeving waarin
+              documenten, rapporten, verantwoordelijkheden, openstaande vragen en
               vervolgstappen overzichtelijk worden verzameld.
             </p>
 
             <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-700">
               <li>• Gecontroleerde toegang per klant en adviseur</li>
-              <li>• Two-step authentication voor extra beveiliging</li>
+              <li>• Tweestapsverificatie voor extra beveiliging</li>
               <li>• Minder losse e-mails, screenshots en WhatsApp-berichten</li>
               <li>• Eén overzichtelijke plek voor belangrijke aankoopdocumenten</li>
               <li>• Duidelijke deadlines, versies en vervolgstappen</li>

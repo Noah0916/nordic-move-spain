@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Kontakt | Nordic Move Spain",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
       de: "/de/contact",
       nl: "/nl/contact",
       en: "/contact",
+      sv: "/sv/contact",
       "x-default": "/contact",
     },
   },
@@ -77,9 +79,9 @@ export default function KontaktPage() {
               {[
                 "Persönliche Orientierung vor der Immobiliensuche",
                 "Vergleich der Regionen an der Costa Blanca Nord",
-                "Buyer Discovery Trip",
+                "Buyer Discovery Experience oder individuelle Besichtigungen",
                 "Begleitung während des Kaufprozesses",
-                "Komplette und strukturierte Kaufakte",
+                "Strukturierte Kaufunterlagen im sicheren Kundenportal",
                 "Unterstützung nach dem Immobilienkauf",
               ].map((item) => (
                 <div
@@ -103,88 +105,7 @@ export default function KontaktPage() {
               Wie können wir Ihnen helfen?
             </h2>
 
-            <form className="mt-10 space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="mb-2 block text-sm font-medium text-stone-700"
-                >
-                  Name
-                </label>
-
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  className="w-full rounded-2xl border border-stone-200 bg-[#f6f1ea] px-5 py-4 outline-none transition focus:border-[#c8a063]"
-                  placeholder="Ihr Name"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="mb-2 block text-sm font-medium text-stone-700"
-                >
-                  E-Mail-Adresse
-                </label>
-
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  className="w-full rounded-2xl border border-stone-200 bg-[#f6f1ea] px-5 py-4 outline-none transition focus:border-[#c8a063]"
-                  placeholder="Ihre E-Mail-Adresse"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="phone"
-                  className="mb-2 block text-sm font-medium text-stone-700"
-                >
-                  Telefonnummer
-                </label>
-
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  className="w-full rounded-2xl border border-stone-200 bg-[#f6f1ea] px-5 py-4 outline-none transition focus:border-[#c8a063]"
-                  placeholder="Ihre Telefonnummer"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="mb-2 block text-sm font-medium text-stone-700"
-                >
-                  Nachricht
-                </label>
-
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={7}
-                  className="w-full resize-none rounded-2xl border border-stone-200 bg-[#f6f1ea] px-5 py-4 outline-none transition focus:border-[#c8a063]"
-                  placeholder="Erzählen Sie uns kurz von Ihren Plänen in Spanien."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-              >
-                Anfrage senden
-              </button>
-            </form>
-
-            <p className="mt-6 text-sm leading-relaxed text-stone-500">
-              Hinweis: Das Formular benötigt noch eine technische Verbindung zu
-              Ihrem E-Mail- oder Formularsystem, bevor Nachrichten tatsächlich
-              versendet werden.
-            </p>
+            <ContactForm />
           </div>
         </div>
       </section>

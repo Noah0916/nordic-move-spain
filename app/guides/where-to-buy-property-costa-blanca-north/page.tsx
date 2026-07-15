@@ -1,81 +1,87 @@
 export const metadata = {
-  title: "Where to Buy Property on Costa Blanca North | Best Areas",
+  title: "Waar een woning kopen aan de Costa Blanca Noord | Beste gebieden",
   description:
-    "Discover where to buy property on Costa Blanca North. Compare Moraira, Jávea, Altea, Benissa, Calpe and Dénia by lifestyle, property type, families, retirees and international buyers.",
+    "Ontdek waar u aan de Costa Blanca Noord een woning kunt kopen. Vergelijk Moraira, Jávea, Altea, Benissa, Calpe en Dénia op levensstijl, woningtype, gezinnen, pensionering en internationale kopers.",
 };
 
-export default function WhereToBuyCostaBlancaNorthPage() {
+export default function WaarWoningKopenCostaBlancaNoordPage() {
   const areas = [
     {
       name: "Moraira",
-      href: "/regions/moraira",
-      bestFor: "Calm coastal living, villas, privacy and a refined international atmosphere",
+      href: "/nl/regions/moraira",
+      bestFor:
+        "Rustig kustleven, villa’s, privacy en een hoogwaardige internationale sfeer",
       summary:
-        "Moraira is often a strong fit for buyers who want an elegant, quieter coastal lifestyle with villas, coves, restaurants and a more residential feeling than larger beach towns.",
+        "Moraira past vaak goed bij kopers die een elegante, rustige kustlevensstijl zoeken met villa’s, baaien, restaurants en een meer residentieel gevoel dan in grotere badplaatsen.",
     },
     {
       name: "Jávea",
-      href: "/regions/javea",
-      bestFor: "Families, active buyers, beaches, sports and year-round international life",
+      href: "/nl/regions/javea",
+      bestFor:
+        "Gezinnen, actieve kopers, stranden, sport en internationaal leven het hele jaar door",
       summary:
-        "Jávea suits buyers who want more energy, a larger international community, beaches, restaurants, sports, schools nearby and several lifestyle zones to compare.",
+        "Jávea past bij kopers die meer energie, een grotere internationale gemeenschap, stranden, restaurants, sport, scholen in de buurt en meerdere levensstijlzones willen vergelijken.",
     },
     {
       name: "Altea",
-      href: "/regions/altea",
-      bestFor: "Artistic charm, sea views, culture, elegance and a slower Mediterranean rhythm",
+      href: "/nl/regions/altea",
+      bestFor:
+        "Artistieke charme, zeezicht, cultuur, elegantie en een langzamer mediterraan ritme",
       summary:
-        "Altea is attractive for buyers who value beauty, old-town atmosphere, restaurants, culture, sea views and a refined Mediterranean setting.",
+        "Altea is aantrekkelijk voor kopers die schoonheid, sfeer in de oude stad, restaurants, cultuur, zeezicht en een verfijnde mediterrane omgeving waarderen.",
     },
     {
       name: "Benissa",
-      href: "/regions/benissa",
-      bestFor: "Space, privacy, countryside living, authentic Spain and hidden coves",
+      href: "/nl/regions/benissa",
+      bestFor:
+        "Ruimte, privacy, landelijk wonen, authentiek Spanje en verborgen baaien",
       summary:
-        "Benissa works well for buyers who want more land, privacy, rural charm and access to coastal coves without living in a busy resort environment.",
+        "Benissa is geschikt voor kopers die meer grond, privacy, landelijke charme en toegang tot kustbaaien zoeken, zonder in een drukke badplaats te wonen.",
     },
     {
       name: "Calpe",
-      href: "/regions/calpe",
-      bestFor: "Apartments, beachfront living, new developments, marina life and convenience",
+      href: "/nl/regions/calpe",
+      bestFor:
+        "Appartementen, direct aan het strand wonen, nieuwbouwprojecten, jachthavenleven en gemak",
       summary:
-        "Calpe is a strong option for buyers who want beaches, sea views, restaurants, apartments, newer buildings and a more active coastal atmosphere.",
+        "Calpe is een sterke optie voor kopers die stranden, zeezicht, restaurants, appartementen, nieuwere gebouwen en een actievere kustsfeer zoeken.",
     },
     {
       name: "Dénia",
-      href: "/regions/denia",
-      bestFor: "Year-round town life, gastronomy, harbour, services, beaches and daily convenience",
+      href: "/nl/regions/denia",
+      bestFor:
+        "Stadsleven het hele jaar door, gastronomie, haven, voorzieningen, stranden en dagelijks gemak",
       summary:
-        "Dénia suits buyers who want a real working coastal town with restaurants, local services, beaches, port life, culture and stronger year-round activity.",
+        "Dénia past bij kopers die een echte, levendige kuststad zoeken met restaurants, lokale voorzieningen, stranden, havenleven, cultuur en meer activiteit het hele jaar door.",
     },
   ];
 
   const buyerTypes = [
     {
-      title: "Best for families",
+      title: "Beste keuze voor gezinnen",
       text:
-        "Jávea and Dénia are often practical starting points for families because they offer more year-round services, activities and school options nearby. Moraira and Benissa can also suit families who prioritise calm, space and villa living.",
+        "Jávea en Dénia zijn voor gezinnen vaak praktische uitgangspunten, omdat zij meer voorzieningen, activiteiten en schoolmogelijkheden in de buurt bieden, ook buiten het hoogseizoen. Moraira en Benissa kunnen ook goed bij gezinnen passen wanneer rust, ruimte en villaleven belangrijker zijn.",
     },
     {
-      title: "Best for retirees",
+      title: "Beste keuze voor pensionering",
       text:
-        "Moraira, Altea and Dénia are often attractive to retirees, but for different reasons. Moraira feels calm and refined, Altea offers beauty and culture, and Dénia provides stronger daily convenience and year-round town life.",
+        "Moraira, Altea en Dénia zijn vaak aantrekkelijk voor gepensioneerden, maar om verschillende redenen. Moraira voelt rustig en hoogwaardig aan, Altea biedt schoonheid en cultuur, en Dénia biedt meer dagelijks gemak en stadsleven het hele jaar door.",
     },
     {
-      title: "Best for apartments and new-build homes",
+      title: "Beste keuze voor appartementen en nieuwbouw",
       text:
-        "Calpe is usually one of the clearest choices for buyers looking for apartments, beachfront living, sea views and newer developments. Dénia can also offer practical apartment options close to services and beaches.",
+        "Calpe is meestal een van de duidelijkste opties voor kopers die appartementen, wonen direct aan het strand, zeezicht en nieuwere ontwikkelingen zoeken. Dénia kan ook praktische appartementopties bieden in de buurt van voorzieningen en stranden.",
     },
     {
-      title: "Best for villas and privacy",
+      title: "Beste keuze voor villa’s en privacy",
       text:
-        "Moraira, Benissa and parts of Jávea are often stronger for buyers looking for detached villas, privacy, views and residential neighbourhoods. Benissa can offer a more rural and spacious feeling.",
+        "Moraira, Benissa en delen van Jávea zijn vaak sterker voor kopers die vrijstaande villa’s, privacy, uitzicht en residentiële woonwijken zoeken. Benissa kan een landelijker en ruimer gevoel bieden.",
     },
   ];
 
   const officialSources = [
     {
-      label: "Teulada-Moraira Tourism",
+      label: "Toerisme Teulada-Moraira",
       href: "https://www.turismoteuladamoraira.com/ttm/Web_php/index.php?contenido=showPois&id=1&idNivel=544&lang=4",
     },
     {
@@ -87,7 +93,7 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       href: "https://www.comunitatvalenciana.com/en/alacant-alicante/altea",
     },
     {
-      label: "Benissa Coastal Ecological Trail - Comunitat Valenciana",
+      label: "Ecologische kustroute Benissa - Comunitat Valenciana",
       href: "https://www.comunitatvalenciana.com/en/alacant-alicante/benissa/natural-landscapes/paseo-ecologico-litoral-de-benissa",
     },
     {
@@ -110,7 +116,7 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       <section className="relative min-h-[90vh] overflow-hidden">
         <img
           src="/images/discover-card.png"
-          alt="Where to buy property on Costa Blanca North"
+          alt="Waar een woning kopen aan de Costa Blanca Noord"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -119,32 +125,32 @@ export default function WhereToBuyCostaBlancaNorthPage() {
         <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl items-center px-8 pt-24">
           <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Costa Blanca North Guide
+              Costa Blanca Noord gids
             </p>
 
             <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white md:text-7xl">
-              Where to buy property on Costa Blanca North.
+              Waar een woning kopen aan de Costa Blanca Noord.
             </h1>
 
             <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-              A detailed guide for international buyers comparing Moraira,
-              Jávea, Altea, Benissa, Calpe and Dénia before choosing where to
-              buy a home in Spain.
+              Een uitgebreide gids voor internationale kopers die Moraira,
+              Jávea, Altea, Benissa, Calpe en Dénia vergelijken voordat zij
+              beslissen waar zij in Spanje een woning willen kopen.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="/services/area-match"
+                href="/nl/services/area-match"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Request your Area Match
+                Vraag uw Area Match aan
               </a>
 
               <a
-                href="/regions"
+                href="/nl/regions"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Compare the regions
+                Regio’s vergelijken
               </a>
             </div>
           </div>
@@ -157,37 +163,38 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Area first, property second
+                Eerst de omgeving, dan de woning
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                The most important decision is not always the property. It is
-                the area around it.
+                De belangrijkste beslissing is niet altijd de woning. Het is de
+                omgeving eromheen.
               </h2>
             </div>
 
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Many international buyers start their search by looking at
-                villas, apartments and sea views. That feels logical, but it can
-                lead to the wrong decision. A beautiful home in the wrong town
-                can quickly become frustrating if the lifestyle, services,
-                schools, driving distances or community do not fit your daily
-                life.
+                Veel internationale kopers beginnen hun zoektocht met villa’s,
+                appartementen en zeezicht. Dat lijkt logisch, maar kan tot de
+                verkeerde beslissing leiden. Een mooie woning op de verkeerde
+                plek kan snel frustrerend worden wanneer levensstijl,
+                voorzieningen, scholen, reistijden of gemeenschap niet bij het
+                dagelijks leven passen.
               </p>
 
               <p className="mt-6">
-                Costa Blanca North is not one single lifestyle. Moraira, Jávea,
-                Altea, Benissa, Calpe and Dénia each attract a different type of
-                buyer. Some areas feel calm and residential. Others are more
-                active, urban, social, artistic, rural or family-focused.
+                De Costa Blanca Noord is niet één enkele levensstijl. Moraira,
+                Jávea, Altea, Benissa, Calpe en Dénia trekken ieder een ander
+                type koper aan. Sommige gebieden voelen rustig en residentieel.
+                Andere zijn actiever, stedelijker, socialer, artistieker,
+                landelijker of meer gericht op gezinnen.
               </p>
 
               <p className="mt-6">
-                This guide helps you compare the main areas before buying
-                property on Costa Blanca North, so you can understand which
-                location may fit your goals, budget, family situation and
-                long-term plans.
+                Deze gids helpt u de belangrijkste gebieden te vergelijken
+                voordat u een woning aan de Costa Blanca Noord koopt, zodat u
+                beter begrijpt welke plaats kan passen bij uw doelen, budget,
+                gezinssituatie en langetermijnplannen.
               </p>
             </div>
           </div>
@@ -198,11 +205,11 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Quick answer
+            Kort antwoord
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Best places to buy property on Costa Blanca North.
+            De beste plaatsen om een woning te kopen aan de Costa Blanca Noord.
           </h2>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -234,41 +241,43 @@ export default function WhereToBuyCostaBlancaNorthPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Buying property in Spain
+              Woning kopen in Spanje
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Why the right town matters more than the first beautiful home.
+              Waarom de juiste plaats belangrijker is dan de eerste mooie
+              woning.
             </h2>
           </div>
 
           <div className="text-lg leading-relaxed text-stone-600">
             <p>
-              When buyers search online, many properties look attractive:
-              sea-view villas, modern apartments, renovated townhouses and
-              new-build homes. But online listings rarely explain how a place
-              actually feels to live in.
+              Wanneer kopers online zoeken, lijken veel woningen aantrekkelijk:
+              villa’s met zeezicht, moderne appartementen, gerenoveerde
+              dorpshuizen en nieuwbouwwoningen. Online advertenties laten echter
+              zelden zien hoe het echt voelt om op een plek te wonen.
             </p>
 
             <p className="mt-6">
-              The real questions are more practical. Will you need a car every
-              day? Is the town active in winter? Are restaurants, doctors,
-              schools and services nearby? Does the area feel international or
-              more local? Is the property type common in that location? Is the
-              neighbourhood suitable for year-round living, holidays, retirement,
-              family life or investment?
+              De echte vragen zijn praktischer. Heeft u dagelijks een auto
+              nodig? Is de plaats actief in de winter? Zijn restaurants, artsen,
+              scholen en voorzieningen dichtbij? Voelt het gebied internationaal
+              of juist meer lokaal? Is het gewenste woningtype daar gebruikelijk?
+              Is de omgeving geschikt voor permanent wonen, vakantie,
+              pensionering, gezinsleven of investering?
             </p>
 
             <p className="mt-6">
-              That is why we recommend choosing the area before narrowing the
-              property search. Once the right area is clear, the property search
-              becomes more focused, more realistic and much less stressful.
+              Daarom adviseren wij om eerst de omgeving te kiezen en pas daarna
+              de woningzoektocht te verfijnen. Zodra de juiste omgeving helder
+              is, wordt de zoektocht gerichter, realistischer en veel minder
+              stressvol.
             </p>
           </div>
         </div>
       </section>
 
-      {/* MORaira */}
+      {/* MORAIRA */}
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -276,54 +285,55 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Moraira: calm, elegant and villa-focused.
+            Moraira: rustig, elegant en gericht op villawonen.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Moraira is one of the most desirable areas for buyers who want a
-                quieter, refined coastal lifestyle. It is part of
-                Teulada-Moraira, where the historic inland town of Teulada and
-                the coastal area of Moraira create a combination of local
-                heritage and Mediterranean living.
+                Moraira is een van de meest gewilde gebieden voor kopers die een
+                rustigere, hoogwaardige kustlevensstijl zoeken. Het behoort tot
+                Teulada-Moraira, waar het historische Teulada landinwaarts en
+                het kustgebied Moraira lokale geschiedenis en mediterraan wonen
+                met elkaar verbinden.
               </p>
 
               <p className="mt-6">
-                Official tourism information for Teulada-Moraira highlights
-                around 8 kilometres of coastline, with beaches and coves that
-                are known for water quality and scenic surroundings. For property
-                buyers, this coastline helps explain why Moraira remains popular
-                among international buyers looking for villas, privacy and a
-                calm residential base.
+                De officiële toeristische informatie van Teulada-Moraira
+                benadrukt ongeveer 8 kilometer kustlijn, met stranden en baaien
+                die bekendstaan om waterkwaliteit en een mooie natuurlijke
+                omgeving. Voor woningkopers verklaart deze kust waarom Moraira
+                populair blijft bij internationale kopers die villa’s, privacy
+                en een rustige woonbasis zoeken.
               </p>
 
               <p className="mt-6">
-                Moraira is usually not the best choice for buyers looking for a
-                city feel, nightlife or a large apartment market. It is stronger
-                for buyers who value calm, restaurants, sea-view residential
-                zones, villa living and an established international community.
+                Moraira is meestal niet de beste keuze voor kopers die een
+                stedelijk gevoel, nachtleven of een grote appartementmarkt
+                zoeken. Het past beter bij kopers die rust, restaurants,
+                woonwijken met zeezicht, villaleven en een gevestigde
+                internationale gemeenschap waarderen.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-[#f6f1ea] p-8">
               <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                Moraira is often best for:
+                Moraira is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-stone-600">
-                <li>• Villa buyers who want privacy and a refined atmosphere</li>
-                <li>• Retirees looking for calm coastal living</li>
-                <li>• Second-home buyers wanting a polished setting</li>
-                <li>• Buyers who prefer low-rise areas over urban density</li>
-                <li>• People who want restaurants and coves without a big-city feel</li>
+                <li>• Villakopers die privacy en een hoogwaardige sfeer wensen</li>
+                <li>• Gepensioneerden die rustig kustleven zoeken</li>
+                <li>• Kopers van een tweede woning die een verzorgde omgeving willen</li>
+                <li>• Kopers die lage bebouwing verkiezen boven stedelijke dichtheid</li>
+                <li>• Mensen die restaurants en baaien willen zonder grootstedelijk gevoel</li>
               </ul>
 
               <a
-                href="/regions/moraira"
+                href="/nl/regions/moraira"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Moraira →
+                Ontdek Moraira →
               </a>
             </div>
           </div>
@@ -338,58 +348,61 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
-            Jávea: vibrant, international and full of lifestyle variety.
+            Jávea: levendig, internationaal en vol variatie in levensstijl.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-white/75">
               <p>
-                Jávea, also known as Xàbia, is one of the strongest lifestyle
-                locations on Costa Blanca North. It offers a mix of beach life,
-                restaurants, sports, family activity, coves, international
-                residents and several different property zones.
+                Jávea, ook wel Xàbia genoemd, is een van de sterkste
+                lifestyleplaatsen aan de Costa Blanca Noord. De plaats biedt een
+                mix van strandleven, restaurants, sport, gezinsactiviteiten,
+                baaien, internationale bewoners en meerdere verschillende
+                woningzones.
               </p>
 
               <p className="mt-6">
-                Comunitat Valenciana highlights Xàbia/Jávea’s coves including
-                Sardinera, Granadella, El Tangó, El Ministro and Ambolo, with
-                clear waters, cliffs and rocks that make the coastline attractive
-                for diving and sea-based activities.
+                Comunitat Valenciana benadrukt de baaien van Xàbia/Jávea,
+                waaronder Sardinera, Granadella, El Tangó, El Ministro en
+                Ambolo, met helder water, kliffen en rotsen die de kust
+                aantrekkelijk maken voor duiken en activiteiten aan zee.
               </p>
 
               <p className="mt-6">
-                Jávea also sits close to the Montgó Natural Park. Spain’s
-                official tourism portal describes Montgó as a limestone massif
-                located between Dénia and Jávea, rising to 753 metres. This gives
-                the area a strong natural identity as well as a coastal one.
+                Jávea ligt bovendien dicht bij het natuurpark Montgó. Het
+                officiële toerismeportaal van Spanje beschrijft de Montgó als
+                een kalksteenmassief tussen Dénia en Jávea dat tot 753 meter
+                hoogte reikt. Dit geeft het gebied naast de kustidentiteit ook
+                een sterke natuurlijke identiteit.
               </p>
 
               <p className="mt-6">
-                For buyers, Jávea is often more social and active than Moraira
-                or Benissa. It can be a strong fit for families, active retirees,
-                remote workers and buyers who want restaurants, clubs, beaches
-                and a visible international community.
+                Voor kopers is Jávea vaak socialer en actiever dan Moraira of
+                Benissa. Het kan goed passen bij gezinnen, actieve
+                gepensioneerden, remote workers en kopers die restaurants,
+                clubs, stranden en een zichtbare internationale gemeenschap
+                zoeken.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur">
               <h3 className="font-serif text-3xl text-white">
-                Jávea is often best for:
+                Jávea is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-white/75">
-                <li>• Families wanting schools and activities nearby</li>
-                <li>• Buyers who want a year-round international atmosphere</li>
-                <li>• People who enjoy beaches, sports and restaurants</li>
-                <li>• Remote workers and entrepreneurs</li>
-                <li>• Buyers comparing villas, town living and coastal areas</li>
+                <li>• Gezinnen die scholen en activiteiten in de buurt willen</li>
+                <li>• Kopers die een internationale sfeer het hele jaar door zoeken</li>
+                <li>• Mensen die stranden, sport en restaurants waarderen</li>
+                <li>• Remote workers en ondernemers</li>
+                <li>• Kopers die villa’s, stadsleven en kustgebieden willen vergelijken</li>
               </ul>
 
               <a
-                href="/regions/javea"
+                href="/nl/regions/javea"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Jávea →
+                Ontdek Jávea →
               </a>
             </div>
           </div>
@@ -404,52 +417,52 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Altea: artistic, scenic and quietly sophisticated.
+            Altea: artistiek, landschappelijk mooi en rustig verfijnd.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Altea has a different feeling from many other towns on Costa
-                Blanca North. It is known for culture, views, restaurants,
-                whitewashed streets and a more artistic Mediterranean
-                atmosphere.
+                Altea voelt anders aan dan veel andere plaatsen aan de Costa
+                Blanca Noord. De plaats staat bekend om cultuur, uitzichten,
+                restaurants, witgekalkte straatjes en een meer artistieke
+                mediterrane sfeer.
               </p>
 
               <p className="mt-6">
-                Comunitat Valenciana describes Altea’s old town route leading
-                towards the Plaza de la Iglesia and the Nuestra Señora del
-                Consuelo Parish Church, known for its distinctive blue and white
-                ceramic-tiled dome. This old-town identity is one of the main
-                reasons Altea attracts buyers who value beauty, atmosphere and
-                character.
+                Comunitat Valenciana beschrijft de route door de oude stad van
+                Altea richting Plaza de la Iglesia en de parochiekerk Nuestra
+                Señora del Consuelo, die bekendstaat om haar kenmerkende
+                blauw-wit keramisch bedekte koepel. Deze oude-stadsidentiteit is
+                een van de belangrijkste redenen waarom Altea kopers aantrekt
+                die schoonheid, sfeer en karakter waarderen.
               </p>
 
               <p className="mt-6">
-                Altea can be a good choice for buyers who want something more
-                refined than a beach resort, but more cultural and visually
-                distinctive than a purely residential villa area.
+                Altea kan een goede keuze zijn voor kopers die iets verfijnders
+                zoeken dan een gewone badplaats, maar meer cultuur en visuele
+                bijzonderheid wensen dan in een puur residentieel villengebied.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-[#f6f1ea] p-8">
               <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                Altea is often best for:
+                Altea is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-stone-600">
-                <li>• Buyers who value culture, design and atmosphere</li>
-                <li>• People looking for sea views and old-town charm</li>
-                <li>• Retirees who want beauty and restaurants nearby</li>
-                <li>• Buyers who prefer elegance over resort energy</li>
-                <li>• Second-home owners seeking a more artistic setting</li>
+                <li>• Kopers die cultuur, design en sfeer waarderen</li>
+                <li>• Mensen die zeezicht en charme van de oude stad zoeken</li>
+                <li>• Gepensioneerden die schoonheid en restaurants dichtbij willen</li>
+                <li>• Kopers die elegantie verkiezen boven resortenergie</li>
+                <li>• Kopers van een tweede woning die een artistiekere omgeving zoeken</li>
               </ul>
 
               <a
-                href="/regions/altea"
+                href="/nl/regions/altea"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Altea →
+                Ontdek Altea →
               </a>
             </div>
           </div>
@@ -464,52 +477,53 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Benissa: authentic, spacious and close to hidden coves.
+            Benissa: authentiek, ruim en dicht bij verborgen baaien.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-stone-700">
               <p>
-                Benissa is one of the most interesting areas for buyers who want
-                more space, privacy and authenticity. It combines an inland
-                historic town, rural areas, villa zones and a scenic coastline
-                between Moraira and Calpe.
+                Benissa is een van de interessantste gebieden voor kopers die
+                meer ruimte, privacy en authenticiteit zoeken. Het combineert
+                een historische plaats landinwaarts, landelijke gebieden,
+                villazones en een landschappelijk mooie kust tussen Moraira en
+                Calpe.
               </p>
 
               <p className="mt-6">
-                The official Comunitat Valenciana tourism page describes the
-                Benissa Coastal Ecological Trail as following the town’s 2.5
-                miles of coastline, taking in cliffs and quiet coves along a
-                marked route. The official Benissa tourism page also highlights
-                the coastline, coves and natural environment.
+                De officiële toeristische website van de Comunitat Valenciana
+                beschrijft de ecologische kustroute van Benissa als een route
+                langs de 2,5 mijl lange kustlijn van de plaats, voorbij kliffen
+                en rustige baaien. Ook de officiële toeristische website van
+                Benissa benadrukt de kust, baaien en natuurlijke omgeving.
               </p>
 
               <p className="mt-6">
-                Benissa is not usually the first choice for buyers who want to
-                walk from an apartment to a busy promenade. It is stronger for
-                people who want privacy, land, views, countryside, authenticity
-                and good access to neighbouring towns.
+                Benissa is meestal niet de eerste keuze voor kopers die vanuit
+                een appartement naar een levendige boulevard willen lopen. Het
+                is sterker voor mensen die privacy, grond, uitzicht, landschap,
+                authenticiteit en goede toegang tot omliggende plaatsen zoeken.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-white/70 p-8">
               <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                Benissa is often best for:
+                Benissa is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-stone-600">
-                <li>• Villa buyers who want space and privacy</li>
-                <li>• People who prefer rural charm over resort energy</li>
-                <li>• Buyers who want access to both Moraira and Calpe</li>
-                <li>• Nature lovers and walkers</li>
-                <li>• Families or retirees looking for a calmer base</li>
+                <li>• Villakopers die ruimte en privacy wensen</li>
+                <li>• Mensen die landelijke charme verkiezen boven resortenergie</li>
+                <li>• Kopers die toegang tot Moraira en Calpe willen</li>
+                <li>• Natuurliefhebbers en wandelaars</li>
+                <li>• Gezinnen of gepensioneerden die een rustigere basis zoeken</li>
               </ul>
 
               <a
-                href="/regions/benissa"
+                href="/nl/regions/benissa"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Benissa →
+                Ontdek Benissa →
               </a>
             </div>
           </div>
@@ -524,52 +538,53 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Calpe: beachfront living, apartments and a more active atmosphere.
+            Calpe: direct aan het strand wonen, appartementen en een actievere
+            sfeer.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Calpe is one of the most recognisable towns on Costa Blanca
-                North. It is more urban, more apartment-led and more active than
-                quieter areas such as Benissa or Moraira.
+                Calpe is een van de bekendste plaatsen aan de Costa Blanca
+                Noord. Het is stedelijker, sterker gericht op appartementen en
+                actiever dan rustigere gebieden zoals Benissa of Moraira.
               </p>
 
               <p className="mt-6">
-                Calpe’s official tourism information describes the Peñón de
-                Ifach as a 50,000 m2 limestone rock rising 332 metres above the
-                sea and extending about one kilometre. The Peñón is one of the
-                most iconic natural landmarks on the Costa Blanca and strongly
-                shapes Calpe’s identity.
+                De officiële toeristische informatie van Calpe beschrijft de
+                Peñón de Ifach als een kalkstenen rots van 50.000 m², die 332
+                meter boven zee uitsteekt en ongeveer een kilometer de zee in
+                loopt. De Peñón is een van de bekendste natuurlijke herkenningspunten
+                van de Costa Blanca en bepaalt sterk de identiteit van Calpe.
               </p>
 
               <p className="mt-6">
-                Calpe also offers beaches, coves, restaurants, a fishing port,
-                marina life and a wider choice of apartments and modern
-                buildings. For buyers who want sea views, beach access,
-                convenience and an easier lock-up-and-leave property, Calpe can
-                be a strong fit.
+                Calpe biedt daarnaast stranden, baaien, restaurants, een
+                vissershaven, jachthavenleven en een grotere keuze aan
+                appartementen en moderne gebouwen. Voor kopers die zeezicht,
+                strandtoegang, comfort en een eenvoudiger lock-up-and-leave
+                woning zoeken, kan Calpe goed passen.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-[#f6f1ea] p-8">
               <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                Calpe is often best for:
+                Calpe is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-stone-600">
-                <li>• Apartment buyers and lock-up-and-leave owners</li>
-                <li>• Buyers looking for new developments</li>
-                <li>• People who want beaches, restaurants and convenience</li>
-                <li>• Rental-minded buyers who want recognisable locations</li>
-                <li>• Buyers who prefer a more active coastal environment</li>
+                <li>• Appartementkopers en lock-up-and-leave eigenaren</li>
+                <li>• Kopers die nieuwbouwprojecten zoeken</li>
+                <li>• Mensen die stranden, restaurants en comfort willen</li>
+                <li>• Verhuurgerichte kopers die bekende locaties zoeken</li>
+                <li>• Kopers die een actievere kustomgeving verkiezen</li>
               </ul>
 
               <a
-                href="/regions/calpe"
+                href="/nl/regions/calpe"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Calpe →
+                Ontdek Calpe →
               </a>
             </div>
           </div>
@@ -584,53 +599,55 @@ export default function WhereToBuyCostaBlancaNorthPage() {
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
-            Dénia: year-round town life, gastronomy and daily convenience.
+            Dénia: stadsleven het hele jaar door, gastronomie en dagelijks
+            gemak.
           </h2>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div className="text-lg leading-relaxed text-white/75">
               <p>
-                Dénia is one of the most complete choices on Costa Blanca North
-                for buyers who want a real town, not only a holiday setting. It
-                offers beaches, port life, restaurants, services, historic
-                streets, local activity and a stronger year-round rhythm.
+                Dénia is een van de meest complete opties aan de Costa Blanca
+                Noord voor kopers die een echte stad willen, niet alleen een
+                vakantieplaats. Dénia biedt stranden, havenleven, restaurants,
+                voorzieningen, historische straten, lokale activiteit en een
+                sterker ritme gedurende het hele jaar.
               </p>
 
               <p className="mt-6">
-                Comunitat Valenciana describes Dénia as a UNESCO City of
-                Gastronomy, with cuisine based on fresh fish, local Valencian
-                produce and dishes such as arròs a banda, gamba roja and suquet
-                de peix. UNESCO also lists Dénia as part of its Creative Cities
-                Network for gastronomy.
+                Comunitat Valenciana beschrijft Dénia als UNESCO-stad van de
+                gastronomie, met een keuken op basis van verse vis, lokale
+                Valenciaanse producten en gerechten zoals arròs a banda, gamba
+                roja en suquet de peix. Ook UNESCO noemt Dénia in zijn Creative
+                Cities Network voor gastronomie.
               </p>
 
               <p className="mt-6">
-                Dénia is often a strong option for buyers who want convenience,
-                restaurants, shops, healthcare access, transport links and daily
-                life beyond the summer season. It may feel less exclusive than
-                Moraira or Altea, but it is often more practical for full-time
-                living.
+                Dénia is vaak een sterke optie voor kopers die comfort,
+                restaurants, winkels, toegang tot zorg, verbindingen en dagelijks
+                leven buiten het zomerseizoen zoeken. Het voelt misschien minder
+                exclusief dan Moraira of Altea, maar is vaak praktischer voor
+                permanent wonen.
               </p>
             </div>
 
             <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur">
               <h3 className="font-serif text-3xl text-white">
-                Dénia is often best for:
+                Dénia is vaak het meest geschikt voor:
               </h3>
 
               <ul className="mt-6 space-y-4 leading-relaxed text-white/75">
-                <li>• Buyers who want year-round town life</li>
-                <li>• Food lovers and people who value local restaurants</li>
-                <li>• Families who want services and activities nearby</li>
-                <li>• Retirees who want convenience and walkability</li>
-                <li>• Buyers comparing town-centre and beach-area living</li>
+                <li>• Kopers die stadsleven het hele jaar door willen</li>
+                <li>• Fijnproevers en mensen die lokale restaurants waarderen</li>
+                <li>• Gezinnen die voorzieningen en activiteiten dichtbij willen</li>
+                <li>• Gepensioneerden die comfort en loopafstand waarderen</li>
+                <li>• Kopers die centrum en strandgebieden willen vergelijken</li>
               </ul>
 
               <a
-                href="/regions/denia"
+                href="/nl/regions/denia"
                 className="mt-8 inline-block text-sm uppercase tracking-[0.25em] text-[#c8a063]"
               >
-                Explore Dénia →
+                Ontdek Dénia →
               </a>
             </div>
           </div>
@@ -642,18 +659,18 @@ export default function WhereToBuyCostaBlancaNorthPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Choose by lifestyle
+              Kiezen op levensstijl
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Which Costa Blanca North area fits your situation?
+              Welk gebied aan de Costa Blanca Noord past bij uw situatie?
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              The best area depends on how you plan to live. A family with
-              school-age children, a retired couple, a remote worker and a
-              second-home buyer may all need different locations, even with the
-              same budget.
+              Het beste gebied hangt af van hoe u wilt leven. Een gezin met
+              schoolgaande kinderen, een gepensioneerd stel, een remote worker
+              en een koper van een tweede woning kunnen allemaal verschillende
+              locaties nodig hebben, zelfs met hetzelfde budget.
             </p>
           </div>
 
@@ -678,25 +695,25 @@ export default function WhereToBuyCostaBlancaNorthPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              How to decide
+              Hoe beslist u?
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Questions to ask before choosing where to buy.
+              Vragen die u moet stellen voordat u beslist waar u koopt.
             </h2>
           </div>
 
           <div className="rounded-[40px] bg-white p-10 shadow-sm">
             <div className="grid gap-5">
               {[
-                "Will you live in Spain full-time, part-time or mainly use the home for holidays?",
-                "Do you want a villa, apartment, townhouse, new build or rural property?",
-                "Do you need schools, healthcare, daily services or public transport nearby?",
-                "Do you prefer a calm residential setting or a more social, active town?",
-                "Do you want to be able to walk to restaurants and shops?",
-                "Is rental potential important, or is the home mainly for private use?",
-                "How important are sea views, privacy, land, beach access or community life?",
-                "Do you want to meet like-minded international buyers before relocating?",
+                "Gaat u het hele jaar, een deel van het jaar of vooral tijdens vakanties in Spanje wonen?",
+                "Wilt u een villa, appartement, dorpshuis, nieuwbouwwoning of landelijke woning?",
+                "Heeft u scholen, zorg, dagelijkse voorzieningen of openbaar vervoer in de buurt nodig?",
+                "Geeft u de voorkeur aan een rustige woonomgeving of een socialere, actievere plaats?",
+                "Wilt u naar restaurants en winkels kunnen lopen?",
+                "Is verhuurpotentieel belangrijk of is de woning vooral voor privégebruik?",
+                "Hoe belangrijk zijn zeezicht, privacy, grond, strandtoegang of gemeenschapsleven?",
+                "Wilt u vóór uw verhuizing gelijkgestemde internationale kopers leren kennen?",
               ].map((question) => (
                 <div key={question} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="leading-relaxed text-stone-700">{question}</p>
@@ -711,29 +728,29 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Common buyer mistake
+            Veelgemaakte kopersfout
           </p>
 
           <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Do not confuse a beautiful holiday location with the right place to
-            live.
+            Verwar een mooie vakantieplaats niet met de juiste plek om te wonen.
           </h2>
 
           <div className="mt-10 max-w-5xl text-lg leading-relaxed text-stone-700">
             <p>
-              A town can be perfect for a summer week and still be wrong for
-              year-round living. Some areas feel lively in August but quiet in
-              winter. Some properties look attractive online but are too far
-              from services. Some buyers fall in love with a view before
-              checking ownership costs, community rules, driving distances,
-              access, renovation needs or long-term resale appeal.
+              Een plaats kan perfect zijn voor een zomerweek en toch niet passen
+              bij wonen het hele jaar door. Sommige gebieden voelen in augustus
+              levendig, maar zijn in de winter rustig. Sommige woningen zien er
+              online aantrekkelijk uit, maar liggen te ver van voorzieningen.
+              Sommige kopers worden verliefd op uitzicht voordat zij
+              eigendomskosten, community-regels, rijafstanden, toegang,
+              renovatiebehoefte of toekomstige verkoopbaarheid controleren.
             </p>
 
             <p className="mt-6">
-              This is why our approach starts with Area Match. We look at your
-              lifestyle first, then compare the areas, then help you focus on
-              the type of property that actually supports your future life in
-              Spain.
+              Daarom begint onze aanpak met Area Match. We kijken eerst naar uw
+              levensstijl, vergelijken daarna de gebieden en helpen u vervolgens
+              te focussen op het woningtype dat uw toekomstige leven in Spanje
+              echt ondersteunt.
             </p>
           </div>
         </div>
@@ -743,37 +760,38 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       <section className="px-8 pb-28">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Request your Area Match
+            Vraag Area Match aan
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-            Still unsure where to buy on Costa Blanca North?
+            Nog niet zeker waar u aan de Costa Blanca Noord moet kopen?
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            We help international buyers compare Moraira, Jávea, Altea,
-            Benissa, Calpe and Dénia based on lifestyle, budget, family
-            situation, property goals and long-term plans.
+            Wij helpen internationale kopers Moraira, Jávea, Altea, Benissa,
+            Calpe en Dénia te vergelijken op levensstijl, budget,
+            gezinssituatie, woningdoelen en langetermijnplannen.
           </p>
 
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/75">
-            Request your Area Match Assessment and discover which areas may fit
-            your future life in Spain — and which areas may be less suitable.
+            Vraag uw Area Match Assessment aan en ontdek welke gebieden kunnen
+            passen bij uw toekomstige leven in Spanje — en welke mogelijk minder
+            geschikt zijn.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/services/area-match"
+              href="/nl/services/area-match"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request your Area Match
+              Vraag Area Match aan
             </a>
 
             <a
-              href="/services/discovery-trips"
+              href="/nl/services/discovery-trips"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Explore the Buyer Discovery Trip
+              Ontdek de Buyer Discovery Trip
             </a>
           </div>
         </div>
@@ -783,14 +801,14 @@ export default function WhereToBuyCostaBlancaNorthPage() {
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-10 shadow-sm">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Official sources used
+            Gebruikte officiële bronnen
           </p>
 
           <p className="mt-5 max-w-4xl leading-relaxed text-stone-600">
-            This guide is based on official tourism and institutional sources
-            where possible. Local services, property markets and regulations can
-            change, so buyers should always verify practical details before
-            making a purchase decision.
+            Deze gids is waar mogelijk gebaseerd op officiële toeristische en
+            institutionele bronnen. Lokale voorzieningen, vastgoedmarkten en
+            regels kunnen veranderen. Kopers moeten praktische details daarom
+            altijd controleren voordat zij een aankoopbeslissing nemen.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
