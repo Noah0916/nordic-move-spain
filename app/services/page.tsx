@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 
-const pagePath = "/en/services/area-match";
+const pagePath = "/services/area-match";
 
 export const metadata: Metadata = {
   title:
-    "Area Match, Discovery Trip & Safer Property Buying | Nordic Move Spain",
+    "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
   description:
-    "Start with a complimentary Area Match Portfolio, explore suitable locations during a Buyer Discovery Trip, and buy with greater clarity through an independent Purchase Safety Report, secure client portal and Interior Design support.",
+    "Start with a complimentary Area Match Portfolio and continue with one personal property agent and trusted point of contact for property search, viewings, Purchase Safety, moving and furnishing on the Costa Blanca.",
   keywords: [
     "Area Match Costa Blanca",
+    "personal property agent Costa Blanca",
     "buy property Costa Blanca",
-    "Buyer Discovery Trip Spain",
+    "Buyer Discovery Experience Spain",
     "property buying guidance Spain",
     "Purchase Safety Report Spain",
-    "safe property purchase Spain",
-    "compare Costa Blanca areas",
-    "buy villa Costa Blanca",
-    "Interior Design Costa Blanca",
+    "independent property survey Spain",
+    "Spanish property lawyer",
+    "moving company coordination Spain",
+    "Move-In Ready Costa Blanca",
     "Nordic Move Spain",
   ],
   alternates: {
@@ -30,25 +31,25 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Area Match, Discovery Trip & Safer Property Buying | Nordic Move Spain",
+      "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
     description:
-      "Find the right area first, experience the Costa Blanca in person and buy with independent checks, a secure client portal and clear buyer-side guidance.",
+      "Find the right area first, work with one personal property agent and let Nordic Move coordinate property search, viewings, independent purchase checks, moving and furnishing.",
     type: "website",
     locale: "en_GB",
     url: pagePath,
     images: [
       {
         url: "/images/brochure2-en.png",
-        alt: "Nordic Move Spain services for a safer property purchase on the Costa Blanca",
+        alt: "Nordic Move Spain services for a coordinated property purchase on the Costa Blanca",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Area Match, Discovery Trip & Safer Property Buying | Nordic Move Spain",
+      "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
     description:
-      "Complimentary Area Match Portfolio, Buyer Discovery Trip, independent Purchase Safety Report, secure client portal and Interior Design.",
+      "One personal property agent and trusted point of contact from Area Match and property search to Purchase Safety, moving and furnishing.",
     images: ["/images/brochure2-en.png"],
   },
   robots: {
@@ -63,68 +64,68 @@ const services = [
     eyebrow: "Complimentary orientation",
     title: "Area Match Portfolio",
     text:
-      "You receive a complimentary, detailed and personal portfolio showing which regions, towns and property types best match your lifestyle, budget and long-term plans.",
+      "You receive a complimentary, detailed and personal portfolio showing which regions, towns and property types best match your lifestyle, budget and long-term plans. This creates focus before you spend months searching through unsuitable properties.",
     bullets: [
       "Personal lifestyle and location matching",
       "Information about suitable towns and residential areas",
       "Insight into amenities, healthcare, accessibility and daily life",
-      "Greater clarity about the type of property that truly suits you",
-      "A focused foundation for the next stage of your search",
+      "Greater clarity about the property type that genuinely suits you",
+      "A focused foundation for your property search and viewings",
     ],
-    href: "/en/relocation-assessment",
+    href: "/relocation-assessment",
     cta: "Request your complimentary Area Match Portfolio",
   },
   {
     number: "02",
-    eyebrow: "Experience the area",
-    title: "Buyer Discovery Trip",
+    eyebrow: "Personal property search",
+    title: "Buyer Discovery Experience",
     text:
-      "During a carefully curated Discovery Trip, you explore the locations, properties and local lifestyle that fit your Area Match Portfolio. You do not simply see what is for sale. You experience where you could genuinely feel at home.",
+      "Following your Area Match, we act as your personal property agent on the Costa Blanca. We search for and select suitable properties, create a focused discovery route and guide you through viewings, communication, negotiations and purchase.",
     bullets: [
       "A personal route through suitable areas",
-      "Selected property viewings based on your profile",
-      "Local lifestyle experiences and relevant introductions",
-      "Practical guidance about living and buying in Spain",
-      "Support from arrival through to the next steps",
+      "Targeted property search and selection",
+      "Viewings organised around your profile and priorities",
+      "Communication with sellers and listing agents",
+      "Support throughout negotiations and the purchase process",
     ],
-    href: "/en/services/discovery-trips",
-    cta: "Explore the Buyer Discovery Trip",
+    href: "/services/discovery-trips",
+    cta: "Explore the Buyer Discovery Experience",
     note:
       "When a villa is ultimately purchased through Nordic Move Spain, either half or the full trip cost is reimbursed depending on the purchase price. The exact reimbursement and applicable conditions are confirmed in writing in advance.",
   },
   {
     number: "03",
     eyebrow: "Independent purchase review",
-    title: "Purchase Safety Report",
+    title: "Purchase Safety",
     text:
-      "When a property becomes a serious option, independent specialists review the key legal, technical and practical risks. You receive one clear overview before making your final decision.",
+      "When a property becomes a serious option, we coordinate an independent surveyor for the technical assessment and initial document and registration screening, together with an independent Spanish lawyer for the full legal due diligence.",
     bullets: [
-      "Legal points and ownership information",
-      "Technical review of visible defects and maintenance concerns",
-      "Insight into permits, extensions and possible liabilities",
-      "Clear findings, open questions and recommended next steps",
-      "Documents, reports, photographs and questions in a secure client portal",
+      "Visible technical condition, construction quality, moisture and installations",
+      "Pool, outbuildings, repairs, photographs and recommendations",
+      "Nota Simple, Catastro, IBI, CEE and ITE where relevant",
+      "Available permits, licences and comparison of official and measured areas",
+      "Two professional reports and one clear Nordic Move purchase recommendation",
     ],
-    href: "/en/services/purchase-safety-report",
-    cta: "View the Purchase Safety Report",
+    href: "/services/purchase-safety-report",
+    cta: "View Purchase Safety",
     note:
-      "When a villa is ultimately purchased through Nordic Move Spain, the independent safety report is included in the purchase guidance. The precise scope of the review depends on the property, the available documentation and the availability of the appropriate specialists.",
+      "When a villa is ultimately purchased through Nordic Move Spain, the independent Purchase Safety review is included in the purchase guidance. The exact scope depends on the property, the available documentation and the specialists required.",
   },
   {
     number: "04",
-    eyebrow: "Move-in ready",
-    title: "Interior Design",
+    eyebrow: "After purchase",
+    title: "Move-In Ready & Relocation Coordination",
     text:
-      "After the purchase, we help transform the property into a complete and personal home. We develop the interior direction, select suitable materials and furniture, and coordinate delivery with trusted local partners.",
+      "After the purchase, Nordic Move remains your dedicated point of contact. Depending on your needs, we introduce you to a suitable mortgage adviser, help select and coordinate a reliable moving company and personally coordinate styling, furnishing and practical preparation.",
     bullets: [
-      "Personal interior direction",
-      "Furniture, material and colour selection",
-      "Styling, lighting and practical furnishing",
-      "Coordination with local suppliers and partners",
-      "A calm and fully prepared arrival",
+      "Introduction to a suitable mortgage adviser",
+      "Selection and coordination of a reliable moving company",
+      "Personal interior direction and furniture selection",
+      "Coordination of suppliers, deliveries, installation and styling",
+      "Final practical preparation before your arrival",
     ],
-    href: "/en/services/move-in-ready",
-    cta: "Explore Interior Design",
+    href: "/services/move-in-ready",
+    cta: "Explore Move-In Ready support",
   },
 ];
 
@@ -142,13 +143,13 @@ const breadcrumbStructuredData = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: absoluteUrl("/en"),
+      item: absoluteUrl("/"),
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Services",
-      item: absoluteUrl("/en/services"),
+      item: absoluteUrl("/services"),
     },
     {
       "@type": "ListItem",
@@ -208,14 +209,14 @@ export default function AreaMatchPage() {
           <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-stone-500">
               <li>
-                <a href="/en" className="transition hover:text-[#173252]">
+                <a href="/" className="transition hover:text-[#173252]">
                   Home
                 </a>
               </li>
               <li aria-hidden="true">/</li>
               <li>
                 <a
-                  href="/en/services"
+                  href="/services"
                   className="transition hover:text-[#173252]"
                 >
                   Services
@@ -234,32 +235,35 @@ export default function AreaMatchPage() {
           <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Nordic Move Buyer Journey
+                One personal property agent · One trusted point of contact
               </p>
 
               <h1 className="mt-6 font-serif text-5xl leading-[1.03] text-[#173252] md:text-7xl">
-                First discover where you want to live. Then find the right
-                property.
+                First find the right place. Then the right property. We coordinate everything that follows.
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
-                Our guidance consists of four clear services. You begin with a
-                complimentary personal Area Match Portfolio, experience the
-                region during a Buyer Discovery Trip, buy with greater confidence
-                through an independent safety report and complete your home with
-                Interior Design.
+                Our guidance combines Area Match, personal property search,
+                Buyer Discovery, independent purchase checks, purchase support,
+                moving and furnishing. Throughout the journey, you communicate
+                with one trusted Nordic Move point of contact who coordinates
+                the agreed steps from first orientation to arrival.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-sm font-medium uppercase tracking-[0.22em] text-[#b88948]">
+                Full coordination · Fewer parties to manage · Greater confidence before purchase
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="/en/relocation-assessment"
+                  href="/relocation-assessment"
                   className="rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
                 >
                   Receive your complimentary portfolio
                 </a>
 
                 <a
-                  href="/en/contact"
+                  href="/contact"
                   className="rounded-full border border-[#173252] px-8 py-4 text-sm font-medium text-[#173252] transition hover:bg-[#173252] hover:text-white"
                 >
                   Schedule a personal consultation
@@ -271,7 +275,7 @@ export default function AreaMatchPage() {
               <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)] sm:translate-y-10">
                 <img
                   src="/images/brochure1-en.png"
-                  alt="Nordic Move Spain brochure about the Buyer Discovery Trip and Interior Design"
+                  alt="Nordic Move Spain brochure about the Buyer Discovery Experience and Move-In Ready support"
                   className="h-full w-full rounded-[26px] object-cover"
                 />
               </div>
@@ -279,7 +283,7 @@ export default function AreaMatchPage() {
               <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)]">
                 <img
                   src="/images/brochure2-en.png"
-                  alt="Nordic Move Spain brochure about safer property buying and the Purchase Safety Report"
+                  alt="Nordic Move Spain brochure about independent Purchase Safety checks"
                   className="h-full w-full rounded-[26px] object-cover"
                 />
               </div>
@@ -292,11 +296,11 @@ export default function AreaMatchPage() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-14 max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Four services, one clear journey
+                Four services, one coordinated journey
               </p>
 
               <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                From the first orientation to a home that is ready to live in.
+                From the first orientation to purchase, moving, furnishing and arrival.
               </h2>
             </div>
 
@@ -363,25 +367,25 @@ export default function AreaMatchPage() {
                 </p>
 
                 <h2 className="mt-6 font-serif text-4xl leading-tight md:text-6xl">
-                  A complimentary portfolio that gives your search direction.
+                  A complimentary portfolio that can save months of searching.
                 </h2>
 
                 <p className="mt-8 text-lg leading-relaxed text-white/80">
-                  The Area Match Portfolio is not a short result or a generic
-                  recommendation. You receive a detailed personal document that
-                  helps you understand which environment, town and property type
-                  fit the way you want to live in Spain.
+                  The Area Match Portfolio is not a generic list of towns. It
+                  brings your lifestyle, budget, future plans and everyday
+                  priorities together in one personal comparison of suitable
+                  regions, towns and residential settings.
                 </p>
 
                 <p className="mt-6 text-lg leading-relaxed text-white/80">
-                  The portfolio does more than tell you where you could search.
-                  It also creates clarity about what you are actually looking
-                  for. This prevents months of browsing properties that may look
-                  attractive but do not suit your daily life.
+                  This gives your search direction before you start browsing
+                  hundreds of properties. It helps prevent months of searching
+                  in locations that may look attractive online but do not suit
+                  the way you want to live.
                 </p>
 
                 <a
-                  href="/en/relocation-assessment"
+                  href="/relocation-assessment"
                   className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
                   Request your complimentary Area Match Portfolio
@@ -396,11 +400,11 @@ export default function AreaMatchPage() {
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
                   {[
                     "A personal profile of your lifestyle and residential preferences",
-                    "A selection of suitable regions and towns",
+                    "A comparison of suitable regions, towns and residential areas",
                     "Information about atmosphere, accessibility and daily life",
                     "Insight into healthcare, amenities and international communities",
                     "Guidance on suitable property types and residential settings",
-                    "A focused foundation for viewings and next steps",
+                    "A focused foundation for property search, viewings and next steps",
                   ].map((item) => (
                     <div
                       key={item}
@@ -421,44 +425,45 @@ export default function AreaMatchPage() {
           </div>
         </section>
 
-        {/* DISCOVERY TRIP */}
+        {/* BUYER DISCOVERY */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
           <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="overflow-hidden rounded-[40px] bg-white p-3 shadow-sm">
               <img
                 src="/images/brochure1-en.png"
-                alt="Nordic Move Spain brochure about the Buyer Discovery Trip and Nordic Circle"
+                alt="Nordic Move Spain brochure about the Buyer Discovery Experience and Nordic Circle"
                 className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
               />
             </div>
 
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Service 02 · Buyer Discovery Trip
+                Service 02 · Personal property search &amp; Buyer Discovery
               </p>
 
               <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Experience what life in the right area truly feels like.
+                Your personal property agent for the search, viewings and purchase.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Your Area Match Portfolio forms the foundation for a personal
-                Discovery Trip. We create a route through the areas, properties
-                and amenities that match your profile.
+                Your Area Match Portfolio forms the foundation for a focused
+                property search. We look beyond one estate agent’s listings,
+                select suitable homes across the market and create a discovery
+                route through the areas and properties that fit your profile.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                You have time to experience the differences, ask focused
-                questions and discover which environment suits you beyond the
-                holiday season. The trip combines selected viewings with local
-                knowledge and relevant lifestyle experiences.
+                We organise the viewings, manage communication with sellers and
+                listing agents and support you throughout questions,
+                negotiations and the purchase process. You do not have to
+                repeat your story or coordinate every contact yourself.
               </p>
 
               <a
-                href="/en/services/discovery-trips"
+                href="/services/discovery-trips"
                 className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
               >
-                View the Buyer Discovery Trip
+                View the Buyer Discovery Experience
               </a>
 
               <p className="mt-6 text-xs leading-relaxed text-stone-500">
@@ -480,24 +485,33 @@ export default function AreaMatchPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Independent review before you make the final purchase.
+                Two independent professional reports before your final decision.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                A beautiful presentation does not tell the full story. When a
-                property becomes a serious option, we therefore arrange for the
-                key legal, technical and practical points to be reviewed by
-                independent specialists.
+                An independent surveyor assesses the visible and accessible
+                technical condition, construction quality, moisture, water
+                ingress, installations, pool, outbuildings and necessary
+                repairs. The surveyor also carries out an initial document and
+                registration screening.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                The findings are brought together in one clear safety report.
-                This helps you decide whether to proceed, add conditions,
-                renegotiate or step away from the property.
+                This screening may include the Nota Simple, Catastro, IBI, CEE,
+                ITE where relevant, estate agent information, available permits
+                and licences, comparison of official and measured floor areas
+                and indications of possible unregistered parts of the property.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                A suitable independent Spanish lawyer then carries out the full
+                legal due diligence and remains responsible for the legal review
+                and advice. Based on both reports, Nordic Move provides one clear
+                recommendation: proceed, reconsider or walk away.
               </p>
 
               <a
-                href="/en/services/purchase-safety-report"
+                href="/services/purchase-safety-report"
                 className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
               >
                 View Purchase Safety
@@ -505,67 +519,67 @@ export default function AreaMatchPage() {
 
               <p className="mt-6 text-xs leading-relaxed text-stone-500">
                 * When a villa is ultimately purchased through Nordic Move
-                Spain, the independent safety report is included in the purchase
-                guidance. The exact scope of the review depends on the property,
-                the available documentation and the availability of the
-                appropriate specialists.
+                Spain, the independent Purchase Safety review is included in the
+                purchase guidance. The exact scope depends on the property, the
+                available documentation and the specialists required.
               </p>
             </div>
 
             <div className="order-1 overflow-hidden rounded-[40px] bg-white p-3 shadow-sm lg:order-2">
               <img
                 src="/images/brochure2-en.png"
-                alt="Nordic Move Spain Purchase Safety Report brochure"
+                alt="Nordic Move Spain Purchase Safety brochure"
                 className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
               />
             </div>
           </div>
         </section>
 
-        {/* SECURE CLIENT PORTAL */}
+        {/* ONE TRUSTED POINT OF CONTACT */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
           <div className="mx-auto max-w-7xl rounded-[42px] bg-white p-10 shadow-sm md:p-14 lg:p-16">
             <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Secure client portal
+                  One trusted point of contact
                 </p>
 
                 <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  All important documents in one protected place.
+                  You do not have to manage five different parties yourself.
                 </h2>
 
                 <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                  A property purchase involves documents, reports, photographs,
-                  questions and open points. Instead of spreading this
-                  information across emails and messages, relevant information
-                  is organised in a secure client portal.
+                  Buying property in Spain often means communicating with
+                  estate agents, sellers, a surveyor, a lawyer, a mortgage
+                  adviser, a moving company and interior specialists. Nordic
+                  Move remains your dedicated point of contact throughout the
+                  agreed journey.
                 </p>
 
                 <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                  This gives you a clearer overview of the current status,
-                  important documentation and the next steps in your purchase
-                  process.
+                  We keep track of who is responsible for what, which
+                  information is missing, which questions remain open, what
+                  happens next and where delays or risks may arise.
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   [
-                    "Purchase documents",
-                    "Important documents and available ownership information collected in one clear environment.",
+                    "One personal property agent",
+                    "One Nordic Move contact knows your wishes, priorities and concerns throughout the journey.",
                   ],
                   [
-                    "Reports and photographs",
-                    "Technical and legal reports, together with relevant images, remain centrally accessible.",
+                    "Full coordination",
+                    "We coordinate the agreed specialists and make sure the separate steps connect.",
                   ],
                   [
-                    "Questions and open points",
-                    "Outstanding matters and recommended next steps remain easy to follow.",
+                    "Clear next steps",
+                    "Open questions, responsibilities, conditions and deadlines are actively followed up.",
                   ],
                   [
-                    "Protected access",
-                    "Documents are shared through a controlled client environment instead of being scattered across multiple channels.",
+                    "Continuity after purchase",
+                    "We remain involved for mortgage introductions, moving coordination, styling and furnishing.",
                   ],
                 ].map(([title, text]) => (
                   <article
@@ -585,51 +599,52 @@ export default function AreaMatchPage() {
           </div>
         </section>
 
-        {/* INTERIOR DESIGN */}
+        {/* MOVE-IN READY & RELOCATION */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2]">
             <div className="grid items-stretch lg:grid-cols-[0.95fr_1.05fr]">
               <div className="p-10 md:p-14 lg:p-16">
                 <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Service 04 · Interior Design
+                  Service 04 · Move-In Ready &amp; Relocation Coordination
                 </p>
 
                 <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  Arrive in a home that already feels like your own.
+                  From completed purchase to a prepared arrival.
                 </h2>
 
                 <p className="mt-8 text-lg leading-relaxed text-stone-700">
-                  After the purchase, we develop a clear interior direction with
-                  you that suits the property, the surroundings and the way you
-                  want to live.
+                  After the purchase, Nordic Move remains your dedicated point
+                  of contact. Depending on your needs, we introduce you to a
+                  suitable mortgage adviser and support the selection and
+                  coordination of a reliable moving company.
                 </p>
 
                 <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                  We guide the selection of furniture, materials, lighting and
-                  styling and coordinate the practical delivery with trusted
-                  local partners. This means you do not have to manage
-                  everything remotely for months and can arrive in a fully
-                  prepared home.
+                  We also develop the interior direction with you and coordinate
+                  furniture, materials, lighting, curtains, suppliers,
+                  deliveries, installation and final styling with selected local
+                  specialists. This means you do not have to manage everything
+                  remotely for months.
                 </p>
 
                 <a
-                  href="/en/services/move-in-ready"
+                  href="/services/move-in-ready"
                   className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
                 >
-                  Explore Interior Design
+                  Explore Move-In Ready support
                 </a>
 
                 <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                  Design, budget, timing and delivery are tailored to the
+                  Scope, budget, timing and delivery are tailored to the
                   property, your wishes and the availability of selected local
-                  partners.
+                  specialists and service providers.
                 </p>
               </div>
 
               <div className="min-h-[520px]">
                 <img
                   src="/images/interior-design.png"
-                  alt="Warm Mediterranean Interior Design for a villa on the Costa Blanca"
+                  alt="Move-In Ready and relocation coordination for a villa on the Costa Blanca"
                   className="h-full min-h-[520px] w-full object-cover"
                 />
               </div>
@@ -645,25 +660,25 @@ export default function AreaMatchPage() {
             </p>
 
             <h2 className="mx-auto mt-6 max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
-              First discover what truly suits you.
+              One personal property agent. One trusted point of contact.
             </h2>
 
             <p className="mx-auto mt-7 max-w-3xl text-lg leading-relaxed text-white/75">
-              Request your complimentary Area Match Portfolio and receive a
-              clear, personal foundation for your property search on the Costa
-              Blanca.
+              Start with your complimentary Area Match Portfolio and continue
+              with one coordinated journey through property search, Buyer
+              Discovery, purchase checks, moving, furnishing and arrival.
             </p>
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <a
-                href="/en/relocation-assessment"
+                href="/relocation-assessment"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
                 Receive your complimentary portfolio
               </a>
 
               <a
-                href="/en/contact"
+                href="/contact"
                 className="rounded-full border border-white/70 px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#173252]"
               >
                 Schedule an introductory call

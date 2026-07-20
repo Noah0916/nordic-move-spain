@@ -1,25 +1,25 @@
 export const metadata = {
-  title: "Köp bostad tryggare på Costa Blanca | Nordic Move Spain",
+  title: "Ett tryggare sätt att köpa bostad på Costa Blanca | Nordic Move Spain",
   description:
-    "En premium buyer journey för internationella köpare på Costa Blanca: Area Match, Buyer Discovery Experience, teknisk köpargranskning, säker dokumentkontroll och Move-In Ready interior support.",
+    "Ett tryggare sätt att köpa bostad med Area Match, oberoende teknisk besiktning och dokumentgranskning, juridisk due diligence och en tydlig grön-gul-röd köprekommendation.",
   openGraph: {
-    title: "Köp bostad tryggare på Costa Blanca | Nordic Move Spain",
+    title: "Ett tryggare sätt att köpa bostad på Costa Blanca | Nordic Move Spain",
     description:
-      "Välj rätt område, upplev regionen, få en teknisk köpargranskning före köp, håll dokument säkert organiserade och landa i ett inflyttningsklart hem.",
+      "Nordic Move Spain samordnar en oberoende besiktningsman och en lämplig advokat med expertis inom spansk fastighetsrätt. Utifrån båda professionella bedömningarna får du en tydlig rekommendation: gå vidare, ompröva eller avstå.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Köp bostad tryggare på Costa Blanca | Nordic Move Spain",
+    title: "Ett tryggare sätt att köpa bostad på Costa Blanca",
     description:
-      "Area Match, Buyer Discovery Experience, teknisk köpargranskning, säker client portal och Move-In Ready interior support för seriösa internationella köpare.",
+      "Från Area Match och riktat bostadsurval till oberoende kontroller, köpstöd, flytt och inredning — med en fast kontaktperson hos Nordic Move.",
   },
 };
 
 export default function SwedishHomePage() {
   const guideCards = [
     {
-      href: "/guides/best-areas-costa-blanca-north-retirees",
+      href: "/sv/guides/best-areas-costa-blanca-north-retirees",
       label: "Områdesguide för pension",
       title: "Bästa platserna på Costa Blanca för pension",
       text:
@@ -28,21 +28,21 @@ export default function SwedishHomePage() {
       featured: true,
     },
     {
-      href: "/guides/buying-property-spain",
+      href: "/sv/guides/buying-property-spain",
       label: "Köpa i Spanien",
       title: "Köpa bostad i Spanien",
       text:
-        "En komplett guide om juridiska kontroller, bolån, köpkostnader och köpprocessen för internationella köpare.",
+        "En komplett guide till juridiska kontroller, bolån, köpkostnader och köpprocessen för internationella köpare.",
       cta: "Läs guiden →",
       featured: false,
     },
     {
-      href: "/guides/uk-tax-second-home-spain",
-      label: "Brittiska skatteregler",
-      title: "Brittiska skatteregler för ett andra hem i Spanien",
+      href: "/sv/guides/spanish-rules-sweden",
+      label: "Skatteregler för svenskar",
+      title: "Spanska skatteregler för svenska bostadsägare",
       text:
-        "Vad brittiska skatteresidenter bör förstå om spanska fastighetsskatter, Modelo 210, hyresinkomster, kapitalvinster, dubbelbeskattning och att äga ett andra hem utomlands.",
-      cta: "Läs UK-skatteguiden →",
+        "Vad svenska köpare bör känna till om spansk fastighetsbeskattning, svensk deklaration, uthyrningsinkomster, kapitalvinster och hur dubbelbeskattning undviks.",
+      cta: "Läs skatteguiden →",
       featured: false,
     },
   ];
@@ -119,7 +119,7 @@ export default function SwedishHomePage() {
               href="/sv/contact"
               className="rounded-full bg-[#c8a063] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Schedule a consultation
+              Boka ett introduktionssamtal
             </a>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function SwedishHomePage() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/18 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/28 to-transparent"></div>
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-8 pt-24">
           <div className="max-w-2xl -translate-x-8">
@@ -141,7 +141,7 @@ export default function SwedishHomePage() {
               Costa Blanca
             </p>
 
-            <h1 className="mt-5 font-serif text-5xl leading-[0.98] text-[#f8f5ef] drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] md:text-6xl">
+            <h1 className="mt-5 font-serif text-5xl leading-[0.98] text-[#f3ede3] drop-shadow-[0_2px_14px_rgba(0,0,0,0.45)] md:text-6xl">
               Ett tryggare sätt
               <br />
               att köpa bostad
@@ -149,20 +149,15 @@ export default function SwedishHomePage() {
               på Costa Blanca.
             </h1>
 
-            <p className="mt-8 max-w-xl text-xl leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]">
-              Vi guidar internationella köpare från A till Z: från rätt område
-              och Buyer Discovery Experience till oberoende riskkontroller,
-              säker dokumentkontroll och, efter köpet, en move-in ready landing.
-            </p>
-
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]">
-              Målet är inte att se så många bostäder som möjligt. Målet är att
-              hitta rätt matchning, minska riskerna och bara gå vidare när
-              område, bostad, dokument och nästa steg är tydliga.
+            <p className="mt-8 max-w-xl text-xl leading-relaxed text-[#f7f2ea] drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)]">
+              För internationella köpare som värdesätter tid, trygghet och en
+              fast kontaktperson. Från rätt område och bostad till oberoende
+              kontroller, köp, flytt och inredning: Nordic Move samordnar hela
+              processen från A till Ö.
             </p>
 
             <p className="mt-8 text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-              Area Match · Buyer Discovery · Oberoende Safety Report · Secure Portal · Move-In Ready
+              En kontaktperson · Fullständig samordning · Från första orientering till inflyttning
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
@@ -177,60 +172,284 @@ export default function SwedishHomePage() {
                 href="/sv/contact"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Boka ett samtal
+                Boka ett introduktionssamtal
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* INTRODUCTION */}
+      {/* PURCHASE SAFETY — ONE CLEAR DECISION */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-white shadow-sm">
+          <div className="grid gap-0 lg:grid-cols-[0.92fr_1.08fr]">
+            <div className="bg-[#1e2a3a] p-12 text-white lg:p-16">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Teknisk och juridisk granskning före köp
+              </p>
+
+              <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
+                Från en vacker bostad till ett välgrundat beslut.
+              </h2>
+
+              <p className="mt-8 text-lg leading-relaxed text-white/85">
+                Den oberoende besiktningsmannen bedömer bostadens synliga och
+                åtkomliga tekniska skick. Bland annat granskas byggnadstekniska
+                brister, fukt och vatteninträngning, installationer, pool,
+                komplementbyggnader och tomt. Bostaden mäts upp och nödvändiga
+                reparationer eller vidare undersökningar identifieras.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-white/85">
+                Besiktningsmannen jämför också den faktiska bostaden och de
+                uppmätta ytorna med tillgänglig information, såsom Nota Simple,
+                Catastro, mäklaruppgifter, energicertifikat, ITE samt
+                tillhandahållna plan-, certifikat- och tillståndshandlingar.
+                Möjliga avvikelser kring ytor, tillbyggnader, garage, pooler,
+                registreringar eller tillstånd kan därmed upptäckas tidigt.
+              </p>
+
+              <p className="mt-6 text-lg leading-relaxed text-white/85">
+                Dessutom väljer och samordnar vi en oberoende advokat som passar
+                ditt språk, din situation och dina behov och som har expertis
+                inom spansk fastighetsrätt. Advokaten genomför den fullständiga
+                juridiska due diligence-granskningen, inklusive kontroll av
+                ägande, belastningar, skulder, tillstånd, avtal och villkoren
+                för överlåtelsen.
+              </p>
+
+              <p className="mt-6 text-base font-medium leading-relaxed text-[#c8a063]">
+                Utifrån båda professionella bedömningarna rekommenderar vi:
+                gå vidare, ompröva eller avstå.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="/sv/services/purchase-safety-report"
+                  className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                >
+                  Se hur Purchase Safety fungerar
+                </a>
+
+                <a
+                  href="/sv/contact"
+                  className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-[#1e2a3a]"
+                >
+                  Fråga om en bostadskontroll
+                </a>
+              </div>
+            </div>
+
+            <div className="p-10 md:p-12 lg:p-16">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Två professionella rapporter. En tydlig köprekommendation.
+              </p>
+
+              <h3 className="mt-5 max-w-2xl font-serif text-4xl leading-tight text-[#1e2a3a]">
+                Gå vidare, ompröva eller avstå.
+              </h3>
+
+              <div className="mt-10 grid gap-6">
+                <article className="rounded-[28px] border border-emerald-900/10 bg-[#f6f1ea] p-7">
+                  <div className="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-800">
+                    Grön · Gå vidare
+                  </div>
+
+                  <p className="mt-5 leading-relaxed text-stone-600">
+                    Den tekniska besiktningen och den juridiska due
+                    diligence-granskningen ger tillräckligt underlag för att gå
+                    vidare enligt de angivna tekniska, juridiska och
+                    avtalsmässiga villkoren.
+                  </p>
+                </article>
+
+                <article className="rounded-[28px] border border-amber-900/10 bg-[#f6f1ea] p-7">
+                  <div className="inline-flex rounded-full bg-amber-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-800">
+                    Gul · Ompröva
+                  </div>
+
+                  <p className="mt-5 leading-relaxed text-stone-600">
+                    Risker, saknad information eller osäkerheter kräver vidare
+                    undersökningar, kostnadsbedömningar, omförhandling eller
+                    ytterligare villkor innan du går vidare.
+                  </p>
+                </article>
+
+                <article className="rounded-[28px] border border-red-900/10 bg-[#f6f1ea] p-7">
+                  <div className="inline-flex rounded-full bg-red-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-red-800">
+                    Röd · Avstå
+                  </div>
+
+                  <p className="mt-5 leading-relaxed text-stone-600">
+                    De identifierade tekniska, juridiska eller praktiska
+                    riskerna gör köpet olämpligt, om de inte löses fullständigt
+                    och verifierbart innan du binder dig.
+                  </p>
+                </article>
+              </div>
+
+              <p className="mt-8 text-sm leading-relaxed text-stone-500">
+                Besiktningsmannens dokument- och registergranskning är en första
+                jämförelse och riskidentifiering. Den ersätter inte juridisk
+                due diligence eller formell bekräftelse från behöriga
+                myndigheter. Den tekniska och juridiska granskningen utförs av
+                oberoende externa specialister som ansvarar för sina respektive
+                rapporter. Ytterligare specialistundersökningar kan behövas och
+                diskuteras separat. Ingen granskning kan garantera fullständig
+                säkerhet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOUNDERS & TRUST */}
+      <section className="px-8 pb-28">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#e9dfd2] shadow-sm">
+          <div className="grid items-center gap-0 lg:grid-cols-[0.82fr_1.18fr]">
+            <div className="bg-white p-5 lg:p-7">
+              <img
+                src="/images/founder.png"
+                alt="Grundarna av Nordic Move Spain"
+                className="h-auto max-h-[520px] w-full rounded-[32px] object-contain object-center"
+              />
+            </div>
+
+            <div className="p-10 md:p-12 lg:p-16">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Människorna bakom Nordic Move
+              </p>
+
+              <h2 className="mt-6 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+                Personlig vägledning. Oberoende expertis.
+              </h2>
+
+              <p className="mt-7 text-lg leading-relaxed text-stone-700">
+                Nordic Move Spain bygger på erfarenhet av internationell
+                relocation, forskning, affärsutveckling och strategi. Vi är din
+                fasta kontaktperson och samordnar samarbetet med den oberoende
+                besiktningsmannen, en lämplig advokat med expertis inom spansk
+                fastighetsrätt och övriga utvalda specialister i din
+                köpprocess.
+              </p>
+
+              <div className="mt-8 grid gap-4 md:grid-cols-3">
+                {[
+                  [
+                    "Internationell vägledning",
+                    "Erfarenhet av relocation och av människor som bygger ett nytt liv i ett annat land.",
+                  ],
+                  [
+                    "Faktabaserat arbetssätt",
+                    "Bakgrund inom forskning, affärer, strategi och genomtänkt beslutsfattande.",
+                  ],
+                  [
+                    "Oberoende specialister",
+                    "Den tekniska besiktningen och dokumentgranskningen utförs av en oberoende besiktningsman. Den juridiska due diligence-granskningen utförs av en lämplig oberoende advokat.",
+                  ],
+                ].map(([title, description]) => (
+                  <div
+                    key={title}
+                    className="rounded-[24px] bg-white/75 p-5 shadow-sm"
+                  >
+                    <h3 className="font-serif text-xl leading-tight text-[#1e2a3a]">
+                      {title}
+                    </h3>
+
+                    <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                      {description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="/sv/about-us"
+                className="mt-9 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
+              >
+                Lär känna Nordic Move
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AREA MATCH TO SOFT LANDING */}
       <section className="px-8 py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Vi vänder på processen
+                Från livsönskemål till en mjuk start
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                De flesta köpare börjar med bostadsannonser. Vi börjar med hur du vill leva.
+                Först rätt livsmiljö. Sedan rätt bostad. Och vägledning tills allt känns som hemma.
               </h2>
             </div>
 
             <div>
               <p className="text-lg leading-relaxed text-stone-600">
-                Många köpare börjar på stora bostadsportaler, sparar dussintals
-                bostäder och blir förälskade i ett hus innan de verkligen
-                förstår området runt omkring.
+                Många internationella köpare börjar med att söka bland hundratals
+                bostäder och upptäcker först senare att området inte passar
+                deras vardag. Med vår Area Match Report kartlägger vi först dina
+                bostadsönskemål, din budget, dina framtidsplaner och dina
+                prioriteringar. På så sätt undviker du att söka i månader i
+                områden som i slutändan inte passar dig.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Men en bostad kan se vacker ut och ändå vara fel beslut:
-                läget kanske inte passar din vardagsrytm, området kanske inte
-                passar dina framtidsplaner eller bostaden kan dölja tekniska,
-                juridiska eller praktiska risker.
+                Därefter arbetar vi som din personliga mäklare på Costa Blanca.
+                Under Buyer Discovery Experience får du uppleva ett riktat
+                urval av lämpliga områden och bostäder. Vi organiserar
+                visningarna, sköter kontakten med säljare och mäklare och
+                stöttar dig under förhandling och köp.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Därför vänder vi på processen. Först kartlägger vi hur du vill
-                leva, vad som är viktigt för dig, vad du vill undvika och vilka
-                områden som passar dina önskemål, din budget och dina långsiktiga
-                planer.
+                När en bostad blir ett seriöst alternativ samordnar vi en
+                oberoende teknisk besiktning med dokumentgranskning och väljer
+                en lämplig oberoende advokat för den juridiska due
+                diligence-granskningen. Utifrån båda professionella
+                bedömningarna rekommenderar vi: gå vidare, ompröva eller avstå.
               </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Först därefter söker vi fokuserat. Du får ingen oändlig lista
-                med bostäder, utan en liten och noggrant utvald shortlist som
-                passar din profil — ibland inflyttningsklar, ibland en dold
-                pärla med potential via vårt lokala nätverk av spanska partners.
-              </p>
+              <div className="mt-8 grid gap-4 md:grid-cols-3">
+                {[
+                  [
+                    "En trygg kontaktperson",
+                    "Du kommunicerar med en fast kontaktperson hos Nordic Move som känner till dina önskemål, prioriteringar och frågor och följer dig genom hela processen.",
+                  ],
+                  [
+                    "Fullständig samordning",
+                    "Vi håller reda på vem som gör vad, vilken information som saknas, vilket nästa steg är och var förseningar eller risker kan uppstå.",
+                  ],
+                  [
+                    "Större trygghet före köp",
+                    "Oberoende tekniska och juridiska kontroller hjälper till att avgöra om bostaden är ett klokt köp.",
+                  ],
+                ].map(([title, description]) => (
+                  <div
+                    key={title}
+                    className="rounded-[24px] bg-white p-5 shadow-sm"
+                  >
+                    <h3 className="font-serif text-xl leading-tight text-[#1e2a3a]">
+                      {title}
+                    </h3>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                När en bostad blir seriöst intressant hjälper Purchase Safety
-                Report till att tydliggöra de viktigaste riskerna. Då fattar du
-                inte beslut enbart på känsla, utan med insikt, kontroll och ärlig
-                rådgivning på köparens sida.
+                    <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                      {description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                Även efter köpet förblir vi din fasta kontaktperson. Beroende
+                på dina behov sätter vi dig i kontakt med en lämplig
+                bolånerådgivare, hjälper till med val och samordning av en
+                pålitlig flyttfirma och ansvarar själva för samordningen av
+                styling och inredning med utvalda lokala specialister.
               </p>
             </div>
           </div>
@@ -246,7 +465,7 @@ export default function SwedishHomePage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
-              Först rätt område. Sedan rätt bostad. Därefter ett tryggare köp och en mjuk landning.
+              Från rätt område och bostad till ett kontrollerat köp, flytt, inredning och en mjuk start.
             </h2>
 
             <div className="mt-8 rounded-[28px] bg-white p-6 shadow-sm">
@@ -255,8 +474,9 @@ export default function SwedishHomePage() {
               </p>
 
               <p className="mt-3 text-base leading-relaxed text-stone-600">
-                Följ hela journey, eller kliv in där du behöver oss:
-                Area Match, Buyer Discovery, Purchase Safety eller Move-In Ready.
+                Följ hela processen med en fast kontaktperson eller kliv in där
+                du behöver oss: Area Match, Buyer Discovery, Purchase Safety
+                eller Move-In Ready.
               </p>
             </div>
           </div>
@@ -282,13 +502,13 @@ export default function SwedishHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  En profil med 34 frågor, kompletterad med lokala fakta:
-                  sjukvård, skolor, golf, community-profil, service,
-                  infrastruktur och lifestyle-fit.
+                  En detaljerad personlig profil med lokala fakta om vård,
+                  skolor, golf, communityprofil, service, infrastruktur och
+                  livsstilspassning.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Begär din kostnadsfria report →
+                  Beställ din kostnadsfria rapport →
                 </div>
               </div>
             </a>
@@ -305,7 +525,7 @@ export default function SwedishHomePage() {
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Steg 2 · Din rutt
+                  Steg 2 · Din väg
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -313,13 +533,13 @@ export default function SwedishHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Utforska rätt områden, utvalda bostäder och relevanta lokala
-                  yrkespersoner genom en privat eller noggrant matchad
+                  Upptäck lämpliga områden, utvalda bostäder och relevanta
+                  lokala specialister genom en privat eller noggrant matchad
                   gruppupplevelse.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Utforska Discovery Experience →
+                  Upptäck Discovery Experience →
                 </div>
               </div>
             </a>
@@ -340,17 +560,19 @@ export default function SwedishHomePage() {
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                  Safety Report &amp; Portal
+                  Purchase Safety
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Varje köp via Nordic Move Spain inkluderar en teknisk
-                  köpargranskning av en oberoende tekniker på köparens sida
-                  innan du binder dig.
+                  En oberoende besiktningsman bedömer det tekniska skicket och
+                  jämför bostaden med tillgängliga register och dokument.
+                  Dessutom väljer vi en lämplig oberoende advokat för den
+                  juridiska due diligence-granskningen. Utifrån båda rapporterna
+                  får du vår gröna, gula eller röda köprekommendation.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Utforska Purchase Safety →
+                  Upptäck Purchase Safety →
                 </div>
               </div>
             </a>
@@ -367,7 +589,7 @@ export default function SwedishHomePage() {
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Steg 4 · Mjuk landning
+                  Steg 4 · Mjuk start
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -375,13 +597,13 @@ export default function SwedishHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Vi formar själva interior direction och koordinerar möblering,
-                  styling och praktiska förberedelser med betrodda lokala
-                  möbelpartners.
+                  Tillsammans med dig bestämmer vi inredningsriktningen och
+                  samordnar styling, inredning, lokala specialister och, om du
+                  önskar, kontakten med en pålitlig flyttfirma.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Utforska Move-In Ready →
+                  Upptäck Move-In Ready →
                 </div>
               </div>
             </a>
@@ -399,33 +621,35 @@ export default function SwedishHomePage() {
               </p>
 
               <h2 className="mt-6 font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
-                Anländ till ett hem som redan känns som ditt.
+                Kom fram till en bostad som redan känns som hemma.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-700">
-                Efter köpet ska du inte behöva ägna månader åt att ordna
-                möbler, hantverkare, belysning, gardiner och leveranser från
-                utlandet.
+                Efter köpet ska du inte behöva samordna en bolånerådgivare,
+                flyttfirma, hantverkare, möbelpartners, belysning, gardiner och
+                leveranser från utlandet på egen hand.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                Nordic Move Spain utvecklar interior direction tillsammans med
-                dig och koordinerar möblering, styling och praktiska
-                förberedelser via betrodda lokala möbelpartners — så att du kan
-                landa mjukt i stället för att anlända till ett ofärdigt projekt.
+                Nordic Move förblir din fasta kontaktperson. Vid behov sätter vi
+                dig i kontakt med en lämplig bolånerådgivare, hjälper till med
+                val och samordning av en pålitlig flyttfirma och utvecklar och
+                samordnar själva styling och inredning med utvalda lokala
+                specialister — så att du får en mjuk start i stället för att
+                komma till ett ofärdigt projekt.
               </p>
 
               <p className="mt-6 text-sm leading-relaxed text-stone-500">
-                Bilderna som visas här är interior concept visuals för
-                inspiration. Slutlig design, tidsplan och genomförande beror på
-                bostaden, budgeten, tillgänglighet och valda lokala partners.
+                Bilderna är inredningskoncept för inspiration. Slutlig design,
+                tidsplan och genomförande beror på bostaden, budgeten,
+                tillgängligheten och valda lokala partners.
               </p>
 
               <a
                 href="/sv/services/move-in-ready"
                 className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
               >
-                Utforska Move-In Ready support
+                Upptäck Move-In Ready-stöd
               </a>
             </div>
 
@@ -434,13 +658,13 @@ export default function SwedishHomePage() {
                 [
                   "/images/move-in-ready-ibiza.png",
                   "Ibiza Soho Lounge",
-                  "Varmt medelhavsboende med mjuka vita toner, naturliga texturer, subtila färgaccenter och en avslappnad indoor-outdoor känsla.",
+                  "Varmt medelhavsliv med mjuka vita toner, naturliga texturer, subtila färgaccenter och en avslappnad känsla mellan inne och ute.",
                   "Ibiza Soho interior concept for Move-In Ready support on the Costa Blanca",
                 ],
                 [
                   "/images/move-in-ready-kitchen.png",
                   "Contemporary Coastal Kitchen",
-                  "En ljusare och mer arkitektonisk riktning med stora fönster, ljusa träslag, förfinade detaljer och lugn kustelegans.",
+                  "En ljusare och mer arkitektonisk riktning med stora fönster, ljust trä, raffinerade detaljer och lugn kustnära elegans.",
                   "Contemporary coastal kitchen concept for Move-In Ready support on the Costa Blanca",
                 ],
               ].map(([image, title, text, alt]) => (
@@ -462,7 +686,7 @@ export default function SwedishHomePage() {
 
                   <div className="p-7">
                     <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-                      Interior direction
+                      Inredningsriktning
                     </p>
 
                     <h3 className="mt-4 font-serif text-2xl leading-tight text-[#1e2a3a]">
@@ -494,41 +718,41 @@ export default function SwedishHomePage() {
 
             <div className="p-10 md:p-12 lg:p-14">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Att känna tillhörighet spelar roll
+                Att känna sig hemma spelar roll
               </p>
 
               <h2 className="mt-6 font-serif text-4xl leading-tight md:text-5xl">
-                En bostad räcker inte om du inte känner dig förankrad.
+                En bostad räcker inte om du inte känner dig delaktig.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-white/85">
-                Genom vår egen erfarenhet av expat-support har vi sett att
-                människor ibland återvänder hem tidigare än väntat eftersom de
-                aldrig bygger en lokal krets, saknar meningsfulla vänskaper eller
-                känner sig bortkopplade från vardagslivet.
+                Genom vår egen erfarenhet av expatstöd har vi sett att
+                människor ibland återvänder tidigare än väntat eftersom de inte
+                bygger ett lokalt nätverk, saknar meningsfulla vänskaper eller
+                känner sig frånkopplade från vardagslivet.
               </p>
 
               <p className="mt-6 text-sm leading-relaxed text-white/70 md:text-base">
                 Nordic Circle hjälper till att minska den risken. Under Buyer
-                Discovery Experience skapar vi naturliga tillfällen att möta
-                människor med liknande bakgrund, livsfas eller intressen — inte
-                påtvingat nätverkande, utan en bättre känsla för om området kan
-                bli ett riktigt hem.
+                Discovery Experience skapar vi naturliga möjligheter att träffa
+                människor med liknande bakgrund, livsfas eller intressen —
+                aldrig påtvingat nätverkande, utan en bättre känsla för om
+                området verkligen kan bli hemma.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
                 {[
                   [
-                    "Social fit",
-                    "Introduktioner kan formas efter språk, bakgrund, livsfas och intressen.",
+                    "Social passning",
+                    "Introduktioner kan anpassas efter språk, bakgrund, livsfas och intressen.",
                   ],
                   [
-                    "Delade ögonblick",
-                    "Luncher, middagar, golf, wellness eller gastronomi hjälper människor att knyta kontakt naturligt.",
+                    "Gemensamma stunder",
+                    "Luncher, middagar, golf, wellness eller gastronomi kan hjälpa människor att mötas naturligt.",
                   ],
                   [
-                    "Bättre landning",
-                    "Målet är att minska risken att känna sig isolerad efter köp och flytt.",
+                    "Bättre start",
+                    "Målet är att minska risken för att känna sig isolerad efter köp och flytt.",
                   ],
                 ].map(([title, text]) => (
                   <div
@@ -550,7 +774,7 @@ export default function SwedishHomePage() {
                   href="/sv/services/nordic-circle-community"
                   className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Utforska Nordic Circle
+                  Upptäck Nordic Circle
                 </a>
 
                 <a
@@ -565,152 +789,56 @@ export default function SwedishHomePage() {
         </div>
       </section>
 
-      {/* PURCHASE SAFETY REPORT */}
-      <section className="px-8 pb-32">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-white shadow-sm">
-          <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="bg-[#1e2a3a] p-12 text-white lg:p-16">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Purchase Safety
-              </p>
-
-              <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
-                Minska riskerna innan du köper.
-              </h2>
-
-              <p className="mt-8 text-lg leading-relaxed text-white/80">
-                När du är seriöst intresserad av en bostad tittar vi bortom
-                presentationen. Genom Purchase Safety Report kan oberoende
-                specialister granska juridiska och tekniska risker innan du
-                binder dig.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-white/80">
-                Det kan omfatta tillstånd, tillbyggnader, ägarhandlingar,
-                möjliga skulder eller belastningar, fukt, läckage, mögel,
-                synliga brister och bostadens allmänna skick.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-white/80">
-                Resultatet är ett tydligare beslut: gå vidare, omförhandla,
-                lägga till villkor eller avstå innan du har kommit för långt i
-                processen.
-              </p>
-
-              <p className="mt-6 text-sm leading-relaxed text-white/55">
-                En teknisk köpargranskning ingår när du köper en bostad via
-                Nordic Move Spain, beroende på tillgång till bostaden, timing och
-                tillgänglighet hos rätt yrkesperson.
-              </p>
-            </div>
-
-            <div className="p-10 md:p-12 lg:p-16">
-              <div className="grid gap-6 md:grid-cols-2">
-                {[
-                  [
-                    "Juridiska risker",
-                    "Tillstånd, tillbyggnader, ägarhandlingar och möjliga skulder eller belastningar kan granskas.",
-                  ],
-                  [
-                    "Tekniska risker",
-                    "Fukt, läckage, mögel, sprickor, dränering och synliga brister kan upptäckas tidigt.",
-                  ],
-                  [
-                    "Oberoende rapport",
-                    "Resultaten samlas så att du förstår riskerna innan du går vidare.",
-                  ],
-                  [
-                    "Tydligt beslut",
-                    "Gå vidare, omförhandla, ställ villkor eller avstå med större trygghet.",
-                  ],
-                ].map(([title, text]) => (
-                  <div key={title} className="rounded-[28px] bg-[#f6f1ea] p-7">
-                    <h3 className="font-serif text-2xl leading-tight text-[#1e2a3a]">
-                      {title}
-                    </h3>
-                    <p className="mt-4 text-sm leading-relaxed text-stone-600">
-                      {text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                Rapporter, foton, dokument och frågor kan samlas i din secure
-                client portal så att beslutet förblir organiserat. Den
-                inkluderade tekniska köpargranskningen stödjer beslutsfattandet,
-                men ersätter inte formell juridisk due diligence, värdering eller
-                en fullständig byggteknisk besiktning om detta inte avtalas
-                separat.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="/sv/services/purchase-safety-report"
-                  className="rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
-                >
-                  Utforska Purchase Safety
-                </a>
-
-                <a
-                  href="/sv/contact"
-                  className="rounded-full border border-[#1e2a3a] px-8 py-4 text-sm text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
-                >
-                  Fråga om bostadskontroll
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ABOUT US */}
       <section className="px-8 pb-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-          <div className="rounded-[40px] bg-white p-5 shadow-sm">
-            <img
-              src="/images/founder.png"
-              alt="The founders of Nordic Move Spain"
-              className="h-auto max-h-[620px] w-full rounded-[32px] object-contain object-center"
-            />
-          </div>
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-10 shadow-sm md:p-14 lg:p-16">
+          <div className="grid gap-14 lg:grid-cols-[0.82fr_1.18fr]">
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Om Nordic Move Spain
+              </p>
 
-          <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Om Nordic Move Spain
-            </p>
+              <h2 className="mt-6 font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
+                Skapat för internationella köpare som vill ha lugn, tydlighet och lokalt stöd.
+              </h2>
+            </div>
 
-            <h2 className="mt-6 font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
-              Skapat för internationella köpare som vill ha lugn, tydlighet och lokal support.
-            </h2>
+            <div>
+              <p className="text-xl leading-relaxed text-stone-700">
+                Nordic Move Spain skapades för internationella köpare som
+                söker ett mer personligt, bättre organiserat och noggrannare
+                kontrollerat sätt att köpa bostad på Costa Blanca — från den
+                första orienteringen till inflyttningen.
+              </p>
 
-            <p className="mt-8 text-xl leading-relaxed text-stone-600">
-              Nordic Move Spain skapades för internationella köpare som vill ha
-              ett tryggare, mer personligt och bättre organiserat sätt att köpa
-              bostad på Costa Blanca — från första orientering till ankomst.
-            </p>
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Vi förstår att ett köp i Spanien inte bara är ett
+                bostadsbeslut, utan också ett val av en annan miljö, en annan
+                vardag och ofta ett nytt kapitel. Därför kombinerar vi
+                livsstilsinsikt, lokal kunskap, riktat bostadsurval, oberoende
+                teknisk besiktning och dokumentgranskning, juridisk due
+                diligence genom en lämplig oberoende advokat, en tydlig
+                köprekommendation, fullständig samordning och praktiskt stöd
+                efter köpet.
+              </p>
 
-            <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Vi förstår att ett köp i Spanien inte bara är ett bostadsbeslut,
-              utan också ett val av en annan miljö, en annan vardag och ofta ett
-              nytt kapitel. Därför kombinerar vi lifestyle-insikt, lokal kunskap,
-              utvalda bostäder, en inkluderad teknisk köpargranskning, säker
-              dokumentkontroll och praktiskt stöd efter köpet.
-            </p>
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Vår roll är att göra hela processen begriplig och överskådlig
+                med en fast kontaktperson. Vi hjälper dig att hitta rätt plats
+                och bostad, följer med genom urval och visningar och samordnar
+                de oberoende kontrollerna, köpstödet och de berörda
+                specialisterna. Därefter hjälper vi vid behov till med kontakt
+                med en lämplig bolånerådgivare, flyttsamordning samt styling och
+                inredning med pålitliga lokala partners.
+              </p>
 
-            <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Vår roll är att först hjälpa köpare att förstå rätt plats, sedan
-              granska bostaden kritiskt, organisera processen tryggt och, där det
-              önskas, forma interior direction och koordinera move-in
-              förberedelser med betrodda lokala möbelpartners.
-            </p>
-
-            <a
-              href="/sv/about-us"
-              className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
-            >
-              Läs mer om oss
-            </a>
+              <a
+                href="/sv/about-us"
+                className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
+              >
+                Läs mer om oss
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -728,9 +856,9 @@ export default function SwedishHomePage() {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Ett litet urval praktiska guider för internationella köpare som
-              vill förstå pensionsområden, den spanska köpprocessen och
-              brittiska skattefrågor innan de fattar beslut.
+              Ett urval praktiska guider för internationella köpare som vill
+              förstå pensionsområden, den spanska köpprocessen och svenska
+              skatteregler innan de fattar beslut.
             </p>
           </div>
 
@@ -801,13 +929,14 @@ export default function SwedishHomePage() {
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-            Köp med tydlighet, struktur och färre blinda fläckar.
+            Få ett ärligt svar innan du köper.
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Välj det stöd du behöver nu, eller följ hela journey: från
-            områdesklarhet via den inkluderade tekniska köpargranskningen till
-            en mjuk, move-in ready landing.
+            Från Area Match och bostadssökning till oberoende kontroller,
+            köpstöd, bolånerådgivning genom en lämplig specialist,
+            flyttsamordning, styling och inredning: du har en fast kontaktperson
+            hos Nordic Move som organiserar hela processen från A till Ö.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -815,14 +944,14 @@ export default function SwedishHomePage() {
               href="/sv/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Start with your Area Match Report
+              Börja med din Area Match Report
             </a>
 
             <a
               href="/sv/contact"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
             >
-              Schedule a consultation
+              Boka ett introduktionssamtal
             </a>
           </div>
         </div>

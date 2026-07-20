@@ -1,10 +1,10 @@
 export const metadata = {
   title:
-    "4-tägige Buyer Discovery Trip Costa Blanca Nord | Haus kaufen Spanien",
+    "Buyer Discovery Trip Costa Blanca Nord | Gezielt eine Immobilie in Spanien kaufen",
   description:
-    "4-tägige Buyer Discovery Trip an der Costa Blanca Nord für Käufer, die ein Haus oder eine Immobilie in Spanien kaufen möchten. Mit privatem Chauffeur, 5-Sterne-Aufenthalt, Area Match Report, ausgewählten individuellen Immobilienbesichtigungen, Regionstouren, Lifestyle-Erlebnissen und sicherer Kaufbegleitung.",
+    "Persönlicher 4-tägiger Buyer Discovery Trip an der Costa Blanca Nord mit Area-Match-Bericht, einer Shortlist von 4 bis 8 Immobilien, Privattransfer, Aufenthalt in einem 4- oder 5-Sterne-Hotel, lokalen Erlebnissen, unabhängigen Experten und Kaufbegleitung.",
   keywords: [
-    "4-tägige Buyer Discovery Trip Costa Blanca Nord",
+    "4-tägiger Buyer Discovery Trip Costa Blanca Nord",
     "Buyer Discovery Trip Spanien",
     "Haus kaufen Spanien",
     "Immobilie kaufen Spanien",
@@ -15,30 +15,37 @@ export const metadata = {
     "Häuser besichtigen Spanien",
     "individuelle Immobilienbesichtigungen Spanien",
     "Immobilienbesichtigungen Costa Blanca Nord",
-    "ausgewählte Immobilienbesichtigungen Spanien",
-    "Area Match Report Spanien",
+    "gezielte Besichtigungen Spanien",
+    "Area-Match-Bericht Spanien",
     "Kaufbegleitung Spanien",
-    "deutsche Kaufbegleitung Spanien",
-    "sicher Haus kaufen Spanien",
-    "zweite Immobilie Spanien kaufen",
-    "Auswandern nach Spanien",
-    "Moraira Haus kaufen",
-    "Jávea Haus kaufen",
-    "Javea house buying trip",
-    "Altea Immobilie kaufen",
-    "Benissa Villa kaufen",
-    "Calpe Wohnung kaufen",
-    "Dénia Haus kaufen",
-    "Denia Immobilie kaufen",
+    "deutschsprachige Kaufbegleitung Spanien",
+    "Zweitwohnsitz in Spanien kaufen",
+    "nach Spanien auswandern",
+    "Haus in Moraira kaufen",
+    "Haus in Jávea kaufen",
+    "Javea Hauskaufreise",
+    "Haus in Altea kaufen",
+    "Haus in Benissa kaufen",
+    "Wohnung in Calpe kaufen",
+    "Haus in Dénia kaufen",
+    "Immobilie in Denia kaufen",
+    "Immobilie im Vall de Pop kaufen",
+    "Vall de Pop Spanien",
+    "Villa-Shortlist Costa Blanca",
+    "Wildcard-Immobilie Spanien",
+    "technische Immobilienprüfung Spanien",
+    "unabhängiger Immobilienanwalt Spanien",
+    "4-Sterne-Hotel Costa Blanca",
+    "5-Sterne-Hotel Costa Blanca",
   ],
   alternates: {
     canonical: "/de/buyer-discovery-trip-costa-blanca-nord",
   },
   openGraph: {
     title:
-      "4-tägige Buyer Discovery Trip Costa Blanca Nord | Haus kaufen in Spanien",
+      "Buyer Discovery Trip Costa Blanca Nord | Gezielt eine Immobilie in Spanien kaufen",
     description:
-      "Entdecken Sie in 4 Tagen, wo Sie an der Costa Blanca Nord wirklich ein Haus kaufen möchten. Mit privatem Chauffeur, 5-Sterne-Aufenthalt, Area Match Report, ausgewählten Immobilienbesichtigungen, Experten, Regionstouren, mehr Sicherheit und gleichgesinnten Käufern.",
+      "Entdecken Sie in 4 Tagen, welche Region und Immobilie zu Ihnen passen. Mit Area-Match-Bericht, einer Shortlist von 4 bis 8 Immobilien, Privattransfer, Aufenthalt in einem 4- oder 5-Sterne-Hotel, lokalen Erlebnissen, Experten und gleichgesinnten Käufern.",
     type: "website",
     locale: "de_DE",
     images: [
@@ -46,7 +53,7 @@ export const metadata = {
         url: "/images/discover-card.png",
         width: 1200,
         height: 630,
-        alt: "4-tägige Buyer Discovery Trip Costa Blanca Nord für Haus kaufen in Spanien",
+        alt: "4-tägiger Buyer Discovery Trip an der Costa Blanca Nord für den Immobilienkauf in Spanien",
       },
     ],
   },
@@ -59,16 +66,15 @@ export const metadata = {
 const buyerDiscoveryTripStructuredData = {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  name: "4-tägige Buyer Discovery Trip Costa Blanca Nord",
+  name: "4-tägiger Buyer Discovery Trip Costa Blanca Nord",
   description:
-    "Eine vollständig organisierte 4-tägige Immobilien- und Lifestyle-Reise für internationale Käufer, die ein Haus oder eine zweite Immobilie an der Costa Blanca Nord in Spanien kaufen möchten, inklusive Intake, Area Match Report, ausgewählten individuellen Immobilienbesichtigungen und professioneller Begleitung für mehr Sicherheit im Kaufprozess.",
+    "Eine individuell zusammengestellte Immobilien- und Lifestyle-Reise für internationale Käufer mit Area-Match-Bericht, einer Shortlist von 4 bis 8 Immobilien, Privattransfer, Aufenthalt in einem 4- oder 5-Sterne-Hotel, lokalen Erlebnissen und Begegnungen mit unabhängigen Kaufexperten.",
   touristType: [
     "Deutsche Käufer",
-    "Schweizer Käufer",
-    "Österreichische Käufer",
+    "Schweizer und österreichische Käufer",
     "Internationale Käufer",
-    "Käufer einer zweiten Immobilie",
-    "Käufer, die nach Spanien ziehen möchten",
+    "Käufer eines Zweitwohnsitzes",
+    "Käufer, die nach Spanien umziehen möchten",
   ],
   itinerary: {
     "@type": "ItemList",
@@ -76,22 +82,22 @@ const buyerDiscoveryTripStructuredData = {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Tag 1: Ankunft, privater Transfer, Intake und Willkommen",
+        name: "Tag 1: Abholung am Flughafen, Check-in, Area Match, Shortlist und persönliche Begrüßung",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Tag 2: Regionstour Moraira, Benissa und Calpe mit ausgewählten Immobilienbesichtigungen und Lifestyle-Erlebnissen",
+        name: "Tag 2: Regionserlebnis und ausgewählte Immobilienbesichtigungen auf Grundlage der Shortlist",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Tag 3: Jávea und Dénia mit individuellen Immobilienbesichtigungen, Lunch und lokalen Aktivitäten",
+        name: "Tag 3: Weitere Besichtigungen, mögliche Wildcard und individuell abgestimmte lokale Aktivität",
       },
       {
         "@type": "ListItem",
         position: 4,
-        name: "Tag 4: Altea, Spezialisten, Kaufprozess, Sicherheit und nächste Schritte",
+        name: "Tag 4: Gespräche mit unabhängigen Experten, Kaufprozess und nächste Schritte",
       },
     ],
   },
@@ -105,6 +111,12 @@ const buyerDiscoveryTripStructuredData = {
     "Calpe",
     "Dénia",
     "Denia",
+    "Alicante",
+    "Vall de Pop",
+    "Pop Valley",
+    "Jalón",
+    "Xaló",
+    "Llíber",
   ],
 };
 
@@ -124,7 +136,7 @@ export default function BuyerDiscoveryTripPage() {
         <section className="relative min-h-[90vh] overflow-hidden">
           <img
             src="/images/discover-card.png"
-            alt="4-tägige Buyer Discovery Trip Costa Blanca Nord für Haus kaufen in Spanien"
+            alt="Persönlicher Buyer Discovery Trip an der Costa Blanca Nord mit ausgewählten Immobilienbesichtigungen"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -133,33 +145,37 @@ export default function BuyerDiscoveryTripPage() {
           <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl items-center px-8 pt-24">
             <div className="max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                4-tägige Buyer Discovery Trip Costa Blanca Nord
+                4-tägiger Buyer Discovery Trip Costa Blanca Nord
               </p>
 
-              <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white md:text-7xl">
-                Haus kaufen in Spanien? Entdecken Sie in 4 Tagen, wo Sie an der
-                Costa Blanca Nord wirklich leben möchten.
+              <h1 className="mt-6 font-serif text-5xl leading-[0.98] text-white md:text-6xl">
+                Immobilie in Spanien kaufen? Entdecken Sie, welche Region,
+                Immobilie und welcher Lebensstil wirklich zu Ihnen passen.
               </h1>
 
               <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-                Eine vollständig organisierte Immobilien- und Lifestyle-Reise mit
-                privatem Chauffeur, ausgewählten gleichgesinnten Käufern,
-                5-Sterne-Aufenthalt, Area Match Report, Regionstouren,
-                selektiven individuellen Immobilienbesichtigungen und Treffen mit
-                den Spezialisten, die Ihren sicheren Immobilienkauf in Spanien
-                möglich machen.
+                Eine individuell zusammengestellte Immobilien- und
+                Lifestyle-Reise mit Privattransfer vom Flughafen, Aufenthalt
+                in einem 4- oder 5-Sterne-Hotel, Ihrem Area-Match-Bericht,
+                einer Shortlist von 4 bis 8 Immobilien, ausgewählten
+                gleichgesinnten Käufern, lokalen Erlebnissen und direktem
+                Zugang zu vertrauenswürdigen unabhängigen Experten.
+              </p>
+
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/80">
+                Unser Team spricht Deutsch, Englisch, Spanisch und Schwedisch.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="/contact"
+                  href="/de/contact"
                   className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  4-tägige Buyer Discovery Trip anfragen
+                  Ihren Buyer Discovery Trip anfragen
                 </a>
 
                 <a
-                  href="/regions"
+                  href="/de/regions"
                   className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
                 >
                   Regionen entdecken
@@ -169,82 +185,86 @@ export default function BuyerDiscoveryTripPage() {
           </div>
         </section>
 
-        {/* INTRODUKTION */}
+        {/* EINFÜHRUNG */}
         <section className="px-8 py-28">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                  Klarheit, bevor Sie kaufen
+                  Vom Area Match zur gezielten Immobilienauswahl
                 </p>
 
                 <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                  Eine Immobilie in Spanien zu kaufen beginnt nicht mit
-                  zufälligen Besichtigungen, sondern mit der richtigen Region.
+                  Keine zufälligen Besichtigungen, sondern ein persönlicher
+                  Weg zur Immobilie und Umgebung, die zu Ihrer Zukunft passen.
                 </h2>
               </div>
 
               <div className="text-lg leading-relaxed text-stone-600">
                 <p>
-                  Wer ein Haus an der Costa Blanca Nord kaufen möchte, sollte
-                  weiter schauen als schöne Fotos, Maklertexte und einzelne
-                  Besichtigungstermine. Sie möchten die richtige Region spüren,
-                  aber auch Immobilien sehen, die logisch zu Ihrem Budget, Ihrer
-                  Familiensituation, Ihren Wünschen, Ihrem Area Match Report und
-                  Ihrem zukünftigen Lebensstil passen.
+                  Ihr Buyer Discovery Trip beginnt mit dem Area-Match-Bericht
+                  und einem persönlichen Erstgespräch. Wir betrachten Ihre
+                  Wohnwünsche, Ihr Budget, Ihre Zukunftspläne,
+                  Familiensituation, täglichen Gewohnheiten, Hobbys und
+                  Interessen. Auf dieser Grundlage suchen wir über unser
+                  sorgfältig aufgebautes Netzwerk an der Costa Blanca gezielt
+                  nach passenden Möglichkeiten.
                 </p>
 
                 <p className="mt-6">
-                  Unsere Buyer Discovery Trip ist eine sorgfältig
-                  zusammengestellte 4-tägige Immobilien- und Lifestyle-Erfahrung
-                  an der Costa Blanca Nord. Die Reise wurde für deutsche,
-                  schweizerische, österreichische und internationale Käufer
-                  entwickelt, die ein Haus, eine Villa, eine Wohnung, einen
-                  Neubau oder eine zweite Immobilie in Spanien mit mehr
-                  Sicherheit, Klarheit und weniger Risiko kaufen möchten.
+                  Vor der Abreise erhalten Sie eine Shortlist mit in der Regel
+                  4 bis 8 Villen, Apartments oder anderen Immobilien, die
+                  unserer Einschätzung nach am besten zu Ihrem Profil passen.
+                  Sie wählen aus, welche Immobilien Sie während der Reise
+                  besichtigen möchten. Wenn Sie offen für eine Überraschung
+                  sind, können wir auch eine Wildcard hinzufügen: eine
+                  Immobilie, nach der Sie selbst vielleicht nicht gesucht
+                  hätten, die aufgrund ihrer Lage, ihres Preises,
+                  Platzangebots oder Umfelds jedoch unerwartet interessant
+                  sein kann.
                 </p>
 
                 <p className="mt-6">
-                  Dies ist keine Standard-Besichtigungsreise, bei der Sie
-                  wahllos von Immobilie zu Immobilie fahren. Es ist eine
-                  vollständig organisierte Gruppenreise mit gleichgesinnten
-                  Menschen, privatem Chauffeur, individuellen Ruhe- und
-                  Privatsphäre-Momenten, ausgewählten Immobilienbesichtigungen,
-                  lokalen Lifestyle-Erlebnissen und direkten Gesprächen mit den
-                  Fachleuten, die Sie für einen sicheren Kaufprozess in Spanien
-                  benötigen.
+                  Die Reise geht weit über Immobilienbesichtigungen hinaus.
+                  Sie werden persönlich am Flughafen abgeholt, übernachten in
+                  einem sorgfältig ausgewählten 4- oder 5-Sterne-Hotel und
+                  erleben die Region mit einer kleinen Gruppe von Menschen mit
+                  ähnlichen Bedürfnissen und Interessen. Gleichzeitig lernen
+                  Sie lokale Fachleute kennen und erhalten ausreichend
+                  Gelegenheit, ihnen Ihre Fragen direkt zu stellen.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SEO QUICK VALUE */}
+        {/* SEO-KURZÜBERSICHT */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Für Käufer, die ernsthaft suchen
+              Für Käufer, die ernsthaft und gezielt suchen
             </p>
 
             <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Die 4-tägige Entdeckungsreise für alle, die ein Haus an der Costa
-              Blanca Nord kaufen möchten.
+              Ein persönlicher Buyer Discovery Trip für alle, die ein Haus,
+              eine Villa oder einen Zweitwohnsitz an der Costa Blanca Nord
+              kaufen möchten.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Haus kaufen in Spanien",
-                "Immobilie kaufen Costa Blanca Nord",
-                "Zweite Immobilie in Spanien",
-                "Immobilienkauf mit Begleitung",
-                "Ausgewählte Immobilienbesichtigungen",
-                "Area Match Report für Käufer",
-                "Villa kaufen Moraira oder Jávea",
-                "Wohnung kaufen Calpe oder Dénia",
-                "Kaufprozess Spanien verstehen",
-                "Gleichgesinnte Käufer treffen",
-                "Sicher Immobilien in Spanien kaufen",
-                "Professionelle Kaufbegleitung",
+                "Kostenloser Area-Match-Bericht",
+                "Shortlist mit 4 bis 8 passenden Immobilien",
+                "Ihre bevorzugten Besichtigungen selbst auswählen",
+                "Optionale Wildcard-Immobilie",
+                "Privattransfer vom Flughafen",
+                "4- oder 5-Sterne-Hotel in einer passenden Umgebung",
+                "Kleine, sorgfältig zusammengestellte Gruppe",
+                "Individuell abgestimmte lokale Lifestyle-Erlebnisse",
+                "Moraira, Jávea, Dénia, Altea und Alicante",
+                "Vall de Pop und das spanische Hinterland",
+                "Persönliches Kennenlernen unabhängiger Experten",
+                "Persönliche Kaufbegleitung in Spanien",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
@@ -255,12 +275,11 @@ export default function BuyerDiscoveryTripPage() {
             </div>
 
             <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Sie erhalten einen realistischen Eindruck von der Region und von
-              Immobilien, die sorgfältig auf Basis Ihres Intakes, Budgets, Area
-              Match Reports, Ihrer Wohnwünsche und Ihres Lebensstils
-              vorselektiert werden. So besichtigen Sie nicht einfach Häuser,
-              sondern Immobilien, die zu der Umgebung passen, in der Sie später
-              wirklich leben möchten.
+              Sie besichtigen keine zufällig ausgewählten Immobilien. Jede
+              Auswahl basiert auf Ihrem Erstgespräch, Budget,
+              Area-Match-Bericht, Ihren Wohnwünschen, Interessen und
+              Zukunftsplänen. So nutzen Sie Ihre Zeit in Spanien für
+              Immobilien und Gebiete, die tatsächlich zu Ihnen passen.
             </p>
           </div>
         </section>
@@ -269,114 +288,127 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Zuerst lernen wir Sie kennen
+              Zuerst lernen wir Sie wirklich kennen
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Ihre Buyer Discovery Trip beginnt bei Ihrem Lebensstil, nicht bei
-              Immobilienanzeigen.
+              Ihre Reise beginnt mit dem Leben, das Sie in Spanien aufbauen
+              möchten – nicht mit einer Liste von Immobilienanzeigen.
             </h2>
 
             <div className="mt-10 grid gap-10 lg:grid-cols-2">
               <div className="text-lg leading-relaxed text-stone-600">
                 <p>
-                  Vor Ihrer Ankunft starten wir mit Ihrem kostenlosen Area Match
-                  Report und einem persönlichen Intake-Gespräch. Dabei schauen
-                  wir auf Ihre Ziele, Ihr Budget, Ihre Familiensituation, Ihre
-                  täglichen Gewohnheiten, Interessen, gewünschte Lebensweise,
-                  Umzugspläne, Investitionsziele und langfristigen Prioritäten.
+                  Im Erstgespräch befassen wir uns ausführlich mit Ihren
+                  Zielen, Ihrem Budget, Ihrer Familiensituation, Ihren
+                  Umzugsplänen, Ihrem gewünschten Lebensstil und Ihren
+                  langfristigen Prioritäten. Wir fragen außerdem nach Hobbys
+                  und Interessen wie Golf, Segeln, Gastronomie, Natur,
+                  Wellness, Radfahren, Kultur oder dem internationalen
+                  Schulleben.
                 </p>
 
                 <p className="mt-6">
-                  Danach stellen wir ein 4-tägiges Programm zusammen, das zur
-                  Gruppe und zu Ihrem persönlichen Profil passt. Auf Basis Ihres
-                  Area Match Reports wählen wir nicht nur die richtigen Regionen
-                  und Wohnlagen aus, sondern auch eine begrenzte Anzahl an
-                  Immobilien, die zu Ihrem Budget, Ihren Wünschen, Ihrem Wohnstil
-                  und Ihren Zukunftsplänen passen.
+                  Auf Grundlage Ihres Area Match arbeiten wir mit unserem
+                  zuverlässigen lokalen Netzwerk weiter. Wir vergleichen
+                  Regionen, Wohnviertel, Immobilientypen und aktuelle
+                  Möglichkeiten und erstellen anschließend eine Shortlist mit
+                  etwa 4 bis 8 Immobilien. Sie entscheiden, welche davon Sie
+                  während der Discovery Trip sehen möchten.
                 </p>
 
                 <p className="mt-6">
-                  Der Intake hilft uns außerdem zu bestimmen, welche
-                  Immobilientypen, Preisklassen, Wohngebiete, Fachleute, lokalen
-                  Unternehmer, internationalen Bewohner, Sportclubs, Restaurants
-                  und Aktivitäten für Sie relevant sind. So fühlt sich die Reise
-                  nicht wie eine allgemeine Tour an, sondern wie eine gezielte
-                  Einführung in Ihr mögliches neues Leben in Spanien.
+                  Zusätzlich können Sie sich für eine Wildcard entscheiden:
+                  eine Immobilie außerhalb Ihres ursprünglichen Suchprofils,
+                  die aufgrund ihrer Lage, Umgebung, Preisgestaltung oder
+                  Aufteilung überraschend gut zu Ihrer Zukunft passen kann. So
+                  bleibt die Suche fokussiert, ohne interessante Möglichkeiten
+                  zu früh auszuschließen.
                 </p>
               </div>
 
               <div className="rounded-[32px] bg-[#f6f1ea] p-8">
-                <p className="text-lg leading-relaxed text-stone-700">
-                  Suchen Sie eine ruhige Villa bei Moraira? Ein sozialeres Leben
-                  in Jávea? Eine elegante Umgebung bei Altea? Raum und
-                  Authentizität rund um Benissa? Wohnungen am Meer und Neubau in
-                  Calpe? Oder eine lebendige Stadt, die das ganze Jahr aktiv ist,
-                  wie Dénia?
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  Persönlich bis ins Detail
+                </h3>
+
+                <p className="mt-5 text-lg leading-relaxed text-stone-700">
+                  Suchen Sie eine ruhige Villa in Moraira, ein lebendiges
+                  Leben in Jávea, Infrastruktur und Gastronomie in Dénia,
+                  Eleganz rund um Altea oder vielmehr Ruhe und mehr Platz im
+                  Vall de Pop? Wir verbinden Ihre Wohnwünsche mit dem Alltag
+                  in jeder Region.
+                </p>
+
+                <p className="mt-5 text-lg leading-relaxed text-stone-700">
+                  Ihr Hotel, Ihre Route, Aktivitäten, Begegnungen und
+                  Immobilienbesichtigungen werden so weit wie möglich auf Ihr
+                  Profil und die Zusammensetzung der kleinen Gruppe
+                  abgestimmt.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* AUSGEWÄHLTE IMMOBILIENBESICHTIGUNGEN */}
+        {/* GEZIELTE IMMOBILIENBESICHTIGUNGEN */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Selektive individuelle Immobilienbesichtigungen
+              Ihre Shortlist vor der Abreise
             </p>
 
             <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Sie besichtigen keine zufälligen Häuser, sondern Immobilien, die
-              zu Ihrem Intake, Area Match Report, Umfeld und Lebensstil passen.
+              Wählen Sie aus 4 bis 8 sorgfältig vorausgewählten Immobilien –
+              mit Raum für eine überraschende Wildcard.
             </h2>
 
             <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="text-lg leading-relaxed text-stone-700">
                 <p>
-                  Während der 4-tägigen Buyer Discovery Trip planen wir eine
-                  begrenzte Anzahl individueller Immobilienbesichtigungen, die
-                  sorgfältig vorselektiert werden. Nicht, weil Sie möglichst
-                  viele Häuser sehen sollen, sondern weil Sie die richtigen
-                  Immobilien sehen müssen: Immobilien, die logisch zu Ihrem
-                  Budget, Ihren Wohnwünschen, Ihrer Familiensituation, Ihrer
-                  gewünschten Umgebung und Ihrem täglichen Lebensstil passen.
+                  Unser Netzwerk aus zuverlässigen lokalen Maklern, Bauträgern
+                  und Immobilienkontakten ermöglicht uns, über das Angebot
+                  eines einzelnen Anbieters hinauszublicken. Auf Grundlage
+                  Ihres Area-Match-Berichts, Budgets, Wohnstils, Ihrer
+                  Interessen und Zukunftspläne wählen wir die Immobilien aus,
+                  die aus unserer Sicht am besten zu Ihnen passen.
                 </p>
 
                 <p className="mt-6">
-                  Ihr kostenloser Area Match Report und Ihr Intake bilden die
-                  Grundlage. So prüfen wir, ob eine ruhige Villa in Moraira,
-                  eine moderne Immobilie bei Jávea, eine stilvolle Umgebung rund
-                  um Altea, eine Finca oder Villa in Benissa, eine Wohnung oder
-                  ein Neubauprojekt in Calpe oder eine lebendige Stadtwohnung in
-                  Dénia besser zu Ihnen passt.
+                  Vor der Reise erhalten Sie die Shortlist mit unserer
+                  Erläuterung. Sie wählen aus, welche Immobilien Sie
+                  besichtigen möchten. Wir planen die Termine sinnvoll in die
+                  Route ein, damit Sie keine unnötigen Wege zurücklegen und
+                  genügend Zeit haben, sowohl die Immobilie als auch die
+                  Umgebung wirklich kennenzulernen.
                 </p>
 
                 <p className="mt-6">
-                  Bei diesen Besichtigungen schauen wir weiter als nur auf die
-                  Immobilie selbst. Wir besprechen Lage, Erreichbarkeit,
-                  Privatsphäre, Ausrichtung, Wartung, bautechnische
-                  Aufmerksamkeitspunkte, Nachbarschaftsgefühl, Infrastruktur,
-                  Vermietungspotenzial, rechtliche Sicherheit und die Frage, ob
-                  die Immobilie zu dem Leben passt, das Sie in Spanien aufbauen
-                  möchten.
+                  Bei jeder Besichtigung blicken wir über Optik und Fotos
+                  hinaus. Wir besprechen Lage, Erreichbarkeit, Privatsphäre,
+                  Ausrichtung, Instandhaltung, Wohngefühl, Einrichtungen,
+                  Vermietungspotenzial und die Frage, ob die Immobilie zu dem
+                  Leben passt, das Sie in Spanien aufbauen möchten.
                 </p>
               </div>
 
               <div className="rounded-[32px] bg-white/80 p-8">
                 <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Vom Online-Suchen zum gezielten Entscheiden
+                  Warum eine Wildcard?
                 </h3>
+
                 <p className="mt-5 text-lg leading-relaxed text-stone-700">
-                  Viele Käufer verlieren online den Überblick zwischen hunderten
-                  Immobilien. Wir bringen Fokus. Sie sehen eine sorgfältig
-                  ausgewählte Auswahl und verstehen direkt, warum eine Immobilie,
-                  Nachbarschaft oder Region zu Ihnen passt oder eben nicht.
+                  Manchmal ist die beste Wahl nicht die Immobilie, die Sie
+                  online als Erstes anklicken würden. Eine weniger bekannte
+                  Lage, ein anderer Grundriss oder ein Gebiet mit mehr
+                  Möglichkeiten für Ihr Budget kann sich vor Ort deutlich
+                  besser anfühlen.
                 </p>
+
                 <p className="mt-5 text-lg leading-relaxed text-stone-700">
-                  Das macht die Reise wertvoller als eine gewöhnliche
-                  Besichtigungsreise: Sie vergleichen nicht nur Häuser, sondern
-                  auch Lebensstile, Regionen, Risiken und Zukunftsszenarien.
+                  Die Wildcard schafft Raum für eine solche unerwartete
+                  Möglichkeit, während der Rest Ihres Programms weiterhin
+                  vollständig fokussiert bleibt.
                 </p>
               </div>
             </div>
@@ -388,47 +420,38 @@ export default function BuyerDiscoveryTripPage() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Sorgfältig ausgewählte Gruppe
+                Eine kleine, sorgfältig zusammengestellte Gruppe
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Reisen Sie mit gleichgesinnten Menschen, die zu Ihren Interessen,
-                Ihrer Lebensphase und Ihrem Lebensstil passen.
+                Erleben Sie die Region mit Menschen, die zu Ihren Interessen,
+                Ihrer Lebensphase und Ihren Zukunftsplänen passen.
               </h2>
             </div>
 
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Die Buyer Discovery Trip wird als sorgfältig zusammengestellte
-                Gruppenreise organisiert. Wir bringen Sie mit Menschen zusammen,
-                die sich in einer vergleichbaren Lebensphase befinden, ähnliche
-                Regionen prüfen oder einen vergleichbaren Lebensstil an der
-                Costa Blanca Nord suchen.
+                Wir stellen die Teilnehmer sorgfältig zusammen. Die Gruppe
+                bleibt klein und persönlich und besteht aus Menschen, die
+                ähnliche Regionen erkunden oder einen vergleichbaren
+                Lebensstil an der Costa Blanca suchen.
               </p>
 
               <p className="mt-6">
-                Denken Sie an deutsche, schweizerische, österreichische,
-                niederländische und belgische Käufer, internationale Familien,
-                Unternehmer, Remote Worker, Käufer einer zweiten Immobilie,
-                aktive Pensionäre und Menschen, die sich auf eine Zukunft in
-                Spanien vorbereiten. Die Gruppe bleibt persönlich und selektiv,
-                sodass Raum für Inhalt, Ruhe, Privatsphäre und echte Gespräche
-                bleibt.
+                Vielleicht lernen Sie während der Reise Ihren zukünftigen
+                Golfpartner, eine neue Bekanntschaft für gemeinsame
+                Mittagessen, einen Segelpartner oder eine Familie mit Kindern
+                in einem ähnlichen Alter kennen. Nichts wird erzwungen, doch
+                gemeinsame Erlebnisse erleichtern es, auf natürliche Weise
+                wertvolle Kontakte aufzubauen.
               </p>
 
               <p className="mt-6">
-                Sie erleben gemeinsame Lunches, lokale Wohnviertel, Aktivitäten
-                und Gespräche mit gleichgesinnten zukünftigen Bewohnern.
-                Gleichzeitig haben Sie jederzeit die Möglichkeit, sich in Ihr
-                eigenes 5-Sterne-Hotel, Ihre Suite oder ausgewählte Finca
-                zurückzuziehen, wenn Sie Privatsphäre und Ruhe wünschen.
-              </p>
-
-              <p className="mt-6">
-                Gerade diese Kombination aus gemeinsamer Erfahrung und
-                individueller Freiheit macht die Reise wertvoll: Sie lernen die
-                Region kennen, bauen ein erstes Netzwerk auf und behalten
-                trotzdem Ihren eigenen Raum und ein sicheres Gefühl.
+                Sie teilen ausgewählte Mittagessen, Aktivitäten, lokale
+                Viertel und Gespräche, behalten jedoch stets Raum für
+                Privatsphäre. Sie übernachten in Ihrem eigenen Zimmer oder
+                Ihrer eigenen Suite in einem sorgfältig ausgewählten 4- oder
+                5-Sterne-Hotel und können sich jederzeit zurückziehen.
               </p>
             </div>
           </div>
@@ -438,67 +461,64 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Ab Ihrer Ankunft ist alles organisiert
+              Von Ihrer Ankunft an persönlich organisiert
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight">
-              Sie kommen in Spanien an, wir kümmern uns um Transport,
-              Unterkunft, Planung und Begleitung.
+              Wir holen Sie am Flughafen ab und kümmern uns um Unterkunft,
+              Transport, Planung und persönliche Begleitung.
             </h2>
 
             <div className="mt-10 grid gap-8 md:grid-cols-3">
               <div>
-                <h3 className="font-serif text-3xl">Privater Chauffeur</h3>
+                <h3 className="font-serif text-3xl">Persönlicher Transfer</h3>
                 <p className="mt-4 leading-relaxed text-white/75">
-                  Ab Alicante Airport oder Valencia Airport werden Sie empfangen
-                  und während der geplanten Bestandteile der Reise komfortabel
-                  von einem privaten Chauffeur gefahren.
+                  Sie werden am Flughafen Alicante oder Valencia abgeholt und
+                  während der geplanten Programmpunkte komfortabel befördert.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-serif text-3xl">Aufenthalt in einem 4- oder 5-Sterne-Hotel</h3>
+                <p className="mt-4 leading-relaxed text-white/75">
+                  Sie übernachten in einem sorgfältig ausgewählten Hotel,
+                  Boutique-Resort, einer Luxussuite oder Finca in einer
+                  Umgebung, die zu Ihrem Area Match und dem Programm passt.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-serif text-3xl">
-                  5-Sterne-Hotel oder Finca
+                  Direkter Zugang zu Experten
                 </h3>
                 <p className="mt-4 leading-relaxed text-white/75">
-                  Sie übernachten in einem sorgfältig ausgewählten
-                  5-Sterne-Hotel, einer luxuriösen Suite, einem Boutique Resort
-                  oder einer Finca, die zur Atmosphäre der Costa Blanca Nord
-                  passt.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-serif text-3xl">Persönliches Programm</h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  Beim Willkommen besprechen wir die Gruppe, Ihre persönlichen
-                  Ziele, Ihren Area Match Report, die ausgewählten Regionen,
-                  mögliche Immobilien und die Fachleute, die Sie während der 4
-                  Tage kennenlernen.
+                  Während der Reise lernen Sie relevante Fachleute kennen und
+                  können Ihre Fragen zu Immobilien, Finanzierung, Technik,
+                  rechtlichen Prüfungen und den nächsten Schritten direkt
+                  stellen.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4 TAGE PROGRAMM */}
+        {/* 4-TAGE-PROGRAMM */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Das 4-tägige Programm
+                Ein persönliches 4-Tage-Programm
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Vier Tage, um Wohnen, Kaufen und Leben an der Costa Blanca Nord
-                wirklich zu verstehen.
+                Vier Tage, um Immobilien, Regionen, Experten und den Alltag an
+                der Costa Blanca Nord wirklich kennenzulernen.
               </h2>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Das genaue Programm wird auf die Gruppe, die Saison, die Regionen
-                und die Profile der Teilnehmer abgestimmt. Der Aufbau bleibt
-                klar: ankommen, entdecken, erleben, Spezialisten treffen und mit
-                konkreten, sicheren nächsten Schritten nach Hause gehen.
+                Das genaue Programm wird auf Ihr Area Match, Ihre Shortlist,
+                Ihre Interessen, die Gruppe, die Jahreszeit sowie die
+                Verfügbarkeit von Immobilien und Fachleuten abgestimmt.
               </p>
             </div>
 
@@ -506,26 +526,29 @@ export default function BuyerDiscoveryTripPage() {
               {[
                 {
                   day: "Tag 1",
-                  title: "Ankunft und Willkommen",
-                  text: "Privater Transfer, Check-in, persönliches Kennenlernen, Einführung der Gruppe, Erklärung des Kaufprozesses und ein entspanntes Willkommensdinner.",
+                  title: "Ankunft und persönliche Begrüßung",
+                  text: "Flughafentransfer, Check-in, Kennenlernen sowie Besprechung Ihres Area Match, Ihrer Shortlist, der ausgewählten Besichtigungen und des Programms.",
                 },
                 {
                   day: "Tag 2",
-                  title: "Moraira, Benissa und Calpe",
-                  text: "Regionstour, Wohngebiete, Villenzonen, Küstenbereiche, lokaler Lunch und selektive Immobilienbesichtigungen von Häusern, die zu Ihrem Intake, Budget und Lebensstil passen.",
+                  title: "Regionen und ausgewählte Immobilien",
+                  text: "Ausgewählte Regionsbesuche, sorgfältig geplante Immobilienbesichtigungen und lokale Orte, die zu Ihren täglichen Bedürfnissen und Zukunftsplänen passen.",
                 },
                 {
                   day: "Tag 3",
-                  title: "Jávea und Dénia",
-                  text: "Wohnviertel, Strände, Hafen, Infrastruktur, internationale Gemeinschaft, individuelle Immobilienbesichtigungen und ein Lifestyle-Erlebnis wie Pasta selbst herstellen, Wellness oder eine kulinarische Tour.",
+                  title: "Lifestyle und Wildcard",
+                  text: "Weitere Besichtigungen, gegebenenfalls Ihre Wildcard und ein persönliches Erlebnis wie Segeln, Golf, eine Olivenölverkostung, Gastronomie oder eine Kochaktivität.",
                 },
                 {
                   day: "Tag 4",
-                  title: "Altea und Spezialisten",
-                  text: "Altea und Umgebung, wenn sinnvoll letzte gezielte Besichtigungen, Gespräche mit Anwalt, Bausachverständigem, Finanzierungsberater und klare nächste Schritte für einen sicheren Kaufprozess.",
+                  title: "Experten und nächste Schritte",
+                  text: "Gespräche mit relevanten unabhängigen Fachleuten, Antworten auf Ihre Fragen und ein klarer Plan für einen möglichen Kauf und die erforderlichen Prüfungen.",
                 },
               ].map((item) => (
-                <div key={item.day} className="rounded-[32px] bg-white p-8 shadow-sm">
+                <div
+                  key={item.day}
+                  className="rounded-[32px] bg-white p-8 shadow-sm"
+                >
                   <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
                     {item.day}
                   </p>
@@ -541,136 +564,122 @@ export default function BuyerDiscoveryTripPage() {
           </div>
         </section>
 
-        {/* ECHTE REGIONEN */}
+        {/* REGIONEN IM ALLTAG */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Haus kaufen Costa Blanca Nord
+                Regionen an der Costa Blanca Nord
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Entdecken Sie Moraira, Jávea, Altea, Benissa, Calpe und Dénia aus
-                der Perspektive des täglichen Lebens.
+                Von Alicante und Altea bis Moraira, Jávea, Dénia und ins Vall
+                de Pop: Entdecken Sie, wo Ihr neues Leben am besten zu Ihnen
+                passt.
               </h2>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Während der Buyer Discovery Trip erleben Sie die Regionen aus der
-                Wohnperspektive, nicht nur aus touristischer Sicht. Wir besuchen
-                Orte, Wohnviertel und Einrichtungen, die für Ihren zukünftigen
-                Lebensstil wichtig sind, und planen individuelle
-                Immobilienbesichtigungen, die zu Ihrem persönlichen Profil
-                passen.
+                Wir zeigen Ihnen nicht nur touristische Highlights. Sie
+                entdecken Wohnviertel, Einrichtungen des täglichen Bedarfs,
+                lokale Gastronomie, Natur, Clubs, Schulen, Fahrtzeiten und
+                Orte, die auch Einheimische gerne besuchen. So erleben Sie,
+                wie sich der Alltag tatsächlich anfühlen kann.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Moraira Haus kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Ruhiges und elegantes Wohnen an der Küste, mit Villen,
-                  Buchten, Restaurants, internationalen Bewohnern und einer
-                  gepflegten residentialen Atmosphäre.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Jávea Immobilie kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Ein lebendiger internationaler Lebensstil mit Stränden,
-                  Restaurants, Sportclubs, Schulen, Unternehmertum und Energie
-                  das ganze Jahr über.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Altea Immobilie kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Kultur, Schönheit, Meerblick, Kunst, Gastronomie und
-                  mediterrane Raffinesse in einer stilvollen Umgebung.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Benissa Villa kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Raum, Privatsphäre, Authentizität, ländliches Wohnen, Fincas,
-                  Villen und versteckte Buchten an der Küste.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Calpe Wohnung oder Neubau kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Wohnen am Strand, Hafenleben, Wohnungen, Neubauprojekte,
-                  Einrichtungen und eine aktivere Atmosphäre.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">
-                  Dénia Haus oder Wohnung kaufen
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Gastronomie, Hafenleben, tägliche Einrichtungen, Fähre nach
-                  Ibiza und eine lebendige Stadt, die das ganze Jahr aktiv
-                  bleibt.
-                </p>
-              </div>
+              {[
+                [
+                  "Moraira und Benissa",
+                  "Elegante Küstenorte mit Villen, Buchten, Restaurants, internationaler Gemeinschaft, Ruhe und einem gehobenen Wohnambiente.",
+                ],
+                [
+                  "Jávea und Dénia",
+                  "Ein lebendiger Lebensstil mit Stränden, Hafenleben, Gastronomie, Sportclubs, Schulen und ganzjährig verfügbaren Einrichtungen.",
+                ],
+                [
+                  "Altea und Alicante",
+                  "Kultur, Architektur, städtische Infrastruktur, Meerblick und mediterrane Eleganz – von stimmungsvollen Altstädten bis zu modernen Wohngebieten.",
+                ],
+                [
+                  "Calpe und die Küstenregion",
+                  "Strand, Yachthafen, Apartments, Neubau, Einrichtungen des täglichen Bedarfs und gute Verbindungen entlang der nördlichen Costa Blanca.",
+                ],
+                [
+                  "Vall de Pop",
+                  "Das grüne Hinterland mit Dörfern wie Jalón/Xaló und Llíber, umgeben von Bergen, Weinbergen und Mandelbäumen – interessant für alle, die Ruhe, Weite und Authentizität suchen.",
+                ],
+                [
+                  "Orte abseits des Massentourismus",
+                  "Lokale Märkte, gehobene Gastronomie, Familienbetriebe, ruhige Dörfer und Orte, die Sie online kaum finden, die den Alltag jedoch besonders machen.",
+                ],
+              ].map(([title, description]) => (
+                <div
+                  key={title}
+                  className="rounded-[32px] bg-white p-8 shadow-sm"
+                >
+                  <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                    {title}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">
+                    {description}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <p className="mt-12 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Wir helfen Ihnen, die Unterschiede zwischen den Gebieten zu
-              verstehen: Atmosphäre, Immobilientypen, Schulen, Gesundheitswesen,
-              Fahrzeiten, internationale Gemeinschaft, Restaurants,
-              Sportmöglichkeiten, tägliche Einrichtungen, Vermietungspotenzial,
-              Erreichbarkeit und praktische Eignung auf lange Sicht.
+              Unsere eigene Liebe zum Wasser, zum Leben an der Küste und zum
+              Wassersport führte uns in diese Region. Doch auch das weniger
+              bekannte Hinterland hat unser Herz erobert. Im Vall de Pop
+              finden Sie einen anderen Rhythmus, mehr Ruhe und häufig mehr
+              Möglichkeiten für Ihr Budget als in den bekanntesten
+              Küstenorten.
             </p>
+
+            <a
+              href="/de/regions"
+              className="mt-8 inline-block rounded-full border border-[#1e2a3a] px-8 py-4 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
+            >
+              Mehr über die Regionen erfahren
+            </a>
           </div>
         </section>
 
-        {/* PROFESSIONALS */}
+        {/* FACHLEUTE */}
         <section className="px-8 pb-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Kaufbegleitung Spanien
+                Unser zuverlässiges Netzwerk in Spanien
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Treffen Sie die Spezialisten, die Ihren Immobilienkauf in
-                Spanien möglich und sicherer machen.
+                Lernen Sie die Menschen hinter den Kulissen kennen, die Ihnen
+                bei der Verwirklichung Ihrer Pläne helfen können.
               </h2>
             </div>
 
             <div className="rounded-[40px] bg-white p-10 shadow-sm">
               <p className="text-lg leading-relaxed text-stone-600">
-                Während Ihrer 4-tägigen Buyer Discovery Trip stellen wir Ihnen
-                zuverlässige unabhängige Fachleute und lokale Kontakte vor, die
-                Ihnen helfen, den Kaufprozess in Spanien gut zu verstehen, bevor
-                Sie ein Angebot abgeben oder Dokumente unterschreiben.
+                Während des Buyer Discovery Trips lernen Sie zuverlässige
+                lokale und unabhängige Fachleute kennen, die zu Ihrer
+                Situation passen. Dazu können ein Immobilienanwalt,
+                Hypothekenberater, technischer Gutachter, Bauunternehmer,
+                Architekt, Versicherungsspezialist oder ein anderer lokaler
+                Experte gehören.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
                   "Unabhängiger Immobilienanwalt",
-                  "Bausachverständiger",
-                  "Finanzierungsberater oder Hypothekenspezialist",
-                  "Spanischer Notar, wo relevant",
-                  "Bankkontakt",
-                  "Versicherungsspezialist",
-                  "Lokaler Immobilienexperte",
-                  "Steuer- oder Umzugsberater, wo relevant",
+                  "Hypothekenberater oder Finanzierungsspezialist",
+                  "Technischer Gutachter oder Bausachverständiger",
+                  "Bauunternehmer, Architekt oder Renovierungsspezialist",
+                  "Bank- und Versicherungskontakt",
+                  "Lokaler Immobilien- und Regionsexperte",
+                  "Steuer- oder Umzugsberater, sofern relevant",
+                  "Interior- und lokale Umsetzungspartner",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                     <p className="font-medium text-[#1e2a3a]">{item}</p>
@@ -679,57 +688,53 @@ export default function BuyerDiscoveryTripPage() {
               </div>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Diese Gespräche geben Ihnen Klarheit über rechtliche Prüfungen,
-                bautechnische Aufmerksamkeitspunkte, Finanzierungsmöglichkeiten,
-                Bankanforderungen, Versicherungen, Kaufnebenkosten, jährliche
-                Kosten, Steuern, Dokumentation, Reservierungsverträge und häufige
-                Fehler ausländischer Käufer.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Sie können Ihre Fragen direkt stellen und reisen mit einem
-                klareren Bild nach Hause: wen Sie brauchen, welche Schritte
-                folgen und wie Sie Immobilien in Spanien strukturierter,
-                kontrollierter und sicherer kaufen können.
+                Während der Reise können Sie direkte Fragen zu Finanzierung,
+                rechtlichen Prüfungen, Renovierung, Technik, Kaufnebenkosten,
+                Versicherungen und praktischen nächsten Schritten stellen. Je
+                nach Ihrem Bedarf finden wir innerhalb unseres Netzwerks den
+                passenden Fachmann.
               </p>
             </div>
           </div>
         </section>
 
-        {/* LIFESTYLE */}
+        {/* LEBENSSTIL */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Erleben Sie den Lebensstil
+              Erleben Sie Ihren möglichen neuen Lebensstil
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Eine Immobilie ist nur ein Teil Ihrer Entscheidung. Das Leben
-              darum herum ist mindestens genauso wichtig.
+              Nicht nur Immobilien besichtigen, sondern entdecken, wie sich
+              Ihr Alltag an der Costa Blanca anfühlen könnte.
             </h2>
 
             <p className="mt-8 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Deshalb enthält die Buyer Discovery Trip Aktivitäten, die zu Ihren
-              Interessen und der Region passen, die Sie erkunden. Sie erleben
-              Wohnviertel, Lunches, Clubs, Natur, Gastronomie und lokale
-              Begegnungen so, wie Sie sie später auch in Ihrem täglichen Leben
-              erfahren könnten.
+              Auf Grundlage Ihres Erstgesprächs und Ihrer Interessen ergänzen
+              wir passende Erlebnisse. Wenn Sie über ein Leben im Vall de Pop
+              nachdenken, kann dies beispielsweise eine Olivenölverkostung,
+              ein lokaler Markt, ein Weingut oder eine Pasta- und
+              Kochaktivität sein. Passt das Küstenleben besser zu Ihnen, kann
+              ein Segeltörn, der Besuch einer Marina, ein Golferlebnis oder
+              ein Mittagessen am Wasser mehr aussagen als eine weitere
+              Immobilienanzeige.
             </p>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Gemeinsame lokale Lunches",
-                "Fine Dining und Gastronomie",
-                "Pasta selbst machen oder Cooking Workshop",
-                "Golf Tour oder Besuch eines Golfclubs",
-                "Weinverkostungen",
-                "Beachclubs und Marinas",
-                "Wellness- und Spa-Erlebnisse",
-                "Wander- und Naturrouten",
-                "Kulturelle Besuche",
-                "Netzwerk-Introductions",
-                "Community Gatherings",
-                "Individuelle Privatsphäre-Momente",
+                "Lokale und gehobene Gastronomie",
+                "Olivenöl- oder Weinverkostung",
+                "Pasta herstellen oder Kochworkshop",
+                "Segeltörn oder Besuch einer Marina",
+                "Golfclub oder Golferlebnis",
+                "Lokale Märkte und Familienbetriebe",
+                "Natur, Wandern und das Hinterland",
+                "Wohnviertel und Dörfer abseits des Tourismus",
+                "Wellness und entspanntes Leben an der Küste",
+                "Schulen, Clubs und Gemeinschaft",
+                "Begegnungen mit Einheimischen",
+                "Eigene Momente für Privatsphäre und Ruhe",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium text-[#1e2a3a]">{item}</p>
@@ -738,90 +743,185 @@ export default function BuyerDiscoveryTripPage() {
             </div>
 
             <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Möchten Sie gemeinsam lunchen und die lokalen Wohnviertel erleben,
-              ist dafür Raum. Wünschen Sie Privatsphäre, ziehen Sie sich in Ihr
-              eigenes Hotelzimmer, Ihre Suite oder Finca zurück. Die Reise ist
-              organisiert, aber sie fühlt sich nicht massenhaft an.
+              Die Aktivitäten sind kein festes touristisches Programm. Wir
+              stimmen sie so weit wie möglich auf die Teilnehmer ab, damit Sie
+              die Umgebung ausgehend von Ihren eigenen Interessen und Ihrem
+              möglichen zukünftigen Leben entdecken.
             </p>
           </div>
         </section>
 
-        {/* WAS WIR FÜR SIE TUN */}
+        {/* PURCHASE SAFETY */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#1e2a3a] text-white">
+            <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="p-12 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                  Verlieben Sie sich in eine Immobilie? Treffen Sie keine
+                  vorschnelle Entscheidung.
+                </p>
+
+                <h2 className="mt-5 font-serif text-5xl leading-tight">
+                  Zwei unabhängige Prüfungen vor unserer Kaufempfehlung.
+                </h2>
+
+                <p className="mt-8 text-lg leading-relaxed text-white/80">
+                  Wenn eine Immobilie ernsthaft infrage kommt, koordinieren
+                  wir eine technische Kaufinspektion durch einen unabhängigen
+                  Gutachter sowie die rechtliche Due Diligence durch einen
+                  geeigneten unabhängigen Anwalt. So basiert Ihre Entscheidung
+                  nicht nur auf Gefühl, Fotos oder einer Besichtigung.
+                </p>
+
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  Beide Fachleute bleiben für ihre eigene Prüfung und
+                  Berichterstattung verantwortlich. Nordic Move überwacht die
+                  Koordination, führt die wichtigsten Erkenntnisse zusammen
+                  und gibt darauf basierend eine klare Empfehlung für die
+                  nächsten Schritte: fortfahren, neu bewerten oder nicht
+                  kaufen.
+                </p>
+
+                <a
+                  href="/de/services/purchase-safety-report"
+                  className="mt-9 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                >
+                  Purchase Safety entdecken
+                </a>
+              </div>
+
+              <div className="bg-white p-10 text-stone-900 lg:p-16">
+                <h3 className="font-serif text-4xl leading-tight text-[#1e2a3a]">
+                  Was wird geprüft?
+                </h3>
+
+                <div className="mt-8 grid gap-6 md:grid-cols-2">
+                  <div className="rounded-[28px] bg-[#f6f1ea] p-7">
+                    <h4 className="font-serif text-2xl text-[#1e2a3a]">
+                      Technische Inspektion
+                    </h4>
+                    <ul className="mt-5 space-y-3 text-sm leading-relaxed text-stone-600">
+                      <li>• Sichtbarer und zugänglicher baulicher Zustand</li>
+                      <li>• Feuchtigkeit, Wassereintritt und sichtbare Mängel</li>
+                      <li>
+                        • Dach, Fassaden, Terrassen und Nebengebäude, soweit
+                        zugänglich
+                      </li>
+                      <li>• Sichtbare Installationen, Pool und Grundstück</li>
+                      <li>
+                        • Hinweise auf Reparaturbedarf und zusätzliche
+                        Untersuchungen
+                      </li>
+                      <li>
+                        • Abgleich der Immobilie mit verfügbaren
+                        Informationen, soweit möglich
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="rounded-[28px] bg-[#f6f1ea] p-7">
+                    <h4 className="font-serif text-2xl text-[#1e2a3a]">
+                      Rechtliche Due Diligence
+                    </h4>
+                    <ul className="mt-5 space-y-3 text-sm leading-relaxed text-stone-600">
+                      <li>• Eigentum und Verfügungsberechtigung des Verkäufers</li>
+                      <li>• Belastungen, Schulden und relevante Registereinträge</li>
+                      <li>
+                        • Genehmigungen und rechtlicher Status, soweit
+                        anwendbar
+                      </li>
+                      <li>• Reservierungs-, Kauf- und Übertragungsbedingungen</li>
+                      <li>• Rechtliche Risiken und erforderliche Bedingungen</li>
+                      <li>
+                        • Begleitung auf dem Weg zu einer verantwortungsvollen
+                        Eigentumsübertragung
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="mt-8 text-sm leading-relaxed text-stone-500">
+                  Keine Inspektion kann absolute Sicherheit garantieren.
+                  Zusätzliche fachliche Untersuchungen können erforderlich
+                  sein und werden gesondert besprochen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* WAS WIR TUN */}
         <section className="px-8 pb-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Was wir für Sie tun
+                Ein fester Ansprechpartner
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Wir begleiten, koordinieren und helfen Ihnen, eine bessere und
-                sicherere Immobilienentscheidung in Spanien zu treffen.
+                Wir verbinden Ihr Area Match, die Immobilienauswahl, die
+                Reise, Experten und nächsten Schritte zu einem klaren
+                Gesamtprozess.
               </h2>
             </div>
 
             <div className="text-lg leading-relaxed text-stone-600">
               <p>
-                Wir koordinieren die vollständige 4-tägige Erfahrung: Intake,
-                Area Match Report, Gruppenzusammenstellung, Unterkunft, privater
-                Chauffeur, Regionstouren, sorgfältig ausgewählte individuelle
-                Immobilienbesichtigungen, Lunches, Lifestyle-Aktivitäten und
-                Treffen mit unabhängigen Fachleuten.
+                Nordic Move koordiniert das Erstgespräch, den
+                Area-Match-Bericht, Ihre Shortlist, die
+                Gruppenzusammensetzung, Unterkunft, Transfers, Regionstouren,
+                Immobilienbesichtigungen, lokale Erlebnisse und Begegnungen
+                mit unabhängigen Fachleuten.
               </p>
 
               <p className="mt-6">
-                Wir helfen Ihnen, Gebiete zu vergleichen, praktische Unterschiede
-                zu verstehen, die richtigen Fragen zu stellen und häufige Fehler
-                zu vermeiden, bevor Sie ernsthaft Immobilien in Spanien kaufen.
+                Wir helfen Ihnen, Regionen und Immobilien zu vergleichen, die
+                richtigen Fragen zu stellen und wichtige technische,
+                rechtliche, finanzielle und praktische Themen rechtzeitig
+                sichtbar zu machen.
               </p>
 
               <p className="mt-6">
-                Unsere Rolle ist nicht, Ihnen eine Immobilie aufzudrängen. Unsere
-                Rolle ist, Ihnen zu helfen, eine bessere Entscheidung über
-                Region, Lebensstil, Budget, Kaufprozess, Risiken und Begleitung
-                zu treffen.
-              </p>
-
-              <p className="mt-6">
-                Wenn ein Gebiet nicht zu Ihrem Profil passt, sagen wir das. Wenn
-                ein bestimmter Immobilientyp rechtliche, praktische,
-                bautechnische oder Lifestyle-Aufmerksamkeitspunkte hat, helfen
-                wir Ihnen, das rechtzeitig zu verstehen.
+                Unsere Aufgabe ist nicht, Sie möglichst schnell zum Kauf einer
+                Immobilie zu bewegen. Unsere Aufgabe ist, Sie zügig zu einer
+                fundierteren Entscheidung zu führen – auch wenn die richtige
+                Schlussfolgerung lautet, nicht fortzufahren.
               </p>
             </div>
           </div>
         </section>
 
-        {/* INBEGRIFFEN */}
+        {/* ENTHALTENE LEISTUNGEN */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Was ist inbegriffen
+              Was ist enthalten?
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Ihre 4-tägige Buyer Discovery Trip enthält alles für eine klare
-              erste Entscheidung über Wohnen und Kaufen in Spanien.
+              Alles, was Sie für eine gezielte erste Entscheidung über das
+              Leben und den Immobilienkauf an der Costa Blanca Nord benötigen.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                "Kostenloses persönliches Intake-Gespräch vor Ankunft",
-                "Kostenloser Area Match Report",
-                "Persönliches Lifestyle- und Gebietsprofil",
-                "Sorgfältig ausgewählte Gruppenzusammenstellung",
-                "Vollständig organisiertes 4-tägiges Programm",
-                "Privater Chauffeur und geplante Transfers",
-                "Aufenthalt im 5-Sterne-Hotel, in einer Luxussuite, einem Resort oder einer Finca",
-                "Begleitete Regionstouren an der Costa Blanca Nord",
-                "Selektive individuelle Immobilienbesichtigungen auf Basis Ihres Intakes",
-                "Häuser ausgewählt nach Budget, Region, Bedürfnissen und Lebensstil",
-                "Treffen mit Anwalt, Bausachverständigem und Finanzierungsberater",
-                "Treffen mit Bank-, Steuer- und Versicherungskontakten, wo relevant",
-                "Gemeinsame Lunches und lokale Lifestyle-Erlebnisse",
-                "Aktivitäten wie Cooking Workshop, Weinverkostung oder Golf Tour",
-                "Privatsphäre und Ruhephasen in Ihrer eigenen Unterkunft",
-                "Mehr rechtliche, finanzielle und bautechnische Klarheit vor dem Kauf",
+                "Persönliches Erstgespräch vor der Anreise",
+                "Kostenloser Area-Match-Bericht",
+                "Analyse Ihrer Wünsche, Ihres Budgets, Ihrer Hobbys und Zukunftspläne",
+                "Shortlist mit in der Regel 4 bis 8 Immobilien",
+                "Ihre Auswahl der gewünschten Besichtigungen",
+                "Optionale Wildcard-Immobilie",
+                "Kleine, sorgfältig zusammengestellte Gruppe",
+                "Vollständig organisiertes 4-Tage-Programm",
+                "Persönliche Abholung am Flughafen und geplante Transfers",
+                "4- oder 5-Sterne-Hotel, Luxussuite, Resort oder Finca",
+                "Regionstouren von der Küste bis ins Vall de Pop",
+                "Gezielte individuelle Immobilienbesichtigungen",
+                "Individuell abgestimmte Lifestyle-Erlebnisse",
+                "Lokale Orte abseits des Massentourismus",
+                "Kennenlernen eines Anwalts und Hypothekenberaters",
+                "Kennenlernen technischer und ausführender Experten, sofern relevant",
+                "Zeit, Ihre Fragen direkt an Experten zu stellen",
                 "Klare nächste Schritte nach der Reise",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-white/80 p-5">
@@ -844,26 +944,30 @@ export default function BuyerDiscoveryTripPage() {
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
                 Sie reisen nicht mit vagen Eindrücken ab, sondern mit Klarheit
-                über Haus kaufen in Spanien.
+                über den Immobilienkauf in Spanien.
               </h2>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 "Welche Gebiete an der Costa Blanca Nord zu Ihrem Lebensstil passen",
-                "Welche Gebiete weniger geeignet für Sie sind",
-                "Welche besichtigten Immobilien am besten zu Budget, Familie und Zielen passen",
-                "Welcher Immobilientyp realistisch zu Ihrem Area Match Report passt",
-                "Was der Kaufprozess in Spanien beinhaltet",
-                "Welche rechtlichen, finanziellen und bautechnischen Themen Aufmerksamkeit brauchen",
-                "Wie das tägliche Leben nach dem Kauf aussehen könnte",
+                "Welche Gebiete für Sie weniger geeignet sind",
+                "Welche besichtigten Immobilien am besten zu Ihrem Budget, Ihrer Familie und Ihren Zielen passen",
+                "Welcher Immobilientyp realistisch zu Ihrem Area-Match-Bericht passt",
+                "Was der Kaufprozess in Spanien umfasst",
+                "Welche rechtlichen, finanziellen und baulichen Themen besondere Aufmerksamkeit erfordern",
+                "Wie Ihr Alltag nach dem Kauf aussehen könnte",
                 "Welche Fachleute Sie unterstützen können",
-                "Welche lokale Gemeinschaft und gleichgesinnten Menschen Sie kennenlernen können",
-                "Welche Risiken und nächsten Prüfschritte vor einer Kaufentscheidung wichtig sind",
-                "Ob Sie bereit sind für den nächsten Schritt Richtung Kauf",
+                "Welche lokale Gemeinschaft und welche Gleichgesinnten Sie kennenlernen können",
+                "Ob Sie bereit für den nächsten Schritt in Richtung Kauf sind",
               ].map((item) => (
-                <div key={item} className="rounded-[28px] bg-white p-7 shadow-sm">
-                  <p className="text-lg leading-relaxed text-stone-600">{item}</p>
+                <div
+                  key={item}
+                  className="rounded-[28px] bg-white p-7 shadow-sm"
+                >
+                  <p className="text-lg leading-relaxed text-stone-600">
+                    {item}
+                  </p>
                 </div>
               ))}
             </div>
@@ -874,12 +978,12 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Für wen ist diese Reise?
+              Für wen ist diese Reise geeignet?
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Ideal für seriöse Käufer, die die Costa Blanca Nord zuerst gut
-              verstehen möchten, bevor sie eine Immobilie kaufen.
+              Ideal für ernsthafte Käufer, die die Costa Blanca Nord zunächst
+              wirklich verstehen möchten, bevor sie eine Immobilie kaufen.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -887,9 +991,9 @@ export default function BuyerDiscoveryTripPage() {
                 "Deutsche Käufer, die ein Haus in Spanien kaufen möchten",
                 "Schweizer, österreichische und internationale Käufer an der Costa Blanca Nord",
                 "Familien, die einen Umzug nach Spanien erwägen",
-                "Pensionäre, die einen neuen Lebensstil planen",
+                "Ruheständler, die einen neuen Lebensstil planen",
                 "Unternehmer und Remote Worker",
-                "Käufer einer zweiten Immobilie in Spanien",
+                "Käufer eines Zweitwohnsitzes in Spanien",
                 "Menschen, die Moraira, Jávea, Altea, Benissa, Calpe und Dénia vergleichen",
                 "Kunden, die professionelle Kaufbegleitung wünschen",
                 "Menschen, die gleichgesinnte zukünftige Bewohner kennenlernen möchten",
@@ -912,49 +1016,59 @@ export default function BuyerDiscoveryTripPage() {
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Häufig gestellte Fragen zum Hauskauf an der Costa Blanca Nord.
+              Häufig gestellte Fragen zum Buyer Discovery Trip und zum
+              Immobilienkauf an der Costa Blanca Nord.
             </h2>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2">
               {[
                 {
                   question:
-                    "Ist die Buyer Discovery Trip eine normale Besichtigungsreise?",
+                    "Wie werden die Immobilien für meine Reise ausgewählt?",
                   answer:
-                    "Nein. Die Reise kombiniert Regionstouren, Lifestyle-Erlebnisse, selektive individuelle Immobilienbesichtigungen, professionelle Erklärung, Sicherheitscheckpoints und Begegnungen mit gleichgesinnten Käufern.",
+                    "Ihr Area-Match-Bericht, das Erstgespräch, Ihr Budget, Ihre Wohnwünsche, Interessen und Zukunftspläne bilden die Grundlage. Über unser lokales Netzwerk erstellen wir in der Regel eine Shortlist mit 4 bis 8 passenden Immobilien.",
+                },
+                {
+                  question: "Kann ich selbst auswählen, welche Immobilien ich besichtige?",
+                  answer:
+                    "Ja. Sie erhalten die Shortlist vor der Abreise und wählen aus, welche Immobilien Sie während der Reise besichtigen möchten. Anschließend organisieren wir die Termine und eine sinnvolle Route.",
+                },
+                {
+                  question: "Was ist eine Wildcard-Immobilie?",
+                  answer:
+                    "Eine Wildcard ist eine Immobilie, die außerhalb Ihres ursprünglichen Suchprofils liegt, aufgrund ihrer Lage, Umgebung, ihres Preises, Platzangebots oder Grundrisses jedoch überraschend gut zu Ihnen passen kann. Sie ist immer optional.",
+                },
+                {
+                  question: "Wo übernachte ich während der Reise?",
+                  answer:
+                    "Sie übernachten in einem sorgfältig ausgewählten 4- oder 5-Sterne-Hotel, Boutique-Resort, einer Luxussuite oder Finca in einer Umgebung, die zu Ihrem Area Match und dem Programm passt.",
+                },
+                {
+                  question: "Lerne ich während der Reise auch Fachleute kennen?",
+                  answer:
+                    "Ja. Abhängig von Ihren Bedürfnissen können Sie unter anderem einen unabhängigen Immobilienanwalt, Hypothekenberater, technischen Gutachter, Bauunternehmer, Architekten und weitere lokale Spezialisten kennenlernen. Sie können ihnen Ihre Fragen direkt stellen.",
+                },
+                {
+                  question: "Ist die Reise eine gewöhnliche Gruppenreise?",
+                  answer:
+                    "Nein. Die Gruppe ist klein und wird sorgfältig anhand ähnlicher Bedürfnisse, Interessen und Lebensphasen zusammengestellt. Das Programm umfasst gemeinsame Momente, bietet jedoch auch ausreichend Privatsphäre und individuelle Immobilienbesichtigungen.",
                 },
                 {
                   question:
-                    "Ist die Reise für Menschen gedacht, die noch zwischen Regionen zweifeln?",
+                    "Was passiert, wenn ich mich in eine Immobilie verliebe?",
                   answer:
-                    "Ja. Die Reise ist genau dafür gedacht, Moraira, Jávea, Altea, Benissa, Calpe und Dénia besser zu vergleichen, bevor Sie eine Immobilie wählen.",
+                    "Wir helfen Ihnen, keine vorschnelle Entscheidung zu treffen. Für eine fundierte Kaufempfehlung koordinieren wir eine unabhängige technische Inspektion und die rechtliche Due Diligence durch einen geeigneten Anwalt.",
                 },
                 {
-                  question:
-                    "Besichtige ich während der Reise auch Häuser?",
+                  question: "Welche Regionen kann ich entdecken?",
                   answer:
-                    "Ja. Auf Basis Ihres Intakes und Area Match Reports wählen wir eine begrenzte Anzahl an Immobilien aus, die zu Ihrem Budget, Ihrer gewünschten Region, Ihren Bedürfnissen und Ihrem Lebensstil passen.",
-                },
-                {
-                  question:
-                    "Treffe ich während der Reise auch Fachleute?",
-                  answer:
-                    "Ja. Wo relevant treffen Sie unter anderem einen Anwalt, Bausachverständigen, Finanzierungsberater, Bankkontakt, Versicherungsexperten und lokalen Immobilienprofi.",
-                },
-                {
-                  question:
-                    "Hilft mir die Reise, sicherer in Spanien zu kaufen?",
-                  answer:
-                    "Ja. Sie erhalten mehr Klarheit über Region, Immobilienauswahl, rechtliche Prüfung, bautechnische Aufmerksamkeitspunkte, Finanzierung, Kosten, Risiken und die nächsten Schritte vor einer Kaufentscheidung.",
-                },
-                {
-                  question:
-                    "Habe ich während der Gruppenreise auch Privatsphäre?",
-                  answer:
-                    "Ja. Sie reisen mit einer sorgfältig ausgewählten Gruppe, wohnen aber in Ihrem eigenen Zimmer, Ihrer Suite, Ihrem Hotel oder Ihrer Finca und haben Momente, um sich zurückzuziehen.",
+                    "Abhängig von Ihrem Profil erkunden wir Gebiete von Alicante, Altea, Calpe und Moraira bis Jávea, Dénia, Benissa und das Hinterland des Vall de Pop.",
                 },
               ].map((item) => (
-                <div key={item.question} className="rounded-[28px] bg-[#f6f1ea] p-7">
+                <div
+                  key={item.question}
+                  className="rounded-[28px] bg-[#f6f1ea] p-7"
+                >
                   <h3 className="font-serif text-2xl text-[#1e2a3a]">
                     {item.question}
                   </h3>
@@ -971,31 +1085,31 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-32">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              4-tägige Buyer Discovery Trip anfragen
+              Ihren persönlichen Buyer Discovery Trip anfragen
             </p>
 
-            <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-              Wenn Sie ernsthaft darüber nachdenken, ein Haus in Spanien zu
-              kaufen, ist die wichtigste Entscheidung nicht nur die Immobilie.
+            <h2 className="mt-6 max-w-4xl font-serif text-5xl leading-tight md:text-6xl">
+              Vom Area Match und der Shortlist bis zum Regionserlebnis, zu
+              Experten und einer fundierteren Kaufentscheidung.
             </h2>
 
             <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-              Es geht um die richtige Region, den richtigen Lebensstil, die
-              richtige Immobilienauswahl, die richtige Begleitung, mehr
-              Sicherheit und die richtigen Menschen um Sie herum.
+              Entdecken Sie nicht nur, welche Immobilie Ihnen gefällt, sondern
+              welche Umgebung, welcher Lebensstil und welche Menschen wirklich
+              zu Ihrer Zukunft in Spanien passen.
             </p>
 
             <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/75">
-              Fragen Sie Ihre 4-tägige Buyer Discovery Trip an und entdecken Sie,
-              welche Region, welches Wohnviertel und welche Immobilie an der
-              Costa Blanca Nord wirklich zu Ihrer Zukunft in Spanien passen.
+              Sie behalten einen festen Ansprechpartner. Wir koordinieren die
+              Reise, die passenden Immobilien, lokale Erlebnisse und die
+              Fachleute, die Sie benötigen.
             </p>
 
             <a
-              href="/contact"
+              href="/de/contact"
               className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              4-tägige Buyer Discovery Trip anfragen
+              Ihren Buyer Discovery Trip anfragen
             </a>
           </div>
         </section>

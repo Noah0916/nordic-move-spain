@@ -124,10 +124,11 @@ export default function AboutUsPage() {
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
               Willeke combineert praktische ervaring met internationale
-              verhuizingen met een academische achtergrond in marketing,
-              strategie en organisatieanalyse. Zij behaalde een master met een
-              specialisatie in Marketing en Strategie en werkte eerder als
-              universitair docent. Daarbij begeleidde zij studenten tijdens hun
+              verhuizingen met een achtergrond in marketing, strategie en
+              organisatieanalyse. Zij behaalde een master met een specialisatie
+              in Marketing en Strategie en werkte eerder als opleidingsmanager
+              van een businessopleiding en als docent in strategie, marketing en
+              onderzoek. Daarbij begeleidde zij studenten tijdens hun
               afstudeeronderzoek en hielp zij hen complexe organisatorische en
               strategische vraagstukken te analyseren.
             </p>
@@ -144,8 +145,8 @@ export default function AboutUsPage() {
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Naast haar academische loopbaan richtte Willeke in Nederland een
-              internationale relocationservice op. Zij begeleidde expats en
+              Naast haar werk in het hoger onderwijs richtte Willeke in Nederland
+              een internationale relocationservice op. Zij begeleidde expats en
               internationale professionals bij huisvesting, administratie,
               onderwijs, gezondheidszorg en de praktische realiteit van het
               opbouwen van een nieuw leven in een ander land.

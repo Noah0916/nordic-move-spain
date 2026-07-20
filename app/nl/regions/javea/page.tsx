@@ -314,7 +314,7 @@ export default function JaveaNlPage() {
       {/* HERO */}
       <section className="relative flex min-h-[85vh] items-center overflow-hidden pt-32">
         <img
-          src="/images/javea.jpg"
+          src="/images/javea.png"
           alt="Jávea Costa Blanca Noord gebiedsgids voor kopers"
           className="absolute inset-0 h-full w-full object-cover"
         />

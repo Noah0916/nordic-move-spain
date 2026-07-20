@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Purchase Safety Report | Buy Safely on the Costa Blanca North",
+  title: "Purchase Safety Report | Buy property safely on the Costa Blanca North",
   description:
-    "A structured purchase risk overview for buyers who want a property on the Costa Blanca North reviewed legally, technically and practically by independent professionals before purchase.",
+    "Purchase Safety for buyers on the Costa Blanca North: an independent technical property inspection, initial document and registration screening, and full legal due diligence by an independent Spanish lawyer.",
   openGraph: {
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Do not buy on feeling alone. Have a property on the Costa Blanca North reviewed by independent professionals before purchase.",
+      "An independent technical property inspection and document screening, combined with full legal due diligence by an independent Spanish lawyer.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "A structured purchase risk overview with findings from independent professionals before you buy in Spain.",
+      "Two independent professional assessments and one clear Nordic Move purchase recommendation: proceed, reconsider or walk away.",
   },
 };
 
@@ -68,7 +68,7 @@ export default function PurchaseSafetyReportPage() {
       <section className="relative flex min-h-[88vh] items-center overflow-hidden">
         <img
           src="/images/legal.png"
-          alt="Purchase Safety Report for buying a property on the Costa Blanca North"
+          alt="Purchase Safety Report for buying property on the Costa Blanca North"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -85,10 +85,10 @@ export default function PurchaseSafetyReportPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl leading-relaxed text-white">
-              A structured purchase risk overview for buyers who do not want to
-              buy a property on the Costa Blanca North on feeling alone, but with
-              findings from independent professionals and clear legal, technical
-              and practical points of attention.
+              An independently carried out technical property inspection with
+              initial document and registration screening, together with full
+              legal due diligence by an independent Spanish lawyer — all
+              coordinated by Nordic Move.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -126,33 +126,32 @@ export default function PurchaseSafetyReportPage() {
           <div>
             <p className="text-lg leading-relaxed text-stone-600">
               Many international buyers focus during a viewing on the view,
-              space, atmosphere and location. That is understandable. But the
-              real risks are often behind the scenes: incomplete documents, an
-              extension that is not properly registered, unclear plot boundaries,
-              technical defects, moisture issues, septic tanks, community rules
-              or unexpected costs.
+              space, atmosphere and location. That is understandable. The real
+              risks are often behind the scenes: incomplete documents, an
+              extension that is not properly registered, unclear plot
+              boundaries, technical defects, moisture, septic tanks, community
+              rules or unexpected costs.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              The Purchase Safety Report helps you get a clearer picture of
-              these points before purchase. We coordinate the purchase review
-              with independent professionals and bring their findings together in
-              one clear overview. This helps you decide whether you can move
-              forward with confidence, renegotiate or walk away from the
-              property.
+              Purchase Safety helps make these issues clearer before you buy.
+              We coordinate an independent technical property inspection with
+              document and registration screening and also work with an
+              independent Spanish lawyer for the full legal due diligence.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Our role is not to replace legal, tax or technical advice. Our role
-              is to bring the right specialists to the table, structure the
-              process and make the most important points of attention easier to
-              understand for international buyers.
+              Based on both professional assessments, we bring together the
+              main findings, outstanding questions and conditions and provide a
+              clear purchase recommendation: proceed, reconsider or walk away.
+              Nordic Move does not replace either the surveyor or the lawyer;
+              both remain responsible for their own review and advice.
             </p>
           </div>
         </div>
       </section>
 
-      {/* SPECIALISTS */}
+      {/* PROFESSIONALS */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-4xl">
@@ -161,133 +160,96 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Expert checks for one clear purchase overview.
+              Two independent assessments for a clearer purchase picture.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Depending on the property and the situation, we work with an
-              independent lawyer, notary, gestor and technical building
-              specialist. Each professional assesses the property and purchase
-              process from their own area of expertise.
+              We coordinate an independent surveyor for the technical property
+              assessment and initial document and registration screening. We
+              also work with an independent Spanish lawyer who carries out the
+              full legal due diligence and acts solely in the buyer’s interest.
             </p>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Legal review
+                Full legal due diligence
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Independent lawyer
+                Independent Spanish lawyer
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                The lawyer reviews the legal side of the purchase. This includes
-                ownership, the Nota Simple, possible charges, outstanding debts,
-                purchase contracts, permits, registered information and legal
-                risks that need to be clear before signing.
+                The independent Spanish lawyer reviews matters including
+                ownership, registered charges, possible debts and taxes, legal
+                and planning status, permits, community documentation, purchase
+                contracts and the conditions of the ownership transfer.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                The lawyer works independently and is responsible for their own
-                legal assessment. This helps you understand which legal points
-                must first be resolved or investigated further.
+                The lawyer works independently, represents the buyer and remains
+                responsible for their own legal review and advice. The
+                surveyor’s document screening does not replace this legal due
+                diligence.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Deed and transfer
+                Document and registration screening
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Notary and gestor
+                Initial review of available documents
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                The notary plays an important role in the formal transfer. The
-                notary verifies the identity of the parties, oversees the signing
-                of the title deed and ensures that the transfer is recorded
-                according to the correct procedure.
+                The surveyor reviews and compares the available documents and
+                registrations, including the Nota Simple, Catastro, IBI,
+                Energy Performance Certificate (CEE), ITE where relevant,
+                estate agent information and available permits and licences.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                A gestor or administrative specialist can also help with
-                practical and administrative checks, such as cadastral data, plot
-                information, registrations, taxes, local procedures and follow-up
-                after the purchase.
+                Official and measured floor areas are also compared. Possible
+                unregistered parts of the property, extensions, garages or
+                pools are flagged. The report may also include observations on
+                planning, the owners’ community, Coastal Law and other relevant
+                factors.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Technical review
+                Technical property assessment
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Building engineer
+                Independent surveyor
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                The technical specialist or building engineer reviews the visible
-                condition of the property. This can include moisture, cracks,
-                roofing, installations, pipes, electricity, the swimming pool,
-                septic tank, maintenance risks and potential renovation points.
+                The independent surveyor assesses the visible and accessible
+                technical condition of the property. This includes construction
+                and build quality, moisture, water ingress and visible leaks,
+                installations and services at a functional level, as well as
+                the pool and outbuildings.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                This review helps estimate hidden costs more clearly and reduces
-                the chance of discovering after purchase that important technical
-                elements need attention or investment.
+                The report identifies necessary repairs, recommendations and
+                further points requiring attention and includes supporting
+                photographs. Where additional specialist investigations are
+                needed, this is clearly recommended.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHEN IT MAKES SENSE */}
-      <section className="px-8 pb-32">
-        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            When is this useful?
-          </p>
-
-          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Request the Purchase Safety Report before you commit.
-          </h2>
-
-          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            The Purchase Safety Report is especially valuable when you are
-            seriously considering a property, but want clarity on legal,
-            technical and practical points of attention before signing.
-          </p>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              "When you are seriously considering a property",
-              "When there are extensions, terraces or outbuildings",
-              "When the registered surface area is unclear",
-              "When there are moisture issues, cracks, older installations or renovation points",
-              "When there is a septic tank, swimming pool or large plot",
-              "When the property is part of a community",
-              "When you want to rent out the property",
-              "When you want more certainty about open points before signing",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-[24px] border border-[#c8a063]/25 bg-white/70 p-6"
-              >
-                <p className="text-base leading-relaxed text-stone-700">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHAT CAN BE CHECKED */}
+      {/* WHAT IS CHECKED */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -295,20 +257,20 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            From documents to septic tank: the points buyers often discover too late.
+            From documents to septic tanks: issues buyers often discover too late.
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Ownership, Nota Simple and possible charges",
-              "Purchase contracts, conditions and legal points of attention",
-              "Cadastral data, plot boundaries and registered surface areas",
-              "Extensions, outbuildings, terraces and possible permits",
-              "Moisture, cracks, roof, swimming pool and visible maintenance risks",
-              "Septic tank, pipes, electricity and practical infrastructure",
-              "Community rules, costs and possible restrictions",
-              "Rental possibilities and local points of attention",
-              "Annual ownership costs and practical next steps",
+              "Visible technical condition, construction and build quality",
+              "Moisture, water ingress and visible leaks",
+              "Installations and services at a functional level",
+              "Pool, outbuildings and necessary repairs",
+              "Nota Simple, Catastro, IBI, CEE and ITE where relevant",
+              "Estate agent information and available permits and licences",
+              "Comparison of official and measured floor areas",
+              "Indications of possible unregistered parts of the property",
+              "Observations on planning, the owners’ community, Coastal Law and other relevant factors",
             ].map((item) => (
               <div
                 key={item}
@@ -323,7 +285,7 @@ export default function PurchaseSafetyReportPage() {
         </div>
       </section>
 
-      {/* OUTCOME AND SECURITY */}
+      {/* RESULT AND COORDINATION */}
       <section className="px-8 pb-32">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
@@ -332,37 +294,38 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight">
-              Continue, renegotiate or walk away.
+              Proceed, reconsider or walk away.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-white/80">
-              The purpose of the Purchase Safety Report is not to make a
-              purchase more complicated. Its purpose is to give you calm and
-              clarity before making a major financial decision.
+              The purpose of Purchase Safety is not to make the purchase more
+              complicated. It is to give you greater clarity before a major
+              financial decision, based on an independent technical assessment
+              and independent legal due diligence.
             </p>
 
             <div className="mt-10 space-y-5">
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Green</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  The property appears suitable to move forward with, provided
-                  the normal purchase steps are completed correctly.
+                  The property appears suitable to proceed with, provided the
+                  normal purchase steps are completed correctly.
                 </p>
               </div>
 
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Amber</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  There are points of attention. Buy only under conditions, after
-                  additional checks or with adjusted negotiation.
+                  There are points requiring attention. Proceed only subject to
+                  conditions, further checks or adjusted negotiations.
                 </p>
               </div>
 
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Red</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  There are serious risks, which may make walking away from the
-                  property the sensible decision.
+                  There are serious risks that may make it sensible to walk away
+                  from the property.
                 </p>
               </div>
             </div>
@@ -370,32 +333,32 @@ export default function PurchaseSafetyReportPage() {
 
           <div className="rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Secure environment
+              One dedicated point of contact
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              No loose documents via WhatsApp or unsecured email.
+              You do not have to coordinate all the professionals yourself.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-700">
-              When buying in Spain, important documents and reports are often
-              shared: ownership information, Nota Simple, cadastral data,
-              purchase documents, technical reports, legal points of attention,
-              community documents, cost overviews and practical next steps.
+              When buying property in Spain, buyers often have to communicate
+              with estate agents, surveyors, lawyers and other professionals at
+              the same time. Nordic Move remains your dedicated point of contact
+              and ensures that the agreed steps are coordinated.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-700">
-              That is why we work with a secure digital environment where
-              documents, reports, responsibilities, open questions and next steps
-              are collected clearly in one place.
+              We keep track of who is doing what, which information is missing,
+              which questions remain open, what needs to happen next and where
+              delays or risks may arise.
             </p>
 
             <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-700">
-              <li>• Controlled access per client and adviser</li>
-              <li>• Two-step verification for extra security</li>
-              <li>• Fewer separate emails, screenshots and WhatsApp messages</li>
-              <li>• One clear place for important purchase documents</li>
-              <li>• Clear deadlines, versions and next steps</li>
+              <li>• One dedicated Nordic Move point of contact</li>
+              <li>• Coordination of the independent surveyor</li>
+              <li>• Selection and coordination of an independent Spanish lawyer</li>
+              <li>• Follow-up of open questions, conditions and deadlines</li>
+              <li>• A clear purchase recommendation based on both reports</li>
             </ul>
           </div>
         </div>
@@ -415,45 +378,49 @@ export default function PurchaseSafetyReportPage() {
 
             <div className="p-12 lg:p-16">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Part of your purchase journey
+                Part of your buying journey
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Combine the report with the Buyer Discovery Trip.
+                Combine Purchase Safety with the Buyer Discovery Trip.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                During our Buyer Discovery Trip, you do not only experience the
-                regions, towns and properties on the Costa Blanca North. You also
-                meet the professionals who can help you make a well-considered
-                purchase decision.
+                During our Buyer Discovery Trip, you experience not only the
+                regions, towns and properties of the Costa Blanca North. You
+                can also meet professionals who may help you make a
+                well-informed purchase decision.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Think of a lawyer, gestor, technical specialist, mortgage or
-                bank contact, insurance partner, property manager and other
-                trusted local parties.
+                These may include the independent Spanish lawyer, the technical
+                surveyor, a mortgage adviser and other selected local
+                professionals. General questions can be discussed during the
+                experience; personal or property-specific legal advice is
+                provided separately after formal engagement and a conflict-of-
+                interest check.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                We can also introduce you to like-minded buyers and international
-                residents in a similar life stage. This gives you insight not
-                only into the property, but also into daily life, the local
-                network and the practical reality of living in Spain.
+                We can also introduce you to like-minded buyers and
+                international residents at a similar stage of life. This gives
+                you insight not only into the property, but also into daily
+                life, the community and the practical reality of living in
+                Spain.
               </p>
 
               <a
                 href="/services/discovery-trips"
                 className="mt-10 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
               >
-                Discover the Buyer Discovery Trip
+                Explore the Buyer Discovery Trip
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* DISCLAIMER / ROLE */}
+      {/* LIABILITY / ROLE */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] border border-[#c8a063]/30 bg-white p-10 shadow-sm lg:p-14">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -461,22 +428,24 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <h2 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-            We coordinate. The specialists assess.
+            We coordinate. The professionals assess.
           </h2>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Nordic Move Spain does not replace a lawyer, notary, gestor, tax
-            adviser, technical specialist or building engineer. Each professional
-            is responsible for their own assessment, report and advice. We
-            coordinate the process, collect the findings and help you clearly
-            understand the most important points of attention.
+            Nordic Move Spain does not replace either the independent surveyor
+            or the independent Spanish lawyer. Both professionals remain
+            responsible for their own review, reporting and advice. We
+            coordinate the process, follow up outstanding points and help you
+            understand the most important findings and conditions.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            The Purchase Safety Report is designed to better inform buyers before
-            purchase. It is not an absolute guarantee that a property is fully
-            free of risks or hidden defects. It does help you decide in a more
-            structured, critical and confident way.
+            The surveyor’s document and registration screening is an initial
+            review and risk-identification exercise based on the available
+            information. It does not replace full legal due diligence or formal
+            confirmation by the relevant authorities. No inspection or review
+            can guarantee that a property is completely free from risks or
+            hidden defects.
           </p>
         </div>
       </section>
@@ -485,7 +454,7 @@ export default function PurchaseSafetyReportPage() {
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Buy with more certainty
+            Buy with greater confidence
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
@@ -493,9 +462,9 @@ export default function PurchaseSafetyReportPage() {
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Request a personal introduction and discover how the Purchase Safety
-            Report can help you better understand legal, technical and practical
-            risks before purchase.
+            Request a personal introduction and learn how Purchase Safety can
+            help you better understand the technical condition, available
+            registrations and documents, and legal risks before you buy.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

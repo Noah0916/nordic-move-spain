@@ -1,25 +1,25 @@
 export const metadata = {
   title: "Purchase Safety Report | Veilig een woning kopen aan de Costa Blanca Noord",
   description:
-    "Een gestructureerd aankooprisico-overzicht voor kopers die een woning aan de Costa Blanca Noord vóór aankoop juridisch, technisch en praktisch willen laten beoordelen door onafhankelijke professionals.",
+    "Purchase Safety voor kopers aan de Costa Blanca Noord: een onafhankelijke technische woninginspectie, eerste document- en registratiescreening en volledige juridische due diligence door een onafhankelijke Spaanse advocaat.",
   openGraph: {
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Koop niet alleen op gevoel. Laat een woning aan de Costa Blanca Noord vóór aankoop beoordelen door onafhankelijke professionals.",
+      "Een onafhankelijke technische woninginspectie en documentenscreening, gecombineerd met volledige juridische due diligence door een onafhankelijke Spaanse advocaat.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Een gestructureerd aankooprisico-overzicht met bevindingen van onafhankelijke professionals vóór u koopt in Spanje.",
+      "Twee onafhankelijke professionele beoordelingen en één duidelijk Nordic Move-aankoopadvies: doorgaan, heroverwegen of niet kopen.",
   },
 };
 
 export default function PurchaseSafetyReportPage() {
   return (
     <main className="bg-[#f6f1ea] text-stone-900 overflow-hidden">
-      {/* NAVIGATIE */}
+      {/* NAVIGATION */}
       <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/15 px-8 py-4 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <a
@@ -31,7 +31,7 @@ export default function PurchaseSafetyReportPage() {
 
           <div className="hidden gap-8 text-sm text-white md:flex">
             <a href="/nl" className="hover:text-white/70 transition">
-              Startpagina
+              Home
             </a>
 
             <a href="/nl/regions" className="hover:text-white/70 transition">
@@ -59,7 +59,7 @@ export default function PurchaseSafetyReportPage() {
             href="/nl/contact"
             className="rounded-full bg-[#c8a063] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
           >
-            Plan een kennismaking
+            Kennismaking plannen
           </a>
         </div>
       </nav>
@@ -77,7 +77,7 @@ export default function PurchaseSafetyReportPage() {
         <div className="relative z-10 mx-auto w-full max-w-7xl px-8 pt-28">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Veilig kopen in Spanje
+              Veiliger kopen in Spanje
             </p>
 
             <h1 className="mt-6 font-serif text-5xl leading-[1] text-[#f8f5ef] drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] md:text-7xl">
@@ -85,10 +85,10 @@ export default function PurchaseSafetyReportPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl leading-relaxed text-white">
-              Een gestructureerd aankooprisico-overzicht voor kopers die een
-              woning aan de Costa Blanca Noord niet alleen op gevoel willen kopen,
-              maar met bevindingen van onafhankelijke professionals en duidelijke
-              juridische, technische en praktische aandachtspunten.
+              Een onafhankelijk uitgevoerde technische woninginspectie met
+              eerste document- en registratiescreening, gecombineerd met
+              volledige juridische due diligence door een onafhankelijke
+              Spaanse advocaat — volledig gecoördineerd door Nordic Move.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -96,7 +96,7 @@ export default function PurchaseSafetyReportPage() {
                 href="/nl/contact"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Vraag een persoonlijke kennismaking aan
+                Persoonlijke kennismaking aanvragen
               </a>
 
               <a
@@ -110,7 +110,7 @@ export default function PurchaseSafetyReportPage() {
         </div>
       </section>
 
-      {/* INTRODUCTIE */}
+      {/* INTRODUCTION */}
       <section className="px-8 py-28">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
@@ -125,34 +125,36 @@ export default function PurchaseSafetyReportPage() {
 
           <div>
             <p className="text-lg leading-relaxed text-stone-600">
-              Veel internationale kopers richten zich tijdens een bezichtiging op
-              uitzicht, ruimte, sfeer en locatie. Dat is logisch. Maar de echte
-              risico’s zitten vaak achter de schermen: documenten die niet
-              compleet zijn, een uitbouw die niet goed geregistreerd is,
-              afwijkende perceelgrenzen, technische gebreken, vochtproblemen,
-              septic tanks, community-regels of onverwachte kosten.
+              Veel internationale kopers letten tijdens een bezichtiging vooral
+              op het uitzicht, de ruimte, sfeer en locatie. Dat is begrijpelijk.
+              De echte risico’s bevinden zich vaak achter de schermen:
+              onvolledige documenten, een aanbouw die niet correct is
+              geregistreerd, onduidelijke perceelgrenzen, technische gebreken,
+              vochtproblemen, septic tanks, regels van de
+              eigenaarsgemeenschap of onverwachte kosten.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Het Purchase Safety Report helpt u om deze punten vóór aankoop
-              beter in beeld te krijgen. Wij coördineren het aankooponderzoek met
-              onafhankelijke professionals en brengen hun bevindingen samen in
-              een helder overzicht. Zo kunt u bepalen of u met vertrouwen verder
-              kunt, opnieuw moet onderhandelen of beter afstand kunt nemen van de
-              woning.
+              Purchase Safety helpt om deze punten vóór aankoop beter zichtbaar
+              te maken. Wij coördineren een onafhankelijke technische
+              woninginspectie met document- en registratiescreening en werken
+              daarnaast met een onafhankelijke Spaanse advocaat voor de
+              volledige juridische due diligence.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Onze rol is niet om juridisch, fiscaal of technisch advies te
-              vervangen. Onze rol is om de juiste specialisten aan tafel te
-              brengen, het proces te structureren en de belangrijkste
-              aandachtspunten begrijpelijk te maken voor internationale kopers.
+              Op basis van beide professionele beoordelingen brengen we de
+              belangrijkste bevindingen, open vragen en voorwaarden samen en
+              geven we een duidelijk aankoopadvies: doorgaan, heroverwegen of
+              niet kopen. Nordic Move vervangt noch de surveyor noch de
+              advocaat; beiden blijven verantwoordelijk voor hun eigen
+              beoordeling en advies.
             </p>
           </div>
         </div>
       </section>
 
-      {/* SPECIALISTEN */}
+      {/* PROFESSIONALS */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-4xl">
@@ -161,133 +163,98 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Deskundige controles voor één duidelijk aankoopbeeld.
+              Twee onafhankelijke beoordelingen voor een duidelijker aankoopbeeld.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Afhankelijk van de woning en de situatie werken wij met een
-              onafhankelijke advocaat, notaris, gestor en technisch bouwkundig
-              specialist. Ieder kijkt vanuit zijn eigen expertise naar de woning
-              en het aankoopproces.
+              Wij coördineren een onafhankelijke surveyor voor de technische
+              woningbeoordeling en eerste document- en registratiescreening.
+              Daarnaast werken we met een onafhankelijke Spaanse advocaat die
+              de volledige juridische due diligence uitvoert en uitsluitend
+              het belang van de koper behartigt.
             </p>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Juridische controle
+                Volledige juridische due diligence
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Onafhankelijke advocaat
+                Onafhankelijke Spaanse advocaat
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De advocaat beoordeelt de juridische kant van de aankoop. Denk
-                aan eigendom, Nota Simple, eventuele lasten, openstaande schulden,
-                koopcontracten, vergunningen, geregistreerde gegevens en
-                juridische risico’s die vóór ondertekening duidelijk moeten zijn.
+                De onafhankelijke Spaanse advocaat controleert onder meer het
+                eigendom, geregistreerde lasten, mogelijke schulden en
+                belastingen, de juridische en planologische status,
+                vergunningen, documenten van de eigenaarsgemeenschap,
+                koopcontracten en de voorwaarden van de eigendomsoverdracht.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                De advocaat werkt onafhankelijk en is verantwoordelijk voor zijn
-                of haar eigen juridische beoordeling. Zo weet u welke juridische
-                aandachtspunten eerst opgelost of verder onderzocht moeten worden.
+                De advocaat werkt onafhankelijk, vertegenwoordigt de koper en
+                blijft verantwoordelijk voor de eigen juridische beoordeling
+                en advisering. De documentenscreening van de surveyor vervangt
+                deze juridische due diligence niet.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Akte en overdracht
+                Document- en registratiescreening
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Notaris en gestor
+                Eerste beoordeling van beschikbare documenten
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De notaris speelt een belangrijke rol bij de formele overdracht.
-                De notaris controleert de identiteit van partijen, begeleidt de
-                ondertekening van de eigendomsakte en zorgt dat de overdracht
-                volgens de juiste procedure wordt vastgelegd.
+                De surveyor beoordeelt en vergelijkt de beschikbare documenten
+                en registraties, waaronder de Nota Simple, Catastro, IBI,
+                energiecertificaat (CEE), ITE indien relevant,
+                makelaarsinformatie en beschikbare vergunningen en licenties.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Een gestor of administratief specialist kan daarnaast helpen met
-                praktische en administratieve controles, zoals kadastergegevens,
-                perceelinformatie, registraties, belastingen, lokale procedures
-                en opvolging na de aankoop.
+                Ook worden de officiële en gemeten oppervlaktes vergeleken.
+                Mogelijk niet-geregistreerde delen van de woning, aanbouwen,
+                garages of zwembaden worden gesignaleerd. Het rapport kan
+                daarnaast opmerkingen bevatten over planning,
+                eigenaarsgemeenschap, Coastal Law en andere relevante factoren.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Technische controle
+                Technische woningbeoordeling
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Bouwkundig ingenieur
+                Onafhankelijke surveyor
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De technisch specialist of bouwkundig ingenieur kijkt naar de
-                zichtbare staat van de woning. Denk aan vocht, scheuren, dak,
-                installaties, leidingen, elektriciteit, zwembad, septic tank,
-                onderhoudsrisico’s en mogelijke renovatiepunten.
+                De onafhankelijke surveyor beoordeelt de zichtbare en
+                toegankelijke technische staat van de woning. Dit omvat
+                constructie en bouwkwaliteit, vocht, waterindringing en
+                zichtbare lekkages, installaties en voorzieningen op
+                functioneel niveau, evenals het zwembad en bijgebouwen.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Deze controle helpt om verborgen kosten beter in te schatten en
-                voorkomt dat u pas na de aankoop ontdekt dat belangrijke
-                technische onderdelen aandacht of investering nodig hebben.
+                Het rapport benoemt noodzakelijke reparaties, aanbevelingen en
+                verdere aandachtspunten en bevat ondersteunende foto’s. Wanneer
+                aanvullende specialistische onderzoeken nodig zijn, wordt dit
+                duidelijk geadviseerd.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WANNEER VERSTANDIG */}
-      <section className="px-8 pb-32">
-        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Wanneer is dit verstandig?
-          </p>
-
-          <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Vraag het Purchase Safety Report aan voordat u zich vastlegt.
-          </h2>
-
-          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-700">
-            Het Purchase Safety Report is vooral waardevol wanneer u een woning
-            serieus overweegt, maar vóór ondertekening duidelijkheid wilt over
-            juridische, technische en praktische aandachtspunten.
-          </p>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              "Als u een woning serieus overweegt",
-              "Als er uitbouwen, terrassen of bijgebouwen zijn",
-              "Als de geregistreerde oppervlakte niet duidelijk is",
-              "Als er vocht, scheuren, oudere installaties of renovatiepunten zijn",
-              "Als er een septic tank, zwembad of groot perceel is",
-              "Als de woning onderdeel is van een community",
-              "Als u de woning wilt verhuren",
-              "Als u vóór ondertekening meer zekerheid wilt over openstaande punten",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-[24px] border border-[#c8a063]/25 bg-white/70 p-6"
-              >
-                <p className="text-base leading-relaxed text-stone-700">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WAT WORDT GECONTROLEERD */}
+      {/* WHAT IS CHECKED */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -295,20 +262,20 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-            Van documenten tot septic tank: de punten die kopers vaak te laat ontdekken.
+            Van documenten tot septic tank: punten die kopers vaak te laat ontdekken.
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Eigendom, Nota Simple en mogelijke lasten",
-              "Koopcontracten, voorwaarden en juridische aandachtspunten",
-              "Kadastergegevens, perceelgrenzen en geregistreerde oppervlakten",
-              "Uitbouwen, bijgebouwen, terrassen en mogelijke vergunningen",
-              "Vocht, scheuren, dak, zwembad en zichtbare onderhoudsrisico’s",
-              "Septic tank, leidingen, elektriciteit en praktische infrastructuur",
-              "Community-regels, kosten en mogelijke beperkingen",
-              "Verhuurmogelijkheden en lokale aandachtspunten",
-              "Jaarlijkse eigenaarskosten en praktische vervolgstappen",
+              "Zichtbare technische staat, constructie en bouwkwaliteit",
+              "Vocht, waterindringing en zichtbare lekkages",
+              "Installaties en voorzieningen op functioneel niveau",
+              "Zwembad, bijgebouwen en noodzakelijke reparaties",
+              "Nota Simple, Catastro, IBI, CEE en ITE indien relevant",
+              "Makelaarsinformatie en beschikbare vergunningen en licenties",
+              "Vergelijking van officiële en gemeten oppervlaktes",
+              "Signalering van mogelijke niet-geregistreerde onderdelen",
+              "Opmerkingen over planning, eigenaarsgemeenschap, Coastal Law en andere relevante factoren",
             ].map((item) => (
               <div
                 key={item}
@@ -323,7 +290,7 @@ export default function PurchaseSafetyReportPage() {
         </div>
       </section>
 
-      {/* UITKOMST EN BEVEILIGING */}
+      {/* RESULT AND COORDINATION */}
       <section className="px-8 pb-32">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
@@ -332,37 +299,39 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight">
-              Doorgaan, heronderhandelen of afstand nemen.
+              Doorgaan, heroverwegen of niet kopen.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-white/80">
-              Het doel van het Purchase Safety Report is niet om een aankoop
-              ingewikkelder te maken. Het doel is om u rust en duidelijkheid te
-              geven voordat u een grote financiële beslissing neemt.
+              Het doel van Purchase Safety is niet om de aankoop ingewikkelder
+              te maken. Het doel is om je vóór een grote financiële beslissing
+              meer duidelijkheid te geven op basis van een onafhankelijke
+              technische beoordeling en onafhankelijke juridische due
+              diligence.
             </p>
 
             <div className="mt-10 space-y-5">
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Groen</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  De woning lijkt geschikt om verder mee te gaan, mits de normale
-                  aankoopstappen correct worden afgerond.
+                  De woning lijkt geschikt om mee verder te gaan, mits de
+                  normale aankoopstappen correct worden afgerond.
                 </p>
               </div>
 
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Oranje</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  Er zijn aandachtspunten. Koop alleen onder voorwaarden, na
-                  aanvullende controles of met aangepaste onderhandeling.
+                  Er zijn aandachtspunten. Ga alleen verder onder voorwaarden,
+                  na aanvullende controles of met aangepaste onderhandelingen.
                 </p>
               </div>
 
               <div className="rounded-[24px] bg-white/8 p-6">
                 <h3 className="font-serif text-2xl text-white">Rood</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  Er zijn serieuze risico’s waardoor afstand nemen van de woning
-                  verstandig kan zijn.
+                  Er zijn ernstige risico’s waardoor het verstandig kan zijn
+                  om niet door te gaan met de woning.
                 </p>
               </div>
             </div>
@@ -370,33 +339,33 @@ export default function PurchaseSafetyReportPage() {
 
           <div className="rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Beveiligde omgeving
+              Eén vast aanspreekpunt
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Geen losse documenten via WhatsApp of onbeveiligde e-mail.
+              Je hoeft niet zelf alle betrokken professionals te coördineren.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-700">
-              Bij een aankoop in Spanje worden vaak belangrijke documenten en
-              rapporten gedeeld: eigendomsinformatie, Nota Simple,
-              kadastrale gegevens, koopdocumenten, technische rapporten,
-              juridische aandachtspunten, community-documenten,
-              kostenoverzichten en praktische vervolgstappen.
+              Bij het kopen van een woning in Spanje moeten kopers vaak
+              tegelijkertijd communiceren met makelaars, surveyors, advocaten
+              en andere professionals. Nordic Move blijft jouw vaste
+              aanspreekpunt en zorgt dat de afgesproken stappen op elkaar
+              aansluiten.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-700">
-              Daarom werken wij met een beveiligde digitale omgeving waarin
-              documenten, rapporten, verantwoordelijkheden, openstaande vragen en
-              vervolgstappen overzichtelijk worden verzameld.
+              Wij houden bij wie wat doet, welke informatie ontbreekt, welke
+              vragen nog openstaan, wat de volgende stap is en waar vertraging
+              of risico’s kunnen ontstaan.
             </p>
 
             <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-700">
-              <li>• Gecontroleerde toegang per klant en adviseur</li>
-              <li>• Tweestapsverificatie voor extra beveiliging</li>
-              <li>• Minder losse e-mails, screenshots en WhatsApp-berichten</li>
-              <li>• Eén overzichtelijke plek voor belangrijke aankoopdocumenten</li>
-              <li>• Duidelijke deadlines, versies en vervolgstappen</li>
+              <li>• Eén vast Nordic Move-aanspreekpunt</li>
+              <li>• Coördinatie van de onafhankelijke surveyor</li>
+              <li>• Selectie en coördinatie van een onafhankelijke Spaanse advocaat</li>
+              <li>• Opvolging van open vragen, voorwaarden en deadlines</li>
+              <li>• Een duidelijk aankoopadvies op basis van beide rapporten</li>
             </ul>
           </div>
         </div>
@@ -416,32 +385,36 @@ export default function PurchaseSafetyReportPage() {
 
             <div className="p-12 lg:p-16">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Onderdeel van uw aankoopreis
+                Onderdeel van jouw aankoopreis
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Combineer het rapport met de Buyer Discovery Trip.
+                Combineer Purchase Safety met de Buyer Discovery Trip.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Tijdens onze Buyer Discovery Trip ervaart u niet alleen de
-                regio’s, dorpen en woningen aan de Costa Blanca Noord. U ontmoet
-                ook de professionals die u kunnen helpen om een weloverwogen
-                aankoopbeslissing te nemen.
+                Tijdens onze Buyer Discovery Trip ervaar je niet alleen de
+                regio’s, plaatsen en woningen aan de Costa Blanca Noord. Je kunt
+                ook kennismaken met professionals die kunnen helpen bij een
+                weloverwogen aankoopbeslissing.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Denk aan een advocaat, gestor, technisch specialist,
-                hypotheek- of bankcontact, verzekeringspartner, property manager
-                en andere betrouwbare lokale partijen.
+                Dit kunnen de onafhankelijke Spaanse advocaat, de technische
+                surveyor, een hypotheekadviseur en andere geselecteerde lokale
+                professionals zijn. Algemene vragen kunnen tijdens de
+                experience worden besproken; persoonlijk of
+                woningspecifiek juridisch advies wordt afzonderlijk gegeven
+                nadat de advocaat formeel is ingeschakeld en een
+                belangenconflictcontrole heeft uitgevoerd.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Daarnaast kunnen wij u introduceren aan gelijkgestemde kopers en
-                internationale bewoners die zich in dezelfde levensfase bevinden.
-                Zo krijgt u niet alleen inzicht in de woning, maar ook in het
-                dagelijks leven, de gemeenschap en de praktische realiteit van
-                wonen in Spanje.
+                We kunnen je daarnaast voorstellen aan gelijkgestemde kopers en
+                internationale bewoners die zich in een vergelijkbare
+                levensfase bevinden. Zo krijg je niet alleen inzicht in de
+                woning, maar ook in het dagelijks leven, de gemeenschap en de
+                praktische realiteit van wonen in Spanje.
               </p>
 
               <a
@@ -455,7 +428,7 @@ export default function PurchaseSafetyReportPage() {
         </div>
       </section>
 
-      {/* DISCLAIMER / ROL */}
+      {/* LIABILITY / ROLE */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl rounded-[40px] border border-[#c8a063]/30 bg-white p-10 shadow-sm lg:p-14">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
@@ -463,23 +436,24 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <h2 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-            Wij coördineren. De specialisten beoordelen.
+            Wij coördineren. De professionals beoordelen.
           </h2>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Nordic Move Spain vervangt geen advocaat, notaris, gestor,
-            fiscalist, technisch specialist of bouwkundig ingenieur. Iedere
-            professional is verantwoordelijk voor zijn of haar eigen beoordeling,
-            rapportage en advies. Wij coördineren het proces, verzamelen de
-            bevindingen en helpen u de belangrijkste aandachtspunten helder te
-            begrijpen.
+            Nordic Move Spain vervangt noch de onafhankelijke surveyor noch de
+            onafhankelijke Spaanse advocaat. Beide professionals blijven
+            verantwoordelijk voor hun eigen beoordeling, rapportage en advies.
+            Wij coördineren het proces, volgen openstaande punten op en helpen
+            je de belangrijkste bevindingen en voorwaarden te begrijpen.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Het Purchase Safety Report is bedoeld om kopers beter te informeren
-            vóór aankoop. Het is geen absolute garantie dat een woning volledig
-            vrij is van risico’s of verborgen gebreken. Het helpt u wel om
-            gestructureerd, kritischer en met meer vertrouwen te beslissen.
+            De document- en registratiescreening van de surveyor is een eerste
+            beoordeling en signalering op basis van de beschikbare informatie.
+            Deze vervangt niet de volledige juridische due diligence of een
+            formele bevestiging door de bevoegde autoriteiten. Geen enkele
+            inspectie of beoordeling kan garanderen dat een woning volledig
+            vrij is van risico’s of verborgen gebreken.
           </p>
         </div>
       </section>
@@ -492,13 +466,14 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-            Overweegt u een woning aan de Costa Blanca Noord?
+            Overweeg je een woning aan de Costa Blanca Noord?
           </h2>
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-            Vraag een persoonlijke kennismaking aan en ontdek hoe het Purchase
-            Safety Report u kan helpen om juridische, technische en praktische
-            risico’s vóór aankoop beter te begrijpen.
+            Vraag een persoonlijke kennismaking aan en ontdek hoe Purchase
+            Safety kan helpen om de technische staat, beschikbare registraties
+            en documenten en juridische risico’s vóór aankoop beter te
+            begrijpen.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -506,7 +481,7 @@ export default function PurchaseSafetyReportPage() {
               href="/nl/contact"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Plan een kennismaking
+              Kennismaking plannen
             </a>
 
             <a

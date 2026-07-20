@@ -1,18 +1,18 @@
 export const metadata = {
   title: "Purchase Safety Report | Sicher eine Immobilie an der Costa Blanca Nord kaufen",
   description:
-    "Ein unabhängiger Kauf-Sicherheitsreport für Käufer, die eine Immobilie an der Costa Blanca Nord vor dem Kauf rechtlich, technisch und praktisch prüfen lassen möchten.",
+    "Purchase Safety für Käufer an der Costa Blanca Nord: unabhängige technische Immobilienprüfung, erste Dokumenten- und Registerprüfung sowie vollständige rechtliche Due Diligence durch einen unabhängigen spanischen Rechtsanwalt.",
   openGraph: {
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Kaufen Sie nicht nur nach Gefühl. Lassen Sie eine Immobilie an der Costa Blanca Nord vor dem Kauf von unabhängigen Fachleuten beurteilen.",
+      "Eine unabhängige technische Immobilienprüfung und Dokumentensichtung, ergänzt durch die vollständige rechtliche Due Diligence eines unabhängigen spanischen Rechtsanwalts.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Ein klarer Kaufreport mit unabhängigen rechtlichen, technischen und praktischen Prüfungen, bevor Sie in Spanien kaufen.",
+      "Zwei unabhängige professionelle Beurteilungen und eine klare Nordic-Move-Kaufempfehlung: weitermachen, neu bewerten oder Abstand nehmen.",
   },
 };
 
@@ -85,10 +85,10 @@ export default function PurchaseSafetyReportPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl leading-relaxed text-white">
-              Ein unabhängiger Kauf-Sicherheitsreport für Käufer, die eine
-              Immobilie an der Costa Blanca Nord nicht nur nach Gefühl kaufen
-              möchten, sondern mit klaren rechtlichen, technischen und
-              praktischen Einblicken.
+              Eine unabhängig durchgeführte technische Immobilienprüfung mit
+              erster Dokumenten- und Registerscreening sowie eine vollständige
+              rechtliche Due Diligence durch einen unabhängigen spanischen
+              Rechtsanwalt — koordiniert durch Nordic Move.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -134,20 +134,20 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Der Purchase Safety Report hilft Ihnen, diese Punkte vor dem Kauf
-              besser sichtbar zu machen. Wir koordinieren die Kaufprüfung mit
-              unabhängigen Fachleuten und führen deren Ergebnisse in einer klaren
-              Übersicht zusammen. So können Sie entscheiden, ob Sie mit Vertrauen
-              weitermachen, neu verhandeln oder besser Abstand von der Immobilie
-              nehmen sollten.
+              Purchase Safety hilft Ihnen, diese Punkte vor dem Kauf besser
+              sichtbar zu machen. Wir koordinieren eine unabhängige technische
+              Immobilienprüfung mit Dokumenten- und Registerscreening und
+              arbeiten zusätzlich mit einem unabhängigen spanischen
+              Rechtsanwalt für die vollständige rechtliche Due Diligence.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Unsere Rolle ist es nicht, rechtliche, steuerliche oder technische
-              Beratung zu ersetzen. Unsere Rolle ist es, die richtigen
-              Spezialisten an einen Tisch zu bringen, den Prozess zu strukturieren
-              und die wichtigsten Punkte für internationale Käufer verständlich
-              zu machen.
+              Auf Grundlage beider professionellen Beurteilungen bringen wir
+              die wesentlichen Feststellungen, offenen Fragen und Bedingungen
+              zusammen und geben eine klare Kaufempfehlung: weitermachen, neu
+              bewerten oder Abstand nehmen. Nordic Move ersetzt weder den
+              Sachverständigen noch den Rechtsanwalt; beide bleiben für ihre
+              eigene Prüfung und Beratung verantwortlich.
             </p>
           </div>
         </div>
@@ -162,70 +162,74 @@ export default function PurchaseSafetyReportPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Fachkundige Prüfungen für ein klares Kaufbild.
+              Zwei unabhängige Beurteilungen für ein klareres Kaufbild.
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Abhängig von der Immobilie und der Situation arbeiten wir mit einem
-              unabhängigen Anwalt, Notar, Gestor und technischen Bauspezialisten.
-              Jeder betrachtet die Immobilie und den Kaufprozess aus seiner
-              eigenen fachlichen Perspektive.
+              Wir koordinieren einen unabhängigen Bausachverständigen für die
+              technische Immobilienbewertung und erste Dokumenten- und
+              Registerscreening. Zusätzlich arbeiten wir mit einem unabhängigen
+              spanischen Rechtsanwalt, der die vollständige rechtliche Due
+              Diligence durchführt und ausschließlich die Interessen des Käufers
+              vertritt.
             </p>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Rechtliche Prüfung
+                Vollständige rechtliche Due Diligence
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Unabhängiger Anwalt
+                Unabhängiger spanischer Rechtsanwalt
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                Der Anwalt beurteilt die rechtliche Seite des Kaufs. Dazu gehören
-                Eigentum, Nota Simple, mögliche Belastungen, offene Schulden,
-                Kaufverträge, Genehmigungen, registrierte Daten und rechtliche
-                Risiken, die vor der Unterzeichnung klar sein sollten.
+                Der unabhängige spanische Rechtsanwalt prüft unter anderem
+                Eigentum, eingetragene Belastungen, mögliche Schulden und
+                Steuern, die rechtliche und planungsrechtliche Situation,
+                Genehmigungen, Gemeinschaftsunterlagen, Kaufverträge und die
+                Bedingungen der Eigentumsübertragung.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Der Anwalt arbeitet unabhängig und ist für seine eigene
-                rechtliche Beurteilung verantwortlich. So wissen Sie, welche
-                rechtlichen Punkte zuerst gelöst oder weiter geprüft werden
-                müssen.
+                Der Rechtsanwalt arbeitet unabhängig, vertritt den Käufer und
+                bleibt für seine eigene rechtliche Prüfung und Beratung
+                verantwortlich. Die Dokumentensichtung des Sachverständigen
+                ersetzt diese rechtliche Due Diligence nicht.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Urkunde und Eigentumsübertragung
+                Dokumenten- und Registerscreening
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Notar und Gestor
+                Erste Prüfung der verfügbaren Unterlagen
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                Der Notar spielt eine wichtige Rolle bei der formellen
-                Eigentumsübertragung. Der Notar prüft die Identität der Parteien,
-                begleitet die Unterzeichnung der Eigentumsurkunde und stellt
-                sicher, dass die Übertragung nach dem richtigen Verfahren
-                dokumentiert wird.
+                Der Sachverständige prüft und vergleicht die verfügbaren
+                Unterlagen und Registrierungen, darunter Nota Simple, Kataster,
+                IBI, Energieausweis (CEE), ITE soweit relevant,
+                Maklerinformationen sowie verfügbare Genehmigungen und
+                Lizenzen.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Ein Gestor oder administrativer Spezialist kann zusätzlich bei
-                praktischen und administrativen Prüfungen helfen, zum Beispiel
-                bei Katasterdaten, Grundstücksinformationen, Registrierungen,
-                Steuern, lokalen Verfahren und der Nachverfolgung nach dem Kauf.
+                Außerdem werden offizielle und gemessene Flächen
+                miteinander verglichen. Mögliche nicht registrierte
+                Gebäudeteile, Anbauten, Garagen oder Pools werden signalisiert.
+                Der Bericht kann auch Hinweise zu Planung, Eigentümergemeinschaft,
+                Küstengesetz und anderen relevanten Faktoren enthalten.
               </p>
             </div>
 
             <div className="rounded-[36px] bg-white p-10 shadow-sm">
               <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                Technische Prüfung
+                Technische Immobilienbewertung
               </p>
 
               <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -233,16 +237,18 @@ export default function PurchaseSafetyReportPage() {
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                Der technische Spezialist oder Bausachverständige betrachtet den
-                sichtbaren Zustand der Immobilie. Dazu gehören Feuchtigkeit,
-                Risse, Dach, Installationen, Leitungen, Elektrik, Pool,
-                Klärgrube, Instandhaltungsrisiken und mögliche Renovierungspunkte.
+                Der unabhängige Bausachverständige beurteilt die sichtbare und
+                zugängliche technische Situation der Immobilie. Dazu gehören
+                Konstruktion und Bauqualität, Feuchtigkeit, Wassereintritt und
+                sichtbare Leckagen, Installationen und Einrichtungen auf
+                funktionaler Ebene sowie Pool und Nebengebäude.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Diese Prüfung hilft, versteckte Kosten besser einzuschätzen und
-                verhindert, dass Sie erst nach dem Kauf entdecken, dass wichtige
-                technische Bereiche Aufmerksamkeit oder Investitionen benötigen.
+                Der Bericht benennt notwendige Reparaturen, Empfehlungen und
+                weitere Aufmerksamkeitspunkte und enthält unterstützende Fotos.
+                Wenn zusätzliche Fachuntersuchungen erforderlich sind, wird dies
+                ausdrücklich empfohlen.
               </p>
             </div>
           </div>
@@ -262,15 +268,15 @@ export default function PurchaseSafetyReportPage() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              "Eigentum, Nota Simple und mögliche Belastungen",
-              "Kaufverträge, Bedingungen und rechtliche Punkte",
-              "Katasterdaten, Grundstücksgrenzen und registrierte Flächen",
-              "Anbauten, Nebengebäude, Terrassen und mögliche Genehmigungen",
-              "Feuchtigkeit, Risse, Dach, Pool und sichtbare Instandhaltungsrisiken",
-              "Klärgrube, Leitungen, Elektrik und praktische Infrastruktur",
-              "Gemeinschaftsregeln, Kosten und mögliche Einschränkungen",
-              "Vermietungsmöglichkeiten und lokale Aufmerksamkeitspunkte",
-              "Jährliche Eigentümerkosten und praktische nächste Schritte",
+              "Sichtbarer technischer Zustand, Konstruktion und Bauqualität",
+              "Feuchtigkeit, Wassereintritt und sichtbare Leckagen",
+              "Installationen und Einrichtungen auf funktionaler Ebene",
+              "Pool, Nebengebäude und notwendige Reparaturen",
+              "Nota Simple, Kataster, IBI, CEE und ITE soweit relevant",
+              "Maklerinformationen sowie verfügbare Genehmigungen und Lizenzen",
+              "Vergleich offizieller und gemessener Flächen",
+              "Signale möglicher nicht registrierter Gebäudeteile",
+              "Hinweise zu Planung, Eigentümergemeinschaft, Küstengesetz und weiteren relevanten Faktoren",
             ].map((item) => (
               <div
                 key={item}
@@ -298,9 +304,11 @@ export default function PurchaseSafetyReportPage() {
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-white/80">
-              Das Ziel des Purchase Safety Reports ist nicht, einen Kauf
-              komplizierter zu machen. Das Ziel ist, Ihnen Ruhe und Klarheit zu
-              geben, bevor Sie eine große finanzielle Entscheidung treffen.
+              Ziel von Purchase Safety ist nicht, den Kauf komplizierter zu
+              machen. Ziel ist, Ihnen auf Grundlage einer unabhängigen
+              technischen Beurteilung und einer unabhängigen rechtlichen Due
+              Diligence mehr Klarheit vor einer großen finanziellen Entscheidung
+              zu geben.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -332,33 +340,33 @@ export default function PurchaseSafetyReportPage() {
 
           <div className="rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Geschützte Umgebung
+              Ein fester Ansprechpartner
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Keine losen Dokumente per WhatsApp oder unsicherer E-Mail.
+              Sie müssen die beteiligten Fachleute nicht selbst koordinieren.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-stone-700">
-              Bei einem Kauf in Spanien werden häufig sensible Dokumente geteilt:
-              Reisepässe, Eigentumsinformationen, Verträge, Bankdaten,
-              Steuerunterlagen, technische Reports und rechtliche Dokumente.
-              Wir finden, dass solche Informationen sorgfältig behandelt werden
-              müssen.
+              Beim Immobilienkauf in Spanien müssen Käufer häufig gleichzeitig
+              mit Maklern, Sachverständigen, Rechtsanwälten und weiteren
+              Fachleuten kommunizieren. Nordic Move bleibt Ihr fester
+              Ansprechpartner und sorgt dafür, dass die vereinbarten Schritte
+              aufeinander abgestimmt sind.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-700">
-              Deshalb arbeiten wir, wo möglich, mit einer geschützten digitalen
-              Umgebung, in der Dokumente, Reports, Verantwortlichkeiten und
-              nächste Schritte übersichtlich gesammelt werden.
+              Wir behalten im Blick, wer was erledigt, welche Informationen
+              fehlen, welche Fragen offen sind, was als Nächstes passieren muss
+              und wo Verzögerungen oder Risiken entstehen können.
             </p>
 
             <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-700">
-              <li>• Kontrollierter Zugang pro Kunde und Berater</li>
-              <li>• Two-step authentication für zusätzliche Sicherheit</li>
-              <li>• Weniger lose E-Mails, Screenshots und WhatsApp-Nachrichten</li>
-              <li>• Ein zentraler Ort für wichtige Kaufdokumente</li>
-              <li>• Klare Fristen, Versionen und nächste Schritte</li>
+              <li>• Ein fester Nordic-Move-Ansprechpartner</li>
+              <li>• Koordination des unabhängigen Sachverständigen</li>
+              <li>• Auswahl und Koordination eines unabhängigen spanischen Rechtsanwalts</li>
+              <li>• Nachverfolgung offener Fragen, Bedingungen und Fristen</li>
+              <li>• Eine verständliche Kaufempfehlung auf Grundlage beider Berichte</li>
             </ul>
           </div>
         </div>
@@ -393,9 +401,12 @@ export default function PurchaseSafetyReportPage() {
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Dazu gehören ein Anwalt, Gestor, technischer Spezialist,
-                Hypotheken- oder Bankkontakt, Versicherungspartner, Property
-                Manager und andere zuverlässige lokale Ansprechpartner.
+                Dazu können der unabhängige spanische Rechtsanwalt, der
+                technische Sachverständige, ein Hypothekenberater und weitere
+                ausgewählte lokale Fachleute gehören. Allgemeine Fragen können
+                im Rahmen der Experience besprochen werden; persönliche oder
+                immobilienspezifische Rechtsberatung erfolgt separat nach
+                Mandatierung und Interessenkonfliktprüfung.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
@@ -429,20 +440,21 @@ export default function PurchaseSafetyReportPage() {
           </h2>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Nordic Move Spain ersetzt keinen Anwalt, Notar, Gestor, Steuerberater,
-            technischen Spezialisten oder Bausachverständigen. Jeder Fachmann ist
-            für seine eigene Beurteilung, Berichterstattung und Beratung
-            verantwortlich. Wir koordinieren den Prozess, sammeln die Ergebnisse
-            und helfen Ihnen, die wichtigsten Aufmerksamkeitspunkte klar zu
-            verstehen.
+            Nordic Move Spain ersetzt weder den unabhängigen
+            Bausachverständigen noch den unabhängigen spanischen Rechtsanwalt.
+            Beide Fachleute sind für ihre eigene Prüfung, Berichterstattung und
+            Beratung verantwortlich. Wir koordinieren den Prozess, verfolgen
+            offene Punkte und helfen Ihnen, die wichtigsten Feststellungen und
+            Bedingungen verständlich einzuordnen.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            Der Purchase Safety Report soll Käufer vor dem Kauf besser
-            informieren. Er ist keine absolute Garantie dafür, dass eine
-            Immobilie vollständig frei von Risiken oder versteckten Mängeln ist.
-            Er hilft Ihnen jedoch, strukturierter, kritischer und mit mehr
-            Vertrauen zu entscheiden.
+            Die Dokumenten- und Registerscreening des Sachverständigen ist eine
+            erste Prüfung und Signalgebung auf Grundlage der verfügbaren
+            Unterlagen. Sie ersetzt weder die vollständige rechtliche Due
+            Diligence noch eine formelle Bestätigung durch die zuständigen
+            Behörden. Keine Prüfung kann garantieren, dass eine Immobilie
+            vollständig frei von Risiken oder verborgenen Mängeln ist.
           </p>
         </div>
       </section>
@@ -460,8 +472,9 @@ export default function PurchaseSafetyReportPage() {
 
           <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
             Fragen Sie ein persönliches Kennenlernen an und erfahren Sie, wie der
-            Purchase Safety Report Ihnen helfen kann, rechtliche, technische und
-            praktische Risiken vor dem Kauf besser zu verstehen.
+            Purchase Safety Ihnen helfen kann, die technische Situation,
+            verfügbare Registrierungen und Dokumente sowie rechtliche Risiken vor
+            dem Kauf besser zu verstehen.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
