@@ -1215,20 +1215,31 @@ export default function RelocationAssessment() {
       },
     };
 
+    const answersForEmail: Record<string, unknown> = Object.fromEntries(
+      visibleQuestions
+        .filter((question) =>
+          Object.prototype.hasOwnProperty.call(filteredAnswers, question.id)
+        )
+        .map((question) => [question.title, filteredAnswers[question.id]])
+    );
+
+    answersForEmail["Sprache"] = "Deutsch";
+    answersForEmail["Assessment-Version"] = "3.0";
+
+    const submission = {
+      name,
+      email,
+      phone,
+      answers: answersForStorage,
+      created_at: new Date().toISOString(),
+    };
+
     setIsSubmitting(true);
 
     try {
       const { error } = await supabase
         .from("relocation_leads")
-        .insert([
-          {
-            name,
-            email,
-            phone,
-            answers: answersForStorage,
-            created_at: new Date().toISOString(),
-          },
-        ]);
+        .insert([submission]);
 
       if (error) {
         alert(
@@ -1244,6 +1255,32 @@ export default function RelocationAssessment() {
         );
 
         return;
+      }
+
+      const emailResponse = await fetch("/api/relocation-assessment", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          answers: answersForEmail,
+        }),
+      });
+
+      if (!emailResponse.ok) {
+        const emailResult = await emailResponse.json().catch(() => null);
+
+        console.error(
+          "Assessment wurde gespeichert, aber die E-Mail konnte nicht gesendet werden:",
+          emailResult
+        );
+
+        alert(
+          "Ihre Antworten wurden gespeichert, aber die E-Mail-Benachrichtigung konnte nicht gesendet werden. Bitte kontaktieren Sie Nordic Move Spain, falls Sie keine Rückmeldung erhalten."
+        );
       }
 
       setSubmitted(true);

@@ -140,8 +140,9 @@ export default function DutchHomePage() {
           "Woningselectie en bezichtigingen",
           "Technische inspectie en documentenscreening",
           "Coördinatie van juridische due diligence",
-          "Verhuiscoördinatie",
-          "Styling en inrichting",
+          "Home Setup en nutsvoorzieningen",
+          "Renovation & Interior",
+          "Family Relocation",
         ],
         areaServed: {
           "@type": "Place",
@@ -309,58 +310,73 @@ export default function DutchHomePage() {
           <div className="grid items-start gap-12 lg:grid-cols-[1.25fr_0.75fr] xl:gap-16">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Meer dan een makelaar
+                Persoonlijke aankoopbegeleiding
               </p>
 
               <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-                Persoonlijke aankoopbegeleiding met onafhankelijke controles en
-                één vast aanspreekpunt
+                Meer zekerheid. Eén vertrouwd aanspreekpunt.
               </h2>
 
+              <p className="mt-6 max-w-2xl text-xl font-medium leading-relaxed text-[#1e2a3a]">
+                Van de juiste regio en woning tot onafhankelijke aankoopcontroles,
+                verhuizing, renovatie en inrichting.
+              </p>
+
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Een woning kopen in het buitenland hoort een mooie stap te zijn.
-                Toch weten wij uit ervaring hoe snel onzekerheid kan ontstaan
-                wanneer lokale kennis ontbreekt, verantwoordelijkheden onduidelijk
-                zijn of professionals niet goed samenwerken.
+                Een woning kopen in Spanje hoort een mooie stap te zijn. Toch kan het
+                proces al snel onoverzichtelijk worden wanneer u moet communiceren met
+                verkoopmakelaars, een advocaat, een bouwkundige, de notaris, aannemers,
+                verhuisbedrijven en andere dienstverleners — vaak in een andere taal en
+                met verschillende verantwoordelijkheden.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Ook in onze directe omgeving zagen wij het misgaan: lekkages,
-                verborgen gebreken en juridische problemen die pas na de aankoop
-                aan het licht kwamen.
-              </p>
-
-              <p className="mt-6 max-w-2xl text-lg font-medium leading-relaxed text-[#1e2a3a]">
-                Toen wisten we: dit kan en moet anders.
-              </p>
-
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Daarom hebben we zorgvuldig een team opgebouwd met onder meer een
-                onafhankelijke Spaanse vastgoedadvocaat, een geregistreerd
-                bouwkundig technicus en een betrouwbare bouw- en renovatiepartner.
-                De betrokken architecten en architecten-technici zijn aangesloten
-                bij hun Spaanse beroepsorganisaties en beschikken over de vereiste
-                kwalificaties en beroepsaansprakelijkheidsverzekering.
+                Nordic Move Spain brengt deze afzonderlijke stappen samen. Wij begeleiden
+                u bij het vinden en kopen van de juiste woning aan de Costa Blanca en
+                kunnen ook de praktische zaken vóór en na de aankoop coördineren. Van uw
+                persoonlijke Area Match en gerichte woningselectie tot verhuizing,
+                nutsvoorzieningen, renovatie en interieurstyling.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Vóór de aankoop laten wij twee onafhankelijke controles uitvoeren.
-                De vastgoedadvocaat onderzoekt onder meer eigendom, lasten,
-                schulden, vergunningen en contracten. De bouwkundig technicus
-                inspecteert en meet de woning en vergelijkt de feitelijke situatie
-                met de beschikbare plannen en registraties. Zo krijg je meer
-                duidelijkheid over mogelijke risico’s voordat je beslist.
+                U heeft één vast aanspreekpunt dat uw wensen kent, de betrokken partijen
+                op elkaar afstemt en zorgt voor duidelijke afspraken en vervolgstappen.
+                Wij spreken Spaans, kennen de lokale werkwijze en werken met zorgvuldig
+                geselecteerde onafhankelijke professionals en dienstverleners.
+              </p>
+
+              <h3 className="mt-10 max-w-2xl font-serif text-3xl leading-tight text-[#1e2a3a]">
+                Eerst zekerheid, daarna pas kopen
+              </h3>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Uit ervaring weten wij hoe snel problemen kunnen ontstaan wanneer lokale
+                kennis ontbreekt of professionals onvoldoende samenwerken. Verborgen
+                gebreken, afwijkende registraties en juridische problemen worden soms pas
+                na de aankoop zichtbaar.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Met één vast aanspreekpunt begeleiden en coördineren we het traject
-                van Area Match tot aankoop en thuiskomen. Ook na de aankoop kunnen
-                we helpen met verhuizing, scholen, nutsvoorzieningen, verbouwing,
-                interieurdesign en styling.
+                Daarom begeleiden wij geen aankoop zonder onafhankelijke technische en
+                juridische controles. Een gekwalificeerde building surveyor inspecteert
+                en meet de woning en vergelijkt de feitelijke situatie met de beschikbare
+                documenten en registraties. Een onafhankelijke Spaanse vastgoedadvocaat
+                onderzoekt onder meer het eigendom, lasten, schulden, vergunningen en
+                contracten.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Zo krijgt u vóór uw definitieve beslissing meer inzicht in de technische
+                staat, juridische positie en mogelijke risico’s van de woning.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                U kiest zelf voor de volledige Buyer Journey of alleen voor de diensten
+                die u nodig heeft.
               </p>
 
               <p className="mt-7 text-xl font-medium leading-relaxed text-stone-700">
-                Gericht zoeken. Veiliger kopen. Zorgeloos aankomen.
+                Gericht zoeken. Met meer zekerheid kopen. Zorgeloos aankomen.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
@@ -368,7 +384,7 @@ export default function DutchHomePage() {
                   href="/nl/relocation-assessment"
                   className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Vraag je gratis Area Match aan
+                  Begin met uw gratis persoonlijke Area Match Portfolio
                 </a>
 
                 <a
@@ -392,7 +408,6 @@ export default function DutchHomePage() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -463,18 +478,18 @@ export default function DutchHomePage() {
             </p>
 
             <h2 className="mt-5 max-w-3xl font-serif text-3xl leading-tight text-[#1e2a3a] md:text-4xl">
-              Vier duidelijke stappen, met één vast aanspreekpunt waar jij dat nodig hebt.
+              Kies de begeleiding die bij jouw situatie past.
             </h2>
 
             <div className="mt-8 rounded-[28px] bg-white p-6 shadow-sm">
               <p className="text-lg font-medium leading-relaxed text-[#1e2a3a]">
-                Je hoeft niet elke stap te gebruiken.
+                Je hoeft niet het volledige traject te volgen.
               </p>
 
               <p className="mt-3 text-base leading-relaxed text-stone-600">
-                Volg het volledige traject of kies alleen de onderdelen die passen bij
-                jouw situatie: Area Match, Buyer Discovery, Purchase Safety of
-                Move-In Ready.
+                Kies alleen de ondersteuning die je nodig hebt — van het vinden van de
+                juiste regio en een persoonlijke Buyer Discovery tot onafhankelijke
+                aankoopcontroles en een woning die klaar is voor jouw aankomst.
               </p>
             </div>
           </div>
@@ -486,13 +501,13 @@ export default function DutchHomePage() {
             >
               <img
                 src="/images/area-match.png"
-                alt="Area Match Report voor internationale woningkopers aan de Costa Blanca"
+                alt="Persoonlijk Area Match Report voor internationale woningkopers aan de Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Stap 1 · Oriëntatie
+                  Oriëntatie
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -500,13 +515,14 @@ export default function DutchHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Een uitgebreid persoonlijk profiel, ondersteund door lokale feiten:
-                  zorg, scholen, golf, community-profiel, voorzieningen,
-                  infrastructuur en lifestyle-fit.
+                  Ontdek welke regio&apos;s, plaatsen en levensstijlen het beste passen bij
+                  jouw prioriteiten, budget en langetermijnplannen. Je persoonlijke
+                  rapport bevat lokale informatie over zorg, scholen, voorzieningen,
+                  bereikbaarheid en community-fit.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Vraag je gratis report aan →
+                  Vraag je gratis Area Match aan →
                 </div>
               </div>
             </a>
@@ -517,13 +533,13 @@ export default function DutchHomePage() {
             >
               <img
                 src="/images/discover-card.png"
-                alt="Internationale kopers tijdens een Buyer Discovery Experience aan de Costa Blanca"
+                alt="Private en kleinschalige Buyer Discovery Experience aan de Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Stap 2 · Jouw route
+                  Beperkte edities · Optioneel
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -531,13 +547,14 @@ export default function DutchHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Bekijk geselecteerde woningen en beleef de regio tijdens een
-                  private experience of in een klein, zorgvuldig samengesteld
-                  gezelschap met vergelijkbare interesses.
+                  Ervaar geselecteerde woningen, woonwijken en het dagelijkse leven
+                  tijdens een private discovery of een zorgvuldig samengestelde
+                  kleinschalige editie. Beschikbaar op geselecteerde data en op basis
+                  van beschikbaarheid.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Ontdek de Discovery Experience →
+                  Ontdek Buyer Discovery →
                 </div>
               </div>
             </a>
@@ -548,13 +565,13 @@ export default function DutchHomePage() {
             >
               <img
                 src="/images/legal.png"
-                alt="Technische en juridische woningcontrole vóór aankoop aan de Costa Blanca"
+                alt="Onafhankelijke technische en juridische controles vóór aankoop aan de Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Stap 3 · Checks vóór aankoop
+                  Checks vóór aankoop
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -562,11 +579,9 @@ export default function DutchHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Een onafhankelijke surveyor beoordeelt de technische staat en
-                  vergelijkt de woning met beschikbare registraties en
-                  documenten. Daarnaast regelen we een passende onafhankelijke
-                  advocaat voor de juridische due diligence. Op basis van beide
-                  rapportages ontvang je ons groen-oranje-rood aankoopadvies.
+                  Heb je al een woning gevonden? Wij coördineren een onafhankelijke
+                  technische inspectie en regelen een passende onafhankelijke advocaat
+                  voor de juridische due diligence voordat je je definitief vastlegt.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
@@ -581,13 +596,13 @@ export default function DutchHomePage() {
             >
               <img
                 src="/images/move-in-ready-ibiza.png"
-                alt="Move-In Ready begeleiding na aankoop van een woning aan de Costa Blanca"
+                alt="Move-In Ready renovatie, relocation en interieurbegeleiding aan de Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
               <div className="p-10">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#c8a063]">
-                  Stap 4 · Zachte landing
+                  Na de aankoop
                 </p>
 
                 <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
@@ -595,9 +610,9 @@ export default function DutchHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Wij bepalen samen met jou de interior direction en
-                  coördineren styling, inrichting, lokale specialisten en waar
-                  gewenst de afstemming met een betrouwbaar verhuisbedrijf.
+                  Van nutsvoorzieningen en verhuisbegeleiding tot renovatie,
+                  interieurdesign, inrichting en de laatste voorbereiding. Wij
+                  coördineren de praktische stappen rond jouw woning, planning en budget.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
@@ -753,74 +768,153 @@ export default function DutchHomePage() {
         </div>
       </section>
 
-      {/* COMPACT MOVE-IN READY */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[36px] bg-[#e9dfd2] shadow-sm">
-          <div className="grid items-center lg:grid-cols-[1fr_1fr]">
-            <div className="p-10 md:p-12 lg:p-14">
+      {/* EXPANDED MOVE-IN READY */}
+      <section className="px-8 pb-32">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2] shadow-sm">
+          <div className="grid items-stretch lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="flex flex-col justify-center p-10 md:p-14 lg:p-16">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Stap 4 · Move-In Ready
+                Na aankoop · Move-In Ready
               </p>
 
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-                Van sleuteloverdracht naar werkelijk thuiskomen.
+              <h2 className="mt-5 max-w-2xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-6xl">
+                Van sleuteloverdracht naar een woning die klaar is voor jouw aankomst.
               </h2>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                Na de aankoop kunnen we de verhuizing, nutsvoorzieningen, lokale
-                specialisten, renovatie, interieurdesign en inrichting coördineren.
-                Je houdt één aanspreekpunt, terwijl de uitvoering wordt afgestemd op
-                jouw woning, planning en budget.
+              <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-700">
+                Na de aankoop moeten vaak nog tientallen praktische keuzes worden gemaakt.
+                Nordic Move brengt deze stappen samen in drie flexibele modules: Home Setup,
+                Renovation &amp; Interior en Family Relocation.
               </p>
 
-              <p className="mt-5 text-sm leading-relaxed text-stone-500">
-                Diensten worden uitgevoerd door geselecteerde externe specialisten.
-                Scope, planning en kosten worden vooraf per onderdeel vastgelegd.
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-700">
+                Je kiest alleen de ondersteuning die past bij jouw woning, gezin, planning
+                en budget. Wij coördineren de afgesproken partijen en vervolgstappen, terwijl
+                iedere externe specialist verantwoordelijk blijft voor het eigen advies en
+                de uitvoering.
               </p>
+
+              <div className="mt-9 flex flex-wrap gap-4">
+                <a
+                  href="/nl/services/move-in-ready"
+                  className="rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
+                >
+                  Ontdek Move-In Ready
+                </a>
+
+                <a
+                  href="/nl/contact"
+                  className="rounded-full border border-[#1e2a3a] px-8 py-4 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
+                >
+                  Plan een kennismaking
+                </a>
+
+                <a
+                  href="https://wa.me/31683848239?text=Hallo%20Nordic%20Move%20Spain%2C%20ik%20wil%20graag%20mijn%20Move-In%20Ready-plan%20bespreken."
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Bespreek uw Move-In Ready-plan via WhatsApp"
+                  className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-[#1e2a3a] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#c8a063] text-white">
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 32 32"
+                      className="h-4 w-4 fill-current"
+                    >
+                      <path d="M16.04 3C8.87 3 3.05 8.78 3.05 15.91c0 2.28.6 4.51 1.75 6.47L3 29l6.82-1.77a13.03 13.03 0 0 0 6.22 1.58h.01C23.21 28.81 29 23.03 29 15.9 29 8.78 23.21 3 16.04 3Zm0 23.62h-.01a10.83 10.83 0 0 1-5.52-1.51l-.4-.24-4.05 1.05 1.08-3.93-.26-.4a10.7 10.7 0 0 1-1.65-5.68c0-5.92 4.85-10.74 10.82-10.74 5.96 0 10.81 4.82 10.81 10.74 0 5.92-4.85 10.71-10.82 10.71Zm5.94-8.02c-.33-.16-1.92-.94-2.22-1.05-.3-.11-.52-.16-.74.16-.22.33-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.38-.5-2.63-1.61a9.8 9.8 0 0 1-1.82-2.25c-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.7 0 1.59 1.17 3.13 1.33 3.35.16.22 2.3 3.48 5.57 4.88.78.33 1.38.53 1.86.68.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.14-.3-.22-.63-.38Z" />
+                    </svg>
+                  </span>
+                  Bespreek via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div className="relative min-h-[480px] p-6 md:p-8 lg:min-h-[650px] lg:p-10">
+              <img
+                src="/images/move-in-ready-mediterranean-warmth.png"
+                alt="Mediterrane Move-In Ready woning met terras en buitenkeuken aan de Costa Blanca"
+                className="h-full min-h-[440px] w-full rounded-[32px] object-cover lg:min-h-[570px]"
+                loading="lazy"
+              />
+
+              <div className="absolute bottom-10 left-10 right-10 rounded-[26px] bg-white/90 p-6 shadow-lg backdrop-blur md:bottom-12 md:left-12 md:right-auto md:max-w-sm">
+                <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
+                  Eén afgestemd traject
+                </p>
+                <p className="mt-3 font-serif text-2xl leading-tight text-[#1e2a3a]">
+                  Praktische voorbereiding, renovatie en inrichting in samenhang.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-[#1e2a3a]/10 px-8 py-10 md:px-12 md:py-12 lg:px-16">
+            <div className="grid gap-6 lg:grid-cols-3">
+              <a
+                href="/nl/services/move-in-ready#home-setup"
+                className="rounded-[30px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                  Module 01
+                </p>
+                <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                  Home Setup
+                </h3>
+                <p className="mt-4 leading-relaxed text-stone-600">
+                  Nutsvoorzieningen, internet, verzekeringen, beveiliging, schoonmaak,
+                  onderhoud en kleine werkzaamheden vóór jouw aankomst.
+                </p>
+                <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
+                  Bekijk Home Setup →
+                </span>
+              </a>
 
               <a
-                href="/nl/services/move-in-ready"
-                className="mt-8 inline-block rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
+                href="/nl/services/move-in-ready#renovation-interior"
+                className="rounded-[30px] bg-[#1e2a3a] p-8 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
-                Ontdek Move-In Ready
+                <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                  Module 02
+                </p>
+                <h3 className="mt-4 font-serif text-3xl">
+                  Renovation &amp; Interior
+                </h3>
+                <p className="mt-4 leading-relaxed text-white/75">
+                  Renovatiecoördinatie, aannemer en specialisten, interieurconcept,
+                  materialen, meubels, verlichting, installatie en styling.
+                </p>
+                <span className="mt-6 inline-block text-sm font-medium text-white">
+                  Bekijk Renovation &amp; Interior →
+                </span>
+              </a>
+
+              <a
+                href="/nl/services/move-in-ready#family-relocation"
+                className="rounded-[30px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                  Module 03
+                </p>
+                <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                  Family Relocation
+                </h3>
+                <p className="mt-4 leading-relaxed text-stone-600">
+                  Verhuisbedrijf, scholen, zorg, verzekeringen, administratie, lokale
+                  voorzieningen en aansluiting bij clubs en community.
+                </p>
+                <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
+                  Bekijk Family Relocation →
+                </span>
               </a>
             </div>
 
-            <div className="p-6 md:p-8 lg:p-10">
-              <img
-                src="/images/move-in-ready-ibiza.png"
-                alt="Woonklaar mediterraan interieur als inspiratie voor Move-In Ready begeleiding"
-                className="h-[420px] w-full rounded-[30px] object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BUYER JOURNEY VISUAL SUMMARY */}
-      <section className="px-8 pb-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-8 max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Het traject in één oogopslag
+            <p className="mt-8 max-w-5xl text-sm leading-relaxed text-stone-500">
+              De modules kunnen afzonderlijk of gecombineerd worden afgenomen. Scope,
+              planning, kosten en verantwoordelijkheden worden vooraf per onderdeel
+              vastgelegd. Externe professionals blijven verantwoordelijk voor hun eigen
+              advies, offertes en uitvoering.
             </p>
-            <h2 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a] md:text-4xl">
-              Van eerste oriëntatie tot een woning die klaar is voor jouw aankomst.
-            </h2>
-            <p className="mt-5 leading-relaxed text-stone-600">
-              Je kunt de volledige Buyer Journey volgen of alleen instappen bij de
-              onderdelen die voor jouw situatie relevant zijn.
-            </p>
-          </div>
-
-          <div className="overflow-hidden rounded-[36px] bg-white p-3 shadow-sm md:p-5">
-            <img
-              src="/images/buyer-journey.png"
-              alt="Overzicht van de Nordic Move Buyer Journey van Area Match tot Move-In Support"
-              className="h-auto w-full rounded-[28px]"
-              loading="lazy"
-            />
           </div>
         </div>
       </section>

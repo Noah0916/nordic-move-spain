@@ -113,6 +113,53 @@ export default function MoveInReadyPage() {
           local partners for the practical execution.
         </p>
 
+        {/* AFTER THE KEY HANDOVER */}
+        <section className="mt-16 rounded-[40px] bg-[#1e2a3a] p-8 text-white shadow-sm md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            After the key handover
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight md:text-5xl">
+            We remain involved after the purchase.
+          </h2>
+
+          <p className="mt-7 max-w-4xl text-lg leading-relaxed text-white/80">
+            Buying the property is often only the beginning. Electricity, water,
+            internet and insurance may still need to be arranged. You may also
+            need an international moving company, temporary storage or vehicle
+            transport. Garden and pool maintenance, air conditioning, heating,
+            solar panels, renovation and interior furnishing all require reliable
+            local partners and clear agreements.
+          </p>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
+            Nordic Move Spain helps organise these steps in a clear and structured
+            way. We speak Spanish, understand the local way of working and find
+            suitable professionals for your situation. We request and compare
+            quotations, coordinate appointments and keep track of progress.
+          </p>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
+            You do not have to spend months searching for reliable suppliers or
+            repeatedly explaining your wishes. You communicate with one fixed
+            point of contact, while we help ensure that the selected parties know
+            what needs to happen, when it needs to happen and who is responsible.
+          </p>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
+            For renovation, we work with a selected, officially registered
+            contractor with its own execution team and qualified architects and
+            technical architects. You remain free to appoint your own contractor
+            or other professionals.
+          </p>
+
+          <p className="mt-6 max-w-4xl text-lg font-medium leading-relaxed text-[#d7bd94]">
+            Choose the complete Buyer Journey or only the services you need —
+            from buyer guidance and independent checks to relocation, Home Setup,
+            renovation and interior styling.
+          </p>
+        </section>
+
         {/* INTERIOR CONCEPT IMAGES */}
         <div className="mt-16 grid gap-8 md:grid-cols-2">
           {images.map((image) => (
@@ -196,27 +243,66 @@ export default function MoveInReadyPage() {
 
         <div className="mt-16 rounded-[40px] bg-[#1e2a3a] p-10 text-white md:p-14">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Start with clarity
+            Personal support at every step
           </p>
 
           <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight md:text-5xl">
-            Arrive in a home that feels considered, not unfinished.
+            Tell us where you need support in your Buyer Journey.
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
-            From style briefing and visual moodboard to lifestyle concept,
-            contractor coordination, furniture sourcing, lighting, curtains,
-            installation, styling and final move-in preparation — we help make
-            the final step into your Costa Blanca home calmer and more
-            organised.
+            Contact us and tell us which service or step you need help with.
+            Whether you are still choosing the right area, have found a property,
+            need independent purchase checks or want support with relocation,
+            renovation and Move-In Ready preparation, we will discuss the most
+            suitable next step with you.
           </p>
 
-          <a
-            href="/contact"
-            className="mt-8 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-          >
-            Discuss Move-In Ready support
-          </a>
+          <div className="mt-10 grid gap-4 md:grid-cols-[0.7fr_1.3fr]">
+            <a
+              href="/contact"
+              className="inline-flex min-h-[112px] items-center justify-center rounded-[28px] border border-white/35 px-8 py-6 text-center text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-[#1e2a3a]"
+            >
+              Use the contact form
+            </a>
+
+            <a
+              href="https://wa.me/31683848239?text=Hello%20Nordic%20Move%20Spain%2C%20I%20would%20like%20to%20discuss%20which%20service%20or%20step%20in%20the%20Buyer%20Journey%20I%20need%20help%20with."
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Start a direct WhatsApp conversation with Nordic Move Spain"
+              className="group flex min-h-[112px] items-center gap-5 rounded-[28px] bg-white px-6 py-5 text-[#1e2a3a] shadow-[0_18px_45px_rgba(0,0,0,0.18)] transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(0,0,0,0.24)] md:px-8"
+            >
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#c8a063] text-white">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 32 32"
+                  className="h-7 w-7 fill-current"
+                >
+                  <path d="M16.04 3C8.87 3 3.05 8.78 3.05 15.91c0 2.28.6 4.51 1.75 6.47L3 29l6.82-1.77a13.03 13.03 0 0 0 6.22 1.58h.01C23.21 28.81 29 23.03 29 15.9 29 8.78 23.21 3 16.04 3Zm0 23.62h-.01a10.83 10.83 0 0 1-5.52-1.51l-.4-.24-4.05 1.05 1.08-3.93-.26-.4a10.7 10.7 0 0 1-1.65-5.68c0-5.92 4.85-10.74 10.82-10.74 5.96 0 10.81 4.82 10.81 10.74 0 5.92-4.85 10.71-10.82 10.71Zm5.94-8.02c-.33-.16-1.92-.94-2.22-1.05-.3-.11-.52-.16-.74.16-.22.33-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.38-.5-2.63-1.61a9.8 9.8 0 0 1-1.82-2.25c-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.7 0 1.59 1.17 3.13 1.33 3.35.16.22 2.3 3.48 5.57 4.88.78.33 1.38.53 1.86.68.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.14-.3-.22-.63-.38Z" />
+                </svg>
+              </span>
+
+              <span className="min-w-0 flex-1">
+                <span className="block text-xs font-medium uppercase tracking-[0.25em] text-[#b88948]">
+                  Direct WhatsApp
+                </span>
+                <span className="mt-1 block font-serif text-2xl leading-tight">
+                  Start a personal conversation
+                </span>
+                <span className="mt-1 block text-sm text-stone-500">
+                  +31 6 83 84 82 39
+                </span>
+              </span>
+
+              <span
+                aria-hidden="true"
+                className="text-2xl transition group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -1,55 +1,58 @@
 import type { Metadata } from "next";
 
-const pagePath = "/nl/services/area-match";
+const pagePath = "/nl/services";
 
 export const metadata: Metadata = {
   title:
-    "Area Match, Buyer Discovery & Volledige Aankoopcoördinatie | Nordic Move Spain",
+    "Aankoopbegeleiding Costa Blanca | Area Match, Purchase Safety & Move-In Ready",
   description:
-    "Start met een gratis Area Match Portfolio en ga verder met één persoonlijke makelaar en vast aanspreekpunt voor woningzoektocht, bezichtigingen, Purchase Safety, verhuizing en inrichting aan de Costa Blanca.",
+    "Persoonlijke aankoopbegeleiding aan de Costa Blanca: Area Match, onafhankelijke technische en juridische aankoopcontroles, Complete Buyer Support, relocation, renovatie en Move-In Ready.",
   keywords: [
+    "aankoopbegeleiding Costa Blanca",
+    "aankoopmakelaar Costa Blanca",
+    "woning kopen Spanje begeleiding",
+    "Complete Buyer Support Spanje",
     "Area Match Costa Blanca",
-    "persoonlijke makelaar Costa Blanca",
-    "woning kopen Costa Blanca",
-    "Buyer Discovery Experience Spanje",
-    "aankoopbegeleiding Spanje",
-    "Purchase Safety Report Spanje",
-    "onafhankelijke woninginspectie Spanje",
-    "Spaanse vastgoedadvocaat",
-    "verhuisbedrijf coördinatie Spanje",
+    "Purchase Safety Spanje",
+    "bouwkundige keuring woning Spanje",
+    "onafhankelijke vastgoedadvocaat Spanje",
+    "relocation Costa Blanca",
+    "renovatiebegeleiding Costa Blanca",
+    "interieurdesign Costa Blanca",
     "Move-In Ready Costa Blanca",
+    "Family Relocation Spanje",
     "Nordic Move Spain",
   ],
   alternates: {
     canonical: pagePath,
     languages: {
-      "en-GB": "/services/area-match",
+      "en-GB": "/services",
       "nl-NL": pagePath,
-      "de-DE": "/de/services/area-match",
-      "sv-SE": "/sv/services/area-match",
+      "de-DE": "/de/services",
+      "sv-SE": "/sv/services",
     },
   },
   openGraph: {
     title:
-      "Area Match, Buyer Discovery & Volledige Aankoopcoördinatie | Nordic Move Spain",
+      "Van de juiste regio tot een veilige aankoop en een woning klaar voor aankomst",
     description:
-      "Vind eerst de juiste regio, werk met één persoonlijke makelaar en laat Nordic Move woningzoektocht, bezichtigingen, onafhankelijke aankoopcontroles, verhuizing en inrichting coördineren.",
+      "Kies de begeleiding die bij uw situatie past: Area Match, Purchase Safety, Complete Buyer Support of Move-In Ready met Home Setup, renovatie, interieur en relocation.",
     type: "website",
     locale: "nl_NL",
     url: pagePath,
     images: [
       {
         url: "/images/brochure2-en.png",
-        alt: "Nordic Move Spain-diensten voor een gecoördineerde woningaankoop aan de Costa Blanca",
+        alt: "Nordic Move Spain aankoopbegeleiding, Purchase Safety en Move-In Ready aan de Costa Blanca",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Area Match, Buyer Discovery & Volledige Aankoopcoördinatie | Nordic Move Spain",
+      "Aankoopbegeleiding en Move-In Ready aan de Costa Blanca | Nordic Move Spain",
     description:
-      "Eén persoonlijke makelaar en vast aanspreekpunt van Area Match en woningzoektocht tot Purchase Safety, verhuizing en inrichting.",
+      "Eén vertrouwd aanspreekpunt voor Area Match, woningselectie, onafhankelijke aankoopcontroles, relocation, renovatie en inrichting.",
     images: ["/images/brochure2-en.png"],
   },
   robots: {
@@ -58,74 +61,134 @@ export const metadata: Metadata = {
   },
 };
 
-const services = [
+const serviceOverview = [
   {
     number: "01",
-    eyebrow: "Gratis oriëntatie",
-    title: "Area Match Portfolio",
+    eyebrow: "Oriëntatie",
+    title: "Area Match",
     text:
-      "Je ontvangt een gratis, uitgebreid en persoonlijk portfolio dat laat zien welke regio’s, plaatsen en woningtypes het beste passen bij jouw levensstijl, budget en langetermijnplannen. Zo ontstaat focus voordat je maanden zoekt tussen ongeschikte woningen.",
-    bullets: [
-      "Persoonlijke matching van levensstijl en locatie",
-      "Informatie over geschikte plaatsen en woongebieden",
-      "Inzicht in voorzieningen, zorg, bereikbaarheid en dagelijks leven",
-      "Meer duidelijkheid over het woningtype dat echt bij je past",
-      "Een gerichte basis voor woningzoektocht en bezichtigingen",
-    ],
-    href: "/nl/relocation-assessment",
-    cta: "Vraag je gratis Area Match Portfolio aan",
+      "Ontdek welke plaatsen en regio’s passen bij uw woonwensen, budget, dagelijkse leven en langetermijnplannen. Start met een korte gratis kennismaking of kies voor een uitgebreid persoonlijk rapport.",
+    href: "/nl/services/area-match",
+    cta: "Bekijk Area Match",
+    image: "/images/area-match.png",
+    alt: "Persoonlijke Area Match voor internationale woningkopers aan de Costa Blanca",
   },
   {
     number: "02",
-    eyebrow: "Persoonlijke woningzoektocht",
-    title: "Buyer Discovery Experience",
+    eyebrow: "Woning gevonden",
+    title: "Purchase Safety",
     text:
-      "Na je Area Match treden wij op als jouw persoonlijke makelaar aan de Costa Blanca. We zoeken en selecteren passende woningen, stellen een gerichte route samen en begeleiden je bij bezichtigingen, communicatie, onderhandelingen en aankoop.",
-    bullets: [
-      "Een persoonlijke route door geschikte regio’s",
-      "Gerichte woningzoektocht en selectie",
-      "Bezichtigingen afgestemd op jouw profiel en prioriteiten",
-      "Communicatie met verkopers en verkoopmakelaars",
-      "Begeleiding tijdens onderhandelingen en het aankoopproces",
-    ],
-    href: "/nl/services/discovery-trips",
-    cta: "Ontdek de Buyer Discovery Experience",
-    note:
-      "Wanneer uiteindelijk via Nordic Move Spain een villa wordt gekocht, wordt afhankelijk van de aankoopprijs de helft of het volledige bedrag van de trip vergoed. De exacte vergoeding en voorwaarden worden vooraf schriftelijk bevestigd.",
+      "Wij coördineren een onafhankelijke bouwkundige inspectie en juridische due diligence, bewaken de belangrijkste vragen en maken de vervolgstappen overzichtelijk.",
+    href: "/nl/services/purchase-safety-report",
+    cta: "Bekijk Purchase Safety",
+    image: "/images/brochure2-en.png",
+    alt: "Onafhankelijke technische en juridische aankoopcontrole in Spanje",
   },
   {
     number: "03",
-    eyebrow: "Onafhankelijke aankoopbeoordeling",
-    title: "Purchase Safety",
+    eyebrow: "Volledige aankoopbegeleiding",
+    title: "Complete Buyer Support",
     text:
-      "Wanneer een woning serieus in beeld komt, coördineren we een onafhankelijke surveyor voor de technische beoordeling en eerste document- en registratiescreening, samen met een onafhankelijke Spaanse advocaat voor de volledige juridische due diligence.",
-    bullets: [
-      "Zichtbare technische staat, bouwkwaliteit, vocht en installaties",
-      "Zwembad, bijgebouwen, reparaties, foto’s en aanbevelingen",
-      "Nota Simple, Catastro, IBI, CEE en ITE indien relevant",
-      "Beschikbare vergunningen, licenties en vergelijking van officiële en gemeten oppervlaktes",
-      "Twee professionele rapporten en één duidelijk Nordic Move-aankoopadvies",
-    ],
-    href: "/nl/services/purchase-safety-report",
-    cta: "Bekijk Purchase Safety",
-    note:
-      "Wanneer uiteindelijk via Nordic Move Spain een villa wordt gekocht, is de onafhankelijke Purchase Safety-beoordeling inbegrepen in de aankoopbegeleiding. De exacte scope hangt af van de woning, de beschikbare documentatie en de benodigde specialisten.",
+      "Van Area Match, zoekprofiel en woningselectie tot bezichtigingen, onderhandelingen, onafhankelijke controles en begeleiding richting de overdracht.",
+    href: "/nl/services#complete-buyer-support",
+    cta: "Bekijk Complete Buyer Support",
+    image: "/images/brochure1-en.png",
+    alt: "Volledige aankoopbegeleiding voor internationale kopers aan de Costa Blanca",
   },
   {
     number: "04",
-    eyebrow: "Na aankoop",
-    title: "Move-In Ready & Verhuiscoördinatie",
+    eyebrow: "Na de aankoop",
+    title: "Move-In Ready",
     text:
-      "Na aankoop blijft Nordic Move jouw vaste aanspreekpunt. Afhankelijk van je behoeften brengen we je in contact met een passende hypotheekadviseur, helpen we bij de selectie en coördinatie van een betrouwbaar verhuisbedrijf en coördineren we persoonlijk styling, inrichting en praktische voorbereiding.",
-    bullets: [
-      "Introductie bij een passende hypotheekadviseur",
-      "Selectie en coördinatie van een betrouwbaar verhuisbedrijf",
-      "Persoonlijke interieurrichting en meubelselectie",
-      "Coördinatie van leveranciers, leveringen, montage en styling",
-      "Laatste praktische voorbereiding voor aankomst",
-    ],
+      "Kies alleen wat u nodig heeft: Home Setup, Renovation & Interior of Family Relocation — afgestemd op uw woning, planning en budget.",
     href: "/nl/services/move-in-ready",
-    cta: "Ontdek Move-In Ready-ondersteuning",
+    cta: "Bekijk Move-In Ready",
+    image: "/images/interior-design.png",
+    alt: "Move-In Ready, renovatie, interieur en relocation aan de Costa Blanca",
+  },
+];
+
+const purchaseSafetyChecks = [
+  "Zichtbare en toegankelijke technische staat van de woning",
+  "Vocht, lekkage, waterindringing en zichtbare scheurvorming",
+  "Dak, gevels, terrassen, ramen, deuren en afwerking",
+  "Elektrische installatie, water, warm water, verwarming en airconditioning",
+  "Zwembad, technische zwembadinstallaties, garage en bijgebouwen",
+  "Noodzakelijke reparaties, onderhoudsrisico’s en aanbevelingen",
+  "Gemeten oppervlaktes en vergelijking met beschikbare officiële informatie",
+  "Nota Simple, Catastro, IBI, CEE en ITE wanneer relevant en beschikbaar",
+  "Vergunningen, licenties en mogelijk niet-geregistreerde onderdelen",
+  "Uw eigen specifieke vragen over de woning",
+];
+
+const homeSetupServices = [
+  "Elektriciteit en water helpen organiseren",
+  "Internet en telefonie helpen regelen",
+  "Passende verzekeringen vergelijken en coördineren",
+  "Alarm en beveiliging helpen organiseren",
+  "Schoonmaak vóór aankomst coördineren",
+  "Sleuteloverdracht en toegang praktisch afstemmen",
+  "Schilderwerk en kleine werkzaamheden laten offreren en plannen",
+  "De woning voorbereiden voor uw aankomst",
+];
+
+const renovationSteps = [
+  "Inventarisatie van wensen, prioriteiten en budget",
+  "Selectie en coördinatie van aannemer en relevante specialisten",
+  "Planning, besluitmomenten en voortgangsrapportages structureren",
+  "Afstemming met architect of technical architect waar nodig",
+  "Interieurconcept en visuele stijlrichting ontwikkelen",
+  "Materialen, meubels en verlichting selecteren",
+  "Levering, installatie en styling coördineren",
+  "Eindcontrole en voorbereiding vóór aankomst afstemmen",
+];
+
+const familyRelocationServices = [
+  "Een passend internationaal verhuisbedrijf zoeken en vergelijken",
+  "Scholen en kinderopvang onderzoeken en afspraken helpen plannen",
+  "Zorgverleners en verzekeringen helpen vergelijken",
+  "Praktische administratie en lokale afspraken structureren",
+  "Belangrijke lokale voorzieningen in kaart brengen",
+  "Introducties tot clubs, netwerken en community helpen organiseren",
+  "Begeleiding bij het opbouwen van het dagelijkse leven in Spanje",
+];
+
+/*
+ * Gebruik hier de exacte bestandsnamen van de vier bestaande Nordic Move Design-beelden
+ * uit uw project wanneer deze anders heten.
+ */
+const nordicMoveDesigns = [
+  {
+    title: "Coastal Calm",
+    text:
+      "Een zachte, elegante kuststijl met natuurlijke materialen, rustige tinten, ontspannen comfort en ingetogen luxe.",
+    image: "/images/refined-mediterranean-living.png",
+    href: "/nl/services/move-in-ready#coastal-calm",
+    alt: "Nordic Move Design Coastal Calm interieur aan de Costa Blanca",
+  },
+  {
+    title: "Ibiza Soho Lounge",
+    text:
+      "Een warme en sociale mediterrane richting met zachte wittinten, rustiek hout, geweven texturen en een verfijnd binnen-buitengevoel.",
+    image: "/images/move-in-ready-ibiza.png",
+    href: "/nl/services/move-in-ready#ibiza-soho-lounge",
+    alt: "Nordic Move Design Ibiza Soho Lounge interieur",
+  },
+  {
+    title: "Contemporary Coastal",
+    text:
+      "Een lichte, architectonische stijl met strakke lijnen, bleke houtsoorten, verfijnde afwerkingen en een kalme kustsfeer.",
+    image: "/images/contemporary-coastal-kitchen.png",
+    href: "/nl/services/move-in-ready#contemporary-coastal",
+    alt: "Nordic Move Design Contemporary Coastal interieur",
+  },
+  {
+    title: "Mediterranean Warmth",
+    text:
+      "Een ontspannen mediterrane leefstijl rondom terrassen, daglicht, buiten eten, warme materialen en comfortabel dagelijks gebruik.",
+    image: "/images/move-in-ready-mediterranean-warmth.png",
+    href: "/nl/services/move-in-ready#mediterranean-warmth",
+    alt: "Nordic Move Design Mediterranean Warmth interieur",
   },
 ];
 
@@ -149,12 +212,6 @@ const breadcrumbStructuredData = {
       "@type": "ListItem",
       position: 2,
       name: "Diensten",
-      item: absoluteUrl("/nl/services"),
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Area Match & Kopersreis",
       item: absoluteUrl(pagePath),
     },
   ],
@@ -163,8 +220,8 @@ const breadcrumbStructuredData = {
 const servicesStructuredData = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Nordic Move Spain Kopersreis",
-  itemListElement: services.map((service, index) => ({
+  name: "Nordic Move Spain servicepakketten voor aankoopbegeleiding en relocation",
+  itemListElement: serviceOverview.map((service, index) => ({
     "@type": "ListItem",
     position: index + 1,
     item: {
@@ -184,7 +241,7 @@ const servicesStructuredData = {
   })),
 };
 
-export default function AreaMatchPage() {
+export default function ServicesPage() {
   return (
     <>
       <script
@@ -214,17 +271,8 @@ export default function AreaMatchPage() {
                 </a>
               </li>
               <li aria-hidden="true">/</li>
-              <li>
-                <a
-                  href="/nl/services"
-                  className="transition hover:text-[#173252]"
-                >
-                  Diensten
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
               <li aria-current="page" className="text-[#173252]">
-                Area Match &amp; Kopersreis
+                Diensten
               </li>
             </ol>
           </nav>
@@ -232,27 +280,48 @@ export default function AreaMatchPage() {
 
         {/* HERO */}
         <section className="px-6 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
-          <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.92fr_1.08fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Eén persoonlijke makelaar · Eén vertrouwd aanspreekpunt
+                Independent Buyer Advisory · Relocation · Move-In Ready
               </p>
 
               <h1 className="mt-6 font-serif text-5xl leading-[1.03] text-[#173252] md:text-7xl">
-                Eerst de juiste plek. Dan de juiste woning. Wij coördineren alles wat volgt.
+                Meer zekerheid. Duidelijke afspraken. Eén vertrouwd aanspreekpunt.
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
-                Onze begeleiding combineert Area Match, persoonlijke
-                woningzoektocht, Buyer Discovery, onafhankelijke
-                aankoopcontroles, aankoopbegeleiding, verhuizing en inrichting.
-                Gedurende het hele traject communiceer je met één vertrouwd
-                Nordic Move-aanspreekpunt dat de afgesproken stappen coördineert
-                van eerste oriëntatie tot aankomst.
+                Wilt u een woning aan de Costa Blanca kopen, maar niet zelf alle
+                makelaars, documenten, afspraken en specialisten coördineren?
               </p>
 
-              <p className="mt-6 max-w-2xl text-sm font-medium uppercase tracking-[0.22em] text-[#b88948]">
-                Volledige coördinatie · Minder partijen zelf aansturen · Meer zekerheid vóór aankoop
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Nordic Move Spain biedt vier duidelijke instappakketten. Begin met een
+                Area Match wanneer u nog zoekt naar de juiste omgeving, kies Purchase
+                Safety wanneer u al een woning heeft gevonden, of laat het volledige
+                aankoopproces begeleiden met Complete Buyer Support.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Na de overdracht kunt u Move-In Ready inschakelen voor Home Setup,
+                renovatie en interieur of Family Relocation. U kiest alleen de
+                ondersteuning die bij uw situatie past.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Wij spreken Spaans, kennen de lokale werkwijze en coördineren zorgvuldig
+                geselecteerde onafhankelijke professionals. U houdt één vertrouwd
+                aanspreekpunt, terwijl verantwoordelijkheden, openstaande vragen en
+                vervolgstappen helder blijven.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg font-medium leading-relaxed text-[#173252]">
+                Gericht zoeken. Onafhankelijk laten controleren. Met vertrouwen kopen
+                en voorbereid aankomen.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-sm font-medium uppercase tracking-[0.2em] text-[#b88948]">
+                Vier duidelijke pakketten · Eén vertrouwd aanspreekpunt · Flexibel instappen
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -260,7 +329,7 @@ export default function AreaMatchPage() {
                   href="/nl/relocation-assessment"
                   className="rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
                 >
-                  Ontvang je gratis portfolio
+                  Start met uw gratis Area Match
                 </a>
 
                 <a
@@ -276,7 +345,7 @@ export default function AreaMatchPage() {
               <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)] sm:translate-y-10">
                 <img
                   src="/images/brochure1-en.png"
-                  alt="Nordic Move Spain-brochure over de Buyer Discovery Experience en Move-In Ready-ondersteuning"
+                  alt="Nordic Move Spain Complete Buyer Support en relocation"
                   className="h-full w-full rounded-[26px] object-cover"
                 />
               </div>
@@ -284,7 +353,7 @@ export default function AreaMatchPage() {
               <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)]">
                 <img
                   src="/images/brochure2-en.png"
-                  alt="Nordic Move Spain-brochure over onafhankelijke Purchase Safety-controles"
+                  alt="Nordic Move Spain onafhankelijke aankoopcontroles"
                   className="h-full w-full rounded-[26px] object-cover"
                 />
               </div>
@@ -292,120 +361,274 @@ export default function AreaMatchPage() {
           </div>
         </section>
 
-        {/* SERVICE OVERVIEW */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-14 max-w-4xl">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Vier diensten, één gecoördineerd traject
-              </p>
+        {/* FLEXIBLE SERVICE MODEL */}
+        <section className="px-6 pb-20 md:px-8 md:pb-28">
+          <div className="mx-auto max-w-7xl rounded-[38px] bg-[#173252] p-9 text-white md:p-12 lg:p-14">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
+                  Vier pakketten, flexibel te combineren
+                </p>
+                <h2 className="mt-5 font-serif text-4xl leading-tight md:text-5xl">
+                  Kies het pakket dat past bij uw huidige fase.
+                </h2>
+              </div>
 
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Van eerste oriëntatie tot aankoop, verhuizing, inrichting en aankomst.
-              </h2>
-            </div>
-
-            <div className="grid gap-7 md:grid-cols-2">
-              {services.map((service) => (
-                <article
-                  key={service.number}
-                  className="flex h-full flex-col rounded-[36px] bg-white p-8 shadow-sm md:p-10"
-                >
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
-                        {service.eyebrow}
-                      </p>
-
-                      <h3 className="mt-4 font-serif text-3xl leading-tight text-[#173252] md:text-4xl">
-                        {service.title}
-                      </h3>
-                    </div>
-
-                    <span className="font-serif text-5xl text-[#d7bd94]">
-                      {service.number}
-                    </span>
-                  </div>
-
-                  <p className="mt-6 text-base leading-relaxed text-stone-600">
-                    {service.text}
+              <div className="grid gap-4 sm:grid-cols-2">
+                <article className="rounded-[26px] bg-white/10 p-6">
+                  <h3 className="font-serif text-2xl">Complete Buyer Support</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/75">
+                    Volledige aankoopbegeleiding van zoekprofiel en woningselectie tot controles, onderhandelingen en overdracht.
                   </p>
-
-                  <ul className="mt-7 space-y-3 text-sm leading-relaxed text-stone-700">
-                    {service.bullets.map((item) => (
-                      <li key={item} className="flex gap-3">
-                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {service.note ? (
-                    <p className="mt-7 text-xs leading-relaxed text-stone-500">
-                      * {service.note}
-                    </p>
-                  ) : null}
-
-                  <a
-                    href={service.href}
-                    className="mt-8 inline-flex w-fit items-center border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
-                  >
-                    {service.cta} →
-                  </a>
                 </article>
-              ))}
+
+                <article className="rounded-[26px] bg-white/10 p-6">
+                  <h3 className="font-serif text-2xl">Een los instappakket</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/75">
+                    Kies alleen Area Match, Purchase Safety of een Move-In Ready-module wanneer u geen volledig aankooptraject nodig heeft.
+                  </p>
+                </article>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* AREA MATCH */}
+
+
+        {/* PACKAGES IN ONE VIEW */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-4xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Wat is inbegrepen?
+              </p>
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Vier pakketten met een duidelijk doel en resultaat.
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                U hoeft niet het volledige traject af te nemen. Kies één pakket of
+                combineer meerdere onderdelen tot een begeleiding die past bij uw
+                woning, planning en toekomst in Spanje.
+              </p>
+            </div>
+
+            <div className="grid gap-7 lg:grid-cols-2">
+              <article
+                id="area-match-package"
+                className="rounded-[36px] bg-white p-8 shadow-sm md:p-10"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
+                  Voor wie nog niet weet waar te zoeken
+                </p>
+                <h3 className="mt-4 font-serif text-4xl text-[#173252]">Area Match</h3>
+                <ul className="mt-7 space-y-3 text-sm leading-relaxed text-stone-700">
+                  {[
+                    "Persoonlijke intake",
+                    "Analyse van woonwensen, budget en toekomstplannen",
+                    "Vergelijking van passende plaatsen en regio’s",
+                    "Aandacht voor zorg, scholen, bereikbaarheid, voorzieningen en levensstijl",
+                    "Persoonlijk Area Match Rapport",
+                    "Online adviesgesprek",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-7 rounded-[22px] bg-[#f6f1ea] p-5 text-sm font-medium leading-relaxed text-[#173252]">
+                  Resultaat: u weet waar u gericht kunt zoeken en welke gebieden
+                  waarschijnlijk minder goed bij uw plannen passen.
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-stone-500">
+                  Start met een korte gratis Area Match. Voor uitgebreid lokaal
+                  onderzoek en een persoonlijk rapport kunt u kiezen voor de betaalde
+                  verdiepingsvariant.
+                </p>
+                <a
+                  href="/nl/services/area-match"
+                  className="mt-7 inline-flex border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
+                >
+                  Bekijk Area Match →
+                </a>
+              </article>
+
+              <article
+                id="purchase-safety-package"
+                className="rounded-[36px] bg-white p-8 shadow-sm md:p-10"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
+                  Voor wie al een woning heeft gevonden
+                </p>
+                <h3 className="mt-4 font-serif text-4xl text-[#173252]">
+                  Purchase Safety
+                </h3>
+                <ul className="mt-7 space-y-3 text-sm leading-relaxed text-stone-700">
+                  {[
+                    "Intake over de woning en de voorgenomen aankoop",
+                    "Coördinatie van een onafhankelijke vastgoedadvocaat",
+                    "Coördinatie van een bouwkundige inspectie door een gekwalificeerde professional",
+                    "Verzamelen en bewaken van belangrijke vragen",
+                    "Overzicht van technische en juridische aandachtspunten",
+                    "Afstemming met verkoopmakelaar en verkoper",
+                    "Duidelijk vervolgstappenadvies",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-7 rounded-[22px] bg-[#f6f1ea] p-5 text-sm font-medium leading-relaxed text-[#173252]">
+                  Resultaat: u kunt beter onderbouwd beslissen of u doorgaat,
+                  heronderhandelt, aanvullende voorwaarden stelt of van de aankoop afziet.
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-stone-500">
+                  De advocaat en bouwkundige professional blijven verantwoordelijk voor
+                  hun eigen onderzoek en rapportage. Nordic Move bewaakt het proces en
+                  brengt de informatie overzichtelijk samen.
+                </p>
+                <a
+                  href="/nl/services/purchase-safety-report"
+                  className="mt-7 inline-flex border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
+                >
+                  Bekijk Purchase Safety →
+                </a>
+              </article>
+
+              <article
+                id="complete-buyer-support"
+                className="rounded-[36px] bg-[#173252] p-8 text-white shadow-sm md:p-10"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#d1a866]">
+                  Voor volledige aankoopbegeleiding
+                </p>
+                <h3 className="mt-4 font-serif text-4xl">Complete Buyer Support</h3>
+                <ul className="mt-7 space-y-3 text-sm leading-relaxed text-white/80">
+                  {[
+                    "Area Match",
+                    "Persoonlijk zoekprofiel en gerichte woningselectie",
+                    "Contact en afstemming met lokale makelaars",
+                    "Planning en voorbereiding van bezichtigingen",
+                    "Begeleiding bij het vergelijken van woningen",
+                    "Ondersteuning bij onderhandelingen",
+                    "Coördinatie van advocaat en bouwkundige inspectie",
+                    "Begeleiding richting de overdracht",
+                    "Eén vast aanspreekpunt gedurende het afgesproken traject",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#d1a866]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-7 rounded-[22px] bg-white/10 p-5 text-sm font-medium leading-relaxed text-white">
+                  Resultaat: u hoeft niet zelf alle makelaars, documenten, afspraken
+                  en professionals te coördineren.
+                </p>
+                <p className="mt-5 text-sm leading-relaxed text-white/60">
+                  Geschikt voor klanten die op afstand kopen, weinig Spaans spreken of
+                  één partij willen die overzicht houdt tijdens het aankoopproces.
+                </p>
+                <a
+                  href="/nl/services/discovery-trips"
+                  className="mt-7 inline-flex border-b border-[#d1a866] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-white transition hover:text-[#d1a866]"
+                >
+                  Bespreek Complete Buyer Support →
+                </a>
+              </article>
+
+              <article
+                id="move-in-ready-package"
+                className="rounded-[36px] bg-[#e9dfd2] p-8 shadow-sm md:p-10"
+              >
+                <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
+                  Voor ondersteuning na de aankoop
+                </p>
+                <h3 className="mt-4 font-serif text-4xl text-[#173252]">Move-In Ready</h3>
+                <div className="mt-7 grid gap-4">
+                  {[
+                    [
+                      "Home Setup",
+                      "Elektriciteit, water, internet, verzekeringen, beveiliging, schoonmaak, sleuteloverdracht en kleine werkzaamheden.",
+                    ],
+                    [
+                      "Renovation & Interior",
+                      "Aannemer en specialisten, planning, voortgangsrapportages, interieurconcept, materialen, meubels, installatie en styling.",
+                    ],
+                    [
+                      "Family Relocation",
+                      "Verhuisbedrijf, scholen, kinderopvang, zorg, verzekeringen, praktische administratie, voorzieningen en community.",
+                    ],
+                  ].map(([title, description]) => (
+                    <div key={title} className="rounded-[22px] bg-white/70 p-5">
+                      <h4 className="font-serif text-2xl text-[#173252]">{title}</h4>
+                      <p className="mt-2 text-sm leading-relaxed text-stone-700">
+                        {description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-7 rounded-[22px] bg-white/70 p-5 text-sm font-medium leading-relaxed text-[#173252]">
+                  Resultaat: de praktische uitvoering wordt afgestemd op uw woning,
+                  gezin, planning en budget, zodat uw aankomst beter is voorbereid.
+                </p>
+                <a
+                  href="/nl/services/move-in-ready"
+                  className="mt-7 inline-flex border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
+                >
+                  Bekijk Move-In Ready →
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* AREA MATCH DETAILS */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-white shadow-sm">
-            <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
               <div className="bg-[#173252] p-10 text-white md:p-14 lg:p-16">
                 <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
-                  Dienst 01 · Area Match
+                  Area Match · Gratis start en betaalde verdieping
                 </p>
-
                 <h2 className="mt-6 font-serif text-4xl leading-tight md:text-6xl">
-                  Een gratis portfolio dat maanden zoeken kan besparen.
+                  Eerst bepalen waar uw leven in Spanje werkelijk past.
                 </h2>
-
                 <p className="mt-8 text-lg leading-relaxed text-white/80">
-                  Het Area Match Portfolio is geen algemene lijst met plaatsen.
-                  Het brengt jouw levensstijl, budget, toekomstplannen en
-                  dagelijkse prioriteiten samen in één persoonlijke vergelijking
-                  van geschikte regio’s, plaatsen en woonomgevingen.
+                  We beginnen met een uitgebreide intake over uw levensstijl,
+                  gezinssituatie, budget, interesses, praktische behoeften en
+                  toekomstplannen. We kijken verder dan slaapkamers en zeezicht.
                 </p>
-
                 <p className="mt-6 text-lg leading-relaxed text-white/80">
-                  Zo krijgt je zoektocht richting voordat je honderden woningen
-                  gaat bekijken. Het helpt voorkomen dat je maanden zoekt in
-                  locaties die online aantrekkelijk lijken, maar niet passen bij
-                  hoe je wilt leven.
+                  U kunt starten met een korte gratis Area Match als kennismaking. Wilt u meer
+                  diepgang, dan maken we een uitgebreid persoonlijk Area Match Rapport
+                  met passende regio’s, plaatsen en aandachtspunten. Zo krijgt uw
+                  zoektocht richting voordat u tijd verliest aan gebieden die niet bij
+                  uw plannen passen.
                 </p>
-
                 <a
                   href="/nl/relocation-assessment"
                   className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Vraag je gratis Area Match Portfolio aan
+                  Start met uw gratis Area Match
                 </a>
               </div>
 
               <div className="p-10 md:p-14 lg:p-16">
                 <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Wat je ontvangt
+                  Onderwerpen in de intake
                 </p>
-
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
                   {[
-                    "Een persoonlijk profiel van je levensstijl en woonwensen",
-                    "Een vergelijking van geschikte regio’s, plaatsen en woongebieden",
-                    "Informatie over sfeer, bereikbaarheid en dagelijks leven",
-                    "Inzicht in zorg, voorzieningen en internationale gemeenschappen",
-                    "Begeleiding bij passende woningtypes en woonomgevingen",
-                    "Een gerichte basis voor woningzoektocht, bezichtigingen en vervolgstappen",
+                    "Levensstijl, dagelijkse routine en gewenste sfeer",
+                    "Budget, woningcategorie en onderhoudsniveau",
+                    "Permanent wonen, tweede woning of investering",
+                    "Bereikbaarheid, luchthaven en vliegverbindingen",
+                    "Zorg, scholen en internationale gemeenschap",
+                    "Golf, sport, gastronomie en sociale omgeving",
+                    "Rust, privacy, veiligheid en afstand tot voorzieningen",
+                    "Toekomstbestendigheid en gebruik over vijf of tien jaar",
                   ].map((item) => (
                     <div
                       key={item}
@@ -415,133 +638,319 @@ export default function AreaMatchPage() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* COMPLETE BUYER SUPPORT — SEARCH PROFILE */}
+        <section id="complete-buyer-support-details" className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Complete Buyer Support · Zoekprofiel en woningselectie
+              </p>
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Van uw Area Match naar een gerichte woningselectie.
+              </h2>
+              <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                Na de Area Match plannen we een tweede persoonlijk gesprek. We gaan
+                dieper in op de uitkomsten, bespreken waar nog twijfel zit en bepalen
+                welke prioriteiten werkelijk doorslaggevend zijn.
+              </p>
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Vervolgens selecteren we woningen die aansluiten bij uw wensen,
+                behoeften, interesses en toekomst. We kijken niet alleen naar het
+                beeld op de advertentie, maar ook naar ligging, praktisch gebruik,
+                onderhoud, bereikbaarheid en de manier waarop de woning later moet
+                functioneren.
+              </p>
+            </div>
+
+            <div className="rounded-[38px] bg-white p-8 shadow-sm md:p-10">
+              <h3 className="font-serif text-3xl text-[#173252]">
+                Wat u van de woningselectie mag verwachten
+              </h3>
+              <ul className="mt-7 space-y-4 text-sm leading-relaxed text-stone-700">
+                {[
+                  "Een gerichte selectie in plaats van honderden algemene advertenties",
+                  "Woningen beoordeeld vanuit uw persoonlijke Area Match-profiel",
+                  "Een heldere vergelijking van sterke punten en aandachtspunten",
+                  "Contact en afstemming met verkopers en verkoopmakelaars",
+                  "Een shortlist waarmee u gericht kunt besluiten wat u wilt bezichtigen",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* COMPLETE BUYER SUPPORT — VIEWINGS */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl rounded-[42px] bg-[#e9dfd2] p-10 md:p-14 lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+              Complete Buyer Support · Bezichtigingen en Buyer Discovery
+            </p>
+            <h2 className="mt-5 max-w-5xl font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+              Bekijk alleen woningen en omgevingen die werkelijk bij uw profiel passen.
+            </h2>
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+              <article className="rounded-[30px] bg-white p-8 md:p-10">
+                <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
+                  Optie A
+                </p>
+                <h3 className="mt-4 font-serif text-3xl text-[#173252]">
+                  Privébezichtigingen
+                </h3>
+                <p className="mt-5 leading-relaxed text-stone-600">
+                  U regelt zelf uw reis, accommodatie en vervoer. Wij organiseren de
+                  woningafspraken, stemmen af met de betrokken verkoopmakelaars en
+                  helpen de route en relevante vragen voorbereiden.
+                </p>
+                <ul className="mt-6 space-y-3 text-sm leading-relaxed text-stone-700">
+                  {[
+                    "Zelf gekozen reisdata en verblijf",
+                    "Gerichte afspraken voor uw shortlist",
+                    "Voorbereiding van vragen en aandachtspunten",
+                    "Afgesproken ondersteuning bij vervolgstappen",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+
+              <article className="rounded-[30px] bg-[#173252] p-8 text-white md:p-10">
+                <p className="text-xs uppercase tracking-[0.3em] text-[#d1a866]">
+                  Optie B
+                </p>
+                <h3 className="mt-4 font-serif text-3xl">
+                  Buyer Discovery Experience · geselecteerde edities
+                </h3>
+                <p className="mt-5 leading-relaxed text-white/75">
+                  Een persoonlijk programma waarin u niet alleen woningen bekijkt,
+                  maar de regio werkelijk ervaart. De exacte inhoud wordt afgestemd
+                  op uw profiel, interesses en gekozen serviceniveau.
+                </p>
+                <ul className="mt-6 space-y-3 text-sm leading-relaxed text-white/80">
+                  {[
+                    "Luchthaventransfer en lokaal vervoer binnen het programma",
+                    "Vier- of vijfsterrenhotel of geselecteerde finca",
+                    "Gerichte woningbezichtigingen en regiobeleving",
+                    "Ontmoetingen met relevante onafhankelijke specialisten",
+                    "Lokale gastronomie en de regio bekijken door de ogen van een local",
+                    "Bezoek aan bijvoorbeeld zorg, scholen, golfclubs of woongebieden",
+                  ].map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#d1a866]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </div>
+
+            <p className="mt-8 text-sm leading-relaxed text-stone-600">
+              Buyer Discovery is optioneel en uitsluitend beschikbaar op geselecteerde data
+              of als private experience. Inhoud, prijs, duur en beschikbaarheid worden
+              vooraf schriftelijk bevestigd.
+            </p>
+          </div>
+        </section>
+
+        {/* PURCHASE SAFETY INTRO */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+            <div>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                Purchase Safety · Voor u definitief beslist
+              </p>
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                Wordt u verliefd op een woning? Koop dan nog niet meteen.
+              </h2>
+              <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                Een overtuigende bezichtiging vertelt niet altijd het hele verhaal.
+                Technische gebreken, afwijkende oppervlaktes, ontbrekende documenten
+                of juridische beperkingen kunnen pas later zichtbaar worden.
+              </p>
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                Daarom coördineren wij vóór de definitieve aankoop twee onafhankelijke
+                beoordelingen: een technische woninginspectie door een gekwalificeerde
+                building surveyor en juridische due diligence door een onafhankelijke
+                Spaanse vastgoedadvocaat.
+              </p>
+              <p className="mt-6 text-lg font-medium leading-relaxed text-[#173252]">
+                De onafhankelijke bouwkundige beoordeling is, binnen de vooraf
+                afgesproken scope en voorwaarden, onderdeel van onze aankoopservice
+                en wordt door Nordic Move Spain betaald. De advocaat wordt rechtstreeks
+                door u aangesteld en afzonderlijk door u betaald.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[40px] bg-white p-3 shadow-sm">
+              <img
+                src="/images/brochure2-en.png"
+                alt="Nordic Move Spain Purchase Safety met onafhankelijke controles"
+                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* BUILDING SURVEY */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-white shadow-sm">
+            <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
+              <div className="bg-[#173252] p-10 text-white md:p-14 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
+                  Onafhankelijke technische inspectie
+                </p>
+                <h2 className="mt-6 font-serif text-4xl leading-tight md:text-5xl">
+                  Evidence, Cause and Cure.
+                </h2>
+                <p className="mt-8 text-lg leading-relaxed text-white/80">
+                  De surveyor zoekt naar aanwijzingen van gebreken, onderzoekt de
+                  waarschijnlijke oorzaak en geeft aan welke reparatie, oplossing of
+                  aanvullende specialistische controle passend kan zijn.
+                </p>
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  Het doel is dat u begrijpt welke punten ernstig zijn, welke
+                  beheersbaar zijn en welke gevolgen zij kunnen hebben voor uw
+                  aankoopbeslissing, onderhandeling en toekomstige onderhoud.
+                </p>
+                <p className="mt-6 text-sm leading-relaxed text-white/65">
+                  De door ons geselecteerde specialistische surveyor woont en werkt
+                  in Spanje. De precieze inspectieomvang is afhankelijk van het type
+                  woning, de toegankelijkheid, beschikbare documenten en de schriftelijk
+                  overeengekomen opdracht.
+                </p>
+              </div>
+
+              <div className="p-10 md:p-14 lg:p-16">
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Mogelijke onderdelen van het rapport
+                </p>
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {purchaseSafetyChecks.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-[22px] bg-[#f6f1ea] p-5 text-sm leading-relaxed text-stone-700"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
                 <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                  Het Area Match Portfolio is gratis en vrijblijvend. De inhoud
-                  wordt afgestemd op jouw persoonlijke situatie, plannen en
-                  voorkeuren.
+                  Waar de gekozen surveyor met een formeel peer-reviewproces werkt,
+                  wordt het rapport volgens diens kwaliteitsprocedure tevens door een
+                  tweede gekwalificeerde surveyor beoordeeld.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* BUYER DISCOVERY */}
+        {/* LEGAL DUE DILIGENCE + DECISION */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="overflow-hidden rounded-[40px] bg-white p-3 shadow-sm">
-              <img
-                src="/images/brochure1-en.png"
-                alt="Nordic Move Spain-brochure over de Buyer Discovery Experience en Nordic Circle"
-                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
-              />
-            </div>
-
-            <div>
+          <div className="mx-auto grid max-w-7xl gap-7 lg:grid-cols-2">
+            <article className="rounded-[38px] bg-white p-9 shadow-sm md:p-11">
               <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Dienst 02 · Persoonlijke woningzoektocht &amp; Buyer Discovery
+                Onafhankelijke juridische due diligence
               </p>
-
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Jouw persoonlijke makelaar voor zoektocht, bezichtigingen en aankoop.
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252]">
+                De advocaat controleert wat de bouwkundige niet kan beoordelen.
               </h2>
-
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Je Area Match Portfolio vormt de basis voor een gerichte
-                woningzoektocht. We kijken verder dan het aanbod van één
-                makelaar, selecteren passende woningen in de markt en stellen
-                een discovery-route samen door de regio’s en woningen die bij
-                jouw profiel passen.
+              <p className="mt-7 leading-relaxed text-stone-600">
+                Een onafhankelijke Spaanse vastgoedadvocaat beoordeelt onder meer
+                juridisch eigendom, lasten, schulden, vergunningen, contracten,
+                fiscale aandachtspunten en de voorwaarden van de aankoop.
               </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                We organiseren de bezichtigingen, onderhouden contact met
-                verkopers en verkoopmakelaars en begeleiden je bij vragen,
-                onderhandelingen en het aankoopproces. Je hoeft je verhaal niet
-                telkens opnieuw te vertellen of ieder contact zelf te
-                coördineren.
+              <p className="mt-5 leading-relaxed text-stone-600">
+                De advocaat wordt rechtstreeks door u aangesteld en betaald, zodat
+                helder blijft dat deze professional uitsluitend uw juridische
+                belangen vertegenwoordigt.
               </p>
+            </article>
 
-              <a
-                href="/nl/services/discovery-trips"
-                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
-              >
-                Bekijk de Buyer Discovery Experience
-              </a>
-
-              <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                * Wanneer uiteindelijk via Nordic Move Spain een villa wordt
-                gekocht, wordt afhankelijk van de aankoopprijs de helft of het
-                volledige bedrag van de trip vergoed. De exacte vergoeding en
-                voorwaarden worden vooraf schriftelijk bevestigd.
+            <article className="rounded-[38px] bg-[#173252] p-9 text-white md:p-11">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
+                Eén duidelijke beslissamenvatting
               </p>
+              <h2 className="mt-5 font-serif text-4xl leading-tight">
+                Groen, oranje of rood — met uitleg.
+              </h2>
+              <div className="mt-7 space-y-5 text-sm leading-relaxed text-white/80">
+                <p>
+                  <strong className="text-white">Groen:</strong> de beschikbare
+                  rapporten signaleren geen blokkerende punten binnen de onderzochte
+                  scope.
+                </p>
+                <p>
+                  <strong className="text-white">Oranje:</strong> doorgaan kan alleen
+                  verstandig zijn nadat voorwaarden, reparaties, aanvullende controles
+                  of heronderhandeling zijn geregeld.
+                </p>
+                <p>
+                  <strong className="text-white">Rood:</strong> de bevindingen geven
+                  serieuze redenen om de aankoop te heroverwegen of ervan af te zien.
+                </p>
+              </div>
+              <p className="mt-7 text-xs leading-relaxed text-white/60">
+                Nordic Move vertaalt de onafhankelijke bevindingen naar een heldere
+                procesaanbeveling. De technische verantwoordelijkheid blijft bij de
+                surveyor, de juridische beoordeling bij de advocaat en de definitieve
+                aankoopbeslissing bij u.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        {/* COMPLETE BUYER SUPPORT — PURCHASE COORDINATION */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl rounded-[42px] bg-[#e9dfd2] p-10 md:p-14 lg:p-16">
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Complete Buyer Support · Onderhandeling, aankoop en overdracht
+                </p>
+                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                  Wanneer alles voldoende duidelijk is, coördineren we wat volgt.
+                </h2>
+              </div>
+
+              <div>
+                <p className="text-lg leading-relaxed text-stone-700">
+                  Besluit u door te gaan, dan houden wij samen met uw advocaat en de
+                  andere betrokken partijen overzicht op de voorwaarden, openstaande
+                  vragen, deadlines en praktische voorbereiding van de overdracht.
+                </p>
+                <ul className="mt-7 grid gap-4 text-sm leading-relaxed text-stone-700 sm:grid-cols-2">
+                  {[
+                    "Afstemming met verkoper en verkoopmakelaar",
+                    "Opvolging van voorwaarden en openstaande documenten",
+                    "Coördinatie met uw onafhankelijke advocaat",
+                    "Bewaken van relevante stappen en deadlines",
+                    "Praktische afstemming van de notariële afspraak",
+                    "Voorbereiding op overdracht en de fase daarna",
+                  ].map((item) => (
+                    <li key={item} className="rounded-[22px] bg-white/70 p-5">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* PURCHASE SAFETY */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="order-2 lg:order-1">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Dienst 03 · Purchase Safety
-              </p>
-
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Twee onafhankelijke professionele rapporten vóór je definitieve beslissing.
-              </h2>
-
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Een onafhankelijke surveyor beoordeelt de zichtbare en
-                toegankelijke technische staat, bouwkwaliteit, vocht,
-                waterindringing, installaties, zwembad, bijgebouwen en
-                noodzakelijke reparaties. De surveyor voert daarnaast een
-                eerste document- en registratiescreening uit.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Deze screening kan onder meer de Nota Simple, Catastro, IBI,
-                CEE, ITE indien relevant, makelaarsinformatie, beschikbare
-                vergunningen en licenties, vergelijking van officiële en
-                gemeten oppervlaktes en signalering van mogelijk
-                niet-geregistreerde onderdelen omvatten.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Een passende onafhankelijke Spaanse advocaat voert vervolgens
-                de volledige juridische due diligence uit en blijft
-                verantwoordelijk voor de juridische beoordeling en advisering.
-                Op basis van beide rapporten geeft Nordic Move één duidelijk
-                advies: doorgaan, heroverwegen of niet kopen.
-              </p>
-
-              <a
-                href="/nl/services/purchase-safety-report"
-                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
-              >
-                Bekijk Purchase Safety
-              </a>
-
-              <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                * Wanneer uiteindelijk via Nordic Move Spain een villa wordt
-                gekocht, is de onafhankelijke Purchase Safety-beoordeling
-                inbegrepen in de aankoopbegeleiding. De exacte scope hangt af
-                van de woning, de beschikbare documentatie en de benodigde
-                specialisten.
-              </p>
-            </div>
-
-            <div className="order-1 overflow-hidden rounded-[40px] bg-white p-3 shadow-sm lg:order-2">
-              <img
-                src="/images/brochure2-en.png"
-                alt="Nordic Move Spain Purchase Safety-brochure"
-                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* ONE TRUSTED POINT OF CONTACT */}
+        {/* ONE TRUSTED POINT OF CONTACT — KEEP THIS SECTION */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
           <div className="mx-auto max-w-7xl rounded-[42px] bg-white p-10 shadow-sm md:p-14 lg:p-16">
             <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
@@ -551,51 +960,47 @@ export default function AreaMatchPage() {
                 </p>
 
                 <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  Je hoeft niet zelf vijf verschillende partijen aan te sturen.
+                  U hoeft niet zelf vijf verschillende partijen aan te sturen.
                 </h2>
 
                 <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                  Een woning kopen in Spanje betekent vaak tegelijk
-                  communiceren met makelaars, verkopers, een surveyor, een
-                  advocaat, een hypotheekadviseur, een verhuisbedrijf en
-                  interieurspecialisten. Nordic Move blijft gedurende het
-                  afgesproken traject jouw vaste aanspreekpunt.
+                  Een woning kopen in Spanje betekent vaak tegelijk communiceren met
+                  verkoopmakelaars, een surveyor, advocaat, hypotheekadviseur,
+                  verhuisbedrijf, aannemer en interieurspecialisten. Nordic Move blijft
+                  gedurende de afgesproken onderdelen uw vaste aanspreekpunt.
                 </p>
 
                 <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                  Wij houden bij wie waarvoor verantwoordelijk is, welke
-                  informatie ontbreekt, welke vragen nog openstaan, wat de
-                  volgende stap is en waar vertraging of risico’s kunnen
-                  ontstaan.
+                  Wij houden bij wie waarvoor verantwoordelijk is, welke informatie
+                  ontbreekt, welke vragen nog openstaan, wat de volgende stap is en
+                  waar vertraging of risico kan ontstaan.
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   [
-                    "Eén persoonlijke makelaar",
-                    "Eén Nordic Move-contact kent jouw wensen, prioriteiten en zorgen gedurende het hele traject.",
+                    "Eén persoonlijk contact",
+                    "Eén Nordic Move-contact kent uw wensen, prioriteiten en zorgen gedurende de afgesproken dienstverlening.",
                   ],
                   [
                     "Volledige coördinatie",
-                    "Wij coördineren de afgesproken specialisten en zorgen dat de afzonderlijke stappen op elkaar aansluiten.",
+                    "Wij coördineren de gekozen specialisten en helpen de afzonderlijke stappen logisch op elkaar aansluiten.",
                   ],
                   [
                     "Duidelijke vervolgstappen",
-                    "Open vragen, verantwoordelijkheden, voorwaarden en deadlines worden actief opgevolgd.",
+                    "Open vragen, verantwoordelijkheden, voorwaarden en deadlines worden actief bijgehouden.",
                   ],
                   [
                     "Continuïteit na aankoop",
-                    "Wij blijven betrokken voor hypotheekintroducties, verhuiscoördinatie, styling en inrichting.",
+                    "U kunt ons ook inschakelen voor relocation, Home Setup, renovatie, meubelselectie en styling.",
                   ],
                 ].map(([title, text]) => (
                   <article
                     key={title}
                     className="rounded-[26px] bg-[#f6f1ea] p-6"
                   >
-                    <h3 className="font-serif text-2xl text-[#173252]">
-                      {title}
-                    </h3>
+                    <h3 className="font-serif text-2xl text-[#173252]">{title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-stone-600">
                       {text}
                     </p>
@@ -606,54 +1011,116 @@ export default function AreaMatchPage() {
           </div>
         </section>
 
-        {/* MOVE-IN READY & RELOCATION */}
+        {/* MOVE-IN READY — COMPACT OVERVIEW */}
         <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2]">
-            <div className="grid items-stretch lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2] shadow-sm">
+            <div className="grid items-center lg:grid-cols-[0.92fr_1.08fr]">
               <div className="p-10 md:p-14 lg:p-16">
                 <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Dienst 04 · Move-In Ready &amp; Verhuiscoördinatie
+                  Na aankoop · Move-In Ready
                 </p>
-
                 <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  Van afgeronde aankoop tot een voorbereide aankomst.
+                  Kies alleen de ondersteuning die uw woning en verhuizing nodig hebben.
                 </h2>
-
-                <p className="mt-8 text-lg leading-relaxed text-stone-700">
-                  Na aankoop blijft Nordic Move jouw vaste aanspreekpunt.
-                  Afhankelijk van je behoeften brengen we je in contact met een
-                  passende hypotheekadviseur en helpen we bij de selectie en
-                  coördinatie van een betrouwbaar verhuisbedrijf.
+                <p className="mt-7 text-lg leading-relaxed text-stone-700">
+                  De volledige uitwerking van Home Setup, Renovation &amp; Interior en
+                  Family Relocation staat op de aparte Move-In Ready-pagina. Daar ziet u
+                  per module wat we kunnen coördineren, welk resultaat u mag verwachten
+                  en welke verantwoordelijkheden bij externe specialisten blijven.
                 </p>
 
-                <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                  We ontwikkelen samen de interieurrichting en coördineren
-                  meubels, materialen, verlichting, gordijnen, leveranciers,
-                  leveringen, montage en laatste styling met geselecteerde
-                  lokale specialisten. Zo hoef je niet maandenlang alles op
-                  afstand zelf te regelen.
-                </p>
+                <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                  <a
+                    href="/nl/services/move-in-ready#home-setup"
+                    className="rounded-[22px] bg-white/75 p-5 transition hover:-translate-y-1 hover:bg-white"
+                  >
+                    <h3 className="font-serif text-2xl text-[#173252]">Home Setup</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                      Nutsvoorzieningen, verzekeringen, beveiliging, onderhoud en voorbereiding vóór aankomst.
+                    </p>
+                  </a>
 
-                <a
-                  href="/nl/services/move-in-ready"
-                  className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
-                >
-                  Ontdek Move-In Ready-ondersteuning
-                </a>
+                  <a
+                    href="/nl/services/move-in-ready#renovation-interior"
+                    className="rounded-[22px] bg-white/75 p-5 transition hover:-translate-y-1 hover:bg-white"
+                  >
+                    <h3 className="font-serif text-2xl text-[#173252]">Renovation &amp; Interior</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                      Renovatiecoördinatie, interieurconcept, sourcing, installatie en styling.
+                    </p>
+                  </a>
 
-                <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                  Omvang, budget, planning en uitvoering worden afgestemd op de
-                  woning, jouw wensen en de beschikbaarheid van geselecteerde
-                  lokale specialisten en dienstverleners.
-                </p>
+                  <a
+                    href="/nl/services/move-in-ready#family-relocation"
+                    className="rounded-[22px] bg-white/75 p-5 transition hover:-translate-y-1 hover:bg-white"
+                  >
+                    <h3 className="font-serif text-2xl text-[#173252]">Family Relocation</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                      Verhuizing, scholen, zorg, praktische administratie en lokaal dagelijks leven.
+                    </p>
+                  </a>
+                </div>
+
+                <div className="mt-9 flex flex-wrap gap-4">
+                  <a
+                    href="/nl/services/move-in-ready"
+                    className="rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+                  >
+                    Bekijk Move-In Ready
+                  </a>
+                  <a
+                    href="/nl/contact"
+                    className="rounded-full border border-[#173252] px-8 py-4 text-sm font-medium text-[#173252] transition hover:bg-[#173252] hover:text-white"
+                  >
+                    Bespreek uw situatie
+                  </a>
+                </div>
               </div>
 
-              <div className="min-h-[520px]">
+              <div className="p-6 md:p-8 lg:p-10">
                 <img
-                  src="/images/interior-design.png"
-                  alt="Move-In Ready- en verhuiscoördinatie voor een villa aan de Costa Blanca"
-                  className="h-full min-h-[520px] w-full object-cover"
+                  src="/images/move-in-ready-mediterranean-warmth.png"
+                  alt="Move-In Ready renovatie, interieur en relocation aan de Costa Blanca"
+                  className="h-[520px] w-full rounded-[32px] object-cover"
+                  loading="lazy"
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* RESPONSIBILITIES / TRANSPARENCY */}
+        <section className="px-6 pb-24 md:px-8 md:pb-32">
+          <div className="mx-auto max-w-7xl rounded-[42px] bg-white p-10 shadow-sm md:p-14 lg:p-16">
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
+                  Transparante samenwerking
+                </p>
+                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
+                  Eén coördinator betekent niet dat alle professionals van Nordic Move zijn.
+                </h2>
+              </div>
+
+              <div className="space-y-5 text-lg leading-relaxed text-stone-600">
+                <p>
+                  Advocaten, surveyors, architecten, technical architects, aannemers,
+                  verhuisbedrijven en andere specialisten voeren hun eigen
+                  werkzaamheden zelfstandig uit en blijven verantwoordelijk voor hun
+                  eigen advies, rapporten en uitvoering.
+                </p>
+                <p>
+                  Nordic Move selecteert, introduceert en coördineert de afgesproken
+                  partijen. Welke diensten zijn inbegrepen, welke u afzonderlijk
+                  afneemt en welke professional rechtstreeks aan u factureert, wordt
+                  vooraf duidelijk vastgelegd.
+                </p>
+                <p>
+                  U bent vrij om eigen professionals of leveranciers te kiezen. Waar
+                  u dat doet, spreken we vooraf af of en hoe Nordic Move binnen die
+                  samenwerking nog kan coördineren.
+                </p>
               </div>
             </div>
           </div>
@@ -665,30 +1132,35 @@ export default function AreaMatchPage() {
             <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
               Begin met duidelijkheid
             </p>
-
             <h2 className="mx-auto mt-6 max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
-              Eén persoonlijke makelaar. Eén vertrouwd aanspreekpunt.
+              Kies het pakket dat past bij uw huidige situatie.
             </h2>
-
             <p className="mx-auto mt-7 max-w-3xl text-lg leading-relaxed text-white/75">
-              Start met je gratis Area Match Portfolio en vervolg met één
-              gecoördineerd traject voor woningzoektocht, Buyer Discovery,
-              aankoopcontroles, verhuizing, inrichting en aankomst.
+              Start met een gratis Area Match, laat een gevonden woning onafhankelijk
+              controleren, kies voor volledige aankoopbegeleiding of laat uw woning en
+              verhuizing voorbereiden met Move-In Ready.
             </p>
-
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <a
                 href="/nl/relocation-assessment"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Ontvang je gratis portfolio
+                Start met uw gratis Area Match
               </a>
-
               <a
                 href="/nl/contact"
                 className="rounded-full border border-white/70 px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#173252]"
               >
                 Plan een kennismakingsgesprek
+              </a>
+              <a
+                href="https://wa.me/31683848239?text=Hallo%20Nordic%20Move%20Spain%2C%20ik%20wil%20graag%20bespreken%20welk%20servicepakket%20bij%20mijn%20situatie%20past."
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Start een WhatsApp-gesprek met Nordic Move Spain over de servicepakketten"
+                className="rounded-full border border-[#c8a063] px-8 py-4 text-sm font-medium text-[#d1a866] transition hover:bg-[#c8a063] hover:text-white"
+              >
+                Bespreek het via WhatsApp
               </a>
             </div>
           </div>
@@ -696,4 +1168,4 @@ export default function AreaMatchPage() {
       </main>
     </>
   );
-}
+ } 

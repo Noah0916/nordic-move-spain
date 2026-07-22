@@ -1213,20 +1213,31 @@ export default function RelocationAssessment() {
       },
     };
 
+    const answersForEmail: Record<string, unknown> = Object.fromEntries(
+      visibleQuestions
+        .filter((question) =>
+          Object.prototype.hasOwnProperty.call(filteredAnswers, question.id)
+        )
+        .map((question) => [question.title, filteredAnswers[question.id]])
+    );
+
+    answersForEmail["Språk"] = "Svenska";
+    answersForEmail["Assessmentversion"] = "3.0";
+
+    const submission = {
+      name,
+      email,
+      phone,
+      answers: answersForStorage,
+      created_at: new Date().toISOString(),
+    };
+
     setIsSubmitting(true);
 
     try {
       const { error } = await supabase
         .from("relocation_leads")
-        .insert([
-          {
-            name,
-            email,
-            phone,
-            answers: answersForStorage,
-            created_at: new Date().toISOString(),
-          },
-        ]);
+        .insert([submission]);
 
       if (error) {
         alert(
@@ -1242,6 +1253,32 @@ export default function RelocationAssessment() {
         );
 
         return;
+      }
+
+      const emailResponse = await fetch("/api/relocation-assessment", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          answers: answersForEmail,
+        }),
+      });
+
+      if (!emailResponse.ok) {
+        const emailResult = await emailResponse.json().catch(() => null);
+
+        console.error(
+          "Assessmentet sparades, men e-postmeddelandet kunde inte skickas:",
+          emailResult
+        );
+
+        alert(
+          "Dina svar har sparats, men e-postmeddelandet kunde inte skickas. Kontakta Nordic Move Spain om du inte får någon återkoppling."
+        );
       }
 
       setSubmitted(true);
