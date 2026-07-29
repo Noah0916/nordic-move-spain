@@ -1,8 +1,8 @@
 export const metadata = {
   title:
-    "Beste gebieden Costa Blanca Noord voor gepensioneerden | Pensioen in Spanje",
+    "Beste gebieden Costa Blanca Noord en Jalón Valley voor gepensioneerden | Pensioen in Spanje",
   description:
-    "Vergelijk Dénia, Moraira, Jávea, Altea, Benissa en Calpe voordat u met pensioen gaat in Spanje of een tweede woning koopt aan de Costa Blanca Noord. Praktische gids voor Nederlandse, Belgische, Duitse, Zwitserse en internationale kopers.",
+    "Vergelijk Dénia, Moraira, Jávea, Altea, Benissa, Calpe en de Jalón Valley / Vall de Pop voordat u met pensioen gaat in Spanje of een tweede woning koopt. Inclusief gezondheidszorg, internationale artsen, restaurants, voorzieningen en het verschil tussen kust en binnenland.",
   keywords: [
     "beste gebieden Costa Blanca Noord gepensioneerden",
     "met pensioen in Spanje Costa Blanca Noord",
@@ -25,15 +25,26 @@ export const metadata = {
     "villa kopen Moraira pensioen",
     "appartement kopen Calpe pensioen",
     "wonen in Dénia Spanje",
+    "Jalón Valley gepensioneerden",
+    "Vall de Pop wonen",
+    "Xaló gepensioneerden",
+    "Llíber wonen",
+    "Alcalalí wonen",
+    "Parcent wonen",
+    "binnenland Costa Blanca Noord",
+    "kust versus binnenland Costa Blanca",
+    "internationale artsen Marina Alta",
+    "gezondheidszorg Jalón Valley",
+    "restaurants Jalón Valley",
   ],
   alternates: {
     canonical: "/nl/retiree-area-guide-costa-blanca-noord",
   },
   openGraph: {
     title:
-      "Beste gebieden Costa Blanca Noord voor gepensioneerden | Pensioen in Spanje",
+      "Beste gebieden Costa Blanca Noord en Jalón Valley voor gepensioneerden | Pensioen in Spanje",
     description:
-      "Een praktische kopersgids die Dénia, Moraira, Jávea, Altea, Benissa en Calpe vergelijkt voor gepensioneerden en tweede-woningkopers in Spanje.",
+      "Een praktische kopersgids die Dénia, Moraira, Jávea, Altea, Benissa, Calpe en de Jalón Valley vergelijkt voor gepensioneerden en tweede-woningkopers in Spanje.",
     type: "article",
     locale: "nl_NL",
     images: [
@@ -54,9 +65,9 @@ export const metadata = {
 const retireeAreaGuideStructuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Beste gebieden aan de Costa Blanca Noord voor gepensioneerden",
+  headline: "Beste gebieden aan de Costa Blanca Noord en in de Jalón Valley voor gepensioneerden",
   description:
-    "Een praktische gids voor internationale gepensioneerden die Dénia, Moraira, Jávea, Altea, Benissa en Calpe vergelijken voordat zij vastgoed kopen of met pensioen gaan in Spanje.",
+    "Een praktische gids voor internationale gepensioneerden die kustplaatsen en de Jalón Valley / Vall de Pop vergelijken voordat zij vastgoed kopen of met pensioen gaan in Spanje.",
   about: [
     "Met pensioen in Spanje",
     "Vastgoed kopen aan de Costa Blanca Noord",
@@ -74,6 +85,17 @@ const retireeAreaGuideStructuredData = {
     "Altea",
     "Benissa",
     "Calpe",
+    "Jalón Valley",
+    "Vall de Pop",
+    "Xaló",
+    "Jalón",
+    "Llíber",
+    "Alcalalí",
+    "Parcent",
+    "Benigembla",
+    "Murla",
+    "Senija",
+    "Orba",
   ],
   audience: {
     "@type": "Audience",
@@ -122,6 +144,14 @@ const quickAreas = [
       "Voor gepensioneerden die landelijk wonen, privacy, grotere percelen, authenticiteit en toegang tot Moraira en Calpe willen.",
     check:
       "Benissa kan autogericht zijn. Controleer altijd bereikbaarheid, voorzieningen, internet, nutsvoorzieningen en praktische toegang bij noodgevallen.",
+  },
+  {
+    title: "Beste keuze voor rust, natuur en dorpsleven",
+    place: "Jalón Valley / Vall de Pop",
+    text:
+      "Voor gepensioneerden die ruimte, wandelroutes, wijngaarden, lokale dorpen en een rustiger dagelijks ritme zoeken, maar de kust binnen bereik willen houden.",
+    check:
+      "Het binnenland is meestal sterker afhankelijk van de auto. Controleer per woning de afstand tot huisarts, apotheek, supermarkt, 24-uurszorg en ziekenhuis — niet alleen de afstand tot het dorpsplein.",
   },
   {
     title: "Beste keuze voor appartementen en gemak",
@@ -213,11 +243,216 @@ const areaDetails = [
       "Sommige woningen liggen landelijker, meer geïsoleerd of zijn sterker afhankelijk van de auto. Controleer wegen, internet, nutsvoorzieningen, noodtoegang, afstand tot winkels en onderhoudsafspraken voordat u koopt.",
   },
   {
+    title: "Jalón Valley / Vall de Pop — beste keuze voor rust, ruimte en een lokaler ritme",
+    text:
+      "De Jalón Valley, lokaal bekend als de Vall de Pop, verbindt dorpen zoals Xaló, Llíber, Alcalalí, Parcent, Benigembla, Murla en Senija. De omgeving past bij gepensioneerden die wijngaarden, wandelroutes, dorpsleven, privacy en meer ruimte belangrijker vinden dan dagelijks strand- en boulevardleven.",
+    second:
+      "De belangrijkste afweging is praktische bereikbaarheid. Lokale consultorios bieden eerstelijnszorg, maar voor 24-uurszorg, specialistische behandeling en een groter winkelaanbod rijdt u vaak naar Benissa, Orba, Dénia of andere kustplaatsen. Een auto is voor de meeste woningen essentieel.",
+  },
+  {
     title: "Calpe — beste keuze voor appartementen, strand en gemak",
     text:
       "Calpe kan goed werken voor gepensioneerden die appartementwonen, strandtoegang, restaurants, boulevardleven en een meer stedelijke kustomgeving verkiezen. Het kan praktisch zijn voor wie minder onderhoud wil.",
     second:
       "De keerzijde is dat sommige gebieden druk en seizoensgevoelig zijn. Appartementkopers moeten liften, communityregels, geplande werken, toeristische verhuur, parkeren, geluid en gebouwonderhoud controleren.",
+  },
+];
+
+
+const valleyTowns = [
+  {
+    place: "Xaló / Jalón",
+    label: "Meest praktische kern van de vallei",
+    text:
+      "Xaló heeft het sterkste dagelijkse ritme van de Vall de Pop, met winkels, horeca, bodegas, een lokaal consultorio en de bekende zaterdagmarkt en rastro. Voor gepensioneerden die binnenlands willen wonen zonder volledig afgelegen te raken, is dit vaak het logischste startpunt.",
+    caution:
+      "Niet iedere woning ligt in of vlak bij het centrum. Urbanisaties en landelijke percelen kunnen alsnog sterk autogericht zijn.",
+  },
+  {
+    place: "Llíber",
+    label: "Rustig, verzorgd en landschappelijk",
+    text:
+      "Llíber is kleiner en rustiger dan Xaló, met wijngaarden, traditionele architectuur en directe toegang tot wandelroutes. Het past bij kopers die stilte en een hoogwaardige dorpsomgeving zoeken.",
+    caution:
+      "Het dagelijkse voorzieningenniveau is beperkter. Reken voor grotere boodschappen, brede medische zorg en meer restaurantkeuze op Xaló, Benissa of de kust.",
+  },
+  {
+    place: "Alcalalí",
+    label: "Dorpsleven, amandelbloesem en bereikbare rust",
+    text:
+      "Alcalalí is bekend om de amandelbloesemroutes en heeft een compact dorpscentrum. Het kan goed werken voor actieve gepensioneerden die wandelen, lokale evenementen en een rustige woonomgeving waarderen.",
+    caution:
+      "Controleer hoogteverschillen en de exacte afstand tot het consultorio, apotheek en dagelijkse boodschappen.",
+  },
+  {
+    place: "Parcent",
+    label: "Bergzicht en een uitgesproken rustig karakter",
+    text:
+      "Parcent ligt tegen de Serra del Carrascar en heeft een authentiek, kleinschalig karakter. Het past bij mensen die stilte, uitzicht, lokale gastronomie en wandelmogelijkheden belangrijk vinden.",
+    caution:
+      "Voor intensieve dagelijkse voorzieningen en specialistische zorg bent u sneller afhankelijk van Orba, Benissa of Dénia.",
+  },
+  {
+    place: "Benigembla en Murla",
+    label: "Maximale rust en landelijk wonen",
+    text:
+      "Deze kleinere dorpen bieden veel rust, natuur en een sterker lokaal karakter. Ze kunnen aantrekkelijk zijn voor ervaren Spanje-kopers die bewust voor ruimte en eenvoud kiezen.",
+    caution:
+      "Voor gepensioneerden met beperkte mobiliteit of regelmatige zorgbehoeften kan de grotere afstand tot winkels, artsen en spoedzorg een belangrijk nadeel zijn.",
+  },
+  {
+    place: "Benissa en Orba",
+    label: "Praktische servicepunten rond de vallei",
+    text:
+      "Benissa maakt officieel deel uit van de Vall de Pop en vormt een belangrijke toegangspoort richting kust, 24-uurs eerstelijnszorg en internationale privézorg. Orba ligt buiten de officiële Vall de Pop, maar is een nuttige serviceplaats voor de westelijke dorpen en heeft een publiek gezondheidscentrum.",
+    caution:
+      "Beoordeel de route vanaf de exacte woning. Een korte afstand op de kaart kan door bochtige wegen of bergachtig terrein langer aanvoelen.",
+  },
+];
+
+const coastVsValley = [
+  {
+    factor: "Dagelijks leven",
+    coast:
+      "Meer supermarkten, boulevard, horeca, specialistische diensten en vaak meer mogelijkheden om te lopen.",
+    valley:
+      "Rustiger en lokaler, met kleinere dorpskernen en minder keuze op korte afstand.",
+  },
+  {
+    factor: "Gezondheidszorg",
+    coast:
+      "Snellere toegang tot grotere gezondheidscentra, privéklinieken en ziekenhuiszorg in Dénia.",
+    valley:
+      "Lokale consultorios voor eerstelijnszorg; voor 24-uurszorg en specialisten is vaker een autorit nodig.",
+  },
+  {
+    factor: "Woningtype",
+    coast:
+      "Meer appartementen, penthouses en urbanisaties; vaak minder tuin en meer communitykosten.",
+    valley:
+      "Meer dorpshuizen, villa's, finca-achtige woningen en percelen; vaak meer onderhoud en terreincontrole.",
+  },
+  {
+    factor: "Mobiliteit",
+    coast:
+      "Centrale zones kunnen geschikt zijn voor wonen met minder autogebruik.",
+    valley:
+      "Een auto is meestal essentieel, vooral voor boodschappen, zorg en sociale activiteiten.",
+  },
+  {
+    factor: "Klimaatgevoel",
+    coast:
+      "Meer zeelucht en vochtigheid; zomers drukker en op open locaties meer blootstelling aan zeewind.",
+    valley:
+      "Meer beschut en landelijk, maar winteravonden en schaduwrijke percelen kunnen koeler aanvoelen.",
+  },
+  {
+    factor: "Sociaal en culinair",
+    coast:
+      "Grotere keuze, meer internationale ontmoetingsplaatsen en meer jaarrond restaurants in de grotere plaatsen.",
+    valley:
+      "Kleinschaliger, lokaler en sterk gericht op dorpsfeesten, markten, wijn en regionale keuken.",
+  },
+];
+
+const healthcareGuide = [
+  {
+    title: "Lokale publieke huisartsenzorg",
+    text:
+      "Xaló, Alcalalí en Llíber hebben publieke consultorios binnen de gezondheidszone Benissa. Parcent en Murla vallen onder de zone Orba. Openingstijden en spreekuren kunnen verschillen; controleer dit vóór aankoop.",
+  },
+  {
+    title: "24-uurs eerstelijnszorg",
+    text:
+      "Het publieke gezondheidscentrum van Benissa is volgens de regionale gezondheidsdienst 24 uur per dag geopend. Dit maakt Benissa een belangrijk zorgpunt voor het oostelijke deel van de vallei.",
+  },
+  {
+    title: "Publiek ziekenhuis en specialisten",
+    text:
+      "Hospital de Dénia is de publieke ziekenhuisreferentie voor de Marina Alta en biedt onder meer cardiologie, neurologie, interne geneeskunde, geriatrie, oogheelkunde, oncologie, traumatologie, urologie en spoedzorg.",
+  },
+  {
+    title: "Internationale privézorg",
+    text:
+      "Clínica Benissa biedt onder meer huisartsgeneeskunde, tandheelkunde, fysiotherapie, psychologie, podologie en diagnostiek en communiceert in Spaans, Nederlands, Engels, Duits en Frans.",
+  },
+  {
+    title: "Privéziekenhuis met internationale ondersteuning",
+    text:
+      "HCB Dénia heeft 24-uurs spoedzorg, intensive care, poliklinische specialismen en een internationaal opname- en tolkenteam. Dit kan relevant zijn voor mensen met een particuliere verzekering of specifieke taalbehoeften.",
+  },
+  {
+    title: "Praktische zorgcontrole vóór aankoop",
+    text:
+      "Test de route vanaf de woning naar huisarts, apotheek, 24-uurscentrum en ziekenhuis op een normale werkdag én 's avonds. Controleer ook thuiszorg, fysiotherapie, taxibeschikbaarheid en ambulance-toegang.",
+  },
+];
+
+const diningAndServices = [
+  {
+    title: "Restaurants in Xaló",
+    text:
+      "De officiële Vall de Pop-gids noemt onder andere El Karmelet, Casa Claudia, Centro Instructivo Xaló – El Casino, El Taller en verschillende restaurants richting Bèrnia. Het aanbod varieert van lokale keuken en tapas tot internationalere restaurants.",
+  },
+  {
+    title: "Restaurants in Parcent en Alcalalí",
+    text:
+      "Casa Julia en El Paraíso zijn bekende opties in Parcent; El Paraíso wordt ook door Guía Repsol genoemd. In Alcalalí staat Casa Pinet in de officiële regionale restaurantgids.",
+  },
+  {
+    title: "Culinaire uitstap naar Benissa",
+    text:
+      "Benissa biedt een breder aanbod en is praktisch te combineren met boodschappen of zorg. Guía Repsol noemt onder meer Casa Cantó en Casa Bernardi.",
+  },
+  {
+    title: "Markten, wijn en lokaal ritme",
+    text:
+      "Xaló heeft een wekelijkse zaterdagmarkt en een grote rastro langs de rivier. De vallei is daarnaast verbonden met de wijnroute van Alicante en staat bekend om moscatel, mistela, lokale vleeswaren, bakkerijen en traditionele rijstgerechten.",
+  },
+  {
+    title: "Voorzieningen die gepensioneerden moeten testen",
+    text:
+      "Controleer supermarkt, apotheek, bank of geldautomaat, taxi, thuisbezorging, glasvezel, sport- en wandelmogelijkheden, sociale clubs, afvalpunten en bereikbaarheid tijdens drukte of slecht weer.",
+  },
+  {
+    title: "Onze praktische conclusie",
+    text:
+      "Voor maximaal gemak kiest u eerder Dénia, Calpe of een centrale kustzone. Voor rust met voldoende basisvoorzieningen is Xaló meestal de sterkste binnenlandse keuze. Voor meer privacy zijn Llíber, Alcalalí en Parcent interessant, mits autorijden en zorgafstand geen bezwaar zijn.",
+  },
+];
+
+const guideSources = [
+  {
+    label: "Vall de Pop — officiële gebieds-, route- en voorzieningengids",
+    href: "https://valldepop.es/",
+  },
+  {
+    label: "Vall de Pop — officiële restaurantgids",
+    href: "https://valldepop.es/donde-comer/",
+  },
+  {
+    label: "Departamento de Salud de Dénia — zorgzones en consultorios",
+    href: "https://denia.san.gva.es/es/ambito-de-actuacion",
+  },
+  {
+    label: "Centro de Salud Benissa — adres, telefoon en 24-uursopening",
+    href: "https://denia.san.gva.es/es/cs-benissa",
+  },
+  {
+    label: "Hospital de Dénia — specialismen en zorgaanbod",
+    href: "https://denia.san.gva.es/es/cartera-de-serveis",
+  },
+  {
+    label: "HCB Dénia — internationale privézorg en spoedzorg",
+    href: "https://hcbhospitales.com/nl/hcb-denia/contact/",
+  },
+  {
+    label: "Clínica Benissa — meertalige eerstelijns- en aanvullende zorg",
+    href: "https://clinicabenissa.com/nl/",
+  },
+  {
+    label: "Guía Repsol — Xaló en geselecteerde restaurants",
+    href: "https://www.guiarepsol.com/es/fichas/localidad/xalo-8321/",
   },
 ];
 
@@ -230,9 +465,9 @@ const lifestyleProfiles = [
   },
   {
     title: "Gepensioneerd stel dat rust en privacy wil",
-    areas: "Begin met Moraira, Benissa en geselecteerde villazones bij Jávea.",
+    areas: "Begin met Moraira, Benissa, de Jalón Valley en geselecteerde villazones bij Jávea.",
     text:
-      "Deze locaties bieden rustigere woonomgevingen, villa's, uitzichten en privacy. Controleer wel zorgvuldig onderhoud, toegangswegen en afhankelijkheid van de auto.",
+      "Deze locaties bieden rustigere woonomgevingen, villa's, uitzichten en privacy. In de Jalón Valley krijgt u vaak meer dorps- en natuurlandschap; controleer daar extra zorgvuldig toegangswegen, zorgafstand, wintercomfort en afhankelijkheid van de auto.",
   },
   {
     title: "Alleenstaande gepensioneerde die verhuist",
@@ -251,6 +486,12 @@ const lifestyleProfiles = [
     areas: "Begin met Moraira, Calpe, Altea en Jávea.",
     text:
       "Deze gebieden kunnen goed werken voor parttime gebruik. De juiste keuze hangt af van uw voorkeur voor een villa, appartement, strandtoegang, verhuurmogelijkheid of weinig onderhoud.",
+  },
+  {
+    title: "Actieve gepensioneerden die natuur en dorpsleven zoeken",
+    areas: "Begin met Xaló, Llíber, Alcalalí, Parcent en eventueel Orba als praktische uitvalsbasis.",
+    text:
+      "Deze gebieden passen bij wandelen, fietsen, lokale markten, wijncultuur en een rustiger ritme. Xaló en Orba zijn praktischer voor dagelijkse voorzieningen; Llíber en Parcent voelen rustiger en residentiëler. Een auto blijft doorgaans noodzakelijk.",
   },
   {
     title: "Gepensioneerden die denken aan verhuurinkomsten",
@@ -309,6 +550,16 @@ const faqs = [
     question: "Wat moeten gepensioneerden controleren voordat zij vastgoed in Spanje kopen?",
     answer:
       "Controleer gezondheidszorg, mobiliteit, afhankelijkheid van de auto, winterleven, communityregels, onderhoud, toeristische verhuur, geluid, eigenaarskosten en of de woning ook op lange termijn geschikt blijft voor dagelijks leven.",
+  },
+  {
+    question: "Is de Jalón Valley geschikt voor gepensioneerden?",
+    answer:
+      "Ja, vooral voor gepensioneerden die rust, natuur, dorpsleven en meer ruimte zoeken. Xaló is meestal de praktischste basis, terwijl Llíber, Alcalalí en Parcent rustiger aanvoelen. De vallei is minder geschikt voor mensen die zonder auto willen wonen of specialistische zorg, grote supermarkten en veel restaurants op loopafstand nodig hebben.",
+  },
+  {
+    question: "Waar vindt u medische zorg vanuit de Jalón Valley?",
+    answer:
+      "Xaló, Alcalalí en Llíber vallen onder de publieke gezondheidszone van Benissa; Parcent en Murla onder de zone Orba. Voor 24-uurs eerstelijnszorg is Benissa een belangrijk punt. Voor specialistische en ziekenhuiszorg is Hospital de Dénia de publieke referentie. Daarnaast zijn er internationale privéopties in Benissa en Dénia.",
   },
   {
     question: "Vervangt deze gids juridisch, fiscaal of financieel advies?",
@@ -396,7 +647,7 @@ export default function RetireeAreaGuidePage() {
                 </p>
 
                 <p className="mt-6">
-                  Deze gids helpt u de belangrijkste gebieden aan de Costa Blanca Noord te vergelijken, vooral voor Nederlandse, Belgische, Duitse, Zwitserse, Britse, Scandinavische en andere internationale kopers die rustig maar realistisch willen beslissen voordat zij vastgoed in Spanje kopen.
+                  Deze gids helpt u de belangrijkste kustplaatsen én de Jalón Valley / Vall de Pop te vergelijken. De nadruk ligt op dagelijkse voorzieningen, gezondheidszorg, mobiliteit, restaurants, sociale aansluiting en de vraag of een gebied ook over tien jaar nog praktisch bij uw leven past.
                 </p>
               </div>
             </div>
@@ -411,7 +662,7 @@ export default function RetireeAreaGuidePage() {
             </p>
 
             <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Dénia is vaak de sterkste allround keuze voor dagelijks leven. Moraira is vaak het beste voor rustig villawonen. Jávea is vaak het beste voor actieve gepensioneerden.
+              Dénia is vaak de sterkste allround keuze voor dagelijks leven. Moraira is sterk voor rustig villawonen. De Jalón Valley past bij wie natuur, ruimte en dorpsleven belangrijker vindt dan dagelijks kustgemak.
             </h2>
 
             <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
@@ -515,6 +766,195 @@ export default function RetireeAreaGuidePage() {
                   <p className="mt-5 leading-relaxed text-stone-600">{area.text}</p>
                   <p className="mt-5 leading-relaxed text-stone-600">{area.second}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* JALÓN VALLEY */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Jalón Valley / Vall de Pop
+            </p>
+
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
+              De belangrijkste dorpen in het binnenland — en voor welk type gepensioneerde ze werken.
+            </h2>
+
+            <p className="mt-8 max-w-5xl text-lg leading-relaxed text-white/80">
+              De officiële Vall de Pop omvat Alcalalí, Benigembla, Benissa, Llíber,
+              Murla, Parcent, Senija en Xaló. In de praktijk vergelijken kopers ook
+              het nabijgelegen Orba, omdat het een nuttig service- en zorgpunt is
+              voor het westelijke deel van de vallei.
+            </p>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {valleyTowns.map((town) => (
+                <div key={town.place} className="rounded-[28px] bg-white/10 p-7">
+                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#c8a063]">
+                    {town.label}
+                  </p>
+                  <h3 className="mt-4 font-serif text-3xl text-white">
+                    {town.place}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-white/80">{town.text}</p>
+                  <p className="mt-5 leading-relaxed text-white/70">
+                    <span className="font-semibold text-white">Let op: </span>
+                    {town.caution}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* COAST VS VALLEY */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-5xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Kust versus binnenland
+              </p>
+
+              <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+                Het verschil zit niet alleen in uitzicht. Het zit in uw dagelijkse afhankelijkheid, zorgafstand en mobiliteit.
+              </h2>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                De kust biedt doorgaans meer voorzieningen en grotere keuze op korte
+                afstand. De Jalón Valley biedt meer rust, ruimte en lokaal karakter.
+                Geen van beide is automatisch beter: de juiste keuze hangt af van
+                hoe vaak u rijdt, welke zorg u gebruikt en hoeveel dagelijkse
+                activiteit u dichtbij wilt hebben.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-[32px] bg-white shadow-sm">
+              <div className="grid grid-cols-1 bg-[#e9dfd2] md:grid-cols-[0.55fr_1fr_1fr]">
+                <div className="p-5 font-semibold text-[#1e2a3a]">Onderwerp</div>
+                <div className="p-5 font-semibold text-[#1e2a3a]">Kustplaatsen</div>
+                <div className="p-5 font-semibold text-[#1e2a3a]">Jalón Valley</div>
+              </div>
+
+              {coastVsValley.map((row) => (
+                <div
+                  key={row.factor}
+                  className="grid grid-cols-1 border-t border-stone-200 md:grid-cols-[0.55fr_1fr_1fr]"
+                >
+                  <div className="p-5 font-semibold text-[#1e2a3a]">{row.factor}</div>
+                  <div className="p-5 leading-relaxed text-stone-600">{row.coast}</div>
+                  <div className="p-5 leading-relaxed text-stone-600">{row.valley}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* HEALTHCARE */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Artsen, ziekenhuis en internationale zorg
+            </p>
+
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Waar vindt u huisartsenzorg, 24-uurszorg en meertalige medische ondersteuning?
+            </h2>
+
+            <p className="mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
+              Voor gepensioneerden is “er is een dokter in het dorp” niet voldoende
+              informatie. U moet onderscheid maken tussen een lokaal consultorio,
+              24-uurs eerstelijnszorg, specialistische ziekenhuiszorg en private
+              meertalige zorg.
+            </p>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {healthcareGuide.map((item) => (
+                <div key={item.title} className="rounded-[28px] bg-[#f6f1ea] p-7">
+                  <h3 className="font-serif text-3xl leading-tight text-[#1e2a3a]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 rounded-[28px] bg-[#e9dfd2] p-8">
+              <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                Nordic Move-advies voor kopers met regelmatige zorgbehoeften
+              </h3>
+              <p className="mt-4 max-w-5xl leading-relaxed text-stone-700">
+                Kies bij voorkeur Xaló, Benissa, Orba of een kustplaats met directe
+                voorzieningen. Een afgelegen finca of hooggelegen urbanisatie kan
+                prachtig zijn, maar is minder verstandig wanneer u vaak naar arts,
+                fysiotherapie, apotheek of specialist moet.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* DINING AND SERVICES */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-5xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Restaurants en voorzieningen
+              </p>
+
+              <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
+                Van lokale rijstgerechten en wijn tot internationale artsen, markten en dagelijkse services.
+              </h2>
+
+              <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                De onderstaande restaurants zijn voorbeelden uit officiële regionale
+                gidsen en Guía Repsol, geen permanente ranglijst. Openingstijden,
+                eigenaars en kwaliteit kunnen veranderen; controleer actuele
+                informatie voordat u reserveert of een woning kiest.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {diningAndServices.map((item) => (
+                <div key={item.title} className="rounded-[28px] bg-white p-8 shadow-sm">
+                  <h3 className="font-serif text-3xl leading-tight text-[#1e2a3a]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SOURCES */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Actuele bronnen
+            </p>
+
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Controleer zorg, openingstijden en lokale voorzieningen altijd opnieuw vóór aankoop.
+            </h2>
+
+            <p className="mt-6 max-w-5xl text-lg leading-relaxed text-stone-600">
+              Deze uitbreiding is gebaseerd op officiële toerisme- en
+              gezondheidsbronnen en geselecteerde restaurantgidsen. De informatie is
+              gecontroleerd in juli 2026, maar lokale dienstverlening kan wijzigen.
+            </p>
+
+            <div className="mt-10 grid gap-4 md:grid-cols-2">
+              {guideSources.map((source) => (
+                <a
+                  key={source.href}
+                  href={source.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl bg-white/80 p-5 font-medium leading-relaxed text-[#1e2a3a] transition hover:bg-white"
+                >
+                  {source.label}
+                </a>
               ))}
             </div>
           </div>
@@ -636,7 +1076,7 @@ export default function RetireeAreaGuidePage() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-5xl text-lg leading-relaxed text-stone-600">
-              Dénia, Moraira, Jávea, Altea, Benissa en Calpe kunnen allemaal goede keuzes zijn voor gepensioneerden, maar om verschillende redenen. De juiste beslissing hangt af van uw levensstijl, zorgbehoeften, mobiliteit, budget, sociale voorkeuren, woningtype en langetermijnplannen.
+              Dénia, Moraira, Jávea, Altea, Benissa, Calpe en de Jalón Valley kunnen allemaal goede keuzes zijn voor gepensioneerden, maar om verschillende redenen. De kust biedt meer direct gemak; de vallei biedt meer rust en ruimte. De juiste beslissing hangt af van zorgbehoeften, mobiliteit, budget, sociale voorkeuren, woningtype en langetermijnplannen.
             </p>
 
             <p className="mx-auto mt-6 max-w-5xl text-xl leading-relaxed text-[#1e2a3a]">
@@ -685,8 +1125,8 @@ export default function RetireeAreaGuidePage() {
                   text: "Begrijp de details die kopers vaak te laat ontdekken.",
                 },
                 {
-                  title: "Moraira versus Jávea",
-                  text: "Vergelijk twee van de populairste gebieden voor internationale kopers.",
+                  title: "Kust versus Jalón Valley",
+                  text: "Vergelijk dagelijkse voorzieningen, mobiliteit, zorgafstand en woningtypes tussen kust en binnenland.",
                 },
               ].map((guide) => (
                 <div key={guide.title} className="rounded-[28px] bg-white p-8 shadow-sm">

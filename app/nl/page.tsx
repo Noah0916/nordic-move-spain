@@ -16,9 +16,9 @@ export const metadata = {
         },
       }
     : {}),
-  title: "Veiliger een woning kopen aan de Costa Blanca | Nordic Move Spain",
+  title: "Met meer zekerheid kopen en verhuizen naar de Costa Blanca | Nordic Move Spain",
   description:
-    "Meer zekerheid, sneller duidelijkheid en één vast aanspreekpunt bij het kopen van een woning aan de Costa Blanca. Met Area Match, onafhankelijke controles en persoonlijke aankoopbegeleiding.",
+    "Aankoopbegeleiding en volledige relocation aan de Costa Blanca: van regio- en woningkeuze en onafhankelijke controles tot aankoop, renovatie, verhuizing en praktische ondersteuning na aankomst.",
   applicationName: "Nordic Move Spain",
   authors: [{ name: "Nordic Move Spain" }],
   creator: "Nordic Move Spain",
@@ -49,9 +49,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Meer zekerheid bij het kopen aan de Costa Blanca | Nordic Move Spain",
+    title: "Met meer zekerheid kopen en volledig begeleid verhuizen | Nordic Move Spain",
     description:
-      "Gericht zoeken met een gratis Area Match, onafhankelijke technische en juridische beoordelingen en één vast aanspreekpunt van oriëntatie tot aankomst.",
+      "Van regio- en woningkeuze tot onafhankelijke controles, aankoop, renovatie en verhuizing, met praktische ondersteuning voor een zachte landing in Spanje.",
     type: "website",
     locale: "nl_NL",
     siteName: "Nordic Move Spain",
@@ -69,9 +69,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Veiliger en gerichter kopen aan de Costa Blanca | Nordic Move Spain",
+    title: "Met meer zekerheid kopen en verhuizen naar de Costa Blanca | Nordic Move Spain",
     description:
-      "Meer zekerheid, sneller duidelijkheid en één vast aanspreekpunt. Van gratis Area Match en woningselectie tot onafhankelijke controles en aankomst.",
+      "Aankoopbegeleiding en volledige relocation: van Area Match en onafhankelijke controles tot aankoop, renovatie, verhuizing en praktische ondersteuning na aankomst.",
     ...(siteUrl ? { images: ["/images/laatste-homepage.png"] } : {}),
   },
 };
@@ -115,14 +115,14 @@ export default function DutchHomePage() {
         "@id": "#organization",
         name: "Nordic Move Spain",
         description:
-          "Persoonlijke aankoopmakelaar en vast aanspreekpunt voor internationale kopers die veiliger en gerichter een woning willen kopen aan de Costa Blanca.",
+          "Aankoop- en relocationbegeleiding voor internationale kopers die met meer zekerheid een woning willen kopen en hun verhuizing naar de Costa Blanca zorgvuldig willen organiseren.",
       },
       {
         "@type": "WebPage",
         "@id": "#webpage",
         name: "Woning kopen aan de Costa Blanca | Nordic Move Spain",
         description:
-          "Aankoopbegeleiding met gratis Area Match, gerichte woningselectie, twee onafhankelijke beoordelingen en één vast aanspreekpunt tot aankomst.",
+          "Aankoopbegeleiding en volledige relocation met Area Match, gerichte woningselectie, onafhankelijke technische en juridische controles en ondersteuning tot na aankomst.",
         inLanguage: "nl-NL",
         about: {
           "@id": "#buyer-service",
@@ -248,7 +248,7 @@ export default function DutchHomePage() {
       <section className="relative flex h-screen items-center overflow-hidden">
         <img
           src="/images/laatste-homepage.png"
-          alt="Veilig en zorgvuldig een woning kopen aan de Costa Blanca met Nordic Move Spain"
+          alt="Met meer zekerheid een woning kopen en volledig begeleid verhuizen naar de Costa Blanca met Nordic Move Spain"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -260,20 +260,23 @@ export default function DutchHomePage() {
               Costa Blanca
             </p>
 
-            <h1 className="mt-5 max-w-xl font-serif text-4xl leading-[1.02] text-[#f3ede3] drop-shadow-[0_2px_14px_rgba(0,0,0,0.45)] md:text-5xl">
-              Veiliger een woning kopen
-              <br />
-              aan de Costa Blanca.
+            <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.02] text-[#f3ede3] drop-shadow-[0_2px_14px_rgba(0,0,0,0.45)] md:text-5xl">
+              Met meer zekerheid kopen aan de Costa Blanca.
+              <span className="mt-2 block text-[0.78em] leading-tight text-[#f3ede3]/95">
+                Volledig begeleid van aankoop tot aankomst.
+              </span>
             </h1>
 
-            <p className="mt-7 max-w-lg text-lg leading-relaxed text-[#f7f2ea] drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-xl">
-              Voor internationale kopers die zekerheid en één vast aanspreekpunt
-              willen. Nordic Move coördineert het traject van de juiste regio en
-              woning tot onafhankelijke controles, aankoop en aankomst.
+            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#f7f2ea] drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-xl">
+              Nordic Move Spain begeleidt internationale kopers van regio- en woningkeuze
+              tot onafhankelijke juridische en technische controles, aankoop, renovatie
+              en verhuizing. Ook daarna blijven we betrokken, met praktische ondersteuning
+              rond administratie, verzekeringen en lokale voorzieningen voor een zachte
+              landing in Spanje.
             </p>
 
             <p className="mt-7 text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-              Eén vast aanspreekpunt · Onafhankelijke controles · Van zoeken tot aankomst
+              Aankoopbegeleiding · Onafhankelijke controles · Volledige relocation
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
@@ -310,11 +313,11 @@ export default function DutchHomePage() {
           <div className="grid items-start gap-12 lg:grid-cols-[1.25fr_0.75fr] xl:gap-16">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Persoonlijke aankoopbegeleiding
+                Aankoopbegeleiding &amp; relocation
               </p>
 
               <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-                Meer zekerheid. Eén vertrouwd aanspreekpunt.
+                Van woning zoeken tot echt wonen in Spanje.
               </h2>
 
               <p className="mt-6 max-w-2xl text-xl font-medium leading-relaxed text-[#1e2a3a]">
@@ -323,26 +326,23 @@ export default function DutchHomePage() {
               </p>
 
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Een woning kopen in Spanje hoort een mooie stap te zijn. Toch kan het
-                proces al snel onoverzichtelijk worden wanneer u moet communiceren met
-                verkoopmakelaars, een advocaat, een bouwkundige, de notaris, aannemers,
-                verhuisbedrijven en andere dienstverleners — vaak in een andere taal en
-                met verschillende verantwoordelijkheden.
+                Een woning kopen in Spanje is een mooie stap, maar het proces kan snel
+                complex worden. U krijgt te maken met makelaars, advocaten, bouwkundigen,
+                notarissen, aannemers, verhuisbedrijven en andere dienstverleners — ieder
+                met een eigen rol en verantwoordelijkheid.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Nordic Move Spain brengt deze afzonderlijke stappen samen. Wij begeleiden
-                u bij het vinden en kopen van de juiste woning aan de Costa Blanca en
-                kunnen ook de praktische zaken vóór en na de aankoop coördineren. Van uw
-                persoonlijke Area Match en gerichte woningselectie tot verhuizing,
-                nutsvoorzieningen, renovatie en interieurstyling.
+                Nordic Move Spain brengt deze stappen samen en begeleidt het traject van
+                oriëntatie tot aankomst. Dat begint met uw persoonlijke Area Match en
+                gerichte woningselectie en kan doorlopen tot aankoopbegeleiding,
+                administratie, nutsvoorzieningen, renovatie, verhuizing en
+                interieurstyling.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                U heeft één vast aanspreekpunt dat uw wensen kent, de betrokken partijen
-                op elkaar afstemt en zorgt voor duidelijke afspraken en vervolgstappen.
                 Wij spreken Spaans, kennen de lokale werkwijze en werken met zorgvuldig
-                geselecteerde onafhankelijke professionals en dienstverleners.
+                geselecteerde onafhankelijke professionals.
               </p>
 
               <h3 className="mt-10 max-w-2xl font-serif text-3xl leading-tight text-[#1e2a3a]">
@@ -350,33 +350,25 @@ export default function DutchHomePage() {
               </h3>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Uit ervaring weten wij hoe snel problemen kunnen ontstaan wanneer lokale
-                kennis ontbreekt of professionals onvoldoende samenwerken. Verborgen
-                gebreken, afwijkende registraties en juridische problemen worden soms pas
-                na de aankoop zichtbaar.
+                Voorafgaand aan de aankoop laten wij de woning onafhankelijk technisch en
+                juridisch controleren. Een gekwalificeerde building surveyor beoordeelt
+                de feitelijke staat en vergelijkt deze met beschikbare documenten en
+                registraties. Een onafhankelijke Spaanse vastgoedadvocaat controleert
+                onder meer eigendom, lasten, schulden, vergunningen en contracten.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Daarom begeleiden wij geen aankoop zonder onafhankelijke technische en
-                juridische controles. Een gekwalificeerde building surveyor inspecteert
-                en meet de woning en vergelijkt de feitelijke situatie met de beschikbare
-                documenten en registraties. Een onafhankelijke Spaanse vastgoedadvocaat
-                onderzoekt onder meer het eigendom, lasten, schulden, vergunningen en
-                contracten.
+                Zo krijgt u vóór uw definitieve beslissing een duidelijker beeld van de
+                technische staat, juridische positie en mogelijke risico’s van de woning.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Zo krijgt u vóór uw definitieve beslissing meer inzicht in de technische
-                staat, juridische positie en mogelijke risico’s van de woning.
-              </p>
-
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                U kiest zelf voor de volledige Buyer Journey of alleen voor de diensten
-                die u nodig heeft.
+                U kiest voor de volledige Buyer Journey of alleen voor de begeleiding die
+                u nodig heeft.
               </p>
 
               <p className="mt-7 text-xl font-medium leading-relaxed text-stone-700">
-                Gericht zoeken. Met meer zekerheid kopen. Zorgeloos aankomen.
+                Gericht zoeken. Zekerder kopen. Goed aankomen.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">

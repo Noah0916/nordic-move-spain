@@ -1,124 +1,233 @@
 export const metadata = {
   title: "Property Guides Spain | Nordic Move Spain",
   description:
-    "Practical English-language guides for buying property in Spain, with a focus on Costa Blanca North, costs, regions, rental rules, legal checks, pets and area comparisons.",
+    "Practical English-language property guides for Spain, organised by region, legal topics, buying costs, taxes, financing and everyday life.",
 };
 
 const mainGuides = [
   {
     href: "/guides/best-areas-costa-blanca-north-retirees",
-    label: "Retiree guide",
-    title: "Best areas on Costa Blanca North for retirees",
+    label: "Retirement guide",
+    title: "Best places on the Costa Blanca North for retirees",
     text:
-      "A practical guide for Dutch, German, Swiss and other international buyers comparing Dénia, Moraira, Jávea, Altea, Benissa and Calpe.",
+      "A practical guide for British, Irish, Dutch, German, Scandinavian, Swiss and other international buyers comparing Dénia, Moraira, Jávea, Altea, Benissa and Calpe.",
     details:
-      "Compare access to healthcare, year-round amenities, mobility, peace and quiet, maintenance, community life, tourist pressure and long-term practical suitability.",
+      "Compare healthcare access, year-round amenities, mobility, tranquillity, maintenance, community life, tourist pressure and long-term everyday practicality.",
     bestFor:
-      "Ideal for older buyers who want to understand which Costa Blanca North area fits their retirement lifestyle before buying.",
-    cta: "Read the retiree guide →",
+      "Ideal for older buyers who want to understand which part of the Costa Blanca North best fits their retirement plans before buying.",
+    cta: "Read the retirement guide →",
   },
   {
     href: "/guides/where-to-buy-property-costa-blanca-north",
     label: "Area guide",
-    title: "Where to buy property on Costa Blanca North",
+    title: "Where should you buy property on the Costa Blanca North?",
     text:
-      "Choosing the right area is often more important than choosing the first beautiful property. This guide compares the key locations on Costa Blanca North before you start viewing homes.",
+      "Choosing the right area is often more important than choosing the first beautiful property. This guide compares the key locations on the Costa Blanca North before you start arranging viewings.",
     details:
-      "Compare Moraira, Jávea, Altea, Benissa, Calpe and Dénia on lifestyle, property type, daily amenities, off-season atmosphere and buyer profile.",
+      "Compare Moraira, Jávea, Altea, Benissa, Calpe and Dénia by lifestyle, property type, everyday amenities, atmosphere outside the high season and typical buyer profile.",
     bestFor:
-      "Ideal for buyers who are still deciding which town or coastal area truly fits their future life in Spain.",
+      "Ideal for buyers who are still deciding which town or stretch of coast genuinely fits their future life in Spain.",
     cta: "Read the area guide →",
   },
   {
     href: "/guides/costs-rentals-real-life-checks-before-buying",
-    label: "Honest buyer guide",
-    title: "Costs, rentals and practical checks before buying",
+    label: "Practical buyer guide",
+    title: "Costs, rentals and real-life checks before buying",
     text:
-      "A beautiful property can still be the wrong purchase if practical details are ignored. This guide explains what buyers often discover too late.",
+      "Even a beautiful property can be the wrong purchase when practical details are overlooked. This guide explains what buyers often discover too late.",
     details:
-      "Learn about hidden costs, tourist rental rules, electricity pylons, road noise, summer crowds, community rules, ownership costs and what to check before making an offer.",
+      "Learn about hidden costs, holiday-rental rules, electricity pylons, traffic noise, summer pressure, community rules, ongoing ownership costs and the checks worth making before an offer.",
     bestFor:
-      "Ideal for Dutch, German and Swiss buyers who want a realistic picture before committing to a property.",
-    cta: "Read the honest guide →",
+      "Ideal for international buyers who want a realistic overall picture before making a binding property decision in Spain.",
+    cta: "Read the buyer guide →",
   },
 ];
 
-const moreGuides = [
+const guideCategories = [
   {
-    href: "/guides/moraira-vs-javea",
-    label: "Area comparison",
-    title: "Moraira vs Jávea",
-    text:
-      "A practical comparison for buyers choosing between two of the most sought-after areas on Costa Blanca North.",
-    useful:
-      "Useful when you are deciding between peaceful villa living in Moraira and a more active international lifestyle in Jávea.",
+    id: "region-and-location",
+    label: "Region and location",
+    title: "Choose the setting that fits your everyday life first.",
+    description:
+      "Compare coastal towns, inland areas and different living profiles before committing to a particular property or municipality.",
+    guides: [
+      {
+        href: "/guides/moraira-vs-javea",
+        label: "Area comparison",
+        title: "Moraira vs. Jávea",
+        text:
+          "A practical comparison for buyers choosing between two of the most sought-after locations on the Costa Blanca North.",
+        useful:
+          "Useful if you are deciding between the quieter villa lifestyle of Moraira and the more varied, international everyday life of Jávea.",
+      },
+      {
+        href: "/guides/denia-vs-calpe",
+        label: "Area comparison",
+        title: "Dénia vs. Calpe",
+        text:
+          "A comparison for buyers weighing Dénia against Calpe and looking at atmosphere, infrastructure, beaches, accessibility, property types, tourist pressure and life outside the main season.",
+        useful:
+          "Useful if you are choosing between Dénia's more urban, Spanish character and Calpe's more compact coastal lifestyle.",
+      },
+      {
+        href: "/guides/coast-vs-inland-more-house-for-your-money",
+        label: "Coast or inland",
+        title: "Coast or inland: where do you get more house for your money?",
+        text:
+          "Compare popular coastal towns with inland areas including the Jalón Valley and Vall de Pop. See how the same budget can affect floor area, plot size, privacy, views and access to everyday amenities.",
+        useful:
+          "Useful if you are balancing proximity to the sea against more space, privacy and property value inland.",
+      },
+    ],
   },
   {
-    href: "/guides/buying-property-spain",
-    label: "Buying in Spain",
-    title: "Buying property in Spain",
-    text:
-      "A practical explanation of the Spanish buying process, including legal checks, deposits, notary steps, mortgages, purchase costs and what international buyers should prepare before signing.",
-    useful:
-      "Useful when you are at the beginning of your buying journey and want to understand the full process.",
+    id: "legal-and-buying-process",
+    label: "Legal and buying process",
+    title: "Understand the Spanish rules before you sign.",
+    description:
+      "From the purchase process and legal due diligence to owners' communities and the ways the Spanish system can differ from what international buyers are used to.",
+    guides: [
+      {
+        href: "/guides/buying-property-spain",
+        label: "Buying property in Spain",
+        title: "Buying a property in Spain",
+        text:
+          "A practical explanation of the Spanish buying process, including legal checks, deposits, the notary appointment, financing, purchase costs and the documents international buyers should prepare before signing.",
+        useful:
+          "Useful if you are at the beginning of your property search and want to understand the entire process from first viewing to completion.",
+      },
+      {
+        href: "/guides/how-long-does-it-take-to-buy-a-house-in-spain",
+        label: "Buying timeline",
+        title: "How long does it take to buy a house in Spain?",
+        text:
+          "A clear timeline from initial property selection and reservation through legal due diligence, the arras contract and possible mortgage approval to the notary appointment and key handover.",
+        useful:
+          "Useful if you want to know how many weeks or months to allow and which checks, documents or financing steps can cause delays.",
+      },
+      {
+        href: "/guides/spanish-property-rules-international-buyers-should-know",
+        label: "Spanish property rules",
+        title: "Spanish property rules international buyers should understand",
+        text:
+          "A practical guide to aspects of the Spanish system that can differ from common expectations abroad, including the notary's role, Registro de la Propiedad, Catastro, community rules, holiday rentals, alterations and taxes.",
+        useful:
+          "Useful if you want to avoid making a Spanish property decision based on assumptions from your home country.",
+      },
+      {
+        href: "/guides/homeowners-associations-spain",
+        label: "Community rules",
+        title: "Homeowners' associations in Spain",
+        text:
+          "Understand the comunidad de propietarios, community fees, meeting minutes, rental restrictions, communal maintenance, owner obligations and why these checks matter before buying.",
+        useful:
+          "Useful if you are considering an apartment, townhouse or property within an urbanisation.",
+      },
+      {
+        href: "/guides/common-mistakes-buying-property-spain",
+        label: "Buyer mistakes",
+        title: "Common mistakes when buying property in Spain",
+        text:
+          "Learn which mistakes buyers commonly make in Spain, from choosing the wrong area to overlooking community rules, legal checks, ongoing ownership costs and practical everyday considerations.",
+        useful:
+          "Useful if you want to reduce emotional decision-making and avoid expensive surprises after completion.",
+      },
+    ],
   },
   {
-    href: "/guides/common-mistakes-buyers-make",
-    label: "Buyer mistakes",
-    title: "Common mistakes when buying property",
-    text:
-      "Learn which mistakes buyers in Spain often make, from choosing the wrong area to overlooking community rules, legal checks, ownership costs and practical daily-life details.",
-    useful:
-      "Useful when you want to avoid emotional decisions and expensive surprises.",
+    id: "costs-taxes-financing",
+    label: "Costs, taxes and financing",
+    title: "Calculate what buying and owning really cost.",
+    description:
+      "Get clarity on purchase taxes, total acquisition costs, mortgages, ongoing expenses and cross-border tax considerations for international owners.",
+    guides: [
+      {
+        href: "/guides/total-cost-buying-property-spain",
+        label: "Total purchase costs",
+        title: "Total cost of buying a property in Spain",
+        text:
+          "A complete overview of the costs on top of the purchase price, including purchase tax, lawyer, notary, Land Registry, gestoría, valuation and possible financing costs.",
+        useful:
+          "Useful if you want to calculate how much cash you may actually need before reserving a property or signing a purchase contract.",
+      },
+      {
+        href: "/guides/itp-iva-ajd-explained",
+        label: "Purchase taxes",
+        title: "ITP, IVA and AJD explained",
+        text:
+          "A clear explanation of the main Spanish taxes involved in a property purchase. Learn when ITP applies, when IVA and AJD apply and why resale and new-build properties are taxed differently.",
+        useful:
+          "Useful if you want to understand which purchase tax applies to your property and how much additional capital to allow beyond the purchase price.",
+      },
+      {
+        href: "/guides/mortgage-costs-new-rules-spain",
+        label: "Mortgage and costs",
+        title: "Mortgage costs and current rules in Spain",
+        text:
+          "An up-to-date guide to Spanish mortgages, property valuations, energy certificates, the allocation of mortgage costs and the documents banks review before issuing final approval.",
+        useful:
+          "Useful if you plan to finance a property in Spain and want to reduce delays, valuation shortfalls or unexpected mortgage-related costs.",
+      },
+      {
+        href: "/guides/tax-rules-second-home-spain",
+        label: "Second-home tax",
+        title: "Tax rules for a second home in Spain",
+        text:
+          "A practical overview of Spanish taxes for second-home owners, rental income and the cross-border tax questions that can arise depending on your country of tax residence.",
+        useful:
+          "Useful if you want to understand the Spanish tax side of ownership and identify which questions also need advice in your home country.",
+      },
+      {
+        href: "/guides/cost-of-living-spain",
+        label: "Living in Spain",
+        title: "Cost of living in Spain",
+        text:
+          "A practical overview of spending on groceries, energy, transport, healthcare, insurance, restaurants, internet and other fixed and variable living costs.",
+        useful:
+          "Useful if you want to build a realistic monthly budget for relocation, a second home, retirement or a longer stay in Spain.",
+      },
+    ],
   },
   {
-    href: "/guides/homeowners-associations-spain",
-    label: "Community rules",
-    title: "Homeowners’ associations in Spain",
-    text:
-      "Understand the rules of the comunidad de propietarios, community fees, meeting minutes, rental restrictions, shared maintenance, owner obligations and why these checks matter before buying.",
-    useful:
-      "Useful when you are considering an apartment, townhouse or property in an urbanisation.",
-  },
-  {
-    href: "/guides/uk-tax-second-home-spain",
-    label: "UK tax rules",
-    title: "UK tax rules for a second home in Spain",
-    text:
-      "A practical guide for UK residents buying or owning a second home in Spain, including Spanish property taxes, Modelo 210, rental income, capital gains, double taxation and overseas property questions.",
-    useful:
-      "Useful for British buyers who want to understand UK and Spanish tax considerations before buying a second home in Spain.",
-  },
-  {
-    href: "/guides/spanish-rules-netherlands",
-    label: "Spanish rules",
-    title: "Spanish rules that work differently from the Netherlands",
-    text:
-      "A practical guide for Dutch buyers about the differences between the Dutch and Spanish systems, including the notary, Registro de la Propiedad, Catastro, community rules, tourist rentals, renovations and tax.",
-    useful:
-      "Useful when you want to avoid buying in Spain based on Dutch assumptions.",
-  },
-  {
-    href: "/guides/pets-in-spain",
-    label: "Living with pets",
-    title: "Pets in Spain: everything you need to know",
-    text:
-      "A practical guide for buyers and homeowners about pets in Spain, including travelling with a dog or cat, community rules, vets, insurance, beaches, rental homes and daily life on the Costa Blanca.",
-    useful:
-      "Useful when your dog or cat is moving to Spain with you or when you want to understand the rules in apartments, urbanisations and public spaces.",
-  },
-  {
-    href: "/guides/denia-versus-calpe",
-    label: "Area comparison",
-    title: "Dénia versus Calpe",
-    text:
-      "A practical comparison for buyers deciding between Dénia and Calpe, with attention to atmosphere, amenities, beaches, accessibility, property types, tourist pressure and off-season living.",
-    useful:
-      "Useful when you want to choose between the more urban, Spanish character of Dénia and the more compact coastal lifestyle of Calpe.",
+    id: "practical-life",
+    label: "Practical life in Spain",
+    title: "Plan everyday life after the key handover too.",
+    description:
+      "Practical guides on residency, taxes, healthcare, groceries, pets and daily life for people who plan to live, winter or spend extended periods in Spain.",
+    guides: [
+      {
+        href: "/guides/living-in-spain-after-buying-a-house",
+        label: "Living after purchase",
+        title:
+          "Living in Spain after buying a house: residency, taxes and healthcare explained",
+        text:
+          "A comprehensive guide for international owners who plan to live in Spain permanently, for most of the year or for part of the year. Understand residence registration, padrón, tax residency, healthcare and the home-country obligations that may need attention.",
+        useful:
+          "Useful if you are not only buying a property but also deciding which administrative, tax and healthcare steps fit your length of stay and personal situation.",
+      },
+      {
+        href: "/guides/supermarket-prices-spain",
+        label: "Groceries in Spain",
+        title: "Supermarket prices in Spain",
+        text:
+          "An up-to-date comparison of everyday groceries at major Spanish supermarket chains, with example prices for milk, eggs, rice, pasta, olive oil and other frequently purchased products.",
+        useful:
+          "Useful if you want to estimate everyday spending in Spain and compare supermarkets by price, range and convenience.",
+      },
+      {
+        href: "/guides/pets-in-spain",
+        label: "Living with pets",
+        title: "Pets in Spain: what owners need to know",
+        text:
+          "A practical guide for international buyers and owners covering travel with dogs or cats, community rules, vets, insurance, beaches, rental properties and everyday life on the Costa Blanca.",
+        useful:
+          "Useful if your dog or cat is moving to Spain with you or you want to understand the rules that can apply in apartments, urbanisations and public spaces.",
+      },
+    ],
   },
 ];
 
-export default function PropertyGuidesSpainPage() {
+export default function EnglishPropertyGuidesPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f6f1ea] text-stone-900">
       {/* HERO */}
@@ -129,34 +238,35 @@ export default function PropertyGuidesSpainPage() {
           </p>
 
           <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-tight md:text-7xl">
-            Practical guidance before you buy property in Spain.
+            Practical guidance before you buy a property in Spain.
           </h1>
 
           <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/80">
-            Honest, practical and area-focused guides for Dutch, German, Swiss
-            and other international buyers considering Costa Blanca North.
+            Clear, practical and region-focused guides for British, Irish,
+            Dutch, German, Scandinavian, Swiss and other international buyers
+            considering the Costa Blanca North.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/area-match"
+              href="/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request Your Area Match
+              Start your Area Match
             </a>
 
             <a
               href="/buyer-discovery-trip"
               className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
-              Discover the Buyer Discovery Trip
+              Explore the Buyer Discovery Trip
             </a>
 
             <a
               href="#guides"
               className="rounded-full border border-white/40 px-8 py-4 text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-[#1e2a3a]"
             >
-              Read before you buy
+              Research before buying
             </a>
           </div>
         </div>
@@ -171,25 +281,25 @@ export default function PropertyGuidesSpainPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              The right property decision starts with clear insight.
+              A good property decision starts with clear information.
             </h2>
           </div>
 
           <div>
             <p className="text-lg leading-relaxed text-stone-600">
-              Buying property in Spain is exciting, but it should not start with
-              random viewings or beautiful photos alone.
+              Buying a property in Spain is exciting, but it should not begin
+              with random viewings or beautiful photos alone.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Before making a decision, it is important to understand the area,
-              legal checks, ownership costs, rental rules, community restrictions
-              and practical daily-life details.
+              Before deciding, it helps to understand the area, legal checks,
+              ongoing ownership costs, rental rules, community restrictions and
+              practical details that affect everyday life.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              These guides help you compare Costa Blanca North with more clarity
-              before committing to a location, property search or buying trip.
+              These guides help you compare the Costa Blanca North more clearly
+              before committing to a town, a property search or a buying trip.
             </p>
           </div>
         </div>
@@ -205,7 +315,7 @@ export default function PropertyGuidesSpainPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Our key guides for serious buyers.
+                Our key guides for serious property buyers.
               </h2>
             </div>
 
@@ -213,7 +323,7 @@ export default function PropertyGuidesSpainPage() {
               href="/contact"
               className="rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
-              Need personal advice?
+              Prefer personal guidance?
             </a>
           </div>
 
@@ -253,46 +363,96 @@ export default function PropertyGuidesSpainPage() {
         </div>
       </section>
 
-      {/* MORE GUIDES */}
+      {/* GUIDES BY TOPIC */}
       <section className="bg-[#e9dfd2] px-8 py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-14 max-w-4xl">
+          <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#9b743d]">
-              More buyer guides
+              Guides by topic
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Legal, financial and practical topics.
+              Find the information that matches your stage of the buying process.
             </h2>
+
+            <p className="mt-7 max-w-3xl text-lg leading-relaxed text-stone-700">
+              The articles are organised by region and location, legal topics,
+              costs and financing, and practical life in Spain.
+            </p>
+
+            <nav
+              aria-label="Property guide categories"
+              className="mt-9 flex flex-wrap gap-3"
+            >
+              {guideCategories.map((category) => (
+                <a
+                  key={category.id}
+                  href={`#${category.id}`}
+                  className="rounded-full border border-[#9b743d]/40 bg-[#f6f1ea] px-5 py-3 text-sm font-medium text-[#1e2a3a] transition hover:border-[#1e2a3a] hover:bg-white"
+                >
+                  {category.label}
+                </a>
+              ))}
+            </nav>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {moreGuides.map((guide) => (
-              <a
-                key={guide.href}
-                href={guide.href}
-                className="group rounded-[30px] bg-[#f6f1ea] p-8 transition hover:-translate-y-1 hover:bg-white"
+          <div className="mt-20">
+            {guideCategories.map((category, categoryIndex) => (
+              <section
+                id={category.id}
+                key={category.id}
+                className={
+                  categoryIndex === 0
+                    ? "scroll-mt-24"
+                    : "mt-24 scroll-mt-24 border-t border-[#9b743d]/25 pt-20"
+                }
               >
-                <p className="text-sm uppercase tracking-[0.25em] text-[#9b743d]">
-                  {guide.label}
-                </p>
+                <div className="grid gap-12 lg:grid-cols-[0.34fr_0.66fr] lg:gap-16">
+                  <header>
+                    <p className="text-sm uppercase tracking-[0.3em] text-[#9b743d]">
+                      {category.label}
+                    </p>
 
-                <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
-                  {guide.title}
-                </h3>
+                    <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
+                      {category.title}
+                    </h3>
 
-                <p className="mt-5 leading-relaxed text-stone-700">
-                  {guide.text}
-                </p>
+                    <p className="mt-6 leading-relaxed text-stone-700">
+                      {category.description}
+                    </p>
+                  </header>
 
-                <p className="mt-5 leading-relaxed text-stone-700">
-                  {guide.useful}
-                </p>
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {category.guides.map((guide) => (
+                      <a
+                        key={guide.href}
+                        href={guide.href}
+                        className="group flex h-full flex-col rounded-[30px] bg-[#f6f1ea] p-8 transition hover:-translate-y-1 hover:bg-white hover:shadow-lg"
+                      >
+                        <p className="text-sm uppercase tracking-[0.25em] text-[#9b743d]">
+                          {guide.label}
+                        </p>
 
-                <span className="mt-8 inline-block text-sm uppercase tracking-[0.2em] text-[#1e2a3a]">
-                  Read the guide →
-                </span>
-              </a>
+                        <h4 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                          {guide.title}
+                        </h4>
+
+                        <p className="mt-5 leading-relaxed text-stone-700">
+                          {guide.text}
+                        </p>
+
+                        <p className="mt-5 leading-relaxed text-stone-700">
+                          {guide.useful}
+                        </p>
+
+                        <span className="mt-auto inline-block pt-8 text-sm uppercase tracking-[0.2em] text-[#1e2a3a]">
+                          Read guide →
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </section>
             ))}
           </div>
         </div>
@@ -302,32 +462,33 @@ export default function PropertyGuidesSpainPage() {
       <section className="px-8 py-32">
         <div className="mx-auto max-w-6xl rounded-[40px] bg-[#1e2a3a] p-12 text-center text-white md:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Need personal guidance?
+            Prefer personal guidance?
           </p>
 
           <h2 className="mx-auto mt-6 max-w-4xl font-serif text-5xl leading-tight">
-            Not sure which area or property type fits your future life in Spain?
+            Still deciding which area or property type fits your future life in
+            Spain?
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-white/80">
-            Our Area Match Assessment helps you compare locations on Costa
-            Blanca North based on lifestyle, budget, amenities, long-term plans
-            and practical needs.
+            Our Area Match Assessment helps you compare places on the Costa
+            Blanca North by lifestyle, budget, infrastructure, long-term plans
+            and practical requirements.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="/area-match"
+              href="/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Request Your Area Match
+              Start your Area Match
             </a>
 
             <a
               href="/contact"
               className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
-              Schedule an introduction
+              Book an introductory call
             </a>
           </div>
         </div>

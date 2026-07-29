@@ -1,133 +1,233 @@
 ﻿export const metadata = {
-  title: "Immobilienführer Spanien | Nordic Move Spain",
+  title: "Immobilienratgeber Spanien | Nordic Move Spain",
   description:
-    "Praktische deutschsprachige Leitfäden für den Immobilienkauf in Spanien, mit Fokus auf Costa Blanca Nord, Kosten, Regionen, Vermietungsregeln, rechtliche Kontrollen, Steuern, Haustiere und Regionenvergleiche.",
+    "Praktische deutschsprachige Immobilienratgeber für Spanien, übersichtlich gegliedert nach Regionen, rechtlichen Themen, Kaufnebenkosten, Steuern, Finanzierung und Alltag.",
 };
 
 const mainGuides = [
   {
-    href: "/de/guides/best-areas-costa-blanca-north-retirees",
-    label: "Leitfaden für den Ruhestand",
-    title: "Beste Regionen an der Costa Blanca Nord für den Ruhestand",
+    href: "/de/guides/beste-orte-costa-blanca-nord-rentner",
+    label: "Ratgeber für Ruheständler",
+    title: "Die besten Orte an der Costa Blanca Nord für Ruheständler",
     text:
-      "Ein praktischer Leitfaden für deutsche, niederländische, schweizerische und andere internationale Käufer, die Dénia, Moraira, Jávea, Altea, Benissa und Calpe vergleichen.",
+      "Ein praktischer Ratgeber für deutsche, schweizerische, österreichische und andere internationale Käufer, die Dénia, Moraira, Jávea, Altea, Benissa und Calpe miteinander vergleichen.",
     details:
-      "Vergleichen Sie Zugang zu Gesundheitsversorgung, ganzjährigen Einrichtungen, Mobilität, Ruhe, Pflegeaufwand, Gemeinschaftsleben, touristischer Belastung und langfristiger praktischer Eignung.",
+      "Vergleichen Sie medizinische Versorgung, ganzjährig geöffnete Einrichtungen, Mobilität, Ruhe, Unterhalt, Gemeinschaftsleben, touristische Auslastung und die langfristige Alltagstauglichkeit.",
     bestFor:
-      "Ideal für ältere Käufer, die verstehen möchten, welche Region an der Costa Blanca Nord zu ihrem Leben im Ruhestand passt, bevor sie kaufen.",
-    cta: "Ruhestandsleitfaden lesen →",
+      "Ideal für ältere Käufer, die vor dem Immobilienkauf verstehen möchten, welcher Ort an der Costa Blanca Nord zu ihrem Ruhestand passt.",
+    cta: "Ratgeber für Ruheständler lesen →",
   },
   {
-    href: "/de/guides/where-to-buy-property-costa-blanca-north",
-    label: "Regionenführer",
-    title: "Wo Immobilien an der Costa Blanca Nord kaufen",
+    href: "/de/guides/wo-immobilie-costa-blanca-nord-kaufen",
+    label: "Regionaler Ratgeber",
+    title: "Wo sollte man an der Costa Blanca Nord eine Immobilie kaufen?",
     text:
-      "Die richtige Region zu wählen ist oft wichtiger als die erste schöne Immobilie zu wählen. Dieser Leitfaden vergleicht die wichtigsten Orte an der Costa Blanca Nord, bevor Sie Besichtigungen planen.",
+      "Die richtige Region ist häufig wichtiger als die erste schöne Immobilie. Dieser Ratgeber vergleicht die wichtigsten Orte an der Costa Blanca Nord, bevor Sie Besichtigungstermine planen.",
     details:
-      "Vergleichen Sie Moraira, Jávea, Altea, Benissa, Calpe und Dénia nach Lebensstil, Immobilientyp, täglichen Einrichtungen, Atmosphäre außerhalb der Saison und Käuferprofil.",
+      "Vergleichen Sie Moraira, Jávea, Altea, Benissa, Calpe und Dénia nach Lebensstil, Immobilientyp, täglicher Infrastruktur, Atmosphäre außerhalb der Saison und typischem Käuferprofil.",
     bestFor:
-      "Ideal für Käufer, die noch entscheiden, welcher Ort oder welche Küstenregion wirklich zu ihrem zukünftigen Leben in Spanien passt.",
-    cta: "Regionenführer lesen →",
+      "Ideal für Käufer, die noch entscheiden, welcher Ort oder Küstenabschnitt wirklich zu ihrem zukünftigen Leben in Spanien passt.",
+    cta: "Regionalen Ratgeber lesen →",
   },
   {
-    href: "/de/guides/honest-guide-buying-property-costa-blanca-north",
-    label: "Ehrlicher Käuferleitfaden",
-    title: "Kosten, Vermietung und praktische Kontrollen vor dem Kauf",
+    href: "/de/guides/kosten-vermietung-praktische-pruefungen-vor-kauf",
+    label: "Ehrlicher Kaufratgeber",
+    title: "Kosten, Vermietung und praktische Prüfungen vor dem Kauf",
     text:
-      "Eine schöne Immobilie kann trotzdem der falsche Kauf sein, wenn praktische Details übersehen werden. Dieser Leitfaden erklärt, was Käufer oft zu spät entdecken.",
+      "Auch eine wunderschöne Immobilie kann die falsche Entscheidung sein, wenn praktische Details übersehen werden. Dieser Ratgeber erklärt, was Käufer häufig erst zu spät feststellen.",
     details:
-      "Erfahren Sie mehr über versteckte Kosten, Regeln für touristische Vermietung, Strommasten, Verkehrslärm, Sommerandrang, Gemeinschaftsregeln, Eigentumskosten und was Sie prüfen sollten, bevor Sie ein Angebot abgeben.",
+      "Erfahren Sie mehr über versteckte Kosten, Regeln für Ferienvermietung, Strommasten, Verkehrslärm, Sommerandrang, Gemeinschaftsregeln, laufende Eigentümerkosten und wichtige Prüfungen vor einem Angebot.",
     bestFor:
-      "Ideal für deutsche, niederländische und schweizerische Käufer, die ein realistisches Bild möchten, bevor sie sich auf eine Immobilie festlegen.",
-    cta: "Ehrlichen Leitfaden lesen →",
+      "Ideal für deutsche, schweizerische, österreichische und andere internationale Käufer, die vor einer verbindlichen Entscheidung ein realistisches Gesamtbild wünschen.",
+    cta: "Ehrlichen Kaufratgeber lesen →",
   },
 ];
 
-const moreGuides = [
+const guideCategories = [
   {
-    href: "/de/guides/moraira-vs-javea",
-    label: "Regionenvergleich",
-    title: "Moraira vs Jávea",
-    text:
-      "Ein praktischer Vergleich für Käufer, die zwischen zwei der gefragtesten Gegenden an der Costa Blanca Nord wählen.",
-    useful:
-      "Hilfreich, wenn Sie zwischen ruhigem Villenleben in Moraira und einem aktiveren internationalen Leben in Jávea schwanken.",
+    id: "region-und-lage",
+    label: "Region und Lage",
+    title: "Wählen Sie zuerst das Umfeld, das zu Ihrem Alltag passt.",
+    description:
+      "Vergleichen Sie Küstenorte, das Hinterland und unterschiedliche Wohnprofile, bevor Sie sich auf eine Immobilie oder Gemeinde festlegen.",
+    guides: [
+      {
+        href: "/de/guides/moraira-vs-javea",
+        label: "Ortsvergleich",
+        title: "Moraira vs. Jávea",
+        text:
+          "Ein praktischer Vergleich für Käufer, die zwischen zwei der gefragtesten Orte an der Costa Blanca Nord wählen.",
+        useful:
+          "Hilfreich, wenn Sie zwischen ruhigem Villenleben in Moraira und einem lebendigeren internationalen Alltag in Jávea schwanken.",
+      },
+      {
+        href: "/de/guides/denia-vs-calpe",
+        label: "Ortsvergleich",
+        title: "Dénia vs. Calpe",
+        text:
+          "Ein Vergleich für Käufer, die zwischen Dénia und Calpe wählen und Atmosphäre, Infrastruktur, Strände, Erreichbarkeit, Immobilientypen, touristische Auslastung und das Leben außerhalb der Hauptsaison berücksichtigen möchten.",
+        useful:
+          "Hilfreich, wenn Sie zwischen dem urbaneren, spanisch geprägten Charakter Dénias und dem kompakteren Küstenleben in Calpe wählen möchten.",
+      },
+      {
+        href: "/de/guides/kueste-oder-hinterland-mehr-haus-fuers-geld",
+        label: "Küste oder Hinterland",
+        title: "Küste oder Hinterland: Wo bekommen Sie mehr Haus für Ihr Geld?",
+        text:
+          "Vergleichen Sie beliebte Küstenorte mit dem spanischen Hinterland, darunter das Jalón-Tal und die Vall de Pop. Erfahren Sie, was dasselbe Budget bei Wohnfläche, Grundstück, Ruhe, Aussicht und täglicher Infrastruktur bewirken kann.",
+        useful:
+          "Hilfreich, wenn Sie zwischen Meeresnähe und mehr Platz, Privatsphäre sowie Immobilienwert im Hinterland abwägen.",
+      },
+    ],
   },
   {
-    href: "/de/guides/buying-property-spain",
-    label: "Kaufen in Spanien",
-    title: "Immobilie in Spanien kaufen",
-    text:
-      "Eine praktische Erklärung des spanischen Kaufprozesses, einschließlich rechtlicher Kontrollen, Anzahlungen, Notarterminen, Hypotheken, Kaufnebenkosten und was internationale Käufer vor der Unterzeichnung vorbereiten sollten.",
-    useful:
-      "Hilfreich, wenn Sie am Anfang Ihres Kaufprozesses stehen und den gesamten Ablauf verstehen möchten.",
+    id: "recht-und-kaufprozess",
+    label: "Recht und Kaufprozess",
+    title: "Verstehen Sie die spanischen Regeln, bevor Sie unterschreiben.",
+    description:
+      "Vom Kaufablauf und der rechtlichen Prüfung bis zur Eigentümergemeinschaft und den Unterschieden zum deutschen System.",
+    guides: [
+      {
+        href: "/de/guides/immobilie-in-spanien-kaufen",
+        label: "Immobilienkauf in Spanien",
+        title: "Eine Immobilie in Spanien kaufen",
+        text:
+          "Eine praktische Erklärung des spanischen Kaufprozesses, einschließlich rechtlicher Prüfung, Anzahlungen, Notartermin, Finanzierung, Kaufnebenkosten und der Unterlagen, die internationale Käufer vor der Unterzeichnung vorbereiten sollten.",
+        useful:
+          "Hilfreich, wenn Sie am Anfang Ihrer Immobiliensuche stehen und den gesamten Ablauf verstehen möchten.",
+      },
+      {
+        href: "/de/guides/wie-lange-dauert-hauskauf-spanien",
+        label: "Dauer des Kaufprozesses",
+        title: "Wie lange dauert ein Hauskauf in Spanien?",
+        text:
+          "Eine übersichtliche Zeitleiste von der ersten Immobilienauswahl und Reservierung über die rechtliche Prüfung, den Arras-Vertrag und eine mögliche Finanzierungszusage bis zum Notartermin und zur Schlüsselübergabe.",
+        useful:
+          "Hilfreich, wenn Sie wissen möchten, wie viele Wochen oder Monate Sie realistisch einplanen sollten und welche Prüfungen, Unterlagen oder Finanzierungsschritte Verzögerungen verursachen können.",
+      },
+      {
+        href: "/de/guides/spanische-regeln-unterschiede-deutschland",
+        label: "Spanische Regeln",
+        title: "Spanische Immobilienregeln, die anders funktionieren als in Deutschland",
+        text:
+          "Ein praktischer Ratgeber für deutsche Käufer über die Unterschiede zwischen dem deutschen und spanischen System, darunter die Rolle des Notars, Registro de la Propiedad, Catastro, Gemeinschaftsregeln, Ferienvermietung, Umbauten und Steuern.",
+        useful:
+          "Hilfreich, wenn Sie vermeiden möchten, in Spanien auf Grundlage deutscher Annahmen zu kaufen.",
+      },
+      {
+        href: "/de/guides/eigentuemergemeinschaft-spanien",
+        label: "Gemeinschaftsregeln",
+        title: "Eigentümergemeinschaften in Spanien",
+        text:
+          "Verstehen Sie die Regeln der comunidad de propietarios, Gemeinschaftskosten, Versammlungsprotokolle, Vermietungsbeschränkungen, gemeinschaftlichen Unterhalt, Eigentümerpflichten und die Bedeutung dieser Prüfungen vor dem Kauf.",
+        useful:
+          "Hilfreich, wenn Sie eine Wohnung, ein Reihenhaus oder eine Immobilie in einer Urbanisation in Betracht ziehen.",
+      },
+      {
+        href: "/de/guides/haeufige-fehler-immobilienkauf-spanien",
+        label: "Käuferfehler",
+        title: "Häufige Fehler beim Immobilienkauf in Spanien",
+        text:
+          "Erfahren Sie, welche Fehler Käufer in Spanien häufig machen – von der falschen Region bis zum Übersehen von Gemeinschaftsregeln, rechtlicher Prüfung, laufenden Eigentümerkosten und praktischen Alltagsthemen.",
+        useful:
+          "Hilfreich, wenn Sie emotionale Fehlentscheidungen und teure Überraschungen vermeiden möchten.",
+      },
+    ],
   },
   {
-    href: "/de/guides/fehler-immobilienkauf-spanien",
-    label: "Käuferfehler",
-    title: "Häufige Fehler beim Immobilienkauf",
-    text:
-      "Erfahren Sie, welche Fehler Käufer in Spanien häufig machen, von der Wahl der falschen Region bis zum Übersehen von Gemeinschaftsregeln, rechtlichen Kontrollen, Eigentumskosten und praktischen Alltagsthemen.",
-    useful:
-      "Hilfreich, wenn Sie emotionale Entscheidungen und teure Überraschungen vermeiden möchten.",
+    id: "kosten-steuern-finanzierung",
+    label: "Kosten, Steuern und Finanzierung",
+    title: "Berechnen Sie, was Kauf und Eigentum wirklich kosten.",
+    description:
+      "Verschaffen Sie sich Klarheit über Kaufsteuern, Gesamtkosten, Hypotheken, monatliche Belastungen und steuerliche Themen für deutsche Käufer.",
+    guides: [
+      {
+        href: "/de/guides/gesamtkosten-immobilienkauf-spanien",
+        label: "Gesamte Kaufnebenkosten",
+        title: "Gesamtkosten beim Immobilienkauf in Spanien",
+        text:
+          "Ein vollständiger Überblick über die Kosten zusätzlich zum Kaufpreis, darunter Kaufsteuer, Anwalt, Notar, Grundbuch, Gestoría, Bewertung und mögliche Finanzierungskosten.",
+        useful:
+          "Hilfreich, wenn Sie berechnen möchten, wie viel Eigenkapital Sie tatsächlich benötigen, bevor Sie reservieren oder einen Kaufvertrag unterschreiben.",
+      },
+      {
+        href: "/de/guides/itp-iva-ajd-einfach-erklaert",
+        label: "Steuern beim Kauf",
+        title: "ITP, IVA und AJD einfach erklärt",
+        text:
+          "Eine verständliche Erklärung der wichtigsten spanischen Steuern beim Immobilienkauf. Erfahren Sie, wann ITP anfällt, wann IVA und AJD gelten und warum Bestandsimmobilien und Neubauten steuerlich unterschiedlich behandelt werden.",
+        useful:
+          "Hilfreich, wenn Sie vorab genau verstehen möchten, welche Kaufsteuer für Ihre Immobilie gilt und wie viel Eigenkapital Sie zusätzlich zum Kaufpreis benötigen.",
+      },
+      {
+        href: "/de/guides/kosten-neue-hypothekenregeln-spanien",
+        label: "Hypothek und Kosten",
+        title: "Kosten und neue Hypothekenregeln in Spanien",
+        text:
+          "Ein aktueller Ratgeber zu spanischen Hypotheken, Immobilienbewertungen, Energieausweisen, Kostenverteilung und den Unterlagen, die Banken vor einer endgültigen Kreditzusage prüfen.",
+        useful:
+          "Hilfreich, wenn Sie eine Immobilie in Spanien finanzieren möchten und Verzögerungen, eine zu niedrige Bewertung oder unerwartete Hypothekenkosten vermeiden wollen.",
+      },
+      {
+        href: "/de/guides/deutsche-steuerregeln-zweitwohnung-spanien",
+        label: "Deutsche Steuerregeln",
+        title: "Deutsche Steuerregeln für eine Zweitwohnung in Spanien",
+        text:
+          "Ein Ratgeber für in Deutschland steuerpflichtige Käufer einer Zweitwohnung in Spanien, einschließlich deutscher und spanischer Besteuerung, Mieteinnahmen sowie grenzüberschreitender Eigentumsfragen.",
+        useful:
+          "Hilfreich für deutsche Käufer, die steuerliche Themen verstehen möchten, bevor sie eine Immobilie im Ausland erwerben.",
+      },
+      {
+        href: "/de/guides/lebenshaltungskosten-spanien",
+        label: "Leben in Spanien",
+        title: "Lebenshaltungskosten in Spanien",
+        text:
+          "Ein praktischer Überblick über die Kosten für Lebensmittel, Energie, Mobilität, Gesundheitsversorgung, Versicherungen, Restaurantbesuche, Internet und weitere feste sowie variable Ausgaben.",
+        useful:
+          "Hilfreich, wenn Sie ein realistisches Monatsbudget für Auswanderung, Zweitwohnsitz, Ruhestand oder einen längeren Aufenthalt in Spanien erstellen möchten.",
+      },
+    ],
   },
   {
-    href: "/de/guides/eigentuemergemeinschaft-spanien",
-    label: "Gemeinschaftsregeln",
-    title: "Eigentümergemeinschaften in Spanien",
-    text:
-      "Verstehen Sie die Regeln der comunidad de propietarios, Gemeinschaftskosten, Versammlungsprotokolle, Vermietungsbeschränkungen, gemeinsame Instandhaltung, Pflichten von Eigentümern und warum diese Kontrollen vor dem Kauf wichtig sind.",
-    useful:
-      "Hilfreich, wenn Sie eine Wohnung, ein Reihenhaus oder eine Immobilie in einer Urbanisation in Betracht ziehen.",
-  },
-  {
-    href: "/de/guides/german-tax-second-home-spain",
-    label: "Deutsche Steuerregeln",
-    title: "Deutsche Steuerregeln für ein Ferienhaus in Spanien",
-    text:
-      "Ein praktischer Leitfaden für deutsche Käufer, die eine zweite Immobilie oder ein Ferienhaus in Spanien kaufen oder besitzen, einschließlich spanischer Immobiliensteuern, Eigennutzung, Vermietung, Steuerpflicht, Doppelbesteuerung und grenzüberschreitender Fragen.",
-    useful:
-      "Hilfreich für deutsche Käufer, die steuerliche Themen verstehen möchten, bevor sie eine Immobilie in Spanien kaufen.",
-  },
-  {
-    href: "/de/guides/idealista-spanien-probleme",
-    label: "Immobiliensuche",
-    title: "Idealista Spanien: Probleme und worauf Käufer achten sollten",
-    text:
-      "Ein praktischer Leitfaden darüber, warum Immobilienportale in Spanien nicht immer die ganze Wahrheit zeigen und welche Punkte Käufer vor einer Besichtigung oder Anfrage prüfen sollten.",
-    useful:
-      "Hilfreich, wenn Sie online nach Immobilien suchen und vermeiden möchten, Zeit mit unklaren, veralteten oder irreführenden Anzeigen zu verlieren.",
-  },
-  {
-    href: "/de/guides/immobilienkauf-spanien",
-    label: "Kaufleitfaden",
-    title: "Immobilienkauf in Spanien",
-    text:
-      "Ein ausführlicher deutscher Ratgeber zum Immobilienkauf in Spanien mit Blick auf Kaufprozess, Reservierung, Anwalt, Notar, Register, Kosten, Finanzierung und praktische Vorbereitung.",
-    useful:
-      "Hilfreich, wenn Sie den spanischen Kaufprozess aus deutscher Perspektive Schritt für Schritt verstehen möchten.",
-  },
-  {
-    href: "/de/guides/haustiere-in-spanien",
-    label: "Leben mit Haustieren",
-    title: "Haustiere in Spanien: alle Informationen",
-    text:
-      "Ein praktischer Leitfaden für Käufer und Eigentümer mit Haustieren in Spanien, darunter Reisen mit Hund oder Katze, EU-Heimtierausweis, Tierärzte, Versicherungen, Strände, Mietobjekte, Gemeinschaftsregeln und Alltag an der Costa Blanca.",
-    useful:
-      "Hilfreich, wenn Ihr Hund oder Ihre Katze mit nach Spanien zieht oder wenn Sie wissen möchten, welche Regeln in Apartments, Urbanisationen und öffentlichen Bereichen gelten.",
-  },
-  {
-    href: "/de/guides/denia-versus-calpe",
-    label: "Regionenvergleich",
-    title: "Dénia versus Calpe",
-    text:
-      "Ein praktischer Vergleich für Käufer, die zwischen Dénia und Calpe schwanken, mit Blick auf Atmosphäre, Einwohner, Restaurants, Schulen, Ärzte, Strände, Erreichbarkeit, Immobilientypen, touristische Belastung und Leben außerhalb der Hochsaison.",
-    useful:
-      "Hilfreich, wenn Sie zwischen dem städtischeren, spanischen Charakter von Dénia und dem kompakteren Küstenleben von Calpe wählen möchten.",
+    id: "praktisches-leben",
+    label: "Praktisches Leben in Spanien",
+    title: "Planen Sie auch den Alltag nach der Schlüsselübergabe.",
+    description:
+      "Praktische Ratgeber zu residencia, Steuern, Gesundheitsversorgung, Lebensmitteln, Haustieren und dem täglichen Leben für Menschen, die in Spanien wohnen, überwintern oder längere Zeit bleiben möchten.",
+    guides: [
+      {
+        href: "/de/guides/leben-in-spanien-nach-hauskauf",
+        label: "Leben nach dem Kauf",
+        title:
+          "Leben in Spanien nach dem Hauskauf: Residencia, Steuern und Gesundheitsversorgung erklärt",
+        text:
+          "Ein umfassender Ratgeber für Deutsche, die nach dem Kauf dauerhaft, überwiegend oder einen Teil des Jahres in Spanien leben möchten. Erfahren Sie, was residencia, padrón, steuerliche Ansässigkeit, Krankenversicherung und die Abmeldung in Deutschland praktisch bedeuten.",
+        useful:
+          "Hilfreich, wenn Sie nicht nur eine Immobilie kaufen, sondern auch klären möchten, welche administrativen, steuerlichen und gesundheitlichen Schritte zu Ihrer Aufenthaltsdauer und persönlichen Situation passen.",
+      },
+      {
+        href: "/de/guides/supermarktpreise-spanien",
+        label: "Lebensmittel in Spanien",
+        title: "Supermarktpreise in Spanien",
+        text:
+          "Ein aktueller Vergleich alltäglicher Lebensmittel bei vier großen spanischen Supermarktketten, mit Beispielpreisen für Milch, Eier, Reis, Pasta, Olivenöl und andere häufig gekaufte Produkte.",
+        useful:
+          "Hilfreich, wenn Sie Ihre täglichen Ausgaben in Spanien einschätzen und wissen möchten, welcher Supermarkt bei Preis, Sortiment und Komfort am besten zu Ihnen passt.",
+      },
+      {
+        href: "/de/guides/haustiere-in-spanien",
+        label: "Leben mit Haustieren",
+        title: "Haustiere in Spanien: alle wichtigen Informationen",
+        text:
+          "Ein Ratgeber für deutsche Käufer und Eigentümer über Haustiere in Spanien, darunter Reisen mit Hund oder Katze, Regeln in Eigentümergemeinschaften, Tierärzte, Versicherungen, Strände, Mietwohnungen und das tägliche Leben an der Costa Blanca.",
+        useful:
+          "Hilfreich, wenn Ihr Hund oder Ihre Katze mit nach Spanien zieht oder Sie wissen möchten, welche Regeln in Wohnungen, Urbanisationen und öffentlichen Bereichen gelten.",
+      },
+    ],
   },
 ];
 
-export default function DeutscheImmobilienGuidesPage() {
+export default function DeutscheImmobilienRatgeberPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f6f1ea] text-stone-900">
       {/* HERO */}
@@ -142,14 +242,14 @@ export default function DeutscheImmobilienGuidesPage() {
           </h1>
 
           <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/80">
-            Ehrliche, praktische und regionenbezogene Leitfäden für deutsche,
-            niederländische, schweizerische und andere internationale Käufer,
-            die die Costa Blanca Nord in Betracht ziehen.
+            Ehrliche, praktische und regional ausgerichtete Ratgeber für deutsche,
+            schweizerische, österreichische und andere internationale Käufer, die
+            die Costa Blanca Nord in Betracht ziehen.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/de/area-match"
+              href="/de/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
               Area Match anfragen
@@ -163,10 +263,10 @@ export default function DeutscheImmobilienGuidesPage() {
             </a>
 
             <a
-              href="#guides"
+              href="#ratgeber"
               className="rounded-full border border-white/40 px-8 py-4 text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-[#1e2a3a]"
             >
-              Vor dem Kauf lesen
+              Vor dem Kauf informieren
             </a>
           </div>
         </div>
@@ -181,34 +281,34 @@ export default function DeutscheImmobilienGuidesPage() {
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Die richtige Immobilienentscheidung beginnt mit klarem Verständnis.
+              Eine gute Immobilienentscheidung beginnt mit klaren Informationen.
             </h2>
           </div>
 
           <div>
             <p className="text-lg leading-relaxed text-stone-600">
-              Eine Immobilie in Spanien zu kaufen ist spannend, sollte aber nicht
-              mit zufälligen Besichtigungen oder nur mit schönen Fotos beginnen.
+              Der Kauf einer Immobilie in Spanien ist spannend, sollte aber nicht
+              mit zufälligen Besichtigungen oder ausschließlich schönen Fotos
+              beginnen.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Bevor Sie eine Entscheidung treffen, ist es wichtig, die Region,
-              rechtliche Kontrollen, Eigentumskosten, Vermietungsregeln,
-              Gemeinschaftsbeschränkungen und praktische Alltagsdetails gut zu
-              verstehen.
+              Vor einer Entscheidung sollten Sie die Region, rechtliche Prüfungen,
+              laufende Eigentümerkosten, Vermietungsregeln,
+              Gemeinschaftsbeschränkungen und praktische Alltagsdetails verstehen.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Diese Leitfäden helfen Ihnen, die Costa Blanca Nord mit mehr
-              Klarheit zu vergleichen, bevor Sie sich auf einen Standort, eine
-              Immobiliensuche oder eine Kaufreise festlegen.
+              Diese Ratgeber helfen Ihnen, die Costa Blanca Nord klarer zu
+              vergleichen, bevor Sie sich auf einen Ort, eine Immobiliensuche oder
+              eine Kaufreise festlegen.
             </p>
           </div>
         </div>
       </section>
 
       {/* MAIN GUIDES */}
-      <section id="guides" className="px-8 pb-24">
+      <section id="ratgeber" className="px-8 pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
             <div>
@@ -217,15 +317,15 @@ export default function DeutscheImmobilienGuidesPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Unsere wichtigsten Leitfäden für ernsthafte Käufer.
+                Unsere wichtigsten Ratgeber für ernsthafte Käufer.
               </h2>
             </div>
 
             <a
-              href="/de/contact"
+              href="/de/kontakt"
               className="rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
-              Persönliche Beratung nötig?
+              Persönliche Beratung gewünscht?
             </a>
           </div>
 
@@ -265,46 +365,97 @@ export default function DeutscheImmobilienGuidesPage() {
         </div>
       </section>
 
-      {/* MORE GUIDES */}
+      {/* RATGEBER NACH THEMA */}
       <section className="bg-[#e9dfd2] px-8 py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-14 max-w-4xl">
+          <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#9b743d]">
-              Weitere Käuferleitfäden
+              Ratgeber nach Thema
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Rechtliche, finanzielle und praktische Themen.
+              Finden Sie schneller die Informationen, die zu Ihrer Kaufphase passen.
             </h2>
+
+            <p className="mt-7 max-w-3xl text-lg leading-relaxed text-stone-700">
+              Die Artikel sind übersichtlich nach Region und Lage, rechtlichen
+              Themen, Kosten und Finanzierung sowie dem praktischen Alltag in
+              Spanien gegliedert.
+            </p>
+
+            <nav
+              aria-label="Kategorien der Immobilienratgeber"
+              className="mt-9 flex flex-wrap gap-3"
+            >
+              {guideCategories.map((category) => (
+                <a
+                  key={category.id}
+                  href={`#${category.id}`}
+                  className="rounded-full border border-[#9b743d]/40 bg-[#f6f1ea] px-5 py-3 text-sm font-medium text-[#1e2a3a] transition hover:border-[#1e2a3a] hover:bg-white"
+                >
+                  {category.label}
+                </a>
+              ))}
+            </nav>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {moreGuides.map((guide) => (
-              <a
-                key={guide.href}
-                href={guide.href}
-                className="group rounded-[30px] bg-[#f6f1ea] p-8 transition hover:-translate-y-1 hover:bg-white"
+          <div className="mt-20">
+            {guideCategories.map((category, categoryIndex) => (
+              <section
+                id={category.id}
+                key={category.id}
+                className={
+                  categoryIndex === 0
+                    ? "scroll-mt-24"
+                    : "mt-24 scroll-mt-24 border-t border-[#9b743d]/25 pt-20"
+                }
               >
-                <p className="text-sm uppercase tracking-[0.25em] text-[#9b743d]">
-                  {guide.label}
-                </p>
+                <div className="grid gap-12 lg:grid-cols-[0.34fr_0.66fr] lg:gap-16">
+                  <header>
+                    <p className="text-sm uppercase tracking-[0.3em] text-[#9b743d]">
+                      {category.label}
+                    </p>
 
-                <h3 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
-                  {guide.title}
-                </h3>
+                    <h3 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a]">
+                      {category.title}
+                    </h3>
 
-                <p className="mt-5 leading-relaxed text-stone-700">
-                  {guide.text}
-                </p>
+                    <p className="mt-6 leading-relaxed text-stone-700">
+                      {category.description}
+                    </p>
+                  </header>
 
-                <p className="mt-5 leading-relaxed text-stone-700">
-                  {guide.useful}
-                </p>
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {category.guides.map((guide) => (
+                      <a
+                        key={guide.href}
+                        href={guide.href}
+                        className="group flex h-full flex-col rounded-[30px] bg-[#f6f1ea] p-8 transition hover:-translate-y-1 hover:bg-white hover:shadow-lg"
+                      >
+                        <p className="text-sm uppercase tracking-[0.25em] text-[#9b743d]">
+                          {guide.label}
+                        </p>
 
-                <span className="mt-8 inline-block text-sm uppercase tracking-[0.2em] text-[#1e2a3a]">
-                  Leitfaden lesen →
-                </span>
-              </a>
+                        <h4 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a]">
+                          {guide.title}
+                        </h4>
+
+                        <p className="mt-5 leading-relaxed text-stone-700">
+                          {guide.text}
+                        </p>
+
+                        <p className="mt-5 leading-relaxed text-stone-700">
+                          {guide.useful}
+                        </p>
+
+                        <span className="mt-auto inline-block pt-8 text-sm uppercase tracking-[0.2em] text-[#1e2a3a]">
+                          Ratgeber lesen →
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </section>
             ))}
           </div>
         </div>
@@ -314,33 +465,33 @@ export default function DeutscheImmobilienGuidesPage() {
       <section className="px-8 py-32">
         <div className="mx-auto max-w-6xl rounded-[40px] bg-[#1e2a3a] p-12 text-center text-white md:p-16">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-            Persönliche Begleitung nötig?
+            Persönliche Begleitung gewünscht?
           </p>
 
           <h2 className="mx-auto mt-6 max-w-4xl font-serif text-5xl leading-tight">
-            Wissen Sie noch nicht, welche Region oder welcher Immobilientyp zu
+            Sie wissen noch nicht, welche Region oder welcher Immobilientyp zu
             Ihrem zukünftigen Leben in Spanien passt?
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-white/80">
             Unser Area Match Assessment hilft Ihnen, Orte an der Costa Blanca
-            Nord anhand von Lebensstil, Budget, Einrichtungen, langfristigen
-            Plänen und praktischen Bedürfnissen zu vergleichen.
+            Nord anhand von Lebensstil, Budget, Infrastruktur, langfristigen
+            Plänen und praktischen Anforderungen zu vergleichen.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="/de/area-match"
+              href="/de/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
               Area Match anfragen
             </a>
 
             <a
-              href="/de/contact"
+              href="/de/kontakt"
               className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
-              Kennenlernen planen
+              Kennenlerngespräch vereinbaren
             </a>
           </div>
         </div>
