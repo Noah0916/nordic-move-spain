@@ -256,7 +256,7 @@ export default function EnglishPropertyGuidesPage() {
             </a>
 
             <a
-              href="/buyer-discovery-trip"
+              href="/services/discovery-trips"
               className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
               Explore the Buyer Discovery Trip

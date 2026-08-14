@@ -16,9 +16,9 @@ export const metadata = {
         },
       }
     : {}),
-  title: "Mit mehr Sicherheit an der Costa Blanca kaufen und umziehen | Nordic Move Spain",
+  title: "Sicherer kaufen und an die Costa Blanca umziehen | Nordic Move Spain",
   description:
-    "Kaufbegleitung und umfassende Relocation an der Costa Blanca: von der Wahl der passenden Region und Immobilie über unabhängige Prüfungen bis zu Kauf, Renovierung, Umzug und praktischer Unterstützung nach der Ankunft.",
+    "Kaufbegleitung und vollständige Relocation an der Costa Blanca: von der Wahl der Region und Immobilie über unabhängige technische und rechtliche Prüfungen bis zu Kauf, Organisation, Renovierung, Umzug und Einrichtung.",
   applicationName: "Nordic Move Spain",
   authors: [{ name: "Nordic Move Spain" }],
   creator: "Nordic Move Spain",
@@ -27,14 +27,14 @@ export const metadata = {
   keywords: [
     "Immobilie kaufen Costa Blanca",
     "Kaufbegleitung Costa Blanca",
-    "Haus kaufen in Spanien",
-    "Immobilienmakler Costa Blanca",
+    "Haus kaufen Spanien",
+    "Makler Costa Blanca",
     "Käufermakler Costa Blanca",
-    "deutschsprachige Kaufbegleitung Costa Blanca",
-    "technische Immobilienprüfung Spanien",
-    "rechtliche Due Diligence Immobilien Spanien",
-    "Umzug an die Costa Blanca",
-    "Relocation Costa Blanca",
+    "deutsche Kaufbegleitung Costa Blanca",
+    "Baugutachten Immobilie Spanien",
+    "rechtliche Due Diligence Immobilie Spanien",
+    "Umzug Costa Blanca",
+    "relocation Costa Blanca",
     "Costa Blanca Nord",
   ],
   robots: {
@@ -49,9 +49,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Mit mehr Sicherheit kaufen und umfassend begleitet umziehen | Nordic Move Spain",
+    title: "Sicherer kaufen mit vollständiger Relocation | Nordic Move Spain",
     description:
-      "Von der Wahl der passenden Region und Immobilie über unabhängige Prüfungen, Kauf, Renovierung und Umzug bis zur praktischen Unterstützung für einen entspannten Start in Spanien.",
+      "Von der Wahl der Region und Immobilie über unabhängige Prüfungen und den Kauf bis zu Organisation, Renovierung, Relocation und Einrichtung an der Costa Blanca.",
     type: "website",
     locale: "de_DE",
     siteName: "Nordic Move Spain",
@@ -69,9 +69,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mit mehr Sicherheit an der Costa Blanca kaufen und umziehen | Nordic Move Spain",
+    title: "Sicherer kaufen und an die Costa Blanca umziehen | Nordic Move Spain",
     description:
-      "Kaufbegleitung und umfassende Relocation: vom Area Match und unabhängigen Prüfungen bis zu Kauf, Renovierung, Umzug und praktischer Unterstützung nach der Ankunft.",
+      "Kaufbegleitung und vollständige Relocation: vom Area Match und unabhängigen Prüfungen bis zu Kauf, Renovierung, Umzug und Einrichtung.",
     ...(siteUrl ? { images: ["/images/laatste-homepage.png"] } : {}),
   },
 };
@@ -79,17 +79,17 @@ export const metadata = {
 export default function GermanHomePage() {
   const guideCards = [
     {
-      href: "/de/guides/beste-orte-costa-blanca-nord-rentner",
-      label: "Ratgeber für den Ruhestand",
+      href: "/de/guides/best-areas-costa-blanca-north-retirees",
+      label: "Regionenratgeber für den Ruhestand",
       title: "Die besten Orte an der Costa Blanca für den Ruhestand",
       text:
-        "Ein praktischer Ratgeber für internationale Käufer, die die besten Orte an der Costa Blanca für den Ruhestand vergleichen.",
-      cta: "Ratgeber zum Ruhestand lesen →",
+        "Ein praktischer Ratgeber für internationale Käufer, die die besten Orte an der Costa Blanca für ihren Ruhestand vergleichen.",
+      cta: "Ruhestandsratgeber lesen →",
       featured: true,
     },
     {
-      href: "/de/guides/immobilie-in-spanien-kaufen",
-      label: "Kaufen in Spanien",
+      href: "/de/guides/buying-property-spain",
+      label: "Immobilienkauf in Spanien",
       title: "Eine Immobilie in Spanien kaufen",
       text:
         "Ein umfassender Ratgeber zu rechtlichen Prüfungen, Hypotheken, Kaufnebenkosten und dem Kaufprozess für internationale Käufer.",
@@ -97,11 +97,11 @@ export default function GermanHomePage() {
       featured: false,
     },
     {
-      href: "/de/guides/deutsche-steuerregeln-zweitwohnung-spanien",
-      label: "Steuerratgeber für Deutsche",
-      title: "Steuerregeln für eine Zweitwohnung in Spanien",
+      href: "/de/guides/spanische-steuerregeln-deutschland",
+      label: "Steuerratgeber für Käufer aus Deutschland",
+      title: "Spanische Steuerregeln für Immobilieneigentümer aus Deutschland",
       text:
-        "Was Käufer aus Deutschland über spanische Immobiliensteuern, eine Zweitwohnung in Spanien, Mieteinnahmen, Veräußerungsgewinne und grenzüberschreitende Steuerfragen wissen sollten.",
+        "Was Käufer aus Deutschland über spanische Immobiliensteuern, die steuerliche Behandlung in Deutschland, Zweitwohnsitze, Mieteinnahmen, Veräußerungsgewinne und die Vermeidung von Doppelbesteuerung wissen sollten.",
       cta: "Steuerratgeber lesen →",
       featured: false,
     },
@@ -115,14 +115,14 @@ export default function GermanHomePage() {
         "@id": "#organization",
         name: "Nordic Move Spain",
         description:
-          "Kauf- und Relocation-Begleitung für internationale Käufer, die mit mehr Sicherheit eine Immobilie erwerben und ihren Umzug an die Costa Blanca sorgfältig organisieren möchten.",
+          "Kauf- und Relocation-Begleitung für internationale Käufer, die mit mehr Sicherheit eine Immobilie an der Costa Blanca erwerben und ihren Umzug sorgfältig organisieren möchten.",
       },
       {
         "@type": "WebPage",
         "@id": "#webpage",
         name: "Immobilie an der Costa Blanca kaufen | Nordic Move Spain",
         description:
-          "Kaufbegleitung und umfassende Relocation mit Area Match, gezielter Immobiliensuche, unabhängigen technischen und rechtlichen Prüfungen sowie Unterstützung über die Ankunft hinaus.",
+          "Kaufbegleitung und vollständige Relocation mit Area Match, gezielter Immobilienauswahl, unabhängigen technischen und rechtlichen Prüfungen sowie Unterstützung bis zur Ankunft.",
         inLanguage: "de-DE",
         about: {
           "@id": "#buyer-service",
@@ -138,7 +138,7 @@ export default function GermanHomePage() {
         serviceType: [
           "Area Match",
           "Immobilienauswahl und Besichtigungen",
-          "Technische Prüfung und Dokumentenscreening",
+          "Technische Prüfung und Dokumentensichtung",
           "Koordination der rechtlichen Due Diligence",
           "Home Setup und Versorgungsanschlüsse",
           "Renovation & Interior",
@@ -175,7 +175,7 @@ export default function GermanHomePage() {
 
           <div className="hidden gap-8 text-sm text-white md:flex">
             <a href="/de" className="border-b border-[#c8a063] pb-1">
-              Home
+              Startseite
             </a>
 
             <a href="/de/regions" className="hover:text-white/70 transition">
@@ -203,7 +203,7 @@ export default function GermanHomePage() {
             <div className="flex items-center gap-2">
               <a
                 href="/"
-                aria-label="Englische Version"
+                aria-label="English version"
                 className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
               >
                 EN
@@ -211,7 +211,7 @@ export default function GermanHomePage() {
 
               <a
                 href="/nl"
-                aria-label="Niederländische Version"
+                aria-label="Dutch version"
                 className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
               >
                 NL
@@ -219,7 +219,7 @@ export default function GermanHomePage() {
 
               <a
                 href="/de"
-                aria-label="Deutsche Version"
+                aria-label="German version"
                 className="rounded-full border border-[#c8a063] bg-[#c8a063] px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-[#b48a4f]"
               >
                 DE
@@ -227,7 +227,7 @@ export default function GermanHomePage() {
 
               <a
                 href="/sv"
-                aria-label="Schwedische Version"
+                aria-label="Swedish version"
                 className="rounded-full border border-white/40 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-stone-900"
               >
                 SE
@@ -238,7 +238,7 @@ export default function GermanHomePage() {
               href="/de/contact"
               className="rounded-full bg-[#c8a063] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Kennenlerngespräch vereinbaren
+              Erstgespräch vereinbaren
             </a>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function GermanHomePage() {
       <section className="relative flex h-screen items-center overflow-hidden">
         <img
           src="/images/laatste-homepage.png"
-          alt="Mit mehr Sicherheit eine Immobilie kaufen und umfassend begleitet an die Costa Blanca umziehen mit Nordic Move Spain"
+          alt="Sicherer eine Immobilie kaufen und mit vollständiger Begleitung an die Costa Blanca umziehen mit Nordic Move Spain"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -261,22 +261,20 @@ export default function GermanHomePage() {
             </p>
 
             <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.02] text-[#f3ede3] drop-shadow-[0_2px_14px_rgba(0,0,0,0.45)] md:text-5xl">
-              Mit mehr Sicherheit an der Costa Blanca kaufen.
+              Sicherer kaufen an der Costa Blanca.
               <span className="mt-2 block text-[0.78em] leading-tight text-[#f3ede3]/95">
-                Umfassend begleitet vom Kauf bis zur Ankunft.
+                Mit mehr Sicherheit und Transparenz.
               </span>
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#f7f2ea] drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-xl">
-              Nordic Move Spain begleitet internationale Käufer von der Wahl der passenden
-              Region und Immobilie über unabhängige rechtliche und technische Prüfungen bis
-              zu Kauf, Renovierung und Umzug. Auch danach bleiben wir an Ihrer Seite – mit
-              praktischer Unterstützung bei Verwaltung, Versicherungen und lokalen
-              Dienstleistungen für einen entspannten Start in Spanien.
+              Nordic Move Spain begleitet internationale Käufer von der Wahl der richtigen Region und
+              Immobilie über unabhängige technische und rechtliche Prüfungen und den Kauf bis zur
+              vollständigen Relocation.
             </p>
 
             <p className="mt-7 text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-              Kaufbegleitung · Unabhängige Prüfungen · Umfassende Relocation
+              Zwei unabhängige Kaufprüfungen · Vollständige Relocation · Ein fester Ansprechpartner
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
@@ -284,14 +282,14 @@ export default function GermanHomePage() {
                 href="/de/relocation-assessment"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Kostenloses Area Match starten
+                Fordern Sie Ihren kostenlosen persönlichen Area Match Report an
               </a>
 
               <a
                 href="/de/contact"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
               >
-                Kennenlerngespräch vereinbaren
+                Erstgespräch vereinbaren
               </a>
             </div>
           </div>
@@ -301,7 +299,7 @@ export default function GermanHomePage() {
       {/* CORE PROOF BAR */}
       <section className="border-b border-stone-200/70 bg-white/75 px-8 py-5 backdrop-blur">
         <div className="mx-auto grid max-w-7xl gap-4 text-center text-sm font-medium text-[#1e2a3a] md:grid-cols-3">
-          <p>Persönliche Begleitung auf Käuferseite</p>
+          <p>Persönliche Begleitung auf der Seite des Käufers</p>
           <p>Rechtliche und technische Prüfung vor dem Kauf</p>
           <p>Begleitung auf Deutsch, Englisch, Niederländisch und Schwedisch</p>
         </div>
@@ -317,74 +315,73 @@ export default function GermanHomePage() {
               </p>
 
               <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
-                Von der Immobiliensuche bis zum Leben in Spanien.
+                Mehr Sicherheit, bevor Sie sich entscheiden.
               </h2>
 
-              <p className="mt-6 max-w-2xl text-xl font-medium leading-relaxed text-[#1e2a3a]">
-                Von der passenden Region und Immobilie bis zu unabhängigen Kaufprüfungen,
-                Umzug, Renovierung und Einrichtung.
-              </p>
-
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Eine Immobilie in Spanien zu kaufen ist ein schöner Schritt, doch der
-                Prozess kann schnell komplex werden. Sie haben mit Maklern, Anwälten,
-                Bausachverständigen, Notaren, Handwerkern, Umzugsunternehmen und weiteren
-                Dienstleistern zu tun – jeweils mit eigenen Aufgaben und Verantwortlichkeiten.
+                Eine Immobilie in Spanien kann wunderschön aussehen, während technische oder
+                rechtliche Risiken bei einer Besichtigung unsichtbar bleiben.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Nordic Move Spain führt diese Schritte zusammen und begleitet den Prozess
-                von der Orientierung bis zur Ankunft. Das beginnt mit Ihrem persönlichen
-                Area Match und einer gezielten Immobilienauswahl und kann Kaufbegleitung,
-                administrative Themen, Versorgungsanschlüsse, Renovierung, Umzug und
-                Einrichtung umfassen.
-              </p>
-
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Wir sprechen Spanisch, kennen die lokalen Abläufe und arbeiten mit
-                sorgfältig ausgewählten unabhängigen Fachleuten.
+                Deshalb lassen wir eine ernsthaft in Betracht gezogene Immobilie vor Ihrer endgültigen Entscheidung{" "}
+                <strong className="font-medium text-[#1e2a3a]">
+                  unabhängig sowohl technisch als auch rechtlich prüfen
+                </strong>
+                . Die wichtigsten Ergebnisse werden zusammengeführt, damit Sie besser verstehen,
+                was Sie kaufen. Sind die Risiken zu groß, raten wir Ihnen vom Kauf ab.
               </p>
 
               <h3 className="mt-10 max-w-2xl font-serif text-3xl leading-tight text-[#1e2a3a]">
-                Erst prüfen, dann kaufen
+                Sicherer kaufen beginnt damit, zu wissen, wo Sie suchen sollten.
               </h3>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Vor dem Kauf lassen wir die Immobilie unabhängig technisch und rechtlich
-                prüfen. Ein qualifizierter Bausachverständiger beurteilt den tatsächlichen
-                Zustand und gleicht ihn mit den verfügbaren Unterlagen und Registrierungen
-                ab. Ein unabhängiger spanischer Immobilienanwalt prüft unter anderem
-                Eigentum, Belastungen, Schulden, Genehmigungen und Verträge.
+                Bevor Sie Immobilien besichtigen, erfassen wir Ihre Wünsche, Ihr Budget,
+                Ihren Lebensstil und Ihre Zukunftspläne im Detail.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                So erhalten Sie vor Ihrer endgültigen Entscheidung ein klareres Bild vom
-                technischen Zustand, der rechtlichen Situation und möglichen Risiken der
-                Immobilie.
+                Nach einem ausführlichen Fragebogen erhalten Sie einen{" "}
+                <strong className="font-medium text-[#1e2a3a]">
+                  kostenlosen persönlichen Area Match Report
+                </strong>{" "}
+                mit den Regionen, die am besten zu Ihnen passen — einschließlich relevanter
+                Informationen zu Sicherheit, Gesundheitsversorgung, Infrastruktur,
+                Erreichbarkeit, Preisniveau, Lifestyle und geeigneten Suchgebieten.
               </p>
 
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-                Sie entscheiden sich für die vollständige Buyer Journey oder nur für die
-                Unterstützung, die Sie tatsächlich benötigen.
+              <p className="mt-7 max-w-2xl text-xl font-medium leading-relaxed text-[#1e2a3a]">
+                Zuerst die richtige Region. Dann die richtige Immobilie. Anschließend prüfen wir sorgfältig,
+                was Sie kaufen.
               </p>
 
-              <p className="mt-7 text-xl font-medium leading-relaxed text-stone-700">
-                Gezielt suchen. Mit mehr Sicherheit kaufen. Gut ankommen.
-              </p>
-
-              <div className="mt-9 flex flex-wrap gap-4">
+              <div className="mt-8">
                 <a
                   href="/de/relocation-assessment"
-                  className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                  className="inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Starten Sie mit Ihrem kostenlosen persönlichen Area Match Portfolio
+                  Fordern Sie Ihren kostenlosen persönlichen Area Match Report an
                 </a>
+              </div>
 
+              <p className="mt-10 max-w-2xl text-lg leading-relaxed text-stone-600">
+                Unsere Begleitung endet nicht mit der Schlüsselübergabe. Von Buyer Discovery
+                und Immobilienauswahl über Kauf, Umzug, Renovierung und Einrichtung bis zur
+                praktischen Relocation koordiniert Nordic Move den gesamten Ablauf über einen
+                festen Ansprechpartner.
+              </p>
+
+              <p className="mt-7 text-sm font-medium uppercase tracking-[0.2em] text-[#c8a063]">
+                Zwei unabhängige Kaufprüfungen · Vollständige Relocation · Ein fester Ansprechpartner
+              </p>
+
+              <div className="mt-9">
                 <a
                   href="/de/contact"
-                  className="rounded-full border border-[#1e2a3a] px-8 py-4 text-sm text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
+                  className="inline-block rounded-full border border-[#1e2a3a] px-8 py-4 text-sm text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
                 >
-                  Kennenlerngespräch vereinbaren
+                  Erstgespräch vereinbaren
                 </a>
               </div>
             </div>
@@ -404,64 +401,6 @@ export default function GermanHomePage() {
         </div>
       </section>
 
-      {/* CHOOSE YOUR STARTING POINT */}
-      <section className="px-8 pb-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Wo stehen Sie im Prozess?
-            </p>
-
-            <h2 className="mt-5 font-serif text-3xl leading-tight text-[#1e2a3a] md:text-4xl">
-              Starten Sie genau dort, wo Sie unsere Unterstützung benötigen.
-            </h2>
-          </div>
-
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
-            {[
-              {
-                href: "/de/services/area-match",
-                label: "Ich orientiere mich noch",
-                title: "Finden Sie zuerst die Region, die zu Ihnen passt",
-                text: "Starten Sie mit einem persönlichen Area Match und gewinnen Sie Klarheit, bevor Sie Immobilien vergleichen.",
-                cta: "Area Match entdecken →",
-              },
-              {
-                href: "/de/services/purchase-safety-report",
-                label: "Ich habe eine Immobilie gefunden",
-                title: "Lassen Sie den Kauf unabhängig prüfen",
-                text: "Kombinieren Sie rechtliche Due Diligence mit einer technischen Prüfung, bevor Sie endgültig entscheiden.",
-                cta: "Purchase Safety entdecken →",
-              },
-              {
-                href: "/de/services/move-in-ready",
-                label: "Ich möchte kaufen und gut ankommen",
-                title: "Lassen Sie auch die praktische Umsetzung koordinieren",
-                text: "Von Umzug und Versorgungsanschlüssen bis zu Renovierung, Einrichtung und einem entspannten Start.",
-                cta: "Move-In Ready entdecken →",
-              },
-            ].map((route) => (
-              <a
-                key={route.href}
-                href={route.href}
-                className="rounded-[28px] bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-              >
-                <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-                  {route.label}
-                </p>
-                <h3 className="mt-4 font-serif text-2xl leading-tight text-[#1e2a3a]">
-                  {route.title}
-                </h3>
-                <p className="mt-4 leading-relaxed text-stone-600">{route.text}</p>
-                <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
-                  {route.cta}
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* NORDIC MOVE BUYER JOURNEY */}
       <section className="px-8 pb-32">
         <div className="mx-auto max-w-7xl">
@@ -476,13 +415,13 @@ export default function GermanHomePage() {
 
             <div className="mt-8 rounded-[28px] bg-white p-6 shadow-sm">
               <p className="text-lg font-medium leading-relaxed text-[#1e2a3a]">
-                Sie müssen nicht den gesamten Prozess durchlaufen.
+                Sie müssen nicht den gesamten Ablauf in Anspruch nehmen.
               </p>
 
               <p className="mt-3 text-base leading-relaxed text-stone-600">
-                Wählen Sie nur die Unterstützung, die Sie benötigen – von der passenden
-                Region und einer persönlichen Buyer Discovery bis zu unabhängigen
-                Kaufprüfungen und einer Immobilie, die für Ihre Ankunft vorbereitet ist.
+                Wählen Sie nur die Unterstützung, die Sie benötigen — von der Suche nach der
+                richtigen Region und einer persönlichen Buyer Discovery bis zu unabhängigen
+                Kaufprüfungen und einem Zuhause, das für Ihre Ankunft vorbereitet ist.
               </p>
             </div>
           </div>
@@ -508,14 +447,14 @@ export default function GermanHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Entdecken Sie, welche Regionen, Orte und Lebensstile am besten zu Ihren
-                  Prioritäten, Ihrem Budget und Ihren langfristigen Plänen passen. Ihr
-                  persönlicher Report enthält lokale Informationen zu Gesundheitsversorgung,
-                  Schulen, Infrastruktur, Erreichbarkeit und Community-Fit.
+                  Entdecken Sie, welche Regionen, Orte und Lebensstile am besten zu
+                  Ihren Prioritäten, Ihrem Budget und Ihren langfristigen Plänen passen. Ihr persönlicher
+                  Report enthält lokale Informationen zu Gesundheitsversorgung, Schulen und Infrastruktur,
+                  Erreichbarkeit und der passenden Community.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
-                  Kostenloses Area Match anfragen →
+                  Kostenlosen Area Match anfordern →
                 </div>
               </div>
             </a>
@@ -526,7 +465,7 @@ export default function GermanHomePage() {
             >
               <img
                 src="/images/discover-card.png"
-                alt="Private und kleine Buyer Discovery Experience an der Costa Blanca"
+                alt="Private und kleingruppige Buyer Discovery Experience an der Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -540,9 +479,10 @@ export default function GermanHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Erleben Sie ausgewählte Immobilien, Wohnlagen und den Alltag bei einer
-                  privaten Discovery oder in einer sorgfältig zusammengestellten kleinen
-                  Edition. Verfügbar an ausgewählten Terminen und nach Verfügbarkeit.
+                  Erleben Sie ausgewählte Immobilien, Wohngegenden und den Alltag
+                  bei einer privaten Discovery oder in einer sorgfältig zusammengestellten
+                  kleinen Gruppe. Verfügbar an ausgewählten Terminen und vorbehaltlich
+                  der Verfügbarkeit.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
@@ -557,7 +497,7 @@ export default function GermanHomePage() {
             >
               <img
                 src="/images/legal.png"
-                alt="Unabhängige technische und rechtliche Prüfungen vor dem Kauf an der Costa Blanca"
+                alt="Unabhängige technische und rechtliche Prüfungen vor dem Immobilienkauf an der Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -571,9 +511,9 @@ export default function GermanHomePage() {
                 </h3>
 
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
-                  Haben Sie bereits eine Immobilie gefunden? Wir koordinieren eine
-                  unabhängige technische Prüfung und vermitteln einen passenden unabhängigen
-                  Anwalt für die rechtliche Due Diligence, bevor Sie sich endgültig festlegen.
+                  Sie haben bereits eine Immobilie gefunden? Wir koordinieren eine unabhängige
+                  technische Prüfung und vermitteln einen passenden unabhängigen Rechtsanwalt
+                  für die rechtliche Due Diligence, bevor Sie sich endgültig festlegen.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
@@ -588,7 +528,7 @@ export default function GermanHomePage() {
             >
               <img
                 src="/images/move-in-ready-ibiza.png"
-                alt="Move-In Ready: Renovierung, Relocation und Einrichtungsbegleitung an der Costa Blanca"
+                alt="Move-In Ready Renovierungs-, Relocation- und Einrichtungsbegleitung an der Costa Blanca"
                 className="h-72 w-full object-cover transition duration-700 group-hover:scale-105"
               />
 
@@ -604,7 +544,7 @@ export default function GermanHomePage() {
                 <p className="mt-6 text-base leading-relaxed text-stone-600">
                   Von Versorgungsanschlüssen und Umzugsbegleitung bis zu Renovierung,
                   Interior Design, Einrichtung und den letzten Vorbereitungen. Wir
-                  koordinieren die praktischen Schritte rund um Ihre Immobilie, Planung und Ihr Budget.
+                  koordinieren die praktischen Schritte rund um Ihre Immobilie, Ihren Zeitplan und Ihr Budget.
                 </p>
 
                 <div className="mt-10 text-sm uppercase tracking-[0.25em]">
@@ -626,23 +566,25 @@ export default function GermanHomePage() {
               </p>
 
               <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
-                Mehr Sicherheit, bevor Sie entscheiden.
+                Mehr Sicherheit, bevor Sie sich entscheiden.
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-white/85">
-                Ein unabhängiger Sachverständiger prüft und vermisst die Immobilie und
-                gleicht sie mit den verfügbaren Unterlagen ab. So werden Mängel,
-                Abweichungen und mögliche Instandsetzungspunkte frühzeitig sichtbar.
+                Ein unabhängiger, qualifizierter Building Surveyor und Chartered
+                Construction Manager (CIOB), zugleich <em>Arquitecto Técnico</em> in Spanien,
+                inspiziert und vermisst die Immobilie und vergleicht die tatsächliche Situation mit
+                den verfügbaren Unterlagen und Registrierungen. So werden Mängel, Abweichungen
+                und möglicher Sanierungsbedarf frühzeitig sichtbar.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-white/85">
-                Ein unabhängiger Anwalt prüft Eigentum, Belastungen, Schulden,
+                Ein unabhängiger Rechtsanwalt prüft Eigentum, Belastungen, Schulden,
                 Genehmigungen, Verträge und Übertragungsbedingungen.
               </p>
 
               <p className="mt-6 text-base font-medium leading-relaxed text-[#c8a063]">
-                Wir führen beide Berichte in einer klaren Empfehlung zusammen:
-                kaufen, neu bewerten oder nicht kaufen.
+                Wir führen beide Berichte zu einer klaren Empfehlung zusammen:
+                weitermachen, neu bewerten oder nicht kaufen.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -657,7 +599,7 @@ export default function GermanHomePage() {
                   href="/de/contact"
                   className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-[#1e2a3a]"
                 >
-                  Immobiliencheck anfragen
+                  Immobilienprüfung anfragen
                 </a>
               </div>
             </div>
@@ -668,18 +610,18 @@ export default function GermanHomePage() {
               </p>
 
               <h3 className="mt-5 max-w-2xl font-serif text-4xl leading-tight text-[#1e2a3a]">
-                Kaufen, neu bewerten oder nicht kaufen.
+                Weitermachen, neu bewerten oder nicht kaufen.
               </h3>
 
               <div className="mt-10 grid gap-6">
                 <article className="rounded-[28px] border border-emerald-900/10 bg-[#f6f1ea] p-7">
                   <div className="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-800">
-                    Grün · Kaufen
+                    Grün · Weitermachen
                   </div>
 
                   <p className="mt-5 leading-relaxed text-stone-600">
-                    Die Prüfungen bieten ausreichende Grundlage, um unter den genannten
-                    Bedingungen mit dem Kauf fortzufahren.
+                    Die Prüfungen geben ausreichend Sicherheit, um fortzufahren,
+                    unter den genannten Bedingungen.
                   </p>
                 </article>
 
@@ -689,8 +631,8 @@ export default function GermanHomePage() {
                   </div>
 
                   <p className="mt-5 leading-relaxed text-stone-600">
-                    Es bestehen Fragen oder Risiken. Zunächst sind weitere Prüfungen,
-                    Nachbesserungen, Neuverhandlungen oder zusätzliche Bedingungen erforderlich.
+                    Es bestehen Fragen oder Risiken. Weitere Untersuchungen,
+                    Nachbesserungen, Neuverhandlungen oder zusätzliche Bedingungen sind zunächst erforderlich.
                   </p>
                 </article>
 
@@ -700,19 +642,20 @@ export default function GermanHomePage() {
                   </div>
 
                   <p className="mt-5 leading-relaxed text-stone-600">
-                    Die Risiken sind zu groß. Kaufen Sie nicht, solange diese vor Ihrer
-                    verbindlichen Entscheidung nicht vollständig und nachweisbar geklärt sind.
+                    Die Risiken sind zu groß. Kaufen Sie nicht, solange sie nicht
+                    vor Ihrer endgültigen Bindung vollständig und nachweislich gelöst wurden.
                   </p>
                 </article>
               </div>
 
               <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                Die Dokumentenprüfung durch den unabhängigen Sachverständigen ist ein
-                erster Abgleich und ersetzt weder die rechtliche Due Diligence noch eine
-                formelle Bestätigung durch zuständige Behörden. Die technischen und
-                rechtlichen Prüfungen werden von unabhängigen Fachleuten durchgeführt, die
-                jeweils für ihre eigene Berichterstattung verantwortlich sind. Zusätzliche
-                Fachprüfungen können erforderlich sein. Keine Prüfung bietet absolute Sicherheit.
+                Die Dokumentenprüfung durch den unabhängigen Bausachverständigen ist eine erste
+                Abgleichprüfung und ersetzt weder die rechtliche Due Diligence noch eine formelle
+                Bestätigung durch die zuständigen Behörden. Die technischen und rechtlichen
+                Prüfungen werden von unabhängigen Fachleuten durchgeführt,
+                die jeweils für ihren eigenen Bericht verantwortlich sind. Zusätzliche
+                fachspezifische Untersuchungen können erforderlich sein. Keine Prüfung bietet
+                absolute Sicherheit.
               </p>
             </div>
           </div>
@@ -738,14 +681,32 @@ export default function GermanHomePage() {
               </p>
 
               <h2 className="mt-5 font-serif text-3xl leading-tight md:text-4xl">
-                Erleben Sie nicht nur die Immobilie, sondern auch das Leben drumherum.
+                Entdecken Sie nicht nur, wo Sie leben möchten, sondern auch, mit wem Sie sich dort zu Hause fühlen können.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
-                Entscheiden Sie sich für eine private Buyer Discovery Experience oder
-                entdecken Sie die Region in einer kleinen, sorgfältig zusammengestellten
-                Gruppe. Sie erleben Infrastruktur, Atmosphäre und Alltag, ohne dass die
-                Teilnahme an einer Gruppe Teil Ihres Kaufprozesses sein muss.
+                Ein neues Leben an der Costa Blanca besteht aus mehr als einer schönen Immobilie.
+                Es geht auch um die Menschen um Sie herum, die Orte, an denen Sie gerne Zeit verbringen, und das
+                Gefühl, Anschluss zu finden.
+              </p>
+
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+                Während einer Buyer Discovery Experience entdecken Sie daher nicht nur
+                ausgewählte Regionen und Immobilien. Wir zeigen Ihnen auch
+                den Alltag vor Ort — von lokalen Clubs und Restaurants bis zu Golf,
+                Padel und anderen Aktivitäten, die zu Ihren Interessen passen.
+              </p>
+
+              <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
+                Vielleicht lernen Sie jemanden kennen, mit dem Sie später regelmäßig zu Mittag essen, einen
+                Golfpartner oder eine Nachbarin, die genauso gerne Padel spielt wie Sie. Sie können wählen zwischen
+                einer privaten Experience oder, wenn es zu Ihnen passt, einer kleinen,
+                sorgfältig zusammengestellten Gruppe von Menschen mit ähnlichen Interessen
+                und in einer ähnlichen Lebensphase.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg font-medium leading-relaxed text-[#c8a063]">
+                Nicht nur eine Immobilie finden. Sondern entdecken, wo Sie sich wirklich zu Hause fühlen können.
               </p>
 
               <a
@@ -769,20 +730,20 @@ export default function GermanHomePage() {
               </p>
 
               <h2 className="mt-5 max-w-2xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-6xl">
-                Von der Schlüsselübergabe zu einer Immobilie, die für Ihre Ankunft bereit ist.
+                Von der Schlüsselübergabe bis zu einem Zuhause, das für Ihre Ankunft bereit ist.
               </h2>
 
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-stone-700">
-                Nach dem Kauf stehen häufig noch zahlreiche praktische Entscheidungen an.
+                Nach dem Kauf stehen oft noch zahlreiche praktische Entscheidungen an.
                 Nordic Move bündelt diese Schritte in drei flexiblen Modulen: Home Setup,
                 Renovation &amp; Interior und Family Relocation.
               </p>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-700">
-                Sie wählen nur die Unterstützung, die zu Ihrer Immobilie, Familie, Planung
-                und Ihrem Budget passt. Wir koordinieren die vereinbarten Beteiligten und
-                nächsten Schritte, während jeder externe Spezialist für die eigene Beratung
-                und Ausführung verantwortlich bleibt.
+                Sie wählen nur die Unterstützung, die zu Ihrer Immobilie, Ihrer Familie und Ihrem Zeitplan
+                sowie Ihrem Budget passt. Wir koordinieren die vereinbarten Beteiligten und nächsten Schritte, während
+                jeder externe Spezialist für die eigene Beratung und
+                Ausführung verantwortlich bleibt.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
@@ -797,14 +758,14 @@ export default function GermanHomePage() {
                   href="/de/contact"
                   className="rounded-full border border-[#1e2a3a] px-8 py-4 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
                 >
-                  Kennenlerngespräch vereinbaren
+                  Erstgespräch vereinbaren
                 </a>
 
                 <a
-                  href="https://wa.me/31683848239?text=Hallo%20Nordic%20Move%20Spain%2C%20ich%20m%C3%B6chte%20gerne%20meinen%20Move-In-Ready-Plan%20besprechen."
+                  href="https://wa.me/31683848239?text=Hallo%20Nordic%20Move%20Spain%2C%20ich%20m%C3%B6chte%20gerne%20meinen%20Move-In%20Ready%20Plan%20besprechen."
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Ihren Move-In-Ready-Plan über WhatsApp besprechen"
+                  aria-label="Besprechen Sie Ihren Move-In Ready Plan über WhatsApp"
                   className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-[#1e2a3a] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#c8a063] text-white">
@@ -824,17 +785,17 @@ export default function GermanHomePage() {
             <div className="relative min-h-[480px] p-6 md:p-8 lg:min-h-[650px] lg:p-10">
               <img
                 src="/images/move-in-ready-mediterranean-warmth.png"
-                alt="Mediterrane Move-In-Ready-Immobilie mit Terrasse und Außenküche an der Costa Blanca"
+                alt="Mediterranes Move-In Ready Zuhause mit Terrasse und Außenküche an der Costa Blanca"
                 className="h-full min-h-[440px] w-full rounded-[32px] object-cover lg:min-h-[570px]"
                 loading="lazy"
               />
 
               <div className="absolute bottom-10 left-10 right-10 rounded-[26px] bg-white/90 p-6 shadow-lg backdrop-blur md:bottom-12 md:left-12 md:right-auto md:max-w-sm">
                 <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-                  Ein abgestimmter Prozess
+                  Ein abgestimmter Ablauf
                 </p>
                 <p className="mt-3 font-serif text-2xl leading-tight text-[#1e2a3a]">
-                  Praktische Vorbereitung, Renovierung und Einrichtung aus einer Hand koordiniert.
+                  Praktische Vorbereitung, Renovierung und Einrichtung in einem abgestimmten Plan.
                 </p>
               </div>
             </div>
@@ -847,7 +808,7 @@ export default function GermanHomePage() {
                 className="rounded-[30px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
-                  Modul 01
+                  Module 01
                 </p>
                 <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
                   Home Setup
@@ -866,13 +827,13 @@ export default function GermanHomePage() {
                 className="rounded-[30px] bg-[#1e2a3a] p-8 text-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
-                  Modul 02
+                  Module 02
                 </p>
                 <h3 className="mt-4 font-serif text-3xl">
                   Renovation &amp; Interior
                 </h3>
                 <p className="mt-4 leading-relaxed text-white/75">
-                  Renovierungskoordination, Bauunternehmen und Fachleute, Interior-Konzept,
+                  Renovierungskoordination, Handwerker und Spezialisten, Interior-Konzept,
                   Materialien, Möbel, Beleuchtung, Installation und Styling.
                 </p>
                 <span className="mt-6 inline-block text-sm font-medium text-white">
@@ -885,14 +846,14 @@ export default function GermanHomePage() {
                 className="rounded-[30px] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
-                  Modul 03
+                  Module 03
                 </p>
                 <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
                   Family Relocation
                 </h3>
                 <p className="mt-4 leading-relaxed text-stone-600">
-                  Umzugsunternehmen, Schulen, Gesundheitsversorgung, Versicherungen,
-                  Verwaltung, lokale Angebote sowie Anschluss an Clubs und Community.
+                  Umzugsunternehmen, Schulen, Gesundheitsversorgung, Versicherungen, Verwaltung, lokale
+                  Angebote sowie Kontakte zu Clubs und zur lokalen Community.
                 </p>
                 <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
                   Family Relocation ansehen →
@@ -901,10 +862,10 @@ export default function GermanHomePage() {
             </div>
 
             <p className="mt-8 max-w-5xl text-sm leading-relaxed text-stone-500">
-              Die Module können einzeln oder kombiniert gebucht werden. Umfang, Planung,
-              Kosten und Verantwortlichkeiten werden für jeden Bereich vorab festgelegt.
-              Externe Fachleute bleiben für ihre eigene Beratung, Angebote und Ausführung
-              verantwortlich.
+              Die Module können einzeln oder kombiniert gebucht werden. Leistungsumfang,
+              Zeitplan, Kosten und Verantwortlichkeiten werden für jeden Bereich im Voraus festgelegt.
+              Externe Fachleute bleiben für ihre eigene
+              advice, quotations and Ausführung verantwortlich bleibt.
             </p>
           </div>
         </div>
@@ -915,7 +876,7 @@ export default function GermanHomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-4xl">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Käufer-Ratgeber
+              Ratgeber für Käufer
             </p>
 
             <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
@@ -923,9 +884,9 @@ export default function GermanHomePage() {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Eine Auswahl praktischer Ratgeber für internationale Käufer, die
-              Ruhestandsregionen, den spanischen Kaufprozess und steuerliche Fragen
-              verstehen möchten, bevor sie entscheiden.
+              Eine ausgewählte Sammlung praktischer Ratgeber für internationale Käufer,
+              die Regionen für den Ruhestand, den spanischen Kaufprozess und deutsche
+              Steuerthemen verstehen möchten, bevor sie eine Entscheidung treffen.
             </p>
           </div>
 
@@ -982,7 +943,7 @@ export default function GermanHomePage() {
               href="/de/guides"
               className="inline-block rounded-full border border-[#1e2a3a] px-8 py-4 text-sm uppercase tracking-[0.2em] text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
-              Alle Käufer-Ratgeber ansehen
+              Alle Kaufratgeber ansehen
             </a>
           </div>
         </div>
@@ -997,14 +958,13 @@ export default function GermanHomePage() {
           </p>
 
           <h2 className="mt-6 max-w-4xl font-serif text-4xl leading-tight md:text-5xl">
-            Bereit, Ihren Kauf sorgfältig vorzubereiten?
+            Bereit, Ihren Immobilienkauf sorgfältig vorzubereiten?
           </h2>
 
           <p className="mt-7 max-w-3xl text-lg leading-relaxed text-white/80">
-            Starten Sie mit einem kostenlosen Area Match, wenn Sie noch nach der
-            passenden Region suchen, oder vereinbaren Sie ein persönliches Gespräch,
-            wenn Sie bereits eine Immobilie gefunden haben oder eine umfassende
-            Begleitung besprechen möchten.
+            Starten Sie mit einem kostenlosen Area Match, wenn Sie noch nach der richtigen
+            Region suchen, oder vereinbaren Sie ein persönliches Gespräch, wenn Sie bereits eine Immobilie gefunden haben
+            oder die vollständige Begleitung besprechen möchten.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -1012,14 +972,14 @@ export default function GermanHomePage() {
               href="/de/relocation-assessment"
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Kostenloses Area Match anfragen
+              Kostenlosen Area Match anfordern
             </a>
 
             <a
               href="/de/contact"
               className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
-              Kennenlerngespräch vereinbaren
+              Erstgespräch vereinbaren
             </a>
           </div>
         </div>

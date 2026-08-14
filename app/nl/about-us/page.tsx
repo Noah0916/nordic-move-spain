@@ -116,48 +116,76 @@ export default function AboutUsPage() {
             </h2>
 
             <p className="mt-8 text-xl leading-relaxed text-stone-700">
-              Voor veel mensen begint het kopen van een woning in het buitenland
-              met het zoeken naar het juiste huis. In werkelijkheid bepalen de
-              juridische, praktische en persoonlijke keuzes rondom de aankoop
-              vaak of een verhuizing ook op lange termijn succesvol wordt.
+              Ik geloof dat een goede woningbeslissing in het buitenland met veel
+              meer begint dan alleen het vinden van een mooi huis. Juridische,
+              financiële, praktische en persoonlijke factoren hangen met elkaar
+              samen. Juist door vooruit te denken, risico&apos;s vroeg te herkennen
+              en de juiste vragen te stellen, voorkom je dat een aantrekkelijke
+              aankoop later voor onverwachte problemen zorgt.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Willeke combineert praktische ervaring met internationale
-              verhuizingen met een achtergrond in marketing, strategie en
-              organisatieanalyse. Zij behaalde een master met een specialisatie
-              in Marketing en Strategie en werkte eerder als opleidingsmanager
-              van een businessopleiding en als docent in strategie, marketing en
-              onderzoek. Daarbij begeleidde zij studenten tijdens hun
-              afstudeeronderzoek en hielp zij hen complexe organisatorische en
-              strategische vraagstukken te analyseren.
+              Mijn achtergrond ligt in strategie, marketing, management en
+              organisatieanalyse. Ik behaalde een master met een specialisatie in
+              Marketing en Strategie en werkte jarenlang in het hoger onderwijs.
+              Daar gaf ik les aan bachelorstudenten in strategie, marketing en
+              onderzoek en werkte ik als opleidingsmanager van een
+              businessopleiding.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Door haar samenwerking met studenten en organisaties in
+              In die rol moest ik voortdurend vooruitdenken. Ik was
+              verantwoordelijk voor de kwaliteit, organisatie en ontwikkeling
+              van de opleiding en moest mogelijke problemen vaak herkennen
+              voordat ze daadwerkelijk ontstonden. Dat betekende verbanden zien,
+              verschillende belangen afwegen, risico&apos;s inschatten en
+              oplossingen vinden voor complexe vraagstukken waarvoor niet altijd
+              een voor de hand liggend antwoord bestond.
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-stone-600">
+              Ook in mijn werk met studenten speelde die analytische manier van
+              denken een grote rol. Ik begeleidde bachelorstudenten bij complexe
+              onderzoeks- en afstudeeropdrachten binnen bedrijven. Zij werkten aan
+              echte organisatorische en strategische vraagstukken in
               verschillende sectoren, waaronder de bouw, financiële
-              dienstverlening en professionele zakelijke dienstverlening,
-              ontwikkelde zij een sterk vermogen om onderliggende problemen te
-              herkennen, de juiste vragen te stellen en duidelijkheid te brengen
-              in complexe situaties. Deze analytische manier van werken vormt
-              nog steeds de kern van de begeleiding die zij cliënten vandaag
-              biedt.
+              dienstverlening en professionele zakelijke dienstverlening. Mijn
+              rol was niet om het antwoord voor hen te geven, maar om hen te
+              helpen het werkelijke probleem achter de eerste vraag te herkennen,
+              scherpe onderzoeksvragen te formuleren, informatie kritisch te
+              beoordelen en tot goed onderbouwde en praktisch bruikbare
+              oplossingen te komen.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Naast haar werk in het hoger onderwijs richtte Willeke in Nederland
-              een internationale relocationservice op. Zij begeleidde expats en
+              Die manier van werken neem ik nog steeds mee in alles wat ik doe. Ik
+              kijk graag verder dan wat op het eerste gezicht zichtbaar is. Niet
+              alleen: is dit een mooie woning? Maar ook: wat betekent deze keuze
+              op langere termijn, welke informatie ontbreekt nog, waar kunnen
+              risico&apos;s zitten en wat moet eerst worden uitgezocht voordat je
+              beslist?
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-stone-600">
+              Naast mijn werk in het hoger onderwijs richtte ik in Nederland een
+              internationale relocationservice op. Ik begeleidde expats en
               internationale professionals bij huisvesting, administratie,
               onderwijs, gezondheidszorg en de praktische realiteit van het
-              opbouwen van een nieuw leven in een ander land.
+              opbouwen van een nieuw leven in een ander land. Daardoor weet ik
+              uit ervaring hoeveel beslissingen en afhankelijkheden samenkomen
+              bij een internationale verhuizing.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Omdat zij zelf ook betrokken is geweest bij renovatie- en
-              vastgoedprojecten, begrijpt zij dat succesvol woningbezit veel
-              verder gaat dan de transactie alleen. Vandaag combineert zij
-              strategisch denken, relocationexpertise en lokale kennis om
-              cliënten met vertrouwen weloverwogen beslissingen te laten nemen.
+              Ook ben ik zelf betrokken geweest bij renovatie- en
+              vastgoedprojecten. Daardoor weet ik dat woningbezit veel verder gaat
+              dan de aankoop alleen. Vandaag combineer ik mijn ervaring in
+              strategie, management, onderzoek en relocation met mijn lokale
+              kennis van Spanje. Mijn rol is niet om iemand zo snel mogelijk naar
+              een woning te begeleiden, maar om te helpen vooruitdenken, de
+              juiste vragen te stellen en mogelijke problemen vroeg te herkennen.
+              Zodat een beslissing niet alleen vandaag goed voelt, maar ook op
+              langere termijn klopt.
             </p>
 
             <blockquote className="mt-10 border-l-4 border-[#c8a063] pl-6 font-serif text-2xl italic text-[#1e2a3a]">

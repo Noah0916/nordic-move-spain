@@ -17,7 +17,7 @@ export default function MoveInReadyPage() {
       src: "/images/move-in-ready-ibiza.png",
       title: "Ibiza Soho Lounge",
       text:
-        "Ein warmer und geselliger mediterraner Stil mit sanften Weißtönen, rustikalem Holz, gewebten Texturen, dezenten Farbakzenten und einem eleganten Indoor-Outdoor-Gefühl.",
+        "Ein warmer und einladender mediterraner Stil mit sanften Weißtönen, rustikalem Holz, gewebten Texturen, dezenten Farbakzenten und einem eleganten Indoor-Outdoor-Gefühl.",
       alt: "Ibiza-Soho-Lounge-Stilrichtung für Move-In Ready Unterstützung an der Costa Blanca",
     },
     {
@@ -40,7 +40,7 @@ export default function MoveInReadyPage() {
     {
       title: "Stilbriefing",
       text:
-        "Wir beginnen mit einer persönlichen Stilbriefing, um zu verstehen, wie Sie die Immobilie nutzen möchten. Dabei geht es nicht nur um Geschmack, sondern auch um Ihren Alltag, Familie, Gäste, Privatsphäre, Pflegeaufwand, Komfort und die gewünschte Atmosphäre.",
+        "Wir beginnen mit einem persönlichen Stilbriefing, um zu verstehen, wie Sie die Immobilie nutzen möchten. Dabei geht es nicht nur um Geschmack, sondern auch um Ihren Alltag, Familie, Gäste, Privatsphäre, Pflegeaufwand, Komfort und die gewünschte Atmosphäre.",
     },
     {
       title: "Visuelles Moodboard",
@@ -70,7 +70,7 @@ export default function MoveInReadyPage() {
     {
       title: "Vorhänge und Fensterdekoration",
       text:
-        "Vorhänge und Fensterdekoration werden häufig erst spät ausgewählt, obwohl sie Privatsphäre, Komfort, Akustik und Atmosphäre stark beeinflussen. Wir helfen, die passende Richtung und bei Bedarf die lokale Umsetzung zu koordinieren.",
+        "Vorhänge und Fensterdekoration werden häufig erst spät ausgewählt, obwohl sie Privatsphäre, Komfort, Akustik und Atmosphäre stark beeinflussen. Wir helfen, die passende Richtung zu bestimmen und koordinieren bei Bedarf die lokale Umsetzung.",
     },
     {
       title: "Lieferung und Installation",
@@ -89,11 +89,75 @@ export default function MoveInReadyPage() {
     },
   ];
 
+
+  const packages = [
+    {
+      number: "01",
+      title: "Home Setup",
+      subtitle: "Die praktische Grundlage Ihres Zuhauses",
+      intro:
+        "Für Eigentümer, die die wichtigsten praktischen Dinge nach der Schlüsselübergabe vor ihrer Ankunft klar organisiert haben möchten, ohne eine vollständige Renovierung oder einen kompletten Familienumzug zu benötigen.",
+      items: [
+        "Bei der Organisation von Strom und Wasser unterstützen",
+        "Internet, Telefon und Fernsehen koordinieren",
+        "Gebäude-, Hausrat- und relevante Versicherungsoptionen vergleichen",
+        "Alarm-, Sicherheits- und Zugangslösungen recherchieren",
+        "Reinigung und Vorbereitung vor der Ankunft koordinieren",
+        "Angebote für Malerarbeiten und kleinere Arbeiten einholen",
+        "Garten-, Pool- und technische Wartung organisieren",
+        "Anbieter-, Termin- und Vertragsinformationen bündeln",
+      ],
+      result:
+        "Ihr Zuhause ist praktisch vorbereitet und die wichtigsten Anbieter, Termine und Vertragsinformationen sind in einer klaren Übersicht gebündelt.",
+      featured: false,
+    },
+    {
+      number: "02",
+      title: "Renovierung & Interieur",
+      subtitle: "Renovierung und Einrichtung in einem koordinierten Ablauf",
+      intro:
+        "Für Immobilien, die eine Renovierung, Anpassungen oder vollständige Einrichtung benötigen, bevor Sie sie komfortabel nutzen können.",
+      items: [
+        "Wünsche, Nutzung, Prioritäten und Budget festlegen",
+        "Bauunternehmen und relevante Spezialisten auswählen und koordinieren",
+        "Bei Bedarf mit Architekt oder technischem Architekten abstimmen",
+        "Angebote, Planung und Fortschrittsberichte strukturieren",
+        "Ein Interior-Konzept und visuelles Moodboard entwickeln",
+        "Materialien, Möbel und Beleuchtung auswählen",
+        "Lieferung, Montage, Installation und Styling koordinieren",
+        "Abnahmepunkte und Abschlusskontrollen vor der Ankunft organisieren",
+      ],
+      result:
+        "Renovierung, Interior-Entscheidungen, Beschaffung und Ausführung werden als ein zusammenhängender Prozess koordiniert, damit Technik, Planung und das spätere Wohnumfeld gut aufeinander abgestimmt sind.",
+      featured: true,
+    },
+    {
+      number: "03",
+      title: "Familienumzug",
+      subtitle: "Bereiten Sie den Alltag vor, nicht nur den Umzug",
+      intro:
+        "Für Familien und internationale Berufstätige, die nicht nur die Immobilie, sondern auch die praktische Seite des Wohnens, Arbeitens und Ankommens an der Costa Blanca vorbereiten möchten.",
+      items: [
+        "Internationale Umzugsunternehmen und Lagermöglichkeiten vergleichen",
+        "Schulen und Kinderbetreuung in geeigneten Regionen recherchieren",
+        "Gesundheitsversorgung, Versicherungen und praktische Einrichtungen erfassen",
+        "Lokale Verwaltung und relevante nächste Schritte strukturieren",
+        "Fahrzeug- und Spezialtransportmöglichkeiten recherchieren",
+        "Sportclubs, Golfclubs und lokale Gemeinschaften erkunden",
+        "Lokale Dienstleister und Alltagsangebote auswählen",
+        "Einen persönlichen Relocation-Plan erstellen",
+      ],
+      result:
+        "Sie erhalten einen klareren und besser vorbereiteten Ausgangspunkt für den Umzug, einschließlich Wohnen, Schulen, Alltagsversorgung und der wichtigsten lokalen nächsten Schritte.",
+      featured: false,
+    },
+  ];
+
   return (
     <main className="bg-[#f6f1ea] px-8 py-28 text-stone-900">
       <section className="mx-auto max-w-7xl">
         <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-          Sanfte Ankunft &amp; Move-In Ready
+          Entspannt ankommen &amp; Move-In Ready
         </p>
 
         <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
@@ -115,7 +179,7 @@ export default function MoveInReadyPage() {
           praktische Umsetzung.
         </p>
 
-        {/* AUCH NACH DER SCHLUESSELUEBERGABE */}
+        {/* AUCH NACH DER SCHLÜSSELÜBERGABE */}
         <section className="mt-16 rounded-[40px] bg-[#1e2a3a] p-8 text-white shadow-sm md:p-12">
           <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
             Auch nach der Schlüsselübergabe
@@ -126,37 +190,34 @@ export default function MoveInReadyPage() {
           </h2>
 
           <p className="mt-7 max-w-4xl text-lg leading-relaxed text-white/80">
-            Der Kauf ist häufig erst der Anfang. Danach müssen möglicherweise noch
-            Strom, Wasser, Internet und Versicherungen organisiert werden. Vielleicht
-            benötigen Sie außerdem ein internationales Umzugsunternehmen, eine
-            Zwischenlagerung oder einen Fahrzeugtransport. Auch Garten- und
-            Poolpflege, Klimaanlage, Heizung, Solaranlagen, Renovierung und
-            Inneneinrichtung erfordern zuverlässige lokale Partner und klare
-            Vereinbarungen.
+            Der Kauf ist häufig erst der Anfang. Danach müssen möglicherweise noch Strom,
+            Wasser, Internet und Versicherungen organisiert werden. Vielleicht benötigen Sie auch
+            ein internationales Umzugsunternehmen, eine Zwischenlagerung oder einen Fahrzeugtransport.
+            Auch Garten- und Poolpflege, Klimaanlage, Heizung,
+            Solaranlagen, Renovierung und Inneneinrichtung erfordern zuverlässige
+            lokale Partner und klare Vereinbarungen.
           </p>
 
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
-            Nordic Move Spain hilft Ihnen, diese Schritte übersichtlich zu
-            organisieren. Wir sprechen Spanisch, kennen die lokalen Abläufe und
-            finden passende Fachleute für Ihre Situation. Wir holen Angebote ein,
-            vergleichen Möglichkeiten, koordinieren Termine und behalten den
-            Fortschritt für Sie im Blick.
+            Nordic Move Spain hilft Ihnen, diese Schritte übersichtlich zu organisieren.
+            Wir sprechen Spanisch, kennen die lokalen Abläufe und finden passende
+            Fachleute für Ihre Situation. Wir holen Angebote ein, vergleichen
+            Möglichkeiten, koordinieren Termine und behalten den Fortschritt für Sie im Blick.
           </p>
 
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
-            Sie müssen nicht monatelang selbst nach zuverlässigen Anbietern suchen
-            oder Ihre Wünsche immer wieder neu erklären. Sie kommunizieren mit einer
-            festen Ansprechperson, während wir dafür sorgen, dass die ausgewählten
-            Parteien wissen, was zu tun ist, wann es geschehen soll und wer wofür
+            Sie müssen nicht monatelang selbst nach zuverlässigen Anbietern suchen oder Ihre
+            Wünsche immer wieder neu erklären. Sie kommunizieren mit einem festen
+            Ansprechpartner, während wir dafür sorgen, dass die ausgewählten Parteien
+            wissen, was zu tun ist, wann es geschehen soll und wer wofür
             verantwortlich ist.
           </p>
 
           <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
             Für Renovierungen arbeiten wir mit einem ausgewählten, offiziell
-            registrierten Bauunternehmen zusammen, das über ein eigenes
-            Ausführungsteam verfügt und qualifizierte Architekten sowie technische
-            Architekten einbindet. Selbstverständlich können Sie auch Ihr eigenes
-            Bauunternehmen oder andere Fachleute beauftragen.
+            registrierten Bauunternehmen zusammen, das über ein eigenes Ausführungsteam verfügt und qualifizierte
+            Architekten sowie technische Architekten einbindet. Selbstverständlich können Sie auch Ihr
+            eigenes Bauunternehmen oder andere Fachleute beauftragen.
           </p>
 
           <p className="mt-6 max-w-4xl text-lg font-medium leading-relaxed text-[#d7bd94]">
@@ -164,6 +225,103 @@ export default function MoveInReadyPage() {
             wählen, die Sie benötigen — von der Kaufbegleitung und unabhängigen
             Prüfungen bis zu Umzug, Home Setup, Renovierung und Interior Styling.
           </p>
+        </section>
+
+        {/* PAKETE */}
+        <section className="mt-20">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Move-In Ready Pakete
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+            Wählen Sie die Unterstützung, die zu Ihrer Situation passt.
+          </h2>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+            Von der praktischen Grundlage Ihres Zuhauses bis zu Renovierung, Interieur und einem
+            vollständigen Familienumzug. Jedes Paket wird vorab als klarer
+            Leistungsumfang abgestimmt und koordiniert.
+          </p>
+
+          <div className="mt-12 grid items-stretch gap-6 lg:grid-cols-3">
+            {packages.map((item) => (
+              <article
+                key={item.number}
+                className={`relative flex h-full flex-col rounded-[32px] p-7 shadow-sm md:p-8 ${
+                  item.featured
+                    ? "bg-[#1d3b60] text-white"
+                    : "bg-white text-stone-900"
+                }`}
+              >
+                <span
+                  className={`absolute right-7 top-7 font-serif text-4xl ${
+                    item.featured ? "text-white/20" : "text-[#d8b77d]"
+                  }`}
+                >
+                  {item.number}
+                </span>
+
+                <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                  Paket {item.number}
+                </p>
+
+                <h3
+                  className={`mt-4 max-w-[80%] font-serif text-3xl leading-tight ${
+                    item.featured ? "text-white" : "text-[#1e2a3a]"
+                  }`}
+                >
+                  {item.title}
+                </h3>
+
+                <p
+                  className={`mt-5 text-sm font-medium leading-relaxed ${
+                    item.featured ? "text-white" : "text-[#1e2a3a]"
+                  }`}
+                >
+                  {item.subtitle}
+                </p>
+
+                <p
+                  className={`mt-5 text-sm leading-relaxed ${
+                    item.featured ? "text-white/80" : "text-stone-600"
+                  }`}
+                >
+                  {item.intro}
+                </p>
+
+                <ul className="mt-6 space-y-3">
+                  {item.items.map((service) => (
+                    <li
+                      key={service}
+                      className={`flex gap-3 text-sm leading-relaxed ${
+                        item.featured ? "text-white/90" : "text-stone-700"
+                      }`}
+                    >
+                      <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#c8a063]" />
+                      <span>{service}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div
+                  className={`mt-7 rounded-[24px] p-5 ${
+                    item.featured ? "bg-white/10" : "bg-[#f6f1ea]"
+                  }`}
+                >
+                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#c8a063]">
+                    Angestrebtes Ergebnis
+                  </p>
+                  <p
+                    className={`mt-3 text-sm leading-relaxed ${
+                      item.featured ? "text-white/85" : "text-stone-700"
+                    }`}
+                  >
+                    {item.result}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
 
         {/* NORDIC MOVE DESIGN BILDER */}
@@ -203,11 +361,10 @@ export default function MoveInReadyPage() {
         </div>
 
         <p className="mt-8 max-w-4xl text-sm leading-relaxed text-stone-500">
-          Die gezeigten Nordic Move Designs dienen als inspirierende
-          Stilrichtungen. Es handelt sich weder um Immobilienangebote noch um
-          abgeschlossene Kundenprojekte. Die endgültige Gestaltung, Planung und
-          Umsetzung werden auf die Immobilie, das Budget, die Verfügbarkeit und die
-          ausgewählten lokalen Partner abgestimmt.
+          Die gezeigten Nordic Move Designs dienen als inspirierende Stilrichtungen.
+          Es handelt sich weder um Immobilienangebote noch um abgeschlossene Kundenprojekte.
+          Die endgültige Gestaltung, Planung und Umsetzung werden auf
+          die Immobilie, das Budget, die Verfügbarkeit und die ausgewählten lokalen Partner abgestimmt.
         </p>
 
         {/* PROZESS */}
@@ -242,8 +399,8 @@ export default function MoveInReadyPage() {
           </div>
 
           <p className="mt-10 text-sm leading-relaxed text-stone-500">
-            Die Move-In Ready Unterstützung wird auf jede Immobilie und jeden Kunden
-            individuell abgestimmt. Umfang, Zeitplan, Preis und Verfügbarkeit hängen
+            Die Move-In Ready Unterstützung wird auf jede Immobilie und jeden
+            Kunden individuell abgestimmt. Umfang, Zeitplan, Preis und Verfügbarkeit hängen
             von der Immobilie, den erforderlichen Arbeiten, den ausgewählten Partnern,
             den Materialien und dem gewünschten Serviceniveau ab.
           </p>

@@ -4,6 +4,23 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { supabase } from "../lib/supabase";
 
+
+type DataLayerEvent = {
+  event: string;
+  [key: string]: unknown;
+};
+
+function pushDataLayerEvent(payload: DataLayerEvent) {
+  if (typeof window === "undefined") return;
+
+  const trackingWindow = window as typeof window & {
+    dataLayer?: DataLayerEvent[];
+  };
+
+  trackingWindow.dataLayer = trackingWindow.dataLayer ?? [];
+  trackingWindow.dataLayer.push(payload);
+}
+
 type Question = {
   id: string;
   section: string;
@@ -810,6 +827,15 @@ export default function RelocationAssessment() {
 
         return;
       }
+
+      // Track a lead only after Supabase confirms that the request was saved.
+      // No personal data (name, email or phone) is sent to Google.
+      pushDataLayerEvent({
+        event: "generate_lead",
+        form_name: "area_match",
+        form_language: "en",
+        lead_type: "area_match_report",
+      });
 
       setSubmitted(true);
     } catch (error) {

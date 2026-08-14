@@ -4,6 +4,22 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { supabase } from "../lib/supabase";
 
+type DataLayerEvent = {
+  event: string;
+  [key: string]: unknown;
+};
+
+function pushDataLayerEvent(payload: DataLayerEvent) {
+  if (typeof window === "undefined") return;
+
+  const trackingWindow = window as typeof window & {
+    dataLayer?: DataLayerEvent[];
+  };
+
+  trackingWindow.dataLayer = trackingWindow.dataLayer ?? [];
+  trackingWindow.dataLayer.push(payload);
+}
+
 type Question = {
   id: string;
   section: string;
@@ -21,26 +37,26 @@ const questions: Question[] = [
   {
     id: "household_profile",
     section: "Your plans",
-    title: "Which description best fits your household?",
+    title: "Which description best matches your household?",
     type: "single",
     options: [
       "Single buyer",
       "Couple",
       "Family with young children",
       "Family with school-age children",
-      "Multigenerational household or household with adult children",
+      "Adult or multigenerational household",
       "Retired or semi-retired household",
     ],
   },
   {
     id: "purchase_goal",
     section: "Your plans",
-    title: "What is your main reason for buying property in Spain?",
+    title: "What is your main reason for buying in Spain?",
     type: "single",
     options: [
       "Permanent relocation",
       "Second home",
-      "Living partly in Spain and possibly relocating later",
+      "Part-time living now, possible relocation later",
       "Investment",
       "A combination of lifestyle and investment",
       "I am still exploring",
@@ -56,7 +72,7 @@ const questions: Question[] = [
       "I want to compare areas and properties at the same time",
       "I already have a preferred area and want to see suitable properties",
       "I mainly need clarity about risks and practical differences",
-      "I am still very early in the orientation phase",
+      "I am still at the very beginning of my research",
     ],
   },
   {
@@ -69,7 +85,7 @@ const questions: Question[] = [
       "1 to 3 months per year",
       "3 to 6 months per year",
       "More than 6 months per year",
-      "Year-round or almost year-round",
+      "All year or almost all year",
       "I am not sure yet",
     ],
   },
@@ -79,27 +95,27 @@ const questions: Question[] = [
     title: "When do you expect to use the property most?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
       "Mainly in summer",
       "Mainly in winter",
       "Spring and autumn",
       "School holidays",
-      "Several longer stays per year",
-      "Year-round",
+      "Several longer stays each year",
+      "All year round",
       "I am not sure yet",
     ],
   },
   {
     id: "area_familiarity",
     section: "Your plans",
-    title: "How well do you already know Costa Blanca North?",
+    title: "How well do you already know the Costa Blanca North?",
     type: "single",
     options: [
       "I do not know the area yet",
       "I have visited once on holiday",
-      "I know some towns through several visits",
-      "I already have specific towns in mind",
+      "I know a few places from several visits",
+      "I already have specific places in mind",
       "I know the area well and want to compare more precisely",
     ],
   },
@@ -135,24 +151,24 @@ const questions: Question[] = [
     title: "What is your approximate property budget?",
     type: "single",
     options: [
-      "Under €300,000",
+      "Below €300,000",
       "€300,000 - €500,000",
       "€500,000 - €750,000",
       "€750,000 - €1,000,000",
       "€1,000,000 - €2,000,000",
       "€2,000,000 - €5,000,000",
-      "Over €5,000,000",
+      "€5,000,000+",
     ],
   },
   {
     id: "budget_scope",
     section: "Your plans",
-    title: "Which costs are included in this budget?",
+    title: "What does this budget include?",
     type: "single",
     options: [
-      "Purchase price, taxes, legal fees and all purchase costs",
-      "Purchase price and purchase costs, but no renovation",
-      "Purchase price only",
+      "The property price, taxes, legal fees and all purchase costs",
+      "The property price and purchase costs, but not renovation",
+      "The property price only",
       "I have a separate renovation budget",
       "I am not sure yet",
     ],
@@ -160,62 +176,62 @@ const questions: Question[] = [
   {
     id: "monthly_running_costs",
     section: "Your plans",
-    title: "What level of monthly running costs feels comfortable for you?",
+    title: "What level of monthly running costs feels comfortable to you?",
     type: "single",
     options: [
       "As low as possible",
-      "Up to around €300 per month",
+      "Up to about €300 per month",
       "€300 to €600 per month",
       "€600 to €1,000 per month",
-      "Over €1,000 per month is acceptable if the property is right",
+      "More than €1,000 per month is acceptable if the property is right",
       "I am not sure yet",
     ],
   },
   {
     id: "property_type",
     section: "Your property",
-    title: "Which property types are you seriously considering?",
+    title: "Which property types would you seriously consider?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
       "Detached villa",
       "Luxury villa",
       "Apartment",
       "Penthouse",
-      "Townhouse or semi-detached house",
+      "Townhouse",
       "Finca or country house",
-      "New-build project",
-      "Property in a golf resort",
+      "New-build development",
+      "Golf-resort property",
     ],
   },
   {
     id: "property_style",
     section: "Your property",
-    title: "Which type of home style appeals to you most?",
+    title: "Which property style appeals to you most?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
       "Modern and minimalist",
       "Mediterranean and traditional",
       "Renovated with character",
-      "Luxurious and high-end",
-      "Bright, calm and low-maintenance",
+      "Luxury and high-end",
+      "Light, calm and low-maintenance",
       "Rustic or finca style",
-      "New-build with clean lines",
+      "New build with clean lines",
       "I am open to different styles",
     ],
   },
   {
     id: "condition",
     section: "Your property",
-    title: "What property condition would you consider?",
+    title: "Which property condition would you consider?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
-      "New-build",
+      "New build",
       "Recently renovated",
       "Move-in ready",
       "Light renovation is acceptable",
@@ -228,35 +244,35 @@ const questions: Question[] = [
     title: "How would you like to handle renovations or improvements?",
     type: "single",
     options: [
-      "I do not want to organise any renovation or work",
+      "I do not want to organise renovation or building work",
       "Small improvements are fine",
       "I am open to renovation if local support is available",
-      "I have renovation experience and can make decisions confidently",
-      "I specifically want a project with renovation potential",
+      "I have renovation experience and am comfortable making decisions",
+      "I am specifically looking for a project with renovation potential",
     ],
   },
   {
     id: "build_quality_comfort",
     section: "Your property",
-    title: "Which technical points should receive extra attention during property checks?",
+    title: "Which technical points should receive extra attention during the property inspection?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 points that are especially important to you.",
+    helper: "Select up to 5 points that are especially important to you.",
     options: [
       "Insulation and window quality",
       "Heating and cooling systems",
       "Electrical installation and plumbing",
       "Energy efficiency",
-      "Roof, terraces and water drainage",
-      "Overall construction quality",
+      "Roof, terraces and drainage",
+      "Overall build quality",
       "Pool, irrigation or technical installations",
-      "I need guidance on this",
+      "I need advice on this",
     ],
   },
   {
     id: "bedrooms",
     section: "Your property",
-    title: "How many bedrooms do you need as a minimum?",
+    title: "How many bedrooms do you need at minimum?",
     type: "single",
     options: ["1", "2", "3", "4", "5", "6+"],
   },
@@ -267,22 +283,22 @@ const questions: Question[] = [
     type: "single",
     options: [
       "Rarely",
-      "A few times per year",
+      "A few times a year",
       "Regularly during holiday periods",
-      "Frequent longer visits",
-      "The property should work well for family or several generations",
+      "Often for longer stays",
+      "The property should also work well for family or multiple generations",
     ],
   },
   {
     id: "guest_privacy",
     section: "Your property",
-    title: "How important is privacy for guests or family in the home?",
+    title: "How important is privacy for guests or family in the property?",
     type: "single",
     options: [
       "Very important — guests should be able to stay as independently as possible",
-      "A separate guest bedroom or guest bathroom is enough",
-      "Shared living is completely fine",
-      "Guests are not an important factor",
+      "A separate guest room or guest bathroom is sufficient",
+      "Sharing the home and common spaces is completely fine",
+      "Guests are not a major factor",
     ],
   },
   {
@@ -291,42 +307,42 @@ const questions: Question[] = [
     title: "Which property features matter most to you?",
     type: "multiple",
     maxSelections: 8,
-    helper: "Choose up to 8 options.",
+    helper: "Select up to 8 options.",
     options: [
       "Private swimming pool",
-      "Communal pool",
+      "Communal swimming pool",
       "Large garden",
       "Low-maintenance outdoor space",
       "Sea view",
       "Panoramic sea view",
-      "Separate guest area",
-      "Outdoor kitchen or guest entertaining area",
-      "Single-level or low-step living",
+      "Guest accommodation",
+      "Outdoor kitchen or entertaining area",
+      "Single-level or step-free living",
       "Lift",
       "Gated community",
       "Private garage or secure parking",
-      "Electric car charging possibility",
-      "Study or home office",
-      "Plenty of winter sun or south-facing orientation",
-      "Protection from strong wind",
+      "EV charging",
+      "Home office",
+      "Strong winter sun or south-facing orientation",
+      "Shelter from strong wind",
     ],
   },
   {
     id: "climate_comfort",
     section: "Your property",
-    title: "Which climate comfort factors matter most in daily life?",
+    title: "Which climate-comfort factors matter most in daily life?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
       "Shade on terraces and in the garden",
       "Warm winter sun",
-      "Protection from strong wind",
+      "Shelter from strong wind",
       "Good natural ventilation",
       "Comfortable indoor temperature in summer",
       "Comfortable indoor temperature in winter",
       "Cool outdoor seating areas",
-      "A home that feels comfortable throughout the year",
+      "A property that feels comfortable all year round",
     ],
   },
   {
@@ -335,76 +351,76 @@ const questions: Question[] = [
     title: "How would you like to use the outdoor space?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
-      "Quiet breakfast or coffee outside",
-      "Sunbathing",
+      "Have breakfast or coffee outside in peace",
+      "Sunbathe",
       "Shade and cool seating areas",
-      "Dining with family or guests",
+      "Eat with family or guests",
       "Barbecue or outdoor kitchen",
       "Gardening",
-      "Private pool area",
-      "Safe area for children or pets",
+      "Private pool with sufficient privacy",
+      "Safe space for children or pets",
     ],
   },
   {
     id: "maintenance",
     section: "Your property",
-    title: "How much maintenance are you willing to take on?",
+    title: "How much property maintenance are you comfortable managing?",
     type: "single",
     options: [
-      "Very little — I prefer a low-maintenance property",
-      "A moderate amount of maintenance is acceptable",
-      "Garden and pool care are acceptable",
-      "I can manage a large property with land",
-      "I would hire professional property management",
+      "Very little — I prefer a lock-up-and-leave property",
+      "Moderate maintenance is acceptable",
+      "Garden and pool maintenance are acceptable",
+      "I am comfortable managing a large property and grounds",
+      "I would use professional property-management services",
     ],
   },
   {
     id: "property_management",
     section: "Your property",
-    title: "How should the property be looked after when you are not in Spain?",
+    title: "How should the property be managed when you are not in Spain?",
     type: "single",
     options: [
       "I want the property to require as little management as possible",
-      "I want keyholding and regular checks",
-      "I need garden and pool care",
+      "I want keyholding and regular property checks",
+      "I need garden and pool maintenance",
       "I want full property management",
-      "Family, friends or acquaintances will look after it",
+      "Family, friends or acquaintances will take care of it",
       "I am not sure yet",
     ],
   },
   {
     id: "preferred_setting",
-    section: "Location and accessibility",
-    title: "Which locations appeal to you most?",
+    section: "Location and access",
+    title: "Which settings appeal to you most?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
       "Directly by the sea",
-      "Beach within walking distance",
+      "Within walking distance of the beach",
       "Residential area with sea views",
       "Town or village centre",
       "Historic centre",
-      "Quiet residential community",
-      "Golf setting",
+      "Quiet residential urbanisation",
+      "Golf environment",
       "Marina or harbour area",
-      "Rural setting",
-      "Mountain or nature area",
+      "Countryside",
+      "Mountain or natural setting",
       "Exclusive residential area",
     ],
   },
   {
     id: "area_feeling",
-    section: "Location and accessibility",
-    title: "What atmosphere should your residential area have?",
+    section: "Location and access",
+    title: "What kind of atmosphere should your local area have?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
       "Authentically Spanish",
-      "International and well-organised",
+      "International and well organised",
       "Quiet and high-quality",
       "Lively with restaurants and cafés",
       "Coastal and relaxed",
@@ -416,23 +432,23 @@ const questions: Question[] = [
   },
   {
     id: "view_vs_convenience",
-    section: "Location and accessibility",
-    title: "What matters more to you: views or daily convenience?",
+    section: "Location and access",
+    title: "What matters more to you: views or everyday convenience?",
     type: "single",
     options: [
       "Views are more important, even if the location is steeper or more car-dependent",
-      "A good balance between views and daily practicality",
+      "A good balance between views and everyday practicality",
       "Walkability and easy access are more important than views",
       "I am not sure yet",
     ],
   },
   {
     id: "areas_considered",
-    section: "Location and accessibility",
-    title: "Which towns or areas are you already considering?",
+    section: "Location and access",
+    title: "Which places or areas are you already considering?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Choose all towns or areas that already interest you.",
+    helper: "Select all places or areas that already interest you.",
     options: [
       "Dénia",
       "Jávea",
@@ -448,76 +464,76 @@ const questions: Question[] = [
   },
   {
     id: "areas_to_avoid",
-    section: "Location and accessibility",
-    title: "Are there any towns, areas or settings you would rather avoid?",
+    section: "Location and access",
+    title: "Are there any places, areas or environments you would prefer to avoid?",
     type: "text",
     optional: true,
     helper:
-      "Optional. Mention any towns, settings or impressions that do not feel right for you.",
+      "Optional. Mention any places, environments or impressions that do not feel right for you.",
   },
   {
     id: "daily_mobility",
-    section: "Location and accessibility",
-    title: "How would you like to reach daily amenities?",
+    section: "Location and access",
+    title: "How would you prefer to reach daily services?",
     type: "single",
     options: [
       "Mostly on foot",
       "By bicycle or e-bike",
       "A short drive is acceptable",
-      "Daily driving is not a problem",
+      "Daily car use is completely fine",
       "This is not important",
     ],
   },
   {
     id: "amenity_distance",
-    section: "Location and accessibility",
-    title: "What distance to daily amenities feels comfortable to you?",
+    section: "Location and access",
+    title: "What distance to everyday amenities feels comfortable to you?",
     type: "single",
     options: [
-      "Supermarket, café and pharmacy preferably within 5 to 10 minutes on foot",
-      "Important amenities within 15 to 20 minutes on foot",
+      "Supermarket, café and pharmacy preferably within a 5 to 10 minute walk",
+      "Important amenities within a 15 to 20 minute walk",
       "A short drive of up to 10 minutes is fine",
       "Up to 20 minutes by car is acceptable",
-      "Distance is less important than peace, views or land",
+      "Distance matters less than peace, views or land",
     ],
   },
   {
     id: "car_parking_needs",
-    section: "Location and accessibility",
-    title: "What are your needs around cars and parking?",
+    section: "Location and access",
+    title: "What are your needs regarding cars and parking?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
-      "One private parking space is enough",
+      "One private parking space is sufficient",
       "Two or more parking spaces are important",
       "A garage is important",
       "Easy guest parking is important",
       "I want to drive as little as possible",
-      "I plan to have an electric car",
-      "Parking is not a decisive factor",
+      "I plan to use an electric car",
+      "Parking is not a deciding factor",
     ],
   },
   {
     id: "access_terrain",
-    section: "Location and accessibility",
-    title: "Which access and terrain conditions are acceptable to you?",
+    section: "Location and access",
+    title: "Which access and terrain conditions would be acceptable to you?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose all conditions that are acceptable to you.",
+    helper: "Select all conditions you would accept.",
     options: [
-      "Only flat and easily accessible locations",
-      "Gentle slopes are acceptable",
+      "Flat and easy access only",
+      "Gentle hills are acceptable",
       "Steep roads are acceptable",
-      "Narrow residential streets are acceptable",
+      "Narrow residential roads are acceptable",
       "Rural or partly unpaved access is acceptable",
       "Steps inside or outside the property are acceptable",
     ],
   },
   {
     id: "airport_access",
-    section: "Location and accessibility",
-    title: "What is the maximum driving time to the airport you would accept?",
+    section: "Location and access",
+    title: "What is the maximum acceptable driving time to an airport?",
     type: "single",
     options: [
       "Up to 30 minutes",
@@ -529,55 +545,55 @@ const questions: Question[] = [
   },
   {
     id: "boat_needs",
-    section: "Location and accessibility",
-    title: "Does a boat or marina berth play a role in your location choice?",
+    section: "Location and access",
+    title: "Does a boat or mooring play a role in your choice of location?",
     type: "single",
     options: [
       "No, this is not relevant",
-      "I already have a boat and need a berth",
+      "I already have a boat and need a mooring",
       "I plan to buy a boat in Spain",
       "I would like to live near a marina, even without owning a boat",
-      "I am interested in sailing or watersports, but a berth is not required",
+      "I am interested in sailing or watersports, but do not need a mooring",
       "I am not sure yet",
     ],
   },
   {
     id: "boat_details",
-    section: "Location and accessibility",
-    title: "Which requirements matter for your boat or marina berth?",
+    section: "Location and access",
+    title: "Which requirements are important for your boat or mooring?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
-      "Berth for a small motorboat",
-      "Berth for a larger motorboat",
-      "Berth for a sailing boat",
+      "Mooring for a small motorboat",
+      "Mooring for a larger motorboat",
+      "Mooring for a sailing boat",
       "Marina within 10 minutes",
       "Marina within 20 minutes",
       "Good access and parking at the marina",
-      "Maintenance, winter storage or boat service nearby",
-      "Restaurant and club life around the marina",
-      "I need guidance on this",
+      "Maintenance, winter storage or boat services nearby",
+      "Restaurants and club life around the marina",
+      "I need advice on this",
     ],
     showIf: (answers) =>
       answers.boat_needs &&
       answers.boat_needs !== "No, this is not relevant" &&
       answers.boat_needs !==
-        "I am interested in sailing or watersports, but a berth is not required",
+        "I am interested in sailing or watersports, but do not need a mooring",
   },
   {
     id: "school_needs",
-    section: "Location and accessibility",
-    title: "Which school options are relevant for your family?",
+    section: "Location and access",
+    title: "Which schooling options are relevant to your family?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
       "Spanish public school",
-      "Private Spanish school",
+      "Spanish private school",
       "Bilingual school",
       "International school",
-      "Online schooling or homeschooling",
+      "Online or home-based education",
       "I am not sure yet",
     ],
     showIf: (answers) =>
@@ -586,97 +602,95 @@ const questions: Question[] = [
   },
   {
     id: "healthcare_access",
-    section: "Location and accessibility",
-    title:
-      "What level of access to medical care would make you feel comfortable?",
+    section: "Location and access",
+    title: "What level of healthcare access would make you comfortable?",
     type: "single",
     options: [
-      "Hospital and English-speaking medical care within around 15 minutes",
-      "Hospital and English-speaking medical care within around 30 minutes",
-      "A local doctor and pharmacy nearby are enough",
-      "Access to private healthcare is more important than distance",
-      "Medical care is not a decisive location factor",
+      "Hospital and English-speaking care within about 15 minutes",
+      "Hospital and English-speaking care within about 30 minutes",
+      "A local clinic and pharmacy nearby are sufficient",
+      "Private healthcare access is more important than distance",
+      "Healthcare access is not a major location factor",
     ],
   },
   {
     id: "accessibility",
-    section: "Location and accessibility",
-    title: "How important is long-term low-step accessibility?",
+    section: "Location and access",
+    title: "How important is long-term accessibility?",
     type: "single",
     options: [
-      "Essential — few steps and easy access are required",
-      "Very important with the future in mind",
-      "Preferred, but not absolutely required",
+      "Essential — minimal steps and easy access are required",
+      "Very important for future-proofing",
+      "Preferred, but not essential",
       "Not important",
     ],
   },
   {
     id: "internet",
-    section: "Location and accessibility",
-    title:
-      "How important is a reliable and fast internet connection?",
+    section: "Location and access",
+    title: "How important is reliable high-speed internet at the property?",
     type: "single",
     options: [
-      "Essential for home office or business",
+      "Essential for remote work or business",
       "Very important",
-      "Useful, but not absolutely required",
+      "Useful, but not essential",
       "Not important",
     ],
   },
   {
     id: "community_mix",
     section: "Community and daily life",
-    title:
-      "What type of neighbourhood mix would make you feel most comfortable?",
+    title: "Which community mix would make you feel most at home?",
     type: "single",
     options: [
-      "Mostly Spanish full-time residents",
+      "Mainly local Spanish residents",
       "A balanced mix of Spanish and international residents",
-      "Mostly international residents",
-      "Mostly second-home owners",
-      "A year-round residential neighbourhood",
+      "Mainly international residents",
+      "Mainly second-home owners",
+      "A residential area that is occupied year-round",
       "I have no preference",
     ],
   },
   {
     id: "language_comfort",
     section: "Community and daily life",
-    title: "How important is an English-speaking or international environment?",
+    title: "How important is an English-speaking or internationally oriented environment?",
     type: "single",
     options: [
-      "Very important — I want many English-speaking contacts or services",
-      "International services are enough",
+      "Very important — I want plenty of English-speaking contacts or services",
+      "English-speaking services are sufficient",
       "An international mix is ideal",
-      "I intentionally want more Spanish daily life",
-      "Language is not a decisive factor",
+      "I deliberately want more Spanish daily life",
+      "Language is not a deciding factor",
     ],
   },
   {
     id: "neighbour_contact",
     section: "Community and daily life",
-    title: "How much contact would you ideally like with your neighbours?",
+    title:
+      "How much contact would you ideally like to have with your neighbours?",
     type: "single",
     options: [
-      "An active and sociable neighbourhood",
-      "Regular friendly contact with enough privacy",
-      "Only occasional contact",
-      "Maximum privacy and very little contact with neighbours",
+      "An active and social neighbourhood",
+      "Friendly regular contact while keeping personal privacy",
+      "Occasional contact only",
+      "Maximum privacy with very little neighbour contact",
       "I have no preference",
     ],
   },
   {
     id: "security_feeling",
     section: "Community and daily life",
-    title: "What gives you a good feeling of security in Spain?",
+    title: "What would give you a good sense of security in Spain?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
       "Neighbours nearby",
-      "Year-round occupied surroundings",
+      "An area that is occupied year-round",
       "Gated community",
       "Alarm system or security service",
-      "Private driveway or enclosed parking",
+      "Private driveway or secure parking",
       "Good street lighting",
       "Quiet location without much through traffic",
       "Security is not an important factor for me",
@@ -687,25 +701,25 @@ const questions: Question[] = [
     id: "privacy_level",
     section: "Community and daily life",
     title:
-      "How much distance and privacy do you want from neighbouring properties?",
+      "How much distance and privacy would you like from neighbouring properties?",
     type: "single",
     options: [
-      "Maximum privacy with no direct neighbours",
-      "Detached property with comfortable distance from neighbours",
-      "A residential community with neighbours nearby is fine",
-      "An apartment or urban setting is fine",
+      "Maximum privacy with no close neighbours",
+      "A detached property with neighbours at a comfortable distance",
+      "A residential community with nearby neighbours is fine",
+      "An apartment or urban environment is fine",
       "I have no preference",
     ],
   },
   {
     id: "seasonal_tourism",
     section: "Community and daily life",
-    title: "How do you feel about seasonal tourism and summer activity?",
+    title: "How do you feel about seasonal tourism and summer crowds?",
     type: "single",
     options: [
-      "I want to live year-round in a quiet residential area",
+      "I want a quiet residential area throughout the year",
       "Some seasonal activity is acceptable",
-      "I enjoy a lively atmosphere in summer",
+      "I enjoy a lively summer atmosphere",
       "I prefer an active tourist environment",
       "I have no preference",
     ],
@@ -713,14 +727,14 @@ const questions: Question[] = [
   {
     id: "year_round_environment",
     section: "Community and daily life",
-    title: "Which amenities should also be available in winter?",
+    title: "What should remain available during winter?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
       "Restaurants and cafés",
       "Shops and supermarkets",
-      "Medical care",
+      "Healthcare services",
       "Sports and fitness facilities",
       "Social activities",
       "International community life",
@@ -733,44 +747,43 @@ const questions: Question[] = [
   {
     id: "lifestyle",
     section: "Community and daily life",
-    title:
-      "Which activities and lifestyle elements are most important to you?",
+    title: "Which activities and lifestyle elements matter most to you?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Choose up to 6 options.",
+    helper: "Select up to 6 options.",
     options: [
-      "Beach and swimming",
+      "Beaches and swimming",
       "Walking and hiking",
       "Cycling",
       "Golf",
       "Tennis or padel",
       "Sailing, boating or watersports",
       "Fitness, yoga or wellness",
-      "Local Spanish gastronomy and markets",
+      "Local Spanish food and markets",
       "Fine dining and wine",
-      "Art and culture",
-      "Business or professional contacts",
+      "Arts and culture",
+      "Business or professional networking",
       "Family activities",
-      "Quiet life at home",
+      "Quiet home-based living",
     ],
   },
   {
     id: "daily_routine",
     section: "Community and daily life",
-    title: "What does your ideal daily life in Spain look like?",
+    title: "What would your ideal daily life in Spain look like?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
-      "Walking out for coffee in the morning",
-      "Daily walks by the sea or beach",
-      "Spending a lot of time at home and on the terrace",
-      "Regularly visiting restaurants and cafés",
-      "Using nearby sports, fitness or padel facilities",
-      "Visiting markets and local shops",
-      "Working quietly or doing home office",
-      "Hosting family and friends",
-      "Arriving easily with as little organisation as possible",
+      "Walk out for coffee in the morning",
+      "Take daily walks by the sea or on the beach",
+      "Spend plenty of time at home and on the terrace",
+      "Visit restaurants and cafés regularly",
+      "Use nearby sports, fitness or padel facilities",
+      "Visit markets and local shops",
+      "Work quietly or from a home office",
+      "Host family and friends",
+      "Arrive as easily as possible with minimal organisation",
     ],
   },
   {
@@ -780,151 +793,144 @@ const questions: Question[] = [
     type: "single",
     options: [
       "No pets",
-      "One dog or several dogs",
-      "One cat or several cats",
-      "Other pets or several different pets",
+      "Dog or dogs",
+      "Cat or cats",
+      "Other or multiple pets",
     ],
   },
   {
     id: "pet_needs",
     section: "Community and daily life",
-    title: "Which conditions are important for your pets?",
+    title: "Which pet-related features are important?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
-      "Securely fenced private garden",
+      "Secure private garden",
       "Walking routes nearby",
-      "Access to a dog-friendly beach",
-      "Vet nearby",
-      "Quiet surroundings",
+      "Dog-friendly beach access",
+      "Veterinary care nearby",
+      "A quiet environment",
       "Pet-friendly community rules",
     ],
-    showIf: (answers) =>
-      answers.pets && answers.pets !== "No pets",
+    showIf: (answers) => answers.pets && answers.pets !== "No pets",
   },
   {
     id: "noise_tolerance",
-    section: "Possible concerns",
-    title: "How quiet does your ideal environment need to be?",
+    section: "Potential concerns",
+    title: "How quiet does your ideal location need to be?",
     type: "single",
     options: [
       "Extremely quiet — minimal background noise is essential",
       "Very quiet, with only occasional local activity",
       "Some everyday background noise is acceptable",
       "A lively environment is acceptable",
-      "Noise is not an important factor for me",
+      "Noise is not an important factor",
     ],
   },
   {
     id: "unacceptable_noise",
-    section: "Possible concerns",
-    title: "Which noise sources would strongly influence your decision?",
+    section: "Potential concerns",
+    title: "Which noise sources would seriously affect your decision?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
-      "Traffic noise from busy roads or motorways",
-      "Noise from bars, restaurants or nightlife",
-      "Holiday rentals and frequently changing guests",
-      "Heavy summer tourism",
+      "Busy roads or motorway noise",
+      "Bars, restaurants or nightlife",
+      "Holiday rentals and frequent guest turnover",
+      "Heavy summer tourist activity",
       "Construction noise",
       "Aircraft noise",
       "Dogs or regular neighbourhood noise",
       "Schools, sports facilities or playgrounds",
-      "Church bells, fiestas or local events",
-      "None of these noise sources would be a major problem",
+      "Church bells, festivals or local celebrations",
+      "None of these would be a major concern",
     ],
-    exclusiveOptions: [
-      "None of these noise sources would be a major problem",
-    ],
+    exclusiveOptions: ["None of these would be a major concern"],
   },
   {
     id: "infrastructure_dealbreakers",
-    section: "Possible concerns",
+    section: "Potential concerns",
     title:
-      "Which visible infrastructure elements would negatively affect your decision?",
+      "Which visible infrastructure features would negatively affect your decision?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
-      "High-voltage pylons",
-      "Overhead power lines or pylons directly by the property",
+      "High-voltage electricity pylons",
+      "Overhead electricity cables or poles beside the property",
       "Mobile phone or communication masts",
-      "Visible busy roads",
-      "Large apartment buildings nearby",
+      "Busy roads visible from the property",
+      "Large apartment blocks nearby",
       "Industrial or commercial buildings",
       "Active construction sites or undeveloped plots",
-      "Direct overlooking from neighbouring properties",
-      "None of these conditions would be a major problem",
+      "Being directly overlooked by neighbouring properties",
+      "None of these would be a major concern",
     ],
-    exclusiveOptions: [
-      "None of these conditions would be a major problem",
-    ],
+    exclusiveOptions: ["None of these would be a major concern"],
   },
   {
     id: "environmental_concerns",
-    section: "Possible concerns",
+    section: "Potential concerns",
     title:
-      "Which environmental or plot risks would concern you most?",
+      "Which environmental or land-related risks would concern you most?",
     type: "multiple",
     maxSelections: 5,
-    helper: "Choose up to 5 options.",
+    helper: "Select up to 5 options.",
     options: [
       "Flood-prone areas",
-      "Increased wildfire risk",
+      "Wildfire exposure",
       "Steep plots or large retaining walls",
       "Strong wind exposure",
-      "High humidity or damp problems",
+      "High humidity or damp risk",
       "Coastal erosion or extreme sea exposure",
-      "Rural supply systems such as septic tanks or water tanks",
-      "None of these conditions would be a major problem",
+      "Rural utilities such as septic tanks or water storage",
+      "None of these would be a major concern",
     ],
-    exclusiveOptions: [
-      "None of these conditions would be a major problem",
-    ],
+    exclusiveOptions: ["None of these would be a major concern"],
   },
   {
     id: "legal_technical_risk_tolerance",
-    section: "Possible concerns",
+    section: "Potential concerns",
     title: "How much legal or technical complexity would be acceptable to you?",
     type: "single",
     options: [
-      "As little as possible — I want a legally and technically clear property",
-      "Small issues are acceptable if they can be resolved before purchase",
+      "As little as possible — I want a legally and technically straightforward property",
+      "Minor issues are acceptable if they can be resolved before purchase",
       "I am open to more complex properties if the price and location are right",
-      "I am not sure yet and need guidance on this",
+      "I am not sure yet and need advice on this",
     ],
   },
   {
     id: "rental_intent",
     section: "Rental and final priorities",
-    title: "Would you like to rent out the property?",
+    title: "Do you expect to rent out the property?",
     type: "single",
     options: [
       "No",
       "Occasionally to family or friends",
-      "Occasional holiday rental",
+      "Occasional short-term rental",
       "Regular holiday rental",
       "Long-term rental",
-      "Rental income is an important part of my plan",
+      "Rental income is a major part of the plan",
       "I am not sure yet",
     ],
   },
   {
     id: "rental_priorities",
     section: "Rental and final priorities",
-    title: "Which rental factors are most important to you?",
+    title: "Which rental factors matter most to you?",
     type: "multiple",
     maxSelections: 4,
-    helper: "Choose up to 4 options.",
+    helper: "Select up to 4 options.",
     options: [
       "A location with strong rental demand",
-      "Possibility of a tourist rental licence",
-      "Community rules that allow rentals",
-      "Professional rental management",
-      "Good access to airport and beach for guests",
-      "A balance between rental income and own use",
+      "Tourist-rental permission or licence potential",
+      "Community rules that permit rental activity",
+      "Professional rental-management services",
+      "Easy airport and beach access for guests",
+      "A balance between rental return and personal enjoyment",
     ],
     showIf: (answers) =>
       answers.rental_intent &&
@@ -938,72 +944,69 @@ const questions: Question[] = [
     type: "single",
     options: [
       "Very important — the property should remain easy to sell in the long term",
-      "Important, but lifestyle is more important",
-      "Not decisive if the property fits us perfectly",
+      "Important, but quality of life matters more",
+      "Not decisive if the property is a perfect fit for us",
       "I have not thought about this yet",
     ],
   },
   {
     id: "top_priorities",
     section: "Rental and final priorities",
-    title: "Which factors have the highest priority for you?",
+    title: "Which factors are your highest priorities?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Choose your 6 most important priorities.",
+    helper: "Select your 6 most important priorities.",
     options: [
       "Quiet surroundings",
       "Privacy",
-      "Security",
+      "Safety",
       "Walkability",
-      "Beach proximity",
-      "Sea view",
+      "Beach access",
+      "Sea views",
       "International community",
       "Authentic Spanish atmosphere",
-      "Social life in the neighbourhood",
-      "Medical care",
-      "Airport proximity",
+      "Neighbourhood social life",
+      "Healthcare access",
+      "Airport access",
       "Year-round services",
-      "Fast internet",
-      "Low-step accessibility",
+      "High-speed internet",
+      "Easy accessibility",
       "Low maintenance",
       "Large garden",
       "Golf",
-      "Near a marina or berth",
-      "Suitable for families and schools",
-      "Strong long-term resale appeal",
+      "Marina access",
+      "Family and school suitability",
+      "Long-term value growth",
       "Rental potential",
     ],
   },
   {
     id: "absolute_dealbreakers",
     section: "Rental and final priorities",
-    title:
-      "Which factors would immediately rule out an area or property for you?",
+    title: "Which factors would immediately rule out an area or property?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Choose up to 6 absolute dealbreakers.",
+    helper: "Select up to 6 absolute dealbreakers.",
     options: [
       "Traffic or motorway noise",
-      "Noise from nightlife or restaurants",
+      "Nightlife or restaurant noise",
       "High-voltage pylons or overhead power lines",
-      "Direct overlooking by neighbours",
+      "Being overlooked by neighbours",
       "Very close neighbouring properties",
-      "Steep or difficult access",
+      "Steep or difficult road access",
       "No private parking",
       "Heavy summer tourism",
-      "Remote location",
+      "An isolated location",
       "High community fees",
       "Major renovation work",
-      "No reliable fast internet connection",
-      "Few facilities open in winter",
-      "Long distance to medical care",
-      "Flood or wildfire risk",
-      "No suitable marina or berth solution nearby",
-      "None of these points is an absolute dealbreaker",
+      "No reliable high-speed internet",
+      "Limited services during winter",
+      "Long distance from healthcare",
+      "Flood or wildfire exposure",
+      "No suitable marina or mooring solution nearby",
+      "None of these are absolute dealbreakers",
     ],
-    exclusiveOptions: [
-      "None of these points is an absolute dealbreaker",
-    ],
+    exclusiveOptions: ["None of these are absolute dealbreakers"],
   },
   {
     id: "biggest_uncertainty",
@@ -1011,13 +1014,13 @@ const questions: Question[] = [
     title: "What is your biggest uncertainty about buying in Spain?",
     type: "multiple",
     maxSelections: 3,
-    helper: "Choose up to 3 options.",
+    helper: "Select up to 3 options.",
     options: [
       "Choosing the right area",
       "Understanding fair market value",
       "Understanding legal risks",
       "Avoiding hidden costs",
-      "Assessing renovation or condition",
+      "Assessing renovation needs or property condition",
       "Understanding taxes and running costs",
       "Understanding rental rules",
       "Organising everything from abroad",
@@ -1028,11 +1031,11 @@ const questions: Question[] = [
     id: "additional_notes",
     section: "Rental and final priorities",
     title:
-      "Is there anything else that would make an area or property feel especially right — or completely unsuitable — for you?",
+      "Is there anything else that would make an area or property feel particularly right — or completely wrong — for you?",
     type: "text",
     optional: true,
     helper:
-      "Optional. Add any further wishes, concerns or dealbreakers here.",
+      "Optional. Add any detail that has not been covered above.",
   },
 ];
 
@@ -1112,7 +1115,7 @@ export default function RelocationAssessment() {
       answersWithoutExclusiveOptions.length >= current.maxSelections
     ) {
       alert(
-        `Please choose no more than ${current.maxSelections} options.`
+        `Please select up to ${current.maxSelections} options.`
       );
       return;
     }
@@ -1153,7 +1156,7 @@ export default function RelocationAssessment() {
 
     if (!questionHasAnswer(current)) {
       alert(
-        "Please choose an answer or enter a response before continuing."
+        "Please select or enter an answer before continuing."
       );
       return;
     }
@@ -1241,7 +1244,7 @@ export default function RelocationAssessment() {
 
       if (error) {
         alert(
-          "Your request could not be saved.\n\n" +
+          "We could not save your request.\n\n" +
             "Message: " +
             error.message +
             "\n\nDetails: " +
@@ -1254,6 +1257,15 @@ export default function RelocationAssessment() {
 
         return;
       }
+
+      // Track the lead only after Supabase confirms that the request was saved.
+      // No personal data (name, email or phone) is sent to Google.
+      pushDataLayerEvent({
+        event: "generate_lead",
+        form_name: "area_match",
+        form_language: "en",
+        lead_type: "area_match_report",
+      });
 
       const emailResponse = await fetch("/api/relocation-assessment", {
         method: "POST",
@@ -1277,7 +1289,7 @@ export default function RelocationAssessment() {
         );
 
         alert(
-          "Your answers have been saved, but the email notification could not be sent. Please contact Nordic Move Spain if you do not receive a response."
+          "Your answers were saved, but the email notification could not be sent. Please contact Nordic Move Spain if you do not receive a response."
         );
       }
 
@@ -1289,7 +1301,7 @@ export default function RelocationAssessment() {
           : "An unknown error occurred.";
 
       alert(
-        "Your request could not be saved.\n\n" + message
+        "We could not save your request.\n\n" + message
       );
     } finally {
       setIsSubmitting(false);
@@ -1305,8 +1317,8 @@ export default function RelocationAssessment() {
           <h1 style={styles.title}>Thank you for your request</h1>
 
           <p style={styles.text}>
-            Thank you, {contact.name}. We have received your Costa Blanca Area
-            Match assessment and will use your answers to prepare your personal
+            Thank you, {contact.name}. We have received your Costa Blanca Area Match
+            Assessment and will use your answers to prepare your personal
             report.
           </p>
 
@@ -1314,7 +1326,7 @@ export default function RelocationAssessment() {
 
           {contact.phone.trim() && (
             <p style={styles.text}>
-              If we need to clarify any of your answers, we can contact you on{" "}
+              If we need to clarify any of your answers, we may contact you at
               {contact.phone}.
             </p>
           )}
@@ -1334,9 +1346,9 @@ export default function RelocationAssessment() {
           </h1>
 
           <p style={styles.text}>
-            Enter your contact details below. We will use your answers to
-            prepare your personal Costa Blanca Area Match Report and send it to
-            your email address.
+            Enter your contact details below. We will use your answers to prepare your
+            personal Costa Blanca Area Match Report and send it to your email
+            address.
           </p>
 
           <div style={styles.form}>
@@ -1400,8 +1412,9 @@ export default function RelocationAssessment() {
               />
 
               <span style={styles.privacyText}>
-                I agree that Nordic Move Spain may use my answers to prepare my
-                personal Area Match Report and contact me regarding this request.
+                I agree that Nordic Move Spain may use my answers to prepare
+                my personal Area Match Report and contact me about this
+                request.
               </span>
             </label>
 
@@ -1425,7 +1438,7 @@ export default function RelocationAssessment() {
               >
                 {isSubmitting
                   ? "Sending..."
-                  : "Request personal report"}
+                  : "Request my report"}
               </button>
             </div>
           </div>
@@ -1513,7 +1526,7 @@ export default function RelocationAssessment() {
           <textarea
             value={answers[current.id] || ""}
             onChange={(event) => setTextValue(event.target.value)}
-            placeholder="Add any further wishes, concerns or dealbreakers here."
+            placeholder="Add any additional preferences, concerns or dealbreakers here."
             rows={7}
             style={styles.textarea}
           />

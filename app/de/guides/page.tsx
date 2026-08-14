@@ -256,13 +256,6 @@ export default function DeutscheImmobilienRatgeberPage() {
             </a>
 
             <a
-              href="/de/buyer-discovery-trip"
-              className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
-            >
-              Buyer Discovery Trip entdecken
-            </a>
-
-            <a
               href="#ratgeber"
               className="rounded-full border border-white/40 px-8 py-4 text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-[#1e2a3a]"
             >
@@ -300,8 +293,8 @@ export default function DeutscheImmobilienRatgeberPage() {
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
               Diese Ratgeber helfen Ihnen, die Costa Blanca Nord klarer zu
-              vergleichen, bevor Sie sich auf einen Ort, eine Immobiliensuche oder
-              eine Kaufreise festlegen.
+              vergleichen, bevor Sie sich auf einen Ort festlegen oder konkrete
+              Besichtigungen planen.
             </p>
           </div>
         </div>
@@ -322,7 +315,7 @@ export default function DeutscheImmobilienRatgeberPage() {
             </div>
 
             <a
-              href="/de/kontakt"
+              href="/de/contact"
               className="rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
               Persönliche Beratung gewünscht?
@@ -488,7 +481,7 @@ export default function DeutscheImmobilienRatgeberPage() {
             </a>
 
             <a
-              href="/de/kontakt"
+              href="/de/contact"
               className="rounded-full border border-white px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
             >
               Kennenlerngespräch vereinbaren

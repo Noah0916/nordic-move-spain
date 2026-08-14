@@ -107,15 +107,6 @@ const moreGuides = [
     useful:
       "Användbar när din hund eller katt flyttar med till Spanien eller när du vill veta vilka regler som gäller i lägenheter, urbanisationer och offentliga miljöer.",
   },
-  {
-    href: "/sv/guides/denia-versus-calpe",
-    label: "Områdesjämförelse",
-    title: "Dénia versus Calpe",
-    text:
-      "En jämförelse för köpare som tvekar mellan Dénia och Calpe, med fokus på atmosfär, service, stränder, tillgänglighet, bostadstyper, turismtryck och livet utanför högsäsong.",
-    useful:
-      "Användbar när du vill välja mellan Dénias mer urbana och spanska karaktär och Calpes mer kompakta kustliv.",
-  },
 ];
 
 export default function SvenskaFastighetsGuiderPage() {

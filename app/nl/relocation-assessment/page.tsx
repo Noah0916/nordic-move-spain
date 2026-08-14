@@ -4,6 +4,23 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { supabase } from "../../lib/supabase";
 
+
+type DataLayerEvent = {
+  event: string;
+  [key: string]: unknown;
+};
+
+function pushDataLayerEvent(payload: DataLayerEvent) {
+  if (typeof window === "undefined") return;
+
+  const trackingWindow = window as typeof window & {
+    dataLayer?: DataLayerEvent[];
+  };
+
+  trackingWindow.dataLayer = trackingWindow.dataLayer ?? [];
+  trackingWindow.dataLayer.push(payload);
+}
+
 type Question = {
   id: string;
   section: string;
@@ -1280,6 +1297,15 @@ export default function RelocationAssessment() {
           "Uw antwoorden zijn opgeslagen, maar de e-mailnotificatie kon niet worden verzonden. Neem contact op met Nordic Move Spain als u geen reactie ontvangt."
         );
       }
+
+      // Track a lead only after the request has been saved successfully.
+      // No personal data (name, email or phone) is sent to Google.
+      pushDataLayerEvent({
+        event: "generate_lead",
+        form_name: "area_match",
+        form_language: "nl",
+        lead_type: "area_match_report",
+      });
 
       setSubmitted(true);
     } catch (error) {
