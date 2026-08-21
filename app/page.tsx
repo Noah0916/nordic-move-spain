@@ -169,37 +169,47 @@ export default function HomePage() {
       />
 
       {/* NAVIGATION */}
-      <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/15 px-8 py-4 backdrop-blur-md">
+      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <div className="w-[180px]"></div>
+          {/* MOBILE BRAND / DESKTOP SPACER */}
+          <a
+            href="/"
+            className="text-sm font-medium tracking-wide text-white md:hidden"
+          >
+            Nordic Move Spain
+          </a>
 
+          <div className="hidden w-[180px] md:block"></div>
+
+          {/* DESKTOP MENU */}
           <div className="hidden gap-8 text-sm text-white md:flex">
             <a href="/" className="border-b border-[#c8a063] pb-1">
               Home
             </a>
 
-            <a href="/regions" className="hover:text-white/70 transition">
+            <a href="/regions" className="transition hover:text-white/70">
               Regions
             </a>
 
-            <a href="/services" className="hover:text-white/70 transition">
+            <a href="/services" className="transition hover:text-white/70">
               Services
             </a>
 
-            <a href="/guides" className="hover:text-white/70 transition">
+            <a href="/guides" className="transition hover:text-white/70">
               Guides
             </a>
 
-            <a href="/about-us" className="hover:text-white/70 transition">
+            <a href="/about-us" className="transition hover:text-white/70">
               About us
             </a>
 
-            <a href="/contact" className="hover:text-white/70 transition">
+            <a href="/contact" className="transition hover:text-white/70">
               Contact
             </a>
           </div>
 
-          <div className="flex items-center gap-3">
+          {/* DESKTOP RIGHT SIDE */}
+          <div className="hidden items-center gap-3 md:flex">
             <div className="flex items-center gap-2">
               <a
                 href="/"
@@ -241,6 +251,66 @@ export default function HomePage() {
               Book an introductory call
             </a>
           </div>
+
+          {/* MOBILE HAMBURGER MENU */}
+          <details className="relative md:hidden">
+            <summary
+              aria-label="Open menu"
+              className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-white/40 text-2xl text-white [&::-webkit-details-marker]:hidden"
+            >
+              ☰
+            </summary>
+
+            <div className="absolute right-0 mt-3 w-[280px] rounded-2xl bg-[#1e2a3a] p-6 text-white shadow-2xl">
+              <div className="flex flex-col gap-5 text-base">
+                <a href="/">Home</a>
+                <a href="/regions">Regions</a>
+                <a href="/services">Services</a>
+                <a href="/guides">Guides</a>
+                <a href="/about-us">About us</a>
+                <a href="/contact">Contact</a>
+              </div>
+
+              <div className="my-6 border-t border-white/20"></div>
+
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="/"
+                  className="rounded-full bg-[#c8a063] px-3 py-2 text-xs"
+                >
+                  EN
+                </a>
+
+                <a
+                  href="/nl"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  NL
+                </a>
+
+                <a
+                  href="/de"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  DE
+                </a>
+
+                <a
+                  href="/sv"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  SE
+                </a>
+              </div>
+
+              <a
+                href="/contact"
+                className="mt-6 block rounded-full bg-[#c8a063] px-5 py-3 text-center text-sm font-medium text-white"
+              >
+                Book an introductory call
+              </a>
+            </div>
+          </details>
         </div>
       </nav>
 
@@ -648,15 +718,7 @@ export default function HomePage() {
                 </article>
               </div>
 
-              <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                The document review by the independent building professional is an initial
-                comparison and does not replace legal due diligence or formal
-                confirmation by the relevant authorities. The technical and legal
-                checks are carried out by independent professionals,
-                each responsible for their own report. Additional
-                specialist investigation may be required. No check provides
-                absolute certainty.
-              </p>
+              
             </div>
           </div>
         </div>

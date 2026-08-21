@@ -169,37 +169,47 @@ export default function HemPage() {
       />
 
       {/* NAVIGERING */}
-      <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/15 px-8 py-4 backdrop-blur-md">
+      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <div className="w-[180px]"></div>
+          {/* MOBILE BRAND / DESKTOP SPACER */}
+          <a
+            href="/sv"
+            className="text-sm font-medium tracking-wide text-white md:hidden"
+          >
+            Nordic Move Spain
+          </a>
 
+          <div className="hidden w-[180px] md:block"></div>
+
+          {/* DESKTOP MENU */}
           <div className="hidden gap-8 text-sm text-white md:flex">
             <a href="/sv" className="border-b border-[#c8a063] pb-1">
               Hem
             </a>
 
-            <a href="/sv/regions" className="hover:text-white/70 transition">
+            <a href="/sv/regions" className="transition hover:text-white/70">
               Regioner
             </a>
 
-            <a href="/sv/services" className="hover:text-white/70 transition">
+            <a href="/sv/services" className="transition hover:text-white/70">
               Tjänster
             </a>
 
-            <a href="/sv/guides" className="hover:text-white/70 transition">
+            <a href="/sv/guides" className="transition hover:text-white/70">
               Guider
             </a>
 
-            <a href="/sv/about-us" className="hover:text-white/70 transition">
+            <a href="/sv/about-us" className="transition hover:text-white/70">
               Om oss
             </a>
 
-            <a href="/sv/contact" className="hover:text-white/70 transition">
+            <a href="/sv/contact" className="transition hover:text-white/70">
               Kontakt
             </a>
           </div>
 
-          <div className="flex items-center gap-3">
+          {/* DESKTOP RIGHT SIDE */}
+          <div className="hidden items-center gap-3 md:flex">
             <div className="flex items-center gap-2">
               <a
                 href="/"
@@ -241,6 +251,66 @@ export default function HemPage() {
               Boka ett introduktionssamtal
             </a>
           </div>
+
+          {/* MOBILE HAMBURGER MENU */}
+          <details className="relative md:hidden">
+            <summary
+              aria-label="Öppna meny"
+              className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-white/40 text-2xl text-white [&::-webkit-details-marker]:hidden"
+            >
+              ☰
+            </summary>
+
+            <div className="absolute right-0 mt-3 w-[280px] rounded-2xl bg-[#1e2a3a] p-6 text-white shadow-2xl">
+              <div className="flex flex-col gap-5 text-base">
+                <a href="/sv">Hem</a>
+                <a href="/sv/regions">Regioner</a>
+                <a href="/sv/services">Tjänster</a>
+                <a href="/sv/guides">Guider</a>
+                <a href="/sv/about-us">Om oss</a>
+                <a href="/sv/contact">Kontakt</a>
+              </div>
+
+              <div className="my-6 border-t border-white/20"></div>
+
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="/"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  EN
+                </a>
+
+                <a
+                  href="/nl"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  NL
+                </a>
+
+                <a
+                  href="/de"
+                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
+                >
+                  DE
+                </a>
+
+                <a
+                  href="/sv"
+                  className="rounded-full bg-[#c8a063] px-3 py-2 text-xs"
+                >
+                  SE
+                </a>
+              </div>
+
+              <a
+                href="/sv/contact"
+                className="mt-6 block rounded-full bg-[#c8a063] px-5 py-3 text-center text-sm font-medium text-white"
+              >
+                Boka ett introduktionssamtal
+              </a>
+            </div>
+          </details>
         </div>
       </nav>
 
@@ -714,15 +784,7 @@ export default function HemPage() {
                 </article>
               </div>
 
-              <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                Den oberoende besiktningsmannens dokumentgranskning är en inledande
-                jämförelse och ersätter inte juridisk due diligence eller formell
-                bekräftelse från berörda myndigheter. De tekniska och juridiska
-                kontrollerna utförs av oberoende yrkespersoner,
-                var och en ansvarig för sin egen rapport. Ytterligare
-                specialistutredning kan krävas. Ingen kontroll kan ge
-                absolut säkerhet.
-              </p>
+              
             </div>
           </div>
         </div>
