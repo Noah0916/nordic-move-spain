@@ -1,45 +1,38 @@
 export const metadata = {
   title:
-    "4-Day Buyer Discovery Trip Costa Blanca North | Buy Property in Spain",
+    "Buyer Discovery Trips & Private Property Tours Costa Blanca North | Nordic Move Spain",
   description:
-    "A 4-day Buyer Discovery Trip on the Costa Blanca North for serious buyers who want to buy property in Spain. With a private chauffeur, 5-star accommodation, Area Match Report, selected individual property viewings, area tours, lifestyle experiences and safe buying guidance.",
+    "Start with a personal Area Match, one-to-one consultation and a focused shortlist of up to 10 properties. We search across multiple agencies and our local network, including exclusive, off-market and pre-market opportunities, before you choose a private Buyer Tour or curated small-group Discovery Trip on the Costa Blanca North.",
   keywords: [
-    "4-day Buyer Discovery Trip Costa Blanca North",
-    "Buyer Discovery Trip Spain",
-    "buy property in Spain",
-    "buy a house in Spain",
-    "buy a home in Spain",
-    "buy property Costa Blanca North",
-    "buy house Costa Blanca North",
-    "buy villa Costa Blanca North",
+    "Buyer Discovery Trip Costa Blanca North",
+    "private property tour Costa Blanca",
+    "private buyer tour Spain",
+    "house hunting trip Spain",
     "property viewing trip Spain",
-    "property viewings Spain",
-    "individual property viewings Spain",
-    "property viewings Costa Blanca North",
-    "selected property viewings Spain",
-    "Area Match Report Spain",
-    "property buying guidance Spain",
-    "safe property purchase Spain",
-    "buy holiday home Spain",
-    "relocate to Spain",
-    "buy house Moraira",
+    "buy property Costa Blanca North",
+    "buy luxury villa Costa Blanca North",
     "buy villa Moraira",
-    "buy house Jávea",
-    "buy villa Jávea",
+    "buy villa Javea",
     "buy property Altea",
-    "buy house Benissa",
-    "buy apartment Calpe",
-    "buy property Dénia",
-    "safely buy a house in Spain",
+    "buy property Benissa",
+    "Area Match Report Spain",
+    "independent buyer representation Spain",
+    "buyer's agent Costa Blanca",
+    "property due diligence Spain",
+    "safe property purchase Spain",
+    "relocate to Costa Blanca",
+    "off market property Costa Blanca",
+    "exclusive property Costa Blanca",
+    "pre market property Costa Blanca",
   ],
   alternates: {
     canonical: "/en/buyer-discovery-trip-costa-blanca-north",
   },
   openGraph: {
     title:
-      "4-Day Buyer Discovery Trip Costa Blanca North | Buy Property in Spain",
+      "Buyer Discovery Trips & Private Property Tours Costa Blanca North | Nordic Move Spain",
     description:
-      "Discover in 4 days where you should buy property on the Costa Blanca North. With a private chauffeur, 5-star accommodation, Area Match Report, selected property viewings, experts, area tours and like-minded buyers.",
+      "From Area Match and a focused shortlist to broader market access, private viewings, small-group discovery trips, independent experts and safer buyer-side guidance on the Costa Blanca North.",
     type: "website",
     locale: "en_GB",
     images: [
@@ -47,7 +40,7 @@ export const metadata = {
         url: "/images/discover-card.png",
         width: 1200,
         height: 630,
-        alt: "4-day Buyer Discovery Trip Costa Blanca North for buying property in Spain",
+        alt: "Buyer Discovery Trip and private property tour on the Costa Blanca North",
       },
     ],
   },
@@ -57,48 +50,18 @@ export const metadata = {
   },
 };
 
-const buyerDiscoveryTripStructuredData = {
+const buyerDiscoveryStructuredData = {
   "@context": "https://schema.org",
-  "@type": "TouristTrip",
-  name: "4-Day Buyer Discovery Trip Costa Blanca North",
+  "@type": "Service",
+  name: "Buyer Discovery Trips and Private Buyer Tours Costa Blanca North",
   description:
-    "A fully organised 4-day property and lifestyle trip for international buyers who want to buy a house, villa, apartment or holiday home on the Costa Blanca North in Spain, including intake, Area Match Report and selected individual property viewings.",
-  touristType: [
-    "International buyers",
-    "British buyers",
-    "Scandinavian buyers",
-    "European buyers",
-    "Holiday home buyers",
-    "Buyers planning to relocate to Spain",
-  ],
-  itinerary: {
-    "@type": "ItemList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Day 1: Arrival, private transfer, intake and welcome moment",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Day 2: Area tour through Moraira, Benissa and Calpe with selected property viewings and lifestyle experiences",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Day 3: Jávea and Dénia with individual property viewings, lunch and local activities",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Day 4: Altea, expert meetings, buying process and next steps",
-      },
-    ],
+    "Buyer-side property discovery service for international buyers on the Costa Blanca North, including Area Match, personal consultation, a focused shortlist of up to 10 properties, broader market search across multiple agencies and local networks, private or small-group viewing trips, expert introductions and purchase support.",
+  provider: {
+    "@type": "Organization",
+    name: "Nordic Move Spain",
   },
   areaServed: [
     "Costa Blanca North",
-    "Costa Blanca Norte",
     "Moraira",
     "Jávea",
     "Javea",
@@ -108,6 +71,11 @@ const buyerDiscoveryTripStructuredData = {
     "Dénia",
     "Denia",
   ],
+  audience: {
+    "@type": "Audience",
+    audienceType:
+      "International property buyers, second-home buyers, relocating families and luxury villa buyers",
+  },
 };
 
 export default function BuyerDiscoveryTripPage() {
@@ -117,7 +85,7 @@ export default function BuyerDiscoveryTripPage() {
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buyerDiscoveryTripStructuredData),
+          __html: JSON.stringify(buyerDiscoveryStructuredData),
         }}
       />
 
@@ -126,29 +94,29 @@ export default function BuyerDiscoveryTripPage() {
         <section className="relative min-h-[90vh] overflow-hidden">
           <img
             src="/images/discover-card.png"
-            alt="4-day Buyer Discovery Trip Costa Blanca North for buyers who want to buy property in Spain"
+            alt="Private Buyer Tour and Buyer Discovery Trip on the Costa Blanca North"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10" />
 
           <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl items-center px-8 pt-24">
             <div className="max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                4-Day Buyer Discovery Trip Costa Blanca North
+                Private Buyer Tours & Small-Group Discovery Trips
               </p>
 
               <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white md:text-7xl">
-                Buying property in Spain? Discover in 4 days where you truly
-                want to live on the Costa Blanca North.
+                Find the right area first. Then view the homes that genuinely
+                fit your life in Spain.
               </h1>
 
               <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-                A fully organised property and lifestyle trip with a private
-                chauffeur, carefully matched like-minded buyers, 5-star
-                accommodation, Area Match Report, area tours, selected
-                individual property viewings and meetings with the specialists
-                who make a safe property purchase in Spain possible.
+                Start with your personal Area Match Report and a one-to-one
+                consultation. We then narrow the market to a focused shortlist
+                of up to 10 relevant properties, often supported by video tours,
+                before you choose a private Buyer Tour or a carefully curated
+                small-group Discovery Trip on the Costa Blanca North.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -156,7 +124,7 @@ export default function BuyerDiscoveryTripPage() {
                   href="/contact"
                   className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Apply for Your 4-Day Buyer Discovery Trip
+                  Discuss Your Buyer Journey
                 </a>
 
                 <a
@@ -176,292 +144,370 @@ export default function BuyerDiscoveryTripPage() {
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                  Clarity before you buy
+                  Clarity before viewings
                 </p>
 
                 <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                  Buying property in Spain should not start with random
-                  viewings. It should start with finding the right area.
+                  Buying property in Spain should not begin with random listings.
                 </h2>
               </div>
 
               <div className="text-lg leading-relaxed text-stone-600">
                 <p>
-                  If you want to buy a house on the Costa Blanca North, you need
-                  to look beyond beautiful photos, estate agent descriptions and
-                  individual property listings. You need to feel the right area,
-                  but you also need to see homes that genuinely match your
-                  budget, family situation, wishes, Area Match Report and the
-                  lifestyle you want to create in Spain.
+                  Beautiful photos and estate agent descriptions can make almost
+                  every property look attractive. But the right home only works
+                  when the location, daily lifestyle, practical needs, budget and
+                  long-term plans also fit.
                 </p>
 
                 <p className="mt-6">
-                  Our Buyer Discovery Trip is a carefully curated 4-day property
-                  and lifestyle experience on the Costa Blanca North. It has
-                  been created for British, European, Scandinavian and other
-                  international buyers who want to buy a house, villa, apartment,
-                  new-build property or holiday home in Spain with more clarity,
-                  better information and less risk.
+                  That is why Nordic Move Spain starts with you, not with a sales
+                  listing. We first help you understand which areas on the Costa
+                  Blanca North suit your life. Only after that do we narrow the
+                  property market to homes that make sense for your personal
+                  profile.
                 </p>
 
                 <p className="mt-6">
-                  This is not a standard viewing trip where you are driven from
-                  one property to the next without a clear strategy. It is a
-                  fully organised group experience with like-minded people, a
-                  private chauffeur, individual moments of privacy, selected
-                  property viewings, local lifestyle experiences and direct
-                  meetings with the experts you need to buy property in Spain in
-                  a safe and informed way.
+                  The result is a more focused buyer journey: fewer irrelevant
+                  viewings, clearer comparisons, better questions and more room
+                  for independent legal and technical checks before you commit.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SEO QUICK VALUE */}
+        {/* PROCESS */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              For serious property buyers
+              Your buyer journey
             </p>
 
             <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              The 4-day discovery trip for anyone who wants to buy property on
-              the Costa Blanca North.
+              From Area Match to a focused shortlist, then to the right viewing
+              experience.
             </h2>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Buy property in Spain",
-                "Buy property Costa Blanca North",
-                "Holiday home in Spain",
-                "Buy property with guidance",
-                "Selected property viewings",
-                "Area Match Report for buyers",
-                "Buy a villa in Moraira or Jávea",
-                "Buy an apartment in Calpe or Dénia",
-                "Understand the buying process in Spain",
-                "Meet like-minded buyers",
-              ].map((item) => (
-                <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
-                    {item}
+                {
+                  number: "01",
+                  title: "Personal Area Match",
+                  text: "We identify the Costa Blanca North areas that best fit your lifestyle, practical needs, priorities and plans.",
+                },
+                {
+                  number: "02",
+                  title: "One-to-one consultation",
+                  text: "We discuss your report in detail and refine your budget, property wishes, family situation, timing and long-term goals.",
+                },
+                {
+                  number: "03",
+                  title: "Shortlist of up to 10 homes",
+                  text: "We research a focused selection of properties that closely match your Area Match and personal brief, often with video tours where available.",
+                },
+                {
+                  number: "04",
+                  title: "Choose how you visit",
+                  text: "Continue with a private Buyer Tour or join a carefully matched small-group Discovery Trip with viewings, expert meetings and local experiences.",
+                },
+              ].map((step) => (
+                <div key={step.number} className="rounded-[28px] bg-[#f6f1ea] p-7">
+                  <p className="text-sm font-medium tracking-[0.2em] text-[#c8a063]">
+                    {step.number}
+                  </p>
+                  <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">
+                    {step.text}
                   </p>
                 </div>
               ))}
             </div>
-
-            <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              You receive a realistic understanding of the area and of homes
-              that are carefully pre-selected based on your intake, budget, Area
-              Match Report, property wishes and lifestyle. You do not simply see
-              houses. You see homes that fit the place where you may actually
-              want to live.
-            </p>
           </div>
         </section>
 
-        {/* FIRST WE GET TO KNOW YOU */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              First, we get to know you
-            </p>
-
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Your trip starts with your lifestyle, not with property listings.
-            </h2>
-
-            <div className="mt-10 grid gap-10 lg:grid-cols-2">
-              <div className="text-lg leading-relaxed text-stone-600">
-                <p>
-                  Before arrival, we begin with your complimentary Area Match
-                  Report and a personal intake call. We go through your goals,
-                  budget, family situation, daily routines, interests, desired
-                  lifestyle, relocation plans, safety concerns and long-term
-                  priorities.
-                </p>
-
-                <p className="mt-6">
-                  Only when we understand your profile do we create your
-                  programme. This allows us to focus on the areas and properties
-                  that genuinely fit your life, instead of spending time on
-                  places that look attractive online but do not work in practice.
-                </p>
-
-                <p className="mt-6">
-                  The intake also helps us decide which local experts,
-                  international residents, entrepreneurs or other buyers may be
-                  relevant for you. Where useful, we prepare these introductions
-                  in advance, so every meeting has a clear purpose.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-[#f6f1ea] p-8">
-                <p className="text-lg leading-relaxed text-stone-700">
-                  Are you looking for a quiet villa near Moraira? A more social
-                  life in Jávea? An elegant setting near Altea? More space and
-                  authenticity around Benissa? Seafront apartments and new-build
-                  properties in Calpe? Or a lively year-round town with services
-                  such as Dénia?
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SELECTED PROPERTY VIEWINGS */}
+        {/* AREA MATCH + SHORTLIST */}
         <section className="px-8 pb-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Selected individual property viewings
+                Area Match first
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                View properties that match your intake, your area and the
-                lifestyle you want.
+                First we understand where you should live. Then we focus on the
+                homes that fit.
               </h2>
             </div>
 
             <div className="rounded-[40px] bg-white p-10 shadow-sm">
               <p className="text-lg leading-relaxed text-stone-600">
-                During the four days, you do not only experience the regions. You
-                also have the opportunity to view a carefully selected number of
-                properties that fit your personal profile. These viewings are not
-                chosen at random. They are selected based on your intake, Area
-                Match Report, budget, family situation, preferred surroundings,
-                property type and lifestyle.
+                Your journey begins with your complimentary personal Area Match
+                Report. We then schedule a one-to-one conversation to go through
+                the report together and sharpen the brief around your budget,
+                preferred property type, family situation, daily routines,
+                accessibility, schools or healthcare, social life, privacy,
+                relocation plans and long-term priorities.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                This may include a villa in Moraira, a sea-view home in Jávea, an
-                elegant property near Altea, a finca or spacious home in Benissa,
-                an apartment or new-build property in Calpe, or a home in Dénia
-                for buyers who prefer more year-round town life and services.
+                Based on that conversation and your Area Match profile, we
+                research and prepare a focused shortlist of up to 10 properties
+                that closely match your priorities. Where available, we also use
+                video tours or additional video material so you can assess homes
+                before travelling to Spain.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                The goal is not to show as many properties as possible. The goal
-                is to show the right properties. You should be able to compare
-                feeling, location, build quality, accessibility, future value,
-                practical risks and daily life around the home before taking the
-                next step.
+                The purpose is not to send you endless listings. It is to reduce
+                hundreds of possibilities to a small number of realistic homes
+                that fit both the property you want and the location and lifestyle
+                identified in your Area Match Report.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
-                  "Properties matched with your intake",
-                  "Selection based on the Area Match Report",
-                  "Viewings linked to the right area",
-                  "Focus on budget and long-term suitability",
-                  "Comparison of property types and locations",
-                  "Honest guidance about risks and opportunities",
+                  "Up to 10 focused property options",
+                  "Selection linked to your Area Match",
+                  "Personal review of your wishes and report",
+                  "Video tours where available",
+                  "Budget and long-term suitability considered",
+                  "No pressure to view irrelevant listings",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                     <p className="font-medium text-[#1e2a3a]">{item}</p>
                   </div>
                 ))}
               </div>
-
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                This helps you move from simply searching online to understanding
-                which homes genuinely fit you. It makes the buying journey safer,
-                more efficient and far more realistic.
-              </p>
             </div>
           </div>
         </section>
 
-        {/* LIKE-MINDED PEOPLE */}
+        {/* PRIVATE VS GROUP */}
         <section className="px-8 pb-28">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-5xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Travel with like-minded people
+                Choose the experience that suits you
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Meet people who are in the same stage of the journey as you.
+                Continue privately or discover the area with carefully matched
+                like-minded buyers.
               </h2>
             </div>
 
-            <div className="text-lg leading-relaxed text-stone-600">
-              <p>
-                The Buyer Discovery Trip is organised as a carefully curated
-                small-group experience. You travel with people who match your
-                interests, stage of life and plans for Spain.
-              </p>
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="rounded-[40px] bg-white p-10 shadow-sm">
+                <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                  Private Buyer Tour
+                </p>
+                <h3 className="mt-4 font-serif text-4xl text-[#1e2a3a]">
+                  A fully personal property and area visit built around your
+                  shortlist.
+                </h3>
 
-              <p className="mt-6">
-                We bring you together with buyers who have similar goals, pace,
-                lifestyle and expectations. Some groups are more international.
-                Other groups bring together British, Scandinavian, Northern
-                European or English-speaking buyers who value cultural and
-                language familiarity.
-              </p>
+                <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                  Your route, viewings and schedule are organised around your
+                  personal brief. We can help coordinate local transport,
+                  transfers and suitable accommodation so your time in Spain is
+                  focused on the places and properties that matter to you.
+                </p>
 
-              <p className="mt-6">
-                We support British, Irish, Dutch, Belgian, German, Swiss,
-                Scandinavian and other international buyers who are exploring a
-                future on the Costa Blanca North.
-              </p>
+                <p className="mt-5 text-lg leading-relaxed text-stone-600">
+                  Depending on your stage in the buying process, we can also
+                  arrange meetings with relevant independent professionals such
+                  as a property lawyer, mortgage specialist and building surveyor
+                  or technical advisor.
+                </p>
 
-              <p className="mt-6">
-                For many clients, the connections with other participants become
-                one of the most valuable parts of the trip. A shared lunch, a
-                local activity or an honest conversation can become the start of
-                new friendships, useful contacts and a stronger sense of safety
-                before you have even moved to Spain.
-              </p>
+                <p className="mt-5 text-lg leading-relaxed text-stone-600">
+                  A private tour is ideal if you want maximum flexibility,
+                  privacy and a programme tailored entirely to your own buying
+                  criteria and pace.
+                </p>
+              </div>
+
+              <div className="rounded-[40px] bg-[#1e2a3a] p-10 text-white">
+                <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                  Small-Group Discovery Trip
+                </p>
+                <h3 className="mt-4 font-serif text-4xl">
+                  Explore property and lifestyle with buyers in a similar stage
+                  of the journey.
+                </h3>
+
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  Our group trips bring together carefully matched buyers with
+                  similar plans, expectations or interests. You still see
+                  relevant properties and have time for personal questions, but
+                  you also share selected area visits, meals and experiences with
+                  people who are considering a similar future in Spain.
+                </p>
+
+                <p className="mt-5 text-lg leading-relaxed text-white/80">
+                  The lifestyle experiences are discussed in advance and shaped
+                  around the interests of the participants. Depending on the
+                  group, this could include a yacht trip, making local olive oil,
+                  gastronomy, nature, golf, wellness, cultural visits or another
+                  local experience that helps you understand the area beyond the
+                  property market.
+                </p>
+
+                <p className="mt-5 text-lg leading-relaxed text-white/80">
+                  The aim is not entertainment for its own sake. It is to help
+                  you feel what everyday life, community and leisure could really
+                  look like before you choose where to buy.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ARRIVAL */}
+        {/* BUYER SIDE */}
         <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              From arrival, everything is arranged
+              On the buyer&apos;s side
             </p>
 
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight">
-              You arrive, we take care of the details.
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Our role is to help you make the right decision, not to sell you a
+              particular property.
             </h2>
 
-            <div className="mt-10 grid gap-8 md:grid-cols-3">
-              <div>
-                <h3 className="font-serif text-3xl">Private airport transfer</h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  You arrive at Alicante Airport, where your private transfer
-                  takes you comfortably to your hotel, resort or finca.
+            <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="space-y-6 text-lg leading-relaxed text-stone-600">
+                <p>
+                  Nordic Move Spain works on the buyer&apos;s side. We do not rely
+                  on a seller paying us a sales commission to steer you towards a
+                  particular home. That allows our focus to remain on whether a
+                  property genuinely suits you and whether the important risks
+                  have been properly investigated before you proceed.
+                </p>
+
+                <p>
+                  If an area does not fit your profile, we will say so. If a
+                  property raises practical, technical, legal or lifestyle
+                  concerns, the right response may be to investigate further,
+                  renegotiate or walk away.
+                </p>
+
+                <p>
+                  When you become seriously interested in a property, the formal
+                  legal and technical investigations are carried out by
+                  independent professionals such as your property lawyer and
+                  building surveyor. Each professional remains responsible for
+                  their own advice, checks and reporting.
+                </p>
+
+                <p>
+                  We help coordinate that process, make sure the relevant people
+                  are connected and help you understand the next steps. Our
+                  independence means there is no seller-side incentive for us to
+                  minimise concerns simply to get a sale completed.
                 </p>
               </div>
 
-              <div>
-                <h3 className="font-serif text-3xl">
-                  Your own 5-star accommodation
+              <div className="rounded-[32px] bg-white/80 p-8">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  What this means in practice
                 </h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  You stay in a carefully selected 5-star hotel, luxury suite,
-                  boutique resort or finca. When you want peace and privacy, you
-                  can retreat to your own private environment.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-serif text-3xl">Personal welcome</h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  During a relaxed welcome moment, we go through your goals,
-                  answer your first questions and explain the programme for the
-                  next four days.
-                </p>
+                <div className="mt-6 space-y-4">
+                  {[
+                    "No pressure to buy a specific property",
+                    "Independent lawyer for legal due diligence",
+                    "Independent surveyor or technical advisor for building checks",
+                    "Clear separation between sales and professional investigations",
+                    "Space to investigate concerns before committing",
+                    "Support to proceed, renegotiate or walk away",
+                  ].map((item) => (
+                    <div key={item} className="rounded-2xl bg-white p-5">
+                      <p className="font-medium text-[#1e2a3a]">{item}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* REAL REGIONS */}
+
+
+        {/* BROADER MARKET ACCESS */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Broader access to the market
+            </p>
+
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              We represent the buyer, not the property.
+            </h2>
+
+            <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="space-y-6 text-lg leading-relaxed text-stone-600">
+                <p>
+                  Because Nordic Move Spain is not paid by the seller or selling
+                  agent to promote a particular home, we are not tied to one estate
+                  agency, one portfolio or one developer. We start with your brief
+                  and search for the property that fits you, rather than starting
+                  with a property that someone needs to sell.
+                </p>
+
+                <p>
+                  After your Area Match Report and personal consultation, we can
+                  approach estate agents, developers and property professionals
+                  across the Costa Blanca North on your behalf. This gives us a
+                  broader view of the market and lets us compare opportunities
+                  across multiple agencies instead of limiting your search to one
+                  agent&apos;s listings.
+                </p>
+
+                <p>
+                  Our local network also gives us access to exclusive listings,
+                  off-market opportunities and properties that may be shared with us
+                  before they are advertised publicly. Agents and local contacts can
+                  contact us directly when they know we represent a serious buyer
+                  with a clear search profile.
+                </p>
+
+                <p>
+                  This does not mean every suitable property will be off-market or
+                  exclusive. It means we can search more widely, ask the market
+                  proactively and bring together public listings and opportunities
+                  from our network into one focused search for you.
+                </p>
+              </div>
+
+              <div className="rounded-[32px] bg-[#f6f1ea] p-8">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  What broader access can mean for you
+                </h3>
+
+                <div className="mt-6 space-y-4">
+                  {[
+                    "Search across multiple estate agencies",
+                    "Exclusive listings through our network",
+                    "Off-market and pre-market opportunities",
+                    "Direct contact when suitable homes become available",
+                    "One buyer brief used across the wider market",
+                    "No need to depend on one selling agent's portfolio",
+                  ].map((item) => (
+                    <div key={item} className="rounded-2xl bg-white p-5">
+                      <p className="font-medium text-[#1e2a3a]">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* REGIONS */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
@@ -470,74 +516,55 @@ export default function BuyerDiscoveryTripPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                We show you more than the best-known tourist areas.
+                Compare how the areas actually feel in daily life.
               </h2>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                During the Buyer Discovery Trip, you experience the regions from
-                a real-life perspective. We visit places that matter for your
-                future lifestyle, not only the places that look good in a
-                brochure.
+                A property can be changed. Its location cannot. We help you
+                compare atmosphere, accessibility, schools, healthcare, daily
+                services, social life, restaurants, sports, international
+                community, property types, travel times and long-term practical
+                suitability.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Moraira</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Calm and elegant coastal living with villas, coves and an
-                  exclusive yet relaxed residential atmosphere.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Jávea</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  A lively international lifestyle with beaches, restaurants,
-                  sport, schools and year-round activity.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Altea</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Culture, beauty, sea views and Mediterranean character in a
-                  more artistic and sophisticated setting.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Benissa</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Space, privacy, authenticity, countryside living and hidden
-                  coves along the coast.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Calpe</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Beachfront living, marina life, apartments, new developments
-                  and a more active atmosphere.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Dénia</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Gastronomy, harbour life, daily services and a lively town that
-                  works very well all year round.
-                </p>
-              </div>
+              {[
+                {
+                  name: "Moraira",
+                  text: "Calm and elegant coastal living with villas, coves and an exclusive yet relaxed residential atmosphere.",
+                },
+                {
+                  name: "Jávea",
+                  text: "A lively international lifestyle with beaches, restaurants, sport, schools and year-round activity.",
+                },
+                {
+                  name: "Altea",
+                  text: "Culture, beauty, sea views and Mediterranean character in a more artistic and sophisticated setting.",
+                },
+                {
+                  name: "Benissa",
+                  text: "Space, privacy, authenticity, countryside living and hidden coves along the coast.",
+                },
+                {
+                  name: "Calpe",
+                  text: "Beachfront living, marina life, apartments, new developments and a more active atmosphere.",
+                },
+                {
+                  name: "Dénia",
+                  text: "Gastronomy, harbour life, daily services and a lively town that works very well all year round.",
+                },
+              ].map((region) => (
+                <div key={region.name} className="rounded-[32px] bg-white p-8 shadow-sm">
+                  <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                    {region.name}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">
+                    {region.text}
+                  </p>
+                </div>
+              ))}
             </div>
-
-            <p className="mt-12 max-w-4xl text-lg leading-relaxed text-stone-600">
-              We help you understand the differences between the areas:
-              atmosphere, property types, schools, healthcare, driving
-              distances, international community, restaurants, sports
-              facilities, daily services, rental potential, build quality and
-              long-term practical suitability.
-            </p>
           </div>
         </section>
 
@@ -546,32 +573,33 @@ export default function BuyerDiscoveryTripPage() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Meet the experts you need before buying
+                Meet the professionals you may need
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Get answers before you make big decisions.
+                Understand the legal, technical and financial process before you
+                make a major commitment.
               </h2>
             </div>
 
             <div className="rounded-[40px] bg-white p-10 shadow-sm">
               <p className="text-lg leading-relaxed text-stone-600">
-                During your Buyer Discovery Trip, we introduce you to trusted
-                independent specialists and local contacts who help you
-                understand the practical, legal and financial steps before you
-                buy property in Spain.
+                During a private Buyer Tour or group Discovery Trip, we can
+                arrange introductions to relevant independent professionals and
+                local contacts. The exact meetings depend on your plans and stage
+                in the buying process.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
                   "Independent property lawyer",
-                  "Spanish notary",
+                  "Building surveyor or technical advisor",
                   "Mortgage specialist",
                   "Banking contact",
                   "Insurance specialist",
-                  "Building surveyor or technical advisor",
-                  "Local property expert",
-                  "Relocation support where relevant",
+                  "Notary or notarial process guidance where relevant",
+                  "Relocation contacts",
+                  "Other specialists relevant to the property",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                     <p className="font-medium text-[#1e2a3a]">{item}</p>
@@ -580,60 +608,13 @@ export default function BuyerDiscoveryTripPage() {
               </div>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                These meetings are designed to give you greater certainty around
-                the legal process, mortgage options, banking requirements,
-                insurance, purchase costs, annual ownership costs,
-                documentation, building checks and common mistakes international
-                buyers should avoid.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                You can ask your questions directly, understand who is
-                responsible for what and leave the trip with a much clearer view
-                of how a safe property purchase in Spain actually works.
+                These professionals remain independent and responsible for their
+                own advice and reports. Nordic Move Spain coordinates and supports
+                the buyer journey; we do not replace legal advice, a formal
+                survey, valuation, mortgage advice or other regulated professional
+                services.
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* SAFETY */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              More confidence at every step
-            </p>
-
-            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              For international buyers, buying in Spain is not only about
-              emotion. It is also about safety, control and the right advice.
-            </h2>
-
-            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                "Clearer understanding of legal steps",
-                "Insight into taxes and purchase costs",
-                "Introduction to an independent lawyer",
-                "Opportunity to discuss building questions",
-                "Information about finance and bank requirements",
-                "Better control over risks before buying",
-                "Honest guidance about areas and property types",
-                "Support for the next step after the trip",
-                "A safer decision before moving forward",
-              ].map((item) => (
-                <div key={item} className="rounded-2xl bg-white/80 p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              We do not promise that every property is right. On the contrary,
-              we help you see what fits, what does not fit and which questions
-              must be checked before you make an offer. That is exactly where
-              confidence begins.
-            </p>
           </div>
         </section>
 
@@ -645,29 +626,26 @@ export default function BuyerDiscoveryTripPage() {
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              A home is only one part of the decision.
+              The right home should also fit the life you want around it.
             </h2>
 
             <p className="mt-8 max-w-4xl text-lg leading-relaxed text-stone-600">
-              You also need to understand how your life could feel here. That is
-              why the Buyer Discovery Trip includes lifestyle experiences that
-              match your interests and the area you are exploring.
+              On group trips, local experiences are discussed with participants
+              in advance and chosen to reflect the interests of the group. On a
+              private tour, we can shape the programme around your own interests
+              and the areas you want to understand more deeply.
             </p>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Local lunches and fine dining",
-                "Wine tastings",
-                "Golf clubs and golf tour",
-                "Beach clubs",
-                "Marinas and yacht clubs",
+                "Yacht or marina experience",
+                "Olive oil making or local producer visit",
+                "Local lunches and gastronomy",
+                "Wine or food tasting",
+                "Golf and sports clubs",
                 "Wellness and spa",
-                "Hiking and nature routes",
-                "Cultural visits",
-                "Cooking workshop or pasta making",
-                "Business or networking introductions",
-                "Local gatherings",
-                "Activities with like-minded future residents",
+                "Hiking and nature",
+                "Cultural and local experiences",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium text-[#1e2a3a]">{item}</p>
@@ -676,90 +654,45 @@ export default function BuyerDiscoveryTripPage() {
             </div>
 
             <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Do you want to join shared lunches, explore neighbourhoods and
-              feel what life is really like? Then you join the group. Do you want
-              a quiet moment and privacy? Then you can retreat to your own
-              5-star hotel, suite or finca without losing the structure of the
-              trip.
+              These experiences are not fixed for every trip. They are selected
+              in advance based on the participants&apos; wishes, practical timing
+              and what will best help you understand the character of the area.
             </p>
           </div>
         </section>
 
-        {/* WHAT WE DO */}
+        {/* WHAT WE CAN COORDINATE */}
         <section className="px-8 pb-28">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                What we do for you
-              </p>
-
-              <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                We guide, coordinate and help you make a better decision.
-              </h2>
-            </div>
-
-            <div className="text-lg leading-relaxed text-stone-600">
-              <p>
-                We coordinate the entire experience, guide you through the
-                different areas, select relevant property viewings and introduce
-                you to trusted independent specialists. This allows you to make
-                better-informed decisions before buying property in Spain.
-              </p>
-
-              <p className="mt-6">
-                We help you compare areas, understand practical differences, ask
-                the right questions, assess properties more calmly and avoid
-                common mistakes.
-              </p>
-
-              <p className="mt-6">
-                Our role is not to pressure you into buying. Our role is to help
-                you choose the right area, the right property type and the right
-                next step.
-              </p>
-
-              <p className="mt-6">
-                If an area does not fit your profile, we will say so. If a
-                property or property type may create legal, practical, technical
-                or lifestyle concerns, we help you understand that before you
-                commit.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* INCLUDED */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              What is included
+              A coordinated buyer experience
             </p>
 
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Your 4-day Buyer Discovery Trip includes what you need for a
-              clearer and safer first decision.
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
+              We help connect the practical pieces so you can focus on the
+              decision.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                "Complimentary personal intake call before arrival",
-                "Personal lifestyle and area profile",
-                "Area Match Report for Costa Blanca North",
-                "Fully organised 4-day programme",
-                "Private chauffeur and transfer from Alicante",
-                "Accommodation in a selected 5-star hotel, resort, suite or finca",
-                "Guided area visits across Costa Blanca North",
-                "Selected individual property viewings",
-                "Properties matched with budget, area and lifestyle",
-                "Introductions to legal, banking, mortgage and insurance contacts",
-                "Meeting with a building surveyor or technical advisor where relevant",
-                "Lifestyle experiences tailored to your interests",
-                "Carefully matched small group with like-minded buyers",
-                "Time for personal questions and decision support",
-                "Clear next steps after the trip",
+                "Personal Area Match Report",
+                "One-to-one consultation",
+                "Focused shortlist of up to 10 properties",
+                "Video tours where available",
+                "Private property viewing itinerary",
+                "Small-group Buyer Discovery Trip",
+                "Help coordinating transport and transfers",
+                "Help selecting suitable accommodation",
+                "Area and neighbourhood visits",
+                "Independent lawyer introduction",
+                "Mortgage and banking introduction",
+                "Building surveyor or technical advisor introduction",
+                "Lifestyle experiences matched to your interests",
+                "Support comparing properties and locations",
+                "Clear next steps after the visit",
               ].map((item) => (
-                <div key={item} className="rounded-2xl bg-white/80 p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
+                <div key={item} className="rounded-2xl bg-white/10 p-5">
+                  <p className="text-sm font-medium leading-relaxed text-white/90">
                     {item}
                   </p>
                 </div>
@@ -768,31 +701,29 @@ export default function BuyerDiscoveryTripPage() {
           </div>
         </section>
 
-        {/* AFTER THE TRIP */}
+        {/* AFTER VISIT */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                What you know after the trip
+                After your tour
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                You do not leave with vague impressions. You leave with clarity.
+                You should leave with clarity, not with more confusion.
               </h2>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
-                "Which areas on the Costa Blanca North fit your lifestyle",
-                "Which areas are less suitable for you",
-                "Which property type fits your budget and goals",
-                "Which properties feel realistic after real viewings",
-                "How the buying process in Spain works",
-                "Which legal and financial questions need to be checked",
-                "What daily life after purchase could look like",
-                "Which experts can support you",
-                "What type of community you could become part of",
-                "Whether you are ready for the next step",
+                "Which Costa Blanca North areas genuinely fit your lifestyle",
+                "Which areas or property types are less suitable for you",
+                "Which shortlisted homes remain realistic after real viewings",
+                "Which practical, legal or technical questions still need investigation",
+                "Who should carry out the next professional checks",
+                "What the expected buying process and next steps look like",
+                "Whether you are ready to proceed, keep searching or reconsider",
+                "How Nordic Move Spain can support purchase, relocation and move-in after you decide",
               ].map((item) => (
                 <div key={item} className="rounded-[28px] bg-white p-7 shadow-sm">
                   <p className="text-lg leading-relaxed text-stone-600">{item}</p>
@@ -806,25 +737,25 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Is this trip right for you?
+              Is this right for you?
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Perfect for serious buyers who want to understand the Costa Blanca
-              North before choosing a property.
+              Designed for serious international buyers who want better clarity
+              before committing to a property in Spain.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                "British, European and international buyers exploring Costa Blanca North",
-                "International buyers who want to buy property in Spain",
-                "Families considering a move to Spain",
+                "Luxury villa and second-home buyers",
+                "Families considering relocation to Spain",
                 "Retirees planning a new lifestyle",
-                "Entrepreneurs and remote workers",
-                "Holiday home and second-home buyers",
+                "Entrepreneurs and remote professionals",
                 "Buyers comparing Moraira, Jávea, Altea, Benissa, Calpe and Dénia",
-                "Clients who want safe guidance before serious viewings begin",
-                "People who want to meet like-minded future residents before moving",
+                "Buyers who want independent guidance before making an offer",
+                "People who value a private, focused viewing experience",
+                "People who enjoy discovering an area with like-minded future residents",
+                "International buyers who want legal and technical checks taken seriously",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
@@ -832,46 +763,6 @@ export default function BuyerDiscoveryTripPage() {
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SEO TEXT */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Buy a house, villa or apartment in Spain
-            </p>
-
-            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              A safer route for buyers who want to purchase property on the
-              Costa Blanca North.
-            </h2>
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-              <p>
-                Many international buyers start by searching for "buy property
-                in Spain", "villa for sale Moraira", "apartment Calpe",
-                "property Jávea" or "holiday home Costa Blanca". That is a
-                natural starting point, but it rarely gives enough clarity for a
-                safe buying decision.
-              </p>
-
-              <p>
-                Our 4-day Buyer Discovery Trip helps you move from online
-                searches and dream images to a concrete understanding of areas,
-                properties, legal steps, finance, daily life and risks. You see
-                selected properties, experience the areas and speak with
-                specialists before deciding how you want to move forward.
-              </p>
-
-              <p>
-                The trip is especially relevant if you are considering buying a
-                house in Moraira, a villa in Jávea, a property in Altea, a finca
-                in Benissa, an apartment in Calpe or a home in Dénia. Each place
-                has its own atmosphere, practical advantages and limitations. We
-                help you see the difference before you buy.
-              </p>
             </div>
           </div>
         </section>
@@ -885,43 +776,57 @@ export default function BuyerDiscoveryTripPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Questions about buying property in Spain and our Buyer Discovery
-                Trip.
+                Questions about private Buyer Tours, group Discovery Trips and
+                buying on the Costa Blanca North.
               </h2>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  question:
-                    "Is the Buyer Discovery Trip a standard property viewing trip in Spain?",
+                  question: "Do I start with property listings?",
                   answer:
-                    "No. It is a 4-day property and lifestyle trip where you experience the areas, meet relevant experts and view carefully selected properties that match your intake, Area Match Report, budget and lifestyle.",
+                    "No. We start with your personal Area Match Report and a one-to-one consultation. Only then do we research a focused shortlist of up to 10 properties that match your area, budget, property wishes and lifestyle.",
                 },
                 {
-                  question: "Will I view properties during the trip?",
+                  question: "Do you provide video tours before I travel?",
                   answer:
-                    "Yes. You will see a selective number of properties that match your needs, preferred area, budget and future lifestyle. The focus is on quality and relevance, not on showing as many properties as possible.",
+                    "Where suitable video material is available, we use it to help you assess shortlisted properties before travelling. The aim is to reduce unnecessary viewings and make your visit more focused.",
                 },
                 {
-                  question: "Is the trip private or in a group?",
+                  question: "Can I choose a private tour instead of a group trip?",
                   answer:
-                    "The trip is organised as a carefully curated small-group experience with like-minded buyers. You have your own privacy, your own accommodation and individual breaks, but the experience itself is built around a matched group.",
+                    "Yes. You can choose a private Buyer Tour organised around your own shortlist and schedule, or join a carefully matched small-group Discovery Trip with shared area visits and lifestyle experiences.",
                 },
                 {
-                  question: "Which areas do we visit on the Costa Blanca North?",
+                  question: "What happens on a small-group Discovery Trip?",
                   answer:
-                    "Depending on your profile, the programme may include Moraira, Jávea, Altea, Benissa, Calpe, Dénia and relevant surrounding areas.",
+                    "You combine relevant property viewings and area discovery with selected expert meetings and local experiences. Activities are discussed in advance and chosen to match the interests of the participants.",
                 },
                 {
-                  question: "Is the trip suitable for international buyers?",
+                  question: "Can you help with transport and accommodation?",
                   answer:
-                    "Yes. The trip is highly relevant for British, European, Scandinavian and other international buyers who want to buy property in Spain but first want to understand the area, process, safety, costs and risks.",
+                    "Yes. Depending on the tour, we can help coordinate local transport, transfers and suitable accommodation so the practical side of your visit supports the viewing programme.",
                 },
                 {
-                  question: "Do you also help with legal and financial questions?",
+                  question: "Do you receive commission from the seller?",
                   answer:
-                    "We introduce you to an independent lawyer, mortgage specialist, banking contact, insurance specialist and, where relevant, a building surveyor or technical advisor, so you can ask the right questions before buying.",
+                    "Nordic Move Spain works on the buyer's side and does not rely on a seller paying us a sales commission to steer you towards a particular property. Our role is to help you assess what fits and coordinate the next independent checks where needed.",
+                },
+                {
+                  question: "Are you limited to one estate agent's listings?",
+                  answer:
+                    "No. Because our search is buyer-led rather than tied to a seller's portfolio, we can approach multiple estate agents, developers and local contacts. Our network can also give us access to exclusive listings, off-market opportunities and properties shared before public launch, although availability always depends on what is on the market at the time.",
+                },
+                {
+                  question: "Who performs the legal and technical checks?",
+                  answer:
+                    "Formal legal due diligence is carried out by an independent property lawyer, while building inspections or technical investigations are carried out by an independent surveyor or technical professional. Each specialist is responsible for their own advice and report.",
+                },
+                {
+                  question: "What if a property does not pass the checks?",
+                  answer:
+                    "The purpose of independent checks is to understand risk before you commit. Depending on the findings, the right next step may be further investigation, renegotiation or deciding not to proceed.",
                 },
               ].map((item) => (
                 <div key={item.question} className="rounded-[28px] bg-white p-8 shadow-sm">
@@ -941,29 +846,25 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-32">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Apply for your Buyer Discovery Trip
+              Start with your Area Match
             </p>
 
             <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-              When you are seriously considering buying property in Spain, the
-              most important decision is not only the house.
+              The best property search starts with knowing where your life in
+              Spain should actually work.
             </h2>
 
             <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-              It is about the right area, the right lifestyle, the right property
-              and the right safety around you.
-            </p>
-
-            <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/75">
-              Apply for your 4-day Buyer Discovery Trip and discover whether the
-              Costa Blanca North truly fits your future in Spain.
+              Begin with your personal Area Match Report. Then we refine your
+              brief, create a focused shortlist and help you choose the private
+              or group viewing experience that fits you best.
             </p>
 
             <a
               href="/contact"
               className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Apply for Your 4-Day Buyer Discovery Trip
+              Discuss Your Buyer Journey
             </a>
           </div>
         </section>

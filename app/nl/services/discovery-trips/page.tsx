@@ -1,45 +1,38 @@
 export const metadata = {
   title:
-    "4-daagse Buyer Discovery Trip Costa Blanca Noord | Woning kopen in Spanje",
+    "Buyer Discovery Trips & Privé Bezichtigingstours Costa Blanca Noord | Nordic Move Spain",
   description:
-    "Een 4-daagse Buyer Discovery Trip aan de Costa Blanca Noord voor serieuze kopers die een woning in Spanje willen kopen. Met privéchauffeur, verblijf in een 4- of 5-sterrenhotel of luxe finca, Area Match Report, geselecteerde individuele woningbezichtigingen, regiotours, lifestyle-ervaringen en begeleiding voor een veilige aankoop.",
+    "Start met een persoonlijke Area Match, een één-op-één gesprek en een gerichte selectie van maximaal 10 woningen. We zoeken via meerdere makelaars en ons lokale netwerk, inclusief exclusieve, off-market en pre-market mogelijkheden, voordat je kiest voor een Private Buyer Tour of een zorgvuldig samengestelde Discovery Trip in kleine groep aan de Costa Blanca Noord.",
   keywords: [
-    "4-daagse Buyer Discovery Trip Costa Blanca Noord",
-    "Buyer Discovery Trip Spanje",
-    "woning kopen in Spanje",
-    "huis kopen in Spanje",
-    "woning kopen in Spanje",
-    "woning kopen Costa Blanca Noord",
-    "huis kopen Costa Blanca Noord",
-    "villa kopen Costa Blanca Noord",
+    "Buyer Discovery Trip Costa Blanca Noord",
+    "privé bezichtigingstour Costa Blanca",
+    "private buyer tour Spanje",
+    "woningzoekreis Spanje",
     "bezichtigingsreis Spanje",
-    "woningbezichtigingen Spanje",
-    "individuele woningbezichtigingen Spanje",
-    "woningbezichtigingen Costa Blanca Noord",
-    "geselecteerde woningbezichtigingen Spanje",
-    "Area Match Report Spanje",
-    "aankoopbegeleiding woning Spanje",
-    "veilig woning kopen Spanje",
-    "vakantiewoning kopen Spanje",
-    "verhuizen naar Spanje",
-    "huis kopen Moraira",
+    "woning kopen Costa Blanca Noord",
+    "luxe villa kopen Costa Blanca Noord",
     "villa kopen Moraira",
-    "huis kopen Jávea",
     "villa kopen Jávea",
     "woning kopen Altea",
-    "huis kopen Benissa",
-    "appartement kopen Calpe",
-    "woning kopen Dénia",
-    "veilig een huis kopen in Spanje",
+    "woning kopen Benissa",
+    "Area Match Report Spanje",
+    "onafhankelijke aankoopbegeleiding Spanje",
+    "aankoopmakelaar Costa Blanca",
+    "vastgoed due diligence Spanje",
+    "veilig woning kopen Spanje",
+    "verhuizen naar Costa Blanca",
+    "off market vastgoed Costa Blanca",
+    "exclusief vastgoed Costa Blanca",
+    "pre market vastgoed Costa Blanca",
   ],
   alternates: {
     canonical: "/nl/buyer-discovery-trip-costa-blanca-north",
   },
   openGraph: {
     title:
-      "4-daagse Buyer Discovery Trip Costa Blanca Noord | Woning kopen in Spanje",
+      "Buyer Discovery Trips & Privé Bezichtigingstours Costa Blanca Noord | Nordic Move Spain",
     description:
-      "Ontdek in 4 dagen waar u aan de Costa Blanca Noord een woning wilt kopen. Met privéchauffeur, verblijf in een 4- of 5-sterrenhotel of luxe finca, Area Match Report, geselecteerde bezichtigingen, experts, regiotours en gelijkgestemde kopers.",
+      "Van Area Match en een gerichte selectie tot breder marktbereik, privébezichtigingen, Discovery Trips in kleine groepen, onafhankelijke experts en veilige aankoopbegeleiding aan de Costa Blanca Noord.",
     type: "website",
     locale: "nl_NL",
     images: [
@@ -47,7 +40,7 @@ export const metadata = {
         url: "/images/discover-card.png",
         width: 1200,
         height: 630,
-        alt: "4-daagse Buyer Discovery Trip Costa Blanca Noord voor het kopen van een woning in Spanje",
+        alt: "Buyer Discovery Trip en privé bezichtigingstour aan de Costa Blanca Noord",
       },
     ],
   },
@@ -57,48 +50,18 @@ export const metadata = {
   },
 };
 
-const buyerDiscoveryTripStructuredData = {
+const buyerDiscoveryStructuredData = {
   "@context": "https://schema.org",
-  "@type": "TouristTrip",
-  name: "4-daagse Buyer Discovery Trip Costa Blanca Noord",
+  "@type": "Service",
+  name: "Buyer Discovery Trips en Private Buyer Tours Costa Blanca Noord",
   description:
-    "Een volledig georganiseerde 4-daagse woning- en lifestylereis voor internationale kopers die een huis, villa, appartement of vakantiewoning aan de Costa Blanca Noord in Spanje willen kopen, inclusief intake, Area Match Report en geselecteerde individuele woningbezichtigingen.",
-  touristType: [
-    "Internationale kopers",
-    "Britse kopers",
-    "Scandinavische kopers",
-    "Europese kopers",
-    "Kopers van een vakantiewoning",
-    "Kopers die van plan zijn naar Spanje te verhuizen",
-  ],
-  itinerary: {
-    "@type": "ItemList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Dag 1: Aankomst, privétransfer, intake en welkomsmoment",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Dag 2: Regiotour door Moraira, Benissa en Calpe met geselecteerde woningbezichtigingen en lifestyle-ervaringen",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Dag 3: Jávea en Dénia met individuele woningbezichtigingen, lunch en lokale activiteiten",
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Dag 4: Altea, gesprekken met experts, aankoopproces en vervolgstappen",
-      },
-    ],
+    "Aankoopbegeleiding voor internationale kopers aan de Costa Blanca Noord, inclusief Area Match, persoonlijk gesprek, een gerichte selectie van maximaal 10 woningen, brede marktzoektocht via meerdere makelaars en lokale netwerken, privé- of groepsbezichtigingsreizen, introducties bij experts en aankoopondersteuning.",
+  provider: {
+    "@type": "Organization",
+    name: "Nordic Move Spain",
   },
   areaServed: [
     "Costa Blanca Noord",
-    "Costa Blanca Norte",
     "Moraira",
     "Jávea",
     "Javea",
@@ -108,6 +71,11 @@ const buyerDiscoveryTripStructuredData = {
     "Dénia",
     "Denia",
   ],
+  audience: {
+    "@type": "Audience",
+    audienceType:
+      "Internationale woningkopers, kopers van een tweede woning, gezinnen die verhuizen en kopers van luxe villa’s",
+  },
 };
 
 export default function BuyerDiscoveryTripPage() {
@@ -117,7 +85,7 @@ export default function BuyerDiscoveryTripPage() {
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(buyerDiscoveryTripStructuredData),
+          __html: JSON.stringify(buyerDiscoveryStructuredData),
         }}
       />
 
@@ -126,24 +94,29 @@ export default function BuyerDiscoveryTripPage() {
         <section className="relative min-h-[90vh] overflow-hidden">
           <img
             src="/images/discover-card.png"
-            alt="4-daagse Buyer Discovery Trip Costa Blanca Noord voor kopers die een woning in Spanje willen kopen"
+            alt="Private Buyer Tour en Buyer Discovery Trip aan de Costa Blanca Noord"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10" />
 
           <div className="relative z-10 mx-auto flex min-h-[90vh] max-w-7xl items-center px-8 pt-24">
             <div className="max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                4-daagse Buyer Discovery Trip Costa Blanca Noord
+                Private Buyer Tours & Discovery Trips in kleine groepen
               </p>
 
               <h1 className="mt-6 font-serif text-6xl leading-[0.95] text-white md:text-7xl">
-                Een woning kopen in Spanje? Ontdek in 4 dagen waar u écht wilt wonen aan de Costa Blanca Noord.
+                Vind eerst de juiste regio. Bekijk daarna alleen woningen die echt
+                passen bij jouw leven in Spanje.
               </h1>
 
               <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/90">
-                Een volledig georganiseerde woning- en lifestylereis met privéchauffeur, zorgvuldig gematchte gelijkgestemde kopers, verblijf in een 4- of 5-sterrenhotel of luxe finca, Area Match Report, regiotours, geselecteerde individuele woningbezichtigingen en gesprekken met de specialisten die een veilige woningaankoop in Spanje mogelijk maken.
+                Start met je persoonlijke Area Match Report en een één-op-één gesprek.
+                Daarna brengen we de markt terug tot een gerichte selectie
+                van maximaal 10 passende woningen, vaak aangevuld met videotours,
+                voordat je kiest voor een Private Buyer Tour of een zorgvuldig samengestelde
+                Discovery Trip in kleine groep aan de Costa Blanca Noord.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -151,244 +124,389 @@ export default function BuyerDiscoveryTripPage() {
                   href="/nl/contact"
                   className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
                 >
-                  Meld u aan voor uw 4-daagse Buyer Discovery Trip
+                  Bespreek jouw aankoopplannen
                 </a>
 
                 <a
                   href="/nl/regions"
                   className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
                 >
-                  Ontdek de regio's
+                  Ontdek de regio’s
                 </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* INTRODUCTION */}
+        {/* INLEIDING */}
         <section className="px-8 py-28">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                  Duidelijkheid voordat u koopt
+                  Duidelijkheid vóór de bezichtigingen
                 </p>
 
                 <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                  Een woning kopen in Spanje zou niet moeten beginnen met willekeurige bezichtigingen. Het begint met het vinden van de juiste regio.
+                  Een woning kopen in Spanje moet niet beginnen met willekeurige advertenties.
                 </h2>
               </div>
 
               <div className="text-lg leading-relaxed text-stone-600">
                 <p>
-                  Als u een woning aan de Costa Blanca Noord wilt kopen, moet u verder kijken dan mooie foto’s, makelaarsteksten en losse woningadvertenties. U moet de juiste regio ervaren, maar ook woningen zien die daadwerkelijk passen bij uw budget, gezinssituatie, wensen, Area Match Report en de levensstijl die u in Spanje wilt opbouwen.
+                  Mooie foto’s en makelaarsteksten kunnen bijna elke woning aantrekkelijk
+                  laten lijken. Maar een woning past pas echt wanneer ook de locatie,
+                  dagelijkse leefstijl, praktische behoeften, het budget en de
+                  langetermijnplannen kloppen.
                 </p>
 
                 <p className="mt-6">
-                  Onze Buyer Discovery Trip is een zorgvuldig samengestelde 4-daagse woning- en lifestyle-ervaring aan de Costa Blanca Noord. De reis is ontwikkeld voor Britse en andere internationale kopers die met meer duidelijkheid, betere informatie en minder risico een huis, villa, appartement, nieuwbouwwoning of vakantiewoning in Spanje willen kopen.
+                  Daarom begint Nordic Move Spain bij jou, niet bij een woning die verkocht
+                  moet worden. Eerst helpen we je begrijpen welke gebieden aan de Costa
+                  Blanca Noord bij jouw leven passen. Pas daarna brengen we de
+                  woningmarkt terug tot woningen die werkelijk aansluiten op jouw persoonlijke
+                  profiel.
                 </p>
 
                 <p className="mt-6">
-                  Dit is geen standaard bezichtigingsreis waarbij u zonder duidelijke strategie van de ene woning naar de andere wordt gereden. Het is een volledig georganiseerde groepservaring met gelijkgestemden, een privéchauffeur, individuele momenten van privacy, geselecteerde woningbezichtigingen, lokale lifestyle-ervaringen en directe gesprekken met de experts die u nodig heeft om veilig en goed geïnformeerd een woning in Spanje te kopen.
+                  Het resultaat is een veel gerichtere aankoopreis: minder irrelevante
+                  bezichtigingen, duidelijkere vergelijkingen, betere vragen en meer ruimte
+                  voor onafhankelijke juridische en technische controles voordat je beslist.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SEO QUICK VALUE */}
+        {/* PROCES */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Voor serieuze woningkopers
+              Jouw aankoopreis
             </p>
 
             <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              De 4-daagse Buyer Discovery Trip voor iedereen die een woning aan de Costa Blanca Noord wil kopen.
+              Van Area Match naar een gerichte selectie en vervolgens naar de juiste
+              manier van bezichtigen.
             </h2>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Woning kopen in Spanje",
-                "Woning kopen Costa Blanca Noord",
-                "Vakantiewoning in Spanje",
-                "Woning kopen met begeleiding",
-                "Geselecteerde woningbezichtigingen",
-                "Area Match Report voor kopers",
-                "Villa kopen in Moraira of Jávea",
-                "Appartement kopen in Calpe of Dénia",
-                "Het aankoopproces in Spanje begrijpen",
-                "Ontmoet gelijkgestemde kopers",
-              ].map((item) => (
-                <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
-                    {item}
+                {
+                  number: "01",
+                  title: "Persoonlijke Area Match",
+                  text: "We bepalen welke gebieden aan de Costa Blanca Noord het beste passen bij jouw leefstijl, praktische behoeften, prioriteiten en plannen.",
+                },
+                {
+                  number: "02",
+                  title: "Persoonlijk één-op-één gesprek",
+                  text: "We bespreken jouw rapport uitgebreid en verfijnen je budget, woonwensen, gezinssituatie, planning en langetermijndoelen.",
+                },
+                {
+                  number: "03",
+                  title: "Selectie van maximaal 10 woningen",
+                  text: "We onderzoeken een gerichte selectie woningen die nauw aansluiten op jouw Area Match en persoonlijke wensen, vaak met videotours wanneer die beschikbaar zijn.",
+                },
+                {
+                  number: "04",
+                  title: "Kies hoe je wilt bezichtigen",
+                  text: "Ga verder met een Private Buyer Tour of sluit aan bij een zorgvuldig samengestelde Discovery Trip in kleine groep met bezichtigingen, gesprekken met experts en lokale ervaringen.",
+                },
+              ].map((step) => (
+                <div key={step.number} className="rounded-[28px] bg-[#f6f1ea] p-7">
+                  <p className="text-sm font-medium tracking-[0.2em] text-[#c8a063]">
+                    {step.number}
+                  </p>
+                  <h3 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">
+                    {step.text}
                   </p>
                 </div>
               ))}
             </div>
-
-            <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              U krijgt een realistisch beeld van de regio en van woningen die zorgvuldig vooraf zijn geselecteerd op basis van uw intake, budget, Area Match Report, woonwensen en levensstijl. U bekijkt niet zomaar huizen. U ziet woningen die passen bij de plek waar u daadwerkelijk zou willen wonen.
-            </p>
           </div>
         </section>
 
-        {/* FIRST WE GET TO KNOW YOU */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Eerst leren we u kennen
-            </p>
-
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Uw reis begint met uw levensstijl, niet met woningadvertenties.
-            </h2>
-
-            <div className="mt-10 grid gap-10 lg:grid-cols-2">
-              <div className="text-lg leading-relaxed text-stone-600">
-                <p>
-                  Voor uw aankomst beginnen we met uw kosteloze Area Match Report en een persoonlijk intakegesprek. We bespreken uw doelen, budget, gezinssituatie, dagelijkse routines, interesses, gewenste levensstijl, verhuisplannen, aandachtspunten rond veiligheid en prioriteiten voor de lange termijn.
-                </p>
-
-                <p className="mt-6">
-                  Pas wanneer we uw profiel goed begrijpen, stellen we uw programma samen. Zo kunnen we ons richten op regio’s en woningen die werkelijk bij uw leven passen, in plaats van tijd te besteden aan plekken die online aantrekkelijk lijken maar in de praktijk niet bij u passen.
-                </p>
-
-                <p className="mt-6">
-                  De intake helpt ons ook bepalen welke lokale experts, internationale bewoners, ondernemers of andere kopers voor u relevant kunnen zijn. Waar dit waardevol is, bereiden we deze kennismakingen vooraf voor, zodat ieder gesprek een duidelijk doel heeft.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-[#f6f1ea] p-8">
-                <p className="text-lg leading-relaxed text-stone-700">
-                  Zoekt u een rustige villa bij Moraira? Een socialer leven in Jávea? Een elegante omgeving bij Altea? Meer ruimte en authenticiteit rond Benissa? Appartementen aan zee en nieuwbouw in Calpe? Of een levendige stad met voorzieningen die het hele jaar door actief is, zoals Dénia?
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SELECTED PROPERTY VIEWINGS */}
+        {/* AREA MATCH + SELECTIE */}
         <section className="px-8 pb-28">
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Geselecteerde individuele woningbezichtigingen
+                Eerst de Area Match
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Bekijk woningen die passen bij uw intake, uw regio en de levensstijl die u voor ogen heeft.
+                Eerst bepalen we waar je het beste kunt wonen. Daarna richten we ons op de
+                woningen die daarbij passen.
               </h2>
             </div>
 
             <div className="rounded-[40px] bg-white p-10 shadow-sm">
               <p className="text-lg leading-relaxed text-stone-600">
-                Tijdens de vier dagen ervaart u niet alleen de regio’s. U krijgt ook de mogelijkheid om een zorgvuldig geselecteerd aantal woningen te bezichtigen dat bij uw persoonlijke profiel past. Deze bezichtigingen worden niet willekeurig gekozen. De selectie is gebaseerd op uw intake, Area Match Report, budget, gezinssituatie, gewenste omgeving, woningtype en levensstijl.
+                Jouw traject begint met je gratis persoonlijke Area Match Report.
+                Daarna plannen we een één-op-één gesprek waarin we het rapport samen
+                doornemen en jouw zoekprofiel verder aanscherpen op basis van budget,
+                gewenst woningtype, gezinssituatie, dagelijkse routines,
+                bereikbaarheid, scholen of zorg, sociaal leven, privacy,
+                verhuisplannen en langetermijnprioriteiten.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Dat kan bijvoorbeeld een villa in Moraira zijn, een woning met zeezicht in Jávea, een elegante woning bij Altea, een finca of ruime woning in Benissa, een appartement of nieuwbouwwoning in Calpe, of een woning in Dénia voor kopers die de voorkeur geven aan een levendige stad met voorzieningen gedurende het hele jaar.
+                Op basis van dat gesprek en jouw Area Match-profiel onderzoeken en
+                selecteren we maximaal 10 woningen die nauw aansluiten op jouw
+                prioriteiten. Waar beschikbaar gebruiken we ook videotours of aanvullend
+                videomateriaal, zodat je woningen al kunt beoordelen voordat je naar
+                Spanje reist.
               </p>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Het doel is niet om zoveel mogelijk woningen te laten zien. Het doel is om de juiste woningen te laten zien. U moet gevoel, locatie, bouwkwaliteit, bereikbaarheid, toekomstige waarde, praktische risico’s en het dagelijks leven rond de woning kunnen vergelijken voordat u de volgende stap zet.
+                Het doel is niet om je eindeloze lijsten met woningen te sturen. We brengen
+                honderden mogelijkheden terug tot een klein aantal realistische woningen
+                die zowel passen bij het huis dat je zoekt als bij de locatie en leefstijl
+                uit jouw Area Match Report.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
-                  "Woningen afgestemd op uw intake",
-                  "Selectie op basis van het Area Match Report",
-                  "Bezichtigingen gekoppeld aan de juiste regio",
-                  "Focus op budget en geschiktheid op lange termijn",
-                  "Vergelijking van woningtypes en locaties",
-                  "Eerlijke begeleiding bij risico’s en kansen",
+                  "Maximaal 10 gericht geselecteerde woningen",
+                  "Selectie gekoppeld aan jouw Area Match",
+                  "Persoonlijke bespreking van jouw wensen en rapport",
+                  "Videotours waar beschikbaar",
+                  "Budget en geschiktheid op lange termijn meegenomen",
+                  "Geen druk om ongeschikte woningen te bezichtigen",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                     <p className="font-medium text-[#1e2a3a]">{item}</p>
                   </div>
                 ))}
               </div>
-
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Zo gaat u van online zoeken naar werkelijk begrijpen welke woningen bij u passen. Dat maakt het aankooptraject veiliger, efficiënter en veel realistischer.
-              </p>
             </div>
           </div>
         </section>
 
-        {/* LIKE-MINDED PEOPLE */}
+        {/* PRIVÉ VS GROEP */}
         <section className="px-8 pb-28">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-12 max-w-5xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Reis met gelijkgestemden
+                Kies de ervaring die bij jou past
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Ontmoet mensen die zich in dezelfde fase van het traject bevinden als u.
+                Ga privé op pad of ontdek de regio samen met zorgvuldig geselecteerde
+                gelijkgestemde kopers.
               </h2>
             </div>
 
-            <div className="text-lg leading-relaxed text-stone-600">
-              <p>
-                De Buyer Discovery Trip is opgezet als een zorgvuldig samengestelde ervaring in een kleine groep. U reist met mensen die aansluiten bij uw interesses, levensfase en plannen voor Spanje.
-              </p>
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="rounded-[40px] bg-white p-10 shadow-sm">
+                <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                  Private Buyer Tour
+                </p>
+                <h3 className="mt-4 font-serif text-4xl text-[#1e2a3a]">
+                  Een volledig persoonlijke woning- en regiobezoek, opgebouwd rond jouw
+                  eigen selectie.
+                </h3>
 
-              <p className="mt-6">
-                We brengen u samen met kopers met vergelijkbare doelen, tempo, levensstijl en verwachtingen. Sommige groepen zijn internationaler. Andere groepen bestaan uit Britse, Scandinavische, Noord-Europese of Engelstalige kopers die waarde hechten aan culturele en taalkundige herkenning.
-              </p>
+                <p className="mt-6 text-lg leading-relaxed text-stone-600">
+                  Je route, bezichtigingen en planning worden afgestemd op jouw persoonlijke
+                  zoekprofiel. We kunnen helpen met het coördineren van lokaal vervoer,
+                  transfers en passende accommodatie, zodat je tijd in Spanje volledig
+                  gericht is op de plaatsen en woningen die voor jou relevant zijn.
+                </p>
 
-              <p className="mt-6">
-                Wij begeleiden Britse, Ierse, Nederlandse, Belgische, Duitse, Zwitserse, Scandinavische en andere internationale kopers die een toekomst aan de Costa Blanca Noord verkennen.
-              </p>
+                <p className="mt-5 text-lg leading-relaxed text-stone-600">
+                  Afhankelijk van waar je in het aankoopproces staat, kunnen we ook
+                  ontmoetingen regelen met relevante onafhankelijke professionals,
+                  zoals een vastgoedadvocaat, hypotheekspecialist en bouwkundig inspecteur
+                  of technisch adviseur.
+                </p>
 
-              <p className="mt-6">
-                Voor veel cliënten worden de contacten met andere deelnemers een van de meest waardevolle onderdelen van de reis. Een gezamenlijke lunch, lokale activiteit of open gesprek kan het begin zijn van nieuwe vriendschappen, waardevolle contacten en een sterker gevoel van vertrouwen, nog voordat u naar Spanje bent verhuisd.
-              </p>
+                <p className="mt-5 text-lg leading-relaxed text-stone-600">
+                  Een privétour is ideaal wanneer je maximale flexibiliteit,
+                  privacy en een programma wilt dat volledig is afgestemd op jouw eigen
+                  aankoopcriteria en tempo.
+                </p>
+              </div>
+
+              <div className="rounded-[40px] bg-[#1e2a3a] p-10 text-white">
+                <p className="text-sm uppercase tracking-[0.25em] text-[#c8a063]">
+                  Discovery Trip in kleine groep
+                </p>
+                <h3 className="mt-4 font-serif text-4xl">
+                  Ontdek woningen en leefstijl samen met kopers die zich in een vergelijkbare
+                  fase van hun zoektocht bevinden.
+                </h3>
+
+                <p className="mt-6 text-lg leading-relaxed text-white/80">
+                  Onze groepsreizen brengen zorgvuldig geselecteerde kopers samen met
+                  vergelijkbare plannen, verwachtingen of interesses. Je bezichtigt nog steeds
+                  relevante woningen en hebt tijd voor persoonlijke vragen, maar deelt daarnaast
+                  geselecteerde regiobezoeken, maaltijden en ervaringen met mensen die
+                  een vergelijkbare toekomst in Spanje overwegen.
+                </p>
+
+                <p className="mt-5 text-lg leading-relaxed text-white/80">
+                  De lifestyle-activiteiten worden vooraf besproken en afgestemd
+                  op de interesses van de deelnemers. Afhankelijk van de groep kan dit bijvoorbeeld
+                  een yacht trip zijn, zelf lokale olijfolie maken, gastronomie, natuur,
+                  golf, wellness, culturele bezoeken of een andere lokale ervaring
+                  waarmee je de regio ook buiten de woningmarkt leert kennen.
+                </p>
+
+                <p className="mt-5 text-lg leading-relaxed text-white/80">
+                  Het doel is niet zomaar entertainment. Het gaat erom dat je ervaart
+                  hoe het dagelijks leven, de gemeenschap en je vrije tijd er werkelijk
+                  uit kunnen zien voordat je bepaalt waar je wilt kopen.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ARRIVAL */}
+        {/* KOPERSKANT */}
         <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Vanaf aankomst is alles geregeld
+              Aan de kant van de koper
             </p>
 
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight">
-              U komt aan, wij zorgen voor de details.
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Onze taak is jou helpen de juiste beslissing te nemen, niet om je een
+              specifieke woning te verkopen.
             </h2>
 
-            <div className="mt-10 grid gap-8 md:grid-cols-3">
-              <div>
-                <h3 className="font-serif text-3xl">Privétransfer vanaf de luchthaven</h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  U komt aan op Alicante Airport, waar uw privétransfer u comfortabel naar uw hotel, resort of finca brengt.
+            <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="space-y-6 text-lg leading-relaxed text-stone-600">
+                <p>
+                  Nordic Move Spain werkt aan de kant van de koper. We zijn niet afhankelijk
+                  van een verkoper die ons een verkoopcommissie betaalt om jou richting
+                  een bepaalde woning te sturen. Daardoor kunnen we ons blijven richten op de vraag
+                  of een woning echt bij jou past en of belangrijke risico’s goed zijn
+                  onderzocht voordat je verdergaat.
+                </p>
+
+                <p>
+                  Als een gebied niet bij jouw profiel past, zeggen we dat. Als een
+                  woning praktische, technische, juridische of leefstijlgerelateerde
+                  aandachtspunten heeft, kan de juiste stap zijn om verder onderzoek te doen,
+                  opnieuw te onderhandelen of van de aankoop af te zien.
+                </p>
+
+                <p>
+                  Wanneer je serieus geïnteresseerd raakt in een woning, worden de formele
+                  juridische en technische onderzoeken uitgevoerd door
+                  onafhankelijke professionals, zoals jouw vastgoedadvocaat en
+                  bouwkundig inspecteur. Iedere professional blijft verantwoordelijk voor
+                  het eigen advies, de controles en de rapportage.
+                </p>
+
+                <p>
+                  Wij helpen dit proces te coördineren, zorgen dat de relevante partijen
+                  met elkaar verbonden zijn en helpen je de volgende stappen te begrijpen.
+                  Door onze onafhankelijkheid hebben wij geen belang aan de verkoperskant
+                  om aandachtspunten kleiner te maken alleen om een verkoop door te laten gaan.
                 </p>
               </div>
 
-              <div>
-                <h3 className="font-serif text-3xl">
-                  Uw eigen 4- of 5-sterrenhotel of luxe finca
+              <div className="rounded-[32px] bg-white/80 p-8">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  Wat dit in de praktijk betekent
                 </h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  U verblijft in een zorgvuldig geselecteerd 4- of 5-sterrenhotel, boutique resort of luxe finca. Wanneer u rust en privacy wilt, kunt u zich terugtrekken in uw eigen privéomgeving.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-serif text-3xl">Persoonlijk welkom</h3>
-                <p className="mt-4 leading-relaxed text-white/75">
-                  Tijdens een ontspannen welkomsmoment bespreken we uw doelen, beantwoorden we uw eerste vragen en nemen we het programma voor de komende vier dagen met u door.
-                </p>
+                <div className="mt-6 space-y-4">
+                  {[
+                    "Geen druk om een specifieke woning te kopen",
+                    "Onafhankelijke advocaat voor juridische due diligence",
+                    "Onafhankelijke bouwkundig inspecteur of technisch adviseur voor technische controles",
+                    "Duidelijke scheiding tussen verkoop en professionele onderzoeken",
+                    "Ruimte om aandachtspunten te onderzoeken vóór je beslist",
+                    "Ondersteuning om door te gaan, opnieuw te onderhandelen of af te zien van de koop",
+                  ].map((item) => (
+                    <div key={item} className="rounded-2xl bg-white p-5">
+                      <p className="font-medium text-[#1e2a3a]">{item}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* REAL REGIONS */}
+
+
+        {/* BREED MARKTBEREIK */}
+        <section className="px-8 pb-28">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+              Breder toegang tot de woningmarkt
+            </p>
+
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
+              Wij vertegenwoordigen de koper, niet de woning.
+            </h2>
+
+            <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div className="space-y-6 text-lg leading-relaxed text-stone-600">
+                <p>
+                  Omdat Nordic Move Spain niet door de verkoper of verkopende
+                  makelaar wordt betaald om een bepaalde woning te promoten, zijn we niet gebonden aan één
+                  makelaar, één portefeuille of één projectontwikkelaar. We beginnen met jouw zoekprofiel
+                  en zoeken de woning die bij jou past, in plaats van te beginnen
+                  met een woning die iemand moet verkopen.
+                </p>
+
+                <p>
+                  Na jouw Area Match Report en persoonlijke gesprek kunnen we
+                  namens jou makelaars, projectontwikkelaars en vastgoedprofessionals
+                  in de hele Costa Blanca Noord benaderen. Dit geeft ons een
+                  breder beeld van de markt en maakt het mogelijk kansen van
+                  verschillende makelaars te vergelijken in plaats van jouw zoektocht te beperken tot
+                  het aanbod van één makelaar.
+                </p>
+
+                <p>
+                  Via ons lokale netwerk krijgen we bovendien toegang tot exclusieve listings,
+                  off-market mogelijkheden en woningen die soms al met ons worden gedeeld
+                  voordat ze openbaar worden aangeboden. Makelaars en lokale contacten kunnen
+                  ons rechtstreeks benaderen wanneer zij weten dat wij een serieuze koper
+                  met een duidelijk zoekprofiel vertegenwoordigen.
+                </p>
+
+                <p>
+                  Dit betekent niet dat iedere passende woning off-market of
+                  exclusief is. Het betekent dat we breder kunnen zoeken, de markt
+                  actief kunnen benaderen en openbare listings en kansen
+                  uit ons netwerk kunnen samenbrengen in één gerichte zoektocht voor jou.
+                </p>
+              </div>
+
+              <div className="rounded-[32px] bg-[#f6f1ea] p-8">
+                <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                  Wat breder marktbereik voor jou kan betekenen
+                </h3>
+
+                <div className="mt-6 space-y-4">
+                  {[
+                    "Zoeken via meerdere makelaars",
+                    "Exclusieve listings via ons netwerk",
+                    "Off-market en pre-market mogelijkheden",
+                    "Direct contact wanneer passende woningen beschikbaar komen",
+                    "Eén duidelijk zoekprofiel voor de bredere markt",
+                    "Niet afhankelijk van het aanbod van één verkopende makelaar",
+                  ].map((item) => (
+                    <div key={item} className="rounded-2xl bg-white p-5">
+                      <p className="font-medium text-[#1e2a3a]">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* REGIO'S */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
@@ -397,61 +515,55 @@ export default function BuyerDiscoveryTripPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                We laten u meer zien dan alleen de bekendste toeristische gebieden.
+                Vergelijk hoe de verschillende gebieden in het dagelijks leven werkelijk aanvoelen.
               </h2>
 
               <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                Tijdens de Buyer Discovery Trip ervaart u de regio’s vanuit het dagelijks leven. We bezoeken plekken die belangrijk zijn voor uw toekomstige levensstijl, niet alleen de plaatsen die er goed uitzien in een brochure.
+                Een woning kun je veranderen. De locatie niet. We helpen je
+                sfeer, bereikbaarheid, scholen, gezondheidszorg, dagelijkse
+                voorzieningen, sociaal leven, restaurants, sport, internationale
+                gemeenschap, woningtypen, reistijden en praktische geschiktheid
+                op lange termijn te vergelijken.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Moraira</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Rustig en elegant wonen aan de kust, met villa’s, baaien en een exclusieve maar ontspannen woonomgeving.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Jávea</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Een levendige internationale levensstijl met stranden, restaurants, sport, scholen en het hele jaar door activiteit.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Altea</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Cultuur, schoonheid, zeezicht en mediterraan karakter in een artistiekere en verfijnde omgeving.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Benissa</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Ruimte, privacy, authenticiteit, landelijk wonen en verborgen baaien langs de kust.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Calpe</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Wonen aan het strand, leven rond de jachthaven, appartementen, nieuwbouw en een actievere sfeer.
-                </p>
-              </div>
-
-              <div className="rounded-[32px] bg-white p-8 shadow-sm">
-                <h3 className="font-serif text-3xl text-[#1e2a3a]">Dénia</h3>
-                <p className="mt-4 leading-relaxed text-stone-600">
-                  Gastronomie, havenleven, dagelijkse voorzieningen en een levendige stad die het hele jaar door uitstekend functioneert.
-                </p>
-              </div>
+              {[
+                {
+                  name: "Moraira",
+                  text: "Rustig en elegant wonen aan de kust met villa’s, baaien en een exclusieve maar ontspannen woonomgeving.",
+                },
+                {
+                  name: "Jávea",
+                  text: "Een levendige internationale leefstijl met stranden, restaurants, sport, scholen en het hele jaar door activiteit.",
+                },
+                {
+                  name: "Altea",
+                  text: "Cultuur, schoonheid, zeezicht en mediterrane sfeer in een artistieke en verfijnde omgeving.",
+                },
+                {
+                  name: "Benissa",
+                  text: "Ruimte, privacy, authenticiteit, landelijk wonen en verborgen baaien langs de kust.",
+                },
+                {
+                  name: "Calpe",
+                  text: "Wonen aan het strand, marina-leven, appartementen, nieuwbouw en een actievere sfeer.",
+                },
+                {
+                  name: "Dénia",
+                  text: "Gastronomie, havenleven, dagelijkse voorzieningen en een levendige stad die het hele jaar door goed functioneert.",
+                },
+              ].map((region) => (
+                <div key={region.name} className="rounded-[32px] bg-white p-8 shadow-sm">
+                  <h3 className="font-serif text-3xl text-[#1e2a3a]">
+                    {region.name}
+                  </h3>
+                  <p className="mt-4 leading-relaxed text-stone-600">
+                    {region.text}
+                  </p>
+                </div>
+              ))}
             </div>
-
-            <p className="mt-12 max-w-4xl text-lg leading-relaxed text-stone-600">
-              We helpen u de verschillen tussen de regio’s te begrijpen: sfeer, woningtypes, scholen, gezondheidszorg, rijafstanden, internationale gemeenschap, restaurants, sportvoorzieningen, dagelijkse voorzieningen, verhuurpotentieel, bouwkwaliteit en praktische geschiktheid op lange termijn.
-            </p>
           </div>
         </section>
 
@@ -460,29 +572,33 @@ export default function BuyerDiscoveryTripPage() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Ontmoet de experts die u nodig heeft vóór de aankoop
+                Ontmoet de professionals die je mogelijk nodig hebt
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Krijg antwoorden voordat u belangrijke beslissingen neemt.
+                Begrijp het juridische, technische en financiële proces voordat je
+                een grote beslissing neemt.
               </h2>
             </div>
 
             <div className="rounded-[40px] bg-white p-10 shadow-sm">
               <p className="text-lg leading-relaxed text-stone-600">
-                Tijdens uw Buyer Discovery Trip brengen we u in contact met vertrouwde onafhankelijke specialisten en lokale contacten die u helpen de praktische, juridische en financiële stappen te begrijpen voordat u een woning in Spanje koopt.
+                Tijdens een Private Buyer Tour of Discovery Trip in een groep kunnen we
+                kennismakingen regelen met relevante onafhankelijke professionals en
+                lokale contacten. Welke gesprekken het meest relevant zijn, hangt af van jouw plannen
+                en van waar je in het aankoopproces staat.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
                   "Onafhankelijke vastgoedadvocaat",
-                  "Spaanse notaris",
+                  "Bouwkundig inspecteur of technisch adviseur",
                   "Hypotheekspecialist",
                   "Bankcontact",
                   "Verzekeringsspecialist",
-                  "Building surveyor of technisch adviseur",
-                  "Lokale vastgoedexpert",
-                  "Verhuisbegeleiding waar relevant",
+                  "Notaris of begeleiding rond het notariële proces waar relevant",
+                  "Relocation-contacten",
+                  "Andere specialisten die relevant zijn voor de woning",
                 ].map((item) => (
                   <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                     <p className="font-medium text-[#1e2a3a]">{item}</p>
@@ -491,50 +607,13 @@ export default function BuyerDiscoveryTripPage() {
               </div>
 
               <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Deze gesprekken zijn bedoeld om u meer zekerheid te geven over het juridische proces, hypotheekmogelijkheden, bankvereisten, verzekeringen, aankoopkosten, jaarlijkse eigenaarskosten, documentatie, bouwkundige controles en veelvoorkomende fouten die internationale kopers beter kunnen vermijden.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                U kunt uw vragen rechtstreeks stellen, begrijpen wie waarvoor verantwoordelijk is en de reis afsluiten met een veel duidelijker beeld van hoe een veilige woningaankoop in Spanje daadwerkelijk werkt.
+                Deze professionals blijven onafhankelijk en verantwoordelijk voor hun
+                eigen advies en rapportages. Nordic Move Spain coördineert en ondersteunt
+                het aankooptraject; wij vervangen geen juridisch advies, formele
+                bouwkundige keuring, taxatie, hypotheekadvies of andere gereguleerde professionele
+                dienstverlening.
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* SAFETY */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Meer zekerheid bij iedere stap
-            </p>
-
-            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Voor internationale kopers gaat kopen in Spanje niet alleen om emotie. Het gaat ook om veiligheid, controle en het juiste advies.
-            </h2>
-
-            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                "Meer duidelijkheid over juridische stappen",
-                "Inzicht in belastingen en aankoopkosten",
-                "Kennismaking met een onafhankelijke advocaat",
-                "Mogelijkheid om bouwkundige vragen te bespreken",
-                "Informatie over financiering en bankvereisten",
-                "Meer grip op risico’s vóór de aankoop",
-                "Eerlijke begeleiding bij regio’s en woningtypes",
-                "Begeleiding bij de volgende stap na de reis",
-                "Een beter onderbouwde en veiligere beslissing voordat u verdergaat",
-              ].map((item) => (
-                <div key={item} className="rounded-2xl bg-white/80 p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Wij beloven niet dat iedere woning de juiste is. Integendeel: we helpen u zien wat past, wat niet past en welke zaken gecontroleerd moeten worden voordat u een bod uitbrengt. Precies daar begint zekerheid.
-            </p>
           </div>
         </section>
 
@@ -542,31 +621,30 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Ervaar de levensstijl, niet alleen de woningmarkt
+              Ervaar de leefstijl, niet alleen de woningmarkt
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Een woning is slechts één onderdeel van de beslissing.
+              De juiste woning moet ook passen bij het leven dat je eromheen wilt leiden.
             </h2>
 
             <p className="mt-8 max-w-4xl text-lg leading-relaxed text-stone-600">
-              U wilt ook begrijpen hoe uw leven hier zou kunnen voelen. Daarom bevat de Buyer Discovery Trip lifestyle-ervaringen die aansluiten bij uw interesses en de regio die u verkent.
+              Bij groepsreizen worden lokale ervaringen vooraf met de deelnemers
+              besproken en gekozen op basis van de interesses van de groep. Bij een
+              privétour kunnen we het programma afstemmen op jouw eigen interesses
+              en op de gebieden die je beter wilt leren kennen.
             </p>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {[
-                "Lokale lunches en fine dining",
-                "Wijnproeverijen",
-                "Golfclubs en golftour",
-                "Beachclubs",
-                "Jachthavens en jachtclubs",
+                "Yacht- of marina-ervaring",
+                "Zelf olijfolie maken of een lokale producent bezoeken",
+                "Lokale lunches en gastronomie",
+                "Wijn- of culinaire proeverij",
+                "Golf- en sportclubs",
                 "Wellness en spa",
-                "Wandel- en natuurroutes",
-                "Culturele bezoeken",
-                "Kookworkshop of pasta maken",
-                "Zakelijke of netwerkintroducties",
-                "Lokale bijeenkomsten",
-                "Activiteiten met gelijkgestemde toekomstige bewoners",
+                "Wandelen en natuur",
+                "Culturele en lokale ervaringen",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium text-[#1e2a3a]">{item}</p>
@@ -575,75 +653,45 @@ export default function BuyerDiscoveryTripPage() {
             </div>
 
             <p className="mt-10 max-w-4xl text-lg leading-relaxed text-stone-600">
-              Wilt u deelnemen aan gezamenlijke lunches, buurten verkennen en ervaren hoe het leven hier werkelijk voelt? Dan sluit u aan bij de groep. Wilt u een rustig moment en privacy? Dan kunt u zich terugtrekken in uw eigen 4- of 5-sterrenhotel of luxe finca, zonder de structuur van de reis te verliezen.
+              Deze ervaringen liggen niet voor iedere reis vast. Ze worden
+              vooraf gekozen op basis van de wensen van de deelnemers, de praktische planning
+              en wat jou het beste helpt om het karakter van de regio te begrijpen.
             </p>
           </div>
         </section>
 
-        {/* WHAT WE DO */}
+        {/* WAT WE KUNNEN COÖRDINEREN */}
         <section className="px-8 pb-28">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Wat wij voor u doen
-              </p>
-
-              <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Wij begeleiden, coördineren en helpen u een betere beslissing te nemen.
-              </h2>
-            </div>
-
-            <div className="text-lg leading-relaxed text-stone-600">
-              <p>
-                Wij coördineren de volledige ervaring, begeleiden u door de verschillende regio’s, selecteren relevante woningbezichtigingen en brengen u in contact met vertrouwde onafhankelijke specialisten. Zo kunt u beter geïnformeerde beslissingen nemen voordat u een woning in Spanje koopt.
-              </p>
-
-              <p className="mt-6">
-                We helpen u regio’s te vergelijken, praktische verschillen te begrijpen, de juiste vragen te stellen, woningen rustiger te beoordelen en veelvoorkomende fouten te vermijden.
-              </p>
-
-              <p className="mt-6">
-                Onze rol is niet om u onder druk te zetten om te kopen. Onze rol is om u te helpen de juiste regio, het juiste woningtype en de juiste volgende stap te kiezen.
-              </p>
-
-              <p className="mt-6">
-                Als een regio niet bij uw profiel past, zeggen we dat. Als een woning of woningtype juridische, praktische, technische of lifestyle-aandachtspunten kan hebben, helpen we u die te begrijpen voordat u zich vastlegt.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* INCLUDED */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#e9dfd2] p-12 lg:p-16">
+          <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Wat is inbegrepen
+              Een volledig gecoördineerde aankoopervaring
             </p>
 
-            <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Uw 4-daagse Buyer Discovery Trip bevat wat u nodig heeft voor een duidelijkere en veiligere eerste beslissing.
+            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
+              Wij verbinden alle praktische onderdelen, zodat jij je kunt richten op de
+              beslissing.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                "Kosteloos persoonlijk intakegesprek vóór aankomst",
-                "Persoonlijk lifestyle- en regioprofiel",
-                "Area Match Report voor Costa Blanca Noord",
-                "Volledig georganiseerd 4-daags programma",
-                "Privéchauffeur en transfer vanaf Alicante",
-                "Verblijf in een geselecteerd 4- of 5-sterrenhotel, boutique resort of luxe finca",
-                "Begeleide regiobezoeken aan de Costa Blanca Noord",
-                "Geselecteerde individuele woningbezichtigingen",
-                "Woningen afgestemd op budget, regio en levensstijl",
-                "Kennismaking met juridische, bancaire, hypotheek- en verzekeringscontacten",
-                "Gesprek met een building surveyor of technisch adviseur waar relevant",
-                "Lifestyle-ervaringen afgestemd op uw interesses",
-                "Zorgvuldig samengestelde kleine groep met gelijkgestemde kopers",
-                "Tijd voor persoonlijke vragen en ondersteuning bij uw beslissing",
-                "Duidelijke vervolgstappen na de reis",
+                "Persoonlijk Area Match Report",
+                "Persoonlijk één-op-één gesprek",
+                "Gerichte selectie van maximaal 10 woningen",
+                "Videotours waar beschikbaar",
+                "Persoonlijk programma voor privébezichtigingen",
+                "Buyer Discovery Trip in kleine groep",
+                "Hulp bij het coördineren van vervoer en transfers",
+                "Hulp bij het kiezen van passende accommodatie",
+                "Bezoeken aan gebieden en woonwijken",
+                "Kennismaking met een onafhankelijke advocaat",
+                "Kennismaking met hypotheek- en bankspecialisten",
+                "Kennismaking met bouwkundig inspecteur of technisch adviseur",
+                "Lifestyle-ervaringen afgestemd op jouw interesses",
+                "Ondersteuning bij het vergelijken van woningen en locaties",
+                "Duidelijke vervolgstappen na het bezoek",
               ].map((item) => (
-                <div key={item} className="rounded-2xl bg-white/80 p-5">
-                  <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
+                <div key={item} className="rounded-2xl bg-white/10 p-5">
+                  <p className="text-sm font-medium leading-relaxed text-white/90">
                     {item}
                   </p>
                 </div>
@@ -652,31 +700,29 @@ export default function BuyerDiscoveryTripPage() {
           </div>
         </section>
 
-        {/* AFTER THE TRIP */}
+        {/* NA DE TOUR */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-4xl">
               <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-                Wat u na de reis weet
+                Na jouw tour
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                U vertrekt niet met vage indrukken. U vertrekt met duidelijkheid.
+                Je moet vertrekken met duidelijkheid, niet met meer twijfel.
               </h2>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
-                "Welke regio’s aan de Costa Blanca Noord bij uw levensstijl passen",
-                "Welke regio’s minder geschikt voor u zijn",
-                "Welk woningtype bij uw budget en doelen past",
-                "Welke woningen na echte bezichtigingen realistisch aanvoelen",
-                "Hoe het aankoopproces in Spanje werkt",
-                "Welke juridische en financiële vragen gecontroleerd moeten worden",
-                "Hoe het dagelijks leven na de aankoop eruit kan zien",
-                "Welke experts u kunnen ondersteunen",
-                "Van welk type gemeenschap u deel zou kunnen worden",
-                "Of u klaar bent voor de volgende stap",
+                "Welke gebieden aan de Costa Blanca Noord werkelijk bij jouw leefstijl passen",
+                "Welke gebieden of woningtypen minder geschikt voor je zijn",
+                "Welke geselecteerde woningen na de echte bezichtigingen nog steeds realistisch zijn",
+                "Welke praktische, juridische of technische vragen nog onderzocht moeten worden",
+                "Welke professional de volgende controles moet uitvoeren",
+                "Hoe het verdere aankoopproces en de volgende stappen eruitzien",
+                "Of je klaar bent om door te gaan, verder te zoeken of opnieuw te overwegen",
+                "Hoe Nordic Move Spain je na jouw beslissing kan ondersteunen bij aankoop, relocation en het woonklaar maken",
               ].map((item) => (
                 <div key={item} className="rounded-[28px] bg-white p-7 shadow-sm">
                   <p className="text-lg leading-relaxed text-stone-600">{item}</p>
@@ -686,28 +732,29 @@ export default function BuyerDiscoveryTripPage() {
           </div>
         </section>
 
-        {/* WHO IT IS FOR */}
+        {/* VOOR WIE */}
         <section className="px-8 pb-28">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Is deze reis geschikt voor u?
+              Past dit bij jou?
             </p>
 
             <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Perfect voor serieuze kopers die de Costa Blanca Noord willen begrijpen voordat zij een woning kiezen.
+              Ontwikkeld voor serieuze internationale kopers die meer duidelijkheid willen
+              voordat zij zich aan een woning in Spanje verbinden.
             </h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                "Britse, Europese en internationale kopers die de Costa Blanca Noord verkennen",
-                "Internationale kopers die een woning in Spanje willen kopen",
+                "Kopers van luxe villa’s en tweede woningen",
                 "Gezinnen die een verhuizing naar Spanje overwegen",
-                "Gepensioneerden die een nieuwe levensstijl plannen",
-                "Ondernemers en locatie-onafhankelijke professionals",
-                "Kopers van vakantie- en tweede woningen",
+                "Gepensioneerden die een nieuwe leefstijl plannen",
+                "Ondernemers en professionals die op afstand werken",
                 "Kopers die Moraira, Jávea, Altea, Benissa, Calpe en Dénia vergelijken",
-                "Cliënten die veilige begeleiding willen voordat serieuze bezichtigingen beginnen",
-                "Mensen die vóór hun verhuizing gelijkgestemde toekomstige bewoners willen ontmoeten",
+                "Kopers die onafhankelijke begeleiding willen voordat zij een bod uitbrengen",
+                "Mensen die waarde hechten aan een persoonlijke en gerichte bezichtigingservaring",
+                "Mensen die een regio graag ontdekken met gelijkgestemde toekomstige bewoners",
+                "Internationale kopers die juridische en technische controles serieus willen laten uitvoeren",
               ].map((item) => (
                 <div key={item} className="rounded-2xl bg-[#f6f1ea] p-5">
                   <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
@@ -715,33 +762,6 @@ export default function BuyerDiscoveryTripPage() {
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SEO TEXT */}
-        <section className="px-8 pb-28">
-          <div className="mx-auto max-w-7xl rounded-[40px] bg-white p-12 shadow-sm lg:p-16">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Koop een huis, villa of appartement in Spanje
-            </p>
-
-            <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a]">
-              Een veiligere route voor kopers die een woning aan de Costa Blanca Noord willen kopen.
-            </h2>
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-stone-600">
-              <p>
-                Veel internationale kopers beginnen met zoekopdrachten als "woning kopen in Spanje", "villa te koop Moraira", "appartement Calpe", "woning Jávea" of "vakantiewoning Costa Blanca". Dat is een logisch startpunt, maar geeft zelden genoeg duidelijkheid voor een veilige aankoopbeslissing.
-              </p>
-
-              <p>
-                Onze 4-daagse Buyer Discovery Trip helpt u van online zoekopdrachten en droombeelden naar een concreet begrip van regio’s, woningen, juridische stappen, financiering, dagelijks leven en risico’s. U ziet geselecteerde woningen, ervaart de regio’s en spreekt met specialisten voordat u beslist hoe u verder wilt.
-              </p>
-
-              <p>
-                De reis is vooral relevant als u overweegt een huis in Moraira, een villa in Jávea, een woning in Altea, een finca in Benissa, een appartement in Calpe of een woning in Dénia te kopen. Elke plaats heeft een eigen sfeer, praktische voordelen en beperkingen. Wij helpen u de verschillen te zien voordat u koopt.
-              </p>
             </div>
           </div>
         </section>
@@ -755,42 +775,57 @@ export default function BuyerDiscoveryTripPage() {
               </p>
 
               <h2 className="mt-5 font-serif text-5xl leading-tight text-[#1e2a3a]">
-                Vragen over het kopen van een woning in Spanje en onze Buyer Discovery Trip.
+                Vragen over Private Buyer Tours, Discovery Trips in groepen en
+                het kopen van een woning aan de Costa Blanca Noord.
               </h2>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  question:
-                    "Is de Buyer Discovery Trip een standaard bezichtigingsreis in Spanje?",
+                  question: "Begin ik direct met woningadvertenties?",
                   answer:
-                    "Nee. Het is een 4-daagse woning- en lifestylereis waarin u de regio’s ervaart, relevante experts ontmoet en zorgvuldig geselecteerde woningen bezichtigt die aansluiten bij uw intake, Area Match Report, budget en levensstijl.",
+                    "Nee. We beginnen met jouw persoonlijke Area Match Report en een één-op-één gesprek. Pas daarna onderzoeken we een gerichte selectie van maximaal 10 woningen die passen bij jouw regio, budget, woonwensen en leefstijl.",
                 },
                 {
-                  question: "Bezoek ik woningen tijdens de reis?",
+                  question: "Bieden jullie videotours voordat ik naar Spanje reis?",
                   answer:
-                    "Ja. U ziet een selectief aantal woningen dat past bij uw wensen, voorkeursregio, budget en toekomstige levensstijl. De focus ligt op kwaliteit en relevantie, niet op het tonen van zoveel mogelijk woningen.",
+                    "Waar geschikt videomateriaal beschikbaar is, gebruiken we dit om je te helpen geselecteerde woningen al vóór je reis te beoordelen. Het doel is onnodige bezichtigingen te verminderen en jouw bezoek veel gerichter te maken.",
                 },
                 {
-                  question: "Is de reis privé of in een groep?",
+                  question: "Kan ik kiezen voor een privétour in plaats van een groepsreis?",
                   answer:
-                    "De reis is georganiseerd als een zorgvuldig samengestelde ervaring in een kleine groep met gelijkgestemde kopers. U heeft uw eigen privacy, eigen accommodatie en individuele rustmomenten, maar de ervaring zelf is opgebouwd rond een zorgvuldig gematchte groep.",
+                    "Ja. Je kunt kiezen voor een Private Buyer Tour die is opgebouwd rond jouw eigen selectie en planning, of deelnemen aan een zorgvuldig samengestelde Discovery Trip in kleine groep met gezamenlijke regiobezoeken en lifestyle-ervaringen.",
                 },
                 {
-                  question: "Welke regio’s bezoeken we aan de Costa Blanca Noord?",
+                  question: "Wat gebeurt er tijdens een Discovery Trip in kleine groep?",
                   answer:
-                    "Afhankelijk van uw profiel kan het programma Moraira, Jávea, Altea, Benissa, Calpe, Dénia en relevante omliggende gebieden omvatten.",
+                    "Je combineert relevante woningbezichtigingen en het ontdekken van de regio met geselecteerde gesprekken met experts en lokale ervaringen. Activiteiten worden vooraf besproken en gekozen op basis van de interesses van de deelnemers.",
                 },
                 {
-                  question: "Is de reis geschikt voor internationale kopers?",
+                  question: "Kunnen jullie helpen met vervoer en accommodatie?",
                   answer:
-                    "Ja. De reis is zeer relevant voor Britse en andere internationale kopers die een woning in Spanje willen kopen, maar eerst de regio, het proces, de veiligheid, kosten en risico’s willen begrijpen.",
+                    "Ja. Afhankelijk van de tour kunnen we lokaal vervoer, transfers en passende accommodatie helpen coördineren, zodat de praktische kant van jouw verblijf optimaal aansluit op het bezichtigingsprogramma.",
                 },
                 {
-                  question: "Helpen jullie ook met juridische en financiële vragen?",
+                  question: "Ontvangen jullie commissie van de verkoper?",
                   answer:
-                    "We brengen u in contact met een onafhankelijke advocaat, hypotheekspecialist, bankcontact, verzekeringsspecialist en, waar relevant, een building surveyor of technisch adviseur, zodat u vóór de aankoop de juiste vragen kunt stellen.",
+                    "Nordic Move Spain werkt aan de kant van de koper en is niet afhankelijk van een verkoper die ons een verkoopcommissie betaalt om jou naar een specifieke woning te sturen. Onze rol is te helpen beoordelen wat bij jou past en waar nodig de volgende onafhankelijke controles te coördineren.",
+                },
+                {
+                  question: "Zijn jullie beperkt tot het aanbod van één makelaar?",
+                  answer:
+                    "Nee. Omdat onze zoektocht wordt gestuurd door de koper en niet door het aanbod van een verkoper, kunnen we meerdere makelaars, projectontwikkelaars en lokale contacten benaderen. Via ons netwerk krijgen we ook toegang tot exclusieve listings, off-market kansen en woningen die al vóór publieke lancering met ons worden gedeeld, al hangt de beschikbaarheid altijd af van wat er op dat moment op de markt is.",
+                },
+                {
+                  question: "Wie voert de juridische en technische controles uit?",
+                  answer:
+                    "Formele juridische due diligence wordt uitgevoerd door een onafhankelijke vastgoedadvocaat. Bouwkundige inspecties of technische onderzoeken worden uitgevoerd door een onafhankelijke bouwkundig inspecteur of technisch specialist. Iedere specialist is verantwoordelijk voor het eigen advies en rapport.",
+                },
+                {
+                  question: "Wat als een woning niet goed uit de controles komt?",
+                  answer:
+                    "Het doel van onafhankelijke controles is om risico’s te begrijpen voordat je je vastlegt. Afhankelijk van de bevindingen kan de juiste vervolgstap verder onderzoek, opnieuw onderhandelen of besluiten om niet door te gaan zijn.",
                 },
               ].map((item) => (
                 <div key={item.question} className="rounded-[28px] bg-white p-8 shadow-sm">
@@ -810,26 +845,25 @@ export default function BuyerDiscoveryTripPage() {
         <section className="px-8 pb-32">
           <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-14 text-white lg:p-20">
             <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
-              Meld u aan voor uw Buyer Discovery Trip
+              Start met jouw Area Match
             </p>
 
             <h2 className="mt-6 max-w-4xl font-serif text-6xl leading-tight">
-              Wanneer u serieus overweegt een woning in Spanje te kopen, gaat de belangrijkste beslissing niet alleen over het huis.
+              De beste zoektocht naar een woning begint met weten waar jouw leven in
+              Spanje werkelijk moet passen.
             </h2>
 
             <p className="mt-8 max-w-4xl text-xl leading-relaxed text-white/85">
-              Het gaat om de juiste regio, de juiste levensstijl, de juiste woning en de juiste zekerheid om u heen.
-            </p>
-
-            <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/75">
-              Meld u aan voor uw 4-daagse Buyer Discovery Trip en ontdek of de Costa Blanca Noord werkelijk past bij uw toekomst in Spanje.
+              Begin met jouw persoonlijke Area Match Report. Daarna verfijnen we jouw
+              zoekprofiel, maken we een gerichte selectie en helpen we je kiezen tussen de privé-
+              of groepsbezichtigingservaring die het beste bij jou past.
             </p>
 
             <a
               href="/nl/contact"
               className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
-              Meld u aan voor uw 4-daagse Buyer Discovery Trip
+              Bespreek jouw aankoopplannen
             </a>
           </div>
         </section>

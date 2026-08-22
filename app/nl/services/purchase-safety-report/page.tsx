@@ -1,11 +1,11 @@
 export const metadata = {
   title: "Purchase Safety Report | Veilig een woning kopen aan de Costa Blanca Noord",
   description:
-    "Purchase Safety voor kopers aan de Costa Blanca Noord: een onafhankelijke technische woninginspectie, eerste document- en registratiescreening en volledige juridische due diligence door een onafhankelijke Spaanse advocaat.",
+    "Purchase Safety voor kopers aan de Costa Blanca Noord: grondige technische inspectie, document- en registratiescreening en volledige juridische due diligence door ervaren onafhankelijke professionals die uitsluitend aan de kant van de koper werken.",
   openGraph: {
     title: "Purchase Safety Report | Nordic Move Spain",
     description:
-      "Een onafhankelijke technische woninginspectie en documentenscreening, gecombineerd met volledige juridische due diligence door een onafhankelijke Spaanse advocaat.",
+      "Grondige technische en juridische aankoopcontrole door ervaren onafhankelijke professionals, zonder verkopersbelang en volledig gericht op de belangen van de koper.",
     type: "website",
   },
   twitter: {
@@ -85,10 +85,11 @@ export default function PurchaseSafetyReportPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-xl leading-relaxed text-white">
-              Een onafhankelijk uitgevoerde technische woninginspectie met
-              eerste document- en registratiescreening, gecombineerd met
-              volledige juridische due diligence door een onafhankelijke
-              Spaanse advocaat — volledig gecoördineerd door Nordic Move.
+              Een grondige technische woninginspectie en eerste document- en
+              registratiescreening door een ervaren onafhankelijke surveyor,
+              gecombineerd met volledige juridische due diligence door een
+              onafhankelijke Spaanse vastgoedadvocaat — volledig gecoördineerd
+              door Nordic Move en uitsluitend gericht op de belangen van de koper.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -136,10 +137,30 @@ export default function PurchaseSafetyReportPage() {
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
               Purchase Safety helpt om deze punten vóór aankoop beter zichtbaar
-              te maken. Wij coördineren een onafhankelijke technische
-              woninginspectie met document- en registratiescreening en werken
-              daarnaast met een onafhankelijke Spaanse advocaat voor de
-              volledige juridische due diligence.
+              te maken. Wij werken met ervaren, deskundige en onafhankelijke
+              professionals: een surveyor voor de technische woninginspectie en
+              eerste technische documentvergelijking, en een onafhankelijke
+              Spaanse vastgoedadvocaat voor de volledige juridische due
+              diligence.
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-stone-600">
+              Bij veel vastgoedtransacties in Spanje ontvangt de verkopende
+              makelaar een verkoopcommissie van de verkoper of via de
+              verkooptransactie. Dat is een gebruikelijk verkoopmodel, maar het
+              kan betekenen dat er een financieel belang bestaat bij het
+              daadwerkelijk afronden van de verkoop. Nordic Move Spain werkt
+              anders: wij worden niet door de verkoper of verkopende makelaar
+              betaald om een specifieke woning verkocht te krijgen.
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-stone-600">
+              Daardoor kunnen wij uitsluitend vanuit het belang van de koper
+              werken. Als iets extra onderzoek nodig heeft, willen we dat het
+              wordt onderzocht. Als de uitkomst reden geeft om opnieuw te
+              onderhandelen, aanvullende expertise in te schakelen of van de
+              woning af te zien, moet de koper dat weten vóórdat hij zich
+              vastlegt.
             </p>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
@@ -147,8 +168,8 @@ export default function PurchaseSafetyReportPage() {
               belangrijkste bevindingen, open vragen en voorwaarden samen en
               geven we een duidelijk aankoopadvies: doorgaan, heroverwegen of
               niet kopen. Nordic Move vervangt noch de surveyor noch de
-              advocaat; beiden blijven verantwoordelijk voor hun eigen
-              beoordeling en advies.
+              advocaat; beiden blijven onafhankelijk en verantwoordelijk voor
+              hun eigen beoordeling, advies en rapportage.
             </p>
           </div>
         </div>
@@ -167,11 +188,12 @@ export default function PurchaseSafetyReportPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              Wij coördineren een onafhankelijke surveyor voor de technische
-              woningbeoordeling en eerste document- en registratiescreening.
-              Daarnaast werken we met een onafhankelijke Spaanse advocaat die
-              de volledige juridische due diligence uitvoert en uitsluitend
-              het belang van de koper behartigt.
+              Wij werken met ervaren en onafhankelijke professionals die hun
+              eigen vakgebied grondig beoordelen. De surveyor onderzoekt de
+              technische staat van de woning en vergelijkt relevante technische
+              documentatie. De onafhankelijke Spaanse vastgoedadvocaat voert de
+              volledige juridische due diligence uit en vertegenwoordigt
+              uitsluitend de koper.
             </p>
           </div>
 
@@ -186,11 +208,14 @@ export default function PurchaseSafetyReportPage() {
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De onafhankelijke Spaanse advocaat controleert onder meer het
-                eigendom, geregistreerde lasten, mogelijke schulden en
-                belastingen, de juridische en planologische status,
-                vergunningen, documenten van de eigenaarsgemeenschap,
-                koopcontracten en de voorwaarden van de eigendomsoverdracht.
+                De onafhankelijke Spaanse vastgoedadvocaat controleert onder
+                meer het eigendom en de geregistreerde eigendomssituatie,
+                lasten en beperkingen, relevante schulden en belastingen,
+                juridische en planologische aandachtspunten, beschikbare
+                vergunningen en licenties, documenten van de
+                eigenaarsgemeenschap, koopcontracten en de voorwaarden van de
+                eigendomsoverdracht. Waar nodig wordt aanvullende bevestiging
+                gevraagd bij de bevoegde instantie of specialist.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
@@ -211,18 +236,38 @@ export default function PurchaseSafetyReportPage() {
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De surveyor beoordeelt en vergelijkt de beschikbare documenten
-                en registraties, waaronder de Nota Simple, Catastro, IBI,
-                energiecertificaat (CEE), ITE indien relevant,
-                makelaarsinformatie en beschikbare vergunningen en licenties.
+                De onafhankelijke surveyor beoordeelt en vergelijkt de
+                technische informatie die voor de woning beschikbaar is. Dit
+                kan onder meer bestaan uit de Catastro-gegevens, de
+                geregistreerde omschrijving van de woning, recente
+                IBI-informatie, het geregistreerde energiecertificaat (CEE),
+                het IEEV.CV waar van toepassing, beschikbare plattegronden,
+                bouwvergunningen, licenties en documentatie die door de
+                verkoper of makelaar is aangeleverd.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
-                Ook worden de officiële en gemeten oppervlaktes vergeleken.
-                Mogelijk niet-geregistreerde delen van de woning, aanbouwen,
-                garages of zwembaden worden gesignaleerd. Het rapport kan
-                daarnaast opmerkingen bevatten over planning,
-                eigenaarsgemeenschap, Coastal Law en andere relevante factoren.
+                Waar mogelijk worden geregistreerde, kadastrale en gemeten
+                oppervlaktes met elkaar vergeleken. Verschillen rond
+                aanbouwen, garages, terrassen, zwembaden of andere constructies
+                die niet consistent in de beschikbare documentatie terugkomen,
+                worden gesignaleerd voor verder onderzoek.
+              </p>
+
+              <p className="mt-5 text-base leading-relaxed text-stone-500">
+                De surveyor kan daarnaast technische of planologische
+                aandachtspunten signaleren die aanvullende verificatie nodig
+                hebben. De juridische status, eigendom, lasten,
+                eigenaarsgemeenschap, planologische rechtmatigheid en eventuele
+                gevolgen van de Spaanse Coastal Law worden juridisch beoordeeld
+                of bevestigd door de onafhankelijke advocaat, bevoegde instantie
+                of andere specialist.
+              </p>
+
+              <p className="mt-5 text-base leading-relaxed text-stone-500">
+                Een afwijking betekent niet automatisch dat een woning illegaal
+                of ongeschikt is. Het betekent dat het punt vóór aankoop
+                zorgvuldig moet worden onderzocht, uitgelegd en beoordeeld.
               </p>
             </div>
 
@@ -236,11 +281,12 @@ export default function PurchaseSafetyReportPage() {
               </h3>
 
               <p className="mt-6 text-base leading-relaxed text-stone-600">
-                De onafhankelijke surveyor beoordeelt de zichtbare en
-                toegankelijke technische staat van de woning. Dit omvat
-                constructie en bouwkwaliteit, vocht, waterindringing en
-                zichtbare lekkages, installaties en voorzieningen op
-                functioneel niveau, evenals het zwembad en bijgebouwen.
+                De onafhankelijke surveyor voert een grondige beoordeling uit
+                van de zichtbare en toegankelijke technische staat van de
+                woning. Dit omvat onder meer constructie en bouwkwaliteit,
+                vocht, waterindringing en zichtbare lekkages, installaties en
+                voorzieningen op functioneel niveau, evenals het zwembad,
+                bijgebouwen en andere relevante bouwkundige onderdelen.
               </p>
 
               <p className="mt-5 text-base leading-relaxed text-stone-500">
@@ -249,6 +295,70 @@ export default function PurchaseSafetyReportPage() {
                 aanvullende specialistische onderzoeken nodig zijn, wordt dit
                 duidelijk geadviseerd.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BUYER-SIDE INDEPENDENCE */}
+      <section className="px-8 pb-32">
+        <div className="mx-auto max-w-7xl rounded-[40px] bg-[#1e2a3a] p-12 text-white lg:p-16">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Alleen aan de kant van de koper
+          </p>
+
+          <h2 className="mt-5 max-w-5xl font-serif text-5xl leading-tight">
+            Wij vertegenwoordigen de koper, niet de woning en niet de verkoper.
+          </h2>
+
+          <div className="mt-10 grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="space-y-6 text-lg leading-relaxed text-white/80">
+              <p>
+                In Spanje is het gebruikelijk dat een verkopende makelaar via
+                de verkoper of de verkooptransactie wordt betaald wanneer een
+                woning wordt verkocht. Dat model hoeft op zichzelf geen probleem
+                te zijn, maar het betekent wel dat de betrokken verkoopmakelaar
+                een financieel belang kan hebben bij het tot stand komen van de
+                transactie.
+              </p>
+
+              <p>
+                Nordic Move Spain laat zich niet door de verkoper of de
+                verkopende makelaar betalen om een specifieke woning verkocht
+                te krijgen. Ons verdienmodel is daarom niet afhankelijk van het
+                sluiten van die specifieke verkoop. Wij kunnen ons volledig
+                richten op de vraag of de woning werkelijk bij de koper past en
+                of de relevante risico&apos;s voldoende zijn onderzocht.
+              </p>
+
+              <p>
+                Juist daardoor kunnen we ruimte geven aan grondige technische en
+                juridische controles. Onze onafhankelijke surveyor en advocaat
+                hoeven een aandachtspunt niet kleiner te maken om een verkoop
+                door te laten gaan. Zij beoordelen vanuit hun eigen professionele
+                verantwoordelijkheid, en wij behartigen uitsluitend het belang
+                van de koper in de coördinatie en besluitvorming.
+              </p>
+            </div>
+
+            <div className="grid gap-4">
+              {[
+                "Geen verkoperscommissie om een specifieke woning te pushen",
+                "Grondige technische inspectie door een onafhankelijke surveyor",
+                "Volledige juridische due diligence door een onafhankelijke advocaat",
+                "Ruimte voor aanvullend onderzoek als iets niet klopt",
+                "Onderhandelen, verder onderzoeken of stoppen als de bevindingen dat vragen",
+                "Eén duidelijke focus: het belang van de koper",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-white/10 bg-white/8 p-5"
+                >
+                  <p className="text-sm font-medium leading-relaxed text-white">
+                    {item}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -271,11 +381,11 @@ export default function PurchaseSafetyReportPage() {
               "Vocht, waterindringing en zichtbare lekkages",
               "Installaties en voorzieningen op functioneel niveau",
               "Zwembad, bijgebouwen en noodzakelijke reparaties",
-              "Nota Simple, Catastro, IBI, CEE en ITE indien relevant",
-              "Makelaarsinformatie en beschikbare vergunningen en licenties",
-              "Vergelijking van officiële en gemeten oppervlaktes",
-              "Signalering van mogelijke niet-geregistreerde onderdelen",
-              "Opmerkingen over planning, eigenaarsgemeenschap, Coastal Law en andere relevante factoren",
+              "Catastro, geregistreerde omschrijving, IBI, CEE en IEEV.CV waar relevant",
+              "Beschikbare plattegronden, vergunningen, licenties en technische documentatie",
+              "Vergelijking van geregistreerde, kadastrale en gemeten oppervlaktes",
+              "Signalering van mogelijke afwijkingen, aanbouwen, garages, terrassen of zwembaden",
+              "Juridische controle van eigendom, lasten, communityzaken, planning en Coastal Law door de advocaat",
             ].map((item) => (
               <div
                 key={item}
@@ -357,13 +467,16 @@ export default function PurchaseSafetyReportPage() {
             <p className="mt-6 text-lg leading-relaxed text-stone-700">
               Wij houden bij wie wat doet, welke informatie ontbreekt, welke
               vragen nog openstaan, wat de volgende stap is en waar vertraging
-              of risico’s kunnen ontstaan.
+              of risico’s kunnen ontstaan. Omdat wij niet aan de verkoperskant
+              worden betaald om deze specifieke transactie te sluiten, kunnen we
+              openstaande punten blijven volgen totdat er voldoende duidelijkheid
+              is voor de koper.
             </p>
 
             <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-700">
               <li>• Eén vast Nordic Move-aanspreekpunt</li>
-              <li>• Coördinatie van de onafhankelijke surveyor</li>
-              <li>• Selectie en coördinatie van een onafhankelijke Spaanse advocaat</li>
+              <li>• Coördinatie van een ervaren onafhankelijke surveyor</li>
+              <li>• Selectie en coördinatie van een ervaren onafhankelijke Spaanse vastgoedadvocaat</li>
               <li>• Opvolging van open vragen, voorwaarden en deadlines</li>
               <li>• Een duidelijk aankoopadvies op basis van beide rapporten</li>
             </ul>
@@ -448,12 +561,26 @@ export default function PurchaseSafetyReportPage() {
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            De document- en registratiescreening van de surveyor is een eerste
+            De technische documentvergelijking van de surveyor is een eerste
             beoordeling en signalering op basis van de beschikbare informatie.
             Deze vervangt niet de volledige juridische due diligence of een
-            formele bevestiging door de bevoegde autoriteiten. Geen enkele
-            inspectie of beoordeling kan garanderen dat een woning volledig
-            vrij is van risico’s of verborgen gebreken.
+            formele bevestiging door de bevoegde autoriteiten. Juridische
+            onderwerpen worden beoordeeld door de onafhankelijke advocaat en,
+            waar nodig, bevestigd door de relevante instantie of specialist.
+          </p>
+
+          <p className="mt-6 text-lg leading-relaxed text-stone-600">
+            Onze onafhankelijke positie betekent dat Nordic Move geen
+            verkopersbelang heeft bij het afronden van een specifieke verkoop.
+            Dat maakt het mogelijk om aandachtspunten serieus te laten
+            onderzoeken en de koper op basis van de uitkomsten te ondersteunen
+            bij doorgaan, heronderhandelen, verder onderzoek of stoppen.
+          </p>
+
+          <p className="mt-6 text-lg leading-relaxed text-stone-600">
+            Geen enkele inspectie, juridische beoordeling of professionele
+            controle kan absolute zekerheid geven of garanderen dat een woning
+            volledig vrij is van risico&apos;s of verborgen gebreken.
           </p>
         </div>
       </section>
