@@ -1,3 +1,5 @@
+import { villas } from "../villas/villasData";
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
@@ -77,6 +79,21 @@ export const metadata = {
 };
 
 export default function DutchHomePage() {
+  const featuredVillaIds = [
+    "20-4066",
+    "70-397",
+    "20-3358e",
+    "20-4070c",
+    "c02-36026",
+    "c11-95246",
+    "avs-56875",
+    "avs-52785",
+  ];
+
+  const featuredVillas = featuredVillaIds
+    .map((id) => villas.find((villa) => villa.id === id))
+    .filter((villa): villa is (typeof villas)[number] => Boolean(villa));
+
   const guideCards = [
     {
       href: "/nl/guides/best-areas-costa-blanca-north-retirees",
@@ -182,25 +199,29 @@ export default function DutchHomePage() {
           <div className="hidden w-[180px] md:block"></div>
 
           {/* DESKTOP MENU */}
-          <div className="hidden gap-8 text-sm text-white md:flex">
+          <div className="hidden gap-7 text-sm text-white md:flex">
             <a href="/nl" className="border-b border-[#c8a063] pb-1">
               Home
             </a>
 
             <a href="/nl/regions" className="transition hover:text-white/70">
-              Regions
+              Regio&apos;s
+            </a>
+
+            <a href="/nl/villas" className="transition hover:text-white/70">
+              Woningen
             </a>
 
             <a href="/nl/services" className="transition hover:text-white/70">
-              Services
+              Diensten
             </a>
 
             <a href="/nl/guides" className="transition hover:text-white/70">
-              Guides
+              Gidsen
             </a>
 
             <a href="/nl/about-us" className="transition hover:text-white/70">
-              About us
+              Over ons
             </a>
 
             <a href="/nl/contact" className="transition hover:text-white/70">
@@ -264,10 +285,11 @@ export default function DutchHomePage() {
             <div className="absolute right-0 mt-3 w-[280px] rounded-2xl bg-[#1e2a3a] p-6 text-white shadow-2xl">
               <div className="flex flex-col gap-5 text-base">
                 <a href="/nl">Home</a>
-                <a href="/nl/regions">Regions</a>
-                <a href="/nl/services">Services</a>
-                <a href="/nl/guides">Guides</a>
-                <a href="/nl/about-us">About us</a>
+                <a href="/nl/regions">Regio&apos;s</a>
+                <a href="/nl/villas">Woningen</a>
+                <a href="/nl/services">Diensten</a>
+                <a href="/nl/guides">Gidsen</a>
+                <a href="/nl/about-us">Over ons</a>
                 <a href="/nl/contact">Contact</a>
               </div>
 
@@ -357,6 +379,100 @@ export default function DutchHomePage() {
           <p>Persoonlijke begeleiding aan de kant van de koper</p>
           <p>Juridische én technische controle vóór aankoop</p>
           <p>Begeleiding in Nederlands, Engels, Duits en Zweeds</p>
+        </div>
+      </section>
+
+      {/* FEATURED PROPERTY SELECTION */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+            <div className="max-w-4xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Woningselectie
+              </p>
+
+              <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+                Geselecteerde woningen uit ons bredere netwerk.
+              </h2>
+
+              <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">
+                Nordic Move Spain is niet gebonden aan één makelaar of één portefeuille.
+                We werken met meerdere vastgoedprofessionals aan de Costa Blanca Noord en
+                zoeken de bredere markt namens onze kopers.
+              </p>
+            </div>
+
+            <a
+              href="/nl/villas"
+              className="inline-flex w-fit rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
+            >
+              Bekijk alle 54 villa&apos;s
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+            {featuredVillas.map((villa) => (
+              <a
+                key={villa.id}
+                href={`/nl/villas/${villa.id}`}
+                className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={villa.images[0]}
+                    alt={`Villa in ${villa.location}`}
+                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
+                    {villa.location}
+                  </p>
+
+                  <h3 className="mt-3 font-serif text-3xl text-[#1e2a3a]">
+                    €{villa.price.toLocaleString("nl-NL")}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-relaxed text-stone-600">
+                    {villa.beds} slaapkamers · {villa.baths} badkamers
+                    {villa.built ? ` · ${villa.built} m² woonoppervlak` : ""}
+                  </p>
+
+                  <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
+                    Bekijk woning en foto&apos;s →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-[30px] bg-[#e9dfd2] p-7 md:flex md:items-center md:justify-between md:gap-8">
+            <div>
+              <h3 className="font-serif text-2xl text-[#1e2a3a]">
+                Staat de juiste woning er niet tussen?
+              </h3>
+
+              <p className="mt-3 max-w-3xl leading-relaxed text-stone-600">
+                Vertel ons wat u zoekt. Wij kunnen namens u zoeken bij verschillende
+                makelaars, binnen ons professionele netwerk en naar aanvullende
+                marktmogelijkheden.
+              </p>
+            </div>
+
+            <a
+              href="/nl/contact"
+              className="mt-6 inline-flex shrink-0 rounded-full bg-[#1e2a3a] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#2b3a4d] md:mt-0"
+            >
+              Vertel ons wat u zoekt
+            </a>
+          </div>
+
+          <p className="mt-6 text-xs leading-relaxed text-stone-400">
+            Woningen worden aangeboden via samenwerkende vastgoedpartners. Nordic Move Spain
+            vertegenwoordigt en adviseert de koper.
+          </p>
         </div>
       </section>
 

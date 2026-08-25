@@ -77,6 +77,97 @@ export const metadata = {
 };
 
 export default function GermanHomePage() {
+  const featuredVillas = [
+    {
+      id: "avs-56875",
+      ref: "AVS 56875",
+      location: "Altea",
+      price: 2370000,
+      beds: 4,
+      baths: 4,
+      built: 412,
+      plot: 979,
+      image: "https://s3-ap-southeast-1.amazonaws.com/res.realgrowth.com/2034/D17771.jpg",
+    },
+    {
+      id: "avs-52785",
+      ref: "AVS 52785",
+      location: "Jávea",
+      price: 4500000,
+      beds: 4,
+      baths: 6,
+      built: 461,
+      plot: 925,
+      image: "https://s3-ap-southeast-1.amazonaws.com/res.realgrowth.com/2034/D7085.jpg",
+    },
+    {
+      id: "20-4066",
+      ref: "20.4066",
+      location: "Moraira, San Jaime",
+      price: 795000,
+      beds: 3,
+      baths: 2,
+      built: 173,
+      plot: 870,
+      image: "https://tabairarealestate.com/media/images/properties/o_1jtgdn97489u1u0v14lh9eu1oin2s.jpg",
+    },
+    {
+      id: "20-4076",
+      ref: "20.4076",
+      location: "Moraira, Moravit",
+      price: 915000,
+      beds: 3,
+      baths: 4,
+      built: 289,
+      plot: 960,
+      image: "https://tabairarealestate.com/media/images/properties/o_1jvlvpvrgo811l311s3s1qrc1oba2p.jpg",
+    },
+    {
+      id: "c18-94071",
+      ref: "C18-94071",
+      location: "Jávea",
+      price: 2800000,
+      beds: 5,
+      baths: 4,
+      built: 590,
+      plot: 1885,
+      image: "https://www.propertyinvestspain.es/objetos/temp/source/propertyinvest/2026/08/06/981881/EXTERIOR1P7F.jpeg",
+    },
+    {
+      id: "70-397",
+      ref: "70.397",
+      location: "Benissa Costa",
+      price: 925000,
+      beds: 3,
+      baths: 2,
+      built: 150,
+      plot: 925,
+      image: "https://tabairarealestate.com/media/images/properties/o_1etmt4h1l1irv32b1pjfbhu1pm01a.jpg",
+    },
+    {
+      id: "c02-36026",
+      ref: "C02-36026",
+      location: "Calpe",
+      price: 1525000,
+      beds: 3,
+      baths: 4,
+      built: 249,
+      plot: 800,
+      image: "https://www.max-villas.eu/images/viviendas/18028/w_v-ext-noche-01-03_06_2025-3.jpg",
+    },
+    {
+      id: "20-4070c",
+      ref: "20.4070C",
+      location: "Benitachell, Cumbre del Sol",
+      price: 1490000,
+      beds: 5,
+      baths: 5,
+      built: 0,
+      plot: 684,
+      image: "https://tabairarealestate.com/media/images/properties/o_1ju4g3dm9t271lrr1a8g9s06is2u.jpg",
+    },
+  ];
+
   const guideCards = [
     {
       href: "/de/guides/best-areas-costa-blanca-north-retirees",
@@ -114,6 +205,7 @@ export default function GermanHomePage() {
         "@type": "Organization",
         "@id": "#organization",
         name: "Nordic Move Spain",
+        email: "willeke@nordicmovespain.com",
         description:
           "Kauf- und Relocation-Begleitung für internationale Käufer, die mit mehr Sicherheit eine Immobilie an der Costa Blanca erwerben und ihren Umzug sorgfältig organisieren möchten.",
       },
@@ -191,6 +283,10 @@ export default function GermanHomePage() {
               Regionen
             </a>
 
+            <a href="/de/villas" className="transition hover:text-white/70">
+              Villen
+            </a>
+
             <a href="/de/services" className="transition hover:text-white/70">
               Leistungen
             </a>
@@ -265,6 +361,7 @@ export default function GermanHomePage() {
               <div className="flex flex-col gap-5 text-base">
                 <a href="/de">Startseite</a>
                 <a href="/de/regions">Regionen</a>
+                <a href="/de/villas">Villen</a>
                 <a href="/de/services">Leistungen</a>
                 <a href="/de/guides">Ratgeber</a>
                 <a href="/de/about-us">Über uns</a>
@@ -372,6 +469,81 @@ export default function GermanHomePage() {
           <p>Persönliche Begleitung auf der Seite des Käufers</p>
           <p>Rechtliche und technische Prüfung vor dem Kauf</p>
           <p>Begleitung auf Deutsch, Englisch, Niederländisch und Schwedisch</p>
+        </div>
+      </section>
+
+      {/* SELECTED VILLAS */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-4xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Immobilienauswahl
+              </p>
+
+              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+                Ausgewählte Villen aus unserem Partnernetzwerk.
+              </h2>
+
+              <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">
+                Nordic Move Spain ist weder an einen einzelnen Makler noch an ein bestimmtes Portfolio
+                gebunden. Wir arbeiten mit mehreren Immobilienprofis an der Costa Blanca Nord zusammen
+                und durchsuchen den breiteren Markt im Auftrag unserer Käufer.
+              </p>
+            </div>
+
+            <a
+              href="/de/villas"
+              className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
+            >
+              Alle 54 ausgewählten Villen ansehen →
+            </a>
+          </div>
+
+          <div className="mt-14 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+            {featuredVillas.map((villa) => (
+              <a
+                key={villa.ref}
+                href={`/de/villas#${villa.id}`}
+                className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={villa.image}
+                    alt={`Ausgewählte Villa in ${villa.location} bei Nordic Move Spain`}
+                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
+                    {villa.location}
+                  </p>
+                  <h3 className="mt-3 font-serif text-2xl text-[#1e2a3a]">
+                    €{villa.price.toLocaleString("de-DE")}
+                  </h3>
+                  <p className="mt-3 text-sm text-stone-600">
+                    {villa.beds} Schlafzimmer · {villa.baths} Bäder
+                    {villa.built ? ` · ${villa.built} m² Wohn-/Baufläche` : ""}
+                  </p>
+                  <span className="mt-5 inline-block text-sm font-medium text-[#1e2a3a]">
+                    Immobilie ansehen →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-9 flex flex-col gap-4 border-t border-stone-300/70 pt-7 md:flex-row md:items-center md:justify-between">
+            <p className="max-w-4xl text-sm leading-relaxed text-stone-500">
+              Die Immobilie wird über einen unserer kooperierenden Immobilienpartner angeboten.
+              Nordic Move Spain vertritt und berät den Käufer. Verfügbarkeit und Objektangaben können sich ändern.
+            </p>
+            <a href="/de/contact" className="text-sm font-medium text-[#1e2a3a] underline underline-offset-4">
+              Sie suchen etwas anderes? Sagen Sie uns, was Sie suchen.
+            </a>
+          </div>
         </div>
       </section>
 
@@ -927,7 +1099,7 @@ export default function GermanHomePage() {
               Die Module können einzeln oder kombiniert gebucht werden. Leistungsumfang,
               Zeitplan, Kosten und Verantwortlichkeiten werden für jeden Bereich im Voraus festgelegt.
               Externe Fachleute bleiben für ihre eigene
-              advice, quotations and Ausführung verantwortlich bleibt.
+              Beratung, Angebote und Ausführung verantwortlich.
             </p>
           </div>
         </div>
@@ -1044,6 +1216,16 @@ export default function GermanHomePage() {
               Erstgespräch vereinbaren
             </a>
           </div>
+
+          <p className="mt-7 text-sm text-white/70">
+            Lieber per E-Mail?{" "}
+            <a
+              href="mailto:willeke@nordicmovespain.com"
+              className="font-medium text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
+            >
+              willeke@nordicmovespain.com
+            </a>
+          </p>
         </div>
       </section>
 

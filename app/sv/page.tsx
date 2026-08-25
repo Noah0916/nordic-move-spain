@@ -1,3 +1,5 @@
+import { villas } from "../villas/villasData";
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
@@ -77,6 +79,21 @@ export const metadata = {
 };
 
 export default function HemPage() {
+  const featuredVillaIds = [
+    "20-4066",
+    "70-397",
+    "20-3358e",
+    "20-4070c",
+    "c02-36026",
+    "c11-95246",
+    "avs-56875",
+    "avs-52785",
+  ];
+
+  const featuredVillas = featuredVillaIds
+    .map((id) => villas.find((villa) => villa.id === id))
+    .filter((villa): villa is (typeof villas)[number] => Boolean(villa));
+
   const guideCards = [
     {
       href: "/sv/guides/best-areas-costa-blanca-north-retirees",
@@ -191,6 +208,10 @@ export default function HemPage() {
               Regioner
             </a>
 
+            <a href="/sv/villas" className="transition hover:text-white/70">
+              Bostäder
+            </a>
+
             <a href="/sv/services" className="transition hover:text-white/70">
               Tjänster
             </a>
@@ -265,6 +286,7 @@ export default function HemPage() {
               <div className="flex flex-col gap-5 text-base">
                 <a href="/sv">Hem</a>
                 <a href="/sv/regions">Regioner</a>
+                <a href="/sv/villas">Bostäder</a>
                 <a href="/sv/services">Tjänster</a>
                 <a href="/sv/guides">Guider</a>
                 <a href="/sv/about-us">Om oss</a>
@@ -371,6 +393,101 @@ export default function HemPage() {
           <p>Personligt stöd på köparens sida</p>
           <p>Juridiska och tekniska kontroller före köp</p>
           <p>Stöd på nederländska, engelska, tyska och svenska</p>
+        </div>
+      </section>
+
+
+      {/* UTVALT BOSTADSURVAL */}
+      <section className="px-8 py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+            <div className="max-w-4xl">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+                Bostadsurval
+              </p>
+
+              <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+                Utvalda bostäder från vårt bredare nätverk.
+              </h2>
+
+              <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">
+                Nordic Move Spain är inte knutet till en enda mäklare eller en enda
+                portfölj. Vi samarbetar med flera fastighetsprofessionella på Costa
+                Blanca North och söker på den bredare marknaden för våra köpares räkning.
+              </p>
+            </div>
+
+            <a
+              href="/sv/villas"
+              className="inline-flex w-fit rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
+            >
+              Visa alla 54 villor
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+            {featuredVillas.map((villa) => (
+              <a
+                key={villa.id}
+                href={`/sv/villas/${villa.id}`}
+                className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={villa.images[0]}
+                    alt={`Villa i ${villa.location}`}
+                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
+                    {villa.location}
+                  </p>
+
+                  <h3 className="mt-3 font-serif text-3xl text-[#1e2a3a]">
+                    €{villa.price.toLocaleString("sv-SE")}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-relaxed text-stone-600">
+                    {villa.beds} sovrum · {villa.baths} badrum
+                    {villa.built ? ` · ${villa.built} m² byggyta` : ""}
+                  </p>
+
+                  <span className="mt-6 inline-block text-sm font-medium text-[#1e2a3a]">
+                    Se bostad och bilder →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-[30px] bg-[#e9dfd2] p-7 md:flex md:items-center md:justify-between md:gap-8">
+            <div>
+              <h3 className="font-serif text-2xl text-[#1e2a3a]">
+                Hittar du inte rätt bostad här?
+              </h3>
+
+              <p className="mt-3 max-w-3xl leading-relaxed text-stone-600">
+                Berätta vad du söker. Vi kan söka hos flera mäklare, i vårt
+                professionella nätverk och bland ytterligare marknadsmöjligheter
+                för din räkning.
+              </p>
+            </div>
+
+            <a
+              href="/sv/contact"
+              className="mt-6 inline-flex shrink-0 rounded-full bg-[#1e2a3a] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#2b3a4d] md:mt-0"
+            >
+              Berätta vad du söker
+            </a>
+          </div>
+
+          <p className="mt-6 text-xs leading-relaxed text-stone-400">
+            Bostäder erbjuds via en av våra samarbetande fastighetspartners.
+            Nordic Move Spain representerar och ger råd till köparen.
+          </p>
         </div>
       </section>
 
