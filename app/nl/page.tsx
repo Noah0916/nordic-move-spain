@@ -80,14 +80,14 @@ export const metadata = {
 
 export default function DutchHomePage() {
   const featuredVillaIds = [
-    "20-4066",
-    "70-397",
-    "20-3358e",
-    "20-4070c",
-    "c02-36026",
-    "c11-95246",
-    "avs-56875",
-    "avs-52785",
+    "c02-62052",
+    "c11-26064",
+    "c21-17150",
+    "20-4073c",
+    "c02-23322",
+    "20-4019",
+    "c11-33867",
+    "20-4077",
   ];
 
   const featuredVillas = featuredVillaIds
@@ -184,6 +184,31 @@ export default function DutchHomePage() {
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
       />
+
+      <style>{`
+        @keyframes heroHomeMotion {
+          0% {
+            transform: scale(1.08) translate3d(-2.2%, 0.2%, 0);
+          }
+          50% {
+            transform: scale(1.14) translate3d(1.8%, -1%, 0);
+          }
+          100% {
+            transform: scale(1.10) translate3d(-0.8%, 1%, 0);
+          }
+        }
+
+        .hero-home-image {
+          animation-name: heroHomeMotion;
+          animation-duration: 12s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          will-change: transform;
+          transform-origin: center center;
+          backface-visibility: hidden;
+        }
+      `}</style>
 
       {/* NAVIGATION */}
       <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
@@ -326,7 +351,8 @@ export default function DutchHomePage() {
         <img
           src="/images/laatste-homepage.png"
           alt="Zekerder een woning kopen en volledig begeleid verhuizen naar de Costa Blanca met Nordic Move Spain"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="hero-home-image absolute inset-0 h-full w-full object-cover"
+          style={{ animation: "heroHomeMotion 12s ease-in-out infinite alternate" }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/28 to-transparent"></div>
@@ -406,7 +432,7 @@ export default function DutchHomePage() {
               href="/nl/villas"
               className="inline-flex w-fit rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
-              Bekijk alle 54 villa&apos;s
+              Bekijk alle geselecteerde villa&apos;s →
             </a>
           </div>
 
@@ -417,13 +443,14 @@ export default function DutchHomePage() {
                 href={`/nl/villas/${villa.id}`}
                 className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
                     src={villa.images[0]}
                     alt={`Villa in ${villa.location}`}
-                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-64 w-full object-cover"
                     loading="lazy"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1e2a3a]/20 via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-30"></div>
                 </div>
 
                 <div className="p-6">

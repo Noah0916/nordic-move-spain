@@ -185,6 +185,27 @@ export default function HemPage() {
         }}
       />
 
+      <style>{`
+        @keyframes heroHomeMotion {
+          0% {
+            transform: scale(1.08) translate3d(-2.2%, 0.2%, 0);
+          }
+          50% {
+            transform: scale(1.14) translate3d(1.8%, -1%, 0);
+          }
+          100% {
+            transform: scale(1.10) translate3d(-0.8%, 1%, 0);
+          }
+        }
+
+        .hero-home-image {
+          animation: heroHomeMotion 12s ease-in-out infinite alternate;
+          will-change: transform;
+          transform-origin: center center;
+          backface-visibility: hidden;
+        }
+      `}</style>
+
       {/* NAVIGERING */}
       <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -341,7 +362,8 @@ export default function HemPage() {
         <img
           src="/images/laatste-homepage.png"
           alt="Köp bostad på Costa Blanca med noggrant och oberoende stöd från Nordic Move Spain"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="hero-home-image absolute inset-0 h-full w-full object-cover"
+          style={{ animation: "heroHomeMotion 12s ease-in-out infinite alternate" }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/28 to-transparent"></div>
@@ -421,7 +443,7 @@ export default function HemPage() {
               href="/sv/villas"
               className="inline-flex w-fit rounded-full border border-[#1e2a3a] px-7 py-3 text-sm font-medium text-[#1e2a3a] transition hover:bg-[#1e2a3a] hover:text-white"
             >
-              Visa alla 54 villor
+              Visa alla {villas.length} villor
             </a>
           </div>
 

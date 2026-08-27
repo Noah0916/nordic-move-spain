@@ -1,3 +1,5 @@
+import { villas } from "./villas/villasData";
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
@@ -77,96 +79,21 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  const featuredVillas = [
-    {
-      id: "avs-56875",
-      ref: "AVS 56875",
-      location: "Altea",
-      price: 2370000,
-      beds: 4,
-      baths: 4,
-      built: 412,
-      plot: 979,
-      image: "https://s3-ap-southeast-1.amazonaws.com/res.realgrowth.com/2034/D17771.jpg",
-    },
-    {
-      id: "avs-52785",
-      ref: "AVS 52785",
-      location: "Javea",
-      price: 4500000,
-      beds: 4,
-      baths: 6,
-      built: 461,
-      plot: 925,
-      image: "https://s3-ap-southeast-1.amazonaws.com/res.realgrowth.com/2034/D7085.jpg",
-    },
-    {
-      id: "20-4066",
-      ref: "20.4066",
-      location: "Moraira, San Jaime",
-      price: 795000,
-      beds: 3,
-      baths: 2,
-      built: 173,
-      plot: 870,
-      image: "https://tabairarealestate.com/media/images/properties/o_1jtgdn97489u1u0v14lh9eu1oin2s.jpg",
-    },
-    {
-      id: "20-4076",
-      ref: "20.4076",
-      location: "Moraira, Moravit",
-      price: 915000,
-      beds: 3,
-      baths: 4,
-      built: 289,
-      plot: 960,
-      image: "https://tabairarealestate.com/media/images/properties/o_1jvlvpvrgo811l311s3s1qrc1oba2p.jpg",
-    },
-    {
-      id: "c18-94071",
-      ref: "C18-94071",
-      location: "Jávea",
-      price: 2800000,
-      beds: 5,
-      baths: 4,
-      built: 590,
-      plot: 1885,
-      image: "https://www.propertyinvestspain.es/objetos/temp/source/propertyinvest/2026/08/06/981881/EXTERIOR1P7F.jpeg",
-    },
-    {
-      id: "70-397",
-      ref: "70.397",
-      location: "Benissa Costa",
-      price: 925000,
-      beds: 3,
-      baths: 2,
-      built: 150,
-      plot: 925,
-      image: "https://tabairarealestate.com/media/images/properties/o_1etmt4h1l1irv32b1pjfbhu1pm01a.jpg",
-    },
-    {
-      id: "c02-36026",
-      ref: "C02-36026",
-      location: "Calpe",
-      price: 1525000,
-      beds: 3,
-      baths: 4,
-      built: 249,
-      plot: 800,
-      image: "https://www.max-villas.eu/images/viviendas/18028/w_v-ext-noche-01-03_06_2025-3.jpg",
-    },
-    {
-      id: "20-4070c",
-      ref: "20.4070C",
-      location: "Benitachell, Cumbre del Sol",
-      price: 1490000,
-      beds: 5,
-      baths: 5,
-      built: 0,
-      plot: 684,
-      image: "https://tabairarealestate.com/media/images/properties/o_1ju4g3dm9t271lrr1a8g9s06is2u.jpg",
-    },
+  const featuredVillaIds = [
+    "c02-62052",
+    "c11-26064",
+    "c21-17150",
+    "20-4073c",
+    "c02-23322",
+    "20-4019",
+    "c11-33867",
+    "20-4077",
   ];
+
+  const featuredVillas = featuredVillaIds.flatMap((id) => {
+    const villa = villas.find((item) => item.id === id);
+    return villa ? [villa] : [];
+  });
 
   const guideCards = [
     {
@@ -259,6 +186,31 @@ export default function HomePage() {
           __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
       />
+      <style>{`
+        @keyframes heroHomeMotion {
+          0% {
+            transform: scale(1.08) translate3d(-2.2%, 0.2%, 0);
+          }
+          50% {
+            transform: scale(1.14) translate3d(1.8%, -1%, 0);
+          }
+          100% {
+            transform: scale(1.10) translate3d(-0.8%, 1%, 0);
+          }
+        }
+
+        .hero-home-image {
+          animation-name: heroHomeMotion;
+          animation-duration: 12s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          will-change: transform;
+          transform-origin: center center;
+          backface-visibility: hidden;
+        }
+      `}</style>
+
 
       {/* NAVIGATION */}
       <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
@@ -416,7 +368,8 @@ export default function HomePage() {
         <img
           src="/images/laatste-homepage.png"
           alt="Buy property more safely and relocate with full support to the Costa Blanca with Nordic Move Spain"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="hero-home-image absolute inset-0 h-full w-full object-cover"
+          style={{ animation: "heroHomeMotion 12s ease-in-out infinite alternate" }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/28 to-transparent"></div>
@@ -496,7 +449,7 @@ export default function HomePage() {
               href="/villas"
               className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#1e2a3a] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#2b3a4d]"
             >
-              View all 54 selected villas →
+              View all selected villas →
             </a>
           </div>
 
@@ -504,16 +457,17 @@ export default function HomePage() {
             {featuredVillas.map((villa) => (
               <a
                 key={villa.ref}
-                href={`/villas#${villa.id}`}
-                className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                href={`/villas/${villa.id}`}
+                className="group overflow-hidden rounded-[30px] bg-white shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
-                    src={villa.image}
+                    src={villa.images[0]}
                     alt={`${villa.location} villa selected by Nordic Move Spain`}
-                    className="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-64 w-full object-cover"
                     loading="lazy"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1e2a3a]/20 via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-30"></div>
                 </div>
 
                 <div className="p-6">

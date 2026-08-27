@@ -15,6 +15,30 @@ function formatPrice(price: number) {
   }).format(price);
 }
 
+function germanDescription(villa: (typeof villas)[number]) {
+  if (villa.id === "c11-33867") {
+    return [
+      "Diese außergewöhnliche, nach Süden ausgerichtete Finca liegt in der ruhigen Wohnlage Berdica, nur wenige Kilometer vom historischen Zentrum von Benissa entfernt. Auf einem privaten Grundstück von rund 5.500 m² bietet das Anwesen etwa 800 m² bebaute Fläche, sechs Schlafzimmer und sechs Badezimmer sowie großzügige Terrassen, mediterrane Gärten und einen großen privaten Pool.",
+      "Das Haupthaus ist um einen lichtdurchfluteten Innenhof organisiert. Zu den Räumen gehören großzügige Wohn- und Essbereiche mit Kamin, eine private Mastersuite mit Terrasse, Gästeunterkünfte, Büro, Weinkeller, Garage und praktische Nebenräume.",
+      "Ein großer, separat nutzbarer doppelgeschossiger Anbau schafft zusätzliche Möglichkeiten als Gästehaus, Atelier, Sammlungs- oder Entertainmentbereich. Eine Sommerküche mit Grill und Holzofen, Werkstatt, Gemüsegarten, Obstbäume und umfangreiche Stellplätze ergänzen das Anwesen.",
+    ];
+  }
+
+  const size =
+    villa.built > 0 && villa.plot > 0
+      ? `Mit ${villa.built} m² bebauter Fläche auf einem Grundstück von ${villa.plot} m²`
+      : villa.built > 0
+        ? `Mit ${villa.built} m² bebauter Fläche`
+        : villa.plot > 0
+          ? `Auf einem Grundstück von ${villa.plot} m²`
+          : "Mit großzügigen Proportionen";
+
+  return [
+    `Diese ausgewählte Immobilie in ${villa.location} bietet ${villa.beds} Schlafzimmer und ${villa.baths} Badezimmer. ${size} eignet sie sich als mediterraner Wohnsitz, Ferienimmobilie oder als Ausgangspunkt für einen dauerhaften Umzug an die Costa Blanca.`,
+    "Nordic Move Spain begleitet Sie auf Käuferseite. Wir prüfen gerne die aktuelle Verfügbarkeit, koordinieren weitere Objektinformationen und organisieren auf Wunsch eine private Besichtigung.",
+  ];
+}
+
 export function generateStaticParams() {
   return villas.map((villa) => ({
     ref: villa.id,
@@ -27,13 +51,13 @@ export async function generateMetadata({ params }: VillaDetailPageProps) {
 
   if (!villa) {
     return {
-      title: "Villa nicht gefunden | Nordic Move Spain",
+      title: "Immobilie nicht gefunden | Nordic Move Spain",
     };
   }
 
   return {
     title: `Villa in ${villa.location} | ${formatPrice(villa.price)} | Nordic Move Spain`,
-    description: `${villa.beds} Schlafzimmer Villa in ${villa.location}. Ausgewählt über das erweiterte Immobiliennetzwerk von Nordic Move Spain.`,
+    description: `${villa.beds} Schlafzimmer, ${villa.baths} Badezimmer in ${villa.location}. Käuferbegleitung durch Nordic Move Spain.`,
   };
 }
 
@@ -47,6 +71,7 @@ export default async function GermanVillaDetailPage({
     notFound();
   }
 
+  const paragraphs = germanDescription(villa);
   const contactHref = `/de/contact?property=${encodeURIComponent(villa.ref)}`;
 
   return (
@@ -102,7 +127,7 @@ export default async function GermanVillaDetailPage({
             </p>
           </div>
 
-          {/* FOTOGALERIE */}
+          {/* Erste Galerie */}
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             <div className="overflow-hidden rounded-[30px] bg-stone-200 md:row-span-2">
               <img
@@ -115,7 +140,7 @@ export default async function GermanVillaDetailPage({
             <div className="grid grid-cols-2 gap-4">
               {villa.images.slice(1, 5).map((image, index) => (
                 <div
-                  key={image}
+                  key={`${image}-${index}`}
                   className="overflow-hidden rounded-[24px] bg-stone-200"
                 >
                   <img
@@ -129,52 +154,74 @@ export default async function GermanVillaDetailPage({
             </div>
           </div>
 
-          {villa.images.length > 5 && (
-            <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {villa.images.slice(5).map((image, index) => (
-                <div
-                  key={image}
-                  className="overflow-hidden rounded-[24px] bg-stone-200"
-                >
-                  <img
-                    src={image}
-                    alt={`Villa in ${villa.location} - Bild ${index + 6}`}
-                    className="h-72 w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+          {/* Text staat bewust vóór de resterende foto's */}
+          <section className="mt-16 grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                Über diese Immobilie
+              </p>
+              <h2 className="mt-4 font-serif text-3xl leading-tight text-[#1e2a3a] md:text-4xl">
+                Die Immobilie im Überblick
+              </h2>
             </div>
+
+            <div className="rounded-[34px] bg-white p-8 shadow-sm md:p-10">
+              <div className="space-y-5 text-base leading-8 text-stone-600 md:text-lg">
+                {paragraphs.map((paragraph, index) => (
+                  <p key={`${villa.id}-de-description-${index}`}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {villa.images.length > 5 && (
+            <section className="mt-16">
+              <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                Weitere Fotos
+              </p>
+              <h2 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                Galerie
+              </h2>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {villa.images.slice(5).map((image, index) => (
+                  <div
+                    key={`${image}-${index + 5}`}
+                    className="overflow-hidden rounded-[24px] bg-stone-200"
+                  >
+                    <img
+                      src={image}
+                      alt={`Villa in ${villa.location} - Bild ${index + 6}`}
+                      className="h-72 w-full object-cover transition duration-700 hover:scale-[1.02]"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
           )}
 
           <div className="mt-16 grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="rounded-[34px] bg-white p-8 shadow-sm md:p-10">
               <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
-                Immobiliendetails
+                Objektdetails
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
                 <div>
                   <p className="text-sm text-stone-500">Schlafzimmer</p>
-                  <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">
-                    {villa.beds}
-                  </p>
+                  <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">{villa.beds}</p>
                 </div>
-
                 <div>
                   <p className="text-sm text-stone-500">Badezimmer</p>
-                  <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">
-                    {villa.baths}
-                  </p>
+                  <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">{villa.baths}</p>
                 </div>
-
                 <div>
-                  <p className="text-sm text-stone-500">Bebaut</p>
+                  <p className="text-sm text-stone-500">Bebaute Fläche</p>
                   <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">
                     {villa.built > 0 ? `${villa.built} m²` : "Auf Anfrage"}
                   </p>
                 </div>
-
                 <div>
                   <p className="text-sm text-stone-500">Grundstück</p>
                   <p className="mt-1 text-2xl font-medium text-[#1e2a3a]">
@@ -185,26 +232,18 @@ export default async function GermanVillaDetailPage({
 
               <div className="mt-10 border-t border-stone-200 pt-8">
                 <h2 className="font-serif text-3xl text-[#1e2a3a]">
-                  Interesse an dieser Villa?
+                  Interesse an dieser Immobilie?
                 </h2>
-
                 <p className="mt-5 max-w-2xl leading-relaxed text-stone-600">
-                  Nordic Move Spain vertritt und berät den Käufer. Wir können die
-                  aktuelle Verfügbarkeit prüfen, eine private Besichtigung organisieren
-                  und diese Immobilie in Ihre persönliche Vorauswahl aufnehmen.
-                </p>
-
-                <p className="mt-5 max-w-2xl leading-relaxed text-stone-600">
-                  Vor dem Kauf können wir außerdem unabhängige technische und juristische
-                  Prüfungen koordinieren, damit Sie besser verstehen, was Sie kaufen,
-                  bevor Sie sich endgültig entscheiden.
+                  Wir prüfen die aktuelle Verfügbarkeit, organisieren eine private Besichtigung
+                  und können die Immobilie in Ihre persönliche Auswahl aufnehmen.
                 </p>
               </div>
             </div>
 
             <aside className="h-fit rounded-[34px] bg-[#1e2a3a] p-8 text-white shadow-sm md:p-10 lg:sticky lg:top-8">
               <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
-                Käuferseitige Begleitung
+                Unterstützung auf Käuferseite
               </p>
 
               <h2 className="mt-5 font-serif text-3xl leading-tight">
@@ -212,15 +251,15 @@ export default async function GermanVillaDetailPage({
               </h2>
 
               <p className="mt-5 leading-relaxed text-white/75">
-                Teilen Sie uns mit, welche Immobilie Sie interessiert. Wir melden
-                uns persönlich bei Ihnen zur Verfügbarkeit und zu den nächsten Schritten.
+                Teilen Sie uns mit, für welche Immobilie Sie sich interessieren. Wir melden uns
+                persönlich bei Ihnen mit Informationen zur Verfügbarkeit und den nächsten Schritten.
               </p>
 
               <a
                 href={contactHref}
                 className="mt-8 block rounded-full bg-[#c8a063] px-7 py-4 text-center text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Diese Villa anfragen
+                Diese Immobilie anfragen
               </a>
 
               <a
@@ -231,8 +270,8 @@ export default async function GermanVillaDetailPage({
               </a>
 
               <p className="mt-8 text-xs leading-relaxed text-white/50">
-                Immobilie angeboten über einen unserer kooperierenden Immobilienpartner.
-                Nordic Move Spain vertritt und berät den Käufer.
+                Die Immobilie wird über einen unserer kooperierenden Immobilienpartner angeboten.
+                Nordic Move Spain begleitet und berät den Käufer.
               </p>
             </aside>
           </div>
