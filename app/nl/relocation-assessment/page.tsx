@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { supabase } from "../../lib/supabase";
 
-
 type DataLayerEvent = {
   event: string;
   [key: string]: unknown;
@@ -35,51 +34,326 @@ type Question = {
 };
 
 const questions: Question[] = [
+
   {
-    id: "household_profile",
-    section: "Uw plannen",
-    title: "Welke omschrijving past het beste bij uw huishouden?",
+    id: "area_match_priorities",
+    section: "Jouw Area Match",
+    title: "Wat vind je het belangrijkst in een regio?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 punten. Daarmee bepalen we de eerste richting voor jouw persoonlijke Area Match.",
+    options: [
+      "Strand en zee",
+      "Een levendig centrum met restaurants en cafés op loopafstand",
+      "Rust, privacy en ruimte",
+      "Gezinsleven en scholen",
+      "Golf, padel, sport en vrije tijd",
+      "Natuur en wonen in het binnenland of een vallei",
+      "Goede voorzieningen die het hele jaar open zijn",
+      "Goede waardeontwikkeling op lange termijn",
+      "Ik weet het nog niet — help mij kiezen",
+    ],
+    exclusiveOptions: ["Ik weet het nog niet — help mij kiezen"],
+  },
+  {
+    id: "area_familiarity",
+    section: "Jouw Area Match",
+    title: "Hoe goed ken je Costa Blanca Noord al?",
     type: "single",
     options: [
-      "Alleenstaande koper",
-      "Paar",
-      "Gezin met jonge kinderen",
-      "Gezin met schoolgaande kinderen",
-      "Meer-generatie huishouden of huishouden met volwassen kinderen",
-      "Gepensioneerd of deels gepensioneerd huishouden",
+      "Ik ken de regio nog niet",
+      "Ik ben er één keer op vakantie geweest",
+      "Ik ken een paar plaatsen van meerdere bezoeken",
+      "Ik heb al specifieke plaatsen in gedachten",
+      "Ik ken de regio goed en wil nauwkeuriger vergelijken",
     ],
   },
   {
-    id: "purchase_goal",
-    section: "Uw plannen",
-    title: "Wat is uw belangrijkste reden om vastgoed in Spanje te kopen?",
+    id: "areas_considered",
+    section: "Jouw Area Match",
+    title: "Welke plaatsen of regio's overweeg je al?",
+    type: "multiple",
+    maxSelections: 8,
+    helper: "Kies de plaatsen die je al aanspreken. Zowel kust als binnenland zijn meegenomen.",
+    options: [
+      "Dénia",
+      "Jávea / Xàbia",
+      "Moraira",
+      "Benissa",
+      "Calpe",
+      "Altea",
+      "Benitachell / Cumbre del Sol",
+      "Jalón / Xaló / Llíber / Vall de Pop",
+      "Orba / valleien in het binnenland",
+      "Ik sta open voor aanbevelingen",
+      "Ik weet het nog niet",
+    ],
+  },
+  {
+    id: "preferred_setting",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke woonomgevingen spreken je het meest aan?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Direct aan zee",
+      "Op loopafstand van het strand",
+      "Woonwijk met zeezicht",
+      "Stads- of dorpscentrum",
+      "Historisch centrum",
+      "Rustige woonurbanisatie",
+      "Golfomgeving",
+      "Jachthaven of haven",
+      "Platteland of binnenland",
+      "Bergen of natuur",
+      "Exclusieve woonwijk",
+    ],
+  },
+  {
+    id: "area_feeling",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke sfeer moet jouw woonomgeving hebben?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Authentiek Spaans",
+      "Internationaal en goed georganiseerd",
+      "Rustig en van hoge kwaliteit",
+      "Levendig met restaurants en cafés",
+      "Ontspannen kustsfeer",
+      "Exclusief en privé",
+      "Gezinsvriendelijk",
+      "Natuurlijk en landelijk",
+      "Modern en comfortabel",
+    ],
+  },
+  {
+    id: "town_size_preference",
+    section: "Dagelijks leven en karakter",
+    title: "Welke grootte van plaats of gemeenschap past bij jou?",
     type: "single",
     options: [
-      "Permanent verhuizen",
-      "Tweede woning",
-      "Deels in Spanje wonen en later mogelijk verhuizen",
-      "Investering",
-      "Een combinatie van levenskwaliteit en investering",
-      "Ik ben mij nog aan het oriënteren",
+      "Een klein dorp — minder dan ongeveer 5.000 inwoners",
+      "Een kleine plaats — ongeveer 5.000 tot 20.000 inwoners",
+      "Een middelgrote plaats — ongeveer 20.000 tot 50.000 inwoners",
+      "Een grotere plaats of stad — meer dan 50.000 inwoners",
+      "Ik woon liever buiten de plaats, maar wel binnen 10 tot 15 minuten van voorzieningen",
+      "Ik wil verschillende groottes vergelijken",
+      "Geen voorkeur",
+    ],
+  },
+  {
+    id: "town_character",
+    section: "Dagelijks leven en karakter",
+    title: "Welk type centrum zou je het meest aanspreken?",
+    type: "multiple",
+    maxSelections: 3,
+    helper: "Kies maximaal 3 opties.",
+    options: [
+      "Historische oude stad met smalle straatjes, pleinen en traditionele gebouwen",
+      "Elegante kustplaats met boulevard en zeezicht",
+      "Sfeer van een jachthaven of haven",
+      "Klein dorp in het binnenland met lokaal karakter",
+      "Moderne plaats met veel voorzieningen",
+      "Rustige woonomgeving buiten het centrum",
+      "Levendig centrum dat het hele jaar actief blijft",
+      "Geen voorkeur",
+    ],
+    exclusiveOptions: ["Geen voorkeur"],
+  },
+  {
+    id: "restaurant_preferences",
+    section: "Dagelijks leven en karakter",
+    title: "Welke soorten restaurants wil je graag in de buurt hebben?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Authentieke Spaanse restaurants en tapasbars",
+      "Goede lokale vis- en seafoodrestaurants",
+      "Een goede mix van Spaanse en internationale restaurants",
+      "Gastronomie op hoog niveau en fine dining",
+      "Italiaanse, Aziatische en andere internationale keukens",
+      "Gezonde, vegetarische of moderne restaurants",
+      "Restaurants die het hele jaar open zijn",
+      "Restaurantaanbod is voor mij niet belangrijk",
+    ],
+    exclusiveOptions: ["Restaurantaanbod is voor mij niet belangrijk"],
+  },
+  {
+    id: "cafe_lunch_culture",
+    section: "Dagelijks leven en karakter",
+    title: "Hoe belangrijk zijn cafés, lunchplekken en terrassen in jouw dagelijkse leven?",
+    type: "single",
+    options: [
+      "Heel belangrijk — ik wil regelmatig lopend koffie drinken, lunchen of een drankje doen",
+      "Belangrijk — meerdere goede cafés en lunchplekken dichtbij zou ideaal zijn",
+      "Leuk om binnen een korte autorit te hebben",
+      "Af en toe handig, maar geen doorslaggevende factor",
+      "Niet belangrijk",
+    ],
+  },
+  {
+    id: "shopping_preferences",
+    section: "Dagelijks leven en karakter",
+    title: "Welke winkels wil je gemakkelijk kunnen bereiken?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Lokale winkels, bakker en wekelijkse markt",
+      "Goede supermarkten en dagelijkse voorzieningen",
+      "Boetieks en kwalitatieve kledingwinkels",
+      "Interieur-, meubel- en woonwinkels",
+      "Een groter winkelcentrum binnen ongeveer 20 tot 30 minuten",
+      "Luxe- of designerwinkels binnen redelijke rijafstand",
+      "Winkelen is voor mij niet belangrijk",
+    ],
+    exclusiveOptions: ["Winkelen is voor mij niet belangrijk"],
+  },
+  {
+    id: "market_gastronomy",
+    section: "Lifestyle en lokale cultuur",
+    title: "Hoe belangrijk zijn lokale producten en markten voor jou?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Wekelijkse lokale markten",
+      "Verse vis en zeevruchten",
+      "Lokale slagers, bakkers en delicatessenzaken",
+      "Boerderijwinkels en lokaal geteelde producten",
+      "Wijnbars en goede wijnwinkels",
+      "Foodfestivals en gastronomische evenementen",
+      "Gemak is voor mij belangrijker dan lokale eetcultuur",
+      "Niet belangrijk",
+    ],
+    exclusiveOptions: ["Niet belangrijk"],
+  },
+  {
+    id: "evening_atmosphere",
+    section: "Dagelijks leven en karakter",
+    title: "Welke avondsfeer past het beste bij jou?",
+    type: "single",
+    options: [
+      "Heel rustig — 's avonds vind ik rust belangrijk",
+      "Een paar goede restaurants en terrassen, maar weinig nachtleven",
+      "Een levendig centrum met restaurants en bars",
+      "Een levendige zomer is prima als het in de winter rustiger is",
+      "Ik houd van nachtleven en een actief sociaal leven",
+      "Geen voorkeur",
+    ],
+  },
+  {
+    id: "wine_inland_lifestyle",
+    section: "Lifestyle en lokale cultuur",
+    title: "Spreekt een leven tussen wijn, dorpen en natuur in het binnenland je aan?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Hiermee kunnen we kustplaatsen vergelijken met bijvoorbeeld Jalón, Llíber en Vall de Pop.",
+    options: [
+      "Wijngaarden en wijnroutes in de buurt",
+      "Wijnproeverijen en bezoeken aan bodegas",
+      "Traditionele dorpen en gezellige pleinen in het binnenland",
+      "Wandelen en bergtochten",
+      "Wielrennen of e-bike routes",
+      "Meer grond, privacy en uitzicht over het landschap",
+      "Finca- of landhuisomgeving",
+      "Paardrijden of andere landelijke activiteiten",
+      "Ik geef duidelijk de voorkeur aan de kust en wil niet in het binnenland wonen",
+      "Ik ben nieuwsgierig en wil kust en binnenland vergelijken",
+    ],
+    exclusiveOptions: [
+      "Ik geef duidelijk de voorkeur aan de kust en wil niet in het binnenland wonen",
+    ],
+  },
+  {
+    id: "water_lifestyle",
+    section: "Lifestyle en lokale cultuur",
+    title: "Hoe belangrijk is leven op of rond het water voor jou?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Kies maximaal 5 opties.",
+    options: [
+      "Zeilen",
+      "Motorboot varen",
+      "Yachtclub of gemeenschap rond een marina",
+      "Vaste of seizoensgebonden ligplaats",
+      "Kajakken of suppen",
+      "Duiken of snorkelen",
+      "Openwaterzwemmen",
+      "Beachclubs en restaurants aan het water",
+      "Dicht bij zee wonen is genoeg — ik heb geen bootfaciliteiten nodig",
+      "Watersport is voor mij niet belangrijk",
+    ],
+    exclusiveOptions: ["Watersport is voor mij niet belangrijk"],
+  },
+  {
+    id: "culture_social_life",
+    section: "Lifestyle en lokale cultuur",
+    title: "Welke culturele en sociale activiteiten wil je graag in de buurt hebben?",
+    type: "multiple",
+    maxSelections: 5,
+    helper: "Kies maximaal 5 opties.",
+    options: [
+      "Live muziek en concerten",
+      "Kunstgaleries en tentoonstellingen",
+      "Lokale feesten en traditionele fiestas",
+      "Theater of bioscoop",
+      "Wijn-, food- en culturele evenementen",
+      "Taal- of cultuurcursussen",
+      "Goede doelen of vrijwilligersorganisaties",
+      "Internationale sociale evenementen",
+      "Ik geef de voorkeur aan een rustiger leven thuis",
     ],
   },
   {
     id: "decision_style",
-    section: "Uw plannen",
-    title: "Hoe wilt u uw beslissing nemen?",
+    section: "Jouw plannen",
+    title: "Hoe wil je het liefst tot een beslissing komen?",
     type: "single",
     options: [
-      "Ik wil eerst de juiste regio begrijpen",
-      "Ik wil regio’s en woningen tegelijk vergelijken",
-      "Ik heb al een voorkeursregio en wil passende woningen zien",
-      "Ik heb vooral duidelijkheid nodig over risico’s en praktische verschillen",
-      "Ik sta nog helemaal aan het begin van mijn oriëntatie",
+      "Ik wil eerst begrijpen welke regio het beste bij mij past",
+      "Ik wil regio's en woningen tegelijk vergelijken",
+      "Ik heb al een voorkeursregio en wil geschikte woningen zien",
+      "Ik wil vooral duidelijkheid over risico's en praktische verschillen",
+      "Ik sta nog helemaal aan het begin van mijn zoektocht",
+    ],
+  },
+  {
+    id: "purchase_goal",
+    section: "Jouw plannen",
+    title: "Wat is je belangrijkste reden om in Spanje te kopen?",
+    type: "single",
+    options: [
+      "Permanent naar Spanje verhuizen",
+      "Tweede woning of vakantiehuis",
+      "Nu gedeeltelijk in Spanje wonen en later mogelijk permanent verhuizen",
+      "Investering",
+      "Een combinatie van levensstijl en investering",
+      "Ik ben mij nog aan het oriënteren",
+    ],
+  },
+  {
+    id: "household_profile",
+    section: "Jouw plannen",
+    title: "Welke omschrijving past het beste bij jouw huishouden?",
+    type: "single",
+    options: [
+      "Alleenstaande koper",
+      "Stel",
+      "Gezin met jonge kinderen",
+      "Gezin met schoolgaande kinderen",
+      "Huishouden met volwassen kinderen of meerdere generaties",
+      "Gepensioneerd of deels gepensioneerd huishouden",
     ],
   },
   {
     id: "time_in_spain",
-    section: "Uw plannen",
-    title: "Hoeveel tijd verwacht u per jaar in Spanje door te brengen?",
+    section: "Jouw plannen",
+    title: "Hoeveel tijd verwacht je elk jaar in Spanje door te brengen?",
     type: "single",
     options: [
       "Minder dan 1 maand per jaar",
@@ -87,13 +361,13 @@ const questions: Question[] = [
       "3 tot 6 maanden per jaar",
       "Meer dan 6 maanden per jaar",
       "Het hele jaar of bijna het hele jaar",
-      "Ik weet het nog niet zeker",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "season_of_use",
-    section: "Uw plannen",
-    title: "Wanneer verwacht u de woning het meest te gebruiken?",
+    section: "Jouw plannen",
+    title: "Wanneer verwacht je de woning vooral te gebruiken?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
@@ -104,26 +378,13 @@ const questions: Question[] = [
       "Schoolvakanties",
       "Meerdere langere verblijven per jaar",
       "Het hele jaar",
-      "Ik weet het nog niet zeker",
-    ],
-  },
-  {
-    id: "area_familiarity",
-    section: "Uw plannen",
-    title: "Hoe goed kent u de Costa Blanca Noord al?",
-    type: "single",
-    options: [
-      "Ik ken de regio nog helemaal niet",
-      "Ik ben er één keer op vakantie geweest",
-      "Ik ken enkele plaatsen door meerdere bezoeken",
-      "Ik heb al specifieke plaatsen in gedachten",
-      "Ik ken de regio goed en wil gericht vergelijken",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "timeline",
-    section: "Uw plannen",
-    title: "Wanneer zou u idealiter willen kopen?",
+    section: "Jouw plannen",
+    title: "Wanneer zou je idealiter willen kopen?",
     type: "single",
     options: [
       "Binnen 6 maanden",
@@ -135,21 +396,21 @@ const questions: Question[] = [
   },
   {
     id: "financing",
-    section: "Uw plannen",
-    title: "Hoe verwacht u de aankoop te financieren?",
+    section: "Jouw plannen",
+    title: "Hoe verwacht je de aankoop te financieren?",
     type: "single",
     options: [
-      "Aankoop uit eigen middelen",
+      "Volledig uit eigen middelen",
       "Hypotheek in Spanje",
       "Hypotheek of financiering in een ander land",
-      "Een combinatie van eigen middelen en financiering",
-      "Ik weet het nog niet zeker",
+      "Combinatie van eigen geld en financiering",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "budget",
-    section: "Uw plannen",
-    title: "Wat is uw geschatte vastgoedbudget?",
+    section: "Jouw plannen",
+    title: "Wat is ongeveer je budget voor de woning?",
     type: "single",
     options: [
       "Onder €300.000",
@@ -158,40 +419,40 @@ const questions: Question[] = [
       "€750.000 - €1.000.000",
       "€1.000.000 - €2.000.000",
       "€2.000.000 - €5.000.000",
-      "Meer dan €5.000.000",
+      "€5.000.000+",
     ],
   },
   {
     id: "budget_scope",
-    section: "Uw plannen",
-    title: "Welke kosten zijn inbegrepen in dit budget?",
+    section: "Jouw plannen",
+    title: "Wat moet binnen dit budget vallen?",
     type: "single",
     options: [
-      "Koopprijs, belastingen, advocaatkosten en alle aankoopkosten",
-      "Koopprijs en aankoopkosten, maar geen renovatie",
-      "Alleen de koopprijs",
+      "Woningprijs, belastingen, juridische kosten en alle aankoopkosten",
+      "Woningprijs en aankoopkosten, maar geen renovatie",
+      "Alleen de woningprijs",
       "Ik heb een apart renovatiebudget",
-      "Ik weet het nog niet zeker",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "monthly_running_costs",
-    section: "Uw plannen",
-    title: "Welk niveau aan maandelijkse vaste lasten voelt comfortabel voor u?",
+    section: "Jouw plannen",
+    title: "Welk niveau van maandelijkse vaste lasten voelt comfortabel?",
     type: "single",
     options: [
       "Zo laag mogelijk",
       "Tot ongeveer €300 per maand",
       "€300 tot €600 per maand",
       "€600 tot €1.000 per maand",
-      "Meer dan €1.000 per maand is acceptabel als de woning klopt",
-      "Ik weet het nog niet zeker",
+      "Meer dan €1.000 per maand is acceptabel als de woning perfect is",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "property_type",
-    section: "Uw woning",
-    title: "Welke woningtypes overweegt u serieus?",
+    section: "Jouw woning",
+    title: "Welke woningtypes zou je serieus overwegen?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
@@ -200,16 +461,16 @@ const questions: Question[] = [
       "Luxe villa",
       "Appartement",
       "Penthouse",
-      "Geschakelde woning of twee-onder-een-kap",
+      "Geschakelde woning of herenhuis",
       "Finca of landhuis",
       "Nieuwbouwproject",
-      "Woning in een golfresort",
+      "Woning in een golfresort of golfomgeving",
     ],
   },
   {
     id: "property_style",
-    section: "Uw woning",
-    title: "Welke woonstijl spreekt u het meest aan?",
+    section: "Jouw woning",
+    title: "Welke woningstijl spreekt je het meest aan?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
@@ -217,7 +478,7 @@ const questions: Question[] = [
       "Modern en minimalistisch",
       "Mediterraan en traditioneel",
       "Gerenoveerd met karakter",
-      "Luxe en hoogwaardig",
+      "Luxueus en high-end",
       "Licht, rustig en onderhoudsarm",
       "Rustiek of finca-stijl",
       "Nieuwbouw met strakke lijnen",
@@ -226,8 +487,8 @@ const questions: Question[] = [
   },
   {
     id: "condition",
-    section: "Uw woning",
-    title: "Welke staat van de woning komt voor u in aanmerking?",
+    section: "Jouw woning",
+    title: "Welke staat van onderhoud zou je overwegen?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
@@ -241,46 +502,43 @@ const questions: Question[] = [
   },
   {
     id: "renovation_management",
-    section: "Uw woning",
-    title: "Hoe wilt u omgaan met renovaties of verbeteringen?",
+    section: "Jouw woning",
+    title: "Hoe wil je omgaan met renovatie of verbeteringen?",
     type: "single",
     options: [
-      "Ik wil geen renovatie of werkzaamheden organiseren",
+      "Ik wil geen renovatie- of bouwwerk organiseren",
       "Kleine verbeteringen zijn prima",
-      "Ik sta open voor renovatie als er lokale begeleiding beschikbaar is",
-      "Ik heb renovatie-ervaring en kan goed beslissingen nemen",
-      "Ik zoek juist een project met renovatiepotentieel",
-    ],
-  },
-  {
-    id: "build_quality_comfort",
-    section: "Uw woning",
-    title: "Welke technische punten moeten extra aandacht krijgen tijdens de woningcontrole?",
-    type: "multiple",
-    maxSelections: 5,
-    helper: "Kies maximaal 5 punten die voor u extra belangrijk zijn.",
-    options: [
-      "Isolatie en kwaliteit van ramen",
-      "Verwarming en koelsystemen",
-      "Elektrische installatie en sanitair",
-      "Energiezuinigheid",
-      "Dak, terrassen en waterafvoer",
-      "Algemene bouwkwaliteit",
-      "Zwembad, irrigatie of technische installaties",
-      "Ik heb hierover advies nodig",
+      "Ik sta open voor renovatie als lokale begeleiding beschikbaar is",
+      "Ik heb renovatie-ervaring en kan goed zelf beslissingen nemen",
+      "Ik zoek bewust een woning met renovatiepotentieel",
     ],
   },
   {
     id: "bedrooms",
-    section: "Uw woning",
-    title: "Hoeveel slaapkamers heeft u minimaal nodig?",
+    section: "Jouw woning",
+    title: "Hoeveel slaapkamers heb je minimaal nodig?",
     type: "single",
     options: ["1", "2", "3", "4", "5", "6+"],
   },
   {
+    id: "bathrooms",
+    section: "Jouw woning",
+    title: "Hoeveel badkamers zou je idealiter willen?",
+    type: "single",
+    options: [
+      "1 badkamer is voldoende",
+      "Minimaal 2 badkamers",
+      "Minimaal 3 badkamers",
+      "Minimaal 4 badkamers",
+      "5 of meer badkamers",
+      "Belangrijker: meerdere slaapkamers moeten een eigen badkamer hebben",
+      "Ik ben flexibel",
+    ],
+  },
+  {
     id: "guest_usage",
-    section: "Uw woning",
-    title: "Hoe vaak verwacht u bezoek van familie of vrienden?",
+    section: "Jouw woning",
+    title: "Hoe vaak verwacht je bezoek van familie of vrienden?",
     type: "single",
     options: [
       "Zelden",
@@ -292,20 +550,36 @@ const questions: Question[] = [
   },
   {
     id: "guest_privacy",
-    section: "Uw woning",
-    title: "Hoe belangrijk is privacy voor gasten of familie in de woning?",
+    section: "Jouw woning",
+    title: "Welke vorm van gastenverblijf zou het beste passen?",
     type: "single",
     options: [
-      "Zeer belangrijk — gasten moeten zo zelfstandig mogelijk kunnen verblijven",
-      "Een aparte logeerkamer of gastenbadkamer is voldoende",
-      "Samen wonen en ruimtes delen is helemaal prima",
-      "Gasten spelen nauwelijks een rol",
+      "Een apart gastenhuis, casita of zelfstandig appartement zou ideaal zijn",
+      "Een aparte gastenverdieping of aanbouw met veel privacy",
+      "Een gastenslaapkamer met eigen badkamer is voldoende",
+      "Een gewone gastenkamer in het hoofdhuis is prima",
+      "Gasten zijn voor ons geen belangrijke factor",
+    ],
+  },
+  {
+    id: "garden_size",
+    section: "Jouw woning",
+    title: "Hoeveel privé-buitenruimte voelt goed?",
+    type: "single",
+    options: [
+      "Een terras of zeer kleine onderhoudsarme tuin is voldoende",
+      "Compacte privétuin tot ongeveer 300 m²",
+      "Goede gezinstuin van ongeveer 300 tot 700 m²",
+      "Grote tuin van ongeveer 700 tot 1.500 m²",
+      "Zeer groot perceel vanaf ongeveer 1.500 m²",
+      "Enkele duizenden vierkante meters of een finca-achtige omgeving",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "home_features",
-    section: "Uw woning",
-    title: "Welke woningkenmerken zijn voor u het belangrijkst?",
+    section: "Jouw woning",
+    title: "Welke eigenschappen van de woning zijn het belangrijkst?",
     type: "multiple",
     maxSelections: 8,
     helper: "Kies maximaal 8 opties.",
@@ -316,48 +590,50 @@ const questions: Question[] = [
       "Onderhoudsarme buitenruimte",
       "Zeezicht",
       "Panoramisch zeezicht",
-      "Aparte gastenruimte",
-      "Buitenkeuken of ruimte om gasten te ontvangen",
-      "Gelijkvloers of drempelarm wonen",
+      "Gastenverblijf",
+      "Buitenkeuken of entertainmentruimte",
+      "Gelijkvloers of vrijwel zonder trappen",
       "Lift",
       "Afgesloten wooncomplex",
-      "Privégarage of veilige parkeerplaats",
-      "Mogelijkheid voor elektrische laadpaal",
-      "Werkkamer of homeoffice",
+      "Privégarage of beveiligde parkeerplaats",
+      "Laadpunt voor elektrische auto",
+      "Thuiskantoor",
       "Veel winterzon of zuidoriëntatie",
-      "Bescherming tegen sterke wind",
+      "Beschutting tegen sterke wind",
     ],
   },
   {
     id: "climate_comfort",
-    section: "Uw woning",
-    title: "Welke klimaatcomfortfactoren zijn het belangrijkst in het dagelijks leven?",
+    section: "Jouw woning",
+    title: "Hoe belangrijk zijn zon, schaduw en comfort gedurende het hele jaar?",
     type: "multiple",
-    maxSelections: 5,
-    helper: "Kies maximaal 5 opties.",
+    maxSelections: 6,
+    helper: "Kies maximaal 6 punten.",
     options: [
       "Schaduw op terrassen en in de tuin",
       "Warme winterzon",
-      "Bescherming tegen sterke wind",
+      "Zonnige tuin of terras op het zuiden",
+      "Een groot deel van de dag zon rond het zwembad",
+      "Beschutting tegen sterke wind",
       "Goede natuurlijke ventilatie",
-      "Comfortabele binnentemperatuur in de zomer",
-      "Comfortabele binnentemperatuur in de winter",
+      "Aangename binnentemperatuur in de zomer",
+      "Aangename binnentemperatuur in de winter",
       "Koele zitplekken buiten",
       "Een woning die het hele jaar comfortabel aanvoelt",
     ],
   },
   {
     id: "outdoor_living",
-    section: "Uw woning",
-    title: "Hoe wilt u de buitenruimte gebruiken?",
+    section: "Jouw woning",
+    title: "Hoe wil je de buitenruimte gebruiken?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
     options: [
       "Rustig buiten ontbijten of koffie drinken",
-      "Zonnen",
-      "Schaduw en koele zitplekken",
-      "Eten met familie of gasten",
+      "Zonnebaden",
+      "Schaduwrijke en koele zitplekken",
+      "Buiten eten met familie of gasten",
       "Barbecue of buitenkeuken",
       "Tuinieren",
       "Privézwembad met voldoende privacy",
@@ -366,175 +642,152 @@ const questions: Question[] = [
   },
   {
     id: "maintenance",
-    section: "Uw woning",
-    title: "Hoeveel onderhoud wilt u op u nemen?",
+    section: "Jouw woning",
+    title: "Hoeveel onderhoud wil je aan de woning en het terrein hebben?",
     type: "single",
     options: [
-      "Heel weinig — ik geef de voorkeur aan een onderhoudsarme woning",
-      "Een gemiddeld onderhoudsniveau is acceptabel",
+      "Heel weinig — ik wil een eenvoudige lock-up-and-leave woning",
+      "Gemiddeld onderhoud is prima",
       "Tuin- en zwembadonderhoud zijn acceptabel",
-      "Ik kan een grote woning met grond beheren",
-      "Ik zou professioneel woningbeheer inschakelen",
+      "Een groot huis en terrein laten onderhouden is geen probleem",
+      "Ik zou professionele property-managementdiensten gebruiken",
     ],
   },
   {
     id: "property_management",
-    section: "Uw woning",
-    title: "Hoe moet de woning worden beheerd wanneer u niet in Spanje bent?",
+    section: "Jouw woning",
+    title: "Hoe moet de woning worden beheerd als je niet in Spanje bent?",
     type: "single",
     options: [
-      "Ik wil dat de woning zo weinig mogelijk beheer nodig heeft",
-      "Ik wil sleutelbeheer en regelmatige controles",
+      "De woning moet zo weinig mogelijk beheer nodig hebben",
+      "Ik wil sleutelbeheer en regelmatige woningcontroles",
       "Ik heb tuin- en zwembadonderhoud nodig",
-      "Ik wil volledig woningbeheer",
-      "Familie, vrienden of bekenden zullen ervoor zorgen",
-      "Ik weet het nog niet zeker",
+      "Ik wil volledig property management",
+      "Familie, vrienden of bekenden zorgen ervoor",
+      "Ik weet het nog niet",
     ],
   },
   {
-    id: "preferred_setting",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke liggingen spreken u het meest aan?",
+    id: "build_quality_comfort",
+    section: "Jouw woning",
+    title: "Welke technische punten moeten bij een woninginspectie extra aandacht krijgen?",
     type: "multiple",
-    maxSelections: 4,
-    helper: "Kies maximaal 4 opties.",
+    maxSelections: 5,
+    helper: "Kies maximaal 5 punten die voor jou extra belangrijk zijn.",
     options: [
-      "Direct aan zee",
-      "Strand op loopafstand",
-      "Woonwijk met zeezicht",
-      "Stads- of dorpscentrum",
-      "Historisch centrum",
-      "Rustige woonwijk",
-      "Golfomgeving",
-      "Jachthaven of havengebied",
-      "Landelijke omgeving",
-      "Berg- of natuurgebied",
-      "Exclusieve woonomgeving",
-    ],
-  },
-  {
-    id: "area_feeling",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke sfeer moet uw woonomgeving hebben?",
-    type: "multiple",
-    maxSelections: 4,
-    helper: "Kies maximaal 4 opties.",
-    options: [
-      "Authentiek Spaans",
-      "Internationaal en goed georganiseerd",
-      "Rustig en hoogwaardig",
-      "Levendig met restaurants en cafés",
-      "Kustgericht en ontspannen",
-      "Exclusief en privé",
-      "Gezinsvriendelijk",
-      "Natuurlijk en landelijk",
-      "Modern en comfortabel",
+      "Isolatie en kwaliteit van ramen",
+      "Verwarming en airconditioning",
+      "Elektrische installatie en leidingen",
+      "Energiezuinigheid",
+      "Dak, terrassen en afwatering",
+      "Algemene bouwkwaliteit",
+      "Zwembad, irrigatie of technische installaties",
+      "Ik heb hierbij advies nodig",
     ],
   },
   {
     id: "view_vs_convenience",
-    section: "Ligging en bereikbaarheid",
-    title: "Wat is belangrijker voor u: uitzicht of dagelijks gemak?",
+    section: "Locatie en bereikbaarheid",
+    title: "Wat is belangrijker: uitzicht of dagelijks gemak?",
     type: "single",
     options: [
-      "Uitzicht is belangrijker, ook als de ligging steiler of auto-afhankelijker is",
-      "Een goede balans tussen uitzicht en dagelijkse praktische bruikbaarheid",
-      "Loopbaarheid en eenvoudige bereikbaarheid zijn belangrijker dan uitzicht",
-      "Ik weet het nog niet zeker",
+      "Uitzicht is belangrijker, ook als de locatie steiler is of je vaker de auto nodig hebt",
+      "Een goede balans tussen uitzicht en praktisch dagelijks leven",
+      "Loopafstand en makkelijke bereikbaarheid zijn belangrijker dan uitzicht",
+      "Ik weet het nog niet",
     ],
   },
   {
-    id: "areas_considered",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke plaatsen of regio’s overweegt u al?",
+    id: "preferred_view",
+    section: "Locatie en bereikbaarheid",
+    title: "Welk uitzicht zou de meeste waarde toevoegen aan je dagelijks leven?",
     type: "multiple",
-    maxSelections: 6,
-    helper: "Kies alle plaatsen of gebieden die u al interesseren.",
+    maxSelections: 3,
+    helper: "Kies maximaal 3 opties.",
     options: [
-      "Dénia",
-      "Jávea",
-      "Moraira",
-      "Benissa",
-      "Calpe",
-      "Altea",
-      "Benitachell / Cumbre del Sol",
-      "Orba / Jalón / Binnenland",
-      "Ik sta open voor aanbevelingen",
-      "Ik weet het nog niet zeker",
+      "Panoramisch zeezicht",
+      "Gedeeltelijk of verder weg gelegen zeezicht",
+      "Bergzicht",
+      "Uitzicht over vallei of landschap",
+      "Open groene omgeving",
+      "Uitzicht op stad of marina",
+      "Uitzicht is minder belangrijk dan privacy en gemak",
     ],
   },
   {
     id: "areas_to_avoid",
-    section: "Ligging en bereikbaarheid",
-    title: "Zijn er plaatsen, gebieden of omgevingen die u liever vermijdt?",
+    section: "Locatie en bereikbaarheid",
+    title: "Zijn er plaatsen, regio's of omgevingen die je liever wilt vermijden?",
     type: "text",
     optional: true,
-    helper:
-      "Optioneel. Noem plaatsen, omgevingen of indrukken die niet goed bij u voelen.",
+    helper: "Optioneel. Noem plaatsen of omgevingen die voor jou niet goed voelen.",
   },
   {
     id: "daily_mobility",
-    section: "Ligging en bereikbaarheid",
-    title: "Hoe wilt u dagelijkse voorzieningen bereiken?",
+    section: "Locatie en bereikbaarheid",
+    title: "Hoe wil je dagelijkse voorzieningen het liefst bereiken?",
     type: "single",
     options: [
-      "Voornamelijk te voet",
-      "Met de fiets of e-bike",
-      "Een korte autorit is acceptabel",
-      "Dagelijks autorijden is geen probleem",
+      "Vooral te voet",
+      "Met fiets of e-bike",
+      "Een korte autorit is prima",
+      "Dagelijks de auto gebruiken is geen probleem",
       "Dit is niet belangrijk",
     ],
   },
   {
     id: "amenity_distance",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke afstand tot dagelijkse voorzieningen voelt prettig voor u?",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke afstand tot dagelijkse voorzieningen voelt comfortabel?",
     type: "single",
     options: [
       "Supermarkt, café en apotheek liefst binnen 5 tot 10 minuten lopen",
       "Belangrijke voorzieningen binnen 15 tot 20 minuten lopen",
-      "Een korte autorit tot 10 minuten is prima",
+      "Een autorit tot 10 minuten is prima",
       "Tot 20 minuten met de auto is acceptabel",
       "Afstand is minder belangrijk dan rust, uitzicht of grond",
     ],
   },
   {
     id: "car_parking_needs",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke wensen heeft u rond auto’s en parkeren?",
+    section: "Locatie en bereikbaarheid",
+    title: "Wat zijn je wensen voor auto's en parkeren?",
     type: "multiple",
-    maxSelections: 4,
-    helper: "Kies maximaal 4 opties.",
+    maxSelections: 5,
+    helper: "Kies maximaal 5 opties.",
     options: [
       "Eén privéparkeerplaats is voldoende",
-      "Twee of meer parkeerplaatsen zijn belangrijk",
-      "Een garage is belangrijk",
+      "Twee privéparkeerplaatsen zijn belangrijk",
+      "Drie of meer privéparkeerplaatsen zijn belangrijk",
+      "Een privégarage is belangrijk",
       "Makkelijk parkeren voor gasten is belangrijk",
-      "Ik wil zo weinig mogelijk autorijden",
-      "Ik ben van plan een elektrische auto te gebruiken",
+      "Ik wil een elektrische auto en thuis kunnen laden",
+      "Ik wil zo weinig mogelijk auto rijden",
       "Parkeren is geen doorslaggevende factor",
     ],
   },
   {
     id: "access_terrain",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke toegangs- en terreinomstandigheden zijn voor u acceptabel?",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke wegen, hoogteverschillen en trappen zijn voor jou acceptabel?",
     type: "multiple",
-    maxSelections: 4,
-    helper: "Kies alle omstandigheden die voor u acceptabel zijn.",
+    maxSelections: 6,
+    helper: "Kies alle omstandigheden die voor jou acceptabel zijn.",
     options: [
-      "Alleen vlakke en makkelijk toegankelijke locaties",
-      "Lichte hellingen zijn acceptabel",
+      "Alleen vlakke en eenvoudige toegang",
+      "Lichte heuvels zijn prima",
       "Steile wegen zijn acceptabel",
-      "Smalle woonstraten zijn acceptabel",
+      "Smalle woonwegen zijn acceptabel",
       "Landelijke of deels onverharde toegang is acceptabel",
-      "Trappen binnen of buiten de woning zijn acceptabel",
+      "Buitentrappen zijn acceptabel",
+      "Trappen binnen zijn acceptabel",
+      "Ik geef de voorkeur aan gelijkvloers wonen of een lift",
     ],
   },
   {
     id: "airport_access",
-    section: "Ligging en bereikbaarheid",
-    title: "Wat is de maximale reistijd naar de luchthaven die u accepteert?",
+    section: "Locatie en bereikbaarheid",
+    title: "Wat is de maximale acceptabele rijtijd naar een luchthaven?",
     type: "single",
     options: [
       "Tot 30 minuten",
@@ -546,22 +799,22 @@ const questions: Question[] = [
   },
   {
     id: "boat_needs",
-    section: "Ligging en bereikbaarheid",
-    title: "Speelt een boot of ligplaats een rol bij uw locatiekeuze?",
+    section: "Locatie en bereikbaarheid",
+    title: "Speelt een boot of ligplaats een rol bij je keuze voor een locatie?",
     type: "single",
     options: [
       "Nee, dit is niet relevant",
       "Ik heb al een boot en heb een ligplaats nodig",
       "Ik ben van plan in Spanje een boot te kopen",
-      "Ik wil graag in de buurt van een jachthaven wonen, ook zonder eigen boot",
-      "Ik ben geïnteresseerd in zeilen of watersport, maar een ligplaats is niet nodig",
-      "Ik weet het nog niet zeker",
+      "Ik wil graag dicht bij een marina wonen, ook zonder eigen boot",
+      "Ik ben geïnteresseerd in zeilen of watersport maar heb geen ligplaats nodig",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "boat_details",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke eisen zijn belangrijk voor uw boot of ligplaats?",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke eisen zijn belangrijk voor je boot of ligplaats?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
@@ -569,33 +822,33 @@ const questions: Question[] = [
       "Ligplaats voor een kleine motorboot",
       "Ligplaats voor een grotere motorboot",
       "Ligplaats voor een zeilboot",
-      "Jachthaven binnen 10 minuten",
-      "Jachthaven binnen 20 minuten",
-      "Goede toegang en parkeermogelijkheden bij de haven",
-      "Onderhoud, winterstalling of bootservice in de buurt",
-      "Restaurant- en clubleven rond de jachthaven",
-      "Ik heb hierover advies nodig",
+      "Marina binnen 10 minuten",
+      "Marina binnen 20 minuten",
+      "Goede toegang en parkeergelegenheid bij de marina",
+      "Onderhoud, winterstalling of bootservices dichtbij",
+      "Restaurants en clubleven rond de marina",
+      "Ik heb hierbij advies nodig",
     ],
     showIf: (answers) =>
       answers.boat_needs &&
       answers.boat_needs !== "Nee, dit is niet relevant" &&
       answers.boat_needs !==
-        "Ik ben geïnteresseerd in zeilen of watersport, maar een ligplaats is niet nodig",
+        "Ik ben geïnteresseerd in zeilen of watersport maar heb geen ligplaats nodig",
   },
   {
     id: "school_needs",
-    section: "Ligging en bereikbaarheid",
-    title: "Welke schoolopties zijn relevant voor uw gezin?",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke soorten scholen zijn relevant voor jouw gezin?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
     options: [
-      "Openbare Spaanse school",
-      "Private Spaanse school",
+      "Spaanse openbare school",
+      "Spaanse privéschool",
       "Tweetalige school",
       "Internationale school",
-      "Online onderwijs of thuisonderwijs",
-      "Ik weet het nog niet zeker",
+      "Online- of thuisonderwijs",
+      "Ik weet het nog niet",
     ],
     showIf: (answers) =>
       answers.household_profile === "Gezin met jonge kinderen" ||
@@ -603,99 +856,197 @@ const questions: Question[] = [
   },
   {
     id: "healthcare_access",
-    section: "Ligging en bereikbaarheid",
-    title:
-      "Welke bereikbaarheid van medische zorg geeft u een goed gevoel?",
+    section: "Locatie en bereikbaarheid",
+    title: "Welke bereikbaarheid van medische zorg geeft je een prettig gevoel?",
     type: "single",
     options: [
-      "Ziekenhuis en Engelstalige medische zorg binnen ongeveer 15 minuten",
-      "Ziekenhuis en Engelstalige medische zorg binnen ongeveer 30 minuten",
-      "Een lokale huisartspraktijk en apotheek in de buurt zijn voldoende",
-      "Toegang tot private zorg is belangrijker dan afstand",
-      "Medische zorg is geen doorslaggevende locatiefactor",
+      "Ziekenhuis en Nederlands- of Engelstalige zorg binnen ongeveer 15 minuten",
+      "Ziekenhuis en internationale medische zorg binnen ongeveer 30 minuten",
+      "Een lokale kliniek en apotheek in de buurt zijn voldoende",
+      "Toegang tot particuliere zorg is belangrijker dan afstand",
+      "Medische zorg is geen belangrijke locatiefactor",
     ],
   },
   {
     id: "accessibility",
-    section: "Ligging en bereikbaarheid",
-    title: "Hoe belangrijk is een langdurig drempelarme woning?",
+    section: "Locatie en bereikbaarheid",
+    title: "Hoe belangrijk is toegankelijkheid op de lange termijn?",
     type: "single",
     options: [
-      "Essentieel — weinig trappen en eenvoudige toegang zijn noodzakelijk",
-      "Zeer belangrijk met het oog op de toekomst",
-      "Gewenst, maar niet absoluut noodzakelijk",
+      "Essentieel — zo weinig mogelijk trappen en makkelijke toegang",
+      "Heel belangrijk met het oog op de toekomst",
+      "Gewenst, maar niet noodzakelijk",
       "Niet belangrijk",
     ],
   },
   {
-    id: "internet",
-    section: "Ligging en bereikbaarheid",
-    title:
-      "Hoe belangrijk is een betrouwbare en snelle internetverbinding?",
+    id: "employment_relevance",
+    section: "Werk en praktisch leven",
+    title: "Hebben werk, ondernemerschap of professionele kansen invloed op waar je wilt wonen?",
     type: "single",
     options: [
-      "Essentieel voor homeoffice of bedrijf",
-      "Zeer belangrijk",
-      "Handig, maar niet absoluut noodzakelijk",
+      "Ja — ik heb lokale werkgelegenheid in de buurt nodig",
+      "Ja — ik heb een bedrijf en wil toegang tot een actieve lokale economie",
+      "Ik werk op afstand, maar professioneel netwerken is belangrijk",
+      "Ik werk op afstand en kan vrijwel overal wonen",
+      "Ik overweeg in Spanje een bedrijf te starten of over te nemen",
+      "Werk is niet relevant voor mijn verhuizing",
+      "Ik weet het nog niet",
+    ],
+  },
+  {
+    id: "work_environment",
+    section: "Werk en praktisch leven",
+    title: "Welke zakelijke of werkgelegenheidsomgeving zou het meest nuttig zijn?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Toerisme, hospitality of horeca",
+      "Vastgoed, bouw of interieurdesign",
+      "Gezondheidszorg of zorgverlening",
+      "Onderwijs of internationale scholen",
+      "Professionele en internationale dienstverlening",
+      "Retail of lokale handel",
+      "Technologie, remote work of digitale bedrijven",
+      "Ondernemerschap en internationaal netwerken",
+      "De lokale arbeidsmarkt is niet belangrijk",
+    ],
+    showIf: (answers) =>
+      answers.employment_relevance &&
+      answers.employment_relevance !== "Werk is niet relevant voor mijn verhuizing",
+  },
+  {
+    id: "remote_work_facilities",
+    section: "Werk en praktisch leven",
+    title: "Als je vanuit Spanje werkt, wat maakt je werkdag makkelijker?",
+    type: "multiple",
+    maxSelections: 4,
+    helper: "Kies maximaal 4 opties.",
+    options: [
+      "Zeer betrouwbaar glasvezelinternet",
+      "Een aparte thuiswerkplek",
+      "Coworkingplekken in de buurt",
+      "Rustige omgeving tijdens werktijden",
+      "Goede luchthavenverbinding voor zakelijke reizen",
+      "Netwerken met andere internationale professionals",
+      "Goede cafés of hotellounges waar je af en toe kunt werken",
+      "Dit is niet relevant voor mij",
+    ],
+    exclusiveOptions: ["Dit is niet relevant voor mij"],
+  },
+  {
+    id: "internet",
+    section: "Locatie en bereikbaarheid",
+    title: "Hoe belangrijk is betrouwbaar snel internet bij de woning?",
+    type: "single",
+    options: [
+      "Essentieel voor werk of onderneming",
+      "Heel belangrijk",
+      "Handig, maar niet essentieel",
       "Niet belangrijk",
     ],
   },
   {
     id: "community_mix",
     section: "Gemeenschap en dagelijks leven",
-    title:
-      "In welke samenstelling van de buurt zou u zich het meest op uw gemak voelen?",
+    title: "Bij welke mix van bewoners zou je je het meest thuis voelen?",
+    type: "multiple",
+    maxSelections: 3,
+    helper: "Kies maximaal 3 opties. Hiermee vergelijken we het sociale karakter van verschillende plaatsen en wijken.",
+    options: [
+      "Vooral lokale Spaanse inwoners",
+      "Vooral Spanjaarden met enkele internationale inwoners",
+      "Een evenwichtige mix van Spaanse en internationale inwoners",
+      "Een sterke Britse gemeenschap",
+      "Een sterke Duitstalige gemeenschap",
+      "Een sterke Nederlandse of Belgische gemeenschap",
+      "Een duidelijke Scandinavische gemeenschap",
+      "Een brede internationale mix",
+      "Een woonomgeving die het hele jaar bewoond is",
+      "Geen voorkeur",
+    ],
+    exclusiveOptions: ["Geen voorkeur"],
+  },
+  {
+    id: "community_networks",
+    section: "Gemeenschap en dagelijks leven",
+    title: "Zou toegang tot sociale, internationale of kerkelijke gemeenschappen nuttig voor je zijn?",
+    type: "multiple",
+    maxSelections: 5,
+    optional: true,
+    helper: "Optioneel — kies alleen wat relevant is voor jouw levensstijl.",
+    options: [
+      "Lokale Spaanse verenigingen en gemeenschapsgroepen",
+      "Britse of Engelstalige sociale clubs",
+      "Duitstalige sociale clubs of vrouwenverenigingen",
+      "Nederlandse of Belgische sociale clubs",
+      "Scandinavische sociale clubs",
+      "Amerikaanse of internationale vrouwennetwerken",
+      "Internationale zakelijke of professionele netwerken",
+      "Katholieke kerk in de buurt",
+      "Protestantse of evangelische kerk in de buurt",
+      "Anglicaanse of Engelstalige kerk in de buurt",
+      "Internationale christelijke gemeenschap",
+      "Goede doelen of vrijwilligersorganisaties",
+      "Geen van deze is belangrijk voor mij",
+    ],
+    exclusiveOptions: ["Geen van deze is belangrijk voor mij"],
+  },
+  {
+    id: "language_integration",
+    section: "Gemeenschap en dagelijks leven",
+    title: "Hoe sterk wil je integreren in het lokale Spaanse leven?",
     type: "single",
     options: [
-      "Voornamelijk Spaanse vaste bewoners",
-      "Een evenwichtige mix van Spaanse en internationale bewoners",
-      "Voornamelijk internationale bewoners",
-      "Voornamelijk tweedehuiseigenaren",
-      "Een woonwijk die het hele jaar bewoond is",
-      "Ik heb geen voorkeur",
+      "Sterk — ik wil Spaans leren en actief deelnemen aan het lokale leven",
+      "Ik wil een goede balans tussen Spaans en internationaal leven",
+      "Ik geef de voorkeur aan een internationale omgeving maar wil wel lokaal contact",
+      "Ik wil vooral Nederlands- of Engelstalige diensten en een makkelijk internationaal netwerk",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "language_comfort",
     section: "Gemeenschap en dagelijks leven",
-    title: "Hoe belangrijk is een Nederlands-, Engels- of internationaal gerichte omgeving?",
+    title: "Hoe belangrijk is een Nederlands-, Engels- of internationaal georiënteerde omgeving?",
     type: "single",
     options: [
-      "Zeer belangrijk — ik wil veel Nederlandstalige of Engelstalige contacten of diensten",
-      "Engelstalige diensten zijn voldoende",
+      "Heel belangrijk — ik wil veel internationale contacten of diensten",
+      "Internationale diensten zijn voldoende",
       "Een internationale mix is ideaal",
-      "Ik wil bewust meer Spaans dagelijks leven",
+      "Ik wil juist meer Spaans dagelijks leven",
       "Taal is geen doorslaggevende factor",
     ],
   },
   {
     id: "neighbour_contact",
     section: "Gemeenschap en dagelijks leven",
-    title: "Hoeveel contact wilt u idealiter met uw buren?",
+    title: "Hoeveel contact wil je idealiter met je buren?",
     type: "single",
     options: [
       "Een actieve en sociale buurt",
-      "Regelmatig vriendelijk contact met voldoende privacy",
+      "Vriendelijk regelmatig contact met behoud van privacy",
       "Alleen af en toe contact",
-      "Maximale privacy en heel weinig contact met buren",
-      "Ik heb geen voorkeur",
+      "Maximale privacy met zo weinig mogelijk contact",
+      "Geen voorkeur",
     ],
   },
   {
     id: "security_feeling",
     section: "Gemeenschap en dagelijks leven",
-    title: "Wat geeft u in Spanje een goed gevoel van veiligheid?",
+    title: "Wat geeft je in Spanje een goed gevoel van veiligheid?",
     type: "multiple",
     maxSelections: 4,
     helper: "Kies maximaal 4 opties.",
     options: [
       "Buren in de buurt",
-      "Omgeving die het hele jaar bewoond is",
+      "Een gebied dat het hele jaar bewoond is",
       "Afgesloten wooncomplex",
-      "Alarmsysteem of veiligheidsdienst",
-      "Privé-oprit of afgesloten parkeerplaats",
+      "Alarmsysteem of beveiligingsdienst",
+      "Privé-oprit of beveiligde parkeerplaats",
       "Goede straatverlichting",
-      "Rustige ligging zonder veel doorgaand verkeer",
+      "Rustige locatie zonder veel doorgaand verkeer",
       "Veiligheid is voor mij geen belangrijke factor",
     ],
     exclusiveOptions: ["Veiligheid is voor mij geen belangrijke factor"],
@@ -703,34 +1054,33 @@ const questions: Question[] = [
   {
     id: "privacy_level",
     section: "Gemeenschap en dagelijks leven",
-    title:
-      "Hoeveel afstand en privacy wenst u ten opzichte van aangrenzende woningen?",
+    title: "Hoeveel afstand en privacy wil je ten opzichte van buren?",
     type: "single",
     options: [
-      "Maximale privacy zonder directe buren",
-      "Vrijstaande woning met prettige afstand tot buren",
-      "Een wooncomplex met buren dichtbij is prima",
-      "Een appartement of stedelijke omgeving is prima",
-      "Ik heb geen voorkeur",
+      "Maximale privacy zonder directe buren dichtbij",
+      "Vrijstaande woning met buren op comfortabele afstand",
+      "Woonwijk met buren dichtbij is prima",
+      "Appartement of stedelijke omgeving is prima",
+      "Geen voorkeur",
     ],
   },
   {
     id: "seasonal_tourism",
     section: "Gemeenschap en dagelijks leven",
-    title: "Hoe kijkt u naar seizoensgebonden toerisme en zomerdrukte?",
+    title: "Hoe kijk je aan tegen seizoenstoerisme en drukte in de zomer?",
     type: "single",
     options: [
-      "Ik wil het hele jaar in een rustige woonomgeving leven",
-      "Enige seizoensactiviteit is acceptabel",
-      "Ik houd van een levendige sfeer in de zomer",
-      "Ik geef de voorkeur aan een actieve toeristische omgeving",
-      "Ik heb geen voorkeur",
+      "Ik wil het hele jaar een rustige woonomgeving",
+      "Enige seizoensdrukte is prima",
+      "Ik houd van een levendige zomersfeer",
+      "Ik geef de voorkeur aan een actief toeristisch gebied",
+      "Geen voorkeur",
     ],
   },
   {
     id: "year_round_environment",
     section: "Gemeenschap en dagelijks leven",
-    title: "Welke voorzieningen moeten ook in de winter beschikbaar zijn?",
+    title: "Welke voorzieningen moeten ook in de winter beschikbaar blijven?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
@@ -738,11 +1088,11 @@ const questions: Question[] = [
       "Restaurants en cafés",
       "Winkels en supermarkten",
       "Medische zorg",
-      "Sport- en fitnessvoorzieningen",
+      "Sport- en fitnessfaciliteiten",
       "Sociale activiteiten",
       "Internationaal gemeenschapsleven",
       "Culturele evenementen",
-      "Een levendig centrum",
+      "Levendig centrum",
       "Dit is niet belangrijk",
     ],
     exclusiveOptions: ["Dit is niet belangrijk"],
@@ -750,8 +1100,7 @@ const questions: Question[] = [
   {
     id: "lifestyle",
     section: "Gemeenschap en dagelijks leven",
-    title:
-      "Welke activiteiten en lifestyle-elementen zijn het belangrijkst voor u?",
+    title: "Welke activiteiten en lifestyle-elementen zijn het belangrijkst?",
     type: "multiple",
     maxSelections: 6,
     helper: "Kies maximaal 6 opties.",
@@ -763,59 +1112,73 @@ const questions: Question[] = [
       "Tennis of padel",
       "Zeilen, varen of watersport",
       "Fitness, yoga of wellness",
-      "Lokale Spaanse gastronomie en markten",
+      "Lokale Spaanse gerechten en markten",
       "Fine dining en wijn",
       "Kunst en cultuur",
-      "Zakelijke of professionele contacten",
-      "Activiteiten voor gezinnen",
+      "Zakelijk of professioneel netwerken",
+      "Gezinsactiviteiten",
       "Rustig leven thuis",
+    ],
+  },
+  {
+    id: "sports_proximity",
+    section: "Gemeenschap en dagelijks leven",
+    title: "Hoe dichtbij wil je golf, padel of andere sportfaciliteiten hebben?",
+    type: "single",
+    options: [
+      "Binnen ongeveer 10 minuten is belangrijk",
+      "Binnen ongeveer 20 minuten is ideaal",
+      "Binnen ongeveer 30 minuten is prima",
+      "Ik wil specifiek in of direct bij een golfomgeving wonen",
+      "Sportfaciliteiten zijn leuk, maar geen doorslaggevende factor",
+      "Dit is niet belangrijk",
     ],
   },
   {
     id: "daily_routine",
     section: "Gemeenschap en dagelijks leven",
-    title: "Hoe ziet uw ideale dagelijkse leven in Spanje eruit?",
+    title: "Hoe ziet jouw ideale dagelijkse leven in Spanje eruit?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
     options: [
-      "’s Ochtends lopend koffie drinken",
-      "Dagelijks wandelen aan zee of op het strand",
+      "In de ochtend lopend koffie gaan drinken",
+      "Dagelijks langs zee of over het strand wandelen",
       "Veel tijd thuis en op het terras doorbrengen",
       "Regelmatig restaurants en cafés bezoeken",
-      "Sport, fitness of padel in de buurt gebruiken",
+      "Sport-, fitness- of padelfaciliteiten dichtbij gebruiken",
       "Markten en lokale winkels bezoeken",
-      "Rustig werken of homeoffice doen",
+      "Rustig werken of vanuit huis werken",
       "Familie en vrienden ontvangen",
-      "Zo makkelijk mogelijk aankomen met weinig organisatie",
+      "Zo eenvoudig mogelijk aankomen en wonen zonder veel organisatie",
     ],
   },
   {
     id: "pets",
     section: "Gemeenschap en dagelijks leven",
-    title: "Zullen huisdieren deel uitmaken van uw leven in Spanje?",
+    title: "Zijn huisdieren onderdeel van je leven in Spanje?",
     type: "single",
     options: [
       "Geen huisdieren",
-      "Eén hond of meerdere honden",
-      "Eén kat of meerdere katten",
-      "Andere huisdieren of meerdere verschillende huisdieren",
+      "Hond of honden",
+      "Kat of katten",
+      "Andere of meerdere huisdieren",
     ],
   },
   {
     id: "pet_needs",
     section: "Gemeenschap en dagelijks leven",
-    title: "Welke omstandigheden zijn belangrijk voor uw huisdieren?",
+    title: "Welke voorzieningen voor huisdieren zijn belangrijk?",
     type: "multiple",
     maxSelections: 4,
     helper: "Kies maximaal 4 opties.",
     options: [
-      "Veilig omheinde privétuin",
-      "Wandelroutes in de buurt",
-      "Toegang tot een hondvriendelijk strand",
-      "Dierenarts in de buurt",
+      "Veilig afgesloten privétuin",
+      "Wandelroutes dichtbij",
+      "Hondvriendelijk strand",
+      "Dierenarts dichtbij",
       "Rustige omgeving",
-      "Huisdiervriendelijke gemeenschapsregels",
+      "Huisdiervriendelijke regels in de gemeenschap",
     ],
     showIf: (answers) =>
       answers.pets && answers.pets !== "Geen huisdieren",
@@ -823,12 +1186,12 @@ const questions: Question[] = [
   {
     id: "noise_tolerance",
     section: "Mogelijke zorgen",
-    title: "Hoe rustig moet uw ideale omgeving zijn?",
+    title: "Hoe rustig moet jouw ideale locatie zijn?",
     type: "single",
     options: [
       "Extreem rustig — minimale achtergrondgeluiden zijn essentieel",
-      "Zeer rustig, met alleen af en toe lokale activiteit",
-      "Enig dagelijks omgevingsgeluid is acceptabel",
+      "Heel rustig, met slechts af en toe lokale activiteit",
+      "Enig dagelijks achtergrondgeluid is acceptabel",
       "Een levendige omgeving is acceptabel",
       "Geluid is voor mij geen belangrijke factor",
     ],
@@ -836,112 +1199,104 @@ const questions: Question[] = [
   {
     id: "unacceptable_noise",
     section: "Mogelijke zorgen",
-    title: "Welke geluidsbronnen zouden uw beslissing sterk beïnvloeden?",
+    title: "Welke geluidsbronnen zouden je beslissing sterk beïnvloeden?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
     options: [
-      "Verkeerslawaai van drukke wegen of snelwegen",
-      "Geluid van bars, restaurants of nachtleven",
-      "Vakantieverhuur en vaak wisselende gasten",
-      "Sterk zomertoerisme",
+      "Drukke wegen of snelweggeluid",
+      "Bars, restaurants of nachtleven",
+      "Vakantieverhuur en veel wisselende gasten",
+      "Erg druk toerisme in de zomer",
       "Bouwlawaai",
       "Vliegtuiglawaai",
       "Honden of regelmatig buurtgeluid",
-      "Scholen, sportvelden of speeltuinen",
-      "Kerkklokken, feesten of lokale evenementen",
-      "Geen van deze geluidsbronnen zou een groot probleem zijn",
+      "Scholen, sportfaciliteiten of speeltuinen",
+      "Kerkklokken, feesten of lokale vieringen",
+      "Geen van deze zou een groot probleem zijn",
     ],
-    exclusiveOptions: [
-      "Geen van deze geluidsbronnen zou een groot probleem zijn",
-    ],
+    exclusiveOptions: ["Geen van deze zou een groot probleem zijn"],
   },
   {
     id: "infrastructure_dealbreakers",
     section: "Mogelijke zorgen",
-    title:
-      "Welke zichtbare infrastructuur zou uw beslissing negatief beïnvloeden?",
+    title: "Welke zichtbare infrastructuur zou je beslissing negatief beïnvloeden?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
     options: [
       "Hoogspanningsmasten",
-      "Bovengrondse stroomkabels of stroommasten direct bij de woning",
+      "Bovengrondse elektriciteitskabels of palen naast de woning",
       "Mobiele telefoon- of communicatiemasten",
-      "Zichtbare drukke wegen",
-      "Grote appartementengebouwen in de buurt",
-      "Industrie- of commerciële gebouwen",
+      "Drukke wegen zichtbaar vanuit de woning",
+      "Grote appartementencomplexen dichtbij",
+      "Industriële of commerciële gebouwen",
       "Actieve bouwplaatsen of onbebouwde percelen",
-      "Directe inkijk door aangrenzende woningen",
-      "Geen van deze omstandigheden zou een groot probleem zijn",
+      "Directe inkijk door buren",
+      "Geen van deze zou een groot probleem zijn",
     ],
-    exclusiveOptions: [
-      "Geen van deze omstandigheden zou een groot probleem zijn",
-    ],
+    exclusiveOptions: ["Geen van deze zou een groot probleem zijn"],
   },
   {
     id: "environmental_concerns",
     section: "Mogelijke zorgen",
-    title:
-      "Welke milieu- of perceelrisico’s zouden u het meest zorgen baren?",
+    title: "Welke milieu- of grondrisico's zouden je het meest bezighouden?",
     type: "multiple",
     maxSelections: 5,
     helper: "Kies maximaal 5 opties.",
     options: [
-      "Overstromingsgevoelige gebieden",
-      "Verhoogd risico op bosbrand",
+      "Gebieden met overstromingsrisico",
+      "Risico op natuur- of bosbranden",
       "Steile percelen of grote keermuren",
-      "Sterke blootstelling aan wind",
+      "Sterke wind",
       "Hoge luchtvochtigheid of vochtproblemen",
       "Kusterosie of extreme blootstelling aan zee",
-      "Landelijke voorzieningen zoals septic tanks of watertanks",
-      "Geen van deze omstandigheden zou een groot probleem zijn",
+      "Landelijke voorzieningen zoals septic tank of wateropslag",
+      "Geen van deze zou een groot probleem zijn",
     ],
-    exclusiveOptions: [
-      "Geen van deze omstandigheden zou een groot probleem zijn",
-    ],
+    exclusiveOptions: ["Geen van deze zou een groot probleem zijn"],
   },
   {
     id: "legal_technical_risk_tolerance",
     section: "Mogelijke zorgen",
-    title: "Hoeveel juridische of technische complexiteit is voor u acceptabel?",
+    title: "Hoeveel juridische of technische complexiteit is voor jou acceptabel?",
     type: "single",
     options: [
-      "Zo weinig mogelijk — ik wil een juridisch en technisch duidelijke woning",
-      "Kleine punten zijn acceptabel als ze vóór aankoop opgelost kunnen worden",
-      "Ik sta open voor complexere woningen als prijs en ligging kloppen",
-      "Ik weet het nog niet zeker en heb hierover advies nodig",
+      "Zo weinig mogelijk — ik wil een juridisch en technisch zo eenvoudig mogelijke woning",
+      "Kleine problemen zijn acceptabel als ze vóór aankoop opgelost kunnen worden",
+      "Ik sta open voor complexere woningen als prijs en locatie goed zijn",
+      "Ik weet het nog niet en heb hierbij advies nodig",
     ],
   },
   {
     id: "rental_intent",
-    section: "Verhuur en eindprioriteiten",
-    title: "Wilt u de woning verhuren?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Verwacht je de woning te gaan verhuren?",
     type: "single",
     options: [
       "Nee",
       "Af en toe aan familie of vrienden",
-      "Incidentele vakantieverhuur",
+      "Incidentele korte vakantieverhuur",
       "Regelmatige vakantieverhuur",
       "Langetermijnverhuur",
-      "Huurinkomsten zijn een belangrijk onderdeel van mijn plan",
-      "Ik weet het nog niet zeker",
+      "Huurinkomsten zijn een belangrijk onderdeel van het plan",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "rental_priorities",
-    section: "Verhuur en eindprioriteiten",
-    title: "Welke verhuurfactoren zijn voor u het belangrijkst?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Welke verhuurfactoren zijn het belangrijkst?",
     type: "multiple",
     maxSelections: 4,
     helper: "Kies maximaal 4 opties.",
     options: [
-      "Een locatie met sterke verhuurvraag",
-      "Mogelijkheid voor een toeristische verhuurlicentie",
+      "Locatie met sterke vraag naar verhuur",
+      "Mogelijkheid voor toeristische verhuur of vergunning",
       "Gemeenschapsregels die verhuur toestaan",
       "Professioneel verhuurbeheer",
-      "Goede bereikbaarheid van luchthaven en strand voor gasten",
-      "Een balans tussen huurinkomsten en eigen gebruik",
+      "Goede luchthaven- en strandbereikbaarheid voor gasten",
+      "Balans tussen verhuurrendement en eigen gebruik",
     ],
     showIf: (answers) =>
       answers.rental_intent &&
@@ -950,107 +1305,103 @@ const questions: Question[] = [
   },
   {
     id: "resale_importance",
-    section: "Verhuur en eindprioriteiten",
-    title: "Hoe belangrijk is toekomstige verkoopbaarheid voor u?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Hoe belangrijk is toekomstige verkoopbaarheid?",
     type: "single",
     options: [
-      "Zeer belangrijk — de woning moet op lange termijn goed verkoopbaar blijven",
-      "Belangrijk, maar levenskwaliteit is belangrijker",
+      "Heel belangrijk — de woning moet op lange termijn goed verkoopbaar blijven",
+      "Belangrijk, maar levenskwaliteit weegt zwaarder",
       "Niet doorslaggevend als de woning perfect bij ons past",
-      "Ik heb hier nog niet over nagedacht",
+      "Daar heb ik nog niet over nagedacht",
     ],
   },
   {
     id: "top_priorities",
-    section: "Verhuur en eindprioriteiten",
-    title: "Welke factoren hebben voor u de hoogste prioriteit?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Welke factoren hebben voor jou de hoogste prioriteit?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Kies uw 6 belangrijkste prioriteiten.",
+    helper: "Kies je 6 belangrijkste prioriteiten.",
     options: [
       "Rustige omgeving",
       "Privacy",
       "Veiligheid",
-      "Loopbaarheid",
-      "Strandnabijheid",
+      "Loopafstand",
+      "Strand dichtbij",
       "Zeezicht",
       "Internationale gemeenschap",
-      "Authentieke Spaanse sfeer",
+      "Authentiek Spaanse sfeer",
       "Sociaal leven in de buurt",
       "Medische zorg",
-      "Luchthavennabijheid",
-      "Voorzieningen het hele jaar door",
+      "Luchthavenbereikbaarheid",
+      "Voorzieningen die het hele jaar open zijn",
       "Snel internet",
-      "Drempelarme bereikbaarheid",
-      "Laag onderhoud",
+      "Makkelijke toegankelijkheid",
+      "Weinig onderhoud",
       "Grote tuin",
       "Golf",
-      "Nabijheid van jachthaven of ligplaats",
-      "Geschikt voor gezinnen en scholen",
-      "Sterke verkoopbaarheid op lange termijn",
+      "Marina dichtbij",
+      "Geschikt voor gezin en scholen",
+      "Waardeontwikkeling op lange termijn",
       "Verhuurpotentieel",
     ],
   },
   {
     id: "absolute_dealbreakers",
-    section: "Verhuur en eindprioriteiten",
-    title:
-      "Welke factoren zouden een regio of woning direct uitsluiten voor u?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Welke factoren zouden een regio of woning direct uitsluiten?",
     type: "multiple",
     maxSelections: 6,
-    helper: "Kies maximaal 6 absolute uitsluitingscriteria.",
+    helper: "Kies maximaal 6 absolute dealbreakers.",
     options: [
-      "Verkeers- of snelweglawaai",
-      "Geluid van nachtleven of restaurants",
-      "Hoogspanningsmasten of bovengrondse stroomkabels",
-      "Directe inkijk door buren",
-      "Zeer dichtbijgelegen aangrenzende woningen",
-      "Steile of moeilijke toegang",
+      "Verkeers- of snelweggeluid",
+      "Nachtleven of restaurantgeluid",
+      "Hoogspanningsmasten of bovengrondse elektriciteitskabels",
+      "Veel inkijk door buren",
+      "Buren heel dicht bij de woning",
+      "Steile of moeilijke toegangsweg",
       "Geen privéparkeerplaats",
-      "Sterk zomertoerisme",
-      "Afgelegen ligging",
+      "Zeer druk toerisme in de zomer",
+      "Geïsoleerde ligging",
       "Hoge gemeenschapskosten",
-      "Grote renovatiewerkzaamheden",
-      "Geen betrouwbare snelle internetverbinding",
+      "Grote renovatie nodig",
+      "Geen betrouwbaar snel internet",
       "Weinig voorzieningen open in de winter",
       "Grote afstand tot medische zorg",
-      "Overstromings- of bosbrandrisico",
-      "Geen passende haven- of ligplaatsoplossing in de buurt",
-      "Geen van deze punten is een absoluut uitsluitingscriterium",
+      "Overstromings- of natuurbrandrisico",
+      "Geen passende marina of ligplaats in de buurt",
+      "Geen van deze is een absolute dealbreaker",
     ],
-    exclusiveOptions: [
-      "Geen van deze punten is een absoluut uitsluitingscriterium",
-    ],
+    exclusiveOptions: ["Geen van deze is een absolute dealbreaker"],
   },
   {
     id: "biggest_uncertainty",
-    section: "Verhuur en eindprioriteiten",
-    title: "Wat is uw grootste onzekerheid bij het kopen in Spanje?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Wat is je grootste onzekerheid bij het kopen in Spanje?",
     type: "multiple",
     maxSelections: 3,
     helper: "Kies maximaal 3 opties.",
     options: [
       "De juiste regio kiezen",
-      "De eerlijke marktwaarde begrijpen",
-      "Juridische risico’s begrijpen",
+      "Begrijpen wat een eerlijke marktwaarde is",
+      "Juridische risico's begrijpen",
       "Verborgen kosten vermijden",
-      "Renovatie of staat van de woning beoordelen",
+      "Renovatiebehoefte of technische staat beoordelen",
       "Belastingen en vaste lasten begrijpen",
-      "Verhuurregels begrijpen",
+      "Regels voor verhuur begrijpen",
       "Alles vanuit het buitenland organiseren",
-      "Ik weet het nog niet zeker",
+      "Ik weet het nog niet",
     ],
   },
   {
     id: "additional_notes",
-    section: "Verhuur en eindprioriteiten",
-    title:
-      "Is er nog iets waardoor een regio of woning voor u bijzonder goed — of juist volledig ongeschikt — zou aanvoelen?",
+    section: "Verhuur en laatste prioriteiten",
+    title: "Is er nog iets dat een regio of woning voor jou precies goed — of juist helemaal verkeerd — zou maken?",
     type: "text",
     optional: true,
-    helper:
-      "Optioneel. Voeg hier extra wensen, zorgen of uitsluitingscriteria toe.",
+    helper: "Optioneel. Voeg alles toe wat hierboven nog niet aan bod is gekomen.",
   },
+
 ];
 
 export default function RelocationAssessment() {
@@ -1170,7 +1521,7 @@ export default function RelocationAssessment() {
 
     if (!questionHasAnswer(current)) {
       alert(
-        "Kies een antwoord of vul een antwoord in voordat u verdergaat."
+        "Kies of vul een antwoord in voordat je verdergaat."
       );
       return;
     }
@@ -1194,7 +1545,7 @@ export default function RelocationAssessment() {
     const phone = contact.phone.trim();
 
     if (!name || !email) {
-      alert("Vul uw naam en e-mailadres in.");
+      alert("Vul je naam en e-mailadres in.");
       return;
     }
 
@@ -1207,7 +1558,7 @@ export default function RelocationAssessment() {
 
     if (!consent) {
       alert(
-        "Bevestig dat wij uw antwoorden mogen gebruiken om uw persoonlijke rapport op te stellen en contact met u mogen opnemen over uw aanvraag."
+        "Bevestig dat we je antwoorden mogen gebruiken om je persoonlijke rapport op te stellen en contact met je op te nemen over je aanvraag."
       );
       return;
     }
@@ -1226,7 +1577,7 @@ export default function RelocationAssessment() {
       ...filteredAnswers,
       assessment_meta: {
         language: "nl",
-        version: "3.0",
+        version: "5.0-NL",
       },
     };
 
@@ -1238,8 +1589,8 @@ export default function RelocationAssessment() {
         .map((question) => [question.title, filteredAnswers[question.id]])
     );
 
-    answersForEmail["Taal"] = "Nederlands";
-    answersForEmail["Assessment-versie"] = "3.0";
+    answersForEmail["Language"] = "Dutch";
+    answersForEmail["Assessment version"] = "5.0-NL";
 
     const submission = {
       name,
@@ -1258,19 +1609,28 @@ export default function RelocationAssessment() {
 
       if (error) {
         alert(
-          "Uw aanvraag kon niet worden opgeslagen.\n\n" +
-            "Bericht: " +
+          "We could not save your request.\n\n" +
+            "Message: " +
             error.message +
             "\n\nDetails: " +
-            (error.details || "Niet opgegeven") +
+            (error.details || "Not provided") +
             "\n\nHint: " +
-            (error.hint || "Niet opgegeven") +
+            (error.hint || "Not provided") +
             "\n\nCode: " +
             error.code
         );
 
         return;
       }
+
+      // Track the lead only after Supabase confirms that the request was saved.
+      // No personal data (name, email or phone) is sent to Google.
+      pushDataLayerEvent({
+        event: "generate_lead",
+        form_name: "area_match",
+        form_language: "nl",
+        lead_type: "area_match_report",
+      });
 
       const emailResponse = await fetch("/api/relocation-assessment", {
         method: "POST",
@@ -1289,33 +1649,24 @@ export default function RelocationAssessment() {
         const emailResult = await emailResponse.json().catch(() => null);
 
         console.error(
-          "Assessment is opgeslagen, maar de e-mail kon niet worden verzonden:",
+          "The assessment was saved, but the email notification could not be sent:",
           emailResult
         );
 
         alert(
-          "Uw antwoorden zijn opgeslagen, maar de e-mailnotificatie kon niet worden verzonden. Neem contact op met Nordic Move Spain als u geen reactie ontvangt."
+          "Your answers were saved, but the email notification could not be sent. Please contact Nordic Move Spain if you do not receive a response."
         );
       }
-
-      // Track a lead only after the request has been saved successfully.
-      // No personal data (name, email or phone) is sent to Google.
-      pushDataLayerEvent({
-        event: "generate_lead",
-        form_name: "area_match",
-        form_language: "nl",
-        lead_type: "area_match_report",
-      });
 
       setSubmitted(true);
     } catch (error) {
       const message =
         error instanceof Error
           ? error.message
-          : "Er is een onbekende fout opgetreden.";
+          : "An unknown error occurred.";
 
       alert(
-        "Uw aanvraag kon niet worden opgeslagen.\n\n" + message
+        "We could not save your request.\n\n" + message
       );
     } finally {
       setIsSubmitting(false);
@@ -1328,11 +1679,11 @@ export default function RelocationAssessment() {
         <div style={styles.card}>
           <p style={styles.sectionLabel}>Aanvraag ontvangen</p>
 
-          <h1 style={styles.title}>Bedankt voor uw aanvraag</h1>
+          <h1 style={styles.title}>Bedankt voor je aanvraag</h1>
 
           <p style={styles.text}>
-            Bedankt, {contact.name}. We hebben uw Costa Blanca Area Match
-            analyse ontvangen en gebruiken uw antwoorden om uw persoonlijke
+            Bedankt, {contact.name}. We hebben jouw Costa Blanca Area Match
+            Assessment ontvangen en gebruiken je antwoorden om jouw persoonlijke
             rapport op te stellen.
           </p>
 
@@ -1340,8 +1691,8 @@ export default function RelocationAssessment() {
 
           {contact.phone.trim() && (
             <p style={styles.text}>
-              Als we enkele antwoorden met u willen verduidelijken, kunnen we
-              contact met u opnemen via {contact.phone}.
+              Als we een antwoord willen verduidelijken, kunnen we contact met je opnemen via
+              {contact.phone}.
             </p>
           )}
         </div>
@@ -1353,16 +1704,16 @@ export default function RelocationAssessment() {
     return (
       <main style={styles.page}>
         <div style={styles.card}>
-          <p style={styles.sectionLabel}>Uw persoonlijke rapport</p>
+          <p style={styles.sectionLabel}>Jouw persoonlijke rapport</p>
 
           <h1 style={styles.title}>
-            Ontvang uw persoonlijke Area Match Report
+            Ontvang jouw persoonlijke Area Match Report
           </h1>
 
           <p style={styles.text}>
-            Vul hieronder uw contactgegevens in. We gebruiken uw antwoorden om
-            uw persoonlijke Costa Blanca Area Match Report op te stellen en naar
-            uw e-mailadres te sturen.
+            Vul hieronder je contactgegevens in. We gebruiken je antwoorden om jouw
+            persoonlijke Costa Blanca Area Match Report op te stellen en sturen het naar
+            je e-mailadres.
           </p>
 
           <div style={styles.form}>
@@ -1370,7 +1721,7 @@ export default function RelocationAssessment() {
               Naam
 
               <input
-                placeholder="Uw naam"
+                placeholder="Jouw naam"
                 value={contact.name}
                 onChange={(event) =>
                   setContact({
@@ -1386,7 +1737,7 @@ export default function RelocationAssessment() {
               E-mailadres
 
               <input
-                placeholder="Uw e-mailadres"
+                placeholder="Jouw e-mailadres"
                 type="email"
                 value={contact.email}
                 onChange={(event) =>
@@ -1401,10 +1752,10 @@ export default function RelocationAssessment() {
 
             <label style={styles.fieldLabel}>
               Telefoonnummer{" "}
-              <span style={styles.optionalText}>(optioneel)</span>
+              <span style={styles.optionalText}>(optional)</span>
 
               <input
-                placeholder="Uw telefoonnummer"
+                placeholder="Jouw telefoonnummer"
                 type="tel"
                 value={contact.phone}
                 onChange={(event) =>
@@ -1426,9 +1777,9 @@ export default function RelocationAssessment() {
               />
 
               <span style={styles.privacyText}>
-                Ik ga ermee akkoord dat Nordic Move Spain mijn antwoorden mag
-                gebruiken om mijn persoonlijke Area Match Report op te stellen
-                en contact met mij mag opnemen over deze aanvraag.
+                Ik ga ermee akkoord dat Nordic Move Spain mijn antwoorden gebruikt om
+                mijn persoonlijke Area Match Report op te stellen en contact met mij
+                op te nemen over deze aanvraag.
               </span>
             </label>
 
@@ -1452,7 +1803,7 @@ export default function RelocationAssessment() {
               >
                 {isSubmitting
                   ? "Wordt verzonden..."
-                  : "Persoonlijk rapport aanvragen"}
+                  : "Vraag mijn rapport aan"}
               </button>
             </div>
           </div>
@@ -1478,7 +1829,7 @@ export default function RelocationAssessment() {
         </div>
 
         <p style={styles.stepText}>
-          Vraag {step + 1} van {visibleQuestions.length}
+          Stap {step + 1} · {progress}% voltooid
         </p>
 
         <p style={styles.sectionLabel}>{current.section}</p>
@@ -1540,7 +1891,7 @@ export default function RelocationAssessment() {
           <textarea
             value={answers[current.id] || ""}
             onChange={(event) => setTextValue(event.target.value)}
-            placeholder="Voeg hier extra wensen, zorgen of uitsluitingscriteria toe."
+            placeholder="Vul hier eventuele extra wensen, zorgen of dealbreakers in."
             rows={7}
             style={styles.textarea}
           />
@@ -1556,7 +1907,7 @@ export default function RelocationAssessment() {
               ...(step === 0 ? styles.buttonDisabled : {}),
             }}
           >
-            Terug
+            Back
           </button>
 
           <button
