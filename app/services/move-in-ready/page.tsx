@@ -1,56 +1,46 @@
-import type { Metadata } from "next";
-
-const pagePath = "/services/area-match";
-
-export const metadata: Metadata = {
+export const metadata = {
   title:
-    "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
+    "Move to Spain from the USA | Move-In Ready & Relocation Support | Nordic Move Spain",
   description:
-    "Start with a complimentary Area Match Portfolio and continue with one personal property agent and trusted point of contact for property search, viewings, Purchase Safety and three flexible Move-In Ready packages on the Costa Blanca.",
+    "Relocation and Move-In Ready support for US buyers moving to the Costa Blanca: visa and residency specialist introductions, NIE and administration coordination, healthcare, banking, cross-border tax contacts, shipping, pets, schools, utilities, renovation, interiors and home setup.",
   keywords: [
-    "Area Match Costa Blanca",
-    "personal property agent Costa Blanca",
-    "buy property Costa Blanca",
-    "Buyer Discovery Experience Spain",
-    "property buying guidance Spain",
-    "Purchase Safety Report Spain",
-    "independent property survey Spain",
-    "Spanish property lawyer",
-    "moving company coordination Spain",
-    "Move-In Ready Costa Blanca",
-    "Nordic Move Spain",
+    "move to Spain from USA",
+    "relocate to Spain from USA",
+    "Costa Blanca relocation services",
+    "American moving to Spain",
+    "move to Costa Blanca",
+    "Spain visa support USA",
+    "Spain residency support Americans",
+    "NIE help Spain",
+    "digital nomad visa Spain support",
+    "non lucrative visa Spain support",
+    "US Spain tax advisor introduction",
+    "international moving Spain USA",
+    "ship household goods to Spain",
+    "move pets to Spain",
+    "Costa Blanca home setup",
+    "Costa Blanca renovation",
+    "Costa Blanca interior design",
+    "Move-In Ready Spain",
   ],
   alternates: {
-    canonical: pagePath,
-    languages: {
-      "en-GB": pagePath,
-      "nl-NL": "/nl/services/area-match",
-      "de-DE": "/de/services/area-match",
-      "sv-SE": "/sv/services/area-match",
-    },
+    canonical: "/services/move-in-ready",
   },
   openGraph: {
     title:
-      "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
+      "Move to Spain from the USA | Move-In Ready & Relocation Support | Nordic Move Spain",
     description:
-      "Find the right area first, work with one personal property agent and let Nordic Move coordinate property search, viewings, independent purchase checks, moving and furnishing.",
+      "From visa and residency introductions to utilities, shipping, healthcare, renovation and interiors, we help US buyers prepare both the home and the practical move to the Costa Blanca.",
     type: "website",
-    locale: "en_GB",
-    url: pagePath,
+    locale: "en_US",
     images: [
       {
-        url: "/images/brochure2-en.png",
-        alt: "Nordic Move Spain services for a coordinated property purchase on the Costa Blanca",
+        url: "/images/move-in-ready-ibiza.png",
+        width: 1200,
+        height: 630,
+        alt: "Move-In Ready relocation and home setup support on the Costa Blanca",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Area Match, Buyer Discovery & Full Purchase Coordination | Nordic Move Spain",
-    description:
-      "One personal property agent and trusted point of contact from Area Match and property search to Purchase Safety, moving and furnishing.",
-    images: ["/images/brochure2-en.png"],
   },
   robots: {
     index: true,
@@ -58,851 +48,578 @@ export const metadata: Metadata = {
   },
 };
 
-const services = [
-  {
-    number: "01",
-    eyebrow: "Complimentary orientation",
-    title: "Area Match Portfolio",
-    text:
-      "You receive a complimentary, detailed and personal portfolio showing which regions, towns and property types best match your lifestyle, budget and long-term plans. This creates focus before you spend months searching through unsuitable properties.",
-    bullets: [
-      "Personal lifestyle and location matching",
-      "Information about suitable towns and residential areas",
-      "Insight into amenities, healthcare, accessibility and daily life",
-      "Greater clarity about the property type that genuinely suits you",
-      "A focused foundation for your property search and viewings",
-    ],
-    href: "/relocation-assessment",
-    cta: "Request your complimentary Area Match Portfolio",
-  },
-  {
-    number: "02",
-    eyebrow: "Personal property search",
-    title: "Buyer Discovery Experience",
-    text:
-      "Following your Area Match, we act as your personal property agent on the Costa Blanca. We search for and select suitable properties, create a focused discovery route and guide you through viewings, communication, negotiations and purchase.",
-    bullets: [
-      "A personal route through suitable areas",
-      "Targeted property search and selection",
-      "Viewings organised around your profile and priorities",
-      "Communication with sellers and listing agents",
-      "Support throughout negotiations and the purchase process",
-    ],
-    href: "/services/discovery-trips",
-    cta: "Explore the Buyer Discovery Experience",
-    note:
-      "When a villa is ultimately purchased through Nordic Move Spain, either half or the full trip cost is reimbursed depending on the purchase price. The exact reimbursement and applicable conditions are confirmed in writing in advance.",
-  },
-  {
-    number: "03",
-    eyebrow: "Independent purchase review",
-    title: "Purchase Safety",
-    text:
-      "When a property becomes a serious option, we coordinate an independent surveyor for the technical assessment and initial document and registration screening, together with an independent Spanish lawyer for the full legal due diligence.",
-    bullets: [
-      "Visible technical condition, construction quality, moisture and installations",
-      "Pool, outbuildings, repairs, photographs and recommendations",
-      "Nota Simple, Catastro, IBI, CEE and ITE where relevant",
-      "Available permits, licences and comparison of official and measured areas",
-      "Two professional reports and one clear Nordic Move purchase recommendation",
-    ],
-    href: "/services/purchase-safety-report",
-    cta: "View Purchase Safety",
-    note:
-      "When a villa is ultimately purchased through Nordic Move Spain, the independent Purchase Safety review is included in the purchase guidance. The exact scope depends on the property, the available documentation and the specialists required.",
-  },
-  {
-    number: "04",
-    eyebrow: "After purchase",
-    title: "Move-In Ready & Relocation Coordination",
-    text:
-      "After the purchase, Nordic Move remains your dedicated point of contact. Move-In Ready is divided into three flexible packages: Home Setup, Renovation & Interior and Family Relocation. Choose one package or combine the support that fits your property, family, planning and budget.",
-    bullets: [
-      "Home Setup for utilities, insurance, security, cleaning and maintenance",
-      "Renovation & Interior for contractors, planning, sourcing, furnishing and styling",
-      "Family Relocation for moving, schools, healthcare and daily-life preparation",
-      "One Nordic Move point of contact across the agreed package or combination",
-      "Selected independent specialists remain responsible for their own advice and execution",
-    ],
-    href: "/services/move-in-ready",
-    cta: "Explore all three Move-In Ready packages",
-  },
-];
-
-const moveInReadyPackages = [
-  {
-    number: "01",
-    title: "Home Setup",
-    subtitle: "The practical foundation of your home",
-    text:
-      "For owners who want the essential practical arrangements after key handover organised clearly before arrival, without needing a full renovation or complete family relocation.",
-    result:
-      "Your home is practically prepared and the main suppliers, appointments and contract information are brought together in one clear overview.",
-    items: [
-      "Help organise electricity and water",
-      "Coordinate internet, telephone and television",
-      "Compare home, contents and relevant insurance options",
-      "Research alarm, security and access solutions",
-      "Coordinate cleaning and preparation before arrival",
-      "Obtain quotes for painting and small works",
-      "Organise garden, pool and technical maintenance",
-      "Bundle supplier, appointment and contract information",
-    ],
-  },
-  {
-    number: "02",
-    title: "Renovation & Interior",
-    subtitle: "Renovation and furnishing in one coordinated route",
-    text:
-      "For homes that need renovation, adaptation or complete furnishing before you can use them comfortably.",
-    result:
-      "Renovation, interior choices, sourcing and execution are coordinated so that technical decisions, planning and the final living environment fit together more clearly.",
-    items: [
-      "Define wishes, use, priorities and budget",
-      "Select and coordinate contractor and relevant specialists",
-      "Coordinate with architect or technical architect where needed",
-      "Structure quotations, planning and progress reporting",
-      "Develop an interior concept and visual moodboard",
-      "Select materials, furniture and lighting",
-      "Coordinate delivery, assembly, installation and styling",
-      "Organise completion points and final checks before arrival",
-    ],
-  },
-  {
-    number: "03",
-    title: "Family Relocation",
-    subtitle: "Prepare daily life, not only the move",
-    text:
-      "For families and international professionals who want to prepare not only the property, but also the practical side of living, working and settling on the Costa Blanca.",
-    result:
-      "You receive a clearer and better-prepared starting point for moving, schools, healthcare, local services and everyday life in Spain.",
-    items: [
-      "Compare international moving companies and storage options",
-      "Research schools and childcare in suitable areas",
-      "Map healthcare, insurance and practical facilities",
-      "Structure local administration and relevant next steps",
-      "Research car transport and specialist transport options",
-      "Explore sports clubs, golf clubs and local communities",
-      "Select local service providers and daily amenities",
-      "Create a personal relocation plan",
-    ],
-  },
-];
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
-
-function absoluteUrl(path: string) {
-  return siteUrl ? `${siteUrl}${path}` : path;
-}
-
-const breadcrumbStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
+export default function MoveInReadyPage() {
+  const images = [
     {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: absoluteUrl("/"),
+      src: "/images/move-in-ready-costal.png",
+      title: "Coastal Calm",
+      text:
+        "A soft, sophisticated coastal direction built around natural materials, quiet tones, relaxed comfort and understated luxury.",
+      alt: "Coastal Calm interior direction for Move-In Ready support on the Costa Blanca",
     },
     {
-      "@type": "ListItem",
-      position: 2,
-      name: "Services",
-      item: absoluteUrl("/services"),
+      src: "/images/move-in-ready-ibiza.png",
+      title: "Ibiza Soho Lounge",
+      text:
+        "A warm Mediterranean style with soft whites, rustic woods, woven textures, subtle color and an elegant indoor-outdoor atmosphere.",
+      alt: "Ibiza Soho Lounge interior direction for Move-In Ready support on the Costa Blanca",
     },
     {
-      "@type": "ListItem",
-      position: 3,
-      name: "Area Match & Buyer Journey",
-      item: absoluteUrl(pagePath),
+      src: "/images/move-in-ready-kitchen.png",
+      title: "Contemporary Coastal Kitchen",
+      text:
+        "A bright architectural direction with clean lines, large windows, pale woods, high-quality finishes and a calm coastal feel.",
+      alt: "Contemporary Coastal Kitchen direction for a Costa Blanca home",
     },
-  ],
-};
-
-const servicesStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Nordic Move Spain Buyer Journey",
-  itemListElement: services.map((service, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    item: {
-      "@type": "Service",
-      name: service.title,
-      description: service.text,
-      url: absoluteUrl(service.href),
-      areaServed: {
-        "@type": "Place",
-        name: "Costa Blanca, Spain",
-      },
-      provider: {
-        "@type": "Organization",
-        name: "Nordic Move Spain",
-      },
-      ...(service.number === "04"
-        ? {
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Move-In Ready packages",
-              itemListElement: moveInReadyPackages.map((pkg) => ({
-                "@type": "Offer",
-                itemOffered: {
-                  "@type": "Service",
-                  name: pkg.title,
-                  description: pkg.text,
-                },
-              })),
-            },
-          }
-        : {}),
+    {
+      src: "/images/move-in-ready-mediterranean-warmth.png",
+      title: "Mediterranean Warmth",
+      text:
+        "A relaxed Mediterranean way of living shaped around terraces, daylight, sea views, outdoor dining and comfortable everyday life.",
+      alt: "Mediterranean Warmth direction for indoor-outdoor living on the Costa Blanca",
     },
-  })),
-};
+  ];
 
-export default function AreaMatchPage() {
+  const steps = [
+    {
+      title: "Lifestyle & style briefing",
+      text:
+        "We start by understanding how you want to use the home. We look beyond aesthetics to your daily life, family, guests, privacy, maintenance, comfort, remote work and the atmosphere you want to create.",
+    },
+    {
+      title: "Visual moodboard",
+      text:
+        "We translate your preferences into a visual moodboard with colors, materials, textures, furniture references, lighting ideas and inspiration for indoor and outdoor spaces. This creates direction before major decisions or purchases are made.",
+    },
+    {
+      title: "Lifestyle concept",
+      text:
+        "The moodboard becomes a practical lifestyle concept for the property: relaxing, entertaining, working from Spain, hosting family, outdoor dining, low-maintenance ownership or full-time living.",
+    },
+    {
+      title: "Contractor & technical feasibility",
+      text:
+        "Where renovation, installation or technical work is required, we involve the appropriate local contractor or specialist early so the scope, budget, permits, materials and timing can be assessed realistically.",
+    },
+    {
+      title: "Furniture sourcing & procurement",
+      text:
+        "Once the direction is clear, we coordinate furniture selection and sourcing through appropriate suppliers and local partners. The goal is a coherent home rather than a collection of disconnected purchases.",
+    },
+    {
+      title: "Lighting",
+      text:
+        "Lighting has a major effect on how a home feels. We help shape functional lighting, ambient lighting, statement fixtures, exterior lighting and the details that make the property feel warm and complete.",
+    },
+    {
+      title: "Curtains & window treatments",
+      text:
+        "Window treatments influence privacy, comfort, acoustics, sun control and atmosphere. We help define the right approach and coordinate local measuring, supply and installation where required.",
+    },
+    {
+      title: "Delivery & installation",
+      text:
+        "Managing deliveries, assembly and installation from the United States can quickly become a full-time project. We coordinate the practical steps with local partners so the process is more structured and less fragmented.",
+    },
+    {
+      title: "Styling",
+      text:
+        "The final styling brings the home together through textiles, selected accessories, outdoor details, bedding, tableware, plants and the smaller decisions that make a property feel personal and finished.",
+    },
+    {
+      title: "Arrival preparation",
+      text:
+        "Before you arrive, we coordinate agreed final checks and practical essentials so your first days are about settling in rather than solving a list of avoidable problems.",
+    },
+  ];
+
+  const packages = [
+    {
+      number: "01",
+      title: "Home Setup",
+      subtitle: "The practical foundation of your Spanish home",
+      intro:
+        "For owners who want the essential practical details organized after completion and before arrival, without a full renovation or complete relocation program.",
+      items: [
+        "Help coordinate electricity and water setup",
+        "Internet, mobile, television and connectivity coordination",
+        "Compare appropriate home, contents and related insurance options",
+        "Research alarm, security and access solutions",
+        "Cleaning and pre-arrival preparation",
+        "Obtain quotes for painting and smaller works",
+        "Coordinate garden, pool and technical maintenance",
+        "Consolidate supplier, appointment and contract information",
+      ],
+      result:
+        "Your property is practically prepared and the key suppliers, appointments and household information are brought together in one clear overview.",
+      featured: false,
+    },
+    {
+      number: "02",
+      title: "Renovation & Interiors",
+      subtitle: "Renovation, furnishing and finishing in one coordinated plan",
+      intro:
+        "For homes that need renovation, adaptation or complete furnishing before they can be enjoyed comfortably.",
+      items: [
+        "Define use, priorities, style and budget",
+        "Select and coordinate contractors and relevant specialists",
+        "Coordinate with an architect or technical architect where required",
+        "Structure quotes, schedule and progress reporting",
+        "Develop an interior concept and visual moodboard",
+        "Select materials, furniture, lighting and window treatments",
+        "Coordinate delivery, assembly, installation and styling",
+        "Organize snagging points and final checks before arrival",
+      ],
+      result:
+        "Renovation, interior choices, procurement and implementation are coordinated as one project so the technical work, schedule and finished living environment support each other.",
+      featured: true,
+    },
+    {
+      number: "03",
+      title: "US Relocation & Settling In",
+      subtitle: "Prepare the move, not just the house",
+      intro:
+        "For US families, retirees, entrepreneurs and remote professionals who want help coordinating the practical transition from the United States to life on the Costa Blanca.",
+      items: [
+        "Introduction to an independent immigration lawyer or visa specialist",
+        "Coordination support around NIE, residency and local administration",
+        "Introduction to US-Spain cross-border tax and estate-planning specialists",
+        "Private health insurance and healthcare orientation",
+        "Spanish banking and practical payment setup",
+        "International movers, shipping and storage options",
+        "Pet relocation and specialist transport research",
+        "Schools, childcare and family services",
+        "Driving, vehicle and local mobility planning",
+        "Sports clubs, golf, padel and local communities",
+        "A personal relocation roadmap for your move",
+      ],
+      result:
+        "You receive a clearer relocation plan covering the home, residency-related next steps, healthcare, finances, transport, family needs and day-to-day setup in Spain.",
+      featured: false,
+    },
+  ];
+
+  const usPriorities = [
+    {
+      title: "Visa & residency pathway",
+      text:
+        "If you plan to spend more than a standard visitor stay in Spain, we can introduce you to an independent immigration lawyer or visa specialist who can assess the route that fits your circumstances, including options such as non-lucrative residence or digital-nomad residence where relevant.",
+    },
+    {
+      title: "NIE & Spanish administration",
+      text:
+        "We help structure the practical sequence around your NIE and other local administrative steps, and coordinate with the appropriate professionals where legal representation or specialist advice is required.",
+    },
+    {
+      title: "US-Spain tax coordination",
+      text:
+        "US citizens and residents can face cross-border tax, reporting and estate-planning questions. We can connect you with advisers who understand both the US and Spanish sides before you make decisions that could have tax consequences.",
+    },
+    {
+      title: "Healthcare & insurance",
+      text:
+        "We can help compare practical healthcare arrangements and suitable insurance options, including introductions to specialists where a visa or residency route has specific insurance requirements.",
+    },
+    {
+      title: "Banking & payments",
+      text:
+        "We can help you understand the practical banking setup around owning and running a Spanish home, including local accounts, recurring household payments and introductions where specialist support is useful.",
+    },
+    {
+      title: "Shipping, storage & pets",
+      text:
+        "From household goods and temporary storage to pet relocation and specialist transport, we can help compare providers and coordinate the local side of the move.",
+    },
+  ];
+
   return (
-    <>
-      <script
-        type="application/ld+json"
-        suppressHydrationWarning
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbStructuredData),
-        }}
-      />
+    <main className="bg-[#f6f1ea] px-8 py-28 text-stone-900">
+      <section className="mx-auto max-w-7xl">
+        <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+          Move to Spain with fewer loose ends
+        </p>
 
-      <script
-        type="application/ld+json"
-        suppressHydrationWarning
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(servicesStructuredData),
-        }}
-      />
+        <h1 className="mt-6 max-w-5xl font-serif text-5xl leading-tight text-[#1e2a3a] md:text-6xl">
+          Move-In Ready &amp; Relocation Support
+        </h1>
 
-      <main className="min-h-screen overflow-hidden bg-[#f6f1ea] text-stone-900">
-        {/* BREADCRUMBS */}
-        <div className="px-6 pt-8 md:px-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-stone-500">
-              <li>
-                <a href="/" className="transition hover:text-[#173252]">
-                  Home
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li>
-                <a
-                  href="/services"
-                  className="transition hover:text-[#173252]"
-                >
-                  Services
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li aria-current="page" className="text-[#173252]">
-                Area Match &amp; Buyer Journey
-              </li>
-            </ol>
-          </nav>
-        </div>
+        <p className="mt-8 max-w-4xl text-xl leading-relaxed text-stone-600">
+          Buying the home is only part of moving to Spain. For US buyers, the real
+          work often starts after the property decision: residency questions,
+          paperwork, healthcare, banking, international moving, utilities,
+          contractors, furniture, deliveries and getting the house ready from
+          thousands of miles away.
+        </p>
 
-        {/* HERO */}
-        <section className="px-6 pb-20 pt-16 md:px-8 md:pb-28 md:pt-24">
-          <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                One personal property agent · One trusted point of contact
-              </p>
+        <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+          Nordic Move Spain brings those practical pieces together. We help you
+          coordinate the home, the move and the right independent specialists so
+          your arrival on the Costa Blanca feels planned rather than improvised.
+        </p>
 
-              <h1 className="mt-6 font-serif text-5xl leading-[1.03] text-[#173252] md:text-7xl">
-                First find the right place. Then the right property. We coordinate everything that follows.
-              </h1>
+        {/* US RELOCATION */}
+        <section className="mt-16 rounded-[40px] bg-[#1e2a3a] p-8 text-white shadow-sm md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Especially for buyers relocating from the United States
+          </p>
 
-              <p className="mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
-                Our guidance combines Area Match, personal property search,
-                Buyer Discovery, independent purchase checks, purchase support,
-                moving and furnishing. Throughout the journey, you communicate
-                with one trusted Nordic Move point of contact who coordinates
-                the agreed steps from first orientation to arrival.
-              </p>
+          <h2 className="mt-5 max-w-5xl font-serif text-4xl leading-tight md:text-5xl">
+            A transatlantic move needs more than a mover and a set of keys.
+          </h2>
 
-              <p className="mt-6 max-w-2xl text-sm font-medium uppercase tracking-[0.22em] text-[#b88948]">
-                Full coordination · Fewer parties to manage · Greater confidence before purchase
-              </p>
+          <p className="mt-7 max-w-4xl text-lg leading-relaxed text-white/80">
+            The questions are different when you are moving from the US. Which
+            residency route applies? When should you arrange your NIE? What happens
+            with healthcare, banking and cross-border tax advice? How do you ship
+            household goods, move pets, choose schools and prepare a property while
+            you are still in America?
+          </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="/relocation-assessment"
-                  className="rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
-                >
-                  Receive your complimentary portfolio
-                </a>
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
+            We do not replace immigration lawyers, tax advisers, attorneys or other
+            regulated professionals. Instead, we help structure the process,
+            introduce the appropriate independent specialists and coordinate the
+            practical tasks around their advice.
+          </p>
 
-                <a
-                  href="/contact"
-                  className="rounded-full border border-[#173252] px-8 py-4 text-sm font-medium text-[#173252] transition hover:bg-[#173252] hover:text-white"
-                >
-                  Schedule a personal consultation
-                </a>
-              </div>
-            </div>
-
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)] sm:translate-y-10">
-                <img
-                  src="/images/brochure1-en.png"
-                  alt="Nordic Move Spain brochure about the Buyer Discovery Experience and Move-In Ready support"
-                  className="h-full w-full rounded-[26px] object-cover"
-                />
-              </div>
-
-              <div className="overflow-hidden rounded-[34px] bg-white p-3 shadow-[0_24px_70px_rgba(23,50,82,0.12)]">
-                <img
-                  src="/images/brochure2-en.png"
-                  alt="Nordic Move Spain brochure about independent Purchase Safety checks"
-                  className="h-full w-full rounded-[26px] object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SERVICE OVERVIEW */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-14 max-w-4xl">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Four services, one coordinated journey
-              </p>
-
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                From the first orientation to purchase, moving, furnishing and arrival.
-              </h2>
-            </div>
-
-            <div className="grid gap-7 md:grid-cols-2">
-              {services.map((service) => (
-                <article
-                  key={service.number}
-                  className="flex h-full flex-col rounded-[36px] bg-white p-8 shadow-sm md:p-10"
-                >
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.3em] text-[#b88948]">
-                        {service.eyebrow}
-                      </p>
-
-                      <h3 className="mt-4 font-serif text-3xl leading-tight text-[#173252] md:text-4xl">
-                        {service.title}
-                      </h3>
-                    </div>
-
-                    <span className="font-serif text-5xl text-[#d7bd94]">
-                      {service.number}
-                    </span>
-                  </div>
-
-                  <p className="mt-6 text-base leading-relaxed text-stone-600">
-                    {service.text}
-                  </p>
-
-                  <ul className="mt-7 space-y-3 text-sm leading-relaxed text-stone-700">
-                    {service.bullets.map((item) => (
-                      <li key={item} className="flex gap-3">
-                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#b88948]" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {service.number === "04" ? (
-                    <div className="mt-7 grid gap-3 sm:grid-cols-3">
-                      {moveInReadyPackages.map((pkg) => (
-                        <div
-                          key={pkg.title}
-                          className="rounded-[20px] bg-[#f6f1ea] p-4"
-                        >
-                          <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#b88948]">
-                            Package {pkg.number}
-                          </p>
-                          <p className="mt-2 font-serif text-lg leading-tight text-[#173252]">
-                            {pkg.title}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  ) : null}
-
-                  {service.note ? (
-                    <p className="mt-7 text-xs leading-relaxed text-stone-500">
-                      * {service.note}
-                    </p>
-                  ) : null}
-
-                  <a
-                    href={service.href}
-                    className="mt-8 inline-flex w-fit items-center border-b border-[#b88948] pb-1 text-xs font-medium uppercase tracking-[0.22em] text-[#173252] transition hover:text-[#b88948]"
-                  >
-                    {service.cta} →
-                  </a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* AREA MATCH */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-white shadow-sm">
-            <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
-              <div className="bg-[#173252] p-10 text-white md:p-14 lg:p-16">
-                <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
-                  Service 01 · Area Match
-                </p>
-
-                <h2 className="mt-6 font-serif text-4xl leading-tight md:text-6xl">
-                  A complimentary portfolio that can save months of searching.
-                </h2>
-
-                <p className="mt-8 text-lg leading-relaxed text-white/80">
-                  The Area Match Portfolio is not a generic list of towns. It
-                  brings your lifestyle, budget, future plans and everyday
-                  priorities together in one personal comparison of suitable
-                  regions, towns and residential settings.
-                </p>
-
-                <p className="mt-6 text-lg leading-relaxed text-white/80">
-                  This gives your search direction before you start browsing
-                  hundreds of properties. It helps prevent months of searching
-                  in locations that may look attractive online but do not suit
-                  the way you want to live.
-                </p>
-
-                <a
-                  href="/relocation-assessment"
-                  className="mt-10 inline-block rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
-                >
-                  Request your complimentary Area Match Portfolio
-                </a>
-              </div>
-
-              <div className="p-10 md:p-14 lg:p-16">
-                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  What you receive
-                </p>
-
-                <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {[
-                    "A personal profile of your lifestyle and residential preferences",
-                    "A comparison of suitable regions, towns and residential areas",
-                    "Information about atmosphere, accessibility and daily life",
-                    "Insight into healthcare, amenities and international communities",
-                    "Guidance on suitable property types and residential settings",
-                    "A focused foundation for property search, viewings and next steps",
-                  ].map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-[24px] bg-[#f6f1ea] p-5 text-sm leading-relaxed text-stone-700"
-                    >
-                      {item}
-                    </div>
-                  ))}
-                </div>
-
-                <p className="mt-8 text-sm leading-relaxed text-stone-500">
-                  The Area Match Portfolio is complimentary and without
-                  obligation. Its content is tailored to your personal
-                  situation, plans and preferences.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* BUYER DISCOVERY */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="overflow-hidden rounded-[40px] bg-white p-3 shadow-sm">
-              <img
-                src="/images/brochure1-en.png"
-                alt="Nordic Move Spain brochure about the Buyer Discovery Experience and Nordic Circle"
-                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
-              />
-            </div>
-
-            <div>
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Service 02 · Personal property search &amp; Buyer Discovery
-              </p>
-
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Your personal property agent for the search, viewings and purchase.
-              </h2>
-
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                Your Area Match Portfolio forms the foundation for a focused
-                property search. We look beyond one estate agent’s listings,
-                select suitable homes across the market and create a discovery
-                route through the areas and properties that fit your profile.
-              </p>
-
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                We organise the viewings, manage communication with sellers and
-                listing agents and support you throughout questions,
-                negotiations and the purchase process. You do not have to
-                repeat your story or coordinate every contact yourself.
-              </p>
-
-              <a
-                href="/services/discovery-trips"
-                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {usPriorities.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[28px] bg-white/10 p-6"
               >
-                View the Buyer Discovery Experience
-              </a>
-
-              <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                * When a villa is ultimately purchased through Nordic Move
-                Spain, either half or the full trip cost is reimbursed depending
-                on the purchase price. The exact reimbursement and applicable
-                conditions are confirmed in writing in advance.
-              </p>
-            </div>
+                <h3 className="font-serif text-2xl text-white">{item.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-white/75">
+                  {item.text}
+                </p>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* PURCHASE SAFETY */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="order-2 lg:order-1">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                Service 03 · Purchase Safety
-              </p>
+        {/* AFTER COMPLETION */}
+        <section className="mt-16 rounded-[40px] bg-white p-8 shadow-sm md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            After completion, we stay involved
+          </p>
 
-              <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                Two independent professional reports before your final decision.
-              </h2>
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+            Getting the keys is often the beginning, not the end.
+          </h2>
 
-              <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                An independent surveyor assesses the visible and accessible
-                technical condition, construction quality, moisture, water
-                ingress, installations, pool, outbuildings and necessary
-                repairs. The surveyor also carries out an initial document and
-                registration screening.
-              </p>
+          <p className="mt-7 max-w-4xl text-lg leading-relaxed text-stone-600">
+            Electricity, water, internet and insurance may still need to be
+            organized. You may need an international mover, temporary storage or
+            specialist vehicle transport. Garden and pool care, air conditioning,
+            heating, solar systems, renovation and furnishing all require reliable
+            local partners and clear follow-through.
+          </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                This screening may include the Nota Simple, Catastro, IBI, CEE,
-                ITE where relevant, estate agent information, available permits
-                and licences, comparison of official and measured floor areas
-                and indications of possible unregistered parts of the property.
-              </p>
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+            Nordic Move Spain helps organize these steps in a structured way. We
+            speak Spanish, understand the local process and source appropriate
+            professionals for your situation. We can request quotes, compare options,
+            coordinate appointments and keep track of agreed progress.
+          </p>
 
-              <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                A suitable independent Spanish lawyer then carries out the full
-                legal due diligence and remains responsible for the legal review
-                and advice. Based on both reports, Nordic Move provides one clear
-                recommendation: proceed, reconsider or walk away.
-              </p>
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+            Instead of trying to manage a dozen Spanish suppliers from the US, you
+            have one point of coordination helping ensure the selected parties
+            understand what needs to happen, when it needs to happen and who is
+            responsible for each part.
+          </p>
 
-              <a
-                href="/services/purchase-safety-report"
-                className="mt-9 inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+            For renovation work, we can work with a selected, officially registered
+            construction company with its own execution team and access to qualified
+            architects and technical architects. You are also free to appoint your
+            own contractor or specialists.
+          </p>
+
+          <p className="mt-6 max-w-4xl text-lg font-medium leading-relaxed text-[#b88948]">
+            You can choose the full Buyer Journey or only the support you need —
+            from buyer guidance and independent checks to relocation, Home Setup,
+            renovation and Interior Styling.
+          </p>
+        </section>
+
+        {/* PACKAGES */}
+        <section className="mt-20">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            Move-In Ready packages
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+            Choose the level of support that fits your move.
+          </h2>
+
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-stone-600">
+            From the practical foundation of the home to renovation, interiors and a
+            transatlantic family relocation. Each package is agreed in advance as a
+            clear scope and coordinated around your property, timing and priorities.
+          </p>
+
+          <div className="mt-12 grid items-stretch gap-6 lg:grid-cols-3">
+            {packages.map((item) => (
+              <article
+                key={item.number}
+                className={`relative flex h-full flex-col rounded-[32px] p-7 shadow-sm md:p-8 ${
+                  item.featured
+                    ? "bg-[#1d3b60] text-white"
+                    : "bg-white text-stone-900"
+                }`}
               >
-                View Purchase Safety
-              </a>
+                <span
+                  className={`absolute right-7 top-7 font-serif text-4xl ${
+                    item.featured ? "text-white/20" : "text-[#d8b77d]"
+                  }`}
+                >
+                  {item.number}
+                </span>
 
-              <p className="mt-6 text-xs leading-relaxed text-stone-500">
-                * When a villa is ultimately purchased through Nordic Move
-                Spain, the independent Purchase Safety review is included in the
-                purchase guidance. The exact scope depends on the property, the
-                available documentation and the specialists required.
-              </p>
-            </div>
-
-            <div className="order-1 overflow-hidden rounded-[40px] bg-white p-3 shadow-sm lg:order-2">
-              <img
-                src="/images/brochure2-en.png"
-                alt="Nordic Move Spain Purchase Safety brochure"
-                className="max-h-[780px] w-full rounded-[32px] object-cover object-top"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* ONE TRUSTED POINT OF CONTACT */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl rounded-[42px] bg-white p-10 shadow-sm md:p-14 lg:p-16">
-            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-              <div>
-                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  One trusted point of contact
+                <p className="text-xs uppercase tracking-[0.3em] text-[#c8a063]">
+                  Package {item.number}
                 </p>
 
-                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  You do not have to manage five different parties yourself.
-                </h2>
-
-                <p className="mt-8 text-lg leading-relaxed text-stone-600">
-                  Buying property in Spain often means communicating with
-                  estate agents, sellers, a surveyor, a lawyer, a mortgage
-                  adviser, a moving company and interior specialists. Nordic
-                  Move remains your dedicated point of contact throughout the
-                  agreed journey.
-                </p>
-
-                <p className="mt-6 text-lg leading-relaxed text-stone-600">
-                  We keep track of who is responsible for what, which
-                  information is missing, which questions remain open, what
-                  happens next and where delays or risks may arise.
-                </p>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  [
-                    "One personal property agent",
-                    "One Nordic Move contact knows your wishes, priorities and concerns throughout the journey.",
-                  ],
-                  [
-                    "Full coordination",
-                    "We coordinate the agreed specialists and make sure the separate steps connect.",
-                  ],
-                  [
-                    "Clear next steps",
-                    "Open questions, responsibilities, conditions and deadlines are actively followed up.",
-                  ],
-                  [
-                    "Continuity after purchase",
-                    "We remain involved for mortgage introductions, moving coordination, styling and furnishing.",
-                  ],
-                ].map(([title, text]) => (
-                  <article
-                    key={title}
-                    className="rounded-[26px] bg-[#f6f1ea] p-6"
-                  >
-                    <h3 className="font-serif text-2xl text-[#173252]">
-                      {title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-stone-600">
-                      {text}
-                    </p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* MOVE-IN READY & RELOCATION */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-[#e9dfd2]">
-            <div className="grid items-stretch lg:grid-cols-[0.95fr_1.05fr]">
-              <div className="p-10 md:p-14 lg:p-16">
-                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Service 04 · Move-In Ready &amp; Relocation Coordination
-                </p>
-
-                <h2 className="mt-5 font-serif text-4xl leading-tight text-[#173252] md:text-6xl">
-                  Three flexible packages from completed purchase to a prepared arrival.
-                </h2>
-
-                <p className="mt-8 text-lg leading-relaxed text-stone-700">
-                  After the purchase, dozens of practical choices can still remain:
-                  utilities, insurance, moving, renovation, interiors, furniture,
-                  schools and local service providers. Nordic Move brings these
-                  steps together in three clear Move-In Ready packages.
-                </p>
-
-                <p className="mt-6 text-lg leading-relaxed text-stone-700">
-                  Choose Home Setup, Renovation &amp; Interior or Family Relocation —
-                  or combine packages into one coordinated route. You keep one
-                  Nordic Move point of contact, while selected independent
-                  professionals remain responsible for their own specialist advice,
-                  quotations and execution.
-                </p>
-
-                <div className="mt-9 flex flex-wrap gap-4">
-                  <a
-                    href="/services/move-in-ready"
-                    className="inline-block rounded-full bg-[#173252] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#24466d]"
-                  >
-                    Explore Move-In Ready in detail
-                  </a>
-
-                  <a
-                    href="/contact"
-                    className="inline-block rounded-full border border-[#173252] px-8 py-4 text-sm font-medium text-[#173252] transition hover:bg-[#173252] hover:text-white"
-                  >
-                    Discuss your package
-                  </a>
-                </div>
-              </div>
-
-              <div className="min-h-[520px]">
-                <img
-                  src="/images/interior-design.png"
-                  alt="Move-In Ready Home Setup, Renovation and Interior, and Family Relocation support on the Costa Blanca"
-                  className="h-full min-h-[520px] w-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="border-t border-[#173252]/10 bg-white/45 p-8 md:p-12 lg:p-14">
-              <div className="max-w-4xl">
-                <p className="text-sm uppercase tracking-[0.35em] text-[#b88948]">
-                  Choose the support that fits your situation
-                </p>
-                <h3 className="mt-5 font-serif text-3xl leading-tight text-[#173252] md:text-5xl">
-                  The three Move-In Ready packages.
+                <h3
+                  className={`mt-4 max-w-[80%] font-serif text-3xl leading-tight ${
+                    item.featured ? "text-white" : "text-[#1e2a3a]"
+                  }`}
+                >
+                  {item.title}
                 </h3>
-                <p className="mt-5 text-lg leading-relaxed text-stone-700">
-                  Each package can stand on its own. If your situation crosses
-                  several areas, the relevant parts can be combined and coordinated
-                  as one agreed scope.
-                </p>
-              </div>
 
-              <div className="mt-10 grid gap-6 lg:grid-cols-3">
-                {moveInReadyPackages.map((pkg, index) => (
-                  <article
-                    key={pkg.title}
-                    className={`flex h-full flex-col rounded-[30px] p-7 shadow-sm md:p-8 ${
-                      index === 1
-                        ? "bg-[#173252] text-white"
-                        : "bg-white text-stone-900"
+                <p
+                  className={`mt-5 text-sm font-medium leading-relaxed ${
+                    item.featured ? "text-white" : "text-[#1e2a3a]"
+                  }`}
+                >
+                  {item.subtitle}
+                </p>
+
+                <p
+                  className={`mt-5 text-sm leading-relaxed ${
+                    item.featured ? "text-white/80" : "text-stone-600"
+                  }`}
+                >
+                  {item.intro}
+                </p>
+
+                <ul className="mt-6 space-y-3">
+                  {item.items.map((service) => (
+                    <li
+                      key={service}
+                      className={`flex gap-3 text-sm leading-relaxed ${
+                        item.featured ? "text-white/90" : "text-stone-700"
+                      }`}
+                    >
+                      <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#c8a063]" />
+                      <span>{service}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div
+                  className={`mt-7 rounded-[24px] p-5 ${
+                    item.featured ? "bg-white/10" : "bg-[#f6f1ea]"
+                  }`}
+                >
+                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#c8a063]">
+                    Intended outcome
+                  </p>
+                  <p
+                    className={`mt-3 text-sm leading-relaxed ${
+                      item.featured ? "text-white/85" : "text-stone-700"
                     }`}
                   >
-                    <div className="flex items-start justify-between gap-5">
-                      <div>
-                        <p
-                          className={`text-xs font-medium uppercase tracking-[0.28em] ${
-                            index === 1 ? "text-[#d1a866]" : "text-[#b88948]"
-                          }`}
-                        >
-                          Package {pkg.number}
-                        </p>
-                        <h4
-                          className={`mt-3 font-serif text-3xl leading-tight ${
-                            index === 1 ? "text-white" : "text-[#173252]"
-                          }`}
-                        >
-                          {pkg.title}
-                        </h4>
-                      </div>
-                      <span
-                        className={`font-serif text-5xl ${
-                          index === 1 ? "text-white/20" : "text-[#d7bd94]"
-                        }`}
-                      >
-                        {pkg.number}
-                      </span>
-                    </div>
+                    {item.result}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
-                    <p
-                      className={`mt-5 text-sm font-medium ${
-                        index === 1 ? "text-white/90" : "text-[#173252]"
-                      }`}
-                    >
-                      {pkg.subtitle}
-                    </p>
+        {/* DESIGN IMAGES */}
+        <div className="mt-16 grid gap-8 md:grid-cols-2">
+          {images.map((image) => (
+            <article
+              key={image.title}
+              className="overflow-hidden rounded-[32px] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="relative h-[380px] overflow-hidden">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                />
 
-                    <p
-                      className={`mt-4 text-sm leading-relaxed ${
-                        index === 1 ? "text-white/75" : "text-stone-600"
-                      }`}
-                    >
-                      {pkg.text}
-                    </p>
-
-                    <ul className="mt-6 space-y-3 text-sm leading-relaxed">
-                      {pkg.items.map((item) => (
-                        <li key={item} className="flex gap-3">
-                          <span
-                            className={`mt-[8px] h-1.5 w-1.5 shrink-0 rounded-full ${
-                              index === 1 ? "bg-[#d1a866]" : "bg-[#b88948]"
-                            }`}
-                          />
-                          <span
-                            className={
-                              index === 1 ? "text-white/80" : "text-stone-700"
-                            }
-                          >
-                            {item}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <div
-                      className={`mt-7 rounded-[22px] p-5 ${
-                        index === 1 ? "bg-white/10" : "bg-[#f6f1ea]"
-                      }`}
-                    >
-                      <p
-                        className={`text-[10px] font-medium uppercase tracking-[0.24em] ${
-                          index === 1 ? "text-[#d1a866]" : "text-[#b88948]"
-                        }`}
-                      >
-                        Intended result
-                      </p>
-                      <p
-                        className={`mt-2 text-sm leading-relaxed ${
-                          index === 1 ? "text-white/80" : "text-stone-700"
-                        }`}
-                      >
-                        {pkg.result}
-                      </p>
-                    </div>
-                  </article>
-                ))}
+                <div className="absolute left-5 top-5 rounded-full bg-white/85 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.2em] text-[#1e2a3a] backdrop-blur">
+                  Nordic Move Design
+                </div>
               </div>
 
-              <p className="mt-8 max-w-5xl text-xs leading-relaxed text-stone-500">
-                Scope, budget, timing and delivery are tailored to the property,
-                your wishes and the availability of selected local specialists and
-                service providers. Admission decisions by schools, administrative
-                decisions and work performed by third parties cannot be guaranteed
-                by Nordic Move.
-              </p>
-            </div>
+              <div className="p-8">
+                <p className="text-xs uppercase tracking-[0.25em] text-[#c8a063]">
+                  Design direction
+                </p>
+
+                <h2 className="mt-4 font-serif text-3xl text-[#1e2a3a]">
+                  {image.title}
+                </h2>
+
+                <p className="mt-4 leading-relaxed text-stone-600">
+                  {image.text}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p className="mt-8 max-w-4xl text-sm leading-relaxed text-stone-500">
+          The Nordic Move Designs shown above are inspirational design directions.
+          They are not property listings or completed client projects. Final design,
+          planning and implementation are adapted to the property, budget,
+          availability and selected local partners.
+        </p>
+
+        {/* PROCESS */}
+        <section className="mt-20 rounded-[40px] bg-white p-8 shadow-sm md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            What we coordinate
+          </p>
+
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+            The Move-In Ready process
+          </h2>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {steps.map((step, index) => (
+              <div
+                key={step.title}
+                className="rounded-[28px] bg-[#f6f1ea] p-7"
+              >
+                <p className="text-sm tracking-[0.25em] text-[#c8a063]">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+
+                <h3 className="mt-4 font-serif text-2xl leading-tight text-[#1e2a3a]">
+                  {step.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-relaxed text-stone-600">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-sm leading-relaxed text-stone-500">
+            Move-In Ready support is tailored to each property and each client.
+            Scope, schedule, pricing and availability depend on the home, required
+            work, selected partners, materials and level of service.
+          </p>
+        </section>
+
+        {/* US PRACTICAL DETAILS */}
+        <section className="mt-20 rounded-[40px] bg-[#e9dfd2] p-8 shadow-sm md:p-12">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            The details US buyers often discover too late
+          </p>
+
+          <h2 className="mt-5 max-w-5xl font-serif text-4xl leading-tight text-[#1e2a3a] md:text-5xl">
+            We help you think through the practical life around the property.
+          </h2>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Whether your residency plan should be explored before or after the property purchase",
+              "Which independent adviser should review US-Spain tax and estate-planning implications",
+              "Healthcare, insurance and prescriptions before your first long stay",
+              "International moving, storage, customs and timing",
+              "Pet transport, veterinary documentation and arrival planning",
+              "Schools, childcare and family routines",
+              "Vehicle, driving-license and day-to-day mobility questions",
+              "US-versus-Spain electrical standards and which appliances are worth shipping",
+              "Reliable high-speed internet and home-office setup",
+              "Security, alarm, gates and access while the home is empty",
+              "Property management, pool and garden care when you are in the US",
+              "A local network for golf, padel, sailing, business and community life",
+            ].map((item) => (
+              <div key={item} className="rounded-[24px] bg-white/70 p-5">
+                <p className="text-sm font-medium leading-relaxed text-[#1e2a3a]">
+                  {item}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* FINAL CTA */}
-        <section className="px-6 pb-24 md:px-8 md:pb-32">
-          <div className="mx-auto max-w-7xl rounded-[42px] bg-[#173252] px-8 py-16 text-center text-white md:px-14 md:py-20">
-            <p className="text-sm uppercase tracking-[0.35em] text-[#d1a866]">
-              Begin with clarity
-            </p>
+        {/* CTA */}
+        <div className="mt-16 rounded-[40px] bg-[#1e2a3a] p-10 text-white md:p-14">
+          <p className="text-sm uppercase tracking-[0.35em] text-[#c8a063]">
+            One point of coordination in Spain
+          </p>
 
-            <h2 className="mx-auto mt-6 max-w-4xl font-serif text-4xl leading-tight md:text-6xl">
-              One personal property agent. One trusted point of contact.
-            </h2>
+          <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight md:text-5xl">
+            Tell us where you are in your Buyer Journey and what still needs to be
+            arranged before Spain feels like home.
+          </h2>
 
-            <p className="mx-auto mt-7 max-w-3xl text-lg leading-relaxed text-white/75">
-              Start with your complimentary Area Match Portfolio and continue
-              with one coordinated journey through property search, Buyer
-              Discovery, purchase checks, moving, furnishing and arrival.
-            </p>
+          <p className="mt-6 max-w-4xl text-lg leading-relaxed text-white/80">
+            Whether you are still planning the move from the US, need an introduction
+            to immigration or cross-border specialists, already own a home, need
+            independent purchase checks, or want help with relocation, renovation
+            and Move-In Ready — we can discuss the next practical step.
+          </p>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-4">
-              <a
-                href="/relocation-assessment"
-                className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+          <div className="mt-10 grid gap-4 md:grid-cols-[0.7fr_1.3fr]">
+            <a
+              href="/contact"
+              className="inline-flex min-h-[112px] items-center justify-center rounded-[28px] border border-white/35 px-8 py-6 text-center text-sm font-medium text-white transition hover:border-white hover:bg-white hover:text-[#1e2a3a]"
+            >
+              Use the contact form
+            </a>
+
+            <a
+              href="https://wa.me/31683848239?text=Hello%20Nordic%20Move%20Spain%2C%20I%20would%20like%20to%20discuss%20my%20move%20to%20Spain%20and%20which%20Move-In%20Ready%20or%20relocation%20support%20I%20may%20need."
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Start a WhatsApp conversation with Nordic Move Spain"
+              className="group flex min-h-[112px] items-center gap-5 rounded-[28px] bg-white px-6 py-5 text-[#1e2a3a] shadow-[0_18px_45px_rgba(0,0,0,0.18)] transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(0,0,0,0.24)] md:px-8"
+            >
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#c8a063] text-white">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 32 32"
+                  className="h-7 w-7 fill-current"
+                >
+                  <path d="M16.04 3C8.87 3 3.05 8.78 3.05 15.91c0 2.28.6 4.51 1.75 6.47L3 29l6.82-1.77a13.03 13.03 0 0 0 6.22 1.58h.01C23.21 28.81 29 23.03 29 15.9 29 8.78 23.21 3 16.04 3Zm0 23.62h-.01a10.83 10.83 0 0 1-5.52-1.51l-.4-.24-4.05 1.05 1.08-3.93-.26-.4a10.7 10.7 0 0 1-1.65-5.68c0-5.92 4.85-10.74 10.82-10.74 5.96 0 10.81 4.82 10.81 10.74 0 5.92-4.85 10.71-10.82 10.71Zm5.94-8.02c-.33-.16-1.92-.94-2.22-1.05-.3-.11-.52-.16-.74.16-.22.33-.85 1.05-1.04 1.27-.19.22-.38.24-.71.08-.33-.16-1.38-.5-2.63-1.61a9.8 9.8 0 0 1-1.82-2.25c-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.7 0 1.59 1.17 3.13 1.33 3.35.16.22 2.3 3.48 5.57 4.88.78.33 1.38.53 1.86.68.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.14-.3-.22-.63-.38Z" />
+                </svg>
+              </span>
+
+              <span className="min-w-0 flex-1">
+                <span className="block text-xs font-medium uppercase tracking-[0.25em] text-[#b88948]">
+                  Direct via WhatsApp
+                </span>
+                <span className="mt-1 block font-serif text-2xl leading-tight">
+                  Start a personal conversation
+                </span>
+                <span className="mt-1 block text-sm text-stone-500">
+                  +31 6 83 84 82 39
+                </span>
+              </span>
+
+              <span
+                aria-hidden="true"
+                className="text-2xl transition group-hover:translate-x-1"
               >
-                Receive your complimentary portfolio
-              </a>
-
-              <a
-                href="/contact"
-                className="rounded-full border border-white/70 px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#173252]"
-              >
-                Schedule an introductory call
-              </a>
-            </div>
+                →
+              </span>
+            </a>
           </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   );
 }

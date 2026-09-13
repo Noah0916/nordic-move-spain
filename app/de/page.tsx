@@ -213,20 +213,12 @@ export default function HomePage() {
 
 
       {/* NAVIGATION */}
-      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 px-4 py-4 backdrop-blur-md md:px-8">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          {/* MOBILE BRAND / DESKTOP SPACER */}
-          <a
-            href="/de"
-            className="text-sm font-medium tracking-wide text-white md:hidden"
-          >
-            Nordic Move Spain
-          </a>
+      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/15 backdrop-blur-md">
+        {/* DESKTOP NAVIGATION — unverändert */}
+        <div className="mx-auto hidden max-w-7xl items-center justify-between px-8 py-4 md:flex">
+          <div className="w-[180px]"></div>
 
-          <div className="hidden w-[180px] md:block"></div>
-
-          {/* DESKTOP MENU */}
-          <div className="hidden gap-8 text-sm text-white md:flex">
+          <div className="flex gap-8 text-sm text-white">
             <a href="/de" className="border-b border-[#c8a063] pb-1">
               Startseite
             </a>
@@ -256,8 +248,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* DESKTOP RIGHT SIDE */}
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
               <a
                 href="/"
@@ -299,67 +290,94 @@ export default function HomePage() {
               Unverbindliches Erstgespräch buchen
             </a>
           </div>
+        </div>
 
-          {/* MOBILE HAMBURGER MENU */}
-          <details className="relative md:hidden">
-            <summary
-              aria-label="Menü öffnen"
-              className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border border-white/40 text-2xl text-white [&::-webkit-details-marker]:hidden"
+        {/* MOBILE NAVIGATION — ohne Hamburger-Menü */}
+        <div className="md:hidden">
+          <div className="flex items-center gap-2 px-4 py-3">
+            <a
+              href="/de"
+              className="min-w-0 flex-1 truncate text-sm font-medium tracking-wide text-white"
             >
-              ☰
-            </summary>
+              Nordic Move Spain
+            </a>
 
-            <div className="absolute right-0 mt-3 w-[280px] rounded-2xl bg-[#1e2a3a] p-6 text-white shadow-2xl">
-              <div className="flex flex-col gap-5 text-base">
-                <a href="/de">Startseite</a>
-                <a href="/de/regions">Regionen</a>
-                <a href="/de/villas">Villen</a>
-                <a href="/de/services">Leistungen</a>
-                <a href="/de/guides">Ratgeber</a>
-                <a href="/de/about-us">Über uns</a>
-                <a href="/de/contact">Kontakt</a>
-              </div>
+            <span className="shrink-0 rounded-full border border-[#c8a063] bg-[#c8a063] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.18em] text-white">
+              DE
+            </span>
 
-              <div className="my-6 border-t border-white/20"></div>
+            <a
+              href="/de/relocation-assessment"
+              className="shrink-0 rounded-full bg-[#c8a063] px-4 py-2.5 text-[11px] font-medium text-white shadow-sm transition hover:bg-[#b48a4f]"
+            >
+              Kostenloser Area Match
+            </a>
+          </div>
 
-              <div className="flex flex-wrap gap-2">
-                <a
-                  href="/"
-                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
-                >
-                  EN
-                </a>
+          <div
+            className="flex touch-pan-x items-center gap-5 overflow-x-auto whitespace-nowrap border-t border-white/10 px-4 py-2.5 text-xs text-white [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            aria-label="Mobile Navigation"
+          >
+            <a
+              href="/de"
+              className="shrink-0 border-b border-[#c8a063] pb-1 font-medium"
+            >
+              Startseite
+            </a>
 
-                <a
-                  href="/nl"
-                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
-                >
-                  NL
-                </a>
+            <a href="/de/regions" className="shrink-0 transition hover:text-white/70">
+              Regionen
+            </a>
 
-                <a
-                  href="/de"
-                  className="rounded-full bg-[#c8a063] px-3 py-2 text-xs"
-                >
-                  DE
-                </a>
+            <a href="/de/villas" className="shrink-0 transition hover:text-white/70">
+              Villen
+            </a>
 
-                <a
-                  href="/sv"
-                  className="rounded-full border border-white/40 px-3 py-2 text-xs"
-                >
-                  SE
-                </a>
-              </div>
+            <a href="/de/services" className="shrink-0 transition hover:text-white/70">
+              Leistungen
+            </a>
 
-              <a
-                href="/de/contact"
-                className="mt-6 block rounded-full bg-[#c8a063] px-5 py-3 text-center text-sm font-medium text-white"
-              >
-                Unverbindliches Erstgespräch buchen
-              </a>
-            </div>
-          </details>
+            <a href="/de/guides" className="shrink-0 transition hover:text-white/70">
+              Ratgeber
+            </a>
+
+            <a href="/de/about-us" className="shrink-0 transition hover:text-white/70">
+              Über uns
+            </a>
+
+            <a href="/de/contact" className="shrink-0 transition hover:text-white/70">
+              Kontakt
+            </a>
+
+            <span
+              aria-hidden="true"
+              className="h-4 w-px shrink-0 bg-white/25"
+            ></span>
+
+            <a
+              href="/"
+              aria-label="Englische Version"
+              className="shrink-0 rounded-full border border-white/35 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.16em]"
+            >
+              EN
+            </a>
+
+            <a
+              href="/nl"
+              aria-label="Niederländische Version"
+              className="shrink-0 rounded-full border border-white/35 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.16em]"
+            >
+              NL
+            </a>
+
+            <a
+              href="/sv"
+              aria-label="Schwedische Version"
+              className="shrink-0 rounded-full border border-white/35 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.16em]"
+            >
+              SE
+            </a>
+          </div>
         </div>
       </nav>
 
