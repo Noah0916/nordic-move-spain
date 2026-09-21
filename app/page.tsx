@@ -18,9 +18,9 @@ export const metadata = {
         },
       }
     : {}),
-  title: "Buy More Safely and Relocate to the Costa Blanca | Nordic Move Spain",
+  title: "Buy Property on the Costa Blanca with Buyer-Side Support | Nordic Move Spain",
   description:
-    "Buyer support and full relocation on the Costa Blanca: from area and property selection to independent technical and legal checks, purchase, administration, renovation, moving and styling.",
+    "Independent buyer-side support for international buyers, with dedicated guidance for Americans buying property in Spain: Area Match, property search, legal and technical checks, purchase and relocation.",
   applicationName: "Nordic Move Spain",
   authors: [{ name: "Nordic Move Spain" }],
   creator: "Nordic Move Spain",
@@ -38,6 +38,12 @@ export const metadata = {
     "relocating to the Costa Blanca",
     "relocation Costa Blanca",
     "Costa Blanca North",
+    "buy property in Spain as an American",
+    "American buying property in Spain",
+    "US citizen buying property in Spain",
+    "moving from USA to Spain",
+    "Costa Blanca property for Americans",
+    "retire in Spain from USA",
   ],
   robots: {
     index: true,
@@ -51,11 +57,11 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Buy More Safely with Full Relocation Support | Nordic Move Spain",
+    title: "Buy More Safely on the Costa Blanca | Nordic Move Spain",
     description:
-      "From area and property selection to independent checks, purchase, administration, renovation, relocation and styling on the Costa Blanca.",
+      "Buyer-side property support for international buyers, with dedicated guidance for Americans buying from the United States.",
     type: "website",
-    locale: "en_GB",
+    locale: "en_US",
     siteName: "Nordic Move Spain",
     ...(siteUrl
       ? {
@@ -71,9 +77,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buy More Safely and Relocate to the Costa Blanca | Nordic Move Spain",
+    title: "Buy More Safely on the Costa Blanca | Nordic Move Spain",
     description:
-      "Buyer support and full relocation: from Area Match and independent checks to purchase, renovation, relocation and styling.",
+      "International buyer-side support with dedicated guidance for U.S. buyers, from Area Match and independent checks to purchase and relocation.",
     ...(siteUrl ? { images: ["/images/laatste-homepage.png"] } : {}),
   },
 };
@@ -115,12 +121,12 @@ export default function HomePage() {
       featured: false,
     },
     {
-      href: "/guides/uk-tax-second-home-spain",
-      label: "Tax guide for UK buyers",
-      title: "Spanish Tax Rules for UK Property Owners",
+      href: "/american-buyer-guide",
+      label: "2026 U.S. Buyer Edition",
+      title: "The American Buyer’s Guide to Buying Property in Spain",
       text:
-        "What UK buyers need to know about Spanish property taxes, UK tax considerations, second homes, rental income, capital gains and avoiding double taxation.",
-      cta: "Read the tax guide →",
+        "A premium guide for U.S. buyers covering purchase costs, NIE timing, mortgages, independent legal and technical checks, U.S.–Spain tax planning, Beckham Law, residency and relocation.",
+      cta: "Get the complimentary guide →",
       featured: false,
     },
   ];
@@ -134,7 +140,7 @@ export default function HomePage() {
         name: "Nordic Move Spain",
         email: "willeke@nordicmovespain.com",
         description:
-          "Buyer and relocation support for international buyers who want to purchase property on the Costa Blanca with greater confidence and organise their move carefully.",
+          "Buyer and relocation support for international buyers, including Americans buying from the United States, who want to purchase property on the Costa Blanca with greater confidence and organise their move carefully.",
       },
       {
         "@type": "WebPage",
@@ -142,7 +148,7 @@ export default function HomePage() {
         name: "Buying Property on the Costa Blanca | Nordic Move Spain",
         description:
           "Buyer support and full relocation with Area Match, targeted property selection, independent technical and legal checks and support through to arrival.",
-        inLanguage: "en-GB",
+        inLanguage: "en",
         about: {
           "@id": "#buyer-service",
         },
@@ -172,7 +178,7 @@ export default function HomePage() {
         },
         audience: {
           "@type": "Audience",
-          audienceType: "International property buyers",
+          audienceType: "International property buyers, including U.S. buyers",
         },
       },
     ],
@@ -406,13 +412,13 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-[#f7f2ea] drop-shadow-[0_2px_12px_rgba(0,0,0,0.38)] md:text-xl">
-              Nordic Move Spain supports international buyers from finding the right area and
-              property through independent technical and legal checks, purchase and
+              Nordic Move Spain supports international buyers from the first area decision
+              through property search, independent legal and technical checks, purchase and
               full relocation support.
             </p>
 
             <p className="mt-7 text-xs uppercase tracking-[0.25em] text-[#c8a063]">
-              Two independent purchase checks · Full relocation · One trusted point of contact
+              Buyer-side support · Independent purchase checks · Full relocation
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
@@ -420,16 +426,26 @@ export default function HomePage() {
                 href="/relocation-assessment"
                 className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
               >
-                Receive your complimentary personal Area Match Report
+                Get your complimentary Area Match
               </a>
 
               <a
-                href="/contact"
+                href="/american-buyer-guide"
                 className="rounded-full border border-white px-8 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900"
+              >
+                U.S. buyer? Get the free 2026 guide
+              </a>
+            </div>
+
+            <p className="mt-5 text-sm text-white/80">
+              Already have a property in mind?{" "}
+              <a
+                href="/contact"
+                className="font-medium text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
               >
                 Book an introductory call
               </a>
-            </div>
+            </p>
           </div>
         </div>
       </section>
@@ -439,7 +455,97 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-4 text-center text-sm font-medium text-[#1e2a3a] md:grid-cols-3">
           <p>Personal support on the buyer’s side</p>
           <p>Legal and technical checks before purchase</p>
-          <p>Support in English, Dutch, German and Swedish</p>
+          <p>Dedicated guidance for U.S., UK and European buyers</p>
+        </div>
+      </section>
+
+      {/* U.S. BUYER GUIDE — CLEAR PATH FOR AMERICAN VISITORS */}
+      <section className="px-8 py-20 md:py-24">
+        <div className="mx-auto max-w-7xl overflow-hidden rounded-[40px] bg-[#1e2a3a] text-white shadow-sm">
+          <div className="grid items-stretch lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="p-10 md:p-14 lg:p-16">
+              <div className="inline-flex rounded-full border border-[#c8a063]/50 bg-white/5 px-5 py-2 text-xs font-medium uppercase tracking-[0.28em] text-[#c8a063]">
+                2026 U.S. Buyer Edition
+              </div>
+
+              <h2 className="mt-7 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
+                Buying in Spain from the United States?
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/82">
+                Buying a home in Spain involves more than choosing a beautiful villa.
+                U.S. buyers also need to plan the purchase costs, NIE, financing,
+                independent legal and technical checks, U.S.–Spain tax questions,
+                residency and the practical move.
+              </p>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/82">
+                We created a complimentary premium guide specifically for Americans
+                considering the Costa Blanca — so you can understand the process before
+                you book the flight or transfer a deposit.
+              </p>
+
+              <div className="mt-8 grid gap-3 text-sm text-white/80 sm:grid-cols-2">
+                <p>✓ Purchase taxes &amp; real acquisition costs</p>
+                <p>✓ NIE, mortgage &amp; purchase timeline</p>
+                <p>✓ Independent lawyer &amp; technical checks</p>
+                <p>✓ U.S.–Spain tax planning &amp; Beckham Law</p>
+                <p>✓ Residency, healthcare &amp; insurance</p>
+                <p>✓ Funds, pets, moving &amp; life after completion</p>
+              </div>
+
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <a
+                  href="/american-buyer-guide"
+                  className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
+                >
+                  Get the complimentary U.S. Buyer’s Guide
+                </a>
+
+                <a
+                  href="/relocation-assessment"
+                  className="rounded-full border border-white/60 px-8 py-4 text-sm font-medium text-white transition hover:bg-white hover:text-[#1e2a3a]"
+                >
+                  Start your Area Match
+                </a>
+              </div>
+
+              <p className="mt-5 text-xs uppercase tracking-[0.18em] text-white/55">
+                Free · Designed for U.S. buyers · Costa Blanca North
+              </p>
+            </div>
+
+            <div className="relative min-h-[420px] bg-[#e9dfd2] p-6 md:p-8 lg:min-h-full lg:p-10">
+              <div className="flex h-full min-h-[360px] flex-col justify-between rounded-[30px] bg-[#f6f1ea] p-8 text-[#1e2a3a] shadow-sm md:p-10">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-[#9b743d]">
+                    For Americans buying abroad
+                  </p>
+
+                  <h3 className="mt-5 font-serif text-4xl leading-tight md:text-5xl">
+                    Know the process before you book the flight.
+                  </h3>
+
+                  <p className="mt-6 text-base leading-relaxed text-stone-600">
+                    The guide is designed to help you identify the decisions that need
+                    to be made early — and the questions that should be put to the right
+                    independent legal, tax, mortgage and technical specialists.
+                  </p>
+                </div>
+
+                <div className="mt-10 border-t border-[#1e2a3a]/15 pt-7">
+                  <p className="font-serif text-2xl">
+                    Your next step after the guide:
+                  </p>
+                  <p className="mt-3 leading-relaxed text-stone-600">
+                    Use our complimentary Area Match to compare locations by lifestyle,
+                    price levels, healthcare, schools, accessibility, safety, community
+                    and the practical details that matter to your future life in Spain.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1090,9 +1196,10 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-6 text-lg leading-relaxed text-stone-600">
-              A selected collection of practical guides for international buyers
-              who want to understand retirement areas, the Spanish buying process and UK
-              tax matters before making a decision.
+              A selected collection of practical guides for international buyers.
+              U.S. buyers can also start with our dedicated 2026 American Buyer’s Guide,
+              while UK and European buyers can continue to use the country-specific and
+              general property guides in our full guide library.
             </p>
           </div>
 
@@ -1179,6 +1286,13 @@ export default function HomePage() {
               className="rounded-full bg-[#c8a063] px-8 py-4 text-sm font-medium text-white transition hover:bg-[#b48a4f]"
             >
               Request your complimentary Area Match
+            </a>
+
+            <a
+              href="/american-buyer-guide"
+              className="rounded-full border border-[#c8a063] px-8 py-4 text-sm text-white transition hover:bg-[#c8a063]"
+            >
+              U.S. buyer? Get the free guide
             </a>
 
             <a
